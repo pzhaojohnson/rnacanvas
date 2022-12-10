@@ -79,8 +79,9 @@ of the sequence and structure text boxes.
 
 Drawings can be saved using the `File`: `Save` menu button,
 which will cause a file with `.rnacanvas` extension to be downloaded.
-(Drawing files formerly had `.rna2drawer2` extension
-before the web app was renamed from RNA2Drawer to RNAcanvas.)
+(Drawing files used to have `.rna2drawer2` extension
+before the app was renamed from RNA2Drawer to RNAcanvas.
+The contents of drawing files remains the same, though.)
 
 The downloaded file with `.rnacanvas` extension
 contains a complete representation of the drawing.
@@ -97,7 +98,7 @@ and upload your saved drawing
 <b><em>Opening a saved drawing from before the RNA2Drawer web app.</em></b>
 Saved drawings from before the RNA2Drawer web app with `.rna2drawer` extension (no trailing "2") can also be opened,
 though not all aspects of the drawing will be preserved.
-A list of what aspects will be preserved
+A list of which aspects will be preserved
 can be viewed by clicking on the `Details` toggle
 in the form to open saved drawings.
 
