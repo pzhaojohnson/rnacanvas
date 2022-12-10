@@ -81,7 +81,8 @@ Drawings can be saved using the `File`: `Save` menu button,
 which will cause a file with `.rnacanvas` extension to be downloaded.
 (Drawing files used to have `.rna2drawer2` extension
 before the app was renamed from RNA2Drawer to RNAcanvas.
-The contents of drawing files remains the same, though.)
+The contents of drawing files remains the same, though,
+and drawing files with `.rna2drawer2` extension can still be opened.)
 
 The downloaded file with `.rnacanvas` extension
 contains a complete representation of the drawing.
