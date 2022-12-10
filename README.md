@@ -1,4 +1,4 @@
-# RNA2Drawer 2
+# RNAcanvas
 
 A [web app](https://rna2drawer.app) for the interactive drawing of nucleic acid structures.
 Bases are automatically arranged to convey stems and loops
