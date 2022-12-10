@@ -79,6 +79,7 @@ of the sequence and structure text boxes.
 
 Drawings can be saved using the `File`: `Save` menu button,
 which will cause a file with `.rnacanvas` extension to be downloaded.
+
 (Drawing files used to have `.rna2drawer2` extension
 before the app was renamed from RNA2Drawer to RNAcanvas.
 The contents of drawing files remains the same, though,
