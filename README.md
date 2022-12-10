@@ -85,7 +85,7 @@ The contents of drawing files remains the same, though,
 and drawing files with `.rna2drawer2` extension can still be opened as before.)
 
 The downloaded file with `.rnacanvas` extension
-contains a complete representation of the drawing.
+contains a complete representation of your drawing.
 By default, the downloaded file will appear in your downloads folder,
 though this can be changed by changing the corresponding setting in your web browser.
 
