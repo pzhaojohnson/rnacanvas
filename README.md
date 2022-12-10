@@ -19,9 +19,9 @@ The [first version](https://github.com/pzhaojohnson/RNA2Drawer#rna2drawer) of RN
 which was desktop-based,
 was published in the journal <em>RNA Biology</em> in 2019.
 
-&nbsp;&nbsp;&nbsp;&nbsp;<b>Article:</b> [https://doi.org/10.1080/15476286.2019.1659081](https://doi.org/10.1080/15476286.2019.1659081)
+* <b>Article:</b> [https://doi.org/10.1080/15476286.2019.1659081](https://doi.org/10.1080/15476286.2019.1659081)
 
-&nbsp;&nbsp;&nbsp;&nbsp;<b><em>If you use RNAcanvas to draw structures in a publication, a citation is greatly appreciated!</em></b>
+* <b><em>If you use RNAcanvas to draw structures in a publication, a citation is greatly appreciated!</em></b>
 
 If you have questions, find issues, or have feature requests, email [contact@rnacanvas.app](mailto:contact@rnacanvas.app) or open an issue thread here on GitHub.
 
