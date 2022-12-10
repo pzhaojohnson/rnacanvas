@@ -14,7 +14,7 @@ such that all elements of a drawing (e.g., bases and bonds)
 are exported as individual SVG and PowerPoint objects,
 allowing for further manipulation in a vector graphics editor such as Adobe Illustrator or PowerPoint.
 
-This project was formally named RNA2Drawer.
+This project was formerly named RNA2Drawer.
 The original [desktop-based version](https://github.com/pzhaojohnson/RNA2Drawer#rna2drawer) of RNA2Drawer,
 was published in the journal <em>RNA Biology</em> in 2019.
 
