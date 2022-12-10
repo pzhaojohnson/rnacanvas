@@ -21,7 +21,7 @@ was published in the journal <em>RNA Biology</em> in 2019.
 
 * <b>Article in <em>RNA Biology</em>:</b> [https://doi.org/10.1080/15476286.2019.1659081](https://doi.org/10.1080/15476286.2019.1659081)
 
-* <b><em>If you use RNAcanvas to draw structures in a publication, a citation of the above article is greatly appreciated!</em></b>
+* <b><em>Citations of the above article are greatly appreciated if you use RNAcanvas to draw structures in publications!</em></b>
 
 If you have questions, find issues, or have feature requests, email [contact@rnacanvas.app](mailto:contact@rnacanvas.app) or open an issue thread here on GitHub.
 
