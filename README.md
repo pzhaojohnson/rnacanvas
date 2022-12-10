@@ -162,7 +162,7 @@ will unpair them.
 
 By default, secondary bonds are added when possible.
 <b>To add tertiary bonds in place of secondary bonds,
-hold the</b> `shift` <b>key when pairing bases.</b>
+hold the</b> `Shift` <b>key when pairing bases.</b>
 
 https://user-images.githubusercontent.com/28662629/201538339-7cd74caf-a9d5-4734-b120-78a269528517.mov
 
