@@ -21,7 +21,7 @@ which was published in the journal <em>RNA Biology</em>.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<b><em>If you use RNAcanvas to draw structures in a publication, a citation is greatly appreciated!</em></b>
 
-If you have questions, find issues, or have feature requests, email [contact@rna2drawer.app](mailto:contact@rna2drawer.app) or open an issue thread here on GitHub.
+If you have questions, find issues, or have feature requests, email [contact@rnacanvas.app](mailto:contact@rnacanvas.app) or open an issue thread here on GitHub.
 
 <p align="center" >
   <img src="https://user-images.githubusercontent.com/28662629/201731219-cb2adb6b-b2a1-47ce-b2a1-f20f457026ba.svg" />
