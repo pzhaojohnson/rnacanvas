@@ -78,7 +78,7 @@ of the sequence and structure text boxes.
 ## Saving and Opening Drawings
 
 Drawings can be saved using the `File`: `Save` menu button,
-which will cause a file with `.rnacanvas` extension to be downloaded.
+which will cause a drawing file with `.rnacanvas` extension to be downloaded.
 
 (Drawing files used to have `.rna2drawer2` extension
 before the app was renamed from RNA2Drawer to RNAcanvas.
