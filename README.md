@@ -15,7 +15,8 @@ are exported as individual SVG and PowerPoint objects,
 allowing for further manipulation in a vector graphics editor such as Adobe Illustrator or PowerPoint.
 
 This project was formerly named RNA2Drawer.
-The original [desktop-based version](https://github.com/pzhaojohnson/RNA2Drawer#rna2drawer) of RNA2Drawer,
+The [first version](https://github.com/pzhaojohnson/RNA2Drawer#rna2drawer) of RNA2Drawer,
+which was desktop-based,
 was published in the journal <em>RNA Biology</em> in 2019.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<b>Article:</b> [https://doi.org/10.1080/15476286.2019.1659081](https://doi.org/10.1080/15476286.2019.1659081)
