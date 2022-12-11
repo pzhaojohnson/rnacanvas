@@ -85,7 +85,7 @@ before the web app was renamed from RNA2Drawer to RNAcanvas.
 The contents of drawing files remains the same, though,
 and drawing files with `.rna2drawer2` extension can still be opened as before.)
 
-The downloaded drawing file with `.rnacanvas` extension
+The downloaded drawing file
 contains a complete representation of your drawing.
 By default, the downloaded drawing file will appear in your downloads folder,
 though this can be changed by changing the corresponding setting in your web browser.
@@ -99,7 +99,7 @@ and upload your saved drawing
 
 <b><em>Opening a saved drawing from before the RNA2Drawer web app.</em></b>
 Saved drawings from before the RNA2Drawer web app with `.rna2drawer` extension (no trailing "2") can also be opened,
-though not all aspects of the drawing will be preserved.
+though not all aspects of a drawing will be preserved.
 A list of which aspects will be preserved
 can be viewed by clicking on the `Details` toggle
 in the form to open saved drawings.
