@@ -38,7 +38,7 @@ describe('App class', () => {
     document.title = 'asdf'; // make sure title is not already RNA2Drawer
     expect(app.drawing.isEmpty()).toBeTruthy();
     app.updateDocumentTitle();
-    expect(document.title).toBe('RNA2Drawer');
+    expect(document.title).toBe('RNAcanvas');
     appendSequence(app.strictDrawing.drawing, { id: '1123nm', characters: 'asdfQWER' });
     app.updateDocumentTitle();
     expect(document.title).toBe('1123nm');

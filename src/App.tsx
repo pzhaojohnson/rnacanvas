@@ -107,7 +107,7 @@ export class App {
   }
 
   updateDocumentTitle() {
-    document.title = this.drawing.isEmpty() ? 'RNA2Drawer' : this.drawingTitle.value;
+    document.title = this.drawing.isEmpty() ? 'RNAcanvas' : this.drawingTitle.value;
   }
 
   refresh() {
