@@ -64,6 +64,30 @@ function ErrorMessage(
   );
 }
 
+function FileExtensionsNote(
+  props: {
+    style?: React.CSSProperties,
+  },
+) {
+  let dotRNAcanvas = (
+    <span className={styles.dotRNAcanvas} >
+      .rnacanvas
+    </span>
+  );
+
+  let dotRNA2Drawer = (
+    <span className={styles.dotRNA2Drawer} >
+      .rna2drawer
+    </span>
+  );
+
+  return (
+    <p className={styles.fileExtensionsNote} style={props.style} >
+      (Drawing files can have {dotRNAcanvas} or {dotRNA2Drawer} extension.)
+    </p>
+  );
+}
+
 function DetailsToggle(
   props: {
     onClick: () => void,
@@ -145,6 +169,8 @@ export function OpenSavedDrawingForm(props: Props) {
     </ErrorMessage>
   ) : null;
 
+  let fileExtensionsNote = <FileExtensionsNote />;
+
   let detailsToggleSpacer = (
     <div style={{ height: errorMessageString ? '18px' : '42px' }} />
   );
@@ -165,6 +191,7 @@ export function OpenSavedDrawingForm(props: Props) {
           <div className={styles.body} >
             {drawingFileInput}
             {errorMessage}
+            {fileExtensionsNote}
             {detailsToggleSpacer}
             {detailsToggle}
             {oldDrawingNotes}
