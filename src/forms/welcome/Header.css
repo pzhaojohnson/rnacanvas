@@ -1,5 +1,24 @@
 .appName {
+  position: relative;
+}
+
+.RNA {
+  font-family: 'Open Sans', sans-serif;
   font-size: 32px;
+  font-weight: 600;
+  color: black;
+
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.canvas {
+  position: absolute;
+  top: -9px;
+  left: 75px;
+
+  font-family: 'Dancing Script', cursive;
+  font-size: 45px;
   font-weight: 600;
   color: black;
 

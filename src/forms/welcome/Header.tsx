@@ -4,9 +4,14 @@ import { AppIcon } from './AppIcon';
 
 function AppName() {
   return (
-    <p className={styles.appName} >
-      RNA2Drawer
-    </p>
+    <div className={styles.appName} >
+      <p className={styles.RNA} >
+        RNA
+      </p>
+      <p className={styles.canvas} >
+        canvas
+      </p>
+    </div>
   );
 }
 
