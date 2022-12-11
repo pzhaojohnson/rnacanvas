@@ -54,9 +54,9 @@ function ContactEmailLink() {
   return (
     <a
       className={styles.moreInfoLinks}
-      href='mailto:contact@rna2drawer.app'
+      href='mailto:contact@rnacanvas.app'
     >
-      contact@rna2drawer.app
+      contact@rnacanvas.app
     </a>
   );
 }
@@ -65,7 +65,7 @@ function GitHubLink() {
   return (
     <a
       className={styles.moreInfoLinks}
-      href='https://github.com/pzhaojohnson/rna2drawer2/blob/main/README.md'
+      href='https://github.com/pzhaojohnson/rnacanvas/blob/main/README.md'
     >
       GitHub page
     </a>
@@ -86,7 +86,7 @@ function UpdatesLink() {
   return (
     <a
       className={styles.updatesLink}
-      href='https://github.com/pzhaojohnson/rna2drawer2/releases'
+      href='https://github.com/pzhaojohnson/rnacanvas/releases'
     >
       Latest Updates
     </a>
