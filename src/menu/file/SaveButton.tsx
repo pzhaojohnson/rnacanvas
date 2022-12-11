@@ -14,7 +14,7 @@ export function SaveButton(props: Props) {
       onClick={() => {
         let name = document.title ? document.title : 'Drawing';
         offerFileForDownload({
-          name: name + '.rna2drawer2',
+          name: name + '.rnacanvas',
           type: 'text/plain',
           contents: props.app.strictDrawing.savableString,
         });
