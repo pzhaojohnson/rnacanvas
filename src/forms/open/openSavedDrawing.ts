@@ -86,13 +86,17 @@ export function openSavedDrawing(args: Args) {
   let fileName = savedDrawing.name;
   let fileExtension = parseFileExtension(fileName);
 
+  let hasRNAcanvasExtension = (
+    fileExtension.toLowerCase().includes('rnacanvas')
+  );
+
   let hasRNA2DrawerExtension = (
     fileExtension.toLowerCase().includes('rna2drawer')
   );
 
   return new Promise<void>((resolve, reject) => {
-    if (!hasRNA2DrawerExtension) {
-      reject(new Error('File must have .rna2drawer extension.'));
+    if (!hasRNAcanvasExtension && !hasRNA2DrawerExtension) {
+      reject(new Error('Drawing files must have .rnacanvas or .rna2drawer extension.'));
     }
 
     savedDrawing.text().then(text => {
@@ -110,7 +114,7 @@ export function openSavedDrawing(args: Args) {
       }
 
       if (!opened) {
-        throw new Error('Invalid .rna2drawer file.');
+        throw new Error('Invalid drawing file.');
       }
 
       updateDrawingTitle(app, fileName);
