@@ -97,7 +97,7 @@ function DetailsToggle(
     <_DetailsToggle
       onClick={props.onClick}
       style={{
-        marginRight: '440px', padding: '1px 14px',
+        marginRight: '468px', padding: '1px 14px',
         fontSize: '12px', fontWeight: 500,
       }}
     >
@@ -169,10 +169,14 @@ export function OpenSavedDrawingForm(props: Props) {
     </ErrorMessage>
   ) : null;
 
-  let fileExtensionsNote = <FileExtensionsNote />;
+  let fileExtensionsNote = (
+    <FileExtensionsNote
+      style={{ marginTop: errorMessageString ? '25px' : '38px' }}
+    />
+  );
 
   let detailsToggleSpacer = (
-    <div style={{ height: errorMessageString ? '18px' : '42px' }} />
+    <div style={{ height: '40px' }} />
   );
 
   let detailsToggle = (
