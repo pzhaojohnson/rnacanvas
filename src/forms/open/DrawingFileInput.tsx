@@ -88,7 +88,7 @@ export function DrawingFileInput(props: Props) {
         fileName
       ) : (
         <span>
-          Upload a file with {dotRNA2Drawer} extension...
+          Upload a drawing file...
         </span>
       )}
     </p>
