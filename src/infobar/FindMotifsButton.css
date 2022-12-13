@@ -18,9 +18,8 @@
 
 .findMotifsButton::before {
   content: "";
-  border: 1px solid rgba(197, 197, 215, 0.99);
+  border: 1px solid hsl(240, 21%, 71%);
   border-radius: 30px;
-  box-shadow: 0 3px 3px rgba(225, 225, 238, 0.1);
 
   position: absolute;
   top: 0px;
