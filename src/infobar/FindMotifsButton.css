@@ -45,7 +45,7 @@
   font-size: 12px;
   font-weight: 500;
   font-style: normal;
-  color: #050530;
+  color: hsl(240, 80%, 9%);
 
   /* for when the infobar is larger than its container */
   white-space: nowrap;
