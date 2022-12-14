@@ -1,5 +1,5 @@
 .toolOptionToggle {
-  padding: 3px 0px;
+  min-height: 22px;
 
   /* use before pseudo-element for border and box shadow */
   border: none;
