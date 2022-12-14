@@ -51,8 +51,8 @@
 }
 
 .untoggled {
-  font-weight: 500;
-  color: hsl(240, 4%, 38%);
+  font-weight: 600;
+  color: hsl(240, 4%, 36%);
 }
 
 .untoggled .check {
