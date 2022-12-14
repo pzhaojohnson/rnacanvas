@@ -81,7 +81,7 @@
 
 .off .text {
   font-weight: 500;
-  color: rgba(112, 112, 121, 0.99);
+  color: hsl(240, 5%, 35%);
 }
 
 .off .spacer {
