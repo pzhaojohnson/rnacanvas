@@ -5,7 +5,7 @@
 }
 
 .pillContainer {
-  width: 143px;
+  width: 144px;
   height: 20px;
 
   /* use before pseudo-element for border and box shadow */
@@ -58,7 +58,7 @@
 .on .pillContainer::before {
   border-color: #1e1e21;
   background-color: #1e1e21;
-  box-shadow: 0 3px 3px rgba(208, 208, 226, 0.15);
+  box-shadow: 0 3px 3px rgba(208, 208, 226, 0.09);
 }
 
 .on .text {
