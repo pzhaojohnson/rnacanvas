@@ -75,9 +75,8 @@
 }
 
 .off .pillContainer::before {
-  border-color: rgba(193, 193, 207, 0.99);
+  border-color: hsl(240, 12%, 68%);
   background-color: white;
-  box-shadow: 0 3px 3px rgba(221, 221, 235, 0.09);
 }
 
 .off .text {
