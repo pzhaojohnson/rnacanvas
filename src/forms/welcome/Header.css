@@ -15,11 +15,11 @@
 .canvas {
   position: absolute;
   top: -9px;
-  left: 74px;
+  left: 71px;
 
-  font-family: 'Dancing Script', cursive;
-  font-size: 45px;
-  font-weight: 600;
+  font-family: 'Corinthia', cursive;
+  font-size: 56px;
+  font-weight: 700;
   color: black;
 
   user-select: none;
