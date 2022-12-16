@@ -97,7 +97,7 @@ function UpdatesNotice() {
   return (
     <p className={styles.updatesNotice} >
       See the <UpdatesLink />!&nbsp;
-      <em className={styles.updatesNoticeDate} >(Dec. 15, 2022)</em>
+      <em className={styles.updatesNoticeDate} >(Dec. 16, 2022)</em>
     </p>
   );
 }
