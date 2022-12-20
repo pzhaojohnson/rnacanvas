@@ -40,6 +40,7 @@ If you have questions, find issues, or have feature requests, email [contact@rna
 * [Removing Elements](#removing-elements)
 * [Adding Tertiary Bonds in Place of Secondary Bonds](#adding-tertiary-bonds-in-place-of-secondary-bonds)
 * [Precisely Rotating the Drawing](#precisely-rotating-the-drawing)
+* [The Termini Gap](#the-termini-gap)
 * [Coloring Bases According to Data](#coloring-bases-according-to-data)
 * [Strung Elements and Non-Canonical Base-Pairs](#strung-elements-and-non-canonical-base-pairs)
 * [GU Wobble Base-Pairs as Dots](#gu-wobble-base-pairs-as-dots)
@@ -265,6 +266,15 @@ using the `Rotation` field in the `Layout` form
 accessible via the `Edit`: `Layout` menu button.
 
 https://user-images.githubusercontent.com/28662629/204422892-a50906a8-34d9-4a3b-b912-c4232c2be876.mov
+
+## The Termini Gap
+
+The termini gap controls the distance between the first and last bases in the drawing
+when the outermost loop is round
+and can be edited in the `Layout` form,
+which is opened using the `Edit`: `Layout` menu button.
+
+https://user-images.githubusercontent.com/28662629/208734797-b1348985-9494-4866-a72f-57f4993a7da9.mov
 
 ## Coloring Bases According to Data
 
