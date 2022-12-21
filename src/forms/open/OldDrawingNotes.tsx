@@ -12,13 +12,13 @@ function Disclaimer() {
   );
 }
 
-function PreservedAspect(
+function PreservedItem(
   props: {
     children?: React.ReactNode,
   },
 ) {
   return (
-    <div className={styles.preservedAspect} >
+    <div className={styles.preservedItem} >
       <div className={styles.solidDot} />
       <div style={{ width: '8px' }} />
       <p className={styles.text} >
@@ -28,7 +28,7 @@ function PreservedAspect(
   );
 }
 
-function PreservedAspectsList() {
+function PreservedItemsList() {
   let leadingText = (
     <p className={styles.text} style={{ margin: '0' }} >
       Only...
@@ -45,11 +45,11 @@ function PreservedAspectsList() {
     <div style={{ margin: '14px 0 0 28px' }} >
       {leadingText}
       <div style={{ margin: '10px 0px 0px 22px' }} >
-        <PreservedAspect>The sequence and its ID.</PreservedAspect>
-        <PreservedAspect>The secondary structure.</PreservedAspect>
-        <PreservedAspect>Tertiary interactions and their colors.</PreservedAspect>
-        <PreservedAspect>Base numbering and the numbering offset.</PreservedAspect>
-        <PreservedAspect>Base colors and outlines.</PreservedAspect>
+        <PreservedItem>The sequence and its ID.</PreservedItem>
+        <PreservedItem>The secondary structure.</PreservedItem>
+        <PreservedItem>Tertiary interactions and their colors.</PreservedItem>
+        <PreservedItem>Base numbering and the numbering offset.</PreservedItem>
+        <PreservedItem>Base colors and outlines.</PreservedItem>
       </div>
       {trailingText}
     </div>
@@ -60,7 +60,7 @@ export function OldDrawingNotes() {
   return (
     <div className={styles.oldDrawingNotes} >
       <Disclaimer />
-      <PreservedAspectsList />
+      <PreservedItemsList />
     </div>
   );
 }
