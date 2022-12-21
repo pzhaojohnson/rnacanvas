@@ -5,7 +5,7 @@ import styles from './OldDrawingNotes.css';
 function Disclaimer() {
   return (
     <div className={styles.disclaimer} >
-      <p className={styles.disclaimerText} >
+      <p className={styles.text} >
         Old drawings from before the RNA2Drawer web app will not be entirely preserved.
       </p>
     </div>
@@ -15,7 +15,7 @@ function Disclaimer() {
 function PreservedAspectsLeadingText() {
   return (
     <p
-      className={styles.preservedAspectsSurroundingText}
+      className={styles.text}
       style={{ margin: '0' }}
     >
       Only...
@@ -32,7 +32,7 @@ function PreservedAspect(
     <div className={styles.preservedAspect} >
       <div className={styles.solidDot} />
       <div style={{ width: '8px' }} />
-      <p className={styles.preservedAspectText} >
+      <p className={styles.text} >
         {props.children}
       </p>
     </div>
@@ -42,7 +42,7 @@ function PreservedAspect(
 function PreservedAspectsTrailingText() {
   return (
     <p
-      className={styles.preservedAspectsSurroundingText}
+      className={styles.text}
       style={{ margin: '10px 0 0 0' }}
     >
       ...will be preserved for drawings from before the RNA2Drawer web app.

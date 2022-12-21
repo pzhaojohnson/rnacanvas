@@ -2,26 +2,20 @@
   margin: 22px 0px 0px 0px;
 }
 
+.text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(240, 3%, 8%);
+
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 .disclaimer {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.disclaimerText {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: hsl(240, 3%, 8%);
-  user-select: none;
-}
-
-.preservedAspectsSurroundingText {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: hsl(240, 3%, 8%);
-  user-select: none;
 }
 
 .preservedAspect {
@@ -37,12 +31,4 @@
   height: 6px;
   border-radius: 3px;
   background-color: hsl(240, 3%, 5%);
-}
-
-.preservedAspectText {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: hsl(240, 3%, 8%);
-  user-select: none;
 }
