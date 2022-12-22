@@ -71,12 +71,6 @@ export function DrawingFileInput(props: Props) {
     />
   );
 
-  let dotRNA2Drawer = (
-    <span className={styles.dotRNA2Drawer} >
-      .rna2drawer
-    </span>
-  );
-
   let fileName = (
     <span className={styles.fileName} >
       {fileNameString}
