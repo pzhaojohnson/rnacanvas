@@ -82,9 +82,7 @@ export function DrawingFileInput(props: Props) {
       {fileNameString ? (
         fileName
       ) : (
-        <span>
-          Upload a drawing file...
-        </span>
+        'Upload a drawing file...'
       )}
     </p>
   );
