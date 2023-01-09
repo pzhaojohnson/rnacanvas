@@ -1,0 +1,654 @@
+{
+ "className": "StrictDrawing",
+ "drawing": {
+  "className": "Drawing",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:svgjs=\"http://svgjs.dev/svgjs\" viewBox=\"0 0 3210.0129293676146 2296.1867662822547\" width=\"3210.0129293676146\" height=\"2296.1867662822547\" style=\"cursor: auto;\"><text id=\"id46fee06-4c17-4557-b66c-752c0034a1e5\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1529.7473918156406\" y=\"1127.3765589261538\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</text><text id=\"i99820f81-4329-46c2-b75a-a4264cec01ea\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1543.0339933569849\" y=\"1128.8096049009323\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</text><text id=\"i44812631-8038-4a9c-af1e-821954de9e61\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1553.7880774694254\" y=\"1136.399869669914\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</text><text id=\"ifb7c7bed-6ccc-428d-96e6-6f9c5e0f03b6\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1567.2803054046244\" y=\"1136.5680314262208\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</text><text id=\"ia898dc71-f787-447d-b856-9b7bd1e81a2b\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1581.0303458398234\" y=\"1136.7440056825271\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</text><text id=\"if6dd8e27-750b-4e4a-9f5d-a34740b7584e\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1594.522573775023\" y=\"1136.9199799388334\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</text><text id=\"i8442ecb2-030e-41aa-8aae-aa2e23700801\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1608.030426710222\" y=\"1137.0881416951397\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</text><text id=\"i0004e395-8e4a-4096-9b72-58daa37fde72\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1621.5226546454205\" y=\"1137.2641159514465\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</text><text id=\"icac0e633-5ea6-49af-bbf7-743c55efac03\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1635.03050758062\" y=\"1137.4322777077532\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</text><text id=\"i7ce95951-766a-43f9-bd7c-85c77661141a\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1646.4939757678812\" y=\"1130.7141999409364\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</text><text id=\"iefc7acaa-5f07-44c0-94ce-b5e65e3c301a\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1659.5037537197913\" y=\"1131.7013621400865\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</text><text id=\"i3768b5fb-ae8c-421b-b8ff-a07e8980cc8b\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1670.1173892106513\" y=\"1140.041439943594\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</text><text id=\"i19974f01-bca1-4596-b695-aed142910ada\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1673.9066530725077\" y=\"1152.783456125203\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</text><text id=\"ib8d5afad-e863-460a-8837-31ed5d28ff70\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1669.7840568348988\" y=\"1165.4274741174304\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</text><text id=\"i69aeb919-51f3-44aa-9aed-53a2665968cb\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1659.2166432325012\" y=\"1173.500333999728\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</text><text id=\"i8ad9b0dc-b10f-4c0e-8fae-54a02947e20c\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1645.6901729767133\" y=\"1174.1393166397993\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</text><text id=\"ia0b7603a-e166-4d61-8a10-51afb83490a9\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1634.388676716745\" y=\"1167.1339291651911\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</text><text id=\"i2bacaa3c-d40c-4ba6-8d1e-b0baaf787e48\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1621.138636281546\" y=\"1166.9579549088844\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</text><text id=\"i74bea565-05e3-479f-94a0-78402d489651\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1607.646408346347\" y=\"1166.7897931525777\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</text><text id=\"id68bf2e1-237a-4070-a933-a907158b7583\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1593.9041804111484\" y=\"1166.6138188962714\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</text><text id=\"ie7230dce-868e-408b-9700-e491653d4265\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1580.4041399759499\" y=\"1166.4378446399646\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</text><text id=\"i6c2b3229-3947-4954-a71e-efd48056ac28\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1567.1540995407504\" y=\"1166.2696828836579\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</text><text id=\"ic427ab02-6143-4bc4-975a-b0c28b3772fa\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1553.646246605551\" y=\"1166.0937086273516\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</text><text id=\"i945bbef4-2f1d-4cb8-9edc-5ab7e764e386\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1542.900970608859\" y=\"1173.973148950719\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</text><text id=\"ie5fde0d2-0327-497c-8ec5-4e3f54bfee96\" font-family=\"Arial\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" x=\"1529.6092853943414\" y=\"1175.0528714648772\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</text><line x1=\"1540.949776514427\" y1=\"1125.115709159238\" x2=\"1538.3271527229065\" y2=\"1124.8320270277854\" id=\"i258f0da1-1244-4eaa-a01c-024cb586336d\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1552.866771098908\" y1=\"1130.2337611831022\" x2=\"1550.6950979657265\" y2=\"1128.7362743196627\" id=\"i29e62d13-a77b-4f5d-89be-e1607bbb294e\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1565.2804542557149\" y1=\"1133.3801383298342\" x2=\"1562.780659263923\" y2=\"1133.3481227240447\" id=\"ia11109f4-f835-461c-9d36-5e5c58a517bd\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1578.779347211389\" y1=\"1133.553022601098\" x2=\"1576.2795522195972\" y2=\"1133.5210069953087\" id=\"i319f3db4-bef9-4b60-8da6-a7b004a34bbc\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1592.2782401670631\" y1=\"1133.725906872362\" x2=\"1589.7784451752716\" y2=\"1133.6938912665726\" id=\"i6b8bef7b-bd3b-4740-bf9a-3edd7af05bd2\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1605.7771331227375\" y1=\"1133.898791143626\" x2=\"1603.2773381309457\" y2=\"1133.8667755378365\" id=\"i1814a618-1767-4ba2-aa12-c2af92dc9f28\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1619.2760260784116\" y1=\"1134.07167541489\" x2=\"1616.7762310866199\" y2=\"1134.0396598091006\" id=\"iac406ca1-c762-4f9a-acc4-a7e245d195d5\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1632.7749190340858\" y1=\"1134.244559686154\" x2=\"1630.275124042294\" y2=\"1134.2125440803645\" id=\"i78467201-8844-42d0-a0fa-63318197c8bd\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1645.1781590352273\" y1=\"1130.2728349038373\" x2=\"1642.8445905422866\" y2=\"1131.6391554891748\" id=\"ia4ff20d6-73b5-44b4-9836-f7c2dd1e95a9\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1657.726325626632\" y1=\"1128.1892909753158\" x2=\"1655.0296069852652\" y2=\"1127.9890850251882\" id=\"i9d5989da-5833-467a-821b-4be5ced1f4d7\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1669.238763000295\" y1=\"1133.5986741032905\" x2=\"1667.132538014009\" y2=\"1131.9027406846953\" id=\"ib427e07f-c78c-423a-beaa-74c97d7110cb\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1675.6443143079455\" y1=\"1144.588057732629\" x2=\"1674.8734098104167\" y2=\"1141.9961317867637\" id=\"icc5b4cf3-61d9-45ad-b09a-7ef8716f1a89\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1674.6777768625539\" y1=\"1157.2712531294676\" x2=\"1675.5148087232635\" y2=\"1154.699920494953\" id=\"ia153ea27-3ba2-4593-a046-e808dfd91703\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1666.6809484443984\" y1=\"1167.1630869007308\" x2=\"1668.829916096191\" y2=\"1165.5216509791335\" id=\"ibbc8ccab-6daa-4b03-80c5-fde4a8fc162d\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1654.4817569476622\" y1=\"1170.7654981673254\" x2=\"1657.1827184174922\" y2=\"1170.6344218855047\" id=\"i469bf3a6-9446-4497-bb59-fb4a59f0c75d\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1642.3942168936246\" y1=\"1166.804561971202\" x2=\"1644.6920279815356\" y2=\"1168.2301979897686\" id=\"i87414195-3abc-4ed6-862d-1b2d9a54e810\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1629.8947786455133\" y1=\"1163.9101085828477\" x2=\"1632.394573637305\" y2=\"1163.942124188637\" id=\"iaed1f0bb-c868-43b5-963b-32784c515dfa\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1616.3958856898391\" y1=\"1163.7372243115838\" x2=\"1618.895680681631\" y2=\"1163.7692399173732\" id=\"i36ba8003-2f3a-4ad0-a360-ea9481f8174d\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1602.896992734165\" y1=\"1163.5643400403196\" x2=\"1605.3967877259568\" y2=\"1163.5963556461093\" id=\"i0727bd82-328f-496f-954f-809e69215913\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1589.3980997784909\" y1=\"1163.3914557690557\" x2=\"1591.8978947702826\" y2=\"1163.4234713748451\" id=\"i78234429-85bb-487a-9c67-03654621258a\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1575.8992068228167\" y1=\"1163.2185714977918\" x2=\"1578.3990018146083\" y2=\"1163.2505871035812\" id=\"ib513f29e-2e65-49e2-a5ba-e655c84a3087\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1562.4003138671424\" y1=\"1163.045687226528\" x2=\"1564.9001088589341\" y2=\"1163.0777028323173\" id=\"i273854ea-0790-47fc-9eec-a7bbab8535e0\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1550.4456889843273\" y1=\"1167.7009269318467\" x2=\"1552.6000172874406\" y2=\"1166.1237722263393\" id=\"i14fc3a68-eca5-4e16-9acf-e09e08ec5182\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1538.1713357685617\" y1=\"1171.4987639435944\" x2=\"1540.832460831151\" y2=\"1171.2820595274895\" id=\"i72d7e2c0-c364-4cb4-8163-ff1b9da1631a\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"0\"></line><line x1=\"1557.204272828087\" y1=\"1139.277196371607\" x2=\"1556.9776023390962\" y2=\"1156.975744913491\" id=\"ib4e6cef3-b9c7-4632-9a3b-6cdb87887477\" stroke=\"#000000\" stroke-width=\"2\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"1\"></line><line x1=\"1570.703165783761\" y1=\"1139.450080642871\" x2=\"1570.4764952947703\" y2=\"1157.148629184755\" id=\"ided9fde5-cd6c-4937-b794-21f042cf830b\" stroke=\"#000000\" stroke-width=\"2\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"1\"></line><line x1=\"1584.2020587394352\" y1=\"1139.6229649141349\" x2=\"1583.9753882504447\" y2=\"1157.321513456019\" id=\"ia8284125-cc0a-4223-83c1-4e0d51992d93\" stroke=\"#000000\" stroke-width=\"2\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"1\"></line><line x1=\"1597.7009516951096\" y1=\"1139.7958491853988\" x2=\"1597.4742812061188\" y2=\"1157.4943977272828\" id=\"i89942731-fbef-43b5-bbf1-684f89fd809e\" stroke=\"#000000\" stroke-width=\"2\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"1\"></line><line x1=\"1611.1998446507837\" y1=\"1139.968733456663\" x2=\"1610.973174161793\" y2=\"1157.667281998547\" id=\"ibd2e4d94-4c62-48a4-bd35-77f53e86db94\" stroke=\"#000000\" stroke-width=\"2\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"1\"></line><line x1=\"1624.6987376064578\" y1=\"1140.1416177279268\" x2=\"1624.472067117467\" y2=\"1157.8401662698109\" id=\"i3cce5e4d-0b22-40d3-b70b-a72ae6458fc3\" stroke=\"#000000\" stroke-width=\"2\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"1\"></line><line x1=\"1638.197630562132\" y1=\"1140.3145019991907\" x2=\"1637.9709600731412\" y2=\"1158.0130505410748\" id=\"i053e892d-b6ff-485e-b520-d3927ef11087\" stroke=\"#000000\" stroke-width=\"2\" stroke-opacity=\"1\" stroke-linecap=\"butt\" stroke-dasharray=\"none\" opacity=\"1\"></line><text id=\"if810c89a-d59c-4325-8ada-4701a647076c\" font-family=\"Arial\" font-size=\"8\" font-weight=\"normal\" fill=\"#808080\" fill-opacity=\"1\" x=\"1597.1390811662895\" y=\"1189.8922368573108\" text-anchor=\"middle\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">20</text><line x1=\"1597.2940987178501\" y1=\"1171.4932381674737\" x2=\"1597.1907536834765\" y2=\"1179.4925706273652\" id=\"i45534ac3-b41f-477c-8d63-cdd6fa7540d0\" stroke=\"#808080\" stroke-width=\"1\" stroke-opacity=\"1\" stroke-dasharray=\"none\"></line></svg>",
+  "sequences": [
+   {
+    "className": "Sequence",
+    "id": "A Small Structure",
+    "bases": [
+     {
+      "className": "Base",
+      "textId": "id46fee06-4c17-4557-b66c-752c0034a1e5",
+      "center": {
+       "x": 1532.9961704546809,
+       "y": 1124.255389075566
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "i99820f81-4329-46c2-b75a-a4264cec01ea",
+      "center": {
+       "x": 1546.2807587826526,
+       "y": 1125.6923471114574
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "i44812631-8038-4a9c-af1e-821954de9e61",
+      "center": {
+       "x": 1557.281110281982,
+       "y": 1133.2776883913075
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "ifb7c7bed-6ccc-428d-96e6-6f9c5e0f03b6",
+      "center": {
+       "x": 1570.780003237656,
+       "y": 1133.4505726625714
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "ia898dc71-f787-447d-b856-9b7bd1e81a2b",
+      "center": {
+       "x": 1584.2788961933302,
+       "y": 1133.6234569338353
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "if6dd8e27-750b-4e4a-9f5d-a34740b7584e",
+      "center": {
+       "x": 1597.7777891490045,
+       "y": 1133.7963412050992
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "i8442ecb2-030e-41aa-8aae-aa2e23700801",
+      "center": {
+       "x": 1611.2766821046787,
+       "y": 1133.9692254763634
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "i0004e395-8e4a-4096-9b72-58daa37fde72",
+      "center": {
+       "x": 1624.7755750603528,
+       "y": 1134.1421097476273
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "icac0e633-5ea6-49af-bbf7-743c55efac03",
+      "center": {
+       "x": 1638.274468016027,
+       "y": 1134.3149940188912
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "i7ce95951-766a-43f9-bd7c-85c77661141a",
+      "center": {
+       "x": 1649.748281561487,
+       "y": 1127.5969963741209
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "iefc7acaa-5f07-44c0-94ce-b5e65e3c301a",
+      "center": {
+       "x": 1663.0076510504102,
+       "y": 1128.581379626383
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "i3768b5fb-ae8c-421b-b8ff-a07e8980cc8b",
+      "center": {
+       "x": 1673.3636499638937,
+       "y": 1136.9200351616028
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "i19974f01-bca1-4596-b695-aed142910ada",
+      "center": {
+       "x": 1677.1540741544684,
+       "y": 1149.66415435779
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "ib8d5afad-e863-460a-8837-31ed5d28ff70",
+      "center": {
+       "x": 1673.038511431349,
+       "y": 1162.3070192666305
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "i69aeb919-51f3-44aa-9aed-53a2665968cb",
+      "center": {
+       "x": 1662.4723531092404,
+       "y": 1170.3777186132338
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "i8ad9b0dc-b10f-4c0e-8fae-54a02947e20c",
+      "center": {
+       "x": 1649.192122255914,
+       "y": 1171.0222014395963
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "ia0b7603a-e166-4d61-8a10-51afb83490a9",
+      "center": {
+       "x": 1637.8941226192462,
+       "y": 1164.0125585213743
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "i2bacaa3c-d40c-4ba6-8d1e-b0baaf787e48",
+      "center": {
+       "x": 1624.395229663572,
+       "y": 1163.8396742501104
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "i74bea565-05e3-479f-94a0-78402d489651",
+      "center": {
+       "x": 1610.896336707898,
+       "y": 1163.6667899788465
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "id68bf2e1-237a-4070-a933-a907158b7583",
+      "center": {
+       "x": 1597.3974437522238,
+       "y": 1163.4939057075824
+      },
+      "numbering": {
+       "className": "BaseNumbering",
+       "textId": "if810c89a-d59c-4325-8ada-4701a647076c",
+       "lineId": "i45534ac3-b41f-477c-8d63-cdd6fa7540d0"
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "ie7230dce-868e-408b-9700-e491653d4265",
+      "center": {
+       "x": 1583.8985507965497,
+       "y": 1163.3210214363185
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "i6c2b3229-3947-4954-a71e-efd48056ac28",
+      "center": {
+       "x": 1570.3996578408753,
+       "y": 1163.1481371650545
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "ic427ab02-6143-4bc4-975a-b0c28b3772fa",
+      "center": {
+       "x": 1556.9007648852012,
+       "y": 1162.9752528937906
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "i945bbef4-2f1d-4cb8-9edc-5ab7e764e386",
+      "center": {
+       "x": 1546.1449413865666,
+       "y": 1170.8494462643953
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "ie5fde0d2-0327-497c-8ec5-4e3f54bfee96",
+      "center": {
+       "x": 1532.858855213146,
+       "y": 1171.9313772066887
+      }
+     }
+    ]
+   }
+  ],
+  "primaryBonds": [
+   {
+    "className": "StraightBond",
+    "lineId": "i258f0da1-1244-4eaa-a01c-024cb586336d",
+    "baseId1": "id46fee06-4c17-4557-b66c-752c0034a1e5",
+    "baseId2": "i99820f81-4329-46c2-b75a-a4264cec01ea",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i29e62d13-a77b-4f5d-89be-e1607bbb294e",
+    "baseId1": "i99820f81-4329-46c2-b75a-a4264cec01ea",
+    "baseId2": "i44812631-8038-4a9c-af1e-821954de9e61",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "ia11109f4-f835-461c-9d36-5e5c58a517bd",
+    "baseId1": "i44812631-8038-4a9c-af1e-821954de9e61",
+    "baseId2": "ifb7c7bed-6ccc-428d-96e6-6f9c5e0f03b6",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i319f3db4-bef9-4b60-8da6-a7b004a34bbc",
+    "baseId1": "ifb7c7bed-6ccc-428d-96e6-6f9c5e0f03b6",
+    "baseId2": "ia898dc71-f787-447d-b856-9b7bd1e81a2b",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i6b8bef7b-bd3b-4740-bf9a-3edd7af05bd2",
+    "baseId1": "ia898dc71-f787-447d-b856-9b7bd1e81a2b",
+    "baseId2": "if6dd8e27-750b-4e4a-9f5d-a34740b7584e",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i1814a618-1767-4ba2-aa12-c2af92dc9f28",
+    "baseId1": "if6dd8e27-750b-4e4a-9f5d-a34740b7584e",
+    "baseId2": "i8442ecb2-030e-41aa-8aae-aa2e23700801",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "iac406ca1-c762-4f9a-acc4-a7e245d195d5",
+    "baseId1": "i8442ecb2-030e-41aa-8aae-aa2e23700801",
+    "baseId2": "i0004e395-8e4a-4096-9b72-58daa37fde72",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i78467201-8844-42d0-a0fa-63318197c8bd",
+    "baseId1": "i0004e395-8e4a-4096-9b72-58daa37fde72",
+    "baseId2": "icac0e633-5ea6-49af-bbf7-743c55efac03",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "ia4ff20d6-73b5-44b4-9836-f7c2dd1e95a9",
+    "baseId1": "icac0e633-5ea6-49af-bbf7-743c55efac03",
+    "baseId2": "i7ce95951-766a-43f9-bd7c-85c77661141a",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i9d5989da-5833-467a-821b-4be5ced1f4d7",
+    "baseId1": "i7ce95951-766a-43f9-bd7c-85c77661141a",
+    "baseId2": "iefc7acaa-5f07-44c0-94ce-b5e65e3c301a",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "ib427e07f-c78c-423a-beaa-74c97d7110cb",
+    "baseId1": "iefc7acaa-5f07-44c0-94ce-b5e65e3c301a",
+    "baseId2": "i3768b5fb-ae8c-421b-b8ff-a07e8980cc8b",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "icc5b4cf3-61d9-45ad-b09a-7ef8716f1a89",
+    "baseId1": "i3768b5fb-ae8c-421b-b8ff-a07e8980cc8b",
+    "baseId2": "i19974f01-bca1-4596-b695-aed142910ada",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "ia153ea27-3ba2-4593-a046-e808dfd91703",
+    "baseId1": "i19974f01-bca1-4596-b695-aed142910ada",
+    "baseId2": "ib8d5afad-e863-460a-8837-31ed5d28ff70",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "ibbc8ccab-6daa-4b03-80c5-fde4a8fc162d",
+    "baseId1": "ib8d5afad-e863-460a-8837-31ed5d28ff70",
+    "baseId2": "i69aeb919-51f3-44aa-9aed-53a2665968cb",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i469bf3a6-9446-4497-bb59-fb4a59f0c75d",
+    "baseId1": "i69aeb919-51f3-44aa-9aed-53a2665968cb",
+    "baseId2": "i8ad9b0dc-b10f-4c0e-8fae-54a02947e20c",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i87414195-3abc-4ed6-862d-1b2d9a54e810",
+    "baseId1": "i8ad9b0dc-b10f-4c0e-8fae-54a02947e20c",
+    "baseId2": "ia0b7603a-e166-4d61-8a10-51afb83490a9",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "iaed1f0bb-c868-43b5-963b-32784c515dfa",
+    "baseId1": "ia0b7603a-e166-4d61-8a10-51afb83490a9",
+    "baseId2": "i2bacaa3c-d40c-4ba6-8d1e-b0baaf787e48",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i36ba8003-2f3a-4ad0-a360-ea9481f8174d",
+    "baseId1": "i2bacaa3c-d40c-4ba6-8d1e-b0baaf787e48",
+    "baseId2": "i74bea565-05e3-479f-94a0-78402d489651",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i0727bd82-328f-496f-954f-809e69215913",
+    "baseId1": "i74bea565-05e3-479f-94a0-78402d489651",
+    "baseId2": "id68bf2e1-237a-4070-a933-a907158b7583",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i78234429-85bb-487a-9c67-03654621258a",
+    "baseId1": "id68bf2e1-237a-4070-a933-a907158b7583",
+    "baseId2": "ie7230dce-868e-408b-9700-e491653d4265",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "ib513f29e-2e65-49e2-a5ba-e655c84a3087",
+    "baseId1": "ie7230dce-868e-408b-9700-e491653d4265",
+    "baseId2": "i6c2b3229-3947-4954-a71e-efd48056ac28",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i273854ea-0790-47fc-9eec-a7bbab8535e0",
+    "baseId1": "i6c2b3229-3947-4954-a71e-efd48056ac28",
+    "baseId2": "ic427ab02-6143-4bc4-975a-b0c28b3772fa",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i14fc3a68-eca5-4e16-9acf-e09e08ec5182",
+    "baseId1": "ic427ab02-6143-4bc4-975a-b0c28b3772fa",
+    "baseId2": "i945bbef4-2f1d-4cb8-9edc-5ab7e764e386",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i72d7e2c0-c364-4cb4-8163-ff1b9da1631a",
+    "baseId1": "i945bbef4-2f1d-4cb8-9edc-5ab7e764e386",
+    "baseId2": "ie5fde0d2-0327-497c-8ec5-4e3f54bfee96",
+    "strungElements": []
+   }
+  ],
+  "secondaryBonds": [
+   {
+    "className": "StraightBond",
+    "lineId": "ib4e6cef3-b9c7-4632-9a3b-6cdb87887477",
+    "baseId1": "i44812631-8038-4a9c-af1e-821954de9e61",
+    "baseId2": "ic427ab02-6143-4bc4-975a-b0c28b3772fa",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "ided9fde5-cd6c-4937-b794-21f042cf830b",
+    "baseId1": "ifb7c7bed-6ccc-428d-96e6-6f9c5e0f03b6",
+    "baseId2": "i6c2b3229-3947-4954-a71e-efd48056ac28",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "ia8284125-cc0a-4223-83c1-4e0d51992d93",
+    "baseId1": "ia898dc71-f787-447d-b856-9b7bd1e81a2b",
+    "baseId2": "ie7230dce-868e-408b-9700-e491653d4265",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i89942731-fbef-43b5-bbf1-684f89fd809e",
+    "baseId1": "if6dd8e27-750b-4e4a-9f5d-a34740b7584e",
+    "baseId2": "id68bf2e1-237a-4070-a933-a907158b7583",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "ibd2e4d94-4c62-48a4-bd35-77f53e86db94",
+    "baseId1": "i8442ecb2-030e-41aa-8aae-aa2e23700801",
+    "baseId2": "i74bea565-05e3-479f-94a0-78402d489651",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i3cce5e4d-0b22-40d3-b70b-a72ae6458fc3",
+    "baseId1": "i0004e395-8e4a-4096-9b72-58daa37fde72",
+    "baseId2": "i2bacaa3c-d40c-4ba6-8d1e-b0baaf787e48",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "i053e892d-b6ff-485e-b520-d3927ef11087",
+    "baseId1": "icac0e633-5ea6-49af-bbf7-743c55efac03",
+    "baseId2": "ia0b7603a-e166-4d61-8a10-51afb83490a9",
+    "strungElements": []
+   }
+  ],
+  "tertiaryBonds": []
+ },
+ "generalLayoutProps": {
+  "className": "GeneralStrictLayoutProps",
+  "outermostLoopShape": "round",
+  "rotation": 0,
+  "basePairBondLength": 1.2,
+  "basePairPadding": 0,
+  "terminiGap": 4
+ },
+ "perBaseLayoutProps": [
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0.023255813953488372,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0.023255813953488372,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  }
+ ],
+ "baseWidth": 13.5,
+ "baseHeight": 13.5
+}
