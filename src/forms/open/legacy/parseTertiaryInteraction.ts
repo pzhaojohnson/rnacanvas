@@ -70,7 +70,7 @@ export function parseTertiaryInteraction
     let color = createSVGColor({ cssName: colorName });
 
     return { side1, side2, color };
-  } catch (error: unknown) {
+  } catch (error) {
     console.error(error);
     console.error('Unable to parse tertiary interaction.');
     return undefined;

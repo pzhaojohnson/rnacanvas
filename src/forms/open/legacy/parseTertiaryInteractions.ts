@@ -47,7 +47,7 @@ export function parseTertiaryInteractions
     });
 
     return parsed;
-  } catch (error: unknown) {
+  } catch (error) {
     console.error(error);
     console.error('Unable to parse tertiary interactions.');
     return [];
