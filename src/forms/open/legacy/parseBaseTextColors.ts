@@ -13,7 +13,7 @@ export type Args = (
   { drawingFileContents: LegacyDrawingFileContents }
 );
 
-export function parseBaseColors
+export function parseBaseTextColors
 (
   args: Args,
 ): ReturnType<typeof createSVGColor>[]
@@ -24,34 +24,38 @@ export function parseBaseColors
 
     let lines = splitLines(drawingFileContents);
 
-    let baseColorsLine = lines.find(line => line.startsWith('base_colors'));
+    let baseTextColorsLine = lines.find(
+      line => line.startsWith('base_colors')
+    );
 
-    if (!baseColorsLine) {
+    if (!baseTextColorsLine) {
       return [];
     }
 
-    let baseColorsData = baseColorsLine.substring('base_colors '.length);
+    let baseTextColorsData = (
+      baseTextColorsLine.substring('base_colors '.length)
+    );
 
-    if (isBlank(baseColorsData)) {
+    if (isBlank(baseTextColorsData)) {
       return [];
     }
 
     // is delimited by commas
-    let baseColorNames = baseColorsData.split(',');
+    let baseTextColorNames = baseTextColorsData.split(',');
 
-    let baseColors: ReturnType<typeof createSVGColor>[] = [];
+    let baseTextColors: ReturnType<typeof createSVGColor>[] = [];
 
-    // important to maintain the positions of base colors in the list
+    // must maintain the positions of base text colors in the list
     // (means sometimes including undefined values)
-    baseColorNames.forEach(name => {
+    baseTextColorNames.forEach(name => {
       let color = name ? createSVGColor({ cssName: name }) : undefined;
-      baseColors.push(color);
+      baseTextColors.push(color);
     });
 
-    return baseColors;
+    return baseTextColors;
   } catch (error) {
     console.error(error);
-    console.error('Unable to parse base colors.');
+    console.error('Unable to parse base text colors.');
     return [];
   }
 }
