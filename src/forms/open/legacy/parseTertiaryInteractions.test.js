@@ -19,38 +19,26 @@ Object.defineProperty(window, 'getComputedStyle', {
   value: ele => ({ color: colors[ele.style.color] }),
 });
 
-let drawingNames = [
-  'zero-tertiary-interactions',
-  'one-tertiary-interaction',
-  'three-tertiary-interactions',
-  'invalid-tertiary-interaction',
-  'missing-tertiary-interactions-line',
-];
-
-let drawingStrings = {};
-
-drawingNames.forEach(drawingName => {
+function readDrawingFile(drawingName) {
   let drawingFilePath = (
     'src/forms/open/legacy/test-inputs/'
     + drawingName
     + '.rna2drawer'
   );
 
-  drawingStrings[drawingName] = fs.readFileSync(drawingFilePath, 'utf8');
-});
+  return fs.readFileSync(drawingFilePath, 'utf8');
+}
 
 describe('parseTertiaryInteractions function', () => {
   test('zero tertiary interactions', () => {
-    let drawingString = drawingStrings['zero-tertiary-interactions'];
-    expect(typeof drawingString).toBe('string');
-    let parsed = parseTertiaryInteractions({ drawingString });
+    let drawingFileContents = readDrawingFile('zero-tertiary-interactions');
+    let parsed = parseTertiaryInteractions({ drawingFileContents });
     expect(parsed).toStrictEqual([]);
   });
 
   test('one tertiary interaction', () => {
-    let drawingString = drawingStrings['one-tertiary-interaction'];
-    expect(typeof drawingString).toBe('string');
-    let parsed = parseTertiaryInteractions({ drawingString });
+    let drawingFileContents = readDrawingFile('one-tertiary-interaction');
+    let parsed = parseTertiaryInteractions({ drawingFileContents });
 
     expect(parsed.length).toBe(1);
 
@@ -61,9 +49,8 @@ describe('parseTertiaryInteractions function', () => {
   });
 
   test('three tertiary interactions', () => {
-    let drawingString = drawingStrings['three-tertiary-interactions'];
-    expect(typeof drawingString).toBe('string');
-    let parsed = parseTertiaryInteractions({ drawingString });
+    let drawingFileContents = readDrawingFile('three-tertiary-interactions');
+    let parsed = parseTertiaryInteractions({ drawingFileContents });
 
     expect(parsed.length).toBe(3);
 
@@ -84,16 +71,15 @@ describe('parseTertiaryInteractions function', () => {
   });
 
   test('an invalid tertiary interaction', () => {
-    let drawingString = drawingStrings['invalid-tertiary-interaction'];
-    expect(typeof drawingString).toBe('string');
-    let parsed = parseTertiaryInteractions({ drawingString });
+    let drawingFileContents = readDrawingFile('invalid-tertiary-interaction');
+    let parsed = parseTertiaryInteractions({ drawingFileContents });
     expect(parsed).toEqual([undefined]);
   });
 
   test('missing tertiary interactions line', () => {
-    let drawingString = drawingStrings['missing-tertiary-interactions-line'];
-    expect(typeof drawingString).toBe('string');
-    let parsed = parseTertiaryInteractions({ drawingString });
+    let drawingName = 'missing-tertiary-interactions-line';
+    let drawingFileContents = readDrawingFile(drawingName);
+    let parsed = parseTertiaryInteractions({ drawingFileContents });
     expect(parsed).toStrictEqual([]);
   });
 });

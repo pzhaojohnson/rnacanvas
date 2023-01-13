@@ -7,10 +7,10 @@ import { parseTertiaryInteraction } from './parseTertiaryInteraction';
 /**
  * The contents of a legacy drawing file.
  */
-export type LegacyDrawingString = string;
+export type LegacyDrawingFileContents = string;
 
 export type Args = (
-  { drawingString: LegacyDrawingString }
+  { drawingFileContents: LegacyDrawingFileContents }
 );
 
 export function parseTertiaryInteractions
@@ -20,8 +20,8 @@ export function parseTertiaryInteractions
 {
   // just in case something throws
   try {
-    let { drawingString } = args;
-    let lines = splitLines(drawingString);
+    let { drawingFileContents } = args;
+    let lines = splitLines(drawingFileContents);
 
     let tertiaryInteractionsLine = lines.find(
       line => line.startsWith('tert_inters')
