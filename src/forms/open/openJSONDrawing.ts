@@ -3,11 +3,6 @@ import type { App } from 'App';
 import { removeCircleHighlighting } from 'Draw/bases/annotate/circle/add';
 
 /**
- * The contents of a drawing file.
- */
-export type DrawingString = string;
-
-/**
  * A JSON drawing is a drawing that was created by the RNAcanvas web app
  * (formerly named the RNA2Drawer web app).
  *
@@ -15,7 +10,7 @@ export type DrawingString = string;
  * desktop-based RNA2Drawer app.
  */
 export type JSONDrawing = (
-  { drawingString: DrawingString }
+  { drawingFileContents: string }
 );
 
 export class AppWrapper {
@@ -34,9 +29,9 @@ export class AppWrapper {
    * Throws if the JSON drawing is invalid.
    */
   openJSONDrawing(drawing: JSONDrawing): void | never {
-    let { drawingString } = drawing;
+    let { drawingFileContents } = drawing;
 
-    let json = JSON.parse(drawingString); // can throw
+    let json = JSON.parse(drawingFileContents); // can throw
 
     let applied = this.app.strictDrawing.applySavedState(json as any);
 

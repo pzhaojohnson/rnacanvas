@@ -6,30 +6,15 @@ import * as fs from 'fs';
 
 import { AppWrapper } from './openJSONDrawing';
 
-let drawingNames = [
-  'drawing-paddings',
-  'base-highlightings',
-  'invalid-json',
-  'empty',
-  'no-bases',
-  'hairpin',
-  'two-hairpins',
-  'three-hairpins',
-  'base-outlines',
-  'tertiary-bonds',
-];
-
-let drawingStrings = {};
-
-drawingNames.forEach(drawingName => {
+function readDrawingFile(drawingName) {
   let drawingFilePath = (
     'src/forms/open/test-inputs/json-drawings/'
     + drawingName
     + '.rnacanvas'
   );
 
-  drawingStrings[drawingName] = fs.readFileSync(drawingFilePath, 'utf8');
-});
+  return fs.readFileSync(drawingFilePath, 'utf8');
+}
 
 let app = null;
 let appWrapper = null;
@@ -57,8 +42,8 @@ describe('AppWrapper class', () => {
 
   describe('openJSONDrawing method', () => {
     it('adjusts drawing padding to the current screen', () => {
-      let drawingString = drawingStrings['drawing-paddings'];
-      appWrapper.openJSONDrawing({ drawingString });
+      let drawingFileContents = readDrawingFile('drawing-paddings');
+      appWrapper.openJSONDrawing({ drawingFileContents });
 
       let prevWidth = app.strictDrawing.drawing.width;
       let prevHeight = app.strictDrawing.drawing.height;
@@ -75,8 +60,8 @@ describe('AppWrapper class', () => {
 
     it('removes lingering base highlightings', () => {
       // the first and third bases have highlightings
-      let drawingString = drawingStrings['base-highlightings'];
-      appWrapper.openJSONDrawing({ drawingString });
+      let drawingFileContents = readDrawingFile('base-highlightings');
+      appWrapper.openJSONDrawing({ drawingFileContents });
 
       app.drawing.bases().forEach(
         b => expect(b.highlighting).toBeFalsy()
@@ -84,47 +69,47 @@ describe('AppWrapper class', () => {
     });
 
     it('throws for invalid JSON', () => {
-      let drawingString = drawingStrings['invalid-json'];
+      let drawingFileContents = readDrawingFile('invalid-json');
 
       // JSON is invalid
-      expect(() => JSON.parse(drawingString)).toThrow();
+      expect(() => JSON.parse(drawingFileContents)).toThrow();
 
       expect(
-        () => appWrapper.openJSONDrawing({ drawingString })
+        () => appWrapper.openJSONDrawing({ drawingFileContents })
       ).toThrow();
     });
 
-    test('an empty drawing string', () => {
-      let drawingString = drawingStrings['empty'];
+    test('an empty drawing file', () => {
+      let drawingFileContents = readDrawingFile('empty');
 
       // this behavior is not firmly defined
       expect(
-        () => appWrapper.openJSONDrawing({ drawingString })
+        () => appWrapper.openJSONDrawing({ drawingFileContents })
       ).toThrow();
     });
 
     test('a drawing with no bases', () => {
-      let drawingString = drawingStrings['no-bases'];
+      let drawingFileContents = readDrawingFile('no-bases');
 
       // this behavior is not firmly defined
       expect(
-        () => appWrapper.openJSONDrawing({ drawingString })
+        () => appWrapper.openJSONDrawing({ drawingFileContents })
       ).not.toThrow();
 
       expect(app.drawing.bases().length).toBe(0);
     });
 
     it('remembers bases', () => {
-      let drawingString = drawingStrings['hairpin'];
-      appWrapper.openJSONDrawing({ drawingString });
+      let drawingFileContents = readDrawingFile('hairpin');
+      appWrapper.openJSONDrawing({ drawingFileContents });
 
       let characters = app.drawing.bases().map(b => b.text.text()).join('');
       expect(characters).toBe('UCGGCCAACAGCAUCGGUUGGCCAA');
     });
 
     it('remembers base outlines', () => {
-      let drawingString = drawingStrings['base-outlines'];
-      appWrapper.openJSONDrawing({ drawingString });
+      let drawingFileContents = readDrawingFile('base-outlines');
+      appWrapper.openJSONDrawing({ drawingFileContents });
 
       let bases = app.drawing.bases();
       let baseOutlines = bases.map(b => b.outline);
@@ -143,8 +128,8 @@ describe('AppWrapper class', () => {
     });
 
     it('remembers primary bonds', () => {
-      let drawingString = drawingStrings['hairpin'];
-      appWrapper.openJSONDrawing({ drawingString });
+      let drawingFileContents = readDrawingFile('hairpin');
+      appWrapper.openJSONDrawing({ drawingFileContents });
 
       let bases = app.drawing.bases();
       let primaryBonds = app.drawing.primaryBonds;
@@ -161,8 +146,8 @@ describe('AppWrapper class', () => {
     });
 
     it('remembers secondary bonds', () => {
-      let drawingString = drawingStrings['two-hairpins'];
-      appWrapper.openJSONDrawing({ drawingString });
+      let drawingFileContents = readDrawingFile('two-hairpins');
+      appWrapper.openJSONDrawing({ drawingFileContents });
 
       let bases = app.drawing.bases();
       let secondaryBonds = app.drawing.secondaryBonds;
@@ -192,8 +177,8 @@ describe('AppWrapper class', () => {
     });
 
     it('remembers tertiary bonds', () => {
-      let drawingString = drawingStrings['tertiary-bonds'];
-      appWrapper.openJSONDrawing({ drawingString });
+      let drawingFileContents = readDrawingFile('tertiary-bonds');
+      appWrapper.openJSONDrawing({ drawingFileContents });
 
       let bases = app.drawing.bases();
       let tertiaryBonds = app.drawing.tertiaryBonds;
@@ -216,8 +201,8 @@ describe('AppWrapper class', () => {
     });
 
     it('remembers base numberings', () => {
-      let drawingString = drawingStrings['three-hairpins'];
-      appWrapper.openJSONDrawing({ drawingString });
+      let drawingFileContents = readDrawingFile('three-hairpins');
+      appWrapper.openJSONDrawing({ drawingFileContents });
 
       let bases = app.drawing.bases();
       let baseNumberings = bases.map(b => b.numbering);
