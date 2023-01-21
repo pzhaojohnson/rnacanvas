@@ -51,7 +51,7 @@ export class AppWrapper {
    * Fails if the saved drawing is invalid (i.e., the returned promise
    * is rejected).
    */
-  openDrawing(drawing: SavedDrawing) {
+  async openDrawing(drawing: SavedDrawing) {
     let { file } = drawing;
 
     let fileExtension = parseFileExtension(file.name);
@@ -64,38 +64,34 @@ export class AppWrapper {
       fileExtension.toLowerCase().includes('rna2drawer')
     );
 
-    return new Promise<void>((resolve, reject) => {
-      if (!hasRNAcanvasExtension && !hasRNA2DrawerExtension) {
-        reject(new Error(errorMessages['unsupported-file-extension']));
-      }
+    if (!hasRNAcanvasExtension && !hasRNA2DrawerExtension) {
+      throw new Error(errorMessages['unsupported-file-extension']);
+    }
 
-      file.text().then(drawingFileContents => {
-        if (isBlank(drawingFileContents)) {
-          throw new Error(errorMessages['blank-drawing-file']);
-        }
+    let drawingFileContents = await file.text();
 
-        // some users when renaming drawing files might lose the
-        // trailing "2" for files with .rna2drawer2 extension
-        // (best to distinguish between drawing file types based on the
-        // contents of drawing files)
-        if (isJSON(drawingFileContents)) {
-          this.openJSONDrawing({ drawingFileContents });
-        } else {
-          this.openLegacyDrawing({ drawingFileContents });
-        }
+    if (isBlank(drawingFileContents)) {
+      throw new Error(errorMessages['blank-drawing-file']);
+    }
 
-        let drawingTitle = removeFileExtension(file.name);
-        drawingTitle = drawingTitle.trim();
+    // some users when renaming drawing files might lose the
+    // trailing "2" for files with .rna2drawer2 extension
+    // (best to distinguish between drawing file types based on the
+    // contents of drawing files)
+    if (isJSON(drawingFileContents)) {
+      this.openJSONDrawing({ drawingFileContents });
+    } else {
+      this.openLegacyDrawing({ drawingFileContents });
+    }
 
-        // only specify if necessary
-        // (the drawing title can auto-update with changes to the
-        // drawing when left unspecified)
-        if (drawingTitle != this.app.drawingTitle.value) {
-          this.app.drawingTitle.value = drawingTitle;
-        }
+    let drawingTitle = removeFileExtension(file.name);
+    drawingTitle = drawingTitle.trim();
 
-        resolve();
-      }).catch(reject);
-    });
+    // only specify if necessary
+    // (the drawing title can auto-update with changes to the
+    // drawing when left unspecified)
+    if (drawingTitle != this.app.drawingTitle.value) {
+      this.app.drawingTitle.value = drawingTitle;
+    }
   }
 }
