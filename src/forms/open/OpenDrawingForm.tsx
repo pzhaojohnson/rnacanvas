@@ -6,7 +6,7 @@ import * as React from 'react';
 
 import { useState } from 'react';
 
-import styles from './OpenSavedDrawingForm.css';
+import styles from './OpenDrawingForm.css';
 
 import { FloatingDrawingsContainer } from 'Forms/containers/floating-drawings/FloatingDrawingsContainer';
 
@@ -119,7 +119,7 @@ export type Props = {
   close: () => void;
 }
 
-export function OpenSavedDrawingForm(props: Props) {
+export function OpenDrawingForm(props: Props) {
   let app = props.app;
   let appWrapper = new AppWrapper(app);
 

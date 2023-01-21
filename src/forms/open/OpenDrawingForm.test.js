@@ -7,7 +7,7 @@ import * as React from 'react';
 import { render } from 'react-dom';
 import { unmountComponentAtNode } from 'react-dom';
 
-import { OpenSavedDrawingForm } from './OpenSavedDrawingForm';
+import { OpenDrawingForm } from './OpenDrawingForm';
 
 let app = null;
 
@@ -30,12 +30,13 @@ afterEach(() => {
   app = null;
 });
 
-describe('OpenSavedDrawingForm component', () => {
+describe('OpenDrawingForm component', () => {
   it('renders', () => {
     let props = {
       app,
       close: jest.fn(),
     };
-    render(<OpenSavedDrawingForm {...props} />, container);
+
+    render(<OpenDrawingForm {...props} />, container);
   });
 });

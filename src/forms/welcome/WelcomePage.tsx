@@ -7,7 +7,7 @@ import { Header } from './Header';
 import { DrawingSlideshow } from './drawings/DrawingSlideshow';
 
 import { CreateNewDrawingForm } from 'Forms/new/CreateNewDrawingForm';
-import { OpenSavedDrawingForm } from 'Forms/open/OpenSavedDrawingForm';
+import { OpenDrawingForm } from 'Forms/open/OpenDrawingForm';
 
 export type Props = {
   /**
@@ -42,7 +42,7 @@ function OpenButton(props: Props) {
     <p
       className={styles.newAndOpenButtons}
       onClick={() => props.app.formContainer.renderForm(formProps => (
-        <OpenSavedDrawingForm app={props.app} close={formProps.unmount} />
+        <OpenDrawingForm app={props.app} close={formProps.unmount} />
       ))}
     >
       Open a Saved Drawing
