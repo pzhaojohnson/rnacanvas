@@ -1,0 +1,46 @@
+>AsdfQwer  Zxcv
+AAGGCCUUAGCUAA
+((((....))))..
+radial_ss_stretches 12,1,0.000000;4,9,0.000000
+flat_base_ss_stretches 12,1,0.000000;4,9,0.000000
+tert_inters 
+base_colors black,black,black,black,black,black,black,black,black,black,black,black,black,black
+base_outlines ,0.000000,,0.000000;,0.000000,,0.000000;,0.000000,,0.000000;,0.000000,,0.000000;,0.000000,,0.000000;,0.000000,,0.000000;,0.000000,,0.000000;,0.000000,,0.000000;,0.000000,,0.000000;,0.000000,,0.000000;,0.000000,,0.000000;,0.000000,,0.000000;,0.000000,,0.000000;,0.000000,,0.000000
+misc_drawing_style rigid
+misc_radial_editing_mode fold
+misc_seq_num_offset 0
+misc_numbering_start 20
+misc_numbering_increment 20
+general_base_font Arial
+general_base_font_size 9.0
+general_bold_bases True
+general_pixels_per_pt_width 1.35
+general_pixels_per_pt_height 1.7
+general_bp_bond_width 2.0
+general_au_bp_bond_color black
+general_gc_bp_bond_color black
+general_gu_bp_bond_color black
+general_noncanon_bp_bond_color gray
+general_bp_bond_line_padding_per_pt 0.75
+general_strand_line_width 1.0
+general_strand_line_color gray
+general_strand_line_padding_per_pt 0.75
+general_strand_line_sq_threshold 2.25
+general_numbering_font Arial
+general_numbering_font_size 7.0
+general_bold_numbering False
+general_numbering_color gray
+general_numbering_line_length_per_pt 0.8
+general_numbering_line_width 1.0
+general_numbering_line_color gray
+general_numbering_padding_per_pt 0.8
+general_background_color white
+radial_rotation 0.0
+radial_bp_bond_length 1.2
+radial_termini_gap_size 4.0
+flat_base_rotation 0.0
+flat_base_bp_bond_length 1.2
+rigid_rotation 0.0
+rigid_bp_bond_lines True
+rigid_bp_bond_length 1.2
+rigid_min_branch_angle 0.39269908169872414

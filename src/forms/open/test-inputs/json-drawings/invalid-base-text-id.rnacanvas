@@ -1,0 +1,2082 @@
+{
+ "className": "StrictDrawing",
+ "drawing": {
+  "className": "Drawing",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:svgjs=\"http://svgjs.com/svgjs\" width=\"3338.0129293676146\" height=\"2502.1867662822547\" viewBox=\"0 0 3338.0129293676146 2502.1867662822547\"><text id=\"SvgjsText1000\" font-family=\"Arial\" x=\"1561.4379874915908\" y=\"1229.6301120391302\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1001\" font-family=\"Arial\" x=\"1568.4086167793753\" y=\"1217.8919401083904\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1002\" font-family=\"Arial\" x=\"1576.9490666028948\" y=\"1207.4581233471836\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1003\" font-family=\"Arial\" x=\"1586.4806759323574\" y=\"1198.634740133223\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1004\" font-family=\"Arial\" x=\"1581.0848172049552\" y=\"1186.4082929678182\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1005\" font-family=\"Arial\" x=\"1575.0327084775531\" y=\"1174.1818458024134\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1006\" font-family=\"Arial\" x=\"1569.6368497501508\" y=\"1161.9553986370086\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1007\" font-family=\"Arial\" x=\"1556.778389526381\" y=\"1159.5107035523101\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1008\" font-family=\"Arial\" x=\"1545.0953096121393\" y=\"1152.347532161014\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1009\" font-family=\"Arial\" x=\"1537.5493729802736\" y=\"1141.4872961820124\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1010\" font-family=\"Arial\" x=\"1533.5925976895078\" y=\"1128.478579572458\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1011\" font-family=\"Arial\" x=\"1536.0226236024237\" y=\"1115.1763226746828\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1012\" font-family=\"Arial\" x=\"1542.2595132707977\" y=\"1103.4773223599184\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1013\" font-family=\"Arial\" x=\"1536.2074045160593\" y=\"1091.2508752073115\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1014\" font-family=\"Arial\" x=\"1531.147483261321\" y=\"1079.0244280547045\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1015\" font-family=\"Arial\" x=\"1525.0875620065826\" y=\"1066.7979809020976\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1016\" font-family=\"Arial\" x=\"1519.035453251844\" y=\"1054.5715337494905\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1017\" font-family=\"Arial\" x=\"1513.6395944971057\" y=\"1042.3450865968837\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1018\" font-family=\"Arial\" x=\"1507.75\" y=\"1030.783847501052\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1019\" font-family=\"Arial\" x=\"1511.8741855755038\" y=\"1018.3174690607518\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1020\" font-family=\"Arial\" x=\"1523.430379353603\" y=\"1012.75\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1021\" font-family=\"Arial\" x=\"1535.6458907476576\" y=\"1017.5667187440931\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1022\" font-family=\"Arial\" x=\"1540.209653232841\" y=\"1029.7523223364592\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1023\" font-family=\"Arial\" x=\"1546.2617619875793\" y=\"1041.978769489066\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1024\" font-family=\"Arial\" x=\"1552.321683242318\" y=\"1054.2052166416731\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1025\" font-family=\"Arial\" x=\"1557.7097294970563\" y=\"1066.43166379428\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1026\" font-family=\"Arial\" x=\"1563.4337132517946\" y=\"1078.658110946887\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1027\" font-family=\"Arial\" x=\"1568.829572006533\" y=\"1090.884558099494\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1028\" font-family=\"Arial\" x=\"1579.2721234958888\" y=\"1099.7900536565276\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1029\" font-family=\"Arial\" x=\"1587.3564105539801\" y=\"1110.572158139758\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1030\" font-family=\"Arial\" x=\"1593.0703268447953\" y=\"1122.777101193557\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1031\" font-family=\"Arial\" x=\"1596.509336792661\" y=\"1135.8912315767818\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1032\" font-family=\"Arial\" x=\"1596.2069085140413\" y=\"1149.3626344367237\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1033\" font-family=\"Arial\" x=\"1602.2590172414436\" y=\"1161.5890816021283\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1034\" font-family=\"Arial\" x=\"1607.6548759688458\" y=\"1173.8155287675331\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1035\" font-family=\"Arial\" x=\"1613.706984696248\" y=\"1186.041975932938\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1036\" font-family=\"Arial\" x=\"1627.013159990269\" y=\"1183.8626378592824\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1037\" font-family=\"Arial\" x=\"1640.4960609696834\" y=\"1183.985912243505\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1038\" font-family=\"Arial\" x=\"1654.0961011806876\" y=\"1186.4081828036265\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1039\" font-family=\"Arial\" x=\"1666.0882376662348\" y=\"1191.0583916841754\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1040\" font-family=\"Arial\" x=\"1678.4293229627403\" y=\"1197.8001239544742\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1041\" font-family=\"Arial\" x=\"1688.4486839618874\" y=\"1206.435609371523\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1042\" font-family=\"Arial\" x=\"1697.1784831369619\" y=\"1216.711524014871\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1043\" font-family=\"Arial\" x=\"1703.6985673520605\" y=\"1228.3264216011921\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1044\" font-family=\"Arial\" x=\"1716.7544023636237\" y=\"1224.8920115862347\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1045\" font-family=\"Arial\" x=\"1730.138362375187\" y=\"1221.4576015712773\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1046\" font-family=\"Arial\" x=\"1743.1941973867501\" y=\"1218.02319155632\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1047\" font-family=\"Arial\" x=\"1756.5859698983136\" y=\"1214.5887815413626\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1048\" font-family=\"Arial\" x=\"1769.6418049098768\" y=\"1211.154371526405\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1049\" font-family=\"Arial\" x=\"1782.36170242144\" y=\"1207.7199615114475\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1050\" font-family=\"Arial\" x=\"1791.9635364068095\" y=\"1198.1846035237506\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1051\" font-family=\"Arial\" x=\"1804.3409447322633\" y=\"1195.5961815450223\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1052\" font-family=\"Arial\" x=\"1816.8742441410463\" y=\"1200.8700423018404\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1053\" font-family=\"Arial\" x=\"1824.2629293676146\" y=\"1212.1411841755153\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1054\" font-family=\"Arial\" x=\"1823.3332413896485\" y=\"1225.4237799309028\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1055\" font-family=\"Arial\" x=\"1815.302961391109\" y=\"1236.0206895170122\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1056\" font-family=\"Arial\" x=\"1802.3477842881257\" y=\"1240.1845152602039\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1057\" font-family=\"Arial\" x=\"1789.5892794543463\" y=\"1236.4427985368866\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1058\" font-family=\"Arial\" x=\"1776.861569442783\" y=\"1239.877208551844\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1059\" font-family=\"Arial\" x=\"1763.80573443122\" y=\"1243.3116185668016\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1060\" font-family=\"Arial\" x=\"1750.4217744196567\" y=\"1246.746028581759\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1061\" font-family=\"Arial\" x=\"1737.3659394080935\" y=\"1250.1804385967164\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1062\" font-family=\"Arial\" x=\"1724.6382293965303\" y=\"1253.6148486116738\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1063\" font-family=\"Arial\" x=\"1711.5823943849668\" y=\"1257.0492586266314\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1064\" font-family=\"Arial\" x=\"1711.6717934609771\" y=\"1270.5304690396467\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1065\" font-family=\"Arial\" x=\"1709.1283553388942\" y=\"1283.7718714545588\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1066\" font-family=\"Arial\" x=\"1704.0266923520605\" y=\"1296.3850263326472\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1067\" font-family=\"Arial\" x=\"1697.5144206369616\" y=\"1307.9999239189683\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1068\" font-family=\"Arial\" x=\"1688.1205589618871\" y=\"1318.2758385623163\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1069\" font-family=\"Arial\" x=\"1677.7652604627403\" y=\"1326.911323979365\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1070\" font-family=\"Arial\" x=\"1666.4163626662346\" y=\"1333.653056249664\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1071\" font-family=\"Arial\" x=\"1653.7601636806876\" y=\"1338.303265130213\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1072\" font-family=\"Arial\" x=\"1654.4651264990569\" y=\"1351.763678554753\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1073\" font-family=\"Arial\" x=\"1655.8263393174263\" y=\"1365.224091979293\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1074\" font-family=\"Arial\" x=\"1657.1953646357956\" y=\"1378.684505403833\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1075\" font-family=\"Arial\" x=\"1657.892514954165\" y=\"1392.144918828373\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1076\" font-family=\"Arial\" x=\"1658.5974777725344\" y=\"1405.605332252913\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1077\" font-family=\"Arial\" x=\"1659.9586905909036\" y=\"1419.065745677453\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1078\" font-family=\"Arial\" x=\"1660.9917784092731\" y=\"1432.526159101993\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1079\" font-family=\"Arial\" x=\"1662.3608037276424\" y=\"1445.986572526533\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1080\" font-family=\"Arial\" x=\"1671.5858072521066\" y=\"1455.3102974761623\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1081\" font-family=\"Arial\" x=\"1675.3865296355996\" y=\"1468.1125609312405\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1082\" font-family=\"Arial\" x=\"1672.7979898533526\" y=\"1481.1429436130823\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1083\" font-family=\"Arial\" x=\"1663.5548829605063\" y=\"1491.0931081150773\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1084\" font-family=\"Arial\" x=\"1650.9264992976487\" y=\"1495.436766282255\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1085\" font-family=\"Arial\" x=\"1637.7831735884706\" y=\"1493.071088892567\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1086\" font-family=\"Arial\" x=\"1627.133793808925\" y=\"1484.5967075000804\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1087\" font-family=\"Arial\" x=\"1622.583240749521\" y=\"1472.1652176214573\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1088\" font-family=\"Arial\" x=\"1624.721744531374\" y=\"1458.932901308387\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1089\" font-family=\"Arial\" x=\"1632.4119566936545\" y=\"1448.2593657269456\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1090\" font-family=\"Arial\" x=\"1631.050743875285\" y=\"1434.7989523024055\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1091\" font-family=\"Arial\" x=\"1630.0176560569157\" y=\"1421.3385388778656\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1092\" font-family=\"Arial\" x=\"1629.3126932385462\" y=\"1407.8781254533255\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1093\" font-family=\"Arial\" x=\"1627.951480420177\" y=\"1394.4177120287854\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1094\" font-family=\"Arial\" x=\"1627.2465176018075\" y=\"1380.9572986042454\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1095\" font-family=\"Arial\" x=\"1625.8853047834382\" y=\"1367.4968851797055\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1096\" font-family=\"Arial\" x=\"1625.1803419650687\" y=\"1354.0364717551656\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1097\" font-family=\"Arial\" x=\"1624.4831916466994\" y=\"1340.5760583306255\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1098\" font-family=\"Arial\" x=\"1611.265596369467\" y=\"1337.9116652511827\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1099\" font-family=\"Arial\" x=\"1598.6965399255564\" y=\"1333.030821522452\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1100\" font-family=\"Arial\" x=\"1586.4806759323574\" y=\"1326.0767078006165\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1101\" font-family=\"Arial\" x=\"1576.6131291028946\" y=\"1317.253324586656\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1102\" font-family=\"Arial\" x=\"1568.072679279375\" y=\"1306.819507825449\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1103\" font-family=\"Arial\" x=\"1561.4379874915905\" y=\"1295.0813358947091\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><line x1=\"1508.8926437047169\" y1=\"1010.0051101828125\" x2=\"1502.91110183393\" y2=\"1004.6927513048731\" id=\"SvgjsLine1125\" stroke=\"#808080\" stroke-width=\"1\"></line><text x=\"1498.91110183393\" y=\"1007.8927513048732\" text-anchor=\"end\" id=\"SvgjsText1124\" font-family=\"Arial\" font-size=\"8\" font-weight=\"normal\" fill=\"#808080\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">20</tspan></text><line x1=\"1673.1442905447173\" y1=\"1180.813089670299\" x2=\"1676.5362809231997\" y2=\"1173.5677876564225\" id=\"SvgjsLine1127\" stroke=\"#808080\" stroke-width=\"1\"></line><text x=\"1676.5362809231997\" y=\"1169.5677876564225\" text-anchor=\"middle\" id=\"SvgjsText1126\" font-family=\"Arial\" font-size=\"8\" font-weight=\"normal\" fill=\"#808080\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">40</tspan></text><line x1=\"1769.1768778660096\" y1=\"1248.048409684765\" x2=\"1771.2120838007993\" y2=\"1255.7852008027282\" id=\"SvgjsLine1129\" stroke=\"#808080\" stroke-width=\"1\"></line><text x=\"1771.2120838007993\" y=\"1266.1852008027283\" text-anchor=\"middle\" id=\"SvgjsText1128\" font-family=\"Arial\" font-size=\"8\" font-weight=\"normal\" fill=\"#808080\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">60</tspan></text><line x1=\"1672.6080608586283\" y1=\"1439.598761422387\" x2=\"1679.8553179896142\" y2=\"1436.210950318241\" id=\"SvgjsLine1131\" stroke=\"#808080\" stroke-width=\"1\"></line><text x=\"1683.8553179896142\" y=\"1439.410950318241\" text-anchor=\"start\" id=\"SvgjsText1130\" font-family=\"Arial\" font-size=\"8\" font-weight=\"normal\" fill=\"#808080\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">80</tspan></text><line x1=\"1598.1726398921471\" y1=\"1337.2128914576822\" x2=\"1594.6487398587378\" y2=\"1344.3949613929124\" id=\"SvgjsLine1133\" stroke=\"#808080\" stroke-width=\"1\"></line><text x=\"1594.6487398587378\" y=\"1354.7949613929125\" text-anchor=\"middle\" id=\"SvgjsText1132\" font-family=\"Arial\" font-size=\"8\" font-weight=\"normal\" fill=\"#808080\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">100</tspan></text><line x1=\"1568.7104158121372\" y1=\"1219.6656278500639\" x2=\"1567.4721259588289\" y2=\"1221.8564242974567\" id=\"SvgjsLine1134\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1576.4758306619435\" y1=\"1208.7013550416693\" x2=\"1574.8818527203266\" y2=\"1210.6487084139046\" id=\"SvgjsLine1135\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1585.9983556806299\" y1=\"1199.2230396177677\" x2=\"1584.0954493546224\" y2=\"1200.869823862639\" id=\"SvgjsLine1136\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1586.7527480753783\" y1=\"1188.3894381092794\" x2=\"1587.8127450619343\" y2=\"1190.6535949917618\" id=\"SvgjsLine1137\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1581.0287643479762\" y1=\"1176.1629909438745\" x2=\"1582.0887613345321\" y2=\"1178.427147826357\" id=\"SvgjsLine1138\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1575.3047806205739\" y1=\"1163.9365437784697\" x2=\"1576.36477760713\" y2=\"1166.2007006609522\" id=\"SvgjsLine1139\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1565.1066687389252\" y1=\"1157.4979420965403\" x2=\"1567.6445080376066\" y2=\"1157.9681600927784\" id=\"SvgjsLine1140\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1553.0135512319143\" y1=\"1152.2402278352831\" x2=\"1555.196085406606\" y2=\"1153.618007878041\" id=\"SvgjsLine1141\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1543.7323015967918\" y1=\"1142.872973408188\" x2=\"1545.248318495621\" y2=\"1144.9618549348384\" id=\"SvgjsLine1142\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1538.5863527971749\" y1=\"1130.7318753835807\" x2=\"1539.2196803726065\" y2=\"1133.2340003708898\" id=\"SvgjsLine1143\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1538.309476527419\" y1=\"1117.5481585395855\" x2=\"1537.9698072645124\" y2=\"1120.1067437075553\" id=\"SvgjsLine1144\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1542.94115315888\" y1=\"1105.2017168711138\" x2=\"1541.6769212143413\" y2=\"1107.4519281634873\" id=\"SvgjsLine1145\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1542.2034603976194\" y1=\"1093.2320203435588\" x2=\"1543.2634573892376\" y2=\"1095.496177223671\" id=\"SvgjsLine1146\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1536.479476642881\" y1=\"1081.0055731909517\" x2=\"1537.5394736344992\" y2=\"1083.2697300710643\" id=\"SvgjsLine1147\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1530.7554928881427\" y1=\"1068.7791260383449\" x2=\"1531.815489879761\" y2=\"1071.0432829184572\" id=\"SvgjsLine1148\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1525.0315091334041\" y1=\"1056.552678885738\" x2=\"1526.0915061250225\" y2=\"1058.81683576585\" id=\"SvgjsLine1149\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1519.3075253786658\" y1=\"1044.326231733131\" x2=\"1520.367522370284\" y2=\"1046.5903886132432\" id=\"SvgjsLine1150\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1513.1826156159514\" y1=\"1032.301381227863\" x2=\"1514.5429163811543\" y2=\"1034.8275528700726\" id=\"SvgjsLine1151\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1513.2626673568654\" y1=\"1020.1886843853748\" x2=\"1512.3615182186384\" y2=\"1022.9126321764289\" id=\"SvgjsLine1152\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1522.1194875918634\" y1=\"1011.9254786875736\" x2=\"1519.5210148372435\" y2=\"1013.1419903731783\" id=\"SvgjsLine1153\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1534.2086387776135\" y1=\"1012.6845944148032\" x2=\"1531.5395063236472\" y2=\"1011.63212432929\" id=\"SvgjsLine1154\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1541.9622193509308\" y1=\"1021.990819287023\" x2=\"1540.8933246295678\" y2=\"1019.3282217935295\" id=\"SvgjsLine1155\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1547.2657061060193\" y1=\"1033.9976243528188\" x2=\"1546.205709114401\" y2=\"1031.7334674727065\" id=\"SvgjsLine1156\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1552.9896898607578\" y1=\"1046.2240715054256\" x2=\"1551.9296928691394\" y2=\"1043.9599146253136\" id=\"SvgjsLine1157\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1558.7136736154962\" y1=\"1058.4505186580327\" x2=\"1557.653676623878\" y2=\"1056.1863617779204\" id=\"SvgjsLine1158\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1564.4376573702345\" y1=\"1070.6769658106398\" x2=\"1563.3776603786164\" y2=\"1068.4128089305273\" id=\"SvgjsLine1159\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1570.161641124973\" y1=\"1082.9034129632466\" x2=\"1569.1016441333547\" y2=\"1080.6392560831343\" id=\"SvgjsLine1160\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1578.4979291888578\" y1=\"1093.1711870223337\" x2=\"1576.603766313564\" y2=\"1091.5034247336878\" id=\"SvgjsLine1161\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1587.4071904219982\" y1=\"1103.190706494438\" x2=\"1585.8932186278707\" y2=\"1101.1715053018474\" id=\"SvgjsLine1162\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1594.084338419059\" y1=\"1114.8174601599096\" x2=\"1593.0142739797166\" y2=\"1112.5317991734053\" id=\"SvgjsLine1163\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1598.2483620076928\" y1=\"1127.5621301723309\" x2=\"1597.6672391297636\" y2=\"1125.106202598008\" id=\"SvgjsLine1164\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1599.7240161355448\" y1=\"1140.8883506067662\" x2=\"1599.6562916711575\" y2=\"1138.3655154067394\" id=\"SvgjsLine1165\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1603.2629613710205\" y1=\"1153.6079364606674\" x2=\"1602.2029643844644\" y2=\"1151.3437795781847\" id=\"SvgjsLine1166\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1608.9869450984227\" y1=\"1165.834383626072\" x2=\"1607.9269481118667\" y2=\"1163.5702267435895\" id=\"SvgjsLine1167\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1614.7109288258248\" y1=\"1178.0608307914767\" x2=\"1613.6509318392689\" y2=\"1175.7966739089943\" id=\"SvgjsLine1168\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1624.9377330747177\" y1=\"1181.7489325488266\" x2=\"1622.4542866117993\" y2=\"1182.1556812433937\" id=\"SvgjsLine1169\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1638.3487631322394\" y1=\"1180.935778933114\" x2=\"1635.8323328277131\" y2=\"1180.9127711696733\" id=\"SvgjsLine1170\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1651.7018468718031\" y1=\"1182.4230921653145\" x2=\"1649.2262527785679\" y2=\"1181.971002881817\" id=\"SvgjsLine1171\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1664.6052685577379\" y1=\"1186.1672415749183\" x2=\"1662.2431327891845\" y2=\"1185.2993329128835\" id=\"SvgjsLine1172\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1676.680503392553\" y1=\"1192.0583916910296\" x2=\"1674.501119736422\" y2=\"1190.80012394762\" id=\"SvgjsLine1173\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1687.5733216276012\" y1=\"1199.9237242907795\" x2=\"1685.6406227970265\" y2=\"1198.3120090352177\" id=\"SvgjsLine1174\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1696.9641799729798\" y1=\"1209.5325080610348\" x2=\"1695.3348621258694\" y2=\"1207.6146253253592\" id=\"SvgjsLine1175\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1704.5775954723101\" y1=\"1220.6028671537222\" x2=\"1703.2994550167123\" y2=\"1218.435078462341\" id=\"SvgjsLine1176\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1715.0994209700239\" y1=\"1223.2912156664026\" x2=\"1712.6816737456604\" y2=\"1223.9272175210242\" id=\"SvgjsLine1177\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1728.155255981587\" y1=\"1219.8568056514453\" x2=\"1725.7375087572236\" y2=\"1220.4928075060668\" id=\"SvgjsLine1178\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1741.2110909931503\" y1=\"1216.4223956364879\" x2=\"1738.7933437687868\" y2=\"1217.0583974911094\" id=\"SvgjsLine1179\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1754.2669260047135\" y1=\"1212.9879856215305\" x2=\"1751.8491787803503\" y2=\"1213.623987476152\" id=\"SvgjsLine1180\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1767.322761016277\" y1=\"1209.5535756065728\" x2=\"1764.9050137919135\" y2=\"1210.1895774611946\" id=\"SvgjsLine1181\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1780.37859602784\" y1=\"1206.1191655916155\" x2=\"1777.9608488034767\" y2=\"1206.755167446237\" id=\"SvgjsLine1182\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1791.2728469872893\" y1=\"1198.982621868991\" x2=\"1789.3883293409601\" y2=\"1200.9219431662073\" id=\"SvgjsLine1183\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1802.8104727944476\" y1=\"1193.6271731630736\" x2=\"1800.1580708446252\" y2=\"1194.1536119056993\" id=\"SvgjsLine1184\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1815.3487515435895\" y1=\"1195.7694164070936\" x2=\"1812.8664373297202\" y2=\"1194.6968074397691\" id=\"SvgjsLine1185\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1824.4537568872086\" y1=\"1204.651787588281\" x2=\"1823.0193541214524\" y2=\"1202.3594388890747\" id=\"SvgjsLine1186\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1826.9056750139387\" y1=\"1217.133203277518\" x2=\"1827.0264332433244\" y2=\"1214.4317608289\" id=\"SvgjsLine1187\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1821.8374312158755\" y1=\"1228.7998456784458\" x2=\"1823.470646564882\" y2=\"1226.6446237694693\" id=\"SvgjsLine1188\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1811.0413145433283\" y1=\"1235.526026236569\" x2=\"1813.6094311359063\" y2=\"1234.6791785406472\" id=\"SvgjsLine1189\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1798.3351685075868\" y1=\"1234.9331577636915\" x2=\"1800.9300202348852\" y2=\"1235.694156033399\" id=\"SvgjsLine1190\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1785.516550836383\" y1=\"1235.478004471676\" x2=\"1787.9342980607464\" y2=\"1234.8420026170545\" id=\"SvgjsLine1191\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1772.4607158248198\" y1=\"1238.9124144866337\" x2=\"1774.8784630491832\" y2=\"1238.276412632012\" id=\"SvgjsLine1192\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1759.4048808132566\" y1=\"1242.346824501591\" x2=\"1761.82262803762\" y2=\"1241.7108226469695\" id=\"SvgjsLine1193\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1746.3490458016934\" y1=\"1245.7812345165485\" x2=\"1748.7667930260568\" y2=\"1245.145232661927\" id=\"SvgjsLine1194\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1733.2932107901302\" y1=\"1249.2156445315059\" x2=\"1735.7109580144936\" y2=\"1248.5796426768843\" id=\"SvgjsLine1195\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1720.237375778567\" y1=\"1252.6500545464635\" x2=\"1722.6551230029302\" y2=\"1252.0140526918417\" id=\"SvgjsLine1196\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1714.7720558748688\" y1=\"1262.0479212228952\" x2=\"1714.8180694710752\" y2=\"1259.531806443383\" id=\"SvgjsLine1197\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1713.1627224836875\" y1=\"1275.3868489175231\" x2=\"1713.6374263161838\" y2=\"1272.9154915766824\" id=\"SvgjsLine1198\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1709.3007583333022\" y1=\"1288.2554999310378\" x2=\"1710.1902268576525\" y2=\"1285.9013978561682\" id=\"SvgjsLine1199\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1703.299455016712\" y1=\"1300.2763694714984\" x2=\"1704.5775954723101\" y2=\"1298.108580780117\" id=\"SvgjsLine1200\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1695.3348621258692\" y1=\"1311.0968226084801\" x2=\"1696.9641799729795\" y2=\"1309.1789398728044\" id=\"SvgjsLine1201\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1685.6406227970265\" y1=\"1320.3994388986218\" x2=\"1687.573321627601\" y2=\"1318.7877236430595\" id=\"SvgjsLine1202\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1674.501119736422\" y1=\"1327.9113239862193\" x2=\"1676.680503392553\" y2=\"1326.6530562428097\" id=\"SvgjsLine1203\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1662.2431327891843\" y1=\"1333.4121150209558\" x2=\"1664.6052685577379\" y2=\"1332.5442063589212\" id=\"SvgjsLine1204\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1657.708301369351\" y1=\"1343.2798064188294\" x2=\"1657.5169888103935\" y2=\"1340.7871372661366\" id=\"SvgjsLine1205\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1658.7413891877202\" y1=\"1356.7402198433692\" x2=\"1658.550076628763\" y2=\"1354.2475506906767\" id=\"SvgjsLine1206\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1659.7744770060897\" y1=\"1370.2006332679093\" x2=\"1659.5831644471323\" y2=\"1367.7079641152168\" id=\"SvgjsLine1207\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1660.807564824459\" y1=\"1383.6610466924494\" x2=\"1660.6162522655018\" y2=\"1381.1683775397566\" id=\"SvgjsLine1208\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1661.8406526428284\" y1=\"1397.1214601169893\" x2=\"1661.649340083871\" y2=\"1394.6287909642967\" id=\"SvgjsLine1209\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1662.8737404611977\" y1=\"1410.5818735415294\" x2=\"1662.6824279022403\" y2=\"1408.0892043888366\" id=\"SvgjsLine1210\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1663.906828279567\" y1=\"1424.0422869660692\" x2=\"1663.7155157206098\" y2=\"1421.5496178133767\" id=\"SvgjsLine1211\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1664.9399160979365\" y1=\"1437.5027003906093\" x2=\"1664.748603538979\" y2=\"1435.0100312379168\" id=\"SvgjsLine1212\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1671.0882636165393\" y1=\"1448.571928667468\" x2=\"1669.1942848632098\" y2=\"1446.7249413352274\" id=\"SvgjsLine1213\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1677.1985588172272\" y1=\"1459.9794641657622\" x2=\"1676.445653070479\" y2=\"1457.4433942416406\" id=\"SvgjsLine1214\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1676.9705656975298\" y1=\"1472.9183819227371\" x2=\"1677.5498912914225\" y2=\"1470.3371226215856\" id=\"SvgjsLine1215\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1670.46217036753\" y1=\"1484.1035669374264\" x2=\"1672.226639946329\" y2=\"1482.132484790733\" id=\"SvgjsLine1216\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1659.3258160633927\" y1=\"1490.6951666216544\" x2=\"1661.8274411947623\" y2=\"1489.8347077756778\" id=\"SvgjsLine1217\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1646.3889575435246\" y1=\"1491.0196126438382\" x2=\"1648.9925903425947\" y2=\"1491.4882425309838\" id=\"SvgjsLine1218\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1634.936186980721\" y1=\"1484.9945300701156\" x2=\"1636.9807804166746\" y2=\"1486.6732663225318\" id=\"SvgjsLine1219\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1627.875295357594\" y1=\"1474.1496518748177\" x2=\"1628.841739200852\" y2=\"1476.61227324672\" id=\"SvgjsLine1220\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1626.9990014646182\" y1=\"1461.238428749276\" x2=\"1626.641921316277\" y2=\"1463.8596901805684\" id=\"SvgjsLine1221\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1632.5297911593543\" y1=\"1449.538944190673\" x2=\"1630.9398475656742\" y2=\"1451.6533228446597\" id=\"SvgjsLine1222\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1635.1356940049911\" y1=\"1437.2828244383293\" x2=\"1635.3270065639483\" y2=\"1439.7754935910218\" id=\"SvgjsLine1223\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1634.1026061866216\" y1=\"1423.8224110137892\" x2=\"1634.293918745579\" y2=\"1426.315080166482\" id=\"SvgjsLine1224\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1633.0695183682524\" y1=\"1410.3619975892493\" x2=\"1633.2608309272096\" y2=\"1412.8546667419419\" id=\"SvgjsLine1225\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1632.0364305498829\" y1=\"1396.9015841647092\" x2=\"1632.2277431088403\" y2=\"1399.3942533174018\" id=\"SvgjsLine1226\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1631.0033427315136\" y1=\"1383.4411707401691\" x2=\"1631.1946552904708\" y2=\"1385.9338398928617\" id=\"SvgjsLine1227\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1629.9702549131441\" y1=\"1369.980757315629\" x2=\"1630.1615674721015\" y2=\"1372.4734264683218\" id=\"SvgjsLine1228\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1628.9371670947748\" y1=\"1356.5203438910892\" x2=\"1629.128479653732\" y2=\"1359.013013043782\" id=\"SvgjsLine1229\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1627.9040792764054\" y1=\"1343.0599304665493\" x2=\"1628.0953918353628\" y2=\"1345.5525996192418\" id=\"SvgjsLine1230\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1619.6409370035642\" y1=\"1335.9952224402734\" x2=\"1622.1078510126022\" y2=\"1336.4925011415348\" id=\"SvgjsLine1231\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1606.8081323459714\" y1=\"1332.0157663685782\" x2=\"1609.154003949052\" y2=\"1332.9267204050566\" id=\"SvgjsLine1232\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1594.8426329177769\" y1=\"1325.904811497172\" x2=\"1596.998645440137\" y2=\"1327.2027178258966\" id=\"SvgjsLine1233\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1584.0954493546221\" y1=\"1317.8416240712006\" x2=\"1585.9983556806299\" y2=\"1319.4884083160719\" id=\"SvgjsLine1234\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1574.8818527203266\" y1=\"1308.062739519935\" x2=\"1576.475830661943\" y2=\"1310.01009289217\" id=\"SvgjsLine1235\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1567.4721259588287\" y1=\"1296.8550236363826\" x2=\"1568.710415812137\" y2=\"1299.0458200837754\" id=\"SvgjsLine1236\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1595.578714950315\" y1=\"1193.0907473654886\" x2=\"1611.6089456782902\" y2=\"1185.5859687006723\" id=\"SvgjsLine1237\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1589.854731222913\" y1=\"1180.8643002000838\" x2=\"1605.884961950888\" y2=\"1173.3595215352675\" id=\"SvgjsLine1238\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1584.1307474955108\" y1=\"1168.637853034679\" x2=\"1600.160978223486\" y2=\"1161.1330743698627\" id=\"SvgjsLine1239\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1578.4067637681085\" y1=\"1156.4114058692742\" x2=\"1594.4369944960836\" y2=\"1148.9066272044581\" id=\"SvgjsLine1240\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1551.0294272830674\" y1=\"1097.9333295800348\" x2=\"1567.0596579942633\" y2=\"1090.4285508793776\" id=\"SvgjsLine1241\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1545.305443528329\" y1=\"1085.706882427428\" x2=\"1561.335674239525\" y2=\"1078.2021037267707\" id=\"SvgjsLine1242\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1539.5814597735907\" y1=\"1073.4804352748208\" x2=\"1555.6116904847865\" y2=\"1065.9756565741636\" id=\"SvgjsLine1243\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1533.8574760188524\" y1=\"1061.253988122214\" x2=\"1549.8877067300482\" y2=\"1053.7492094215568\" id=\"SvgjsLine1244\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1528.1334922641138\" y1=\"1049.027540969607\" x2=\"1544.1637229753096\" y2=\"1041.5227622689497\" id=\"SvgjsLine1245\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1522.4095085093754\" y1=\"1036.801093817\" x2=\"1538.4397392205713\" y2=\"1029.2963151163428\" id=\"SvgjsLine1246\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1708.8890343031528\" y1=\"1231.1290149396648\" x2=\"1713.3919274338746\" y2=\"1248.2466652881587\" id=\"SvgjsLine1247\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1721.944869314716\" y1=\"1227.6946049247072\" x2=\"1726.447762445438\" y2=\"1244.8122552732013\" id=\"SvgjsLine1248\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1735.0007043262792\" y1=\"1224.2601949097498\" x2=\"1739.5035974570012\" y2=\"1241.377845258244\" id=\"SvgjsLine1249\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1748.0565393378424\" y1=\"1220.8257848947924\" x2=\"1752.5594324685644\" y2=\"1237.9434352432866\" id=\"SvgjsLine1250\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1761.1123743494059\" y1=\"1217.391374879835\" x2=\"1765.6152674801276\" y2=\"1234.5090252283292\" id=\"SvgjsLine1251\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1774.168209360969\" y1=\"1213.9569648648774\" x2=\"1778.6711024916908\" y2=\"1231.0746152133715\" id=\"SvgjsLine1252\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1787.2240443725323\" y1=\"1210.52255484992\" x2=\"1791.726937503254\" y2=\"1227.6402051984142\" id=\"SvgjsLine1253\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1651.1136952142253\" y1=\"1335.7624152717106\" x2=\"1633.4655976131617\" y2=\"1337.116908189128\" id=\"SvgjsLine1254\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1652.1467830325946\" y1=\"1349.2228286962504\" x2=\"1634.498685431531\" y2=\"1350.5773216136681\" id=\"SvgjsLine1255\" opacity=\"1\" stroke-width=\"2\" stroke=\"#808080\"></line><line x1=\"1653.179870850964\" y1=\"1362.6832421207905\" x2=\"1635.5317732499004\" y2=\"1364.037735038208\" id=\"SvgjsLine1256\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1654.2129586693334\" y1=\"1376.1436555453306\" x2=\"1636.5648610682697\" y2=\"1377.4981484627478\" id=\"SvgjsLine1257\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1655.2460464877029\" y1=\"1389.6040689698705\" x2=\"1637.5979488866392\" y2=\"1390.958561887288\" id=\"SvgjsLine1258\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1656.2791343060721\" y1=\"1403.0644823944106\" x2=\"1638.6310367050085\" y2=\"1404.418975311828\" id=\"SvgjsLine1259\" opacity=\"1\" stroke-width=\"2\" stroke=\"#808080\"></line><line x1=\"1657.3122221244414\" y1=\"1416.5248958189504\" x2=\"1639.664124523378\" y2=\"1417.8793887363681\" id=\"SvgjsLine1260\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1658.345309942811\" y1=\"1429.9853092434905\" x2=\"1640.6972123417472\" y2=\"1431.339802160908\" id=\"SvgjsLine1261\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1659.3783977611802\" y1=\"1443.4457226680306\" x2=\"1641.7303001601167\" y2=\"1444.800215585448\" id=\"SvgjsLine1262\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line></svg>",
+  "sequences": [
+   {
+    "className": "Sequence",
+    "id": "hairpins",
+    "bases": [
+     {
+      "className": "Base",
+      "textId": "asdf"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1001"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1002"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1003"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1004"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1005"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1006"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1007"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1008"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1009"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1010"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1011"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1012"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1013"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1014"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1015"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1016"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1017"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1018"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1019",
+      "numbering": {
+       "className": "BaseNumbering",
+       "textId": "SvgjsText1124",
+       "lineId": "SvgjsLine1125"
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1020"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1021"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1022"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1023"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1024"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1025"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1026"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1027"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1028"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1029"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1030"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1031"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1032"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1033"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1034"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1035"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1036"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1037"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1038"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1039",
+      "numbering": {
+       "className": "BaseNumbering",
+       "textId": "SvgjsText1126",
+       "lineId": "SvgjsLine1127"
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1040"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1041"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1042"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1043"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1044"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1045"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1046"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1047"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1048"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1049"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1050"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1051"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1052"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1053"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1054"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1055"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1056"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1057"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1058"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1059",
+      "numbering": {
+       "className": "BaseNumbering",
+       "textId": "SvgjsText1128",
+       "lineId": "SvgjsLine1129"
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1060"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1061"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1062"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1063"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1064"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1065"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1066"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1067"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1068"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1069"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1070"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1071"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1072"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1073"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1074"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1075"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1076"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1077"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1078"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1079",
+      "numbering": {
+       "className": "BaseNumbering",
+       "textId": "SvgjsText1130",
+       "lineId": "SvgjsLine1131"
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1080"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1081"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1082"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1083"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1084"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1085"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1086"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1087"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1088"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1089"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1090"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1091"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1092"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1093"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1094"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1095"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1096"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1097"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1098"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1099",
+      "numbering": {
+       "className": "BaseNumbering",
+       "textId": "SvgjsText1132",
+       "lineId": "SvgjsLine1133"
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1100"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1101"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1102"
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1103"
+     }
+    ],
+    "numberingOffset": 0,
+    "numberingAnchor": 0,
+    "numberingIncrement": 20
+   }
+  ],
+  "primaryBonds": [
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1134",
+    "baseId1": "SvgjsText1000",
+    "baseId2": "SvgjsText1001"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1135",
+    "baseId1": "SvgjsText1001",
+    "baseId2": "SvgjsText1002"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1136",
+    "baseId1": "SvgjsText1002",
+    "baseId2": "SvgjsText1003"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1137",
+    "baseId1": "SvgjsText1003",
+    "baseId2": "SvgjsText1004"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1138",
+    "baseId1": "SvgjsText1004",
+    "baseId2": "SvgjsText1005"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1139",
+    "baseId1": "SvgjsText1005",
+    "baseId2": "SvgjsText1006"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1140",
+    "baseId1": "SvgjsText1006",
+    "baseId2": "SvgjsText1007"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1141",
+    "baseId1": "SvgjsText1007",
+    "baseId2": "SvgjsText1008"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1142",
+    "baseId1": "SvgjsText1008",
+    "baseId2": "SvgjsText1009"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1143",
+    "baseId1": "SvgjsText1009",
+    "baseId2": "SvgjsText1010"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1144",
+    "baseId1": "SvgjsText1010",
+    "baseId2": "SvgjsText1011"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1145",
+    "baseId1": "SvgjsText1011",
+    "baseId2": "SvgjsText1012"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1146",
+    "baseId1": "SvgjsText1012",
+    "baseId2": "SvgjsText1013"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1147",
+    "baseId1": "SvgjsText1013",
+    "baseId2": "SvgjsText1014"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1148",
+    "baseId1": "SvgjsText1014",
+    "baseId2": "SvgjsText1015"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1149",
+    "baseId1": "SvgjsText1015",
+    "baseId2": "SvgjsText1016"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1150",
+    "baseId1": "SvgjsText1016",
+    "baseId2": "SvgjsText1017"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1151",
+    "baseId1": "SvgjsText1017",
+    "baseId2": "SvgjsText1018"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1152",
+    "baseId1": "SvgjsText1018",
+    "baseId2": "SvgjsText1019"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1153",
+    "baseId1": "SvgjsText1019",
+    "baseId2": "SvgjsText1020"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1154",
+    "baseId1": "SvgjsText1020",
+    "baseId2": "SvgjsText1021"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1155",
+    "baseId1": "SvgjsText1021",
+    "baseId2": "SvgjsText1022"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1156",
+    "baseId1": "SvgjsText1022",
+    "baseId2": "SvgjsText1023"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1157",
+    "baseId1": "SvgjsText1023",
+    "baseId2": "SvgjsText1024"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1158",
+    "baseId1": "SvgjsText1024",
+    "baseId2": "SvgjsText1025"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1159",
+    "baseId1": "SvgjsText1025",
+    "baseId2": "SvgjsText1026"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1160",
+    "baseId1": "SvgjsText1026",
+    "baseId2": "SvgjsText1027"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1161",
+    "baseId1": "SvgjsText1027",
+    "baseId2": "SvgjsText1028"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1162",
+    "baseId1": "SvgjsText1028",
+    "baseId2": "SvgjsText1029"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1163",
+    "baseId1": "SvgjsText1029",
+    "baseId2": "SvgjsText1030"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1164",
+    "baseId1": "SvgjsText1030",
+    "baseId2": "SvgjsText1031"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1165",
+    "baseId1": "SvgjsText1031",
+    "baseId2": "SvgjsText1032"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1166",
+    "baseId1": "SvgjsText1032",
+    "baseId2": "SvgjsText1033"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1167",
+    "baseId1": "SvgjsText1033",
+    "baseId2": "SvgjsText1034"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1168",
+    "baseId1": "SvgjsText1034",
+    "baseId2": "SvgjsText1035"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1169",
+    "baseId1": "SvgjsText1035",
+    "baseId2": "SvgjsText1036"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1170",
+    "baseId1": "SvgjsText1036",
+    "baseId2": "SvgjsText1037"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1171",
+    "baseId1": "SvgjsText1037",
+    "baseId2": "SvgjsText1038"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1172",
+    "baseId1": "SvgjsText1038",
+    "baseId2": "SvgjsText1039"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1173",
+    "baseId1": "SvgjsText1039",
+    "baseId2": "SvgjsText1040"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1174",
+    "baseId1": "SvgjsText1040",
+    "baseId2": "SvgjsText1041"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1175",
+    "baseId1": "SvgjsText1041",
+    "baseId2": "SvgjsText1042"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1176",
+    "baseId1": "SvgjsText1042",
+    "baseId2": "SvgjsText1043"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1177",
+    "baseId1": "SvgjsText1043",
+    "baseId2": "SvgjsText1044"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1178",
+    "baseId1": "SvgjsText1044",
+    "baseId2": "SvgjsText1045"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1179",
+    "baseId1": "SvgjsText1045",
+    "baseId2": "SvgjsText1046"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1180",
+    "baseId1": "SvgjsText1046",
+    "baseId2": "SvgjsText1047"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1181",
+    "baseId1": "SvgjsText1047",
+    "baseId2": "SvgjsText1048"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1182",
+    "baseId1": "SvgjsText1048",
+    "baseId2": "SvgjsText1049"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1183",
+    "baseId1": "SvgjsText1049",
+    "baseId2": "SvgjsText1050"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1184",
+    "baseId1": "SvgjsText1050",
+    "baseId2": "SvgjsText1051"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1185",
+    "baseId1": "SvgjsText1051",
+    "baseId2": "SvgjsText1052"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1186",
+    "baseId1": "SvgjsText1052",
+    "baseId2": "SvgjsText1053"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1187",
+    "baseId1": "SvgjsText1053",
+    "baseId2": "SvgjsText1054"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1188",
+    "baseId1": "SvgjsText1054",
+    "baseId2": "SvgjsText1055"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1189",
+    "baseId1": "SvgjsText1055",
+    "baseId2": "SvgjsText1056"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1190",
+    "baseId1": "SvgjsText1056",
+    "baseId2": "SvgjsText1057"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1191",
+    "baseId1": "SvgjsText1057",
+    "baseId2": "SvgjsText1058"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1192",
+    "baseId1": "SvgjsText1058",
+    "baseId2": "SvgjsText1059"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1193",
+    "baseId1": "SvgjsText1059",
+    "baseId2": "SvgjsText1060"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1194",
+    "baseId1": "SvgjsText1060",
+    "baseId2": "SvgjsText1061"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1195",
+    "baseId1": "SvgjsText1061",
+    "baseId2": "SvgjsText1062"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1196",
+    "baseId1": "SvgjsText1062",
+    "baseId2": "SvgjsText1063"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1197",
+    "baseId1": "SvgjsText1063",
+    "baseId2": "SvgjsText1064"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1198",
+    "baseId1": "SvgjsText1064",
+    "baseId2": "SvgjsText1065"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1199",
+    "baseId1": "SvgjsText1065",
+    "baseId2": "SvgjsText1066"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1200",
+    "baseId1": "SvgjsText1066",
+    "baseId2": "SvgjsText1067"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1201",
+    "baseId1": "SvgjsText1067",
+    "baseId2": "SvgjsText1068"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1202",
+    "baseId1": "SvgjsText1068",
+    "baseId2": "SvgjsText1069"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1203",
+    "baseId1": "SvgjsText1069",
+    "baseId2": "SvgjsText1070"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1204",
+    "baseId1": "SvgjsText1070",
+    "baseId2": "SvgjsText1071"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1205",
+    "baseId1": "SvgjsText1071",
+    "baseId2": "SvgjsText1072"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1206",
+    "baseId1": "SvgjsText1072",
+    "baseId2": "SvgjsText1073"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1207",
+    "baseId1": "SvgjsText1073",
+    "baseId2": "SvgjsText1074"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1208",
+    "baseId1": "SvgjsText1074",
+    "baseId2": "SvgjsText1075"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1209",
+    "baseId1": "SvgjsText1075",
+    "baseId2": "SvgjsText1076"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1210",
+    "baseId1": "SvgjsText1076",
+    "baseId2": "SvgjsText1077"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1211",
+    "baseId1": "SvgjsText1077",
+    "baseId2": "SvgjsText1078"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1212",
+    "baseId1": "SvgjsText1078",
+    "baseId2": "SvgjsText1079"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1213",
+    "baseId1": "SvgjsText1079",
+    "baseId2": "SvgjsText1080"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1214",
+    "baseId1": "SvgjsText1080",
+    "baseId2": "SvgjsText1081"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1215",
+    "baseId1": "SvgjsText1081",
+    "baseId2": "SvgjsText1082"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1216",
+    "baseId1": "SvgjsText1082",
+    "baseId2": "SvgjsText1083"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1217",
+    "baseId1": "SvgjsText1083",
+    "baseId2": "SvgjsText1084"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1218",
+    "baseId1": "SvgjsText1084",
+    "baseId2": "SvgjsText1085"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1219",
+    "baseId1": "SvgjsText1085",
+    "baseId2": "SvgjsText1086"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1220",
+    "baseId1": "SvgjsText1086",
+    "baseId2": "SvgjsText1087"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1221",
+    "baseId1": "SvgjsText1087",
+    "baseId2": "SvgjsText1088"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1222",
+    "baseId1": "SvgjsText1088",
+    "baseId2": "SvgjsText1089"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1223",
+    "baseId1": "SvgjsText1089",
+    "baseId2": "SvgjsText1090"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1224",
+    "baseId1": "SvgjsText1090",
+    "baseId2": "SvgjsText1091"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1225",
+    "baseId1": "SvgjsText1091",
+    "baseId2": "SvgjsText1092"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1226",
+    "baseId1": "SvgjsText1092",
+    "baseId2": "SvgjsText1093"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1227",
+    "baseId1": "SvgjsText1093",
+    "baseId2": "SvgjsText1094"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1228",
+    "baseId1": "SvgjsText1094",
+    "baseId2": "SvgjsText1095"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1229",
+    "baseId1": "SvgjsText1095",
+    "baseId2": "SvgjsText1096"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1230",
+    "baseId1": "SvgjsText1096",
+    "baseId2": "SvgjsText1097"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1231",
+    "baseId1": "SvgjsText1097",
+    "baseId2": "SvgjsText1098"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1232",
+    "baseId1": "SvgjsText1098",
+    "baseId2": "SvgjsText1099"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1233",
+    "baseId1": "SvgjsText1099",
+    "baseId2": "SvgjsText1100"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1234",
+    "baseId1": "SvgjsText1100",
+    "baseId2": "SvgjsText1101"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1235",
+    "baseId1": "SvgjsText1101",
+    "baseId2": "SvgjsText1102"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1236",
+    "baseId1": "SvgjsText1102",
+    "baseId2": "SvgjsText1103"
+   }
+  ],
+  "secondaryBonds": [
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1237",
+    "baseId1": "SvgjsText1003",
+    "baseId2": "SvgjsText1035"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1238",
+    "baseId1": "SvgjsText1004",
+    "baseId2": "SvgjsText1034"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1239",
+    "baseId1": "SvgjsText1005",
+    "baseId2": "SvgjsText1033"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1240",
+    "baseId1": "SvgjsText1006",
+    "baseId2": "SvgjsText1032"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1241",
+    "baseId1": "SvgjsText1012",
+    "baseId2": "SvgjsText1027"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1242",
+    "baseId1": "SvgjsText1013",
+    "baseId2": "SvgjsText1026"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1243",
+    "baseId1": "SvgjsText1014",
+    "baseId2": "SvgjsText1025"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1244",
+    "baseId1": "SvgjsText1015",
+    "baseId2": "SvgjsText1024"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1245",
+    "baseId1": "SvgjsText1016",
+    "baseId2": "SvgjsText1023"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1246",
+    "baseId1": "SvgjsText1017",
+    "baseId2": "SvgjsText1022"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1247",
+    "baseId1": "SvgjsText1043",
+    "baseId2": "SvgjsText1063"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1248",
+    "baseId1": "SvgjsText1044",
+    "baseId2": "SvgjsText1062"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1249",
+    "baseId1": "SvgjsText1045",
+    "baseId2": "SvgjsText1061"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1250",
+    "baseId1": "SvgjsText1046",
+    "baseId2": "SvgjsText1060"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1251",
+    "baseId1": "SvgjsText1047",
+    "baseId2": "SvgjsText1059"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1252",
+    "baseId1": "SvgjsText1048",
+    "baseId2": "SvgjsText1058"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1253",
+    "baseId1": "SvgjsText1049",
+    "baseId2": "SvgjsText1057"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1254",
+    "baseId1": "SvgjsText1071",
+    "baseId2": "SvgjsText1097"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1255",
+    "baseId1": "SvgjsText1072",
+    "baseId2": "SvgjsText1096"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1256",
+    "baseId1": "SvgjsText1073",
+    "baseId2": "SvgjsText1095"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1257",
+    "baseId1": "SvgjsText1074",
+    "baseId2": "SvgjsText1094"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1258",
+    "baseId1": "SvgjsText1075",
+    "baseId2": "SvgjsText1093"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1259",
+    "baseId1": "SvgjsText1076",
+    "baseId2": "SvgjsText1092"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1260",
+    "baseId1": "SvgjsText1077",
+    "baseId2": "SvgjsText1091"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1261",
+    "baseId1": "SvgjsText1078",
+    "baseId2": "SvgjsText1090"
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1262",
+    "baseId1": "SvgjsText1079",
+    "baseId2": "SvgjsText1089"
+   }
+  ],
+  "tertiaryBonds": []
+ },
+ "generalLayoutProps": {
+  "className": "GeneralStrictLayoutProps",
+  "outermostLoopShape": "round",
+  "rotation": 0,
+  "basePairBondLength": 1.2,
+  "basePairPadding": 0,
+  "terminiGap": 4
+ },
+ "perBaseLayoutProps": [
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0.2,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0.2,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0.2,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0.2,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0.2,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  }
+ ],
+ "baseWidth": 13.5,
+ "baseHeight": 13.5
+}

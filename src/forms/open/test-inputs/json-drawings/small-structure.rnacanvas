@@ -1,0 +1,2624 @@
+{
+ "className": "StrictDrawing",
+ "drawing": {
+  "className": "Drawing",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:svgjs=\"http://svgjs.dev/svgjs\" viewBox=\"0 0 4170.012929367615 2656.1867662822547\" width=\"4170.012929367615\" height=\"2656.1867662822547\" style=\"cursor: auto;\"><text id=\"SvgjsText1000\" font-family=\"Arial\" x=\"1977.5244124831815\" y=\"1306.7524115782603\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1001\" font-family=\"Arial\" x=\"1984.1531710587506\" y=\"1295.0104427167807\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1002\" font-family=\"Arial\" x=\"1992.7028207057897\" y=\"1284.5803091943671\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1003\" font-family=\"Arial\" x=\"2002.6488518647147\" y=\"1275.753855266446\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1004\" font-family=\"Arial\" x=\"1997.1696344099105\" y=\"1263.5275234356363\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1005\" font-family=\"Arial\" x=\"1991.1904169551062\" y=\"1251.3011916048267\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1006\" font-family=\"Arial\" x=\"1985.7268245003015\" y=\"1239.074859774017\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1007\" font-family=\"Arial\" x=\"1972.533341552762\" y=\"1236.6307821046203\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1008\" font-family=\"Arial\" x=\"1961.1749942242786\" y=\"1229.468501822028\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1009\" font-family=\"Arial\" x=\"1953.2940584605471\" y=\"1218.6074048640248\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1010\" font-family=\"Arial\" x=\"1949.7633203790156\" y=\"1205.5977841449162\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1011\" font-family=\"Arial\" x=\"1951.7718097048473\" y=\"1192.2979578493655\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1012\" font-family=\"Arial\" x=\"1958.3471515415954\" y=\"1180.5952697198368\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1013\" font-family=\"Arial\" x=\"1952.3679340321187\" y=\"1168.368937914623\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1014\" font-family=\"Arial\" x=\"1946.896529022642\" y=\"1156.142606109409\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1015\" font-family=\"Arial\" x=\"1941.1751240131653\" y=\"1143.9162743041952\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1016\" font-family=\"Arial\" x=\"1935.195906503688\" y=\"1131.689942498981\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1017\" font-family=\"Arial\" x=\"1929.7323139942114\" y=\"1119.4636106937674\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1018\" font-family=\"Arial\" x=\"1923.5\" y=\"1107.9036325021038\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1019\" font-family=\"Arial\" x=\"1927.6311836510076\" y=\"1095.4396256215036\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1020\" font-family=\"Arial\" x=\"1939.517008707206\" y=\"1089.8671875\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1021\" font-family=\"Arial\" x=\"1951.7292814953153\" y=\"1094.6881249881862\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1022\" font-family=\"Arial\" x=\"1956.372431465682\" y=\"1106.8718321729184\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1023\" font-family=\"Arial\" x=\"1962.3516489751587\" y=\"1119.098163978132\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1024\" font-family=\"Arial\" x=\"1968.0730539846359\" y=\"1131.3244957833463\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1025\" font-family=\"Arial\" x=\"1973.7944589941126\" y=\"1143.55082758856\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1026\" font-family=\"Arial\" x=\"1979.5236765035893\" y=\"1155.7771593937741\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1027\" font-family=\"Arial\" x=\"1984.987269013066\" y=\"1168.0034911989878\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1028\" font-family=\"Arial\" x=\"1995.3567469917775\" y=\"1176.9082323130551\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1029\" font-family=\"Arial\" x=\"2003.4471961079603\" y=\"1187.6911912795158\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1030\" font-family=\"Arial\" x=\"2009.1562786895906\" y=\"1199.897952387114\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1031\" font-family=\"Arial\" x=\"2012.2608610853222\" y=\"1213.0090256535636\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1032\" font-family=\"Arial\" x=\"2012.3669420280826\" y=\"1226.4830813734475\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1033\" font-family=\"Arial\" x=\"2018.3461594828873\" y=\"1238.7094132042566\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1034\" font-family=\"Arial\" x=\"2023.8253769376915\" y=\"1250.9357450350662\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1035\" font-family=\"Arial\" x=\"2029.7889693924958\" y=\"1263.1620768658759\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1036\" font-family=\"Arial\" x=\"2043.1044449805381\" y=\"1260.9830882185647\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1037\" font-family=\"Arial\" x=\"2056.5858719393673\" y=\"1261.10463698701\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1038\" font-family=\"Arial\" x=\"2069.840639861375\" y=\"1263.527303107253\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1039\" font-family=\"Arial\" x=\"2082.2546003324696\" y=\"1268.1792833683508\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1040\" font-family=\"Arial\" x=\"2094.178958425481\" y=\"1274.9205604089484\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1041\" font-family=\"Arial\" x=\"2104.5379929237743\" y=\"1283.558718743046\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1042\" font-family=\"Arial\" x=\"2113.2632162739237\" y=\"1293.829298029742\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1043\" font-family=\"Arial\" x=\"2119.8658847041215\" y=\"1305.4497182023842\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1044\" font-family=\"Arial\" x=\"2132.9150547272475\" y=\"1302.0105856724695\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1045\" font-family=\"Arial\" x=\"2146.2298497503743\" y=\"1298.5792656425547\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1046\" font-family=\"Arial\" x=\"2159.2790197735003\" y=\"1295.14013311264\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1047\" font-family=\"Arial\" x=\"2172.336002296627\" y=\"1291.708813082725\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1048\" font-family=\"Arial\" x=\"2185.385172319753\" y=\"1288.2774930528099\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1049\" font-family=\"Arial\" x=\"2198.44215484288\" y=\"1284.838360522895\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1050\" font-family=\"Arial\" x=\"2207.716135313619\" y=\"1275.3067070475013\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1051\" font-family=\"Arial\" x=\"2220.5100144645266\" y=\"1272.7158005900446\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1052\" font-family=\"Arial\" x=\"2232.9672382820927\" y=\"1277.9900846036808\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1053\" font-family=\"Arial\" x=\"2240.018046235229\" y=\"1289.2589308510305\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1054\" font-family=\"Arial\" x=\"2239.4164827792974\" y=\"1302.5428723618056\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1055\" font-family=\"Arial\" x=\"2231.387172782218\" y=\"1313.1429415340244\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1056\" font-family=\"Arial\" x=\"2218.5080685762514\" y=\"1317.3065305204077\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1057\" font-family=\"Arial\" x=\"2205.756683908692\" y=\"1313.5652845737732\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1058\" font-family=\"Arial\" x=\"2192.941888885566\" y=\"1316.996604603688\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1059\" font-family=\"Arial\" x=\"2179.8927188624402\" y=\"1320.4279246336032\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1060\" font-family=\"Arial\" x=\"2166.5857363393134\" y=\"1323.867057163518\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1061\" font-family=\"Arial\" x=\"2153.5287538161865\" y=\"1327.2983771934328\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1062\" font-family=\"Arial\" x=\"2140.7295837930606\" y=\"1330.7375097233476\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1063\" font-family=\"Arial\" x=\"2127.6647887699337\" y=\"1334.1688297532628\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1064\" font-family=\"Arial\" x=\"2127.4295244219547\" y=\"1347.6468755792935\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1065\" font-family=\"Arial\" x=\"2124.8738981777888\" y=\"1360.8953054091176\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1066\" font-family=\"Arial\" x=\"2120.1158847041206\" y=\"1373.5044276652943\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1067\" font-family=\"Arial\" x=\"2113.2710287739237\" y=\"1385.1170353379366\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1068\" font-family=\"Arial\" x=\"2104.2879929237743\" y=\"1395.3954271246325\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1069\" font-family=\"Arial\" x=\"2093.9289584254802\" y=\"1404.0335854587302\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1070\" font-family=\"Arial\" x=\"2082.5046003324687\" y=\"1410.7748624993278\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1071\" font-family=\"Arial\" x=\"2069.848452361375\" y=\"1415.426842760426\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1072\" font-family=\"Arial\" x=\"2070.633377998114\" y=\"1428.8867321095058\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1073\" font-family=\"Arial\" x=\"2071.9183036348522\" y=\"1442.346621458586\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1074\" font-family=\"Arial\" x=\"2072.945416771591\" y=\"1455.8065108076662\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1075\" font-family=\"Arial\" x=\"2073.97252990833\" y=\"1469.266400156746\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1076\" font-family=\"Arial\" x=\"2074.7574555450683\" y=\"1482.7262895058261\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1077\" font-family=\"Arial\" x=\"2076.0423811818073\" y=\"1496.1861788549058\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1078\" font-family=\"Arial\" x=\"2077.0773068185463\" y=\"1509.646068203986\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1079\" font-family=\"Arial\" x=\"2078.1044199552853\" y=\"1523.1059575530662\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1080\" font-family=\"Arial\" x=\"2087.671614504213\" y=\"1532.4330949523246\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1081\" font-family=\"Arial\" x=\"2091.4761842711987\" y=\"1545.232934362481\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1082\" font-family=\"Arial\" x=\"2088.5412922067053\" y=\"1558.2624497261645\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1083\" font-family=\"Arial\" x=\"2079.6410159210127\" y=\"1568.2096537301545\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1084\" font-family=\"Arial\" x=\"2067.0092485952973\" y=\"1572.5532200645098\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1085\" font-family=\"Arial\" x=\"2053.8632221769412\" y=\"1570.1890527851342\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1086\" font-family=\"Arial\" x=\"2043.29883761785\" y=\"1561.7168525001607\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1087\" font-family=\"Arial\" x=\"2038.6664814990422\" y=\"1549.2835602429145\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1088\" font-family=\"Arial\" x=\"2040.466926562748\" y=\"1536.053302616774\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1089\" font-family=\"Arial\" x=\"2048.4957883873085\" y=\"1525.3781064538912\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1090\" font-family=\"Arial\" x=\"2047.2108627505704\" y=\"1511.918217104811\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1091\" font-family=\"Arial\" x=\"2046.1759371138314\" y=\"1498.4583277557313\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1092\" font-family=\"Arial\" x=\"2045.3988239770924\" y=\"1484.998438406651\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1093\" font-family=\"Arial\" x=\"2044.121710840354\" y=\"1471.538549057571\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1094\" font-family=\"Arial\" x=\"2043.336785203615\" y=\"1458.0786597084907\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1095\" font-family=\"Arial\" x=\"2042.0518595668764\" y=\"1444.618770359411\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1096\" font-family=\"Arial\" x=\"2041.2669339301374\" y=\"1431.1588810103312\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1097\" font-family=\"Arial\" x=\"2040.2398207933988\" y=\"1417.698991661251\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1098\" font-family=\"Arial\" x=\"2027.015567738934\" y=\"1415.0342680023655\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1099\" font-family=\"Arial\" x=\"2014.4477673511128\" y=\"1410.147580544904\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">A</tspan></text><text id=\"SvgjsText1100\" font-family=\"Arial\" x=\"2002.6488518647147\" y=\"1403.200290601233\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">G</tspan></text><text id=\"SvgjsText1101\" font-family=\"Arial\" x=\"1992.6950082057892\" y=\"1394.3738366733119\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">C</tspan></text><text id=\"SvgjsText1102\" font-family=\"Arial\" x=\"1984.16098355875\" y=\"1383.9358906508978\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><text id=\"SvgjsText1103\" font-family=\"Arial\" x=\"1977.524412483181\" y=\"1372.2017342894183\" font-size=\"9\" font-weight=\"bold\" font-style=\"normal\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">U</tspan></text><line x1=\"1924.8142300112968\" y1=\"1086.9360116268801\" x2=\"1918.8324222048345\" y2=\"1081.6239521988855\" id=\"SvgjsLine1125\" stroke=\"#808080\" stroke-width=\"1\"></line><text x=\"1915.8415183016036\" y=\"1082.167922484888\" text-anchor=\"end\" id=\"SvgjsText1124\" font-family=\"Arial\" font-size=\"8\" font-weight=\"normal\" fill=\"#808080\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">20</tspan></text><line x1=\"2089.1286015408255\" y1=\"1257.845924147698\" x2=\"2092.520330651785\" y2=\"1250.6004998234873\" id=\"SvgjsLine1127\" stroke=\"#808080\" stroke-width=\"1\"></line><text x=\"2094.216195207265\" y=\"1246.9777876613819\" text-anchor=\"middle\" id=\"SvgjsText1126\" font-family=\"Arial\" font-size=\"8\" font-weight=\"normal\" fill=\"#808080\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">40</tspan></text><line x1=\"2185.1936548142135\" y1=\"1325.183352403184\" x2=\"2187.211636926529\" y2=\"1332.9246538567106\" id=\"SvgjsLine1129\" stroke=\"#808080\" stroke-width=\"1\"></line><text x=\"2188.220627982687\" y=\"1343.1953045834741\" text-anchor=\"middle\" id=\"SvgjsText1128\" font-family=\"Arial\" font-size=\"8\" font-weight=\"normal\" fill=\"#808080\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">60</tspan></text><line x1=\"2088.358642800094\" y1=\"1516.7330870636379\" x2=\"2095.6129362143197\" y2=\"1513.3603690113357\" id=\"SvgjsLine1131\" stroke=\"#808080\" stroke-width=\"1\"></line><text x=\"2099.2400829214325\" y=\"1514.8740099851848\" text-anchor=\"start\" id=\"SvgjsText1130\" font-family=\"Arial\" font-size=\"8\" font-weight=\"normal\" fill=\"#808080\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">80</tspan></text><line x1=\"2014.1071643068171\" y1=\"1414.4215146852848\" x2=\"2010.6122395693167\" y2=\"1421.617729042793\" id=\"SvgjsLine1133\" stroke=\"#808080\" stroke-width=\"1\"></line><text x=\"2008.8647772005663\" y=\"1431.6158362215472\" text-anchor=\"middle\" id=\"SvgjsText1132\" font-family=\"Arial\" font-size=\"8\" font-weight=\"normal\" fill=\"#808080\" svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\"><tspan svgjs:data=\"{&quot;leading&quot;:&quot;1.3&quot;}\">100</tspan></text><line x1=\"1984.6795205144638\" y1=\"1296.7202881609783\" x2=\"1983.3587086960702\" y2=\"1299.05708340458\" id=\"SvgjsLine1134\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1992.3158780006806\" y1=\"1285.8967682567306\" x2=\"1990.7226796414116\" y2=\"1287.8431692178476\" id=\"SvgjsLine1135\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2001.7973282234407\" y1=\"1276.3970097416573\" x2=\"2000.1307641522797\" y2=\"1277.8392622676731\" id=\"SvgjsLine1136\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2002.8284411626757\" y1=\"1265.5511187807663\" x2=\"2003.8737955166528\" y2=\"1267.7839989542094\" id=\"SvgjsLine1137\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1997.0897782367679\" y1=\"1253.293316801388\" x2=\"1998.1631627290808\" y2=\"1255.586069438088\" id=\"SvgjsLine1138\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1991.3787309953702\" y1=\"1241.0945020105978\" x2=\"1992.4268506263634\" y2=\"1243.333288824406\" id=\"SvgjsLine1139\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1981.2144201487492\" y1=\"1234.5179065805191\" x2=\"1983.4307759792337\" y2=\"1234.9285592164456\" id=\"SvgjsLine1140\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1968.8897303417084\" y1=\"1229.1620627584743\" x2=\"1971.307854056193\" y2=\"1230.688564672337\" id=\"SvgjsLine1141\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1959.8172964824898\" y1=\"1219.9900857218643\" x2=\"1961.2201688085086\" y2=\"1221.9230681894956\" id=\"SvgjsLine1142\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1954.5983670533642\" y1=\"1207.7793408213438\" x2=\"1955.2585946825322\" y2=\"1210.3877414537133\" id=\"SvgjsLine1143\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1954.2971668103744\" y1=\"1194.640882441604\" x2=\"1953.9491585543803\" y2=\"1197.2622817242413\" id=\"SvgjsLine1144\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1958.8298330401237\" y1=\"1182.3998559779257\" x2=\"1957.6470327826953\" y2=\"1184.5051266977368\" id=\"SvgjsLine1145\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1958.2644840787552\" y1=\"1170.3623671167911\" x2=\"1959.337888298712\" y2=\"1172.6551618784504\" id=\"SvgjsLine1146\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1952.5534257151714\" y1=\"1158.1635286400033\" x2=\"1953.541776934955\" y2=\"1160.274649928021\" id=\"SvgjsLine1147\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1946.7537194094416\" y1=\"1145.775337882308\" x2=\"1947.8766781059521\" y2=\"1148.173981160441\" id=\"SvgjsLine1148\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1941.0926523241865\" y1=\"1133.6832809319476\" x2=\"1942.1660551305729\" y2=\"1135.9760726742165\" id=\"SvgjsLine1149\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1935.381594725208\" y1=\"1121.4844440883594\" x2=\"1936.4297338456347\" y2=\"1123.7232725186232\" id=\"SvgjsLine1150\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1929.2529147344192\" y1=\"1109.4319315032792\" x2=\"1930.5389984905187\" y2=\"1111.8202770789574\" id=\"SvgjsLine1151\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1929.2030888574843\" y1=\"1097.3687752437015\" x2=\"1928.3004116321533\" y2=\"1100.097342058749\" id=\"SvgjsLine1152\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1937.8732666087512\" y1=\"1089.040750515098\" x2=\"1935.5459110554257\" y2=\"1090.1303348573404\" id=\"SvgjsLine1153\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1950.3239434774084\" y1=\"1089.7300604039763\" x2=\"1947.6527058278944\" y2=\"1088.676760215283\" id=\"SvgjsLine1154\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1958.015790816566\" y1=\"1099.1242648427663\" x2=\"1956.9569651387885\" y2=\"1096.486749155438\" id=\"SvgjsLine1155\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1963.3411039963548\" y1=\"1111.1586744817334\" x2=\"1962.2676904390592\" y2=\"1108.8658597754893\" id=\"SvgjsLine1156\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1969.0517214281506\" y1=\"1123.3565711268468\" x2=\"1967.928783690927\" y2=\"1120.957972617816\" id=\"SvgjsLine1157\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1974.7167932026036\" y1=\"1135.4571821058237\" x2=\"1973.7146492153468\" y2=\"1133.3165994234646\" id=\"SvgjsLine1158\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1980.4986663852765\" y1=\"1147.80728125705\" x2=\"1979.439522174547\" y2=\"1145.5449459195752\" id=\"SvgjsLine1159\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1986.2235538704226\" y1=\"1160.0356587806266\" x2=\"1985.1754331564662\" y2=\"1157.79686966664\" id=\"SvgjsLine1160\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1994.6457590034827\" y1=\"1170.3013474183506\" x2=\"1992.7099977012601\" y2=\"1168.5969587716427\" id=\"SvgjsLine1161\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2003.494365457397\" y1=\"1180.3069728186354\" x2=\"2001.9830208868584\" y2=\"1178.291275583664\" id=\"SvgjsLine1162\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2010.1463943414992\" y1=\"1191.9500118041738\" x2=\"2009.076113716701\" y2=\"1189.66388904486\" id=\"SvgjsLine1163\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2014.2800430094917\" y1=\"1204.696019662584\" x2=\"2013.6794114582306\" y2=\"1202.1576450007437\" id=\"SvgjsLine1164\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2015.7271017078585\" y1=\"1218.003292681478\" x2=\"2015.6595960787026\" y2=\"1215.488609413391\" id=\"SvgjsLine1165\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2019.3382114374049\" y1=\"1230.768670838097\" x2=\"2018.2648166914992\" y2=\"1228.4758962996907\" id=\"SvgjsLine1166\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2025.0488386777174\" y1=\"1242.9665885052548\" x2=\"2024.0034728272758\" y2=\"1240.7336837753276\" id=\"SvgjsLine1167\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2030.7880209509249\" y1=\"1255.2254998120911\" x2=\"2029.7117746999659\" y2=\"1252.9266344499622\" id=\"SvgjsLine1168\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2040.9994819940266\" y1=\"1258.7388190663357\" x2=\"2038.5228634111431\" y2=\"1259.1444494636767\" id=\"SvgjsLine1169\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2054.442025557277\" y1=\"1257.936631632992\" x2=\"2051.9223430474317\" y2=\"1257.9135941345846\" id=\"SvgjsLine1170\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2067.8103554725167\" y1=\"1259.442907843371\" x2=\"2064.9984983072172\" y2=\"1258.929410701561\" id=\"SvgjsLine1171\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2080.42115866513\" y1=\"1263.099594925353\" x2=\"2078.428653684778\" y2=\"1262.3674980007747\" id=\"SvgjsLine1172\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2092.857647454866\" y1=\"1269.1606658633248\" x2=\"2090.362701682887\" y2=\"1267.720208246968\" id=\"SvgjsLine1173\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2103.488001805399\" y1=\"1276.85257442673\" x2=\"2101.7537843809005\" y2=\"1275.406376687429\" id=\"SvgjsLine1174\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2113.0623676399277\" y1=\"1286.64808552901\" x2=\"2111.4284880730197\" y2=\"1284.7248331574094\" id=\"SvgjsLine1175\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2120.650986055523\" y1=\"1297.727341170365\" x2=\"2119.396343694115\" y2=\"1295.5994063953751\" id=\"SvgjsLine1176\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2131.2271317777754\" y1=\"1300.2576206281096\" x2=\"2128.80127041223\" y2=\"1300.8957569526992\" id=\"SvgjsLine1177\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2144.277777789414\" y1=\"1296.8245756084432\" x2=\"2141.791932815376\" y2=\"1297.4784909548691\" id=\"SvgjsLine1178\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2157.2679161573624\" y1=\"1293.4074474609863\" x2=\"2154.842801875936\" y2=\"1294.0453872609432\" id=\"SvgjsLine1179\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2170.3185765597314\" y1=\"1289.974398655758\" x2=\"2167.5856965210696\" y2=\"1290.693297949916\" id=\"SvgjsLine1180\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2183.059612213949\" y1=\"1286.6227983626309\" x2=\"2180.634529786544\" y2=\"1287.2607297832103\" id=\"SvgjsLine1181\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2196.108462128214\" y1=\"1283.190225816368\" x2=\"2194.005856945686\" y2=\"1283.7433278040985\" id=\"SvgjsLine1182\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2207.253604493518\" y1=\"1276.002423953654\" x2=\"2205.2067875154275\" y2=\"1278.1087644089146\" id=\"SvgjsLine1183\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2218.5494571360728\" y1=\"1270.6789785672318\" x2=\"2216.2964823009183\" y2=\"1271.1261405214996\" id=\"SvgjsLine1184\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2231.534878188615\" y1=\"1272.8498418050535\" x2=\"2228.988196057799\" y2=\"1271.7494194350024\" id=\"SvgjsLine1185\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2240.5339098470367\" y1=\"1281.7798816895936\" x2=\"2239.0009894699847\" y2=\"1279.330089960093\" id=\"SvgjsLine1186\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2242.899776345355\" y1=\"1294.265160443375\" x2=\"2243.0213084324832\" y2=\"1291.5464062788874\" id=\"SvgjsLine1187\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2237.8097509170975\" y1=\"1305.8363731250006\" x2=\"2239.443271138238\" y2=\"1303.680748900982\" id=\"SvgjsLine1188\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2227.0796964476294\" y1=\"1312.5133696354953\" x2=\"2229.719320588068\" y2=\"1311.6429420124311\" id=\"SvgjsLine1189\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2214.515390311713\" y1=\"1311.9860118361075\" x2=\"2217.117533985978\" y2=\"1312.7491486322542\" id=\"SvgjsLine1190\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2201.6413921035646\" y1=\"1312.4451642819902\" x2=\"2203.9811538592066\" y2=\"1311.8296769386625\" id=\"SvgjsLine1191\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2188.5053390239655\" y1=\"1315.900676105909\" x2=\"2190.932290723637\" y2=\"1315.2622529628632\" id=\"SvgjsLine1192\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2175.456518132857\" y1=\"1319.333241017469\" x2=\"2177.947700989077\" y2=\"1318.6779215114464\" id=\"SvgjsLine1193\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2162.4710713939803\" y1=\"1322.749135005804\" x2=\"2164.8914917080256\" y2=\"1322.112429980074\" id=\"SvgjsLine1194\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2149.4149867321858\" y1=\"1326.1836106926435\" x2=\"2151.767429349162\" y2=\"1325.5647875782122\" id=\"SvgjsLine1195\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2136.291414204208\" y1=\"1329.6358394380425\" x2=\"2138.7038875208914\" y2=\"1329.001224914169\" id=\"SvgjsLine1196\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2130.7698894346713\" y1=\"1339.1663864733844\" x2=\"2130.8159272690414\" y2=\"1336.6489463029511\" id=\"SvgjsLine1197\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2129.1319988937394\" y1=\"1352.5467991103762\" x2=\"2129.6061245606907\" y2=\"1350.078451759272\" id=\"SvgjsLine1198\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2125.2273443176737\" y1=\"1365.4498003270428\" x2=\"2126.162243217633\" y2=\"1362.9754604488608\" id=\"SvgjsLine1199\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2119.269627948426\" y1=\"1377.3269576373327\" x2=\"2120.464309276414\" y2=\"1375.300719706068\" id=\"SvgjsLine1200\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2111.1745780801257\" y1=\"1388.2854942078745\" x2=\"2112.9770547945345\" y2=\"1386.1637848200144\" id=\"SvgjsLine1201\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2101.6786433662674\" y1=\"1397.3677328042727\" x2=\"2103.611622737666\" y2=\"1395.7557836002447\" id=\"SvgjsLine1202\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2090.569025712435\" y1=\"1404.872118452599\" x2=\"2092.69514700004\" y2=\"1403.644601752066\" id=\"SvgjsLine1203\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2078.2802080772954\" y1=\"1410.3984926186674\" x2=\"2080.6443027368164\" y2=\"1409.52986421035\" id=\"SvgjsLine1204\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2073.718276500452\" y1=\"1420.4097754168122\" x2=\"2073.5272411982623\" y2=\"1417.920718726342\" id=\"SvgjsLine1205\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2074.7518814505283\" y1=\"1433.8769267066634\" x2=\"2074.5599313143434\" y2=\"1431.375950367572\" id=\"SvgjsLine1206\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2075.7843965261\" y1=\"1447.3298776921847\" x2=\"2075.5906860321093\" y2=\"1444.8059651191957\" id=\"SvgjsLine1207\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2076.815725798408\" y1=\"1460.7673784885897\" x2=\"2076.625965796315\" y2=\"1458.2949380685272\" id=\"SvgjsLine1208\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2077.850413706677\" y1=\"1474.2486399680472\" x2=\"2077.65939625148\" y2=\"1471.7598158114317\" id=\"SvgjsLine1209\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2078.8840126208656\" y1=\"1487.7157126144864\" x2=\"2078.6920803520206\" y2=\"1485.2149690743659\" id=\"SvgjsLine1210\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2079.9165334475106\" y1=\"1501.1687385324842\" x2=\"2079.7251375789547\" y2=\"1498.6749839138495\" id=\"SvgjsLine1211\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2080.949593367632\" y1=\"1514.6287884623157\" x2=\"2080.7558718788277\" y2=\"1512.1047326345772\" id=\"SvgjsLine1212\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2087.0196939513085\" y1=\"1525.5050602810966\" x2=\"2085.2996097806677\" y2=\"1523.8276530409275\" id=\"SvgjsLine1213\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2093.239051281658\" y1=\"1537.1158580260035\" x2=\"2092.485708315185\" y2=\"1534.5783153812938\" id=\"SvgjsLine1214\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2092.9489694495305\" y1=\"1550.0146067686715\" x2=\"2093.512749675298\" y2=\"1547.5026118440385\" id=\"SvgjsLine1215\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2086.288085185474\" y1=\"1561.2980368214517\" x2=\"2088.2078821089835\" y2=\"1559.153439098331\" id=\"SvgjsLine1216\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2075.365855414185\" y1=\"1567.681394688704\" x2=\"2077.866722588851\" y2=\"1566.8211965494745\" id=\"SvgjsLine1217\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2062.488790563001\" y1=\"1568.0375816664543\" x2=\"2065.0913241900635\" y2=\"1568.5060137127775\" id=\"SvgjsLine1218\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2051.041775461341\" y1=\"1562.0812246701948\" x2=\"2053.138294781947\" y2=\"1563.8025952495493\" id=\"SvgjsLine1219\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2043.9378985765732\" y1=\"1551.3091728093066\" x2=\"2044.8931195026876\" y2=\"1553.7431967662578\" id=\"SvgjsLine1220\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2042.9847734385787\" y1=\"1538.3428741408054\" x2=\"2042.6207141658554\" y2=\"1541.0153680745254\" id=\"SvgjsLine1221\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2048.3805823778303\" y1=\"1526.7373687535915\" x2=\"2046.9123759419278\" y2=\"1528.6898558481387\" id=\"SvgjsLine1222\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2051.145217956503\" y1=\"1514.4069148810834\" x2=\"2051.3371508191535\" y2=\"1516.9076661580764\" id=\"SvgjsLine1223\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2050.112533673786\" y1=\"1500.951759244522\" x2=\"2050.3040895850613\" y2=\"1503.4475991081142\" id=\"SvgjsLine1224\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2049.0794777986357\" y1=\"1487.4917620178378\" x2=\"2049.270542946537\" y2=\"1489.9812075771042\" id=\"SvgjsLine1225\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2048.046086325111\" y1=\"1474.0273921785026\" x2=\"2048.238081081059\" y2=\"1476.5289498819754\" id=\"SvgjsLine1226\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2047.0134342954946\" y1=\"1460.572656777338\" x2=\"2047.2044745020037\" y2=\"1463.0617773676665\" id=\"SvgjsLine1227\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2045.9800117899613\" y1=\"1447.1078826125827\" x2=\"2046.171958295463\" y2=\"1449.6088116464045\" id=\"SvgjsLine1228\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2044.947322874262\" y1=\"1433.652666611497\" x2=\"2045.1383545325034\" y2=\"1436.1416758238624\" id=\"SvgjsLine1229\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2043.9138974704044\" y1=\"1420.1878546835987\" x2=\"2044.10364643982\" y2=\"1422.6601513555765\" id=\"SvgjsLine1230\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2035.4291863717842\" y1=\"1412.9525379045429\" x2=\"2037.8931464906104\" y2=\"1413.4492211628003\" id=\"SvgjsLine1231\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2022.6298501911328\" y1=\"1408.946535448877\" x2=\"2024.9795885510139\" y2=\"1409.8589910328872\" id=\"SvgjsLine1232\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2010.708886412204\" y1=\"1402.8242969202724\" x2=\"2013.176712581814\" y2=\"1404.3099131541812\" id=\"SvgjsLine1233\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2000.2527469034815\" y1=\"1394.9777501230603\" x2=\"2002.1048698507443\" y2=\"1396.5805861888355\" id=\"SvgjsLine1234\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1990.973763552109\" y1=\"1385.17502643655\" x2=\"1992.568303252966\" y2=\"1387.1230661067082\" id=\"SvgjsLine1235\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"1983.543349353404\" y1=\"1373.9810328735493\" x2=\"1984.7829240974127\" y2=\"1376.1741025641368\" id=\"SvgjsLine1236\" opacity=\"0\" stroke=\"#808080\" stroke-width=\"1\"></line><line x1=\"2011.6732990972646\" y1=\"1270.0464664627305\" x2=\"2027.628512148679\" y2=\"1262.5768083815221\" id=\"SvgjsLine1237\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"2005.8800726798881\" y1=\"1257.8524362394915\" x2=\"2021.9761280972089\" y2=\"1250.3168408177237\" id=\"SvgjsLine1238\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"2000.2165498604916\" y1=\"1245.5976834470403\" x2=\"2016.1846327039134\" y2=\"1238.1220001911406\" id=\"SvgjsLine1239\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1994.4362980181386\" y1=\"1233.3975789934627\" x2=\"2010.5196065495347\" y2=\"1225.8679512061697\" id=\"SvgjsLine1240\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1967.057575298364\" y1=\"1174.9201516894934\" x2=\"1983.1409991038493\" y2=\"1167.390469891168\" id=\"SvgjsLine1241\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1961.3940522169064\" y1=\"1162.665399019565\" x2=\"1977.3621337238387\" y2=\"1155.189716345835\" id=\"SvgjsLine1242\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1955.330240495765\" y1=\"1150.5980471245432\" x2=\"1971.6338605559154\" y2=\"1142.965277342536\" id=\"SvgjsLine1243\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1949.8854347387708\" y1=\"1138.240898852975\" x2=\"1965.637971120734\" y2=\"1130.8661266709305\" id=\"SvgjsLine1244\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1944.221912910037\" y1=\"1125.9861455965658\" x2=\"1960.1899808556116\" y2=\"1118.5104692717769\" id=\"SvgjsLine1245\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"1938.4416600519346\" y1=\"1113.7860416186793\" x2=\"1954.5249526792597\" y2=\"1106.2564212332607\" id=\"SvgjsLine1246\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"2124.930549013876\" y1=\"1308.2868322099932\" x2=\"2129.4266254916547\" y2=\"1325.3785692005117\" id=\"SvgjsLine1247\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"2137.984763444375\" y1=\"1304.8462615913513\" x2=\"2142.4837823726957\" y2=\"1321.9491842436373\" id=\"SvgjsLine1248\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"2151.0366270030504\" y1=\"1301.3967541845766\" x2=\"2155.5427977711693\" y2=\"1318.5268644003827\" id=\"SvgjsLine1249\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"2164.090856904902\" y1=\"1297.956242379944\" x2=\"2168.599465283532\" y2=\"1315.0956191191167\" id=\"SvgjsLine1250\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"2177.127285225457\" y1=\"1294.4480582509977\" x2=\"2181.649447455724\" y2=\"1311.6389596625218\" id=\"SvgjsLine1251\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"2190.1835325386382\" y1=\"1291.0152155916783\" x2=\"2194.7056273021344\" y2=\"1308.2058605297407\" id=\"SvgjsLine1252\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"2203.258428164843\" y1=\"1287.6532640889225\" x2=\"2207.7675349005617\" y2=\"1304.7945353217372\" id=\"SvgjsLine1253\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"2067.190615776352\" y1=\"1412.7565116123496\" x2=\"2049.215209170938\" y2=\"1414.1361255223082\" id=\"SvgjsLine1254\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"2068.303091923618\" y1=\"1426.2108319762297\" x2=\"2050.5767885897967\" y2=\"1427.5713271899579\" id=\"SvgjsLine1255\" opacity=\"1\" stroke-width=\"2\" stroke=\"#808080\"></line><line x1=\"2069.2605412730227\" y1=\"1439.6770506593766\" x2=\"2051.689512488299\" y2=\"1441.0256285389105\" id=\"SvgjsLine1256\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"2069.954328263973\" y1=\"1453.1635054498477\" x2=\"2052.6466814124187\" y2=\"1454.4918687447207\" id=\"SvgjsLine1257\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"2071.3149625442957\" y1=\"1466.5987796569564\" x2=\"2053.759404776578\" y2=\"1467.9461701346843\" id=\"SvgjsLine1258\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"2072.427442318455\" y1=\"1480.053099742472\" x2=\"2054.708796858657\" y2=\"1481.41300721375\" id=\"SvgjsLine1259\" opacity=\"1\" stroke-width=\"2\" stroke=\"#808080\"></line><line x1=\"2073.3848877081214\" y1=\"1493.5193187295292\" x2=\"2055.8137416742547\" y2=\"1494.8679056079445\" id=\"SvgjsLine1260\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"2074.419850260556\" y1=\"1506.9795882680783\" x2=\"2056.8486879782236\" y2=\"1508.3281763935643\" id=\"SvgjsLine1261\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line><line x1=\"2075.1136197964533\" y1=\"1520.466044398226\" x2=\"2057.8058592037096\" y2=\"1521.7944164227447\" id=\"SvgjsLine1262\" opacity=\"1\" stroke-width=\"2\" stroke=\"#000000\"></line></svg>",
+  "sequences": [
+   {
+    "className": "Sequence",
+    "id": "small-structure",
+    "bases": [
+     {
+      "className": "Base",
+      "textId": "SvgjsText1000",
+      "center": {
+       "x": 1980.7739249915905,
+       "y": 1303.6301120391302
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1001",
+      "center": {
+       "x": 1987.4086167793753,
+       "y": 1291.8919401083904
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1002",
+      "center": {
+       "x": 1995.9490666028948,
+       "y": 1281.4581233471836
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1003",
+      "center": {
+       "x": 2006.1447384323574,
+       "y": 1272.634740133223
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1004",
+      "center": {
+       "x": 2000.4207547049552,
+       "y": 1260.4082929678182
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1005",
+      "center": {
+       "x": 1994.6967709775531,
+       "y": 1248.1818458024134
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1006",
+      "center": {
+       "x": 1988.9727872501508,
+       "y": 1235.9553986370086
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1007",
+      "center": {
+       "x": 1975.778389526381,
+       "y": 1233.5107035523101
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1008",
+      "center": {
+       "x": 1964.4312471121393,
+       "y": 1226.347532161014
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1009",
+      "center": {
+       "x": 1956.5493729802736,
+       "y": 1215.4872961820124
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1010",
+      "center": {
+       "x": 1953.2566601895078,
+       "y": 1202.478579572458
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1011",
+      "center": {
+       "x": 1955.0226236024237,
+       "y": 1189.1763226746828
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1012",
+      "center": {
+       "x": 1961.5954507707977,
+       "y": 1177.4773223599184
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1013",
+      "center": {
+       "x": 1955.8714670160593,
+       "y": 1165.2508752073115
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1014",
+      "center": {
+       "x": 1950.147483261321,
+       "y": 1153.0244280547045
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1015",
+      "center": {
+       "x": 1944.4234995065826,
+       "y": 1140.7979809020976
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1016",
+      "center": {
+       "x": 1938.699515751844,
+       "y": 1128.5715337494905
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1017",
+      "center": {
+       "x": 1932.9755319971057,
+       "y": 1116.3450865968837
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1018",
+      "center": {
+       "x": 1926.75,
+       "y": 1104.783847501052
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1019",
+      "center": {
+       "x": 1930.8741855755038,
+       "y": 1092.3174690607518
+      },
+      "numbering": {
+       "className": "BaseNumbering",
+       "textId": "SvgjsText1124",
+       "lineId": "SvgjsLine1125"
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1020",
+      "center": {
+       "x": 1942.766316853603,
+       "y": 1086.75
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1021",
+      "center": {
+       "x": 1954.9818282476576,
+       "y": 1091.5667187440934
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1022",
+      "center": {
+       "x": 1959.873715732841,
+       "y": 1103.7523223364592
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1023",
+      "center": {
+       "x": 1965.5976994875793,
+       "y": 1115.978769489066
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1024",
+      "center": {
+       "x": 1971.321683242318,
+       "y": 1128.2052166416731
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1025",
+      "center": {
+       "x": 1977.0456669970563,
+       "y": 1140.43166379428
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1026",
+      "center": {
+       "x": 1982.7696507517946,
+       "y": 1152.658110946887
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1027",
+      "center": {
+       "x": 1988.493634506533,
+       "y": 1164.884558099494
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1028",
+      "center": {
+       "x": 1998.6080609958888,
+       "y": 1173.7900536565276
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1029",
+      "center": {
+       "x": 2006.6923480539801,
+       "y": 1184.572158139758
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1030",
+      "center": {
+       "x": 2012.4062643447953,
+       "y": 1196.777101193557
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1031",
+      "center": {
+       "x": 2015.509336792661,
+       "y": 1209.8912315767818
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1032",
+      "center": {
+       "x": 2015.8709710140413,
+       "y": 1223.3626344367237
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1033",
+      "center": {
+       "x": 2021.5949547414436,
+       "y": 1235.5890816021283
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1034",
+      "center": {
+       "x": 2027.3189384688458,
+       "y": 1247.8155287675331
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1035",
+      "center": {
+       "x": 2033.042922196248,
+       "y": 1260.041975932938
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1036",
+      "center": {
+       "x": 2046.349097490269,
+       "y": 1257.8626378592824
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1037",
+      "center": {
+       "x": 2059.8319984696836,
+       "y": 1257.985912243505
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1038",
+      "center": {
+       "x": 2073.0961011806876,
+       "y": 1260.4081828036265
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1039",
+      "center": {
+       "x": 2085.752300166235,
+       "y": 1265.0583916841754
+      },
+      "numbering": {
+       "className": "BaseNumbering",
+       "textId": "SvgjsText1126",
+       "lineId": "SvgjsLine1127"
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1040",
+      "center": {
+       "x": 2097.4293229627406,
+       "y": 1271.8001239544742
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1041",
+      "center": {
+       "x": 2107.784621461887,
+       "y": 1280.435609371523
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1042",
+      "center": {
+       "x": 2116.514420636962,
+       "y": 1290.711524014871
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1043",
+      "center": {
+       "x": 2123.3626298520608,
+       "y": 1302.3264216011921
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1044",
+      "center": {
+       "x": 2136.4184648636237,
+       "y": 1298.8920115862347
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1045",
+      "center": {
+       "x": 2149.474299875187,
+       "y": 1295.4576015712773
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1046",
+      "center": {
+       "x": 2162.53013488675,
+       "y": 1292.02319155632
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1047",
+      "center": {
+       "x": 2175.5859698983136,
+       "y": 1288.5887815413626
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1048",
+      "center": {
+       "x": 2188.6418049098766,
+       "y": 1285.154371526405
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1049",
+      "center": {
+       "x": 2201.69763992144,
+       "y": 1281.7199615114475
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1050",
+      "center": {
+       "x": 2210.9635364068095,
+       "y": 1272.1846035237506
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1051",
+      "center": {
+       "x": 2224.0050072322633,
+       "y": 1269.5961815450223
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1052",
+      "center": {
+       "x": 2236.2101816410463,
+       "y": 1274.8700423018404
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1053",
+      "center": {
+       "x": 2243.2629293676146,
+       "y": 1286.1411841755153
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1054",
+      "center": {
+       "x": 2242.6691788896487,
+       "y": 1299.4237799309028
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1055",
+      "center": {
+       "x": 2234.638898891109,
+       "y": 1310.0206895170122
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1056",
+      "center": {
+       "x": 2222.0118467881257,
+       "y": 1314.1845152602039
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1057",
+      "center": {
+       "x": 2209.253341954346,
+       "y": 1310.4427985368866
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1058",
+      "center": {
+       "x": 2196.197506942783,
+       "y": 1313.877208551844
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1059",
+      "center": {
+       "x": 2183.14167193122,
+       "y": 1317.3116185668016
+      },
+      "numbering": {
+       "className": "BaseNumbering",
+       "textId": "SvgjsText1128",
+       "lineId": "SvgjsLine1129"
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1060",
+      "center": {
+       "x": 2170.0858369196567,
+       "y": 1320.746028581759
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1061",
+      "center": {
+       "x": 2157.0300019080933,
+       "y": 1324.1804385967164
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1062",
+      "center": {
+       "x": 2143.9741668965303,
+       "y": 1327.6148486116738
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1063",
+      "center": {
+       "x": 2130.918331884967,
+       "y": 1331.0492586266314
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1064",
+      "center": {
+       "x": 2130.6717934609774,
+       "y": 1344.5304690396467
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1065",
+      "center": {
+       "x": 2128.1283553388944,
+       "y": 1357.7718714545588
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1066",
+      "center": {
+       "x": 2123.3626298520603,
+       "y": 1370.3850263326472
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1067",
+      "center": {
+       "x": 2116.514420636962,
+       "y": 1381.9999239189685
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1068",
+      "center": {
+       "x": 2107.784621461887,
+       "y": 1392.2758385623163
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1069",
+      "center": {
+       "x": 2097.42932296274,
+       "y": 1400.9113239793653
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1070",
+      "center": {
+       "x": 2085.7523001662344,
+       "y": 1407.653056249664
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1071",
+      "center": {
+       "x": 2073.0961011806876,
+       "y": 1412.303265130213
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1072",
+      "center": {
+       "x": 2074.129188999057,
+       "y": 1425.763678554753
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1073",
+      "center": {
+       "x": 2075.162276817426,
+       "y": 1439.224091979293
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1074",
+      "center": {
+       "x": 2076.1953646357956,
+       "y": 1452.684505403833
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1075",
+      "center": {
+       "x": 2077.228452454165,
+       "y": 1466.144918828373
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1076",
+      "center": {
+       "x": 2078.261540272534,
+       "y": 1479.605332252913
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1077",
+      "center": {
+       "x": 2079.2946280909036,
+       "y": 1493.065745677453
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1078",
+      "center": {
+       "x": 2080.327715909273,
+       "y": 1506.526159101993
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1079",
+      "center": {
+       "x": 2081.3608037276426,
+       "y": 1519.986572526533
+      },
+      "numbering": {
+       "className": "BaseNumbering",
+       "textId": "SvgjsText1130",
+       "lineId": "SvgjsLine1131"
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1080",
+      "center": {
+       "x": 2090.9217447521064,
+       "y": 1529.3102974761623
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1081",
+      "center": {
+       "x": 2094.7224671355993,
+       "y": 1542.1125609312405
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1082",
+      "center": {
+       "x": 2091.7979898533526,
+       "y": 1555.1429436130823
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1083",
+      "center": {
+       "x": 2082.8908204605063,
+       "y": 1565.0931081150773
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1084",
+      "center": {
+       "x": 2070.2624367976487,
+       "y": 1569.436766282255
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1085",
+      "center": {
+       "x": 2057.1191110884706,
+       "y": 1567.071088892567
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1086",
+      "center": {
+       "x": 2046.797856308925,
+       "y": 1558.5967075000804
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1087",
+      "center": {
+       "x": 2041.919178249521,
+       "y": 1546.1652176214573
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1088",
+      "center": {
+       "x": 2043.721744531374,
+       "y": 1532.932901308387
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1089",
+      "center": {
+       "x": 2051.7478941936542,
+       "y": 1522.2593657269456
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1090",
+      "center": {
+       "x": 2050.714806375285,
+       "y": 1508.7989523024055
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1091",
+      "center": {
+       "x": 2049.6817185569157,
+       "y": 1495.3385388778656
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1092",
+      "center": {
+       "x": 2048.648630738546,
+       "y": 1481.8781254533255
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1093",
+      "center": {
+       "x": 2047.615542920177,
+       "y": 1468.4177120287854
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1094",
+      "center": {
+       "x": 2046.5824551018075,
+       "y": 1454.9572986042454
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1095",
+      "center": {
+       "x": 2045.5493672834382,
+       "y": 1441.4968851797055
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1096",
+      "center": {
+       "x": 2044.5162794650687,
+       "y": 1428.0364717551656
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1097",
+      "center": {
+       "x": 2043.4831916466994,
+       "y": 1414.5760583306255
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1098",
+      "center": {
+       "x": 2030.265596369467,
+       "y": 1411.9116652511827
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1099",
+      "center": {
+       "x": 2017.6965399255564,
+       "y": 1407.030821522452
+      },
+      "numbering": {
+       "className": "BaseNumbering",
+       "textId": "SvgjsText1132",
+       "lineId": "SvgjsLine1133"
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1100",
+      "center": {
+       "x": 2006.1447384323574,
+       "y": 1400.0767078006165
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1101",
+      "center": {
+       "x": 1995.9490666028946,
+       "y": 1391.253324586656
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1102",
+      "center": {
+       "x": 1987.408616779375,
+       "y": 1380.819507825449
+      }
+     },
+     {
+      "className": "Base",
+      "textId": "SvgjsText1103",
+      "center": {
+       "x": 1980.7739249915905,
+       "y": 1369.0813358947091
+      }
+     }
+    ]
+   }
+  ],
+  "primaryBonds": [
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1134",
+    "baseId1": "SvgjsText1000",
+    "baseId2": "SvgjsText1001",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1135",
+    "baseId1": "SvgjsText1001",
+    "baseId2": "SvgjsText1002",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1136",
+    "baseId1": "SvgjsText1002",
+    "baseId2": "SvgjsText1003",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1137",
+    "baseId1": "SvgjsText1003",
+    "baseId2": "SvgjsText1004",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1138",
+    "baseId1": "SvgjsText1004",
+    "baseId2": "SvgjsText1005",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1139",
+    "baseId1": "SvgjsText1005",
+    "baseId2": "SvgjsText1006",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1140",
+    "baseId1": "SvgjsText1006",
+    "baseId2": "SvgjsText1007",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1141",
+    "baseId1": "SvgjsText1007",
+    "baseId2": "SvgjsText1008",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1142",
+    "baseId1": "SvgjsText1008",
+    "baseId2": "SvgjsText1009",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1143",
+    "baseId1": "SvgjsText1009",
+    "baseId2": "SvgjsText1010",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1144",
+    "baseId1": "SvgjsText1010",
+    "baseId2": "SvgjsText1011",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1145",
+    "baseId1": "SvgjsText1011",
+    "baseId2": "SvgjsText1012",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1146",
+    "baseId1": "SvgjsText1012",
+    "baseId2": "SvgjsText1013",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1147",
+    "baseId1": "SvgjsText1013",
+    "baseId2": "SvgjsText1014",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1148",
+    "baseId1": "SvgjsText1014",
+    "baseId2": "SvgjsText1015",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1149",
+    "baseId1": "SvgjsText1015",
+    "baseId2": "SvgjsText1016",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1150",
+    "baseId1": "SvgjsText1016",
+    "baseId2": "SvgjsText1017",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1151",
+    "baseId1": "SvgjsText1017",
+    "baseId2": "SvgjsText1018",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1152",
+    "baseId1": "SvgjsText1018",
+    "baseId2": "SvgjsText1019",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1153",
+    "baseId1": "SvgjsText1019",
+    "baseId2": "SvgjsText1020",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1154",
+    "baseId1": "SvgjsText1020",
+    "baseId2": "SvgjsText1021",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1155",
+    "baseId1": "SvgjsText1021",
+    "baseId2": "SvgjsText1022",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1156",
+    "baseId1": "SvgjsText1022",
+    "baseId2": "SvgjsText1023",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1157",
+    "baseId1": "SvgjsText1023",
+    "baseId2": "SvgjsText1024",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1158",
+    "baseId1": "SvgjsText1024",
+    "baseId2": "SvgjsText1025",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1159",
+    "baseId1": "SvgjsText1025",
+    "baseId2": "SvgjsText1026",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1160",
+    "baseId1": "SvgjsText1026",
+    "baseId2": "SvgjsText1027",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1161",
+    "baseId1": "SvgjsText1027",
+    "baseId2": "SvgjsText1028",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1162",
+    "baseId1": "SvgjsText1028",
+    "baseId2": "SvgjsText1029",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1163",
+    "baseId1": "SvgjsText1029",
+    "baseId2": "SvgjsText1030",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1164",
+    "baseId1": "SvgjsText1030",
+    "baseId2": "SvgjsText1031",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1165",
+    "baseId1": "SvgjsText1031",
+    "baseId2": "SvgjsText1032",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1166",
+    "baseId1": "SvgjsText1032",
+    "baseId2": "SvgjsText1033",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1167",
+    "baseId1": "SvgjsText1033",
+    "baseId2": "SvgjsText1034",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1168",
+    "baseId1": "SvgjsText1034",
+    "baseId2": "SvgjsText1035",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1169",
+    "baseId1": "SvgjsText1035",
+    "baseId2": "SvgjsText1036",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1170",
+    "baseId1": "SvgjsText1036",
+    "baseId2": "SvgjsText1037",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1171",
+    "baseId1": "SvgjsText1037",
+    "baseId2": "SvgjsText1038",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1172",
+    "baseId1": "SvgjsText1038",
+    "baseId2": "SvgjsText1039",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1173",
+    "baseId1": "SvgjsText1039",
+    "baseId2": "SvgjsText1040",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1174",
+    "baseId1": "SvgjsText1040",
+    "baseId2": "SvgjsText1041",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1175",
+    "baseId1": "SvgjsText1041",
+    "baseId2": "SvgjsText1042",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1176",
+    "baseId1": "SvgjsText1042",
+    "baseId2": "SvgjsText1043",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1177",
+    "baseId1": "SvgjsText1043",
+    "baseId2": "SvgjsText1044",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1178",
+    "baseId1": "SvgjsText1044",
+    "baseId2": "SvgjsText1045",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1179",
+    "baseId1": "SvgjsText1045",
+    "baseId2": "SvgjsText1046",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1180",
+    "baseId1": "SvgjsText1046",
+    "baseId2": "SvgjsText1047",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1181",
+    "baseId1": "SvgjsText1047",
+    "baseId2": "SvgjsText1048",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1182",
+    "baseId1": "SvgjsText1048",
+    "baseId2": "SvgjsText1049",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1183",
+    "baseId1": "SvgjsText1049",
+    "baseId2": "SvgjsText1050",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1184",
+    "baseId1": "SvgjsText1050",
+    "baseId2": "SvgjsText1051",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1185",
+    "baseId1": "SvgjsText1051",
+    "baseId2": "SvgjsText1052",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1186",
+    "baseId1": "SvgjsText1052",
+    "baseId2": "SvgjsText1053",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1187",
+    "baseId1": "SvgjsText1053",
+    "baseId2": "SvgjsText1054",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1188",
+    "baseId1": "SvgjsText1054",
+    "baseId2": "SvgjsText1055",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1189",
+    "baseId1": "SvgjsText1055",
+    "baseId2": "SvgjsText1056",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1190",
+    "baseId1": "SvgjsText1056",
+    "baseId2": "SvgjsText1057",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1191",
+    "baseId1": "SvgjsText1057",
+    "baseId2": "SvgjsText1058",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1192",
+    "baseId1": "SvgjsText1058",
+    "baseId2": "SvgjsText1059",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1193",
+    "baseId1": "SvgjsText1059",
+    "baseId2": "SvgjsText1060",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1194",
+    "baseId1": "SvgjsText1060",
+    "baseId2": "SvgjsText1061",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1195",
+    "baseId1": "SvgjsText1061",
+    "baseId2": "SvgjsText1062",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1196",
+    "baseId1": "SvgjsText1062",
+    "baseId2": "SvgjsText1063",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1197",
+    "baseId1": "SvgjsText1063",
+    "baseId2": "SvgjsText1064",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1198",
+    "baseId1": "SvgjsText1064",
+    "baseId2": "SvgjsText1065",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1199",
+    "baseId1": "SvgjsText1065",
+    "baseId2": "SvgjsText1066",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1200",
+    "baseId1": "SvgjsText1066",
+    "baseId2": "SvgjsText1067",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1201",
+    "baseId1": "SvgjsText1067",
+    "baseId2": "SvgjsText1068",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1202",
+    "baseId1": "SvgjsText1068",
+    "baseId2": "SvgjsText1069",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1203",
+    "baseId1": "SvgjsText1069",
+    "baseId2": "SvgjsText1070",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1204",
+    "baseId1": "SvgjsText1070",
+    "baseId2": "SvgjsText1071",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1205",
+    "baseId1": "SvgjsText1071",
+    "baseId2": "SvgjsText1072",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1206",
+    "baseId1": "SvgjsText1072",
+    "baseId2": "SvgjsText1073",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1207",
+    "baseId1": "SvgjsText1073",
+    "baseId2": "SvgjsText1074",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1208",
+    "baseId1": "SvgjsText1074",
+    "baseId2": "SvgjsText1075",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1209",
+    "baseId1": "SvgjsText1075",
+    "baseId2": "SvgjsText1076",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1210",
+    "baseId1": "SvgjsText1076",
+    "baseId2": "SvgjsText1077",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1211",
+    "baseId1": "SvgjsText1077",
+    "baseId2": "SvgjsText1078",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1212",
+    "baseId1": "SvgjsText1078",
+    "baseId2": "SvgjsText1079",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1213",
+    "baseId1": "SvgjsText1079",
+    "baseId2": "SvgjsText1080",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1214",
+    "baseId1": "SvgjsText1080",
+    "baseId2": "SvgjsText1081",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1215",
+    "baseId1": "SvgjsText1081",
+    "baseId2": "SvgjsText1082",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1216",
+    "baseId1": "SvgjsText1082",
+    "baseId2": "SvgjsText1083",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1217",
+    "baseId1": "SvgjsText1083",
+    "baseId2": "SvgjsText1084",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1218",
+    "baseId1": "SvgjsText1084",
+    "baseId2": "SvgjsText1085",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1219",
+    "baseId1": "SvgjsText1085",
+    "baseId2": "SvgjsText1086",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1220",
+    "baseId1": "SvgjsText1086",
+    "baseId2": "SvgjsText1087",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1221",
+    "baseId1": "SvgjsText1087",
+    "baseId2": "SvgjsText1088",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1222",
+    "baseId1": "SvgjsText1088",
+    "baseId2": "SvgjsText1089",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1223",
+    "baseId1": "SvgjsText1089",
+    "baseId2": "SvgjsText1090",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1224",
+    "baseId1": "SvgjsText1090",
+    "baseId2": "SvgjsText1091",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1225",
+    "baseId1": "SvgjsText1091",
+    "baseId2": "SvgjsText1092",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1226",
+    "baseId1": "SvgjsText1092",
+    "baseId2": "SvgjsText1093",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1227",
+    "baseId1": "SvgjsText1093",
+    "baseId2": "SvgjsText1094",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1228",
+    "baseId1": "SvgjsText1094",
+    "baseId2": "SvgjsText1095",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1229",
+    "baseId1": "SvgjsText1095",
+    "baseId2": "SvgjsText1096",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1230",
+    "baseId1": "SvgjsText1096",
+    "baseId2": "SvgjsText1097",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1231",
+    "baseId1": "SvgjsText1097",
+    "baseId2": "SvgjsText1098",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1232",
+    "baseId1": "SvgjsText1098",
+    "baseId2": "SvgjsText1099",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1233",
+    "baseId1": "SvgjsText1099",
+    "baseId2": "SvgjsText1100",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1234",
+    "baseId1": "SvgjsText1100",
+    "baseId2": "SvgjsText1101",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1235",
+    "baseId1": "SvgjsText1101",
+    "baseId2": "SvgjsText1102",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1236",
+    "baseId1": "SvgjsText1102",
+    "baseId2": "SvgjsText1103",
+    "strungElements": []
+   }
+  ],
+  "secondaryBonds": [
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1237",
+    "baseId1": "SvgjsText1003",
+    "baseId2": "SvgjsText1035",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1238",
+    "baseId1": "SvgjsText1004",
+    "baseId2": "SvgjsText1034",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1239",
+    "baseId1": "SvgjsText1005",
+    "baseId2": "SvgjsText1033",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1240",
+    "baseId1": "SvgjsText1006",
+    "baseId2": "SvgjsText1032",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1241",
+    "baseId1": "SvgjsText1012",
+    "baseId2": "SvgjsText1027",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1242",
+    "baseId1": "SvgjsText1013",
+    "baseId2": "SvgjsText1026",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1243",
+    "baseId1": "SvgjsText1014",
+    "baseId2": "SvgjsText1025",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1244",
+    "baseId1": "SvgjsText1015",
+    "baseId2": "SvgjsText1024",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1245",
+    "baseId1": "SvgjsText1016",
+    "baseId2": "SvgjsText1023",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1246",
+    "baseId1": "SvgjsText1017",
+    "baseId2": "SvgjsText1022",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1247",
+    "baseId1": "SvgjsText1043",
+    "baseId2": "SvgjsText1063",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1248",
+    "baseId1": "SvgjsText1044",
+    "baseId2": "SvgjsText1062",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1249",
+    "baseId1": "SvgjsText1045",
+    "baseId2": "SvgjsText1061",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1250",
+    "baseId1": "SvgjsText1046",
+    "baseId2": "SvgjsText1060",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1251",
+    "baseId1": "SvgjsText1047",
+    "baseId2": "SvgjsText1059",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1252",
+    "baseId1": "SvgjsText1048",
+    "baseId2": "SvgjsText1058",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1253",
+    "baseId1": "SvgjsText1049",
+    "baseId2": "SvgjsText1057",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1254",
+    "baseId1": "SvgjsText1071",
+    "baseId2": "SvgjsText1097",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1255",
+    "baseId1": "SvgjsText1072",
+    "baseId2": "SvgjsText1096",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1256",
+    "baseId1": "SvgjsText1073",
+    "baseId2": "SvgjsText1095",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1257",
+    "baseId1": "SvgjsText1074",
+    "baseId2": "SvgjsText1094",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1258",
+    "baseId1": "SvgjsText1075",
+    "baseId2": "SvgjsText1093",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1259",
+    "baseId1": "SvgjsText1076",
+    "baseId2": "SvgjsText1092",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1260",
+    "baseId1": "SvgjsText1077",
+    "baseId2": "SvgjsText1091",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1261",
+    "baseId1": "SvgjsText1078",
+    "baseId2": "SvgjsText1090",
+    "strungElements": []
+   },
+   {
+    "className": "StraightBond",
+    "lineId": "SvgjsLine1262",
+    "baseId1": "SvgjsText1079",
+    "baseId2": "SvgjsText1089",
+    "strungElements": []
+   }
+  ],
+  "tertiaryBonds": []
+ },
+ "generalLayoutProps": {
+  "className": "GeneralStrictLayoutProps",
+  "outermostLoopShape": "round",
+  "rotation": 0,
+  "basePairBondLength": 1.2,
+  "basePairPadding": 0,
+  "terminiGap": 4
+ },
+ "perBaseLayoutProps": [
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0.2,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0.2,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0.2,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0.2,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0.2,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  },
+  {
+   "className": "PerBaseStrictLayoutProps",
+   "stretch3": 0,
+   "flatLoopAngle3": 0,
+   "flipStem": false,
+   "loopShape": "round",
+   "triangleLoopHeight": 4
+  }
+ ],
+ "baseWidth": 13.5,
+ "baseHeight": 13.5
+}
