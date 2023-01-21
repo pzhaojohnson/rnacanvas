@@ -1,6 +1,9 @@
 import type { App } from 'App';
 
+import { AppWrapper } from './openDrawing';
+
 import * as React from 'react';
+
 import { useState } from 'react';
 
 import styles from './OpenSavedDrawingForm.css';
@@ -14,8 +17,6 @@ import { ErrorMessage as _ErrorMessage } from 'Forms/ErrorMessage';
 import { DetailsToggle as _DetailsToggle } from 'Forms/buttons/DetailsToggle';
 
 import { OldDrawingNotes } from './OldDrawingNotes';
-
-import { openSavedDrawing } from './openSavedDrawing';
 
 import { createWaitOverlay } from 'Utilities/createWaitOverlay';
 
@@ -120,6 +121,7 @@ export type Props = {
 
 export function OpenSavedDrawingForm(props: Props) {
   let app = props.app;
+  let appWrapper = new AppWrapper(app);
 
   let [errorMessageString, setErrorMessageString] = useState('');
 
@@ -149,12 +151,12 @@ export function OpenSavedDrawingForm(props: Props) {
   let drawingFileInput = (
     <DrawingFileInput
       onChange={event => {
-        let savedDrawing = event.target.file;
+        let file = event.target.file;
 
-        if (savedDrawing) {
+        if (file) {
           document.body.appendChild(waitOverlay);
 
-          openSavedDrawing({ app, savedDrawing })
+          appWrapper.openDrawing({ file })
             .then(handleSuccess)
             .catch(handleFailure)
             .finally(() => waitOverlay.remove());
