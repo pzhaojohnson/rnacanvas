@@ -3,7 +3,7 @@ import * as React from 'react';
 import { render } from 'react-dom';
 import { unmountComponentAtNode } from 'react-dom';
 
-import { OldDrawingNotes } from './OldDrawingNotes';
+import { LegacyDrawingNotes } from './LegacyDrawingNotes';
 
 let container = null;
 
@@ -18,10 +18,10 @@ afterEach(() => {
   container = null;
 });
 
-describe('OldDrawingNotes component', () => {
+describe('LegacyDrawingNotes component', () => {
   it('renders', () => {
     expect(
-      () => render(<OldDrawingNotes />, container)
+      () => render(<LegacyDrawingNotes />, container)
     ).not.toThrow();
   });
 });

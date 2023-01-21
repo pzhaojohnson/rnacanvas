@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import styles from './OldDrawingNotes.css';
+import styles from './LegacyDrawingNotes.css';
 
 function Disclaimer() {
   return (
@@ -67,9 +67,9 @@ function PreservedItemsList() {
   );
 }
 
-export function OldDrawingNotes() {
+export function LegacyDrawingNotes() {
   return (
-    <div className={styles.oldDrawingNotes} >
+    <div className={styles.legacyDrawingNotes} >
       <Disclaimer />
       <PreservedItemsList />
     </div>

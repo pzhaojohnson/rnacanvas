@@ -16,7 +16,7 @@ import { ErrorMessage as _ErrorMessage } from 'Forms/ErrorMessage';
 
 import { DetailsToggle as _DetailsToggle } from 'Forms/buttons/DetailsToggle';
 
-import { OldDrawingNotes } from './OldDrawingNotes';
+import { LegacyDrawingNotes } from './LegacyDrawingNotes';
 
 import { createWaitOverlay } from 'Utilities/createWaitOverlay';
 
@@ -187,7 +187,7 @@ export function OpenSavedDrawingForm(props: Props) {
     />
   );
 
-  let oldDrawingNotes = showDetails ? <OldDrawingNotes /> : null;
+  let legacyDrawingNotes = showDetails ? <LegacyDrawingNotes /> : null;
 
   return (
     <FloatingDrawingsContainer
@@ -200,7 +200,7 @@ export function OpenSavedDrawingForm(props: Props) {
             {fileExtensionsNote}
             {detailsToggleSpacer}
             {detailsToggle}
-            {oldDrawingNotes}
+            {legacyDrawingNotes}
           </div>
         </div>
       }
