@@ -49,7 +49,6 @@ describe('DrawingWrapper class', () => {
 
       expect(drawingWrapper.centerPoint.x).toBe(0);
       expect(drawingWrapper.centerPoint.y).toBe(0);
-
     });
 
     test('a zoomed in drawing', () => {
