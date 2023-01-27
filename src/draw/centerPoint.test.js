@@ -1,5 +1,7 @@
 import { Drawing } from 'Draw/Drawing';
 
+import { StrictDrawing } from 'Draw/strict/StrictDrawing';
+
 import * as SVG from 'Draw/svg/NodeSVG';
 
 import { DrawingWrapper } from './centerPoint';
@@ -69,6 +71,19 @@ describe('DrawingWrapper class', () => {
       // zoom should have no effect
       expect(drawingWrapper.centerPoint.x).toBeCloseTo(25);
       expect(drawingWrapper.centerPoint.y).toBeCloseTo(30);
+    });
+
+    test('a strict drawing', () => {
+      let strictDrawing = new StrictDrawing({ SVG });
+      document.body.appendChild(strictDrawing.node);
+
+      strictDrawing.svg.viewbox(1017, 582, 450, 708);
+
+      let drawingWrapper = new DrawingWrapper(strictDrawing);
+      expect(drawingWrapper.centerPoint.x).toBeCloseTo(1242);
+      expect(drawingWrapper.centerPoint.y).toBeCloseTo(936);
+
+      strictDrawing.node.remove();
     });
   });
 });

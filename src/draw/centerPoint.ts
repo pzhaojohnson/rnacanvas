@@ -1,5 +1,7 @@
 import type { Drawing } from 'Draw/Drawing';
 
+import type { StrictDrawing } from 'Draw/strict/StrictDrawing';
+
 export type Point = {
   x: number;
   y: number;
@@ -9,9 +11,9 @@ export class DrawingWrapper {
   /**
    * The wrapped drawing.
    */
-  readonly drawing: Drawing;
+  readonly drawing: Drawing | StrictDrawing;
 
-  constructor(drawing: Drawing) {
+  constructor(drawing: Drawing | StrictDrawing) {
     this.drawing = drawing;
   }
 
