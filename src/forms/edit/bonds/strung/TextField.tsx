@@ -93,6 +93,7 @@ export class TextField extends React.Component<Props> {
         }}
         input={{
           id: this.inputId,
+          spellCheck: false,
           style: { minWidth: '6ch', maxWidth: '28ch' },
         }}
         style={{

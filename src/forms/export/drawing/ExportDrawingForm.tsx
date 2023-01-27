@@ -71,7 +71,7 @@ function ScalingFactorField(
       onChange={props.onChange}
       onBlur={props.onBlur}
       onKeyUp={props.onKeyUp}
-      input={{ style: { minWidth: '7ch' } }}
+      input={{ spellCheck: false, style: { minWidth: '7ch' } }}
       style={{ marginRight: '8px', alignSelf: 'flex-start' }}
     />
   );

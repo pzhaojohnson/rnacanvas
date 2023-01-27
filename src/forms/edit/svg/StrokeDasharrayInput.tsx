@@ -180,6 +180,7 @@ export class StrokeDasharrayInput extends React.Component<Props> {
             this.submit();
           }
         }}
+        spellCheck={false}
         style={{
           minWidth: '41px',
           ...this.props.style,

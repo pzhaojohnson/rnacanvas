@@ -105,6 +105,7 @@ export class ZoomInput extends React.Component<Props> {
             this.submit();
           }
         }}
+        spellCheck={false}
         style={{
           width: Math.ceil(width) + 'px',
           fontFamily,

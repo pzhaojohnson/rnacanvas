@@ -98,6 +98,7 @@ export class AllowedGUTField extends React.Component<Props> {
                 this.processValue();
               }
             }}
+            spellCheck={false}
             style={{ marginLeft: '8px', minWidth: '32px' }}
           />
         )}

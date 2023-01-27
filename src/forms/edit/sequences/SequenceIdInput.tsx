@@ -61,6 +61,7 @@ export class SequenceIdInput extends React.Component<Props> {
             this.submit();
           }
         }}
+        spellCheck={false}
       />
     );
   }

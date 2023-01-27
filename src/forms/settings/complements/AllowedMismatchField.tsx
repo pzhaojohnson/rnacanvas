@@ -87,7 +87,7 @@ export class AllowedMismatchField extends React.Component<Props> {
             this.processValue();
           }
         }}
-        input={{ style: { minWidth: '32px' } }}
+        input={{ spellCheck: false, style: { minWidth: '32px' } }}
         style={{ alignSelf: 'start' }}
       />
     );

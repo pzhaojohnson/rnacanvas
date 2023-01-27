@@ -20,7 +20,7 @@ export function MinValueField(props: Props) {
           props.onEnterKeyUp(event);
         }
       }}
-      input={{ style: { minWidth: '7ch' } }}
+      input={{ spellCheck: false, style: { minWidth: '7ch' } }}
       style={{ margin: '10px 0 0 10px', alignSelf: 'start' }}
     />
   );

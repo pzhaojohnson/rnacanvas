@@ -158,6 +158,7 @@ export class OpacityAttributeInput extends React.Component<Props> {
             this.submit();
           }
         }}
+        spellCheck={false}
         style={{
           minWidth,
           ...this.props.style,

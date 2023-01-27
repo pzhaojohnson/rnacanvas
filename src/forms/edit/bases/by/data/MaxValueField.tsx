@@ -20,7 +20,7 @@ export function MaxValueField(props: Props) {
           props.onEnterKeyUp(event);
         }
       }}
-      input={{ style: { minWidth: '7ch' } }}
+      input={{ spellCheck: false, style: { minWidth: '7ch' } }}
       style={{ margin: '8px 0 0 10px', alignSelf: 'start' }}
     />
   );
