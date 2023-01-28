@@ -67,6 +67,10 @@ export class StrictDrawing {
     return this.drawing.svg;
   }
 
+  get svgContainer() {
+    return this.drawing.svgContainer;
+  }
+
   get scroll() {
     return this.drawing.scroll;
   }

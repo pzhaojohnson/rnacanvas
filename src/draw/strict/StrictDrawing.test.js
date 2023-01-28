@@ -55,6 +55,10 @@ test('appendTo method', () => {
   expect(container.lastChild).toBe(strictDrawing.node);
 });
 
+test('svgContainer getter', () => {
+  expect(sd.svgContainer).toBe(sd.drawing.svgContainer);
+});
+
 test('scroll getter', () => {
   expect(sd.scroll).toBe(sd.drawing.scroll);
 });
