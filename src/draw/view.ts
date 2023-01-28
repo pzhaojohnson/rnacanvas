@@ -1,5 +1,9 @@
 import type { Drawing } from 'Draw/Drawing';
-import { Point2D as Point } from 'Math/points/Point';
+
+export type Point = {
+  x: number;
+  y: number;
+};
 
 export function centerOfView(drawing: Drawing): Point {
   return {
