@@ -52,7 +52,7 @@ export class StrictDrawing {
     return this._drawing;
   }
 
-  get node(): Node {
+  get node() {
     return this.drawing.node;
   }
 

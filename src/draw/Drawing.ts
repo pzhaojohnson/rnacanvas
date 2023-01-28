@@ -75,7 +75,7 @@ export class Drawing {
     this.tertiaryBonds = [];
   }
 
-  get node(): Node {
+  get node() {
     return this.svgContainer;
   }
 
