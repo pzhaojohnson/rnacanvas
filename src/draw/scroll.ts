@@ -16,4 +16,12 @@ export class DrawingWrapper {
   set scrollLeft(scrollLeft) {
     this.wrappedDrawing.svgContainer.scrollLeft = scrollLeft;
   }
+
+  get scrollTop() {
+    return this.wrappedDrawing.svgContainer.scrollTop;
+  }
+
+  set scrollTop(scrollTop) {
+    this.wrappedDrawing.svgContainer.scrollTop = scrollTop;
+  }
 }

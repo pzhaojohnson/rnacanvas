@@ -55,4 +55,20 @@ describe('DrawingWrapper class', () => {
     strictDrawingWrapper.scrollLeft = 892;
     expect(strictDrawingWrapper.scrollLeft).toBe(892);
   });
+
+  test('scrollTop getter', () => {
+    drawing.svgContainer.scrollTop = 182;
+    expect(drawingWrapper.scrollTop).toBe(182);
+
+    strictDrawing.svgContainer.scrollTop = 449;
+    expect(strictDrawingWrapper.scrollTop).toBe(449);
+  });
+
+  test('scrollTop setter', () => {
+    drawingWrapper.scrollTop = 334;
+    expect(drawingWrapper.scrollTop).toBe(334);
+
+    strictDrawingWrapper.scrollTop = 512;
+    expect(strictDrawingWrapper.scrollTop).toBe(512);
+  });
 });
