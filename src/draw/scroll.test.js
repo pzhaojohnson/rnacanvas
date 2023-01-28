@@ -71,4 +71,30 @@ describe('DrawingWrapper class', () => {
     strictDrawingWrapper.scrollTop = 512;
     expect(strictDrawingWrapper.scrollTop).toBe(512);
   });
+
+  test('scrollWidth getter', () => {
+    // seems easiest to mock the SVG container on Node.js
+    let svgContainer = drawing.svgContainer;
+    drawing.svgContainer = { scrollWidth: 5214 };
+    expect(drawingWrapper.scrollWidth).toBe(5214);
+    drawing.svgContainer = svgContainer; // restore
+
+    svgContainer = strictDrawing.drawing.svgContainer;
+    strictDrawing.drawing.svgContainer = { scrollWidth: 4908 };
+    expect(strictDrawingWrapper.scrollWidth).toBe(4908);
+    strictDrawing.drawing.svgContainer = svgContainer; // restore
+  });
+
+  test('scrollHeight getter', () => {
+    // seems easiest to mock the SVG container on Node.js
+    let svgContainer = drawing.svgContainer;
+    drawing.svgContainer = { scrollHeight: 4032 };
+    expect(drawingWrapper.scrollHeight).toBe(4032);
+    drawing.svgContainer = svgContainer; // restore
+
+    svgContainer = strictDrawing.drawing.svgContainer;
+    strictDrawing.drawing.svgContainer = { scrollHeight: 3922 };
+    expect(strictDrawingWrapper.scrollHeight).toBe(3922);
+    strictDrawing.drawing.svgContainer = svgContainer; // restore
+  });
 });

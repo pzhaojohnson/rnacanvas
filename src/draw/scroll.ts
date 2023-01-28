@@ -24,4 +24,12 @@ export class DrawingWrapper {
   set scrollTop(scrollTop) {
     this.wrappedDrawing.svgContainer.scrollTop = scrollTop;
   }
+
+  get scrollWidth() {
+    return this.wrappedDrawing.svgContainer.scrollWidth;
+  }
+
+  get scrollHeight() {
+    return this.wrappedDrawing.svgContainer.scrollHeight;
+  }
 }
