@@ -4,8 +4,6 @@ import { StrictDrawing } from 'Draw/strict/StrictDrawing';
 
 import * as SVG from 'Draw/svg/NodeSVG';
 
-import * as Scroll from 'Draw/scroll';
-
 import { DrawingWrapper } from './view';
 
 let drawing = null;
@@ -42,19 +40,19 @@ describe('DrawingWrapper class', () => {
     expect(strictDrawingWrapper.wrappedDrawing).toBe(strictDrawing);
   });
 
-  test('scrollLeft getter', () => {
-    (new Scroll.DrawingWrapper(drawing)).scrollLeft = 812;
+  test('scrollLeft getter and setter', () => {
+    drawingWrapper.scrollLeft = 812;
     expect(drawingWrapper.scrollLeft).toBe(812);
 
-    (new Scroll.DrawingWrapper(strictDrawing)).scrollLeft = 341;
+    strictDrawingWrapper.scrollLeft = 341;
     expect(strictDrawingWrapper.scrollLeft).toBe(341);
   });
 
-  test('scrollTop getter', () => {
-    (new Scroll.DrawingWrapper(drawing)).scrollTop = 108;
+  test('scrollTop getter and setter', () => {
+    drawingWrapper.scrollTop = 108;
     expect(drawingWrapper.scrollTop).toBe(108);
 
-    (new Scroll.DrawingWrapper(strictDrawing)).scrollTop = 61;
+    strictDrawingWrapper.scrollTop = 61;
     expect(strictDrawingWrapper.scrollTop).toBe(61);
   });
 

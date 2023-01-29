@@ -41,9 +41,19 @@ export class DrawingWrapper {
     return drawingWrapper.scrollLeft;
   }
 
+  set scrollLeft(scrollLeft) {
+    let drawingWrapper = new Scroll.DrawingWrapper(this.wrappedDrawing);
+    drawingWrapper.scrollLeft = scrollLeft;
+  }
+
   get scrollTop() {
     let drawingWrapper = new Scroll.DrawingWrapper(this.wrappedDrawing);
     return drawingWrapper.scrollTop;
+  }
+
+  set scrollTop(scrollTop) {
+    let drawingWrapper = new Scroll.DrawingWrapper(this.wrappedDrawing);
+    drawingWrapper.scrollTop = scrollTop;
   }
 
   /**
