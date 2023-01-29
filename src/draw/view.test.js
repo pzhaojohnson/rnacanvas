@@ -123,4 +123,70 @@ describe('DrawingWrapper class', () => {
       expect(strictDrawingWrapper.centerOfView.y).toBeCloseTo(500 + 81);
     });
   });
+
+  describe('centerOfView setter', () => {
+    test('when the recentered view fits inside the drawing', () => {
+      drawing.svg.viewbox(0, 0, 4500, 4243);
+
+      window.innerWidth = 915;
+      window.innerHeight = 874;
+
+      drawingWrapper.centerOfView = { x: 2101, y: 3412 };
+
+      expect(drawingWrapper.scrollLeft).toBeCloseTo(1643.5);
+      expect(drawingWrapper.scrollTop).toBeCloseTo(2975);
+    });
+
+    test('trying to go too far to the right and down', () => {
+      drawing.svg.viewbox(0, 0, 1910, 1892);
+
+      window.innerWidth = 700;
+      window.innerHeight = 800;
+
+      drawingWrapper.centerOfView = { x: 1900, y: 1870 };
+
+      // should remain zero in a web browser (but don't on Node.js)
+      expect(drawingWrapper.scrollLeft).toBeCloseTo(1550);
+      expect(drawingWrapper.scrollTop).toBeCloseTo(1470);
+    });
+
+    test('trying to go too far to the left and up', () => {
+      drawing.svg.viewbox(0, 0, 2000, 1500);
+
+      window.innerWidth = 400;
+      window.innerHeight = 350;
+
+      drawingWrapper.centerOfView = { x: 50, y: 75 };
+
+      // should remain zero in a web browser (but don't on Node.js)
+      expect(drawingWrapper.scrollLeft).toBeCloseTo(-150);
+      expect(drawingWrapper.scrollTop).toBeCloseTo(-100);
+    });
+
+    test('when the view is bigger than the drawing', () => {
+      drawing.svg.viewbox(0, 0, 525, 615);
+
+      // bigger than the drawing
+      window.innerWidth = 1910;
+      window.innerHeight = 1892;
+
+      drawingWrapper.centerOfView = { x: 1800, y: 1600 };
+
+      // should remain zero in a web browser (but don't on Node.js)
+      expect(drawingWrapper.scrollLeft).toBeCloseTo(845);
+      expect(drawingWrapper.scrollTop).toBeCloseTo(654);
+    });
+
+    test('a strict drawing', () => {
+      strictDrawing.svg.viewbox(0, 0, 3000, 2000);
+
+      window.innerWidth = 600;
+      window.innerHeight = 450;
+
+      strictDrawingWrapper.centerOfView = { x: 2109, y: 1777 };
+
+      expect(strictDrawingWrapper.scrollLeft).toBeCloseTo(1809);
+      expect(strictDrawingWrapper.scrollTop).toBeCloseTo(1552);
+    });
+  });
 });

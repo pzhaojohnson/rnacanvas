@@ -88,4 +88,9 @@ export class DrawingWrapper {
       y: this.scrollTop + (this.viewHeight / 2),
     };
   }
+
+  set centerOfView(centerOfView) {
+    this.scrollLeft = centerOfView.x - (this.viewWidth / 2);
+    this.scrollTop = centerOfView.y - (this.viewHeight / 2);
+  }
 }
