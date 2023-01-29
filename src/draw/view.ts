@@ -1,5 +1,7 @@
 import type { Drawing } from 'Draw/Drawing';
 
+import type { StrictDrawing } from 'Draw/strict/StrictDrawing';
+
 export type Point = {
   x: number;
   y: number;
@@ -23,4 +25,12 @@ export function centerView(drawing: Drawing) {
     x: drawing.scroll.width / 2,
     y: drawing.scroll.height / 2,
   });
+}
+
+export class DrawingWrapper {
+  readonly wrappedDrawing: Drawing | StrictDrawing;
+
+  constructor(drawing: Drawing | StrictDrawing) {
+    this.wrappedDrawing = drawing;
+  }
 }
