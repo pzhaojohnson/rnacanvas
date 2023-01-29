@@ -33,4 +33,24 @@ export class DrawingWrapper {
   constructor(drawing: Drawing | StrictDrawing) {
     this.wrappedDrawing = drawing;
   }
+
+  /**
+   * The width of the view of the drawing.
+   *
+   * Currently returns the inner width of the window, which is not
+   * totally accurate but seems to be close enough at the moment.
+   */
+  get viewWidth() {
+    return window.innerWidth;
+  }
+
+  /**
+   * The height of the view of the drawing.
+   *
+   * Currently returns the inner height of the window, which is not
+   * totally accurate but seems to be close enough at the moment.
+   */
+  get viewHeight() {
+    return window.innerHeight;
+  }
 }

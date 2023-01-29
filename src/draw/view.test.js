@@ -39,4 +39,20 @@ describe('DrawingWrapper class', () => {
     expect(drawingWrapper.wrappedDrawing).toBe(drawing);
     expect(strictDrawingWrapper.wrappedDrawing).toBe(strictDrawing);
   });
+
+  test('viewWidth getter', () => {
+    window.innerWidth = 1825;
+    expect(drawingWrapper.viewWidth).toBe(1825);
+
+    window.innerWidth = 2643
+    expect(strictDrawingWrapper.viewWidth).toBe(2643);
+  });
+
+  test('viewHeight getter', () => {
+    window.innerHeight = 897;
+    expect(drawingWrapper.viewHeight).toBe(897);
+
+    window.innerHeight = 1127;
+    expect(strictDrawingWrapper.viewHeight).toBe(1127);
+  });
 });
