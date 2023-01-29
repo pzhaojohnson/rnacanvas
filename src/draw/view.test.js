@@ -42,29 +42,19 @@ describe('DrawingWrapper class', () => {
     expect(strictDrawingWrapper.wrappedDrawing).toBe(strictDrawing);
   });
 
-  test('scrollDrawingWrapper property', () => {
-    let scrollDrawingWrapper = drawingWrapper.scrollDrawingWrapper;
-    expect(scrollDrawingWrapper).toBeInstanceOf(Scroll.DrawingWrapper);
-    expect(scrollDrawingWrapper.wrappedDrawing).toBe(drawing);
-
-    scrollDrawingWrapper = strictDrawingWrapper.scrollDrawingWrapper;
-    expect(scrollDrawingWrapper).toBeInstanceOf(Scroll.DrawingWrapper);
-    expect(scrollDrawingWrapper.wrappedDrawing).toBe(strictDrawing);
-  });
-
   test('scrollLeft getter', () => {
-    drawingWrapper.scrollDrawingWrapper.scrollLeft = 812;
+    (new Scroll.DrawingWrapper(drawing)).scrollLeft = 812;
     expect(drawingWrapper.scrollLeft).toBe(812);
 
-    strictDrawingWrapper.scrollDrawingWrapper.scrollLeft = 341;
+    (new Scroll.DrawingWrapper(strictDrawing)).scrollLeft = 341;
     expect(strictDrawingWrapper.scrollLeft).toBe(341);
   });
 
   test('scrollTop getter', () => {
-    drawingWrapper.scrollDrawingWrapper.scrollTop = 108;
+    (new Scroll.DrawingWrapper(drawing)).scrollTop = 108;
     expect(drawingWrapper.scrollTop).toBe(108);
 
-    strictDrawingWrapper.scrollDrawingWrapper.scrollTop = 61;
+    (new Scroll.DrawingWrapper(strictDrawing)).scrollTop = 61;
     expect(strictDrawingWrapper.scrollTop).toBe(61);
   });
 

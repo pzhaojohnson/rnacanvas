@@ -32,20 +32,18 @@ export function centerView(drawing: Drawing) {
 export class DrawingWrapper {
   readonly wrappedDrawing: Drawing | StrictDrawing;
 
-  readonly scrollDrawingWrapper: Scroll.DrawingWrapper;
-
   constructor(drawing: Drawing | StrictDrawing) {
     this.wrappedDrawing = drawing;
-
-    this.scrollDrawingWrapper = new Scroll.DrawingWrapper(drawing);
   }
 
   get scrollLeft() {
-    return this.scrollDrawingWrapper.scrollLeft;
+    let drawingWrapper = new Scroll.DrawingWrapper(this.wrappedDrawing);
+    return drawingWrapper.scrollLeft;
   }
 
   get scrollTop() {
-    return this.scrollDrawingWrapper.scrollTop;
+    let drawingWrapper = new Scroll.DrawingWrapper(this.wrappedDrawing);
+    return drawingWrapper.scrollTop;
   }
 
   /**
