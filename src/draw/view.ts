@@ -75,4 +75,17 @@ export class DrawingWrapper {
   get viewHeight() {
     return window.innerHeight;
   }
+
+  /**
+   * The center point of the view of the drawing.
+   *
+   * If the view of the drawing is larger than the drawing itself, this
+   * point can be outside of the drawing.
+   */
+  get centerOfView() {
+    return {
+      x: this.scrollLeft + (this.viewWidth / 2),
+      y: this.scrollTop + (this.viewHeight / 2),
+    };
+  }
 }
