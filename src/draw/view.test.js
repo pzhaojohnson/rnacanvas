@@ -4,6 +4,8 @@ import { StrictDrawing } from 'Draw/strict/StrictDrawing';
 
 import * as SVG from 'Draw/svg/NodeSVG';
 
+import * as Scroll from 'Draw/scroll';
+
 import { DrawingWrapper } from './view';
 
 let drawing = null;
@@ -38,6 +40,32 @@ describe('DrawingWrapper class', () => {
   test('wrappedDrawing property', () => {
     expect(drawingWrapper.wrappedDrawing).toBe(drawing);
     expect(strictDrawingWrapper.wrappedDrawing).toBe(strictDrawing);
+  });
+
+  test('scrollDrawingWrapper property', () => {
+    let scrollDrawingWrapper = drawingWrapper.scrollDrawingWrapper;
+    expect(scrollDrawingWrapper).toBeInstanceOf(Scroll.DrawingWrapper);
+    expect(scrollDrawingWrapper.wrappedDrawing).toBe(drawing);
+
+    scrollDrawingWrapper = strictDrawingWrapper.scrollDrawingWrapper;
+    expect(scrollDrawingWrapper).toBeInstanceOf(Scroll.DrawingWrapper);
+    expect(scrollDrawingWrapper.wrappedDrawing).toBe(strictDrawing);
+  });
+
+  test('scrollLeft getter', () => {
+    drawingWrapper.scrollDrawingWrapper.scrollLeft = 812;
+    expect(drawingWrapper.scrollLeft).toBe(812);
+
+    strictDrawingWrapper.scrollDrawingWrapper.scrollLeft = 341;
+    expect(strictDrawingWrapper.scrollLeft).toBe(341);
+  });
+
+  test('scrollTop getter', () => {
+    drawingWrapper.scrollDrawingWrapper.scrollTop = 108;
+    expect(drawingWrapper.scrollTop).toBe(108);
+
+    strictDrawingWrapper.scrollDrawingWrapper.scrollTop = 61;
+    expect(strictDrawingWrapper.scrollTop).toBe(61);
   });
 
   test('viewWidth getter', () => {

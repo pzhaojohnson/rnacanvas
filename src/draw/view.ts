@@ -2,6 +2,8 @@ import type { Drawing } from 'Draw/Drawing';
 
 import type { StrictDrawing } from 'Draw/strict/StrictDrawing';
 
+import * as Scroll from 'Draw/scroll';
+
 export type Point = {
   x: number;
   y: number;
@@ -30,8 +32,20 @@ export function centerView(drawing: Drawing) {
 export class DrawingWrapper {
   readonly wrappedDrawing: Drawing | StrictDrawing;
 
+  readonly scrollDrawingWrapper: Scroll.DrawingWrapper;
+
   constructor(drawing: Drawing | StrictDrawing) {
     this.wrappedDrawing = drawing;
+
+    this.scrollDrawingWrapper = new Scroll.DrawingWrapper(drawing);
+  }
+
+  get scrollLeft() {
+    return this.scrollDrawingWrapper.scrollLeft;
+  }
+
+  get scrollTop() {
+    return this.scrollDrawingWrapper.scrollTop;
   }
 
   /**
