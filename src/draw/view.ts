@@ -37,23 +37,27 @@ export class DrawingWrapper {
   }
 
   get scrollLeft() {
-    let drawingWrapper = new Scroll.DrawingWrapper(this.wrappedDrawing);
-    return drawingWrapper.scrollLeft;
+    return (
+      (new Scroll.DrawingWrapper(this.wrappedDrawing))
+        .scrollLeft
+    );
   }
 
   set scrollLeft(scrollLeft) {
-    let drawingWrapper = new Scroll.DrawingWrapper(this.wrappedDrawing);
-    drawingWrapper.scrollLeft = scrollLeft;
+    (new Scroll.DrawingWrapper(this.wrappedDrawing))
+      .scrollLeft = scrollLeft;
   }
 
   get scrollTop() {
-    let drawingWrapper = new Scroll.DrawingWrapper(this.wrappedDrawing);
-    return drawingWrapper.scrollTop;
+    return (
+      (new Scroll.DrawingWrapper(this.wrappedDrawing))
+        .scrollTop
+    );
   }
 
   set scrollTop(scrollTop) {
-    let drawingWrapper = new Scroll.DrawingWrapper(this.wrappedDrawing);
-    drawingWrapper.scrollTop = scrollTop;
+    (new Scroll.DrawingWrapper(this.wrappedDrawing))
+      .scrollTop = scrollTop;
   }
 
   /**
