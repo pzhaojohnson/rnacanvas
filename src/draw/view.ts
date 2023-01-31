@@ -4,6 +4,10 @@ import type { StrictDrawing } from 'Draw/strict/StrictDrawing';
 
 import * as Scroll from 'Draw/scroll';
 
+import * as CenterPoint from 'Draw/centerPoint';
+
+import * as SVG from '@svgdotjs/svg.js';
+
 export type Point = {
   x: number;
   y: number;
@@ -34,6 +38,17 @@ export class DrawingWrapper {
 
   constructor(drawing: Drawing | StrictDrawing) {
     this.wrappedDrawing = drawing;
+  }
+
+  get svg() {
+    return this.wrappedDrawing.svg;
+  }
+
+  get centerPoint() {
+    return (
+      (new CenterPoint.DrawingWrapper(this.wrappedDrawing))
+        .centerPoint
+    );
   }
 
   get scrollLeft() {
@@ -96,5 +111,35 @@ export class DrawingWrapper {
   set centerOfView(centerOfView) {
     this.scrollLeft = centerOfView.x - (this.viewWidth / 2);
     this.scrollTop = centerOfView.y - (this.viewHeight / 2);
+  }
+
+  /**
+   * Centers the view of the drawing on the center point of the drawing.
+   */
+  centerView() {
+    let circle: SVG.Circle | null = null;
+
+    // just in case something throws
+    try {
+      // make at least somewhat visible
+      // (in case an invisible element cannot be scrolled into view)
+      circle = this.svg.circle(1);
+      circle.attr({ 'fill': '#fefefe', 'fill-opacity': 1 });
+
+      let p = this.centerPoint;
+
+      // move to center of drawing
+      circle.attr({ 'cx': p.x, 'cy': p.y });
+
+      circle.node.scrollIntoView({
+        behavior: 'auto', block: 'center', inline: 'center',
+      });
+    } catch (error) {
+      console.error(error);
+      console.error('Unable to center the view of the drawing.');
+    } finally {
+      // don't forget to remove
+      circle?.remove();
+    }
   }
 }
