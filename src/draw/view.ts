@@ -6,8 +6,6 @@ import * as Scroll from 'Draw/scroll';
 
 import * as CenterPoint from 'Draw/centerPoint';
 
-import * as SVG from '@svgdotjs/svg.js';
-
 export type Point = {
   x: number;
   y: number;
@@ -33,6 +31,36 @@ export function centerView(drawing: Drawing) {
   });
 }
 
+type Rect = {
+  /**
+   * Leftmost coordinate.
+   */
+  left: number;
+
+  /**
+   * Topmost coordinate.
+   */
+  top: number;
+
+  width: number;
+  height: number;
+};
+
+class RectWrapper {
+  readonly wrappedRect: Rect;
+
+  constructor(rect: Rect) {
+    this.wrappedRect = rect;
+  }
+
+  get center() {
+    return {
+      x: this.wrappedRect.left + (this.wrappedRect.width / 2),
+      y: this.wrappedRect.top + (this.wrappedRect.height / 2),
+    };
+  }
+}
+
 export class DrawingWrapper {
   readonly wrappedDrawing: Drawing | StrictDrawing;
 
@@ -42,6 +70,10 @@ export class DrawingWrapper {
 
   get svg() {
     return this.wrappedDrawing.svg;
+  }
+
+  get svgContainer() {
+    return this.wrappedDrawing.svgContainer;
   }
 
   get centerPoint() {
@@ -117,29 +149,24 @@ export class DrawingWrapper {
    * Centers the view of the drawing on the center point of the drawing.
    */
   centerView() {
-    let circle: SVG.Circle | null = null;
-
     // just in case something throws
     try {
-      // make at least somewhat visible
-      // (in case an invisible element cannot be scrolled into view)
-      circle = this.svg.circle(1);
-      circle.attr({ 'fill': '#fefefe', 'fill-opacity': 1 });
+      let drawingClientRect = new RectWrapper(
+        this.svg.node.getBoundingClientRect()
+      );
 
-      let p = this.centerPoint;
+      let viewClientRect = new RectWrapper(
+        this.svgContainer.getBoundingClientRect()
+      );
 
-      // move to center of drawing
-      circle.attr({ 'cx': p.x, 'cy': p.y });
+      let drawingClientCenter = drawingClientRect.center;
+      let viewClientCenter = viewClientRect.center;
 
-      circle.node.scrollIntoView({
-        behavior: 'auto', block: 'center', inline: 'center',
-      });
+      this.scrollLeft += drawingClientCenter.x - viewClientCenter.x;
+      this.scrollTop += drawingClientCenter.y - viewClientCenter.y;
     } catch (error) {
       console.error(error);
       console.error('Unable to center the view of the drawing.');
-    } finally {
-      // don't forget to remove
-      circle?.remove();
     }
   }
 }

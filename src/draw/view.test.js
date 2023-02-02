@@ -45,6 +45,11 @@ describe('DrawingWrapper class', () => {
     expect(strictDrawingWrapper.svg).toBe(strictDrawing.svg);
   });
 
+  test('svgContainer getter', () => {
+    expect(drawingWrapper.svgContainer).toBe(drawing.svgContainer);
+    expect(strictDrawingWrapper.svgContainer).toBe(strictDrawing.svgContainer);
+  });
+
   test('centerPoint getter', () => {
     drawing.svg.viewbox(0, 0, 1250, 1100);
     expect(drawingWrapper.centerPoint.x).toBeCloseTo(625);
