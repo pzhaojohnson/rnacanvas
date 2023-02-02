@@ -1,6 +1,5 @@
 import * as SVG from '@svgdotjs/svg.js';
 import { ScrollInterface } from 'Draw/ScrollInterface';
-import { centerView } from 'Draw/view';
 import { resize } from 'Draw/dimensions';
 import { Sequence } from 'Draw/sequences/Sequence';
 import { appendSequence } from 'Draw/sequences/add/sequence';
@@ -267,7 +266,6 @@ export class Drawing {
     if (savedState.className !== 'Drawing') {
       throw new Error('Wrong class name.');
     }
-    let wasEmpty = this.isEmpty();
     this.clear();
     this._applySavedSvg(savedState);
     this._appendSavedSequences(savedState);
@@ -275,9 +273,6 @@ export class Drawing {
     this._addSavedSecondaryBonds(savedState);
     this._addSavedTertiaryBonds(savedState);
     orientBaseNumberings(this);
-    if (wasEmpty) {
-      centerView(this);
-    }
   }
 
   _applySavedSvg(savedState: DrawingSavableState): (void | never) {

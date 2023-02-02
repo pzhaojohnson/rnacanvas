@@ -2,6 +2,8 @@ import type { App } from 'App';
 
 import { AppWrapper } from './openDrawing';
 
+import * as View from 'Draw/view';
+
 import * as React from 'react';
 
 import { useState } from 'react';
@@ -139,6 +141,8 @@ export function OpenDrawingForm(props: Props) {
     app.formContainer.clearHistory();
 
     app.refresh();
+
+    (new View.DrawingWrapper(app.drawing)).centerView();
   };
 
   let handleFailure = (error: unknown) => {

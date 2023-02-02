@@ -1,5 +1,7 @@
 import type { App } from 'App';
 
+import * as View from 'Draw/view';
+
 import { openCTFile } from './openCTFile';
 
 import * as React from 'react';
@@ -126,6 +128,7 @@ export function OpenCTFileSection(props: Props) {
     // prevent coming back to this form and preceding forms
     app.formContainer.clearHistory();
     app.refresh();
+    (new View.DrawingWrapper(app.drawing)).centerView();
   };
 
   let handleFailure = (error: unknown) => {

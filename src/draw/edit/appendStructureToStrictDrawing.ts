@@ -10,7 +10,6 @@ import { radiateStems } from 'Draw/strict/layout/radiateStems';
 import { isTree } from 'Partners/isTree';
 import { treeify } from 'Partners/treeify';
 import type { Sequence } from 'Draw/sequences/Sequence';
-import { centerView } from 'Draw/view';
 
 function _appendPerBaseLayoutProps(sd: StrictDrawing, structure: Structure) {
   let seq = sd.drawing.getSequenceById(structure.id) as Sequence;
@@ -62,7 +61,6 @@ function _radiateStructure(sd: StrictDrawing, structure: Structure) {
  * Returns true if the structure was successfully appended.
  */
 export function appendStructureToStrictDrawing(sd: StrictDrawing, structure: Structure): boolean {
-  let wasEmpty = sd.isEmpty();
   let tertiaryPartners = structure.tertiaryPartners;
   structure = { ...structure, tertiaryPartners: undefined };
   let appended = appendStructure(sd.drawing, structure);
@@ -74,9 +72,6 @@ export function appendStructureToStrictDrawing(sd: StrictDrawing, structure: Str
   sd.updateLayout();
   if (tertiaryPartners) {
     addTertiaryBonds(sd.drawing, structure.id, tertiaryPartners);
-  }
-  if (wasEmpty) {
-    centerView(sd.drawing);
   }
   return true;
 }

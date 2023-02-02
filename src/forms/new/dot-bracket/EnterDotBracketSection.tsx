@@ -11,6 +11,8 @@ import { DotBracketParsingDetails } from './DotBracketParsingDetails';
 import { SubmitButton } from 'Forms/buttons/SubmitButton';
 import { parseInputs } from './parseInputs';
 
+import * as View from 'Draw/view';
+
 let examples = [
   {
     name: 'A Small Structure',
@@ -131,6 +133,7 @@ export function EnterDotBracketSection(props: Props): React.ReactElement {
               // prevent coming back to this form or preceding forms
               props.app.formContainer.clearHistory();
               props.app.refresh();
+              (new View.DrawingWrapper(props.app.drawing)).centerView();
             }
           }}
         >
