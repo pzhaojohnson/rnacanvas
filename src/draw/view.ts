@@ -23,14 +23,6 @@ export function centerViewOn(drawing: Drawing, p: Point) {
   drawing.scroll.top = p.y - (window.innerHeight / 2);
 }
 
-// centers view on the center coordinates of the drawing
-export function centerView(drawing: Drawing) {
-  centerViewOn(drawing, {
-    x: drawing.scroll.width / 2,
-    y: drawing.scroll.height / 2,
-  });
-}
-
 type Rect = {
   /**
    * Leftmost coordinate.
