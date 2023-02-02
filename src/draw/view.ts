@@ -45,10 +45,26 @@ class RectWrapper {
     this.wrappedRect = rect;
   }
 
+  get left() {
+    return this.wrappedRect.left;
+  }
+
+  get top() {
+    return this.wrappedRect.top;
+  }
+
+  get width() {
+    return this.wrappedRect.width;
+  }
+
+  get height() {
+    return this.wrappedRect.height;
+  }
+
   get center() {
     return {
-      x: this.wrappedRect.left + (this.wrappedRect.width / 2),
-      y: this.wrappedRect.top + (this.wrappedRect.height / 2),
+      x: this.left + (this.width / 2),
+      y: this.top + (this.height / 2),
     };
   }
 }
