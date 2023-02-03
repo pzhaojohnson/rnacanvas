@@ -1,6 +1,5 @@
 import type { Drawing } from 'Draw/Drawing';
 import { interpretNumber } from 'Draw/svg/interpretNumber';
-import { centerOfView, centerViewOn } from 'Draw/view';
 
 function isFiniteNumber(v: unknown): v is number {
   return typeof v == 'number' && Number.isFinite(v);
@@ -42,7 +41,6 @@ export function setZoom(drawing: Drawing, z: number) {
   // remember previous zoom and center of view
   let prev = {
     z: zoom(drawing),
-    centerOfView: centerOfView(drawing),
   };
 
   let viewbox = drawing.svg.viewbox();
@@ -61,14 +59,24 @@ export function setZoom(drawing: Drawing, z: number) {
     'height': z * viewbox.height,
   });
 
+  // the factor that the zoom changed by
+  let changeFactor = typeof prev.z == 'number' ? (
+    z / prev.z
+  ) : undefined;
+
   // maintain center of view
-  if (typeof prev.z == 'number' && prev.z != 0) {
-    let factor = z / prev.z;
-    if (Number.isFinite(factor)) { // check just to be safe
-      centerViewOn(drawing, {
-        x: factor * prev.centerOfView.x,
-        y: factor * prev.centerOfView.y,
-      });
-    }
+  if (isFiniteNumber(changeFactor)) {
+    let view = drawing.svgContainer.getBoundingClientRect();
+
+    let scrollCenter = {
+      x: drawing.svgContainer.scrollLeft + (view.width / 2),
+      y: drawing.svgContainer.scrollTop + (view.height / 2),
+    };
+
+    scrollCenter.x *= changeFactor;
+    scrollCenter.y *= changeFactor;
+
+    drawing.svgContainer.scrollLeft = scrollCenter.x - (view.width / 2);
+    drawing.svgContainer.scrollTop = scrollCenter.y - (view.height / 2);
   }
 }
