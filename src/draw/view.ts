@@ -119,24 +119,6 @@ export class DrawingWrapper {
   }
 
   /**
-   * The center point of the view of the drawing.
-   *
-   * If the view of the drawing is larger than the drawing itself, this
-   * point can be outside of the drawing.
-   */
-  get centerOfView() {
-    return {
-      x: this.scrollLeft + (this.viewWidth / 2),
-      y: this.scrollTop + (this.viewHeight / 2),
-    };
-  }
-
-  set centerOfView(centerOfView) {
-    this.scrollLeft = centerOfView.x - (this.viewWidth / 2);
-    this.scrollTop = centerOfView.y - (this.viewHeight / 2);
-  }
-
-  /**
    * Centers the view of the drawing on the center point of the drawing.
    */
   centerView() {
