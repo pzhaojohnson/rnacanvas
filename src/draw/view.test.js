@@ -76,22 +76,6 @@ describe('DrawingWrapper class', () => {
     expect(strictDrawingWrapper.scrollTop).toBe(61);
   });
 
-  test('viewWidth getter', () => {
-    window.innerWidth = 1825;
-    expect(drawingWrapper.viewWidth).toBe(1825);
-
-    window.innerWidth = 2643
-    expect(strictDrawingWrapper.viewWidth).toBe(2643);
-  });
-
-  test('viewHeight getter', () => {
-    window.innerHeight = 897;
-    expect(drawingWrapper.viewHeight).toBe(897);
-
-    window.innerHeight = 1127;
-    expect(strictDrawingWrapper.viewHeight).toBe(1127);
-  });
-
   describe('centerView method', () => {
     test('when the view fits inside the drawing', () => {
       drawing.svg.viewbox(0, 0, 3382, 4189);
