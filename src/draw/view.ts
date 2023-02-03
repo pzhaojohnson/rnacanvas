@@ -6,23 +6,6 @@ import * as Scroll from 'Draw/scroll';
 
 import * as CenterPoint from 'Draw/centerPoint';
 
-export type Point = {
-  x: number;
-  y: number;
-};
-
-export function centerOfView(drawing: Drawing): Point {
-  return {
-    x: drawing.scroll.left + (window.innerWidth / 2),
-    y: drawing.scroll.top + (window.innerHeight / 2),
-  };
-}
-
-export function centerViewOn(drawing: Drawing, p: Point) {
-  drawing.scroll.left = p.x - (window.innerWidth / 2);
-  drawing.scroll.top = p.y - (window.innerHeight / 2);
-}
-
 type Rect = {
   /**
    * Leftmost coordinate.
