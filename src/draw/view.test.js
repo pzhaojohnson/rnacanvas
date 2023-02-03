@@ -9,17 +9,15 @@ let drawingWrapper = null;
 
 beforeEach(() => {
   drawing = new Drawing({ SVG });
+  drawingWrapper = new DrawingWrapper(drawing);
 
   document.body.appendChild(drawing.node);
-
-  drawingWrapper = new DrawingWrapper(drawing);
 });
 
 afterEach(() => {
-  drawingWrapper = null;
-
   drawing.node.remove();
 
+  drawingWrapper = null;
   drawing = null;
 });
 
