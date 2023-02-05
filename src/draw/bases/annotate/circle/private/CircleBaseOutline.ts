@@ -22,7 +22,7 @@ export class CircleBaseOutline {
    *
    * To be centered on the base that the outline is for.
    */
-  circle: SVG.Circle;
+  readonly circle: SVG.Circle;
 
   /**
    * The most recently provided center coordinates of the base that the
