@@ -7,6 +7,8 @@ import * as Parent from './private/parent';
 
 import * as Contains from './private/contains';
 
+import * as Reposition from './private/reposition';
+
 export type Point = {
   x: number;
   y: number;
@@ -21,6 +23,12 @@ export type AppendToMethodArgs = (
 export type ContainsMethodArgs = (
   Parameters<
     InstanceType<typeof Contains.CircleBaseOutlineDecorator>['contains']
+  >
+);
+
+export type RepositionMethodArgs = (
+  Parameters<
+    InstanceType<typeof Reposition.CircleBaseOutlineDecorator>['reposition']
   >
 );
 
@@ -70,5 +78,13 @@ export class CircleBaseOutline {
       new Contains.CircleBaseOutlineDecorator(this.underlyingElement)
         .contains(...args)
     );
+  }
+
+  reposition(...args: RepositionMethodArgs) {
+    let decorator = new Reposition.CircleBaseOutlineDecorator(
+      this.underlyingCircleBaseOutline,
+    );
+
+    return decorator.reposition(...args);
   }
 }

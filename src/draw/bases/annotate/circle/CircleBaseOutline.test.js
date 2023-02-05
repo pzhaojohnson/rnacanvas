@@ -79,4 +79,11 @@ describe('CircleBaseOutline class', () => {
     expect(circleBaseOutline.contains(circle)).toBe(false);
     expect(circleBaseOutline.contains(circle.node)).toBe(false);
   });
+
+  test('reposition method', () => {
+    let baseCenter = { x: 1205.692, y: 2133.808 };
+    circleBaseOutline.reposition({ baseCenter });
+    expect(circleBaseOutline.circle.attr('cx')).toBeCloseTo(1205.692);
+    expect(circleBaseOutline.circle.attr('cy')).toBeCloseTo(2133.808);
+  });
 });
