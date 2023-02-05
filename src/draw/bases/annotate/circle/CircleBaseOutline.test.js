@@ -28,15 +28,15 @@ describe('CircleBaseOutline class', () => {
     let circle = svg.circle(10);
     let baseCenter = { x: 32.8091, y: 1045.662 };
 
-    let outline = new CircleBaseOutline(circle, baseCenter);
+    let circleBaseOutline = new CircleBaseOutline(circle, baseCenter);
 
     // passed circle argument
-    expect(outline.underlyingCircleBaseOutline.circle).toBe(circle);
+    expect(circleBaseOutline.underlyingCircleBaseOutline.circle)
+      .toBe(circle);
 
     // passed base center argument
-    expect(
-      outline.underlyingCircleBaseOutline.cachedBaseCenter
-    ).toStrictEqual({ x: 32.8091, y: 1045.662 });
+    expect(circleBaseOutline.underlyingCircleBaseOutline.cachedBaseCenter)
+      .toStrictEqual({ x: 32.8091, y: 1045.662 });
   });
 
   test('circle getter', () => {
