@@ -45,4 +45,9 @@ describe('CircleBaseOutline class', () => {
 
     expect(circleBaseOutline.circle).toBeTruthy();
   });
+
+  test('parent getter', () => {
+    expect(circleBaseOutline.circle.root()).toBe(svg);
+    expect(circleBaseOutline.parent).toBe(svg);
+  });
 });

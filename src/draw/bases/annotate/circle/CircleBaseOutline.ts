@@ -3,6 +3,8 @@ import { CircleBaseOutline as _CircleBaseOutline } from './private/CircleBaseOut
 
 import * as SVG from '@svgdotjs/svg.js';
 
+import * as Parent from './private/parent';
+
 export type Point = {
   x: number;
   y: number;
@@ -19,5 +21,12 @@ export class CircleBaseOutline {
 
   get circle() {
     return this.underlyingCircleBaseOutline.circle;
+  }
+
+  get parent() {
+    return (
+      new Parent.CircleBaseOutlineDecorator(this.underlyingCircleBaseOutline)
+        .parent
+    );
   }
 }
