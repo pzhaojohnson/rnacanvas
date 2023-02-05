@@ -4,12 +4,21 @@ import { CircleBaseOutline } from './CircleBaseOutline';
 
 let svg = null;
 
+let circleBaseOutline = null;
+
 beforeEach(() => {
   svg = SVG.SVG();
   svg.addTo(document.body);
+
+  circleBaseOutline = new CircleBaseOutline(
+    svg.circle(55),
+    { x: 100, y: 200 },
+  );
 });
 
 afterEach(() => {
+  circleBaseOutline = null;
+
   svg.remove();
   svg = null;
 });
@@ -28,5 +37,12 @@ describe('CircleBaseOutline class', () => {
     expect(
       outline.underlyingCircleBaseOutline.cachedBaseCenter
     ).toStrictEqual({ x: 32.8091, y: 1045.662 });
+  });
+
+  test('circle getter', () => {
+    expect(circleBaseOutline.circle)
+      .toBe(circleBaseOutline.underlyingCircleBaseOutline.circle);
+
+    expect(circleBaseOutline.circle).toBeTruthy();
   });
 });

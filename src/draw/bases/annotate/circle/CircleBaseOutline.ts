@@ -16,4 +16,8 @@ export class CircleBaseOutline {
       new _CircleBaseOutline({ circle, baseCenter })
     );
   }
+
+  get circle() {
+    return this.underlyingCircleBaseOutline.circle;
+  }
 }
