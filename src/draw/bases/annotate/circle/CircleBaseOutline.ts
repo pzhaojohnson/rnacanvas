@@ -9,6 +9,8 @@ import * as Contains from './private/contains';
 
 import * as Reposition from './private/reposition';
 
+import * as Z from './private/z';
+
 export type Point = {
   x: number;
   y: number;
@@ -80,5 +82,19 @@ export class CircleBaseOutline {
     );
 
     return decorator.reposition(...args);
+  }
+
+  sendToBack() {
+    return (
+      new Z.CircleBaseOutlineDecorator(this.underlyingCircleBaseOutline)
+        .sendToBack()
+    );
+  }
+
+  bringToFront() {
+    return (
+      new Z.CircleBaseOutlineDecorator(this.underlyingCircleBaseOutline)
+        .bringToFront()
+    );
   }
 }

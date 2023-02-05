@@ -81,4 +81,22 @@ describe('CircleBaseOutline class', () => {
     expect(circleBaseOutline.circle.attr('cx')).toBeCloseTo(1205.692);
     expect(circleBaseOutline.circle.attr('cy')).toBeCloseTo(2133.808);
   });
+
+  test('sendToBack and bringToFront methods', () => {
+    // add other elements to be behind or in front of
+    svg.text('A');
+    svg.text('qwer');
+    svg.circle(50);
+    svg.rect(10, 10);
+
+    let n = svg.children().length;
+
+    circleBaseOutline.circle.back();
+
+    circleBaseOutline.bringToFront();
+    expect(circleBaseOutline.circle.position()).toBe(n - 1);
+
+    circleBaseOutline.sendToBack();
+    expect(circleBaseOutline.circle.position()).toBe(0);
+  });
 });
