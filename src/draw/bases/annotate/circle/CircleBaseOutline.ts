@@ -10,6 +10,12 @@ export type Point = {
   y: number;
 };
 
+export type AppendToMethodArgs = (
+  Parameters<
+    InstanceType<typeof Parent.CircleBaseOutlineDecorator>['appendTo']
+  >
+);
+
 export class CircleBaseOutline {
   readonly underlyingCircleBaseOutline: _CircleBaseOutline;
 
@@ -27,6 +33,20 @@ export class CircleBaseOutline {
     return (
       new Parent.CircleBaseOutlineDecorator(this.underlyingCircleBaseOutline)
         .parent
+    );
+  }
+
+  appendTo(...args: AppendToMethodArgs) {
+    return (
+      new Parent.CircleBaseOutlineDecorator(this.underlyingCircleBaseOutline)
+        .appendTo(...args)
+    );
+  }
+
+  remove() {
+    return (
+      new Parent.CircleBaseOutlineDecorator(this.underlyingCircleBaseOutline)
+        .remove()
     );
   }
 }

@@ -50,4 +50,18 @@ describe('CircleBaseOutline class', () => {
     expect(circleBaseOutline.circle.root()).toBe(svg);
     expect(circleBaseOutline.parent).toBe(svg);
   });
+
+  test('appendTo and remove methods', () => {
+    circleBaseOutline.remove();
+    expect(circleBaseOutline.parent).toBeFalsy();
+    expect(circleBaseOutline.circle.root()).toBeFalsy();
+
+    circleBaseOutline.appendTo(svg);
+    expect(circleBaseOutline.parent).toBe(svg);
+    expect(circleBaseOutline.circle.root()).toBe(svg);
+
+    circleBaseOutline.remove();
+    expect(circleBaseOutline.parent).toBeFalsy();
+    expect(circleBaseOutline.circle.root()).toBeFalsy();
+  });
 });
