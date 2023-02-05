@@ -39,6 +39,11 @@ describe('CircleBaseOutline class', () => {
       .toStrictEqual({ x: 32.8091, y: 1045.662 });
   });
 
+  test('underlyingElement getter', () => {
+    expect(circleBaseOutline.underlyingElement)
+      .toBe(circleBaseOutline.underlyingCircleBaseOutline);
+  });
+
   test('circle getter', () => {
     expect(circleBaseOutline.circle)
       .toBe(circleBaseOutline.underlyingCircleBaseOutline.circle);
@@ -63,5 +68,15 @@ describe('CircleBaseOutline class', () => {
     circleBaseOutline.remove();
     expect(circleBaseOutline.parent).toBeFalsy();
     expect(circleBaseOutline.circle.root()).toBeFalsy();
+  });
+
+  test('contains method', () => {
+    let circle = circleBaseOutline.circle;
+    expect(circleBaseOutline.contains(circle)).toBe(true);
+    expect(circleBaseOutline.contains(circle.node)).toBe(true);
+
+    circle = svg.circle(20);
+    expect(circleBaseOutline.contains(circle)).toBe(false);
+    expect(circleBaseOutline.contains(circle.node)).toBe(false);
   });
 });
