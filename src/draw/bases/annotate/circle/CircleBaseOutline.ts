@@ -41,13 +41,6 @@ export class CircleBaseOutline {
     );
   }
 
-  /**
-   * A shorter alias for the underlying circle base outline.
-   */
-  get underlyingElement() {
-    return this.underlyingCircleBaseOutline;
-  }
-
   get circle() {
     return this.underlyingCircleBaseOutline.circle;
   }
@@ -74,10 +67,11 @@ export class CircleBaseOutline {
   }
 
   contains(...args: ContainsMethodArgs) {
-    return (
-      new Contains.CircleBaseOutlineDecorator(this.underlyingElement)
-        .contains(...args)
+    let decorator = new Contains.CircleBaseOutlineDecorator(
+      this.underlyingCircleBaseOutline,
     );
+
+    return decorator.contains(...args);
   }
 
   reposition(...args: RepositionMethodArgs) {
