@@ -18,24 +18,6 @@ export type Point = {
   y: number;
 };
 
-export type AppendToMethodArgs = (
-  Parameters<
-    InstanceType<typeof Parent.CircleBaseOutlineDecorator>['appendTo']
-  >
-);
-
-export type ContainsMethodArgs = (
-  Parameters<
-    InstanceType<typeof Contains.CircleBaseOutlineDecorator>['contains']
-  >
-);
-
-export type RepositionMethodArgs = (
-  Parameters<
-    InstanceType<typeof Reposition.CircleBaseOutlineDecorator>['reposition']
-  >
-);
-
 export class CircleBaseOutline {
   /**
    * Throws if the saved circle base outline is invalid.
@@ -67,7 +49,11 @@ export class CircleBaseOutline {
     );
   }
 
-  appendTo(...args: AppendToMethodArgs) {
+  appendTo(
+    ...args: Parameters<
+      InstanceType<typeof Parent.CircleBaseOutlineDecorator>['appendTo']
+    >
+  ) {
     return (
       new Parent.CircleBaseOutlineDecorator(this.underlyingCircleBaseOutline)
         .appendTo(...args)
@@ -81,7 +67,11 @@ export class CircleBaseOutline {
     );
   }
 
-  contains(...args: ContainsMethodArgs) {
+  contains(
+    ...args: Parameters<
+      InstanceType<typeof Contains.CircleBaseOutlineDecorator>['contains']
+    >
+  ) {
     let decorator = new Contains.CircleBaseOutlineDecorator(
       this.underlyingCircleBaseOutline,
     );
@@ -89,7 +79,11 @@ export class CircleBaseOutline {
     return decorator.contains(...args);
   }
 
-  reposition(...args: RepositionMethodArgs) {
+  reposition(
+    ...args: Parameters<
+      InstanceType<typeof Reposition.CircleBaseOutlineDecorator>['reposition']
+    >
+  ) {
     let decorator = new Reposition.CircleBaseOutlineDecorator(
       this.underlyingCircleBaseOutline,
     );
