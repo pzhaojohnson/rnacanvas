@@ -99,4 +99,14 @@ describe('CircleBaseOutline class', () => {
     circleBaseOutline.sendToBack();
     expect(circleBaseOutline.circle.position()).toBe(0);
   });
+
+  test('toSaved method', () => {
+    circleBaseOutline.circle.attr('id', 'zxcv-12345-kjy7egwh');
+    let saved = circleBaseOutline.toSaved();
+
+    expect(saved).toStrictEqual({
+      className: 'CircleBaseOutline',
+      circleId: 'zxcv-12345-kjy7egwh',
+    });
+  });
 });
