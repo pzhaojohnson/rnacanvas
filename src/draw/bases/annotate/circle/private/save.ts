@@ -3,7 +3,7 @@ import { CircleBaseOutline } from './CircleBaseOutline';
 import * as SVG from '@svgdotjs/svg.js';
 
 /**
- * Includes legacy class name.
+ * Circle base outlines used to be called circle base annotations.
  */
 export type ClassName = (
   'CircleBaseOutline'
