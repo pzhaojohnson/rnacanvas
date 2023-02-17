@@ -1,5 +1,7 @@
 import * as SVG from 'Draw/svg/NodeSVG';
 
+import { Circle as SVGCircle } from '@svgdotjs/svg.js';
+
 import { CircleBaseOutline } from './CircleBaseOutline';
 
 let svg = null;
@@ -24,6 +26,24 @@ afterEach(() => {
 });
 
 describe('CircleBaseOutline class', () => {
+  test('fromSaved static method', () => {
+    // add extra elements to sift through
+    svg.circle(23).back();
+    svg.rect(2, 88).back();
+    svg.ellipse(100, 10);
+    svg.text('asdf');
+
+    let saved = circleBaseOutline.toSaved();
+
+    let circleBaseOutline2 = (
+      CircleBaseOutline.fromSaved({ saved, parent: svg })
+    );
+
+    expect(circleBaseOutline2.circle).toBeInstanceOf(SVGCircle);
+    expect(circleBaseOutline2.circle.attr('id')).toBe(saved.circleId);
+    expect(circleBaseOutline2.circle.attr('id')).toBeTruthy();
+  });
+
   test('constructor', () => {
     let circle = svg.circle(10);
     let baseCenter = { x: 32.8091, y: 1045.662 };

@@ -37,6 +37,17 @@ export type RepositionMethodArgs = (
 );
 
 export class CircleBaseOutline {
+  /**
+   * Throws if the saved circle base outline is invalid.
+   */
+  static fromSaved(
+    ...args: Parameters<typeof Save.CircleBaseOutlineDecorator.fromSaved>
+  ) {
+    return (
+      Save.CircleBaseOutlineDecorator.fromSaved(...args)
+    );
+  }
+
   readonly underlyingCircleBaseOutline: _CircleBaseOutline;
 
   constructor(circle: SVG.Circle, baseCenter: Point) {
