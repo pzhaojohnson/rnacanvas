@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { CircleBaseAnnotation as BaseOutline } from 'Draw/bases/annotate/circle/CircleBaseAnnotation';
+import type { CircleBaseAnnotation as BaseOutline } from 'Draw/bases/annotate/circle/CircleBaseAnnotation';
 
 import * as React from 'react';
 
@@ -31,13 +31,6 @@ export class FillOpacityInput extends React.Component<Props> {
   }
 
   handleEdit(event: EditEvent) {
-    let newValue = event.newValue;
-
-    // don't make base outlines too hard to see by default
-    if (newValue >= 0.25) {
-      BaseOutline.recommendedDefaults.circle['fill-opacity'] = newValue;
-    }
-
     this.props.app.refresh(); // refresh after updating all values
   }
 
