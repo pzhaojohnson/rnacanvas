@@ -1,4 +1,6 @@
-// the private circle base outline class
+/**
+ * The private circle base outline class.
+ */
 import { CircleBaseOutline as _CircleBaseOutline } from './private/CircleBaseOutline';
 
 import * as SVG from '@svgdotjs/svg.js';
