@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { CircleBaseAnnotation as BaseOutline } from 'Draw/bases/annotate/circle/CircleBaseAnnotation';
+import type { CircleBaseAnnotation as BaseOutline } from 'Draw/bases/annotate/circle/CircleBaseAnnotation';
 
 import * as React from 'react';
 
@@ -31,10 +31,6 @@ export class StrokeOpacityInput extends React.Component<Props> {
   }
 
   handleEdit(event: EditEvent) {
-    let newValue = event.newValue;
-
-    BaseOutline.recommendedDefaults.circle['stroke-opacity'] = newValue;
-
     this.props.app.refresh(); // refresh after updating all values
   }
 
