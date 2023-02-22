@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { CircleBaseAnnotation as BaseOutline } from 'Draw/bases/annotate/circle/CircleBaseAnnotation';
+import type { CircleBaseAnnotation as BaseOutline } from 'Draw/bases/annotate/circle/CircleBaseAnnotation';
 
 import * as React from 'react';
 
@@ -27,11 +27,6 @@ export function StrokePicker(props: Props) {
         props.app.pushUndo();
       }}
       onEdit={event => {
-        let newValue = event.newValue;
-        let newValueHexCode = newValue.toHex();
-
-        BaseOutline.recommendedDefaults.circle['stroke'] = newValueHexCode;
-
         props.app.refresh(); // refresh after updating all values
       }}
     />
