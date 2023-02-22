@@ -74,13 +74,6 @@ describe('CircleBaseAnnotation class', () => {
     });
   });
 
-  it('id getter', () => {
-    let c = svg.circle(8);
-    c.id('asdfasdf');
-    let cba = new CircleBaseAnnotation(c, { x: 0, y: 0 });
-    expect(cba.id).toBe('asdfasdf');
-  });
-
   test('contains method', () => {
     let c = svg.circle(30);
     let cba = new CircleBaseAnnotation(c, { x: 100, y: 110 });

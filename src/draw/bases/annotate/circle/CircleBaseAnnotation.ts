@@ -28,10 +28,6 @@ export class CircleBaseAnnotation {
     this._baseCenter = { ...baseCenter };
   }
 
-  get id(): string {
-    return String(this.circle.id());
-  }
-
   contains(node: SVG.Element | Node): boolean {
     if (node instanceof SVG.Element) {
       node = node.node;
