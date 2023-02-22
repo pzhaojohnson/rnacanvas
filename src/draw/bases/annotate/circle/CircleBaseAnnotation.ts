@@ -1,24 +1,12 @@
 import * as SVG from '@svgdotjs/svg.js';
 import { Point2D as Point } from 'Math/points/Point';
 import { assignUuid } from 'Draw/svg/assignUuid';
-import { Values } from './values';
 
 export type Repositioning = {
   baseCenter?: Point;
 }
 
 export class CircleBaseAnnotation {
-  static recommendedDefaults: Values = {
-    circle: {
-      'r': 7,
-      'stroke': '#00ffff',
-      'stroke-width': 1,
-      'stroke-opacity': 1,
-      'fill': '#c3ffff',
-      'fill-opacity': 1,
-    },
-  };
-
   readonly circle: SVG.Circle;
 
   _baseCenter: Point;

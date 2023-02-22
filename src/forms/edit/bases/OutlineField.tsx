@@ -2,7 +2,6 @@ import * as React from 'react';
 import { CheckboxField } from 'Forms/inputs/checkbox/CheckboxField';
 import type { App } from 'App';
 import type { Base } from 'Draw/bases/Base';
-import { CircleBaseAnnotation } from 'Draw/bases/annotate/circle/CircleBaseAnnotation';
 import { addCircleOutline, removeCircleOutline } from 'Draw/bases/annotate/circle/add';
 import { setValues as setOutlineValues } from 'Draw/bases/annotate/circle/values';
 import { sendToBack as sendOutlineToBack } from 'Draw/bases/annotate/circle/z';
@@ -18,6 +17,17 @@ export function allHaveOutlines(bases: Base[]): boolean {
   return bases.filter(b => !b.outline).length == 0;
 }
 
+let recommendedDefaults = {
+  circle: {
+    'r': 7,
+    'stroke': '#00ffff',
+    'stroke-width': 1,
+    'stroke-opacity': 1,
+    'fill': '#c3ffff',
+    'fill-opacity': 1,
+  },
+};
+
 function addOutlines(bases: Base[]) {
   bases.forEach(b => {
     let hadOutline = b.outline ? true : false;
@@ -30,7 +40,7 @@ function addOutlines(bases: Base[]) {
     // check that outline was added successfully
     // and don't overwrite the values of preexisting outlines
     if (b.outline && !hadOutline) {
-      setOutlineValues(b.outline, CircleBaseAnnotation.recommendedDefaults);
+      setOutlineValues(b.outline, recommendedDefaults);
       sendOutlineToBack(b.outline);
     }
   });
