@@ -54,10 +54,10 @@ describe('addCircleOutline function', () => {
     expect(wasRemoved(o1)).toBeFalsy();
     addCircleOutline(base);
     expect(wasRemoved(o1)).toBeTruthy(); // removed previous outline
-    expect(base.outline.id).not.toEqual(o1.id); // added new outline
+    expect(base.outline.circle.attr('id')).not.toEqual(o1.circle.attr('id')); // added new outline
     // double-check that IDs are defined
-    expect(o1.id).toBeTruthy();
-    expect(base.outline.id).toBeTruthy();
+    expect(o1.circle.attr('id')).toBeTruthy();
+    expect(base.outline.circle.attr('id')).toBeTruthy();
   });
 });
 
@@ -79,10 +79,10 @@ describe('addCircleHighlighting function', () => {
     expect(wasRemoved(h1)).toBeFalsy();
     addCircleHighlighting(base);
     expect(wasRemoved(h1)).toBeTruthy(); // removed previous highlighting
-    expect(base.highlighting.id).not.toEqual(h1.id); // added new highlighting
+    expect(base.highlighting.circle.attr('id')).not.toEqual(h1.circle.attr('id')); // added new highlighting
     // double-check that IDs are defined
-    expect(h1.id).toBeTruthy();
-    expect(base.highlighting.id).toBeTruthy();
+    expect(h1.circle.attr('id')).toBeTruthy();
+    expect(base.highlighting.circle.attr('id')).toBeTruthy();
   });
 });
 
