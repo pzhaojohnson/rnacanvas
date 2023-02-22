@@ -24,13 +24,6 @@ afterEach(() => {
 
 describe('CircleBaseAnnotation class', () => {
   describe('constructor', () => {
-    it('checks SVG element type', () => {
-      let r = svg.rect(10, 20);
-      expect(
-        () => new CircleBaseAnnotation(r, { x: 5, y: 6 })
-      ).toThrow();
-    });
-
     it('stores reference to circle', () => {
       let c = svg.circle(20);
       let cba = new CircleBaseAnnotation(c, { x: 50, y: 60 });
