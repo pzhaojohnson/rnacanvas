@@ -1,6 +1,6 @@
 import { values, setValues } from './values';
 import { NodeSVG } from 'Draw/svg/NodeSVG';
-import { CircleBaseAnnotation } from './CircleBaseAnnotation';
+import { CircleBaseOutline as CircleBaseAnnotation } from './CircleBaseOutline';
 
 let container = null;
 let svg = null;

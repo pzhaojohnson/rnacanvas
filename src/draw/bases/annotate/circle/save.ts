@@ -1,4 +1,4 @@
-import { CircleBaseAnnotation } from './CircleBaseAnnotation';
+import { CircleBaseOutline as CircleBaseAnnotation } from './CircleBaseOutline';
 import type { Base } from 'Draw/bases/Base';
 import * as SVG from '@svgdotjs/svg.js';
 import { findCircleByUniqueId } from 'Draw/saved/svg';
