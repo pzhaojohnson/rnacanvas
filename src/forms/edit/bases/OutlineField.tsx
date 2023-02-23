@@ -4,7 +4,6 @@ import type { App } from 'App';
 import type { Base } from 'Draw/bases/Base';
 import { addCircleOutline, removeCircleOutline } from 'Draw/bases/annotate/circle/add';
 import { setValues as setOutlineValues } from 'Draw/bases/annotate/circle/values';
-import { sendToBack as sendOutlineToBack } from 'Draw/bases/annotate/circle/z';
 
 export type Props = {
   app: App;
@@ -41,7 +40,7 @@ function addOutlines(bases: Base[]) {
     // and don't overwrite the values of preexisting outlines
     if (b.outline && !hadOutline) {
       setOutlineValues(b.outline, recommendedDefaults);
-      sendOutlineToBack(b.outline);
+      b.outline.sendToBack();
     }
   });
 }
