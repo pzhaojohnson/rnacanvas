@@ -3,7 +3,7 @@ import { Drawing } from 'Draw/Drawing';
 import { NodeSVG } from 'Draw/svg/NodeSVG';
 import { appendSequence } from 'Draw/sequences/add/sequence';
 import { uuidRegex } from 'Draw/svg/assignUuid';
-import { addCircleHighlighting, addCircleOutline } from 'Draw/bases/annotate/circle/add';
+import { addCircleHighlighting, addCircleOutline } from 'Draw/bases/outlines/circle/add';
 import { addNumbering } from 'Draw/bases/numberings/add';
 import { savableState as savableNumberingState } from 'Draw/bases/numberings/save';
 

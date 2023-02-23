@@ -3,7 +3,7 @@ import type { Base } from 'Draw/bases/Base';
 import * as SVG from '@svgdotjs/svg.js';
 
 // the underlying function to outline bases
-import { addCircleOutline as outlineBase } from 'Draw/bases/annotate/circle/add';
+import { addCircleOutline as outlineBase } from 'Draw/bases/outlines/circle/add';
 
 export type OutlineSpec = {
   stroke?: SVG.Color;

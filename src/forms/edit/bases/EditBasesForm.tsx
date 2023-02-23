@@ -1,6 +1,6 @@
 import type { App } from 'App';
 import { Base } from 'Draw/bases/Base';
-import { CircleBaseOutline } from 'Draw/bases/annotate/circle/CircleBaseOutline';
+import { CircleBaseOutline } from 'Draw/bases/outlines/circle/CircleBaseOutline';
 
 import * as React from 'react';
 import styles from './EditBasesForm.css';

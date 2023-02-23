@@ -1,6 +1,6 @@
 import { Base } from './Base';
 import { NodeSVG } from 'Draw/svg/NodeSVG';
-import { addCircleHighlighting, addCircleOutline } from 'Draw/bases/annotate/circle/add';
+import { addCircleHighlighting, addCircleOutline } from 'Draw/bases/outlines/circle/add';
 import { addNumbering } from 'Draw/bases/numberings/add';
 
 let svg = NodeSVG();

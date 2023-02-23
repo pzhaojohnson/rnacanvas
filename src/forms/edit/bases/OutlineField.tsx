@@ -2,8 +2,8 @@ import * as React from 'react';
 import { CheckboxField } from 'Forms/inputs/checkbox/CheckboxField';
 import type { App } from 'App';
 import type { Base } from 'Draw/bases/Base';
-import { addCircleOutline, removeCircleOutline } from 'Draw/bases/annotate/circle/add';
-import { setValues as setOutlineValues } from 'Draw/bases/annotate/circle/values';
+import { addCircleOutline, removeCircleOutline } from 'Draw/bases/outlines/circle/add';
+import { setValues as setOutlineValues } from 'Draw/bases/outlines/circle/values';
 
 export type Props = {
   app: App;

@@ -5,7 +5,7 @@ import {
   savableState as savableNumberingState,
 } from 'Draw/bases/numberings/save';
 
-import type { CircleBaseOutline } from 'Draw/bases/annotate/circle/CircleBaseOutline';
+import type { CircleBaseOutline } from 'Draw/bases/outlines/circle/CircleBaseOutline';
 
 type SavedOutline = ReturnType<
   InstanceType<typeof CircleBaseOutline>['toSaved']

@@ -3,7 +3,7 @@ import { Sequence } from 'Draw/sequences/Sequence';
 import { Base } from 'Draw/bases/Base';
 import { findTextByUniqueId } from 'Draw/saved/svg';
 import { isPoint2D as isPoint } from 'Math/points/Point';
-import { addSavedCircleHighlighting, addSavedCircleOutline } from 'Draw/bases/annotate/circle/save';
+import { addSavedCircleHighlighting, addSavedCircleOutline } from 'Draw/bases/outlines/circle/save';
 import { addSavedNumbering } from 'Draw/bases/numberings/save';
 import { values as baseValues } from 'Draw/bases/values';
 

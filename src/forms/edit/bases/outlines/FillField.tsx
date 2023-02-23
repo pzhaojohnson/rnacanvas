@@ -1,5 +1,5 @@
 import type { App } from 'App';
-import type { CircleBaseOutline } from 'Draw/bases/annotate/circle/CircleBaseOutline';
+import type { CircleBaseOutline } from 'Draw/bases/outlines/circle/CircleBaseOutline';
 
 import * as React from 'react';
 import { FieldLabel } from 'Forms/inputs/labels/FieldLabel';

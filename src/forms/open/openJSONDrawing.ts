@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { removeCircleHighlighting } from 'Draw/bases/annotate/circle/add';
+import { removeCircleHighlighting } from 'Draw/bases/outlines/circle/add';
 
 /**
  * A JSON drawing is a drawing that was created by the RNAcanvas web app

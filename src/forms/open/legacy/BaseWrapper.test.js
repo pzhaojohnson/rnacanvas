@@ -4,7 +4,7 @@ import { Color as SVGColor } from '@svgdotjs/svg.js';
 
 import { Base } from 'Draw/bases/Base';
 
-import { addCircleOutline as outlineBase } from 'Draw/bases/annotate/circle/add';
+import { addCircleOutline as outlineBase } from 'Draw/bases/outlines/circle/add';
 
 import { BaseWrapper } from './BaseWrapper';
 

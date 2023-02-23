@@ -5,7 +5,7 @@ import type { PrimaryBond } from 'Draw/bonds/straight/PrimaryBond';
 import { addPrimaryBond } from 'Draw/bonds/straight/add';
 import { removePrimaryBondById, removeSecondaryBondById } from 'Draw/bonds/straight/remove';
 import { removeTertiaryBondById } from 'Draw/bonds/curved/remove';
-import { removeCircleOutline, removeCircleHighlighting } from 'Draw/bases/annotate/circle/add';
+import { removeCircleOutline, removeCircleHighlighting } from 'Draw/bases/outlines/circle/add';
 import { removeNumbering } from 'Draw/bases/numberings/add';
 import { atPosition } from 'Array/at';
 import { numberingOffset } from 'Draw/sequences/numberingOffset';

@@ -1,6 +1,6 @@
 import * as Svg from '@svgdotjs/svg.js';
 import { assignUuid } from 'Draw/svg/assignUuid';
-import { CircleBaseOutline } from 'Draw/bases/annotate/circle/CircleBaseOutline';
+import { CircleBaseOutline } from 'Draw/bases/outlines/circle/CircleBaseOutline';
 import { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
 import { Values, setValues } from './values';
 import { Point2D as Point } from 'Math/points/Point';

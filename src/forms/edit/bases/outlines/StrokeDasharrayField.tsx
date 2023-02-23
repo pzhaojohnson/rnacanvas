@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { CircleBaseOutline as BaseOutline } from 'Draw/bases/annotate/circle/CircleBaseOutline';
+import { CircleBaseOutline as BaseOutline } from 'Draw/bases/outlines/circle/CircleBaseOutline';
 
 import { strokeDasharrayValueEqualsNone as equalsNone } from 'Values/svg/strokeDasharrayValueEqualsNone';
 
