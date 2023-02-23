@@ -4,7 +4,6 @@ import { NodeSVG } from 'Draw/svg/NodeSVG';
 import { appendSequence } from 'Draw/sequences/add/sequence';
 import { uuidRegex } from 'Draw/svg/assignUuid';
 import { addCircleHighlighting, addCircleOutline } from 'Draw/bases/annotate/circle/add';
-import { savableState as savableCircleAnnotationState } from 'Draw/bases/annotate/circle/save';
 import { addNumbering } from 'Draw/bases/numberings/add';
 import { savableState as savableNumberingState } from 'Draw/bases/numberings/save';
 
@@ -60,7 +59,7 @@ describe('savableState function', () => {
     addCircleHighlighting(base);
     expect(base.highlighting).toBeTruthy();
     saved = savableState(base);
-    expect(saved.highlighting).toEqual(savableCircleAnnotationState(base.highlighting));
+    expect(saved.highlighting).toEqual(base.highlighting.toSaved());
   });
 
   it('includes outlines if present', () => {
@@ -71,7 +70,7 @@ describe('savableState function', () => {
     addCircleOutline(base);
     expect(base.outline).toBeTruthy();
     saved = savableState(base);
-    expect(saved.outline).toEqual(savableCircleAnnotationState(base.outline));
+    expect(saved.outline).toEqual(base.outline.toSaved());
   });
 
   it('includes numbering if present', () => {
