@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import type { CircleBaseAnnotation as BaseOutline } from 'Draw/bases/annotate/circle/CircleBaseAnnotation';
+import type { CircleBaseOutline as BaseOutline } from 'Draw/bases/annotate/circle/CircleBaseOutline';
 
 import * as React from 'react';
 

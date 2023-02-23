@@ -1,5 +1,5 @@
 import type { App } from 'App';
-import type { CircleBaseAnnotation } from 'Draw/bases/annotate/circle/CircleBaseAnnotation';
+import type { CircleBaseOutline } from 'Draw/bases/annotate/circle/CircleBaseOutline';
 
 import * as React from 'react';
 import { FieldLabel } from 'Forms/inputs/labels/FieldLabel';
@@ -9,7 +9,7 @@ import { StrokeOpacityInput } from './StrokeOpacityInput';
 export type Props = {
   app: App; // a reference to the whole app
 
-  outlines: CircleBaseAnnotation[]; // the base outlines to edit
+  outlines: CircleBaseOutline[]; // the base outlines to edit
 };
 
 export function StrokeField(props: Props) {
