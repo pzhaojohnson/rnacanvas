@@ -1,6 +1,6 @@
 import type { App } from 'App';
 import { Base } from 'Draw/bases/Base';
-import { CircleBaseAnnotation } from 'Draw/bases/annotate/circle/CircleBaseAnnotation';
+import { CircleBaseOutline } from 'Draw/bases/annotate/circle/CircleBaseOutline';
 
 import * as React from 'react';
 import styles from './EditBasesForm.css';
@@ -92,7 +92,7 @@ export type Props = {
 
 export function EditBasesForm(props: Props) {
   let outlines = props.bases.map(b => b.outline).filter(
-    (o): o is CircleBaseAnnotation => o instanceof CircleBaseAnnotation
+    (o): o is CircleBaseOutline => o instanceof CircleBaseOutline
   );
 
   return (
