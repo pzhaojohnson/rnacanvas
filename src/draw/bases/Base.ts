@@ -1,6 +1,6 @@
 import * as Svg from '@svgdotjs/svg.js';
 import { assignUuid } from 'Draw/svg/assignUuid';
-import { CircleBaseAnnotation } from 'Draw/bases/annotate/circle/CircleBaseAnnotation';
+import { CircleBaseOutline } from 'Draw/bases/annotate/circle/CircleBaseOutline';
 import { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
 import { Values, setValues } from './values';
 import { Point2D as Point } from 'Math/points/Point';
@@ -18,8 +18,8 @@ export class Base {
   static recommendedDefaults: Values;
 
   readonly text: Svg.Text;
-  highlighting?: CircleBaseAnnotation;
-  outline?: CircleBaseAnnotation;
+  highlighting?: CircleBaseOutline;
+  outline?: CircleBaseOutline;
   numbering?: BaseNumbering;
 
   _center: Point;
