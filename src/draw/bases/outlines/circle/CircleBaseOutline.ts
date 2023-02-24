@@ -50,7 +50,7 @@ export class CircleBaseOutline {
 
   get parent() {
     return (
-      new Parent.CircleBaseOutlineDecorator(this._wrappee)
+      (new Parent.CircleBaseOutlineDecorator(this._wrappee))
         .parent
     );
   }
@@ -61,14 +61,14 @@ export class CircleBaseOutline {
     >
   ) {
     return (
-      new Parent.CircleBaseOutlineDecorator(this._wrappee)
+      (new Parent.CircleBaseOutlineDecorator(this._wrappee))
         .appendTo(...args)
     );
   }
 
   remove() {
     return (
-      new Parent.CircleBaseOutlineDecorator(this._wrappee)
+      (new Parent.CircleBaseOutlineDecorator(this._wrappee))
         .remove()
     );
   }
@@ -97,21 +97,21 @@ export class CircleBaseOutline {
 
   sendToBack() {
     return (
-      new Z.CircleBaseOutlineDecorator(this._wrappee)
+      (new Z.CircleBaseOutlineDecorator(this._wrappee))
         .sendToBack()
     );
   }
 
   bringToFront() {
     return (
-      new Z.CircleBaseOutlineDecorator(this._wrappee)
+      (new Z.CircleBaseOutlineDecorator(this._wrappee))
         .bringToFront()
     );
   }
 
   toSaved() {
     return (
-      new Save.CircleBaseOutlineDecorator(this._wrappee)
+      (new Save.CircleBaseOutlineDecorator(this._wrappee))
         .toSaved()
     );
   }
