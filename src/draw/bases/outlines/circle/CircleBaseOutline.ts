@@ -78,11 +78,10 @@ export class CircleBaseOutline {
       InstanceType<typeof Contains.CircleBaseOutlineDecorator>['contains']
     >
   ) {
-    let decorator = new Contains.CircleBaseOutlineDecorator(
-      this._wrappee,
+    return (
+      (new Contains.CircleBaseOutlineDecorator(this._wrappee))
+        .contains(...args)
     );
-
-    return decorator.contains(...args);
   }
 
   reposition(
@@ -90,11 +89,10 @@ export class CircleBaseOutline {
       InstanceType<typeof Reposition.CircleBaseOutlineDecorator>['reposition']
     >
   ) {
-    let decorator = new Reposition.CircleBaseOutlineDecorator(
-      this._wrappee,
+    return (
+      (new Reposition.CircleBaseOutlineDecorator(this._wrappee))
+        .reposition(...args)
     );
-
-    return decorator.reposition(...args);
   }
 
   sendToBack() {
