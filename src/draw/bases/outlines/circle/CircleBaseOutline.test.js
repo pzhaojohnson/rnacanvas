@@ -51,17 +51,17 @@ describe('CircleBaseOutline class', () => {
     let circleBaseOutline = new CircleBaseOutline(circle, baseCenter);
 
     // passed circle argument
-    expect(circleBaseOutline.underlyingCircleBaseOutline.circle)
+    expect(circleBaseOutline._wrappee.circle)
       .toBe(circle);
 
     // passed base center argument
-    expect(circleBaseOutline.underlyingCircleBaseOutline.cachedBaseCenter)
+    expect(circleBaseOutline._wrappee.cachedBaseCenter)
       .toStrictEqual({ x: 32.8091, y: 1045.662 });
   });
 
   test('circle getter', () => {
     expect(circleBaseOutline.circle)
-      .toBe(circleBaseOutline.underlyingCircleBaseOutline.circle);
+      .toBe(circleBaseOutline._wrappee.circle);
 
     expect(circleBaseOutline.circle).toBeTruthy();
   });

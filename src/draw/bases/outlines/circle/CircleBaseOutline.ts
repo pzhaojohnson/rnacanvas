@@ -32,21 +32,25 @@ export class CircleBaseOutline {
     );
   }
 
-  readonly underlyingCircleBaseOutline: _CircleBaseOutline;
+  /**
+   * Instances of this class wrap an instance of the private circle base
+   * outline class.
+   */
+  readonly _wrappee: _CircleBaseOutline;
 
   constructor(circle: SVG.Circle, baseCenter: Point) {
-    this.underlyingCircleBaseOutline = (
+    this._wrappee = (
       new _CircleBaseOutline({ circle, baseCenter })
     );
   }
 
   get circle() {
-    return this.underlyingCircleBaseOutline.circle;
+    return this._wrappee.circle;
   }
 
   get parent() {
     return (
-      new Parent.CircleBaseOutlineDecorator(this.underlyingCircleBaseOutline)
+      new Parent.CircleBaseOutlineDecorator(this._wrappee)
         .parent
     );
   }
@@ -57,14 +61,14 @@ export class CircleBaseOutline {
     >
   ) {
     return (
-      new Parent.CircleBaseOutlineDecorator(this.underlyingCircleBaseOutline)
+      new Parent.CircleBaseOutlineDecorator(this._wrappee)
         .appendTo(...args)
     );
   }
 
   remove() {
     return (
-      new Parent.CircleBaseOutlineDecorator(this.underlyingCircleBaseOutline)
+      new Parent.CircleBaseOutlineDecorator(this._wrappee)
         .remove()
     );
   }
@@ -75,7 +79,7 @@ export class CircleBaseOutline {
     >
   ) {
     let decorator = new Contains.CircleBaseOutlineDecorator(
-      this.underlyingCircleBaseOutline,
+      this._wrappee,
     );
 
     return decorator.contains(...args);
@@ -87,7 +91,7 @@ export class CircleBaseOutline {
     >
   ) {
     let decorator = new Reposition.CircleBaseOutlineDecorator(
-      this.underlyingCircleBaseOutline,
+      this._wrappee,
     );
 
     return decorator.reposition(...args);
@@ -95,21 +99,21 @@ export class CircleBaseOutline {
 
   sendToBack() {
     return (
-      new Z.CircleBaseOutlineDecorator(this.underlyingCircleBaseOutline)
+      new Z.CircleBaseOutlineDecorator(this._wrappee)
         .sendToBack()
     );
   }
 
   bringToFront() {
     return (
-      new Z.CircleBaseOutlineDecorator(this.underlyingCircleBaseOutline)
+      new Z.CircleBaseOutlineDecorator(this._wrappee)
         .bringToFront()
     );
   }
 
   toSaved() {
     return (
-      new Save.CircleBaseOutlineDecorator(this.underlyingCircleBaseOutline)
+      new Save.CircleBaseOutlineDecorator(this._wrappee)
         .toSaved()
     );
   }
