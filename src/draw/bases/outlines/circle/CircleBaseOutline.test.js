@@ -82,6 +82,15 @@ describe('CircleBaseOutline class', () => {
     expect(circleBaseOutline.circle).toBeTruthy();
   });
 
+  test('addEventListener method', () => {
+    let listener = jest.fn();
+    circleBaseOutline.addEventListener('move', listener);
+
+    expect(listener).toHaveBeenCalledTimes(0);
+    circleBaseOutline.reposition({ baseCenter: { x: 10, y: 20 } });
+    expect(listener).toHaveBeenCalledTimes(1);
+  });
+
   test('parent getter', () => {
     expect(circleBaseOutline.circle.root()).toBe(svg);
     expect(circleBaseOutline.parent).toBe(svg);

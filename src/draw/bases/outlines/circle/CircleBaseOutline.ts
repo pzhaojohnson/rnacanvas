@@ -3,6 +3,8 @@
  */
 import { CircleBaseOutline as _CircleBaseOutline } from './private/CircleBaseOutline';
 
+import * as AddEventListener from './private/addEventListener';
+
 import * as Parent from './private/parent';
 
 import * as Contains from './private/contains';
@@ -60,6 +62,19 @@ export class CircleBaseOutline {
 
   get circle() {
     return this._wrappee.circle;
+  }
+
+  addEventListener(
+    ...args: Parameters<
+      InstanceType<
+        typeof AddEventListener.CircleBaseOutlineDecorator
+      >['addEventListener']
+    >
+  ) {
+    return (
+      (new AddEventListener.CircleBaseOutlineDecorator(this._wrappee))
+        .addEventListener(...args)
+    );
   }
 
   get parent() {
