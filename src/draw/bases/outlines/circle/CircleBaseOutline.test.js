@@ -54,7 +54,7 @@ describe('CircleBaseOutline class', () => {
   });
 
   describe('constructor', () => {
-    test('passing a circle element and base center coordinates', () => {
+    test('passing circle and base center parameters', () => {
       let circle = svg.circle(20);
       let baseCenter = { x: 102.7782, y: 228.829 };
 
