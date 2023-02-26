@@ -5,10 +5,10 @@ import * as SVG from '@svgdotjs/svg.js';
 export type Nullish = null | undefined;
 
 export class CircleBaseOutlineDecorator {
-  decoratedCircleBaseOutline: CircleBaseOutline;
+  decoratee: CircleBaseOutline;
 
   constructor(circleBaseOutline: CircleBaseOutline) {
-    this.decoratedCircleBaseOutline = circleBaseOutline;
+    this.decoratee = circleBaseOutline;
   }
 
   /**
@@ -16,14 +16,14 @@ export class CircleBaseOutlineDecorator {
    * in an SVG document.
    */
   get parent(): SVG.Svg | Nullish {
-    return this.decoratedCircleBaseOutline.circle.root();
+    return this.decoratee.circle.root();
   }
 
   appendTo(svg: SVG.Svg) {
-    this.decoratedCircleBaseOutline.circle.addTo(svg);
+    this.decoratee.circle.addTo(svg);
   }
 
   remove() {
-    this.decoratedCircleBaseOutline.circle.remove();
+    this.decoratee.circle.remove();
   }
 }

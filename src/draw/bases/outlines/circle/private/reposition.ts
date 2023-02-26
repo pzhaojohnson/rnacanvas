@@ -8,28 +8,28 @@ export type RepositionMethodArgs = {
 };
 
 export class CircleBaseOutlineDecorator {
-  decoratedCircleBaseOutline: CircleBaseOutline;
+  decoratee: CircleBaseOutline;
 
   constructor(circleBaseOutline: CircleBaseOutline) {
-    this.decoratedCircleBaseOutline = circleBaseOutline;
+    this.decoratee = circleBaseOutline;
   }
 
   reposition(args: RepositionMethodArgs) {
     let baseCenter = (
       args?.baseCenter
-      ?? this.decoratedCircleBaseOutline.cachedBaseCenter
+      ?? this.decoratee.cachedBaseCenter
     );
 
     if (!baseCenter) {
       return;
     }
 
-    this.decoratedCircleBaseOutline.circle.attr({
+    this.decoratee.circle.attr({
       'cx': baseCenter.x,
       'cy': baseCenter.y,
     });
 
     // cache the base center
-    this.decoratedCircleBaseOutline.cachedBaseCenter = baseCenter;
+    this.decoratee.cachedBaseCenter = baseCenter;
   }
 }

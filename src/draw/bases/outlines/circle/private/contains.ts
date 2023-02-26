@@ -3,10 +3,10 @@ import type { CircleBaseOutline } from './CircleBaseOutline';
 import * as SVG from '@svgdotjs/svg.js';
 
 export class CircleBaseOutlineDecorator {
-  decoratedCircleBaseOutline: CircleBaseOutline;
+  decoratee: CircleBaseOutline;
 
   constructor(circleBaseOutline: CircleBaseOutline) {
-    this.decoratedCircleBaseOutline = circleBaseOutline;
+    this.decoratee = circleBaseOutline;
   }
 
   contains(node: SVG.Element | Node): boolean {
@@ -15,10 +15,10 @@ export class CircleBaseOutlineDecorator {
     }
 
     // seems necessary on Node.js
-    if (this.decoratedCircleBaseOutline.circle.node == node) {
+    if (this.decoratee.circle.node == node) {
       return true;
     }
 
-    return this.decoratedCircleBaseOutline.circle.node.contains(node);
+    return this.decoratee.circle.node.contains(node);
   }
 }

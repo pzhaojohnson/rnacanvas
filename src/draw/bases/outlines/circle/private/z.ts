@@ -1,17 +1,17 @@
 import type { CircleBaseOutline } from './CircleBaseOutline';
 
 export class CircleBaseOutlineDecorator {
-  decoratedCircleBaseOutline: CircleBaseOutline;
+  decoratee: CircleBaseOutline;
 
   constructor(circleBaseOutline: CircleBaseOutline) {
-    this.decoratedCircleBaseOutline = circleBaseOutline;
+    this.decoratee = circleBaseOutline;
   }
 
   sendToBack() {
-    this.decoratedCircleBaseOutline.circle.back();
+    this.decoratee.circle.back();
   }
 
   bringToFront() {
-    this.decoratedCircleBaseOutline.circle.front();
+    this.decoratee.circle.front();
   }
 }

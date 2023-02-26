@@ -67,16 +67,16 @@ export class CircleBaseOutlineDecorator {
     return new CircleBaseOutline({ circle });
   }
 
-  readonly decoratedCircleBaseOutline: CircleBaseOutline;
+  readonly decoratee: CircleBaseOutline;
 
   constructor(circleBaseOutline: CircleBaseOutline) {
-    this.decoratedCircleBaseOutline = circleBaseOutline;
+    this.decoratee = circleBaseOutline;
   }
 
   toSaved(): SavedCircleBaseOutline {
     return {
       className: 'CircleBaseOutline',
-      circleId: this.decoratedCircleBaseOutline.circle.id(),
+      circleId: this.decoratee.circle.id(),
     };
   }
 }
