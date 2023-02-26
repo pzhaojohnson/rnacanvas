@@ -54,19 +54,35 @@ describe('CircleBaseOutline class', () => {
   });
 
   describe('constructor', () => {
-    test('passing a circle element and base center coordinates', () => {
-      let circle = svg.circle(10);
-      let baseCenter = { x: 32.8091, y: 1045.662 };
+    describe('passing a circle element and base center coordinates', () => {
+      test('as positional arguments', () => {
+        let circle = svg.circle(10);
+        let baseCenter = { x: 32.8091, y: 1045.662 };
 
-      let circleBaseOutline = new CircleBaseOutline(circle, baseCenter);
+        let circleBaseOutline = new CircleBaseOutline(circle, baseCenter);
 
-      // passed circle argument
-      expect(circleBaseOutline._wrappee.circle)
-        .toBe(circle);
+        // passed circle argument
+        expect(circleBaseOutline._wrappee.circle)
+          .toBe(circle);
 
-      // passed base center argument
-      expect(circleBaseOutline._wrappee.cachedBaseCenter)
-        .toStrictEqual({ x: 32.8091, y: 1045.662 });
+        // passed base center argument
+        expect(circleBaseOutline._wrappee.cachedBaseCenter)
+          .toStrictEqual({ x: 32.8091, y: 1045.662 });
+      });
+
+      test('in an object', () => {
+        let circle = svg.circle(20);
+        let baseCenter = { x: 102.7782, y: 228.829 };
+
+        let circleBaseOutline = new CircleBaseOutline({ circle, baseCenter });
+
+        // passed circle argument
+        expect(circleBaseOutline._wrappee.circle).toBe(circle);
+
+        // passed base center argument
+        expect(circleBaseOutline._wrappee.cachedBaseCenter)
+          .toStrictEqual({ x: 102.7782, y: 228.829 });
+      });
     });
 
     test('passing a private circle base outline class instance', () => {
