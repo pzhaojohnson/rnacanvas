@@ -5,8 +5,8 @@ import * as SVG from '@svgdotjs/svg.js';
 export class CircleBaseOutlineDecorator {
   decoratee: CircleBaseOutline;
 
-  constructor(circleBaseOutline: CircleBaseOutline) {
-    this.decoratee = circleBaseOutline;
+  constructor(decoratee: CircleBaseOutline) {
+    this.decoratee = decoratee;
   }
 
   contains(node: SVG.Element | Node): boolean {

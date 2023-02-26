@@ -3,8 +3,8 @@ import type { CircleBaseOutline } from './CircleBaseOutline';
 export class CircleBaseOutlineDecorator {
   decoratee: CircleBaseOutline;
 
-  constructor(circleBaseOutline: CircleBaseOutline) {
-    this.decoratee = circleBaseOutline;
+  constructor(decoratee: CircleBaseOutline) {
+    this.decoratee = decoratee;
   }
 
   sendToBack() {
