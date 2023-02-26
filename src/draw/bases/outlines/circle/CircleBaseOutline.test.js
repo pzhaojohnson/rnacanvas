@@ -17,10 +17,10 @@ beforeEach(() => {
   svg = SVG.SVG();
   svg.addTo(document.body);
 
-  circleBaseOutline = new CircleBaseOutline(
-    svg.circle(55),
-    { x: 100, y: 200 },
-  );
+  circleBaseOutline = new CircleBaseOutline({
+    circle: svg.circle(55),
+    baseCenter: { x: 100, y: 200 },
+  });
 });
 
 afterEach(() => {

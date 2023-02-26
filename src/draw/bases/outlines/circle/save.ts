@@ -27,7 +27,7 @@ function fromSaved(b: Base, saved: SavedState): CircleBaseAnnotation | never {
   } else {
     let c = findCircleByUniqueId(svg, saved.circleId);
     let baseCenter = { x: b.xCenter, y: b.yCenter };
-    return new CircleBaseAnnotation(c, baseCenter);
+    return new CircleBaseAnnotation({ circle: c, baseCenter });
   }
 }
 

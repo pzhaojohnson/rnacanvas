@@ -11,7 +11,7 @@ function create(b: Base): CircleBaseAnnotation | undefined {
     let c = svg.circle(10);
     let baseCenter = { x: b.xCenter, y: b.yCenter };
     c.attr({ 'cx': baseCenter.x, 'cy': baseCenter.y });
-    return new CircleBaseAnnotation(c, baseCenter);
+    return new CircleBaseAnnotation({ circle: c, baseCenter });
   }
 }
 

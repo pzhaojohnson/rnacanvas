@@ -15,7 +15,7 @@ beforeEach(() => {
 
   let circle = svg.circle(50);
   circle.attr({ 'cx': 50, 'cy': 100 });
-  cba = new CircleBaseAnnotation(circle, { x: 50, y: 100 });
+  cba = new CircleBaseAnnotation({ circle, baseCenter: { x: 50, y: 100 } });
 });
 
 afterEach(() => {
