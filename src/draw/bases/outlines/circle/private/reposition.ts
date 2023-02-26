@@ -31,5 +31,8 @@ export class CircleBaseOutlineDecorator {
 
     // cache the base center
     this.decoratee.cachedBaseCenter = baseCenter;
+
+    this.decoratee.eventListeners['move']
+      .forEach(listener => listener());
   }
 }

@@ -93,5 +93,32 @@ describe('CircleBaseOutlineDecorator class', () => {
         expect(circleBaseOutline.cachedBaseCenter).toBeFalsy();
       });
     });
+
+    it('calls move event listeners', () => {
+      let listeners = [jest.fn(), jest.fn(), jest.fn()];
+      circleBaseOutline.eventListeners['move'].push(...listeners);
+
+      listeners.forEach(listener => {
+        expect(listener).toHaveBeenCalledTimes(0);
+      });
+
+      decorator.reposition({ baseCenter: { x: 50, y: 560 } });
+
+      listeners.forEach(listener => {
+        expect(listener).toHaveBeenCalledTimes(1);
+      });
+    });
+
+    it('does not call move event listeners when did not move', () => {
+      let listener = jest.fn();
+      circleBaseOutline.eventListeners['move'].push(listener);
+
+      expect(listener).toHaveBeenCalledTimes(0);
+
+      expect(circleBaseOutline.cachedBaseCenter).toBeFalsy();
+      decorator.reposition();
+
+      expect(listener).toHaveBeenCalledTimes(0);
+    });
   });
 });
