@@ -38,9 +38,26 @@ export class CircleBaseOutline {
    */
   readonly _wrappee: _CircleBaseOutline;
 
-  constructor(circle: SVG.Circle, baseCenter: Point) {
-    this._wrappee = (
-      new _CircleBaseOutline({ circle, baseCenter })
+  constructor(circle: SVG.Circle, baseCenter: Point);
+
+  /**
+   * For private use.
+   */
+  constructor(wrappee: _CircleBaseOutline);
+
+  constructor(
+    ...args: (
+      [SVG.Circle, Point]
+      | [_CircleBaseOutline]
+    )
+  ) {
+    let arg1 = args[0];
+    let arg2 = args[1];
+
+    this._wrappee = arg1 instanceof _CircleBaseOutline ? (
+      arg1
+    ) : (
+      new _CircleBaseOutline({ circle: arg1, baseCenter: arg2 })
     );
   }
 

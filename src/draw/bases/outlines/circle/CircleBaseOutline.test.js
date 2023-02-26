@@ -1,3 +1,8 @@
+/**
+ * The private circle base outline class.
+ */
+import { CircleBaseOutline as _CircleBaseOutline } from './private/CircleBaseOutline';
+
 import * as SVG from 'Draw/svg/NodeSVG';
 
 import { Circle as SVGCircle } from '@svgdotjs/svg.js';
@@ -44,19 +49,27 @@ describe('CircleBaseOutline class', () => {
     expect(circleBaseOutline2.circle.attr('id')).toBeTruthy();
   });
 
-  test('constructor', () => {
-    let circle = svg.circle(10);
-    let baseCenter = { x: 32.8091, y: 1045.662 };
+  describe('constructor', () => {
+    test('passing a circle element and base center coordinates', () => {
+      let circle = svg.circle(10);
+      let baseCenter = { x: 32.8091, y: 1045.662 };
 
-    let circleBaseOutline = new CircleBaseOutline(circle, baseCenter);
+      let circleBaseOutline = new CircleBaseOutline(circle, baseCenter);
 
-    // passed circle argument
-    expect(circleBaseOutline._wrappee.circle)
-      .toBe(circle);
+      // passed circle argument
+      expect(circleBaseOutline._wrappee.circle)
+        .toBe(circle);
 
-    // passed base center argument
-    expect(circleBaseOutline._wrappee.cachedBaseCenter)
-      .toStrictEqual({ x: 32.8091, y: 1045.662 });
+      // passed base center argument
+      expect(circleBaseOutline._wrappee.cachedBaseCenter)
+        .toStrictEqual({ x: 32.8091, y: 1045.662 });
+    });
+
+    test('passing a private circle base outline class instance', () => {
+      let wrappee = new _CircleBaseOutline();
+      let circleBaseOutline = new CircleBaseOutline(wrappee);
+      expect(circleBaseOutline._wrappee).toBe(wrappee);
+    });
   });
 
   test('circle getter', () => {
