@@ -7,12 +7,6 @@ export type Point = {
   y: number;
 };
 
-export type ConstructorArgs = {
-  circle?: SVG.Circle;
-
-  baseCenter?: Point;
-};
-
 /**
  * Possesses the components that define a circle base outline.
  */
@@ -40,7 +34,12 @@ export class CircleBaseOutline {
    * for the circle element to be retrieved when recreating a circle
    * base outline, such as when opening a saved drawing.)
    */
-  constructor(args?: ConstructorArgs) {
+  constructor(
+    args?: {
+      circle?: SVG.Circle,
+      baseCenter?: Point,
+    },
+  ) {
     this.circle = args?.circle ?? new SVG.Circle();
 
     // use the attr method instead of the id method
