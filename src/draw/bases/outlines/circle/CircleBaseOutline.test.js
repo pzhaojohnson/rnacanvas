@@ -44,6 +44,10 @@ describe('CircleBaseOutline class', () => {
       CircleBaseOutline.fromSaved({ saved, parent: svg })
     );
 
+    // returns an instance of the public circle base outline class
+    expect(circleBaseOutline2).not.toBeInstanceOf(_CircleBaseOutline);
+    expect(circleBaseOutline2).toBeInstanceOf(CircleBaseOutline);
+
     expect(circleBaseOutline2.circle).toBeInstanceOf(SVGCircle);
     expect(circleBaseOutline2.circle.attr('id')).toBe(saved.circleId);
     expect(circleBaseOutline2.circle.attr('id')).toBeTruthy();

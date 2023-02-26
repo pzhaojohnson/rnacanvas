@@ -27,7 +27,7 @@ export class CircleBaseOutline {
   static fromSaved(
     ...args: Parameters<typeof Save.CircleBaseOutlineDecorator.fromSaved>
   ) {
-    return (
+    return new CircleBaseOutline(
       Save.CircleBaseOutlineDecorator.fromSaved(...args)
     );
   }
