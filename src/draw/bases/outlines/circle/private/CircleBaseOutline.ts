@@ -8,21 +8,6 @@ export type Point = {
 };
 
 /**
- * To be dispatched whenever the circle base outline moves.
- */
-export type MoveEvent = {
-  target: CircleBaseOutline;
-};
-
-/**
- * To be dispatched whenever the circle base outline is removed from its
- * parent.
- */
-export type RemoveEvent = {
-  target: CircleBaseOutline;
-};
-
-/**
  * Possesses the components that define a circle base outline.
  */
 export class CircleBaseOutline {
@@ -42,8 +27,16 @@ export class CircleBaseOutline {
   cachedBaseCenter?: Point;
 
   eventListeners: {
-    'move': ((event: MoveEvent) => void)[];
-    'remove': ((event: RemoveEvent) => void)[];
+    /**
+     * To be called whenever the circle base outline moves.
+     */
+    'move': (() => void)[];
+
+    /**
+     * To be called whenever the circle base outline is removed from its
+     * parent.
+     */
+    'remove': (() => void)[];
   };
 
   /**

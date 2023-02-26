@@ -1,8 +1,5 @@
 import type { CircleBaseOutline } from './CircleBaseOutline';
 
-import type { MoveEvent } from './CircleBaseOutline';
-import type { RemoveEvent } from './CircleBaseOutline';
-
 export class CircleBaseOutlineDecorator {
   decoratee: CircleBaseOutline;
 
@@ -12,8 +9,8 @@ export class CircleBaseOutlineDecorator {
 
   addEventListener(
     ...args: (
-      ['move', (event: MoveEvent) => void]
-      | ['remove', (event: RemoveEvent) => void]
+      ['move', () => void]
+      | ['remove', () => void]
     )
   ) {
     this.decoratee.eventListeners[args[0]].push(args[1]);
