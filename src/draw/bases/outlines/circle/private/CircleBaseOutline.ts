@@ -22,11 +22,6 @@ export type RemoveEvent = {
   target: CircleBaseOutline;
 };
 
-export type EventName = (
-  'move'
-  | 'remove'
-);
-
 /**
  * Possesses the components that define a circle base outline.
  */
