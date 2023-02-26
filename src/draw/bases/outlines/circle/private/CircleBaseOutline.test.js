@@ -58,5 +58,14 @@ describe('CircleBaseOutline class', () => {
       // must start with a letter in SVG
       expect(outline.circle.attr('id').startsWith('uuid-')).toBeTruthy();
     });
+
+    it('initializes event listeners object', () => {
+      let outline = new CircleBaseOutline();
+
+      expect(outline.eventListeners).toStrictEqual({
+        'move': [],
+        'remove': [],
+      });
+    });
   });
 });

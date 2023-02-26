@@ -8,6 +8,26 @@ export type Point = {
 };
 
 /**
+ * To be dispatched whenever the circle base outline moves.
+ */
+export type MoveEvent = {
+  target: CircleBaseOutline;
+};
+
+/**
+ * To be dispatched whenever the circle base outline is removed from its
+ * parent.
+ */
+export type RemoveEvent = {
+  target: CircleBaseOutline;
+};
+
+export type EventName = (
+  'move'
+  | 'remove'
+);
+
+/**
  * Possesses the components that define a circle base outline.
  */
 export class CircleBaseOutline {
@@ -25,6 +45,11 @@ export class CircleBaseOutline {
    * Must be updated manually.
    */
   cachedBaseCenter?: Point;
+
+  eventListeners: {
+    'move': ((event: MoveEvent) => void)[];
+    'remove': ((event: RemoveEvent) => void)[];
+  };
 
   /**
    * Will initialize the ID of the provided circle element with a UUID
@@ -50,5 +75,10 @@ export class CircleBaseOutline {
     }
 
     this.cachedBaseCenter = args?.baseCenter;
+
+    this.eventListeners = {
+      'move': [],
+      'remove': [],
+    };
   }
 }
