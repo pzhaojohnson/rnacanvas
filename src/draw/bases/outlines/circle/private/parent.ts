@@ -24,6 +24,13 @@ export class CircleBaseOutlineDecorator {
   }
 
   remove() {
+    if (!this.parent) {
+      return;
+    }
+
     this.decoratee.circle.remove();
+
+    this.decoratee.eventListeners['remove']
+      .forEach(listener => listener());
   }
 }

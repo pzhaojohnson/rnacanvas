@@ -110,5 +110,34 @@ describe('CircleBaseOutlineDecorator class', () => {
       expect(isNullish(circleBaseOutline.circle.root())).toBeTruthy();
       expect(isNullish(decorator.parent)).toBeTruthy();
     });
+
+    it('calls remove event listeners', () => {
+      decorator.appendTo(svg);
+
+      let listeners = [jest.fn(), jest.fn(), jest.fn()];
+      circleBaseOutline.eventListeners['remove'].push(...listeners);
+
+      listeners.forEach(listener => {
+        expect(listener).toHaveBeenCalledTimes(0);
+      });
+
+      decorator.remove();
+
+      listeners.forEach(listener => {
+        expect(listener).toHaveBeenCalledTimes(1);
+      });
+    });
+
+    it('does not call remove event listeners when did not remove', () => {
+      let listener = jest.fn();
+      circleBaseOutline.eventListeners['remove'].push(listener);
+
+      // no parent to be removed from
+      expect(decorator.parent).toBeFalsy();
+
+      decorator.remove();
+
+      expect(listener).toHaveBeenCalledTimes(0);
+    });
   });
 });
