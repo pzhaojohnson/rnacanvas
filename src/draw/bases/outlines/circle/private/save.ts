@@ -24,26 +24,31 @@ export type SavedCircleBaseOutline = {
   circleId: string;
 };
 
-export type FromSavedStaticMethodParameters = {
-  /**
-   * Meant to be a saved circle base outline, but could be anything
-   * since could be read from a file.
-   */
-  saved: SavedCircleBaseOutline | unknown;
-
-  /**
-   * The SVG document that the saved circle base outline is in.
-   */
-  parent: SVG.Svg;
-};
-
 export class CircleBaseOutlineDecorator {
   /**
    * Throws if the saved circle base outline is invalid.
    */
+  static fromSaved(
+    args: {
+      /**
+       * Meant to be a saved circle base outline, but could be anything
+       * since could be read from a file.
+       */
+      saved: SavedCircleBaseOutline | unknown;
+
+      /**
+       * The SVG document that the saved circle base outline is in.
+       */
+      parent: SVG.Svg;
+    },
+  ): CircleBaseOutline | never;
+
   static fromSaved
   (
-    args: FromSavedStaticMethodParameters,
+    args: {
+      saved: SavedCircleBaseOutline | unknown,
+      parent: SVG.Svg,
+    },
   ): CircleBaseOutline | never
   {
     let { saved, parent } = args;
