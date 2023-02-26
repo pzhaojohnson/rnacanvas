@@ -7,7 +7,7 @@ import { CircleBaseOutlineDecorator } from './z';
 let svg = null;
 
 let circleBaseOutline = null;
-let circleBaseOutlineDecorator = null;
+let decorator = null;
 
 beforeEach(() => {
   svg = SVG.SVG();
@@ -24,13 +24,13 @@ beforeEach(() => {
     circle: svg.circle(20),
   });
 
-  circleBaseOutlineDecorator = (
+  decorator = (
     new CircleBaseOutlineDecorator(circleBaseOutline)
   );
 });
 
 afterEach(() => {
-  circleBaseOutlineDecorator = null;
+  decorator = null;
   circleBaseOutline = null;
 
   svg.remove();
@@ -44,7 +44,7 @@ describe('CircleBaseOutlineDecorator class', () => {
       circleBaseOutline.circle.backward();
       expect(circleBaseOutline.circle.position()).toBeGreaterThan(0);
 
-      circleBaseOutlineDecorator.sendToBack();
+      decorator.sendToBack();
       expect(circleBaseOutline.circle.position()).toBe(0);
     });
 
@@ -52,7 +52,7 @@ describe('CircleBaseOutlineDecorator class', () => {
       circleBaseOutline.circle.back();
       expect(circleBaseOutline.circle.position()).toBe(0);
 
-      circleBaseOutlineDecorator.sendToBack();
+      decorator.sendToBack();
       expect(circleBaseOutline.circle.position()).toBe(0);
     });
   });
@@ -65,7 +65,7 @@ describe('CircleBaseOutlineDecorator class', () => {
       circleBaseOutline.circle.forward();
       expect(circleBaseOutline.circle.position()).toBeLessThan(n - 1);
 
-      circleBaseOutlineDecorator.bringToFront();
+      decorator.bringToFront();
       expect(circleBaseOutline.circle.position()).toBe(n - 1);
     });
 
@@ -75,7 +75,7 @@ describe('CircleBaseOutlineDecorator class', () => {
       circleBaseOutline.circle.front();
       expect(circleBaseOutline.circle.position()).toBe(n - 1);
 
-      circleBaseOutlineDecorator.bringToFront();
+      decorator.bringToFront();
       expect(circleBaseOutline.circle.position()).toBe(n - 1);
     });
   });

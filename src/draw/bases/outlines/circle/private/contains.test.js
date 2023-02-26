@@ -7,7 +7,7 @@ import { CircleBaseOutlineDecorator } from './contains';
 let svg = null;
 
 let circleBaseOutline = null;
-let circleBaseOutlineDecorator = null;
+let decorator = null;
 
 beforeEach(() => {
   svg = SVG.SVG();
@@ -17,13 +17,13 @@ beforeEach(() => {
     circle: svg.circle(50),
   });
 
-  circleBaseOutlineDecorator = (
+  decorator = (
     new CircleBaseOutlineDecorator(circleBaseOutline)
   );
 });
 
 afterEach(() => {
-  circleBaseOutlineDecorator = null;
+  decorator = null;
   circleBaseOutline = null;
 
   svg.remove();
@@ -33,11 +33,11 @@ afterEach(() => {
 describe('CircleBaseOutlineDecorator class', () => {
   test('contains method', () => {
     let circle = circleBaseOutline.circle;
-    expect(circleBaseOutlineDecorator.contains(circle)).toBe(true);
-    expect(circleBaseOutlineDecorator.contains(circle.node)).toBe(true);
+    expect(decorator.contains(circle)).toBe(true);
+    expect(decorator.contains(circle.node)).toBe(true);
 
     circle = svg.circle(50);
-    expect(circleBaseOutlineDecorator.contains(circle)).toBe(false);
-    expect(circleBaseOutlineDecorator.contains(circle.node)).toBe(false);
+    expect(decorator.contains(circle)).toBe(false);
+    expect(decorator.contains(circle.node)).toBe(false);
   });
 });
