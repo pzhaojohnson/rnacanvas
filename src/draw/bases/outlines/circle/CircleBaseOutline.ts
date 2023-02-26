@@ -3,8 +3,6 @@
  */
 import { CircleBaseOutline as _CircleBaseOutline } from './private/CircleBaseOutline';
 
-import * as SVG from '@svgdotjs/svg.js';
-
 import * as Parent from './private/parent';
 
 import * as Contains from './private/contains';
