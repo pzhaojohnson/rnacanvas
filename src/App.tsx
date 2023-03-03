@@ -106,6 +106,13 @@ export class App {
     return this.strictDrawingInteraction;
   }
 
+  /**
+   * An alias for preferences.
+   */
+  get settings() {
+    return this.preferences;
+  }
+
   updateDocumentTitle() {
     document.title = this.drawing.isEmpty() ? 'RNAcanvas' : this.drawingTitle.value;
   }
