@@ -5,7 +5,7 @@ import { AppIcon } from './AppIcon';
 import { FileDropdown } from './file/FileDropdown';
 import { EditDropdown } from './edit/EditDropdown';
 import { ExportDropdown } from './export/ExportDropdown';
-import { AskBeforeLeavingToggle } from 'Menu/preferences/AskBeforeLeavingToggle';
+import { AskBeforeLeavingToggle } from 'Menu/settings/AskBeforeLeavingToggle';
 
 export type Props = {
   app: App;
