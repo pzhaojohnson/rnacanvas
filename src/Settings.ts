@@ -1,7 +1,7 @@
 export class Settings {
   /**
-   * Specifies whether or not a prompt should be displayed before
-   * the user leaves warning about possibly losing unsaved work.
+   * Specifies whether or not to show a prompt before the user leaves
+   * asking for confirmation to avoid losing unsaved work.
    */
   askBeforeLeaving: boolean;
 
