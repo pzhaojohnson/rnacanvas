@@ -21,13 +21,13 @@ document.addEventListener('mousedown', event => {
 }, false);
 
 // ask for confirmation before leaving if the drawing is nonempty
-// and the app preference is set to do so
+// and the app setting is set to do so
 window.addEventListener('beforeunload', event => {
   if (app.drawing.isEmpty()) {
     return;
   }
 
-  let askBeforeLeaving = app.preferences.askBeforeLeaving;
+  let askBeforeLeaving = app.settings.askBeforeLeaving;
   if (askBeforeLeaving != undefined && !askBeforeLeaving) {
     // only if explicitly set to false
     return;
