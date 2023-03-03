@@ -1,4 +1,4 @@
-export class Preferences {
+export class Settings {
   askBeforeLeaving: boolean;
 
   constructor() {

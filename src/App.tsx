@@ -11,7 +11,7 @@ import { DrawingTitle } from './DrawingTitle';
 import UndoRedo from './undo/UndoRedo';
 import { pushUndo, undo, redo } from './undo/undo';
 
-import { Preferences } from './Preferences';
+import { Settings } from './Settings';
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
@@ -44,7 +44,7 @@ export class App {
 
   readonly undoRedo: UndoRedo<StrictDrawingSavableState>;
 
-  preferences: Preferences;
+  settings: Settings;
 
   constructor(options?: Options) {
     this.node = document.createElement('div');
@@ -81,7 +81,7 @@ export class App {
 
     this.undoRedo = new UndoRedo<StrictDrawingSavableState>();
 
-    this.preferences = new Preferences();
+    this.settings = new Settings();
 
     this.refresh();
 
@@ -104,13 +104,6 @@ export class App {
 
   get drawingInteraction() {
     return this.strictDrawingInteraction;
-  }
-
-  /**
-   * An alias for preferences.
-   */
-  get settings() {
-    return this.preferences;
   }
 
   updateDocumentTitle() {

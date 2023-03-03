@@ -34,11 +34,6 @@ describe('App class', () => {
     expect(container.contains(app.node)).toBeFalsy(); // was removed
   });
 
-  test('settings getter', () => {
-    expect(app.settings).toBe(app.preferences);
-    expect(app.settings).toBeTruthy();
-  });
-
   test('updateDocumentTitle method', () => {
     document.title = 'asdf'; // make sure title is not already RNAcanvas
     expect(app.drawing.isEmpty()).toBeTruthy();
