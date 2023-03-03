@@ -31,36 +31,36 @@ afterEach(() => {
 });
 
 describe('AskBeforeLeavingToggle component', () => {
-  test('when the askBeforeLeaving preference is true', () => {
-    app.preferences.askBeforeLeaving = true;
+  test('when the askBeforeLeaving setting is true', () => {
+    app.settings.askBeforeLeaving = true;
     act(() => {
       render(<AskBeforeLeavingToggle app={app} />, container);
     });
     expect(container.firstChild.className).toMatch(/on/);
     expect(container.firstChild.className).not.toMatch(/off/);
     Simulate.click(container.firstChild);
-    expect(app.preferences.askBeforeLeaving).toBe(false); // toggled
+    expect(app.settings.askBeforeLeaving).toBe(false); // toggled
   });
 
-  test('when the askBeforeLeaving preference is false', () => {
-    app.preferences.askBeforeLeaving = false;
+  test('when the askBeforeLeaving setting is false', () => {
+    app.settings.askBeforeLeaving = false;
     act(() => {
       render(<AskBeforeLeavingToggle app={app} />, container);
     });
     expect(container.firstChild.className).not.toMatch(/on/);
     expect(container.firstChild.className).toMatch(/off/);
     Simulate.click(container.firstChild);
-    expect(app.preferences.askBeforeLeaving).toBe(true); // toggled
+    expect(app.settings.askBeforeLeaving).toBe(true); // toggled
   });
 
-  test('when the askBeforeLeaving preference is undefined', () => {
-    app.preferences.askBeforeLeaving = undefined;
+  test('when the askBeforeLeaving setting is undefined', () => {
+    app.settings.askBeforeLeaving = undefined;
     act(() => {
       render(<AskBeforeLeavingToggle app={app} />, container);
     });
     expect(container.firstChild.className).not.toMatch(/on/);
     expect(container.firstChild.className).toMatch(/off/);
     Simulate.click(container.firstChild);
-    expect(app.preferences.askBeforeLeaving).toBe(true); // turned on
+    expect(app.settings.askBeforeLeaving).toBe(true); // turned on
   });
 });

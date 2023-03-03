@@ -28,7 +28,7 @@ export type Props = {
 
 export class AskBeforeLeavingToggle extends React.Component<Props> {
   render() {
-    let askBeforeLeaving = this.props.app.preferences.askBeforeLeaving;
+    let askBeforeLeaving = this.props.app.settings.askBeforeLeaving;
     return (
       <div
         className={`
@@ -49,8 +49,8 @@ export class AskBeforeLeavingToggle extends React.Component<Props> {
   }
 
   handleClick() {
-    let askBeforeLeaving = this.props.app.preferences.askBeforeLeaving;
-    this.props.app.preferences.askBeforeLeaving = !askBeforeLeaving;
+    let askBeforeLeaving = this.props.app.settings.askBeforeLeaving;
+    this.props.app.settings.askBeforeLeaving = !askBeforeLeaving;
     this.props.app.refresh();
   }
 }
