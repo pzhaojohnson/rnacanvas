@@ -23,6 +23,7 @@
       "Menu/*": ["src/menu/*"],
       "Parse/*": ["src/parse/*"],
       "Partners/*": ["src/partners/*"],
+      "Settings/*": ["src/settings/*"],
       "Undo/*": ["src/undo/*"],
       "Utilities/*": ["src/utilities/*"],
       "Values/*": ["src/values/*"],

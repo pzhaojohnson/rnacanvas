@@ -11,7 +11,7 @@ import { DrawingTitle } from './DrawingTitle';
 import UndoRedo from './undo/UndoRedo';
 import { pushUndo, undo, redo } from './undo/undo';
 
-import { Settings } from './Settings';
+import { Settings } from 'Settings/Settings';
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
