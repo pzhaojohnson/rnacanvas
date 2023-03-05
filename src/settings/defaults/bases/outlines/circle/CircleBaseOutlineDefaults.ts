@@ -72,4 +72,34 @@ export class CircleBaseOutlineDefaults {
       },
     };
   }
+
+  /**
+   * Sets the values of these circle base outline defaults to the saved
+   * values.
+   */
+  applySaved(saved: SavedCircleBaseOutlineDefaults): void;
+
+  /**
+   * Since the saved values could have been read from a file, this
+   * method is designed to be able to handle any unknown value(s).
+   *
+   * Invalid and undefined values are ignored.
+   */
+  applySaved(saved: unknown): void;
+
+  applySaved(saved: unknown) {
+    circleAttributeNames.forEach(name => {
+      try {
+        // could throw since the type of saved is unknown
+        let value: unknown = (saved as any).circle[name];
+
+        if (value !== undefined) {
+          // setValue method might throw for invalid values
+          this.circle[name].setValue(value);
+        }
+      } catch {
+        // just ignore invalid and undefined values
+      }
+    });
+  }
 }

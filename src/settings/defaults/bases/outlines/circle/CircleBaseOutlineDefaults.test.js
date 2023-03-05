@@ -74,4 +74,62 @@ describe('CircleBaseOutlineDefaults class', () => {
     let json = JSON.stringify(saved);
     expect(JSON.parse(json)).toStrictEqual(saved);
   });
+
+  describe('applySaved method', () => {
+    it('applies saved values', () => {
+      let circleAttributes = [
+        ['r', 9.821], ['stroke', '#abe688'], ['stroke-width', 5.228],
+        ['stroke-opacity', 0.7233], ['fill', '#2290ae'],
+        ['fill-opacity', 0.2707],
+      ];
+
+      let saved = { circle: {} };
+      circleAttributes.forEach(a => saved.circle[a[0]] = a[1]);
+
+      defaults.applySaved(saved);
+
+      circleAttributes.forEach(a => {
+        expect(defaults.circle[a[0]].getValue()).toBe(a[1]);
+      });
+    });
+
+    it('ignores invalid values', () => {
+      let circleAttributes = [
+        ['r', 15], ['stroke', '#abcdef'], ['stroke-width', 6],
+        ['stroke-opacity', 0.7], ['fill', '#aaa556'], ['fill-opacity', 0.3],
+      ];
+
+      circleAttributes.forEach(a => defaults.circle[a[0]].setValue(a[1]));
+
+      let saved = {
+        circle: {
+          'r': 'asd', 'stroke': 8, 'stroke-width': 'g', 'stroke-opacity': 'q',
+          'fill': false, 'fill-opacity': {},
+        },
+      };
+
+      defaults.applySaved(saved);
+
+      circleAttributes.forEach(a => {
+        expect(defaults.circle[a[0]].getValue()).toBe(a[1]);
+      });
+    });
+
+    it('ignores undefined values', () => {
+      let circleAttributes = [
+        ['r', 6], ['stroke', '#123456'], ['stroke-width', 2],
+        ['stroke-opacity', 0.78], ['fill', '#ced596'], ['fill-opacity', 0.35],
+      ];
+
+      circleAttributes.forEach(a => defaults.circle[a[0]].setValue(a[1]));
+
+      let saved = { circle: {} };
+
+      defaults.applySaved(saved);
+
+      circleAttributes.forEach(a => {
+        expect(defaults.circle[a[0]].getValue()).toBe(a[1]);
+      });
+    });
+  });
 });
