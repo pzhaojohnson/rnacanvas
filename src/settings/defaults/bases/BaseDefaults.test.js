@@ -48,4 +48,26 @@ describe('BaseDefaults class', () => {
     expect(base.text.attr('font-weight')).toBe(312.9);
     expect(base.text.attr('font-style')).toBe('oblique');
   });
+
+  test('toSaved method', () => {
+    baseDefaults.text['font-family'].setValue('Consolas');
+    baseDefaults.text['font-size'].setValue(4.89);
+    baseDefaults.text['font-weight'].setValue(709.1);
+    baseDefaults.text['font-style'].setValue('italic');
+
+    let saved = baseDefaults.toSaved();
+
+    expect(saved).toStrictEqual({
+      text: {
+        'font-family': 'Consolas',
+        'font-size': 4.89,
+        'font-weight': 709.1,
+        'font-style': 'italic',
+      },
+    });
+
+    // test JSON conversion
+    let json = JSON.stringify(saved);
+    expect(JSON.parse(json)).toStrictEqual(saved);
+  });
 });
