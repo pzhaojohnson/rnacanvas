@@ -5,6 +5,13 @@ import { SVGFontSize } from 'Values/svg/SVGFontSize';
 import { SVGFontWeight } from 'Values/svg/SVGFontWeight';
 import { SVGFontStyle } from 'Values/svg/SVGFontStyle';
 
+const textAttributeNames = [
+  'font-family',
+  'font-size',
+  'font-weight',
+  'font-style',
+] as const;
+
 export type SavedBaseDefaults = (
   ReturnType<
     InstanceType<typeof BaseDefaults>['toSaved']
@@ -56,5 +63,31 @@ export class BaseDefaults {
         'font-style': this.text['font-style'].getValue(),
       },
     };
+  }
+
+  /**
+   * Sets the values of these base defaults to the values of the saved
+   * base defaults.
+   *
+   * Since the saved base defaults could have been read from a file,
+   * this method is designed to be able to handle any unknown saved
+   * value(s).
+   *
+   * Invalid and undefined saved values are ignored.
+   */
+  applySaved(saved: SavedBaseDefaults | unknown) {
+    textAttributeNames.forEach(name => {
+      try {
+        // could throw since type of saved is unknown
+        let value: unknown = (saved as any).text[name];
+
+        if (value !== undefined) {
+          // setValue method might throw for invalid values
+          this.text[name].setValue(value);
+        }
+      } catch {
+        // just ignore invalid and undefined values
+      }
+    });
   }
 }
