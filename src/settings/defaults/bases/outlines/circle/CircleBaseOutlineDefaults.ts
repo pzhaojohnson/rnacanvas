@@ -1,3 +1,5 @@
+import type { CircleBaseOutline } from 'Draw/bases/outlines/circle/CircleBaseOutline';
+
 import { NonNegativeFiniteNumber } from 'Values/NonNegativeFiniteNumber';
 
 import { SVGColor } from 'Values/svg/SVGColor';
@@ -36,5 +38,15 @@ export class CircleBaseOutlineDefaults {
       'fill': new SVGColor('#c3ffff'),
       'fill-opacity': new SVGOpacity(1),
     };
+  }
+
+  /**
+   * Sets the values of the circle base outline to these default
+   * values.
+   */
+  applyTo(cbo: CircleBaseOutline) {
+    circleAttributeNames.forEach(name => {
+      cbo.circle.attr(name, this.circle[name].getValue());
+    });
   }
 }
