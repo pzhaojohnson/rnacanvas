@@ -1,3 +1,5 @@
+import type { Base } from 'Draw/bases/Base';
+
 import { SVGFontFamily } from 'Values/svg/SVGFontFamily';
 import { SVGFontSize } from 'Values/svg/SVGFontSize';
 import { SVGFontWeight } from 'Values/svg/SVGFontWeight';
@@ -21,5 +23,17 @@ export class BaseDefaults {
       'font-weight': new SVGFontWeight(700),
       'font-style': new SVGFontStyle('normal'),
     };
+  }
+
+  /**
+   * Sets the values of the base to these default values.
+   */
+  applyTo(b: Base) {
+    b.text.attr({
+      'font-family': this.text['font-family'].getValue(),
+      'font-size': this.text['font-size'].getValue(),
+      'font-weight': this.text['font-weight'].getValue(),
+      'font-style': this.text['font-style'].getValue(),
+    });
   }
 }
