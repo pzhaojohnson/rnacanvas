@@ -51,4 +51,27 @@ describe('CircleBaseOutlineDefaults class', () => {
     expect(circleBaseOutline.circle.attr('fill')).toBe('#aa902c');
     expect(circleBaseOutline.circle.attr('fill-opacity')).toBe(0.9421);
   });
+
+  test('toSaved method', () => {
+    [
+      ['r', 15.114], ['stroke', '#ff5061'], ['stroke-width', 12.088],
+      ['stroke-opacity', 0.1882], ['fill', '#fa2381'],
+      ['fill-opacity', 0.51189],
+    ].forEach(attribute => {
+      defaults.circle[attribute[0]].setValue(attribute[1]);
+    });
+
+    let saved = defaults.toSaved();
+
+    expect(saved).toStrictEqual({
+      circle: {
+        'r': 15.114, 'stroke': '#ff5061', 'stroke-width': 12.088,
+        'stroke-opacity': 0.1882, 'fill': '#fa2381', 'fill-opacity': 0.51189,
+      },
+    });
+
+    // test JSON conversion
+    let json = JSON.stringify(saved);
+    expect(JSON.parse(json)).toStrictEqual(saved);
+  });
 });

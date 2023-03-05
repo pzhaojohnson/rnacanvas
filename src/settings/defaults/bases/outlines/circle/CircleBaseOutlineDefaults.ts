@@ -16,6 +16,12 @@ const circleAttributeNames = [
 
 type CircleAttributeName = typeof circleAttributeNames[number];
 
+export type SavedCircleBaseOutlineDefaults = (
+  ReturnType<
+    InstanceType<typeof CircleBaseOutlineDefaults>['toSaved']
+  >
+);
+
 /**
  * Default values for circle base outlines in the drawing of the app.
  */
@@ -48,5 +54,22 @@ export class CircleBaseOutlineDefaults {
     circleAttributeNames.forEach(name => {
       cbo.circle.attr(name, this.circle[name].getValue());
     });
+  }
+
+  /**
+   * Returns the saved form of these circle base outline defaults,
+   * which can be converted directly to and from JSON.
+   */
+  toSaved() {
+    return {
+      circle: {
+        'r': this.circle['r'].getValue(),
+        'stroke': this.circle['stroke'].getValue(),
+        'stroke-width': this.circle['stroke-width'].getValue(),
+        'stroke-opacity': this.circle['stroke-opacity'].getValue(),
+        'fill': this.circle['fill'].getValue(),
+        'fill-opacity': this.circle['fill-opacity'].getValue(),
+      },
+    };
   }
 }
