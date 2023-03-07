@@ -6,17 +6,6 @@ import { Color as SVGColor } from '@svgdotjs/svg.js';
 
 import { BaseNumberingDefaults } from './BaseNumberingDefaults';
 
-function createBaseNumbering() {
-  let baseCenter = { x: 20, y: 60 };
-
-  let text = svg.text('109');
-  text.center(30, 80);
-
-  let line = svg.line(21, 62, 29, 78);
-
-  return new BaseNumbering(text, line, baseCenter);
-}
-
 const someFontFamilies = [
   'Georgia, serif',
   '"Goudy Bookletter 1911", sans-serif',
@@ -46,6 +35,17 @@ let randomLineAttributes = null;
 let randomProperties = null;
 
 let randomDefaults = null;
+
+function createBaseNumbering() {
+  let baseCenter = { x: 20, y: 60 };
+
+  let text = svg.text('109');
+  text.center(30, 80);
+
+  let line = svg.line(21, 62, 29, 78);
+
+  return new BaseNumbering(text, line, baseCenter);
+}
 
 beforeEach(() => {
   svg = SVG.SVG();
