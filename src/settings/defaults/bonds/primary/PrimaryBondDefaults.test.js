@@ -131,4 +131,85 @@ describe('PrimaryBondDefaults class', () => {
       expect(JSON.parse(json)).toStrictEqual(saved);
     });
   });
+
+  describe('applySaved method', () => {
+    describe('applying saved values', () => {
+      let defaults = null;
+
+      beforeEach(() => {
+        defaults = new PrimaryBondDefaults();
+
+        let saved = randomDefaults.toSaved();
+        defaults.applySaved(saved);
+      });
+
+      afterEach(() => {
+        defaults = null;
+      });
+
+      it('applies saved line attributes', () => {
+        randomLineAttributes.forEach(a => {
+          expect(defaults.line[a[0]].getValue()).toBe(a[1]);
+        });
+      });
+
+      it('applies saved properties', () => {
+        randomProperties.forEach(p => {
+          expect(defaults[p[0]].getValue()).toBeCloseTo(p[1]);
+        });
+      });
+    });
+
+    describe('ignoring invalid saved values', () => {
+      beforeEach(() => {
+        // apply all invalid saved values
+        randomDefaults.applySaved({
+          line: {
+            'stroke': 2,
+            'stroke-width': 'asdf',
+            'stroke-opacity': {},
+          },
+          basePadding1: 'wker',
+          basePadding2: 'zxcv',
+        });
+      });
+
+      it('ignores invalid saved line attributes', () => {
+        randomLineAttributes.forEach(a => {
+          expect(randomDefaults.line[a[0]].getValue()).toBe(a[1]);
+        });
+      });
+
+      it('ignores invalid saved properties', () => {
+        randomProperties.forEach(p => {
+          expect(randomDefaults[p[0]].getValue()).toBeCloseTo(p[1]);
+        });
+      });
+    });
+
+    describe('ignoring undefined saved values', () => {
+      beforeEach(() => {
+        // with a defined line object
+        randomDefaults.applySaved({ line: {} });
+
+        // with an undefined line object
+        randomDefaults.applySaved({});
+
+        // simply a value of undefined
+        randomDefaults.applySaved(undefined);
+      });
+
+      it('ignores undefined saved line attributes', () => {
+        randomLineAttributes.forEach(a => {
+          expect(randomDefaults.line[a[0]].getValue()).toBe(a[1]);
+        });
+      });
+
+      it('ignores undefined saved properties', () => {
+        randomProperties.forEach(p => {
+          expect(randomDefaults[p[0]].getValue()).toBeCloseTo(p[1]);
+        });
+      });
+    });
+  });
 });

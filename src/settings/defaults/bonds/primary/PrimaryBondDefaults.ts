@@ -22,6 +22,8 @@ export type SavedPrimaryBondDefaults = (
   >
 );
 
+type SavedLineAttributes = SavedPrimaryBondDefaults['line'];
+
 /**
  * Default values for primary bonds in the drawing of the app.
  */
@@ -75,5 +77,54 @@ export class PrimaryBondDefaults {
       basePadding1: this.basePadding1.getValue(),
       basePadding2: this.basePadding2.getValue(),
     };
+  }
+
+  /**
+   * Sets the values of these primary bond defaults to the saved
+   * values.
+   */
+  applySaved(saved: SavedPrimaryBondDefaults): void;
+
+  /**
+   * Since the saved values could have been read from a file, this
+   * method is designed to be able to handle any unknown saved
+   * value(s).
+   *
+   * Invalid and undefined values are ignored.
+   */
+  applySaved(saved: unknown): void;
+
+  applySaved(saved: unknown) {
+    try {
+      this._applySavedLineAttributes((saved as any).line);
+    } catch {}
+
+    try {
+      this._applySavedProperties(saved);
+    } catch {}
+  }
+
+  _applySavedLineAttributes(saved: SavedLineAttributes | unknown) {
+    lineAttributeNames.forEach(name => {
+      try {
+        let value: unknown = (saved as any)[name];
+
+        if (value !== undefined) {
+          this.line[name].setValue(value);
+        }
+      } catch {}
+    });
+  }
+
+  _applySavedProperties(saved: SavedPrimaryBondDefaults | unknown) {
+    propertyNames.forEach(name => {
+      try {
+        let value: unknown = (saved as any)[name];
+
+        if (value !== undefined) {
+          this[name].setValue(value);
+        }
+      } catch {}
+    });
   }
 }
