@@ -16,6 +16,12 @@ const propertyNames = [
   'basePadding2',
 ] as const;
 
+export type SavedPrimaryBondDefaults = (
+  ReturnType<
+    InstanceType<typeof PrimaryBondDefaults>['toSaved']
+  >
+);
+
 /**
  * Default values for primary bonds in the drawing of the app.
  */
@@ -51,5 +57,23 @@ export class PrimaryBondDefaults {
     propertyNames.forEach(name => {
       pb[name] = this[name].getValue();
     });
+  }
+
+  /**
+   * Returns the saved form of these primary bond defaults.
+   *
+   * The saved form of these primary bond defaults can be directly
+   * converted to and from JSON.
+   */
+  toSaved() {
+    return {
+      line: {
+        'stroke': this.line['stroke'].getValue(),
+        'stroke-width': this.line['stroke-width'].getValue(),
+        'stroke-opacity': this.line['stroke-opacity'].getValue(),
+      },
+      basePadding1: this.basePadding1.getValue(),
+      basePadding2: this.basePadding2.getValue(),
+    };
   }
 }

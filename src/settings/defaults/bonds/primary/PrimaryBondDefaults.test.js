@@ -102,4 +102,33 @@ describe('PrimaryBondDefaults class', () => {
       });
     });
   });
+
+  describe('toSaved method', () => {
+    let saved = null;
+
+    beforeEach(() => {
+      saved = randomDefaults.toSaved();
+    });
+
+    afterEach(() => {
+      saved = null;
+    });
+
+    it('includes line attributes', () => {
+      randomLineAttributes.forEach(a => {
+        expect(saved.line[a[0]]).toBe(a[1]);
+      });
+    });
+
+    it('includes properties', () => {
+      randomProperties.forEach(p => {
+        expect(saved[p[0]]).toBeCloseTo(p[1]);
+      });
+    });
+
+    test('JSON conversion', () => {
+      let json = JSON.stringify(saved);
+      expect(JSON.parse(json)).toStrictEqual(saved);
+    });
+  });
 });
