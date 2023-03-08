@@ -4,6 +4,8 @@ import * as SVG from 'Draw/svg/NodeSVG';
 
 import { Color as SVGColor } from '@svgdotjs/svg.js';
 
+import { pickOneRandom } from 'Array/pickOneRandom';
+
 import { BaseNumberingDefaults } from './BaseNumberingDefaults';
 
 const someFontFamilies = [
@@ -14,17 +16,6 @@ const someFontFamilies = [
   'cursive',
   'system-ui',
 ];
-
-/**
- * Randomly picks one item from the array.
- */
-function pickOneRandom(array) {
-  let i = Math.floor(
-    array.length * Math.random()
-  );
-
-  return array[i];
-}
 
 let svg = null;
 
