@@ -38,4 +38,22 @@ describe('SVGLineDefaults class', () => {
     expect(line.attr('stroke-width')).toBe(8.043);
     expect(line.attr('stroke-opacity')).toBe(0.1903);
   });
+
+  test('toSaved method', () => {
+    defaults['stroke'].setValue('#01b0ff');
+    defaults['stroke-width'].setValue(19.902);
+    defaults['stroke-opacity'].setValue(0.8022);
+
+    let saved = defaults.toSaved();
+
+    expect(saved).toStrictEqual({
+      'stroke': '#01b0ff',
+      'stroke-width': 19.902,
+      'stroke-opacity': 0.8022,
+    });
+
+    // test JSON conversion
+    let json = JSON.stringify(saved);
+    expect(JSON.parse(json)).toStrictEqual(saved);
+  });
 });
