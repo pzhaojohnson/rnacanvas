@@ -68,4 +68,38 @@ describe('StraightBondDefaults class', () => {
       expect(straightBond.basePadding2).toBeCloseTo(8.4903);
     });
   });
+
+  describe('toSaved method', () => {
+    let saved = null;
+
+    beforeEach(() => {
+      // just test some line attributes
+      defaults.line['stroke-width'].setValue(10.0023);
+      defaults.line['stroke-opacity'].setValue(0.09351);
+
+      defaults.basePadding1.setValue(6.1894);
+      defaults.basePadding2.setValue(7.2026);
+
+      saved = defaults.toSaved();
+    });
+
+    afterEach(() => {
+      saved = null;
+    });
+
+    it('includes line attributes', () => {
+      expect(saved.line['stroke-width']).toBe(10.0023);
+      expect(saved.line['stroke-opacity']).toBe(0.09351);
+    });
+
+    it('includes properties', () => {
+      expect(saved.basePadding1).toBe(6.1894);
+      expect(saved.basePadding2).toBe(7.2026);
+    });
+
+    test('JSON conversion', () => {
+      let json = JSON.stringify(saved);
+      expect(JSON.parse(json)).toStrictEqual(saved);
+    });
+  });
 });
