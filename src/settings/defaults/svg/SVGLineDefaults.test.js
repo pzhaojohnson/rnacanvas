@@ -56,4 +56,59 @@ describe('SVGLineDefaults class', () => {
     let json = JSON.stringify(saved);
     expect(JSON.parse(json)).toStrictEqual(saved);
   });
+
+  describe('applySaved method', () => {
+    beforeEach(() => {
+      defaults['stroke'].setValue('#ab0187');
+      defaults['stroke-width'].setValue(1.235);
+      defaults['stroke-opacity'].setValue(0.5108);
+    });
+
+    it('applies saved values', () => {
+      defaults.applySaved({
+        'stroke': '#48b0fa',
+        'stroke-width': 5.183,
+        'stroke-opacity': 0.7028,
+      });
+
+      expect(defaults['stroke'].getValue()).toBe('#48b0fa');
+      expect(defaults['stroke-width'].getValue()).toBe(5.183);
+      expect(defaults['stroke-opacity'].getValue()).toBe(0.7028);
+    });
+
+    it('ignores invalid saved values', () => {
+      defaults.applySaved({
+        'stroke': 5,
+        'stroke-width': 'Q',
+        'stroke-opacity': {},
+      });
+
+      expect(defaults['stroke'].getValue()).toBe('#ab0187');
+      expect(defaults['stroke-width'].getValue()).toBe(1.235);
+      expect(defaults['stroke-opacity'].getValue()).toBe(0.5108);
+    });
+
+    it('ignores undefined saved values', () => {
+      defaults.applySaved({});
+      defaults.applySaved(undefined);
+
+      expect(defaults['stroke'].getValue()).toBe('#ab0187');
+      expect(defaults['stroke-width'].getValue()).toBe(1.235);
+      expect(defaults['stroke-opacity'].getValue()).toBe(0.5108);
+    });
+
+    it('processes values on an individual basis', () => {
+      defaults.applySaved({
+        // invalid
+        'stroke': 24,
+
+        'stroke-width': undefined,
+
+        // should still get applied
+        'stroke-opacity': 0.48107,
+      });
+
+      expect(defaults['stroke-opacity'].getValue()).toBe(0.48107);
+    });
+  });
 });

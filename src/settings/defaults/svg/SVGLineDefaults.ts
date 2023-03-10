@@ -11,6 +11,8 @@ const attributeNames = [
   'stroke-opacity',
 ] as const;
 
+type AttributeName = typeof attributeNames[number];
+
 export type SavedSVGLineDefaults = (
   ReturnType<
     InstanceType<typeof SVGLineDefaults>['toSaved']
@@ -46,5 +48,42 @@ export class SVGLineDefaults {
       'stroke-width': this['stroke-width'].getValue(),
       'stroke-opacity': this['stroke-opacity'].getValue(),
     };
+  }
+
+  /**
+   * Sets the values of these SVG line element defaults to the saved
+   * values.
+   */
+  applySaved(saved: SavedSVGLineDefaults): void;
+
+  /**
+   * Since the saved values could have been read from a file, this
+   * method is designed to be able to handle any unknown saved
+   * value(s).
+   *
+   * Invalid and undefined saved values are ignored.
+   */
+  applySaved(saved: unknown): void;
+
+  applySaved(saved: unknown) {
+    type SavedAttribute = { name: AttributeName, value: unknown };
+    let savedAttributes: SavedAttribute[] = [];
+
+    // enclose any type cast in try block
+    attributeNames.forEach(name => {
+      try {
+        let value: unknown = (saved as any)[name];
+        savedAttributes.push({ name, value });
+      } catch {}
+    });
+
+    savedAttributes = savedAttributes.filter(a => a.value !== undefined);
+
+    // setValue method might throw for invalid values
+    savedAttributes.forEach(a => {
+      try {
+        this[a.name].setValue(a.value);
+      } catch {}
+    });
   }
 }
