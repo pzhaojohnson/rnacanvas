@@ -104,4 +104,28 @@ describe('SVGFontFamily class', () => {
     let json = JSON.stringify(saved);
     expect(JSON.parse(json)).toBe('"Comic Sans", cursive');
   });
+
+  describe('applySaved method', () => {
+    it('applies saved values', () => {
+      let ff = new SVGFontFamily('"Courier New"');
+      ff.applySaved('"Brush Script MT"');
+      expect(ff.getValue()).toBe('"Brush Script MT"');
+    });
+
+    it('ignores invalid saved values', () => {
+      let ff = new SVGFontFamily('"Lucida Bright", serif');
+
+      [2, true, {}, null].forEach(saved => {
+        ff.applySaved(saved);
+      });
+
+      expect(ff.getValue()).toBe('"Lucida Bright", serif');
+    });
+
+    it('ignores values of undefined', () => {
+      let ff = new SVGFontFamily('"Gill Sans", sans-serif');
+      ff.applySaved(undefined);
+      expect(ff.getValue()).toBe('"Gill Sans", sans-serif');
+    });
+  });
 });
