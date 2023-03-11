@@ -67,4 +67,28 @@ export class SVGFontWeight {
   toSaved() {
     return this.getValue();
   }
+
+  /**
+   * Sets the value of this SVG font weight to the saved value.
+   */
+  applySaved(saved: SavedSVGFontWeight): void;
+
+  /**
+   * Since the saved value could have come from anywhere (e.g., a
+   * file), this method is designed to be able to handle any unknown
+   * saved value.
+   *
+   * Invalid saved values and values of undefined are ignored.
+   */
+  applySaved(saved: unknown): void;
+
+  applySaved(saved: unknown) {
+    if (saved === undefined) {
+      return;
+    }
+
+    try {
+      this.setValue(saved);
+    } catch {}
+  }
 }

@@ -139,4 +139,34 @@ describe('SVGFontWeight class', () => {
       expect(JSON.parse(json)).toBe('lighter');
     });
   });
+
+  describe('applySaved method', () => {
+    it('applies saved values', () => {
+      let fw = new SVGFontWeight('bold');
+
+      // a saved number value
+      fw.applySaved(681);
+      expect(fw.getValue()).toBe(681);
+
+      // a saved keyword value
+      fw.applySaved('lighter');
+      expect(fw.getValue()).toBe('lighter');
+    });
+
+    it('ignores invalid saved values', () => {
+      let fw = new SVGFontWeight(152);
+
+      [0, 1000.5, 'asdf', true, {}, null].forEach(saved => {
+        fw.applySaved(saved);
+      });
+
+      expect(fw.getValue()).toBe(152);
+    });
+
+    it('ignores values of undefined', () => {
+      let fw = new SVGFontWeight(489);
+      fw.applySaved(undefined);
+      expect(fw.getValue()).toBe(489);
+    });
+  });
 });
