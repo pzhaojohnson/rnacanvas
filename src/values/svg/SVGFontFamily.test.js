@@ -94,4 +94,14 @@ describe('SVGFontFamily class', () => {
       });
     });
   });
+
+  test('toSaved method', () => {
+    let ff = new SVGFontFamily('"Comic Sans", cursive');
+    let saved = ff.toSaved();
+    expect(saved).toBe('"Comic Sans", cursive');
+
+    // test JSON conversion
+    let json = JSON.stringify(saved);
+    expect(JSON.parse(json)).toBe('"Comic Sans", cursive');
+  });
 });
