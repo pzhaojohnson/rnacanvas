@@ -85,4 +85,32 @@ describe('SVGFontStyle class', () => {
       });
     });
   });
+
+  describe('applySaved method', () => {
+    it('applies saved values', () => {
+      let fs = new SVGFontStyle('normal');
+
+      fs.applySaved('italic');
+      expect(fs.getValue()).toBe('italic');
+
+      fs.applySaved('normal');
+      expect(fs.getValue()).toBe('normal');
+    });
+
+    it('ignores invalid saved values', () => {
+      let fs = new SVGFontStyle('oblique');
+
+      ['asdf', 2, true, {}, null].forEach(saved => {
+        fs.applySaved(saved);
+      });
+
+      expect(fs.getValue()).toBe('oblique');
+    });
+
+    it('ignores values of undefined', () => {
+      let fs = new SVGFontStyle('italic');
+      fs.applySaved(undefined);
+      expect(fs.getValue()).toBe('italic');
+    });
+  });
 });
