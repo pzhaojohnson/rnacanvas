@@ -115,4 +115,28 @@ describe('SVGFontWeight class', () => {
       });
     });
   });
+
+  describe('toSaved method', () => {
+    it('returns the primitive value', () => {
+      // a number value
+      let fw = new SVGFontWeight(398);
+      expect(fw.toSaved()).toBe(398);
+
+      // a keyword value
+      fw.setValue('bolder');
+      expect(fw.toSaved()).toBe('bolder');
+    });
+
+    test('JSON conversion', () => {
+      // a number value
+      let fw = new SVGFontWeight(712);
+      let json = JSON.stringify(fw.toSaved());
+      expect(JSON.parse(json)).toBe(712);
+
+      // a keyword value
+      fw.setValue('lighter');
+      json = JSON.stringify(fw.toSaved());
+      expect(JSON.parse(json)).toBe('lighter');
+    });
+  });
 });

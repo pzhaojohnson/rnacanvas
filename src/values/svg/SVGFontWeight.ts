@@ -15,6 +15,12 @@ export type Value = (
   | number
 );
 
+export type SavedSVGFontWeight = (
+  ReturnType<
+    InstanceType<typeof SVGFontWeight>['toSaved']
+  >
+);
+
 export class SVGFontWeight {
   _value: Value;
 
@@ -49,5 +55,16 @@ export class SVGFontWeight {
     }
 
     throw new Error(`${value} is not a possible value.`);
+  }
+
+  /**
+   * Returns the saved form of this SVG font weight (in this case
+   * simply the primitive value).
+   *
+   * The saved form of this SVG font weight can be directly converted
+   * to and from JSON.
+   */
+  toSaved() {
+    return this.getValue();
   }
 }
