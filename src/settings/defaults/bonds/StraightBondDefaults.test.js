@@ -47,7 +47,7 @@ afterEach(() => {
 
 describe('StraightBondDefaults class', () => {
   describe('applyTo method', () => {
-    it('applies line attributes', () => {
+    it('applies line defaults', () => {
       // just test some line attributes
       defaults.line['stroke'].setValue('#ae4801');
       defaults.line['stroke-width'].setValue(6.1802);
@@ -87,7 +87,7 @@ describe('StraightBondDefaults class', () => {
       saved = null;
     });
 
-    it('includes line attributes', () => {
+    it('includes line defaults', () => {
       expect(saved.line['stroke-width']).toBe(10.0023);
       expect(saved.line['stroke-opacity']).toBe(0.09351);
     });
