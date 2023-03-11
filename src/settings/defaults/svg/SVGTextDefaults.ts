@@ -1,3 +1,5 @@
+import * as SVG from '@svgdotjs/svg.js';
+
 import { SVGFontFamily } from 'Values/svg/SVGFontFamily';
 import { SVGFontSize } from 'Values/svg/SVGFontSize';
 import { SVGFontWeight } from 'Values/svg/SVGFontWeight';
@@ -30,4 +32,13 @@ export class SVGTextDefaults {
 
   'fill' = new SVGColor('#000000');
   'fill-opacity' = new SVGOpacity(1);
+
+  /**
+   * Sets the values of the SVG text element to these default values.
+   */
+  applyTo(text: SVG.Text) {
+    attributeNames.forEach(name => {
+      text.attr(name, this[name].getValue());
+    });
+  }
 }
