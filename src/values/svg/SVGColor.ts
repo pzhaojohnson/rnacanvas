@@ -2,6 +2,12 @@ import * as SVG from '@svgdotjs/svg.js';
 
 import { isBlank } from 'Parse/isBlank';
 
+export type SavedSVGColor = (
+  ReturnType<
+    InstanceType<typeof SVGColor>['toSaved']
+  >
+);
+
 /**
  * Uses the SVG.js library Color class constructor to check if a value
  * is a valid SVG color.
@@ -45,5 +51,16 @@ export class SVGColor {
     }
 
     this._value = value;
+  }
+
+  /**
+   * Returns the saved form of this SVG color (in this case simply the
+   * primitive value).
+   *
+   * The saved form of this SVG color can be directly converted to and
+   * from JSON.
+   */
+  toSaved() {
+    return this.getValue();
   }
 }

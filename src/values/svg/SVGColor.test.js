@@ -82,4 +82,26 @@ describe('SVGColor class', () => {
       });
     });
   });
+
+  describe('toSaved method', () => {
+    it('returns the primitive value', () => {
+      let c = new SVGColor('#ab9be2');
+      expect(c.toSaved()).toBe('#ab9be2');
+
+      c.setValue('rgb(129, 8, 19)');
+      expect(c.toSaved()).toBe('rgb(129, 8, 19)');
+
+      c.setValue('#bb1');
+      expect(c.toSaved()).toBe('#bb1');
+    });
+
+    test('JSON conversion', () => {
+      ['#18492a', 'rgb(100, 50, 156)', '#ab8'].forEach(value => {
+        let c = new SVGColor(value);
+        let saved = c.toSaved();
+        let json = JSON.stringify(saved);
+        expect(JSON.parse(json)).toBe(saved);
+      });
+    });
+  });
 });
