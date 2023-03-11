@@ -56,12 +56,12 @@ export class SVGTextDefaults {
    */
   toSaved() {
     return {
-      'font-family': this['font-family'].getValue(),
-      'font-size': this['font-size'].getValue(),
-      'font-weight': this['font-weight'].getValue(),
-      'font-style': this['font-style'].getValue(),
-      'fill': this['fill'].getValue(),
-      'fill-opacity': this['fill-opacity'].getValue(),
+      'font-family': this['font-family'].toSaved(),
+      'font-size': this['font-size'].toSaved(),
+      'font-weight': this['font-weight'].toSaved(),
+      'font-style': this['font-style'].toSaved(),
+      'fill': this['fill'].toSaved(),
+      'fill-opacity': this['fill-opacity'].toSaved(),
     };
   }
 
