@@ -64,4 +64,28 @@ export class SVGTextDefaults {
       'fill-opacity': this['fill-opacity'].getValue(),
     };
   }
+
+  /**
+   * Sets the values of these SVG text element defaults to the saved
+   * values.
+   */
+  applySaved(saved: SavedSVGTextDefaults): void;
+
+  /**
+   * Since the saved values could have come from anywhere (e.g., a
+   * file), this method is designed to be able to handle any unknown
+   * saved value(s).
+   *
+   * Invalid saved values and values of undefined are ignored.
+   */
+  applySaved(saved: unknown): void;
+
+  applySaved(saved: unknown) {
+    attributeNames.forEach(name => {
+      try {
+        let savedAttribute: unknown = (saved as any)[name];
+        this[name].applySaved(savedAttribute);
+      } catch {}
+    });
+  }
 }
