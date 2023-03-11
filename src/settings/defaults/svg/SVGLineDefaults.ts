@@ -66,23 +66,9 @@ export class SVGLineDefaults {
   applySaved(saved: unknown): void;
 
   applySaved(saved: unknown) {
-    type SavedAttribute = { name: AttributeName, value: unknown };
-    let savedAttributes: SavedAttribute[] = [];
-
-    // enclose any type cast in try block
     attributeNames.forEach(name => {
       try {
-        let value: unknown = (saved as any)[name];
-        savedAttributes.push({ name, value });
-      } catch {}
-    });
-
-    savedAttributes = savedAttributes.filter(a => a.value !== undefined);
-
-    // setValue method might throw for invalid values
-    savedAttributes.forEach(a => {
-      try {
-        this[a.name].setValue(a.value);
+        this[name].applySaved((saved as any)[name]);
       } catch {}
     });
   }
