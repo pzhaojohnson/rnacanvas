@@ -44,9 +44,9 @@ export class SVGLineDefaults {
    */
   toSaved() {
     return {
-      'stroke': this['stroke'].getValue(),
-      'stroke-width': this['stroke-width'].getValue(),
-      'stroke-opacity': this['stroke-opacity'].getValue(),
+      'stroke': this['stroke'].toSaved(),
+      'stroke-width': this['stroke-width'].toSaved(),
+      'stroke-opacity': this['stroke-opacity'].toSaved(),
     };
   }
 
