@@ -9,6 +9,8 @@ const propertyNames = [
   'basePadding2',
 ] as const;
 
+type PropertyName = typeof propertyNames[number];
+
 export type SavedStraightBondDefaults = (
   ReturnType<
     InstanceType<typeof StraightBondDefaults>['toSaved']
@@ -54,5 +56,60 @@ export class StraightBondDefaults {
       basePadding1: this.basePadding1.getValue(),
       basePadding2: this.basePadding2.getValue(),
     };
+  }
+
+  /**
+   * Sets the values of these straight bond defaults to the saved
+   * values.
+   */
+  applySaved(saved: SavedStraightBondDefaults): void;
+
+  /**
+   * Since the saved values could have been read from a file, this
+   * method is designed to be able to handle any unknown saved
+   * value(s).
+   *
+   * Invalid and undefined saved values are ignored.
+   */
+  applySaved(saved: unknown): void;
+
+  applySaved(saved: unknown) {
+    this._applySavedLineDefaults(saved);
+    this._applySavedProperties(saved);
+  }
+
+  _applySavedLineDefaults(saved: SavedStraightBondDefaults | unknown) {
+    let savedLineDefaults: unknown = undefined;
+
+    // enclose any type cast in try block
+    try {
+      savedLineDefaults = (saved as any).line;
+    } catch {}
+
+    if (savedLineDefaults !== undefined) {
+      this.line.applySaved(savedLineDefaults);
+    }
+  }
+
+  _applySavedProperties(saved: SavedStraightBondDefaults | unknown) {
+    type SavedProperty = { name: PropertyName, value: unknown };
+    let savedProperties: SavedProperty[] = [];
+
+    // enclose any type cast in try block
+    propertyNames.forEach(name => {
+      try {
+        let value: unknown = (saved as any)[name];
+        savedProperties.push({ name, value });
+      } catch {}
+    });
+
+    savedProperties = savedProperties.filter(sp => sp.value !== undefined);
+
+    // setValue methods might throw for invalid values
+    savedProperties.forEach(sp => {
+      try {
+        this[sp.name].setValue(sp.value);
+      } catch {}
+    });
   }
 }

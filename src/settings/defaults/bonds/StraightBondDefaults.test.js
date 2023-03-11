@@ -102,4 +102,76 @@ describe('StraightBondDefaults class', () => {
       expect(JSON.parse(json)).toStrictEqual(saved);
     });
   });
+
+  describe('applySaved method', () => {
+    it('applies saved line defaults', () => {
+      defaults.applySaved({
+        line: {
+          'stroke': '#ab7120',
+          'stroke-width': 1.8491,
+        },
+      });
+
+      expect(defaults.line['stroke'].getValue()).toBe('#ab7120');
+      expect(defaults.line['stroke-width'].getValue()).toBe(1.8491);
+    });
+
+    it('ignores undefined saved line defaults', () => {
+      defaults.line['stroke'].setValue('#120aba');
+      defaults.line['stroke-opacity'].setValue(0.6031);
+
+      defaults.applySaved({ line: undefined });
+      defaults.applySaved(undefined);
+
+      expect(defaults.line['stroke'].getValue()).toBe('#120aba');
+      expect(defaults.line['stroke-opacity'].getValue()).toBe(0.6031);
+    });
+
+    it('applies saved properties', () => {
+      defaults.applySaved({
+        basePadding1: 6.92014,
+        basePadding2: 3.1359,
+      });
+
+      expect(defaults.basePadding1.getValue()).toBe(6.92014);
+      expect(defaults.basePadding2.getValue()).toBe(3.1359);
+    });
+
+    it('ignores invalid saved properties', () => {
+      defaults.basePadding1.setValue(5.9);
+      defaults.basePadding2.setValue(6.2);
+
+      defaults.applySaved({
+        basePadding1: 'asdf',
+        basePadding2: {},
+      });
+
+      expect(defaults.basePadding1.getValue()).toBe(5.9);
+      expect(defaults.basePadding2.getValue()).toBe(6.2);
+    });
+
+    it('ignores undefined saved properties', () => {
+      defaults.basePadding1.setValue(5.92207);
+
+      defaults.applySaved({});
+      defaults.applySaved(undefined);
+
+      expect(defaults.basePadding1.getValue()).toBe(5.92207);
+    });
+
+    it('processes saved properties on an individual basis', () => {
+      defaults.basePadding1.setValue(5.1538);
+
+      defaults.applySaved({
+        // invalid
+        basePadding1: 'zxcv',
+
+        // should still get applied
+        basePadding2: 9.14014,
+      });
+
+      expect(defaults.basePadding1.getValue()).toBe(5.1538);
+      expect(defaults.basePadding2.getValue()).toBe(9.14014);
+    });
+  });
 });
