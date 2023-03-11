@@ -82,4 +82,38 @@ describe('NonNegativeFiniteNumber class', () => {
       });
     });
   });
+
+  test('toSaved method', () => {
+    let n = new NonNegativeFiniteNumber(12.071135);
+    let saved = n.toSaved();
+    expect(saved).toBe(12.071135);
+
+    // test JSON conversion
+    let json = JSON.stringify(saved);
+    expect(JSON.parse(json)).toBe(12.071135);
+  });
+
+  describe('applySaved method', () => {
+    it('applies saved values', () => {
+      let n = new NonNegativeFiniteNumber(5);
+      n.applySaved(9.12479);
+      expect(n.getValue()).toBe(9.12479);
+    });
+
+    it('ignores invalid saved values', () => {
+      let n = new NonNegativeFiniteNumber(1748);
+
+      [-1, null, true, {}].forEach(saved => {
+        n.applySaved(saved);
+      });
+
+      expect(n.getValue()).toBe(1748);
+    });
+
+    it('ignores values of undefined', () => {
+      let n = new NonNegativeFiniteNumber(1849);
+      n.applySaved(undefined);
+      expect(n.getValue()).toBe(1849);
+    });
+  });
 });
