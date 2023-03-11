@@ -20,6 +20,12 @@ const attributeNames = [
 
 type AttributeName = typeof attributeNames[number];
 
+export type SavedSVGTextDefaults = (
+  ReturnType<
+    InstanceType<typeof SVGTextDefaults>['toSaved']
+  >
+);
+
 /**
  * Possible default values to be used for SVG text elements in the
  * drawing of the app.
@@ -40,5 +46,22 @@ export class SVGTextDefaults {
     attributeNames.forEach(name => {
       text.attr(name, this[name].getValue());
     });
+  }
+
+  /**
+   * Returns the saved form of these SVG text element defaults.
+   *
+   * The saved form of these SVG text element defaults can be directly
+   * converted to and from JSON.
+   */
+  toSaved() {
+    return {
+      'font-family': this['font-family'].getValue(),
+      'font-size': this['font-size'].getValue(),
+      'font-weight': this['font-weight'].getValue(),
+      'font-style': this['font-style'].getValue(),
+      'fill': this['fill'].getValue(),
+      'fill-opacity': this['fill-opacity'].getValue(),
+    };
   }
 }
