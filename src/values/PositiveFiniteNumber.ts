@@ -1,3 +1,9 @@
+export type SavedPositiveFiniteNumber = (
+  ReturnType<
+    InstanceType<typeof PositiveFiniteNumber>['toSaved']
+  >
+);
+
 export class PositiveFiniteNumber {
   _value: number;
 
@@ -30,5 +36,16 @@ export class PositiveFiniteNumber {
     } else {
       this._value = value;
     }
+  }
+
+  /**
+   * Returns the saved form of this positive finite number (in this
+   * case simply the primitive value).
+   *
+   * The saved form of this positive finite number can be directly
+   * converted to and from JSON.
+   */
+  toSaved() {
+    return this.getValue();
   }
 }

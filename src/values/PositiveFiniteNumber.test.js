@@ -82,4 +82,14 @@ describe('PositiveFiniteNumber class', () => {
       });
     });
   });
+
+  test('toSaved method', () => {
+    let n = new PositiveFiniteNumber(18.19579);
+    let saved = n.toSaved();
+    expect(saved).toBe(18.19579);
+
+    // test JSON conversion
+    let json = JSON.stringify(saved);
+    expect(JSON.parse(json)).toBe(18.19579);
+  });
 });
