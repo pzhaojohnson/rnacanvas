@@ -48,4 +48,27 @@ export class PositiveFiniteNumber {
   toSaved() {
     return this.getValue();
   }
+
+  /**
+   * Sets the value of this positive finite number to the saved value.
+   */
+  applySaved(saved: SavedPositiveFiniteNumber): void;
+
+  /**
+   * Since the saved value could have been read from a file, this
+   * method is designed to be able to handle any unknown saved value.
+   *
+   * Invalid saved values and values of undefined are ignored.
+   */
+  applySaved(saved: unknown): void;
+
+  applySaved(saved: unknown) {
+    if (saved === undefined) {
+      return;
+    }
+
+    try {
+      this.setValue(saved);
+    } catch {}
+  }
 }

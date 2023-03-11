@@ -92,4 +92,28 @@ describe('PositiveFiniteNumber class', () => {
     let json = JSON.stringify(saved);
     expect(JSON.parse(json)).toBe(18.19579);
   });
+
+  describe('applySaved method', () => {
+    it('applies saved values', () => {
+      let n = new PositiveFiniteNumber(15);
+      n.applySaved(513.371586);
+      expect(n.getValue()).toBe(513.371586);
+    });
+
+    it('ignores invalid saved values', () => {
+      let n = new PositiveFiniteNumber(194.175);
+
+      [0, -1, true, {}, null].forEach(saved => {
+        n.applySaved(saved);
+      });
+
+      expect(n.getValue()).toBe(194.175);
+    });
+
+    it('ignores values of undefined', () => {
+      let n = new PositiveFiniteNumber(12.38);
+      n.applySaved(undefined);
+      expect(n.getValue()).toBe(12.38);
+    });
+  });
 });
