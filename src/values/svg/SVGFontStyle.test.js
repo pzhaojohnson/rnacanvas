@@ -65,4 +65,24 @@ describe('SVGFontStyle class', () => {
       });
     });
   });
+
+  describe('toSaved method', () => {
+    it('returns the primitive value', () => {
+      let fs = new SVGFontStyle('italic');
+      expect(fs.toSaved()).toBe('italic');
+
+      fs.setValue('oblique');
+      expect(fs.toSaved()).toBe('oblique');
+    });
+
+    test('JSON conversion', () => {
+      ['normal', 'italic', 'oblique'].forEach(value => {
+        let fs = new SVGFontStyle(value);
+        let saved = fs.toSaved();
+
+        let json = JSON.stringify(saved);
+        expect(JSON.parse(json)).toBe(saved);
+      });
+    });
+  });
 });

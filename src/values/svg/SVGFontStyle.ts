@@ -18,6 +18,12 @@ export type Value = (
   KeywordValue
 );
 
+export type SavedSVGFontStyle = (
+  ReturnType<
+    InstanceType<typeof SVGFontStyle>['toSaved']
+  >
+);
+
 export class SVGFontStyle {
   _value: Value;
 
@@ -43,5 +49,16 @@ export class SVGFontStyle {
     } else {
       throw new Error(`${value} is not a possible value.`);
     }
+  }
+
+  /**
+   * Returns the saved form of this SVG font style (in this case simply
+   * the primitive value).
+   *
+   * The saved form of this SVG font style can be directly converted to
+   * and from JSON.
+   */
+  toSaved() {
+    return this.getValue();
   }
 }
