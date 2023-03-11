@@ -99,4 +99,38 @@ describe('SVGOpacity class', () => {
       });
     });
   });
+
+  test('toSaved method', () => {
+    let o = new SVGOpacity(0.81745);
+    let saved = o.toSaved();
+    expect(saved).toBe(0.81745);
+
+    // test JSON conversion
+    let json = JSON.stringify(saved);
+    expect(JSON.parse(json)).toBe(0.81745);
+  });
+
+  describe('applySaved method', () => {
+    it('applies saved values', () => {
+      let o = new SVGOpacity(0.2);
+      o.applySaved(0.3859);
+      expect(o.getValue()).toBe(0.3859);
+    });
+
+    it('ignores invalid saved values', () => {
+      let o = new SVGOpacity(0.28);
+
+      [-0.5, 1.5, 'asdf', false, {}, null].forEach(saved => {
+        o.applySaved(saved);
+      });
+
+      expect(o.getValue()).toBe(0.28);
+    });
+
+    it('ignores values of undefined', () => {
+      let o = new SVGOpacity(0.65);
+      o.applySaved(undefined);
+      expect(o.getValue()).toBe(0.65);
+    });
+  });
 });

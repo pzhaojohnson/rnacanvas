@@ -1,3 +1,9 @@
+export type SavedSVGOpacity = (
+  ReturnType<
+    InstanceType<typeof SVGOpacity>['toSaved']
+  >
+);
+
 /**
  * A number between 0 and 1 inclusive.
  *
@@ -39,5 +45,39 @@ export class SVGOpacity {
     } else {
       this._value = value;
     }
+  }
+
+  /**
+   * Returns the saved form of this SVG opacity (in this case simply
+   * the primitive value).
+   *
+   * The saved form of this SVG opacity can be directly converted to
+   * and from JSON.
+   */
+  toSaved() {
+    return this._value;
+  }
+
+  /**
+   * Sets the value of this SVG opacity to the saved value.
+   */
+  applySaved(saved: SavedSVGOpacity): void;
+
+  /**
+   * Since the saved value could have been read from a file, this
+   * method is designed to be able to handle any unknown saved value.
+   *
+   * Invalid saved values and values of undefined are ignored.
+   */
+  applySaved(saved: unknown): void;
+
+  applySaved(saved: unknown) {
+    if (saved === undefined) {
+      return;
+    }
+
+    try {
+      this.setValue(saved);
+    } catch {}
   }
 }
