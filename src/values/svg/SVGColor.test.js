@@ -104,4 +104,32 @@ describe('SVGColor class', () => {
       });
     });
   });
+
+  describe('applySaved method', () => {
+    it('applies saved values', () => {
+      let c = new SVGColor('#000000');
+
+      c.applySaved('#cf0014');
+      expect(c.getValue()).toBe('#cf0014');
+
+      c.applySaved('rgb(25, 189, 250)');
+      expect(c.getValue()).toBe('rgb(25, 189, 250)');
+    });
+
+    it('ignores invalid saved values', () => {
+      let c = new SVGColor('#bae092');
+
+      ['asdf', 5, true, {}, null].forEach(saved => {
+        c.applySaved(saved);
+      });
+
+      expect(c.getValue()).toBe('#bae092');
+    });
+
+    it('ignores values of undefined', () => {
+      let c = new SVGColor('#aab185');
+      c.applySaved(undefined);
+      expect(c.getValue()).toBe('#aab185');
+    });
+  });
 });

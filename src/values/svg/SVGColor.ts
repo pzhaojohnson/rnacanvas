@@ -63,4 +63,27 @@ export class SVGColor {
   toSaved() {
     return this.getValue();
   }
+
+  /**
+   * Sets the value of this SVG color to the saved value.
+   */
+  applySaved(saved: SavedSVGColor): void;
+
+  /**
+   * Since the saved value could have been read from a file, this
+   * method is designed to be able to handle any unknown saved value.
+   *
+   * Invalid saved values and values of undefined are ignored.
+   */
+  applySaved(saved: unknown): void;
+
+  applySaved(saved: unknown) {
+    if (saved === undefined) {
+      return;
+    }
+
+    try {
+      this.setValue(saved);
+    } catch {}
+  }
 }
