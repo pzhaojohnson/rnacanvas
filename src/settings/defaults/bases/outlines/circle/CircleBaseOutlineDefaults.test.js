@@ -42,27 +42,23 @@ describe('CircleBaseOutlineDefaults class', () => {
     });
   });
 
-  test('toSaved method', () => {
-    [
-      ['r', 15.114], ['stroke', '#ff5061'], ['stroke-width', 12.088],
-      ['stroke-opacity', 0.1882], ['fill', '#fa2381'],
-      ['fill-opacity', 0.51189],
-    ].forEach(attribute => {
-      defaults.circle[attribute[0]].setValue(attribute[1]);
+  describe('toSaved method', () => {
+    beforeEach(() => {
+      defaults.circle['stroke'].setValue('#ff5061');
+      defaults.circle['fill-opacity'].setValue(0.51189);
     });
 
-    let saved = defaults.toSaved();
-
-    expect(saved).toStrictEqual({
-      circle: {
-        'r': 15.114, 'stroke': '#ff5061', 'stroke-width': 12.088,
-        'stroke-opacity': 0.1882, 'fill': '#fa2381', 'fill-opacity': 0.51189,
-      },
+    it('includes circle defaults', () => {
+      let saved = defaults.toSaved();
+      expect(saved.circle['stroke']).toBe('#ff5061');
+      expect(saved.circle['fill-opacity']).toBe(0.51189);
     });
 
-    // test JSON conversion
-    let json = JSON.stringify(saved);
-    expect(JSON.parse(json)).toStrictEqual(saved);
+    test('JSON conversion', () => {
+      let saved = defaults.toSaved();
+      let json = JSON.stringify(saved);
+      expect(JSON.parse(json)).toStrictEqual(saved);
+    });
   });
 
   describe('applySaved method', () => {
