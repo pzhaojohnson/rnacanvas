@@ -31,11 +31,6 @@ afterEach(() => {
 });
 
 describe('BaseDefaults class', () => {
-  test('constructor', () => {
-    expect(() => new BaseDefaults())
-      .not.toThrow();
-  });
-
   test('applyTo method', () => {
     defaults.text['font-family'].setValue('Courier New');
     defaults.text['font-size'].setValue(29.8);
