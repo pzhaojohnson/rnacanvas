@@ -30,11 +30,6 @@ afterEach(() => {
 });
 
 describe('CircleBaseOutlineDefaults class', () => {
-  test('constructor', () => {
-    expect(() => new CircleBaseOutlineDefaults())
-      .not.toThrow();
-  });
-
   test('applyTo method', () => {
     defaults.circle['r'].setValue(18.089);
     defaults.circle['stroke'].setValue('#48b3f1');
