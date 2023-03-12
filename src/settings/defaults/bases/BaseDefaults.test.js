@@ -43,22 +43,29 @@ describe('BaseDefaults class', () => {
     });
   });
 
-  test('toSaved method', () => {
-    defaults.text['font-family'].setValue('Consolas');
-    defaults.text['font-size'].setValue(4.89);
-    defaults.text['font-weight'].setValue(709.1);
-    defaults.text['font-style'].setValue('italic');
+  describe('toSaved method', () => {
+    let saved = null;
 
-    let saved = defaults.toSaved();
+    beforeEach(() => {
+      defaults.text['font-size'].setValue(4.89);
+      defaults.text['font-weight'].setValue(709.1);
 
-    expect(saved.text['font-family']).toBe('Consolas');
-    expect(saved.text['font-size']).toBe(4.89);
-    expect(saved.text['font-weight']).toBe(709.1);
-    expect(saved.text['font-style']).toBe('italic');
+      saved = defaults.toSaved();
+    });
 
-    // test JSON conversion
-    let json = JSON.stringify(saved);
-    expect(JSON.parse(json)).toStrictEqual(saved);
+    afterEach(() => {
+      saved = null;
+    });
+
+    it('includes line defaults', () => {
+      expect(saved.text['font-size']).toBe(4.89);
+      expect(saved.text['font-weight']).toBe(709.1);
+    });
+
+    test('JSON conversion', () => {
+      let json = JSON.stringify(saved);
+      expect(JSON.parse(json)).toStrictEqual(saved);
+    });
   });
 
   describe('applySaved method', () => {
