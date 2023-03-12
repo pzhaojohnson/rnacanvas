@@ -75,4 +75,25 @@ describe('SecondaryBondDefaults class', () => {
     expect(secondaryBonds['GUT'].line.attr('stroke')).toBe('#50281c');
     expect(secondaryBonds['GUT'].basePadding2).toBeCloseTo(8.1875);
   });
+
+  test('toSaved method', () => {
+    defaults.AUT.line['stroke-opacity'].setValue(0.176821);
+    defaults.GC.line['stroke-width'].setValue(12.14591);
+    defaults.GUT.line['stroke'].setValue('#cb0142');
+    defaults.other.basePadding2.setValue(9.157825);
+
+    let saved = defaults.toSaved();
+
+    // includes AUT defaults
+    expect(saved.AUT.line['stroke-opacity']).toBe(0.176821);
+
+    // includes GC defaults
+    expect(saved.GC.line['stroke-width']).toBe(12.14591);
+
+    // includes GUT defaults
+    expect(saved.GUT.line['stroke']).toBe('#cb0142');
+
+    // includes other defaults
+    expect(saved.other.basePadding2).toBe(9.157825);
+  });
 });

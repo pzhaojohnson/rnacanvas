@@ -2,6 +2,12 @@ import type { SecondaryBond } from 'Draw/bonds/straight/SecondaryBond';
 
 import { StraightBondDefaults } from 'Settings/defaults/bonds/StraightBondDefaults';
 
+export type SavedSecondaryBondDefaults = (
+  ReturnType<
+    InstanceType<typeof SecondaryBondDefaults>['toSaved']
+  >
+);
+
 /**
  * Default values for secondary bonds in the drawing of the app
  * organized by secondary bond type (e.g., AUT, GC, GUT, other).
@@ -44,5 +50,20 @@ export class SecondaryBondDefaults {
    */
   applyTo(sb: SecondaryBond) {
     this[sb.type].applyTo(sb);
+  }
+
+  /**
+   * Returns the saved form of these secondary bond defaults.
+   *
+   * The saved form of these secondary bond defaults can be directly
+   * converted to and from JSON.
+   */
+  toSaved() {
+    return {
+      AUT: this.AUT.toSaved(),
+      GC: this.GC.toSaved(),
+      GUT: this.GUT.toSaved(),
+      other: this.other.toSaved(),
+    };
   }
 }
