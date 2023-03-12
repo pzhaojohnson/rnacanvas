@@ -46,33 +46,19 @@ afterEach(() => {
 });
 
 describe('SVGCircleDefaults class', () => {
-  describe('applyTo method', () => {
-    beforeEach(() => {
-      randomDefaults.applyTo(circle);
-    });
+  test('applyTo method', () => {
+    randomDefaults.applyTo(circle);
 
-    it('sets the values of the SVG circle element', () => {
-      randomValues.forEach(v => {
-        expect(circle.attr(v[0])).toBe(v[1]);
-      });
+    randomValues.forEach(v => {
+      expect(circle.attr(v[0])).toBe(v[1]);
     });
   });
 
-  describe('toSaved method', () => {
-    let saved = null;
+  test('toSaved method', () => {
+    let saved = randomDefaults.toSaved();
 
-    beforeEach(() => {
-      saved = randomDefaults.toSaved();
-    });
-
-    afterEach(() => {
-      saved = null;
-    });
-
-    it('includes all default values', () => {
-      randomValues.forEach(v => {
-        expect(saved[v[0]]).toBe(v[1]);
-      });
+    randomValues.forEach(v => {
+      expect(saved[v[0]]).toBe(v[1]);
     });
   });
 
