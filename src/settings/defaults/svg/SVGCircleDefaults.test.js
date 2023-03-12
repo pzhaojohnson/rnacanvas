@@ -75,4 +75,64 @@ describe('SVGCircleDefaults class', () => {
       });
     });
   });
+
+  describe('applySaved method', () => {
+    it('applies all saved values', () => {
+      let defaults = new SVGCircleDefaults();
+      defaults.applySaved(randomDefaults.toSaved());
+
+      randomValues.forEach(v => {
+        expect(defaults[v[0]].getValue()).toBe(v[1]);
+      });
+    });
+
+    test('invalid saved values', () => {
+      randomDefaults.applySaved({
+        'r': 'Q',
+        'stroke': {},
+        'stroke-width': true,
+        'stroke-opacity': 'asdf',
+        'fill': 88,
+        'fill-opacity': null,
+      });
+
+      randomValues.forEach(v => {
+        expect(randomDefaults[v[0]].getValue()).toBe(v[1]);
+      });
+    });
+
+    test('undefined saved values', () => {
+      // an empty saved object
+      randomDefaults.applySaved({});
+
+      // just a value of undefined
+      randomDefaults.applySaved(undefined);
+
+      randomValues.forEach(v => {
+        expect(randomDefaults[v[0]].getValue()).toBe(v[1]);
+      });
+    });
+
+    it('processes saved values individually', () => {
+      let defaults = new SVGCircleDefaults();
+
+      defaults['r'].setValue(5.6);
+      defaults['stroke'].setValue('#001122');
+      defaults['stroke-width'].setValue(2);
+
+      defaults.applySaved({
+        // invalid
+        'r': 'asdf',
+
+        'stroke': undefined,
+
+        // should still get applied
+        'stroke-width': 12.3809,
+      });
+
+      expect(defaults['r'].getValue()).toBe(5.6);
+      expect(defaults['stroke'].getValue()).toBe('#001122');
+      expect(defaults['stroke-width'].getValue()).toBe(12.3809);
+    });
+  });
 });

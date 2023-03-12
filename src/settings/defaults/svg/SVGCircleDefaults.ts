@@ -61,4 +61,26 @@ export class SVGCircleDefaults {
       'fill-opacity': this['fill-opacity'].toSaved(),
     };
   }
+
+  /**
+   * Sets the values of these SVG circle element defaults to the saved
+   * values.
+   */
+  applySaved(saved: SavedSVGCircleDefaults): void;
+
+  /**
+   * Since the saved values could come from anywhere (e.g., a file),
+   * this method is designed to be able to handle any unknown saved
+   * value(s).
+   */
+  applySaved(saved: unknown): void | never;
+
+  applySaved(saved: unknown): void | never {
+    valueNames.forEach(name => {
+      try {
+        let savedValue: unknown = (saved as any)[name];
+        this[name].applySaved(savedValue);
+      } catch {}
+    });
+  }
 }
