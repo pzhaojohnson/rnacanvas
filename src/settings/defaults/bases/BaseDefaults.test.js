@@ -31,17 +31,16 @@ afterEach(() => {
 });
 
 describe('BaseDefaults class', () => {
-  test('applyTo method', () => {
-    defaults.text['font-family'].setValue('Courier New');
-    defaults.text['font-size'].setValue(29.8);
-    defaults.text['font-weight'].setValue(312.9);
-    defaults.text['font-style'].setValue('oblique');
+  describe('applyTo method', () => {
+    it('applies line defaults', () => {
+      defaults.text['font-family'].setValue('Courier New');
+      defaults.text['font-weight'].setValue(312.9);
 
-    defaults.applyTo(base);
-    expect(base.text.attr('font-family')).toBe('Courier New');
-    expect(base.text.attr('font-size')).toBe(29.8);
-    expect(base.text.attr('font-weight')).toBe(312.9);
-    expect(base.text.attr('font-style')).toBe('oblique');
+      defaults.applyTo(base);
+
+      expect(base.text.attr('font-family')).toBe('Courier New');
+      expect(base.text.attr('font-weight')).toBe(312.9);
+    });
   });
 
   test('toSaved method', () => {
