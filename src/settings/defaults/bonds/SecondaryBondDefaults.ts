@@ -1,3 +1,5 @@
+import type { SecondaryBond } from 'Draw/bonds/straight/SecondaryBond';
+
 import { StraightBondDefaults } from 'Settings/defaults/bonds/StraightBondDefaults';
 
 /**
@@ -34,5 +36,13 @@ export class SecondaryBondDefaults {
     this.other.line['stroke-opacity'].setValue(1);
     this.other.basePadding1.setValue(6);
     this.other.basePadding2.setValue(6);
+  }
+
+  /**
+   * Sets the values of the secondary bond to the appropriate default
+   * values depending on the type of the secondary bond.
+   */
+  applyTo(sb: SecondaryBond) {
+    this[sb.type].applyTo(sb);
   }
 }
