@@ -57,14 +57,10 @@ describe('BaseDefaults class', () => {
 
     let saved = baseDefaults.toSaved();
 
-    expect(saved).toStrictEqual({
-      text: {
-        'font-family': 'Consolas',
-        'font-size': 4.89,
-        'font-weight': 709.1,
-        'font-style': 'italic',
-      },
-    });
+    expect(saved.text['font-family']).toBe('Consolas');
+    expect(saved.text['font-size']).toBe(4.89);
+    expect(saved.text['font-weight']).toBe(709.1);
+    expect(saved.text['font-style']).toBe('italic');
 
     // test JSON conversion
     let json = JSON.stringify(saved);

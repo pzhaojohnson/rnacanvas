@@ -1,16 +1,6 @@
 import type { Base } from 'Draw/bases/Base';
 
-import { SVGFontFamily } from 'Values/svg/SVGFontFamily';
-import { SVGFontSize } from 'Values/svg/SVGFontSize';
-import { SVGFontWeight } from 'Values/svg/SVGFontWeight';
-import { SVGFontStyle } from 'Values/svg/SVGFontStyle';
-
-const textAttributeNames = [
-  'font-family',
-  'font-size',
-  'font-weight',
-  'font-style',
-] as const;
+import { SVGTextDefaults } from 'Settings/defaults/svg/SVGTextDefaults';
 
 export type SavedBaseDefaults = (
   ReturnType<
@@ -22,32 +12,20 @@ export type SavedBaseDefaults = (
  * Default values for bases in the drawing of the app.
  */
 export class BaseDefaults {
-  text: {
-    'font-family': SVGFontFamily,
-    'font-size': SVGFontSize,
-    'font-weight': SVGFontWeight,
-    'font-style': SVGFontStyle,
-  };
+  text = new SVGTextDefaults();
 
   constructor() {
-    this.text = {
-      'font-family': new SVGFontFamily('Arial'),
-      'font-size': new SVGFontSize(9),
-      'font-weight': new SVGFontWeight(700),
-      'font-style': new SVGFontStyle('normal'),
-    };
+    this.text['font-family'].setValue('Arial');
+    this.text['font-size'].setValue(9);
+    this.text['font-weight'].setValue(700);
+    this.text['font-style'].setValue('normal');
   }
 
   /**
    * Sets the values of the base to these default values.
    */
   applyTo(b: Base) {
-    b.text.attr({
-      'font-family': this.text['font-family'].getValue(),
-      'font-size': this.text['font-size'].getValue(),
-      'font-weight': this.text['font-weight'].getValue(),
-      'font-style': this.text['font-style'].getValue(),
-    });
+    this.text.applyTo(b.text);
   }
 
   /**
@@ -56,12 +34,7 @@ export class BaseDefaults {
    */
   toSaved() {
     return {
-      text: {
-        'font-family': this.text['font-family'].getValue(),
-        'font-size': this.text['font-size'].getValue(),
-        'font-weight': this.text['font-weight'].getValue(),
-        'font-style': this.text['font-style'].getValue(),
-      },
+      text: this.text.toSaved(),
     };
   }
 
@@ -76,18 +49,9 @@ export class BaseDefaults {
    * Invalid and undefined saved values are ignored.
    */
   applySaved(saved: SavedBaseDefaults | unknown) {
-    textAttributeNames.forEach(name => {
-      try {
-        // could throw since type of saved is unknown
-        let value: unknown = (saved as any).text[name];
-
-        if (value !== undefined) {
-          // setValue method might throw for invalid values
-          this.text[name].setValue(value);
-        }
-      } catch {
-        // just ignore invalid and undefined values
-      }
-    });
+    try {
+      let savedTextDefaults: unknown = (saved as any).text;
+      this.text.applySaved(savedTextDefaults);
+    } catch {}
   }
 }
