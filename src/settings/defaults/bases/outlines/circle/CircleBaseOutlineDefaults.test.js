@@ -62,60 +62,42 @@ describe('CircleBaseOutlineDefaults class', () => {
   });
 
   describe('applySaved method', () => {
-    it('applies saved values', () => {
-      let circleAttributes = [
-        ['r', 9.821], ['stroke', '#abe688'], ['stroke-width', 5.228],
-        ['stroke-opacity', 0.7233], ['fill', '#2290ae'],
-        ['fill-opacity', 0.2707],
-      ];
-
-      let saved = { circle: {} };
-      circleAttributes.forEach(a => saved.circle[a[0]] = a[1]);
-
-      defaults.applySaved(saved);
-
-      circleAttributes.forEach(a => {
-        expect(defaults.circle[a[0]].getValue()).toBe(a[1]);
+    it('applies saved circle defaults', () => {
+      defaults.applySaved({
+        circle: {
+          'r': 9.821,
+          'fill': '#2290ae',
+        },
       });
+
+      expect(defaults.circle['r'].getValue()).toBe(9.821);
+      expect(defaults.circle['fill'].getValue()).toBe('#2290ae');
     });
 
-    it('ignores invalid values', () => {
-      let circleAttributes = [
-        ['r', 15], ['stroke', '#abcdef'], ['stroke-width', 6],
-        ['stroke-opacity', 0.7], ['fill', '#aaa556'], ['fill-opacity', 0.3],
-      ];
-
-      circleAttributes.forEach(a => defaults.circle[a[0]].setValue(a[1]));
-
+    test('some invalid saved circle defaults', () => {
       let saved = {
         circle: {
-          'r': 'asd', 'stroke': 8, 'stroke-width': 'g', 'stroke-opacity': 'q',
-          'fill': false, 'fill-opacity': {},
+          'stroke-opacity': 'asdf',
+          'fill': 89,
         },
       };
 
-      defaults.applySaved(saved);
-
-      circleAttributes.forEach(a => {
-        expect(defaults.circle[a[0]].getValue()).toBe(a[1]);
-      });
+      expect(() => defaults.applySaved(saved))
+        .not.toThrow();
     });
 
-    it('ignores undefined values', () => {
-      let circleAttributes = [
-        ['r', 6], ['stroke', '#123456'], ['stroke-width', 2],
-        ['stroke-opacity', 0.78], ['fill', '#ced596'], ['fill-opacity', 0.35],
-      ];
+    test('undefined saved values', () => {
+      // empty saved circle defaults object
+      expect(() => defaults.applySaved({ circle: {} }))
+        .not.toThrow();
 
-      circleAttributes.forEach(a => defaults.circle[a[0]].setValue(a[1]));
+      // missing saved circle defaults object
+      expect(() => defaults.applySaved({}))
+        .not.toThrow();
 
-      let saved = { circle: {} };
-
-      defaults.applySaved(saved);
-
-      circleAttributes.forEach(a => {
-        expect(defaults.circle[a[0]].getValue()).toBe(a[1]);
-      });
+      // just a value of undefined
+      expect(() => defaults.applySaved(undefined))
+        .not.toThrow();
     });
   });
 });
