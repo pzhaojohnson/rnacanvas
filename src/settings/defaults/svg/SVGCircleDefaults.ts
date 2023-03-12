@@ -5,7 +5,7 @@ import { NonNegativeFiniteNumber } from 'Values/NonNegativeFiniteNumber';
 import { SVGColor } from 'Values/svg/SVGColor';
 import { SVGOpacity } from 'Values/svg/SVGOpacity';
 
-const attributeNames = [
+const valueNames = [
   'r',
   'stroke',
   'stroke-width',
@@ -14,7 +14,7 @@ const attributeNames = [
   'fill-opacity',
 ] as const;
 
-type AttributeName = typeof attributeNames[number];
+type ValueName = typeof valueNames[number];
 
 export type SavedSVGCircleDefaults = (
   ReturnType<
@@ -40,7 +40,7 @@ export class SVGCircleDefaults {
    * Sets the values of the SVG circle element to these default values.
    */
   applyTo(circle: SVG.Circle) {
-    attributeNames.forEach(name => {
+    valueNames.forEach(name => {
       circle.attr(name, this[name].getValue());
     });
   }
