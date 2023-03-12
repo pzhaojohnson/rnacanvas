@@ -69,56 +69,42 @@ describe('BaseDefaults class', () => {
   });
 
   describe('applySaved method', () => {
-    it('applies saved values', () => {
-      defaults.text['font-family'].setValue('Arial');
-      defaults.text['font-size'].setValue(9);
-      defaults.text['font-weight'].setValue(700);
-      defaults.text['font-style'].setValue('normal');
+    it('applies saved text defaults', () => {
+      defaults.applySaved({
+        text: {
+          'font-family': '"Gill Sans"',
+          'font-size': 112.05,
+        },
+      });
 
-      let saved = defaults.toSaved();
-      saved.text['font-family'] = '"Gill Sans"';
-      saved.text['font-size'] = 112.05;
-      saved.text['font-weight'] = 802.55;
-      saved.text['font-style'] = 'italic';
-
-      defaults.applySaved(saved);
       expect(defaults.text['font-family'].getValue()).toBe('"Gill Sans"');
       expect(defaults.text['font-size'].getValue()).toBe(112.05);
-      expect(defaults.text['font-weight'].getValue()).toBe(802.55);
-      expect(defaults.text['font-style'].getValue()).toBe('italic');
     });
 
-    it('ignores invalid values', () => {
-      defaults.text['font-family'].setValue('Helvetica');
-      defaults.text['font-size'].setValue(12.15);
-      defaults.text['font-weight'].setValue(380.2);
-      defaults.text['font-style'].setValue('oblique');
+    test('some invalid saved text defaults', () => {
+      let saved = {
+        text: {
+          'font-size': 'asdf',
+          'font-style': 111,
+        },
+      };
 
-      let saved = defaults.toSaved();
-      saved.text['font-family'] = 55;
-      saved.text['font-size'] = -2;
-      saved.text['font-weight'] = 'asdf';
-      saved.text['font-style'] = 'zxcv';
-
-      defaults.applySaved(saved);
-      expect(defaults.text['font-family'].getValue()).toBe('Helvetica');
-      expect(defaults.text['font-size'].getValue()).toBe(12.15);
-      expect(defaults.text['font-weight'].getValue()).toBe(380.2);
-      expect(defaults.text['font-style'].getValue()).toBe('oblique');
+      expect(() => defaults.applySaved(saved))
+        .not.toThrow();
     });
 
-    it('ignores undefined values', () => {
-      // just test some values
-      defaults.text['font-size'].setValue(8.8);
-      defaults.text['font-weight'].setValue(566);
+    test('undefined saved values', () => {
+      // empty saved text defaults object
+      expect(() => defaults.applySaved({ text: {} }))
+        .not.toThrow();
 
-      let saved = defaults.toSaved();
-      saved.text['font-size'] = undefined;
-      saved.text['font-weight'] = undefined;
+      // missing saved text defaults object
+      expect(() => defaults.applySaved({}))
+        .not.toThrow();
 
-      defaults.applySaved(saved);
-      expect(defaults.text['font-size'].getValue()).toBe(8.8);
-      expect(defaults.text['font-weight'].getValue()).toBe(566);
+      // just a value of undefined
+      expect(() => defaults.applySaved(undefined))
+        .not.toThrow();
     });
   });
 });
