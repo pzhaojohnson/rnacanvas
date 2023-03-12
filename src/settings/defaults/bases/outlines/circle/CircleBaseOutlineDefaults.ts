@@ -1,20 +1,6 @@
 import type { CircleBaseOutline } from 'Draw/bases/outlines/circle/CircleBaseOutline';
 
-import { NonNegativeFiniteNumber } from 'Values/NonNegativeFiniteNumber';
-
-import { SVGColor } from 'Values/svg/SVGColor';
-import { SVGOpacity } from 'Values/svg/SVGOpacity';
-
-const circleAttributeNames = [
-  'r',
-  'stroke',
-  'stroke-width',
-  'stroke-opacity',
-  'fill',
-  'fill-opacity',
-] as const;
-
-type CircleAttributeName = typeof circleAttributeNames[number];
+import { SVGCircleDefaults } from 'Settings/defaults/svg/SVGCircleDefaults';
 
 export type SavedCircleBaseOutlineDefaults = (
   ReturnType<
@@ -26,24 +12,17 @@ export type SavedCircleBaseOutlineDefaults = (
  * Default values for circle base outlines in the drawing of the app.
  */
 export class CircleBaseOutlineDefaults {
-  circle: {
-    'r': NonNegativeFiniteNumber,
-    'stroke': SVGColor,
-    'stroke-width': NonNegativeFiniteNumber,
-    'stroke-opacity': SVGOpacity,
-    'fill': SVGColor,
-    'fill-opacity': SVGOpacity,
-  };
+  circle = new SVGCircleDefaults();
 
   constructor() {
-    this.circle = {
-      'r': new NonNegativeFiniteNumber(7),
-      'stroke': new SVGColor('#00ffff'),
-      'stroke-width': new NonNegativeFiniteNumber(1),
-      'stroke-opacity': new SVGOpacity(1),
-      'fill': new SVGColor('#c3ffff'),
-      'fill-opacity': new SVGOpacity(1),
-    };
+    this.circle['r'].setValue(7);
+
+    this.circle['stroke'].setValue('#00ffff');
+    this.circle['stroke-width'].setValue(1);
+    this.circle['stroke-opacity'].setValue(1);
+
+    this.circle['fill'].setValue('#c3ffff');
+    this.circle['fill-opacity'].setValue(1);
   }
 
   /**
@@ -51,9 +30,7 @@ export class CircleBaseOutlineDefaults {
    * values.
    */
   applyTo(cbo: CircleBaseOutline) {
-    circleAttributeNames.forEach(name => {
-      cbo.circle.attr(name, this.circle[name].getValue());
-    });
+    this.circle.applyTo(cbo.circle);
   }
 
   /**
@@ -62,14 +39,7 @@ export class CircleBaseOutlineDefaults {
    */
   toSaved() {
     return {
-      circle: {
-        'r': this.circle['r'].getValue(),
-        'stroke': this.circle['stroke'].getValue(),
-        'stroke-width': this.circle['stroke-width'].getValue(),
-        'stroke-opacity': this.circle['stroke-opacity'].getValue(),
-        'fill': this.circle['fill'].getValue(),
-        'fill-opacity': this.circle['fill-opacity'].getValue(),
-      },
+      circle: this.circle.toSaved(),
     };
   }
 
@@ -85,21 +55,12 @@ export class CircleBaseOutlineDefaults {
    *
    * Invalid and undefined values are ignored.
    */
-  applySaved(saved: unknown): void;
+  applySaved(saved: unknown): void | never;
 
-  applySaved(saved: unknown) {
-    circleAttributeNames.forEach(name => {
-      try {
-        // could throw since the type of saved is unknown
-        let value: unknown = (saved as any).circle[name];
-
-        if (value !== undefined) {
-          // setValue method might throw for invalid values
-          this.circle[name].setValue(value);
-        }
-      } catch {
-        // just ignore invalid and undefined values
-      }
-    });
+  applySaved(saved: unknown): void | never {
+    try {
+      let savedCircleDefaults: unknown = (saved as any).circle;
+      this.circle.applySaved(savedCircleDefaults);
+    } catch {}
   }
 }
