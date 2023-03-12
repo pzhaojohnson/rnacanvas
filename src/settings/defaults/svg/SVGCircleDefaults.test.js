@@ -8,9 +8,9 @@ let svg = null;
 
 let circle = null;
 
-let defaults = null;
+let randomValues = null;
 
-let randomAttributes = null;
+let randomDefaults = null;
 
 beforeEach(() => {
   svg = SVG.SVG();
@@ -18,9 +18,7 @@ beforeEach(() => {
 
   circle = svg.circle(50);
 
-  defaults = new SVGCircleDefaults();
-
-  randomAttributes = [
+  randomValues = [
     ['r', 20 * Math.random()],
     ['stroke', SVGColor.random().toHex()],
     ['stroke-width', 12 * Math.random()],
@@ -28,12 +26,18 @@ beforeEach(() => {
     ['fill', SVGColor.random().toHex()],
     ['fill-opacity', Math.random()],
   ];
+
+  randomDefaults = new SVGCircleDefaults();
+
+  randomValues.forEach(v => {
+    randomDefaults[v[0]].setValue(v[1]);
+  });
 });
 
 afterEach(() => {
-  randomAttributes = null;
+  randomDefaults = null;
 
-  defaults = null;
+  randomValues = null;
 
   circle = null;
 
@@ -44,16 +48,30 @@ afterEach(() => {
 describe('SVGCircleDefaults class', () => {
   describe('applyTo method', () => {
     beforeEach(() => {
-      randomAttributes.forEach(a => {
-        defaults[a[0]].setValue(a[1]);
-      });
-
-      defaults.applyTo(circle);
+      randomDefaults.applyTo(circle);
     });
 
     it('sets the values of the SVG circle element', () => {
-      randomAttributes.forEach(a => {
-        expect(circle.attr(a[0])).toBe(a[1]);
+      randomValues.forEach(v => {
+        expect(circle.attr(v[0])).toBe(v[1]);
+      });
+    });
+  });
+
+  describe('toSaved method', () => {
+    let saved = null;
+
+    beforeEach(() => {
+      saved = randomDefaults.toSaved();
+    });
+
+    afterEach(() => {
+      saved = null;
+    });
+
+    it('includes all default values', () => {
+      randomValues.forEach(v => {
+        expect(saved[v[0]]).toBe(v[1]);
       });
     });
   });

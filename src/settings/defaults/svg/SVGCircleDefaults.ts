@@ -16,6 +16,12 @@ const attributeNames = [
 
 type AttributeName = typeof attributeNames[number];
 
+export type SavedSVGCircleDefaults = (
+  ReturnType<
+    InstanceType<typeof SVGCircleDefaults>['toSaved']
+  >
+);
+
 /**
  * Possible default values that could be used for SVG circle elements
  * in the drawing of the app.
@@ -37,5 +43,22 @@ export class SVGCircleDefaults {
     attributeNames.forEach(name => {
       circle.attr(name, this[name].getValue());
     });
+  }
+
+  /**
+   * Returns the saved form of these SVG circle element defaults.
+   *
+   * The saved form of these SVG circle element defaults can be
+   * directly converted to and from JSON.
+   */
+  toSaved() {
+    return {
+      'r': this['r'].toSaved(),
+      'stroke': this['stroke'].toSaved(),
+      'stroke-width': this['stroke-width'].toSaved(),
+      'stroke-opacity': this['stroke-opacity'].toSaved(),
+      'fill': this['fill'].toSaved(),
+      'fill-opacity': this['fill-opacity'].toSaved(),
+    };
   }
 }
