@@ -1,3 +1,5 @@
+import * as SVG from '@svgdotjs/svg.js';
+
 import { NonNegativeFiniteNumber } from 'Values/NonNegativeFiniteNumber';
 
 import { SVGColor } from 'Values/svg/SVGColor';
@@ -27,4 +29,13 @@ export class SVGCircleDefaults {
 
   'fill' = new SVGColor('#c3ffff');
   'fill-opacity' = new SVGOpacity(1);
+
+  /**
+   * Sets the values of the SVG circle element to these default values.
+   */
+  applyTo(circle: SVG.Circle) {
+    attributeNames.forEach(name => {
+      circle.attr(name, this[name].getValue());
+    });
+  }
 }
