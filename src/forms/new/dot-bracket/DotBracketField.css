@@ -6,10 +6,10 @@
   border-radius: 2px;
   padding: 3px 6px;
 
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  color: hsl(240, 3%, 16%);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  font-weight: normal;
+  color: black;
 }
 
 .textArea:hover {
