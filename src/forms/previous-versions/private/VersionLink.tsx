@@ -9,6 +9,8 @@ export type Props = {
    * A Google App Engine version ID.
    */
   versionId: string;
+
+  style?: React.CSSProperties;
 };
 
 /**
@@ -30,8 +32,10 @@ export function VersionLink(props: Props) {
   // a good general practice to prevent tabnabbing
   let rel = 'noreferrer noopener';
 
+  let style = props.style;
+
   return (
-    <a {...{ href, target, rel }} >
+    <a {...{ href, target, rel, style }} >
       {month.fullName} {day}, {year}
     </a>
   );

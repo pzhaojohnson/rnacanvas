@@ -40,4 +40,18 @@ describe('VersionLink component', () => {
       });
     }).toThrow();
   });
+
+  test('style prop', () => {
+    let versionLink = (
+      <VersionLink
+        versionId='20221102t100547'
+        style={{ marginRight: '269px', marginBottom: '318px' }}
+      />
+    );
+
+    act(() => render(versionLink, container));
+
+    expect(container.firstChild.style.marginRight).toBe('269px');
+    expect(container.firstChild.style.marginBottom).toBe('318px');
+  });
 });
