@@ -5,6 +5,8 @@ import { unmountComponentAtNode } from 'react-dom';
 
 import { act } from 'react-dom/test-utils';
 
+import { Simulate } from 'react-dom/test-utils';
+
 import { PreviousVersionsForm } from './PreviousVersionsForm';
 
 let container = null;
@@ -20,8 +22,22 @@ afterEach(() => {
   container = null;
 });
 
-test('PreviousVersionsForm component', () => {
-  act(() => {
-    render(<PreviousVersionsForm />, container);
+describe('PreviousVersionsForm component', () => {
+  it('passes goBack callback to back button', () => {
+    let goBack = jest.fn();
+
+    act(() => {
+      render(<PreviousVersionsForm goBack={goBack} />, container);
+    });
+
+    // hard coded
+    let previousVersionsForm = container.childNodes[0];
+    let header = previousVersionsForm.childNodes[0];
+    let backButtonContainer = header.childNodes[0];
+    let backButton = backButtonContainer.childNodes[0];
+
+    expect(goBack).not.toHaveBeenCalled();
+    Simulate.click(backButton);
+    expect(goBack).toHaveBeenCalledTimes(1);
   });
 });
