@@ -1,4 +1,6 @@
-.leadingNoteOnSavedDrawings {}
+.leadingNoteOnSavedDrawings {
+  width: 800px;
+}
 
 .leadingText {
   font-family: "Open Sans", sans-serif;
