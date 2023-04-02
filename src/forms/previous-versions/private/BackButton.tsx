@@ -7,6 +7,7 @@ function BackArrow() {
     <path
       d="M 6 1 L 1 7 L 6 13"
       stroke="blue" strokeWidth="2" strokeLinecap="round"
+      fill="none"
     />
   );
 
@@ -18,7 +19,7 @@ function BackArrow() {
   );
 
   return (
-    <svg viewBox="0 0 16 14" >
+    <svg height="14px" viewBox="0 0 16 14" >
       {head}
       {shaft}
     </svg>

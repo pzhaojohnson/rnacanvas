@@ -4,6 +4,8 @@
 
 .backButtonContainer {
   position: absolute;
+  top: -22px;
+  left: -44px;
 }
 
 .title {
