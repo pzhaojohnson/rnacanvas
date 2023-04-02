@@ -1,4 +1,9 @@
 .previousVersionsList {
+  margin: 20px 0px 0px 0px;
+
+  width: 600px;
+  min-height: 294px;
+
   display: flex;
   flex-direction: column;
 }
