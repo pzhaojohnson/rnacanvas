@@ -1,0 +1,17 @@
+.leadingNoteOnSavedDrawings {}
+
+.leadingText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+
+.mainText {
+  margin: 12px 0px 0px 8px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+}
