@@ -20,11 +20,11 @@ const previousVersionIds = [
 export function PreviousVersionsList() {
   return (
     <div className={styles.previousVersionsList} >
-      {previousVersionIds.map((id, i) => {
+      {previousVersionIds.map((id, i) => (
         <ErrorBoundary key={i} >
           <VersionLink versionId={id} />
         </ErrorBoundary>
-      })}
+      ))}
     </div>
   );
 }
