@@ -1,0 +1,25 @@
+.header {
+  position: relative;
+}
+
+.backButtonContainer {
+  position: absolute;
+}
+
+.title {
+  margin-left: 60px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+}
+
+.underline {
+  margin-top: 8px;
+
+  width: 960px;
+  height: 1px;
+
+  background-color: hsl(240, 30%, 88%);
+}
