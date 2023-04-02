@@ -1,0 +1,10 @@
+.backButton {}
+
+.text {
+  margin: 0px 0px 0px 4px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: blue;
+}
