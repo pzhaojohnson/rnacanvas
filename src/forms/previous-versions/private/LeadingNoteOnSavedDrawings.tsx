@@ -12,7 +12,7 @@ export function LeadingNoteOnSavedDrawings() {
   let mainText = (
     <p className={styles.mainText} >
       Saved drawings from later versions of the app
-      may not be compatible with earlier versions of the app.
+      might not be compatible with earlier versions of the app.
     </p>
   );
 
