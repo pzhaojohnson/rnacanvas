@@ -22,9 +22,11 @@ export function PreviousVersionsForm(props: Props) {
 
   return (
     <div className={styles.previousVersionsForm} >
-      <Header backButton={backButton} />
-      <LeadingNoteOnSavedDrawings />
-      <PreviousVersionsList />
+      <div className={styles.content} >
+        <Header backButton={backButton} />
+        <LeadingNoteOnSavedDrawings />
+        <PreviousVersionsList />
+      </div>
     </div>
   );
 }

@@ -1,8 +1,7 @@
 .previousVersionsList {
-  margin: 20px 0px 0px 0px;
+  margin: 23px 0px 0px 165px;
 
   width: 580px;
-  min-height: 294px;
 
   display: flex;
   flex-direction: column;

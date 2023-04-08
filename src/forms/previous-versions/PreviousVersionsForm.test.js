@@ -32,7 +32,8 @@ describe('PreviousVersionsForm component', () => {
 
     // hard coded
     let previousVersionsForm = container.childNodes[0];
-    let header = previousVersionsForm.childNodes[0];
+    let content = previousVersionsForm.childNodes[0];
+    let header = content.childNodes[0];
     let backButtonContainer = header.childNodes[0];
     let backButton = backButtonContainer.childNodes[0];
 

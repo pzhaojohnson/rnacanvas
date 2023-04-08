@@ -9,3 +9,11 @@
 
   overflow: auto;
 }
+
+.content {
+  width: 906px;
+  height: 358px;
+
+  display: flex;
+  flex-direction: column;
+}
