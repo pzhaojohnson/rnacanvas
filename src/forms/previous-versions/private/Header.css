@@ -14,14 +14,14 @@
   position: relative;
 
   font-family: "Open Sans", sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   color: black;
 }
 
 .RNA {
   font-family: "Open Sans", sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   color: black;
 }
@@ -31,13 +31,13 @@
   top: -9px;
 
   font-family: "Corinthia", cursive;
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 700;
   color: black;
 }
 
 .underline {
-  margin-top: 8px;
+  margin-top: 4px;
 
   width: 906px;
   height: 1px;
