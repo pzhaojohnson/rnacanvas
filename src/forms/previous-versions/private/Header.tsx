@@ -19,7 +19,9 @@ export function Header(props: Props) {
 
   let title = (
     <p className={styles.title} >
-      Previous Versions
+      Previous Versions of
+      <span className={styles.RNA} >RNA</span>
+      <span className={styles.canvas} >canvas</span>
     </p>
   );
 

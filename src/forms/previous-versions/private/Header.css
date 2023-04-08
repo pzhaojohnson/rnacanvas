@@ -11,8 +11,27 @@
 .title {
   margin-left: 60px;
 
+  position: relative;
+
   font-family: "Open Sans", sans-serif;
   font-size: 32px;
+  font-weight: 700;
+  color: black;
+}
+
+.RNA {
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+}
+
+.canvas {
+  position: absolute;
+  top: -9px;
+
+  font-family: "Corinthia", cursive;
+  font-size: 56px;
   font-weight: 700;
   color: black;
 }
