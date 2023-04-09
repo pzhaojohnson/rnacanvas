@@ -6,7 +6,7 @@ function BackArrow() {
   let head = (
     <path
       d="M 6 1 L 1 7 L 6 13"
-      stroke="#1010cc" strokeWidth="2" strokeLinecap="round"
+      stroke="hsl(240, 82%, 43.1%)" strokeWidth="2" strokeLinecap="round"
       fill="none"
     />
   );
@@ -14,7 +14,7 @@ function BackArrow() {
   let shaft = (
     <line
       x1="1" y1="7" x2="15" y2="7"
-      stroke="#1010cc" strokeWidth="2" strokeLinecap="round"
+      stroke="hsl(240, 82%, 43.1%)" strokeWidth="2" strokeLinecap="round"
     />
   );
 
