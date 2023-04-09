@@ -4,13 +4,13 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
   overflow: auto;
 }
 
 .content {
+  margin: auto;
+
   width: 906px;
   height: 358px;
 
