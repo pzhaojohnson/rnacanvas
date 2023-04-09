@@ -25,5 +25,10 @@ describe('PreviousVersionsList component', () => {
     act(() => {
       render(<PreviousVersionsList />, container);
     });
+
+    let anchors = container.firstChild.getElementsByTagName('a');
+
+    // hard coded to match number of links
+    expect(anchors.length).toBe(1);
   });
 });
