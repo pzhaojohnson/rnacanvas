@@ -1,4 +1,6 @@
 .backButton {
+  margin: 8px 0px 0px 8px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
