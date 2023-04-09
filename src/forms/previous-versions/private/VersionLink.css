@@ -16,3 +16,19 @@
 .versionLink:hover {
   text-decoration: underline;
 }
+
+.arrowHead {
+  stroke: hsl(240, 76.2%, 43.5%);
+}
+
+.versionLink:visited .arrowHead {
+  stroke: hsl(300, 75.3%, 28.4%);
+}
+
+.arrowShaft {
+  stroke: hsl(240, 76.2%, 43.5%);
+}
+
+.versionLink:visited .arrowShaft {
+  stroke: hsl(300, 75.3%, 28.4%);
+}
