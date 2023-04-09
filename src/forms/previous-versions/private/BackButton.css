@@ -1,9 +1,24 @@
 .backButton {
   margin: 8px 0px 0px 8px;
 
+  border-radius: 4px;
+  padding: 3px 6px;
+
+  align-self: start;
+
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  cursor: pointer;
+}
+
+.backButton:hover {
+  background-color: hsl(215.3, 100%, 93.8%);
+}
+
+.backButton:active {
+  background-color: hsl(219.3, 100%, 87.8%);
 }
 
 .text {
@@ -13,4 +28,6 @@
   font-size: 14px;
   font-weight: 600;
   color: hsl(240, 82%, 43.1%);
+
+  cursor: pointer;
 }
