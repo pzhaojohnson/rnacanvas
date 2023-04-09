@@ -18,12 +18,11 @@ export type Props = {
 };
 
 export function PreviousVersionsForm(props: Props) {
-  let backButton = <BackButton onClick={props.goBack} />;
-
   return (
     <div className={styles.previousVersionsForm} >
       <div className={styles.content} >
-        <Header backButton={backButton} />
+        <BackButton onClick={props.goBack} />
+        <Header />
         <LeadingNoteOnSavedDrawings />
         <PreviousVersionsList />
       </div>
