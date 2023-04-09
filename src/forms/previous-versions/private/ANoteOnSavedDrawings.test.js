@@ -5,7 +5,7 @@ import { unmountComponentAtNode } from 'react-dom';
 
 import { act } from 'react-dom/test-utils';
 
-import { LeadingNoteOnSavedDrawings } from './LeadingNoteOnSavedDrawings';
+import { ANoteOnSavedDrawings } from './ANoteOnSavedDrawings';
 
 let container = null;
 
@@ -20,10 +20,10 @@ afterEach(() => {
   container = null;
 });
 
-describe('LeadingNoteOnSavedDrawings component', () => {
+describe('ANoteOnSavedDrawings component', () => {
   it('renders', () => {
     act(() => {
-      render(<LeadingNoteOnSavedDrawings />, container);
+      render(<ANoteOnSavedDrawings />, container);
     });
   });
 });

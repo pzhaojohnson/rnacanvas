@@ -6,7 +6,7 @@ import { Header } from './private/Header';
 
 import { BackButton } from './private/BackButton';
 
-import { LeadingNoteOnSavedDrawings } from './private/LeadingNoteOnSavedDrawings';
+import { ANoteOnSavedDrawings } from './private/ANoteOnSavedDrawings';
 
 import { PreviousVersionsList } from './private/PreviousVersionsList';
 
@@ -23,7 +23,7 @@ export function PreviousVersionsForm(props: Props) {
       <div className={styles.content} >
         <BackButton onClick={props.goBack} />
         <Header />
-        <LeadingNoteOnSavedDrawings />
+        <ANoteOnSavedDrawings />
         <PreviousVersionsList />
       </div>
     </div>

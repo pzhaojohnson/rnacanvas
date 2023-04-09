@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import styles from './LeadingNoteOnSavedDrawings.css';
+import styles from './ANoteOnSavedDrawings.css';
 
-export function LeadingNoteOnSavedDrawings() {
+export function ANoteOnSavedDrawings() {
   let leadingText = (
     <p className={styles.leadingText} >
       One thing to note...
@@ -17,7 +17,7 @@ export function LeadingNoteOnSavedDrawings() {
   );
 
   return (
-    <div className={styles.leadingNoteOnSavedDrawings} >
+    <div className={styles.aNoteOnSavedDrawings} >
       {leadingText}
       {mainText}
     </div>
