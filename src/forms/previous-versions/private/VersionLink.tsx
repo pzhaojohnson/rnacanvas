@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import styles from './VersionLink.css';
+
 import { VersionId } from './VersionId';
 
 import { Month } from './Month';
@@ -17,6 +19,8 @@ export type Props = {
  * A link to a specific version of the app.
  */
 export function VersionLink(props: Props) {
+  let className = styles.versionLink;
+
   let versionId = new VersionId(props.versionId);
 
   let date = versionId.toDate();
@@ -35,7 +39,7 @@ export function VersionLink(props: Props) {
   let style = props.style;
 
   return (
-    <a {...{ href, target, rel, style }} >
+    <a {...{ className, href, target, rel, style }} >
       {month.fullName} {day}, {year}
     </a>
   );

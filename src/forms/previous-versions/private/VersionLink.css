@@ -1,0 +1,18 @@
+.versionLink {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(240, 76.2%, 43.5%);
+
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.versionLink:visited {
+  color: hsl(300, 75.3%, 28.4%);
+}
+
+.versionLink:hover {
+  text-decoration: underline;
+}
