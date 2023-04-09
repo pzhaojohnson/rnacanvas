@@ -102,6 +102,39 @@
   }
 }
 
+.linkToPreviousVersionsForm {
+  margin: 4px 0px 0px 0px;
+
+  align-self: center;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: hsl(270.3, 83.7%, 24.1%);
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  animation: linkToPreviousVersionsFormFadeIn 3s ease-in;
+}
+
+.linkToPreviousVersionsForm:hover {
+  text-decoration: underline;
+}
+
+@keyframes linkToPreviousVersionsFormFadeIn {
+  0% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .topSection {
   margin: 128px 0 0 0;
 

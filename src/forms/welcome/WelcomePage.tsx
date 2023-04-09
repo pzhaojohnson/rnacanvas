@@ -9,6 +9,8 @@ import { DrawingSlideshow } from './drawings/DrawingSlideshow';
 import { CreateNewDrawingForm } from 'Forms/new/CreateNewDrawingForm';
 import { OpenDrawingForm } from 'Forms/open/OpenDrawingForm';
 
+import { PreviousVersionsForm } from 'Forms/previous-versions/PreviousVersionsForm';
+
 export type Props = {
   /**
    * A reference to the whole app.
@@ -102,6 +104,30 @@ function UpdatesNotice() {
   );
 }
 
+function LinkToPreviousVersionsForm(props: Props) {
+  let { app } = props;
+
+  let className = styles.linkToPreviousVersionsForm;
+
+  let goBack = () => {
+    app.formContainer.renderForm(
+      () => <WelcomePage {...{ app }} />
+    );
+  };
+
+  let onClick = () => {
+    app.formContainer.renderForm(
+      () => <PreviousVersionsForm {...{ goBack }} />
+    );
+  };
+
+  return (
+    <p {...{ className, onClick }} >
+      Use a previous version of the app...
+    </p>
+  );
+}
+
 export function WelcomePage(props: Props) {
   return (
     <div style={{ width: '100vw', height: '100%', overflow: 'auto' }} >
@@ -117,6 +143,7 @@ export function WelcomePage(props: Props) {
             </div>
             <MoreInfo />
             <UpdatesNotice />
+            <LinkToPreviousVersionsForm {...props} />
           </div>
         </div>
         <DrawingSlideshow />
