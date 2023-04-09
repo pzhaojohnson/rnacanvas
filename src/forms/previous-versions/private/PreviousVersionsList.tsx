@@ -4,7 +4,7 @@ import styles from './PreviousVersionsList.css';
 
 import { ErrorBoundary } from 'Utilities/react/ErrorBoundary';
 
-import { VersionLink } from './VersionLink';
+import { DottedVersionLink } from './DottedVersionLink';
 
 /**
  * Add or remove version IDs from this array to control which previous
@@ -22,7 +22,7 @@ export function PreviousVersionsList() {
     <div className={styles.previousVersionsList} >
       {previousVersionIds.map((id, i) => (
         <ErrorBoundary key={i} >
-          <VersionLink versionId={id} />
+          <DottedVersionLink versionId={id} />
         </ErrorBoundary>
       ))}
     </div>
