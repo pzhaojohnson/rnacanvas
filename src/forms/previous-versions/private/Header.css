@@ -4,12 +4,6 @@
   position: relative;
 }
 
-.backButtonContainer {
-  position: absolute;
-  top: -22px;
-  left: -44px;
-}
-
 .title {
   margin-left: 60px;
 

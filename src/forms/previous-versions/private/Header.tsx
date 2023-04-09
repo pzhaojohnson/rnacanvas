@@ -2,21 +2,9 @@ import * as React from 'react';
 
 import styles from './Header.css';
 
-export type Props = {
-  /**
-   * A back button that can optionally be rendered in the header of
-   * this form.
-   */
-  backButton?: React.ReactNode;
-};
+export type Props = {};
 
 export function Header(props: Props) {
-  let backButtonContainer = (
-    <div className={styles.backButtonContainer} >
-      {props.backButton}
-    </div>
-  );
-
   let title = (
     <p className={styles.title} >
       Previous Versions of&nbsp;
@@ -29,7 +17,6 @@ export function Header(props: Props) {
 
   return (
     <div className={styles.header} >
-      {backButtonContainer}
       {title}
       {underline}
     </div>

@@ -21,25 +21,11 @@ afterEach(() => {
 });
 
 describe('Header component', () => {
-  it('renders back button when provided', () => {
-    let backButton = <p>Back button.</p>;
-
-    act(() => {
-      render(<Header backButton={backButton} />, container);
-    });
-
-    expect(container.firstChild.textContent.includes('Back button.'))
-      .toBeTruthy();
-  });
-
-  it('can render with no back button', () => {
+  it('renders', () => {
     expect(() => {
       act(() => {
         render(<Header />, container);
       });
     }).not.toThrow();
-
-    expect(container.firstChild.textContent.includes('Back button.'))
-      .toBeFalsy();
   });
 });
