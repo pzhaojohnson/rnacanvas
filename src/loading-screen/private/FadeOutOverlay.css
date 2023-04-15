@@ -1,0 +1,22 @@
+.fadeOutOverlay {
+  /* Occupy whole window. */
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  background-color: white;
+
+  /* Animation duration to be set using JavaScript. */
+  animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
