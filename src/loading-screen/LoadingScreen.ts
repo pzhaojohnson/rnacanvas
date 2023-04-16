@@ -1,3 +1,5 @@
+import styles from './LoadingScreen.css';
+
 import { createWhiteBackground } from './private/createWhiteBackground';
 import { createAppLogo } from './private/createAppLogo';
 
@@ -28,11 +30,16 @@ export class LoadingScreen {
     this.node.style.zIndex = this.zIndex.toString();
 
     let appLogo = createAppLogo();
-    this.node.appendChild(appLogo);
+
+    let appLogoContainer = document.createElement('div');
+    appLogoContainer.className = styles.appLogoContainer;
+
+    appLogoContainer.appendChild(appLogo);
+    this.node.appendChild(appLogoContainer);
 
     // center the app logo
     this.node.style.display = 'flex';
-    appLogo.style.margin = 'auto';
+    appLogoContainer.style.margin = 'auto';
   }
 
   /**
