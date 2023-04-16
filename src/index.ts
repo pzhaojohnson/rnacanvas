@@ -1,10 +1,18 @@
 import './global.css';
 
+import { LoadingScreen } from './loading-screen/LoadingScreen';
+
 import { App } from 'App';
 import { userIsTyping } from 'Utilities/userIsTyping';
 
+let loadingScreen = new LoadingScreen();
+loadingScreen.show();
+
 let app = new App();
-app.appendTo(document.body);
+
+loadingScreen.hideOncePageHasFullyLoaded().then(() => {
+  app.appendTo(document.body);
+});
 
 // disable drag and drop
 document.body.ondragstart = () => false;
