@@ -71,4 +71,24 @@ export class LoadingScreen {
       }, delay);
     });
   }
+
+  /**
+   * Hides the loading screen once the page has fully loaded (or if the
+   * page is already fully loaded).
+   *
+   * Returns a promise that resolves when the loading screen has been
+   * hidden.
+   */
+  hideOncePageHasFullyLoaded() {
+    // check every 50 milliseconds
+    let delay = 50;
+
+    return new Promise<void>(resolve => {
+      setInterval(() => {
+        if (document.readyState == 'complete') {
+          this.hide().then(() => resolve());
+        }
+      }, delay);
+    });
+  }
 }
