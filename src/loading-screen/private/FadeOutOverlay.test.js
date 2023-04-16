@@ -7,14 +7,14 @@ describe('FadeOutOverlay component', () => {
   });
 
   it('uses specified animation duration', () => {
-    let animationDuration = '1209';
+    let animationDuration = '1209ms';
     let fadeOutOverlay = new FadeOutOverlay({ style: { animationDuration } });
-    expect(fadeOutOverlay.node.style.animationDuration).toBe('1209');
+    expect(fadeOutOverlay.node.style.animationDuration).toBe('1209ms');
   });
 
   it('has a nonzero default animation duration', () => {
     let fadeOutOverlay = new FadeOutOverlay();
-    expect(fadeOutOverlay.node.style.animationDuration).toBe('500');
+    expect(fadeOutOverlay.node.style.animationDuration).toBe('500ms');
   });
 
   it('uses specified z-index', () => {

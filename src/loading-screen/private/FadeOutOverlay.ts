@@ -28,7 +28,7 @@ export class FadeOutOverlay {
     this.node = document.createElement('div');
     this.node.className = styles.fadeOutOverlay;
 
-    let defaultAnimationDuration = '500';
+    let defaultAnimationDuration = '500ms';
 
     this.node.style.animationDuration = (
       args?.style?.animationDuration ?? defaultAnimationDuration
