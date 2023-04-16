@@ -52,6 +52,7 @@ export class LoadingScreen {
     let fadeOutOverlay = new FadeOutOverlay({
       style: {
         animationDuration: this.hideAnimationDuration + 'ms',
+        zIndex: (this.zIndex + 1).toString(),
       },
     });
 
