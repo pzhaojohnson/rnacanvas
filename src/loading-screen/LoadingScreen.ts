@@ -85,8 +85,9 @@ export class LoadingScreen {
     let delay = 50;
 
     return new Promise<void>(resolve => {
-      setInterval(() => {
+      let intervalId = setInterval(() => {
         if (document.readyState == 'complete') {
+          clearInterval(intervalId);
           this.hide().then(() => resolve());
         }
       }, delay);
