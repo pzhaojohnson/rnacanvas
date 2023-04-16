@@ -1,6 +1,8 @@
 import { createWhiteBackground } from './private/createWhiteBackground';
 import { createAppLogo } from './private/createAppLogo';
 
+import { FadeOutOverlay } from './private/FadeOutOverlay';
+
 /**
  * A loading screen that covers the whole window when appended to the
  * document body.
@@ -13,6 +15,12 @@ export class LoadingScreen {
    * of everything else.
    */
   zIndex = 10;
+
+  /**
+   * The duration of the fade out animation when hiding the loading
+   * screen.
+   */
+  hideAnimationDuration = 500;
 
   constructor() {
     this.node = createWhiteBackground();
@@ -32,5 +40,35 @@ export class LoadingScreen {
    */
   show() {
     document.body.appendChild(this.node);
+  }
+
+  /**
+   * Hides the loading screen in a fade out animation.
+   *
+   * Returns a promise that resolves when the fade out animation
+   * has finished.
+   */
+  hide() {
+    let fadeOutOverlay = new FadeOutOverlay({
+      style: {
+        animationDuration: this.hideAnimationDuration.toString(),
+      },
+    });
+
+    fadeOutOverlay.show();
+
+    // add 10 milliseconds
+    // (to make sure that the fade out animation has finished)
+    let delay = this.hideAnimationDuration + 10;
+
+    return new Promise<void>(resolve => {
+      setTimeout(() => {
+        // might be best to remove the loading screen first
+        this.node.remove();
+        fadeOutOverlay.hide();
+
+        resolve();
+      }, delay);
+    });
   }
 }
