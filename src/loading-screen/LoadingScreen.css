@@ -1,7 +1,7 @@
 .appLogoContainer {
   animation:
     fadeIn 1s,
-    moveUpAndSpin 0.75s,
+    moveUp 0.75s,
     moveUpAndDownAndSpin 4s 0.75s infinite;
 }
 
@@ -14,12 +14,12 @@
   }
 }
 
-@keyframes moveUpAndSpin {
+@keyframes moveUp {
   0% {
-    transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px);
   }
   100% {
-    transform: translateY(-48px) rotate(0deg);
+    transform: translateY(-48px);
   }
 }
 
