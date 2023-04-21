@@ -14,11 +14,11 @@
 }
 
 .backButton:hover {
-  background-color: hsl(215.3, 100%, 93.8%);
+  background-color: hsl(240, 100%, 94%);
 }
 
 .backButton:active {
-  background-color: hsl(219.3, 100%, 87.8%);
+  background-color: hsl(240, 100%, 91%);
 }
 
 .text {
@@ -27,7 +27,7 @@
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: hsl(240, 82%, 43.1%);
+  color: hsl(240, 85%, 43.1%);
 
   cursor: pointer;
 }
