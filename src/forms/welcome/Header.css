@@ -5,7 +5,7 @@
 .RNA {
   font-family: 'Open Sans', sans-serif;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
   color: black;
 
   user-select: none;
@@ -15,7 +15,7 @@
 .canvas {
   position: absolute;
   top: -9px;
-  left: 71px;
+  left: 72px;
 
   font-family: 'Corinthia', cursive;
   font-size: 56px;
