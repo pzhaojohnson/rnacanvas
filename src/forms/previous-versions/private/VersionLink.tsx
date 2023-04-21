@@ -66,7 +66,7 @@ export function VersionLink(props: Props) {
 
   return (
     <a {...{ className, href, target, rel, style }} >
-      {month.fullName} {day}, {year} Release
+      {month.fullName} {day}, {year} Version
       <Arrow />
     </a>
   );

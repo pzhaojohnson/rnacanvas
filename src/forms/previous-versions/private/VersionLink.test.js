@@ -30,7 +30,7 @@ describe('VersionLink component', () => {
       'https://20210707t123025-dot-rna2drawer2.uk.r.appspot.com/'
     );
 
-    expect(container.firstChild.textContent).toBe('July 7, 2021 Release');
+    expect(container.firstChild.textContent).toBe('July 7, 2021 Version');
   });
 
   test('an invalid version ID', () => {
