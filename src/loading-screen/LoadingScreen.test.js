@@ -83,5 +83,31 @@ describe('LoadingScreen component', () => {
         expect(loadingScreen.node.parentNode).toBe(null);
       });
     });
+
+    it('hides the loading screen after 5 seconds at most', () => {
+      document.readyState = 'loading';
+
+      let returnedPromiseWasResolved = false;
+
+      loadingScreen.hideOncePageHasFullyLoaded().then(() => {
+        returnedPromiseWasResolved = true;
+      });
+
+      return new Promise(resolve => {
+        setTimeout(() => {
+          // has not hid the loading screen just yet
+          expect(loadingScreen.node.parentNode).toBe(document.body);
+          expect(returnedPromiseWasResolved).toBe(false);
+
+          setTimeout(() => {
+            // has hid the loading screen
+            expect(loadingScreen.node.parentNode).toBe(null);
+            expect(returnedPromiseWasResolved).toBe(true);
+
+            resolve();
+          }, 2000);
+        }, 4090);
+      });
+    }, 10000);
   });
 });
