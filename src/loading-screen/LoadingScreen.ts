@@ -81,36 +81,4 @@ export class LoadingScreen {
       }, delay);
     });
   }
-
-  /**
-   * Hides the loading screen once the page has fully loaded (or if the
-   * page is already fully loaded).
-   *
-   * Will also hide the loading screen after 5 seconds at most no
-   * matter what (in case this method is just unable to properly detect
-   * when the page is fully loaded).
-   *
-   * Returns a promise that resolves when the loading screen has been
-   * hidden.
-   */
-  hideOncePageHasFullyLoaded() {
-    // check every 50 milliseconds
-    let delay = 50;
-
-    // wait 5 seconds at most
-    let maxWait = 5000;
-
-    let wait = 0;
-
-    return new Promise<void>(resolve => {
-      let intervalId = setInterval(() => {
-        if (wait >= maxWait || pageIsFullyLoaded()) {
-          clearInterval(intervalId);
-          this.hide().then(() => resolve());
-        } else {
-          wait += delay;
-        }
-      }, delay);
-    });
-  }
 }
