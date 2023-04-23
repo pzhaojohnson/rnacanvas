@@ -16,12 +16,28 @@ loadingScreen.show();
 setTimeout(() => {
   let app = new App();
 
-  // page will probably be done loading after 2.5 seconds
   setTimeout(() => {
-    loadingScreen.hide().then(() => {
-      app.appendTo(document.body);
-      app.formContainer.renderForm(() => <WelcomePage app={app} />);
-    });
+    app.appendTo(document.body);
+  }, 25);
+
+  // seems to help prevent flash of unstyled text (FOUT)
+  // (prerenders the welcome page under the loading screen)
+  setTimeout(() => {
+    app.formContainer.renderForm(() => <WelcomePage app={app} />);
+  }, 50);
+
+  // page will probably be fully loaded after 2.5 seconds
+  setTimeout(() => {
+    // hide prerendered welcome page
+    app.formContainer.unmountForm();
+
+    // wait a little bit
+    // (to make sure prerendered welcome page has been hidden)
+    setTimeout(() => {
+      loadingScreen.hide().then(() => {
+        app.formContainer.renderForm(() => <WelcomePage app={app} />);
+      });
+    }, 25);
   }, 2500);
 
   // disable drag and drop
