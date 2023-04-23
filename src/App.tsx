@@ -20,7 +20,6 @@ import { Menu } from './menu/Menu';
 import { Infobar } from './infobar/Infobar';
 
 import { FormContainer } from './FormContainer';
-import { WelcomePage } from './forms/welcome/WelcomePage';
 
 import { PreviousVersionsForm } from 'Forms/previous-versions/PreviousVersionsForm';
 
@@ -86,10 +85,6 @@ export class App {
     this.settings = new Settings();
 
     this.refresh();
-
-    this.formContainer.renderForm(() => (
-      <WelcomePage app={this} />
-    ));
   }
 
   appendTo(container: Node) {

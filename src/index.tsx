@@ -3,6 +3,11 @@ import './global.css';
 import { LoadingScreen } from './loading-screen/LoadingScreen';
 
 import { App } from 'App';
+
+import * as React from 'react';
+
+import { WelcomePage } from 'Forms/welcome/WelcomePage';
+
 import { userIsTyping } from 'Utilities/userIsTyping';
 
 let loadingScreen = new LoadingScreen();
@@ -14,6 +19,7 @@ let app = new App();
 setTimeout(() => {
   loadingScreen.hide().then(() => {
     app.appendTo(document.body);
+    app.formContainer.renderForm(() => <WelcomePage app={app} />);
   });
 }, 2500);
 
