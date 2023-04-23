@@ -77,8 +77,8 @@ describe('LoadingScreen component', () => {
             expect(pageIsFullyLoaded()).toBeFalsy();
 
             resolve();
-          }, 2000);
-        }, 4090);
+          }, 1000);
+        }, 4990);
       });
     }, 10000);
   });
