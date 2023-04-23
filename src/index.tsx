@@ -20,8 +20,8 @@ setTimeout(() => {
     app.appendTo(document.body);
   }, 25);
 
-  // seems to help prevent flash of unstyled text (FOUT)
-  // (prerenders the welcome page under the loading screen)
+  // prerender welcome page under loading screen
+  // (seems to help prevent flash of unstyled text)
   setTimeout(() => {
     app.formContainer.renderForm(() => <WelcomePage app={app} />);
   }, 50);
