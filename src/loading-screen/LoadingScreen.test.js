@@ -1,3 +1,5 @@
+import { pageIsFullyLoaded } from 'Utilities/pageIsFullyLoaded';
+
 import { LoadingScreen } from './LoadingScreen';
 
 Object.defineProperty(document, 'readyState', {
@@ -52,6 +54,7 @@ describe('LoadingScreen component', () => {
 
     it('hides the loading screen after 5 seconds at most', () => {
       document.readyState = 'loading';
+      expect(pageIsFullyLoaded()).toBeFalsy();
 
       let returnedPromiseWasResolved = false;
 
@@ -69,6 +72,9 @@ describe('LoadingScreen component', () => {
             // has hid the loading screen
             expect(loadingScreen.node.parentNode).toBe(null);
             expect(returnedPromiseWasResolved).toBe(true);
+
+            // still is falsy
+            expect(pageIsFullyLoaded()).toBeFalsy();
 
             resolve();
           }, 2000);
