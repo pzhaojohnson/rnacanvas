@@ -5,8 +5,6 @@ import { createAppLogo } from './private/createAppLogo';
 
 import { FadeOutOverlay } from './private/FadeOutOverlay';
 
-import { pageIsFullyLoaded } from 'Utilities/pageIsFullyLoaded';
-
 /**
  * A loading screen that covers the whole window when appended to the
  * document body.

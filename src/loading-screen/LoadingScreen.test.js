@@ -1,5 +1,3 @@
-import { pageIsFullyLoaded } from 'Utilities/pageIsFullyLoaded';
-
 import { LoadingScreen } from './LoadingScreen';
 
 Object.defineProperty(document, 'readyState', {
