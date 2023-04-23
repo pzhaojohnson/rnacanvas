@@ -2,7 +2,7 @@ const path = require('path');
 const CircularDependencyPlugin = require('circular-dependency-plugin');
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
