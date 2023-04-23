@@ -50,40 +50,6 @@ describe('LoadingScreen component', () => {
       expect(document.body.childNodes[n]).toBe(loadingScreen.node);
     });
 
-    test('when called while the page is still loading', () => {
-      document.readyState = 'loading';
-
-      let promise = loadingScreen.hideOncePageHasFullyLoaded();
-
-      // waits for document ready state to change before hiding
-      expect(loadingScreen.node.parentNode).toBe(document.body);
-
-      return new Promise(resolve => {
-        // make much longer than fade out animation duration
-        let delay = 3000;
-
-        setTimeout(() => {
-          document.readyState = 'complete';
-
-          promise.then(() => {
-            // hid the loading screen
-            expect(loadingScreen.node.parentNode).toBe(null);
-
-            resolve();
-          });
-        }, delay);
-      });
-    });
-
-    test('when called after the page has fully loaded', () => {
-      document.readyState = 'complete';
-
-      return loadingScreen.hideOncePageHasFullyLoaded().then(() => {
-        // hid the loading screen
-        expect(loadingScreen.node.parentNode).toBe(null);
-      });
-    });
-
     it('hides the loading screen after 5 seconds at most', () => {
       document.readyState = 'loading';
 

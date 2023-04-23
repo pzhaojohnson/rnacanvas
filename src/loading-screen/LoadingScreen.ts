@@ -5,6 +5,8 @@ import { createAppLogo } from './private/createAppLogo';
 
 import { FadeOutOverlay } from './private/FadeOutOverlay';
 
+import { pageIsFullyLoaded } from 'Utilities/pageIsFullyLoaded';
+
 /**
  * A loading screen that covers the whole window when appended to the
  * document body.
@@ -102,7 +104,7 @@ export class LoadingScreen {
 
     return new Promise<void>(resolve => {
       let intervalId = setInterval(() => {
-        if (wait >= maxWait || document.readyState == 'complete') {
+        if (wait >= maxWait || pageIsFullyLoaded()) {
           clearInterval(intervalId);
           this.hide().then(() => resolve());
         } else {
