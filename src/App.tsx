@@ -21,8 +21,6 @@ import { Infobar } from './infobar/Infobar';
 
 import { FormContainer } from './FormContainer';
 
-import { PreviousVersionsForm } from 'Forms/previous-versions/PreviousVersionsForm';
-
 export type Options = {
 
   // for specifying alternatives to components of the SVG.js library
