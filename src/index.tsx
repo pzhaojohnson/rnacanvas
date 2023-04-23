@@ -10,9 +10,12 @@ loadingScreen.show();
 
 let app = new App();
 
-loadingScreen.hideOncePageHasFullyLoaded().then(() => {
-  app.appendTo(document.body);
-});
+// page will probably be done loading after 2.5 seconds
+setTimeout(() => {
+  loadingScreen.hide().then(() => {
+    app.appendTo(document.body);
+  });
+}, 2500);
 
 // disable drag and drop
 document.body.ondragstart = () => false;
