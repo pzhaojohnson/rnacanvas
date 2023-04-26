@@ -2,11 +2,11 @@
   margin-top: 6px;
   border: 1px solid rgba(0,0,0,0.15);
   border-radius: 2px;
-  padding: 3px 6px;
+  padding: 5px 7px;
   font-family: "Courier Prime", monospace;
-  font-size: 12px;
-  font-weight: 500;
-  color: #4b4b4b;
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(0, 0%, 5%);
 }
 
 .substructureTextArea::placeholder {
