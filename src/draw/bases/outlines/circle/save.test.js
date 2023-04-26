@@ -81,15 +81,6 @@ describe('addSavedCircleOutline function', () => {
     expect(areSameElement(c1, c2)).toBeTruthy(); // found circle
   });
 
-  it("throws if saved state isn't for a circle base annotation", () => {
-    addCircleOutline(base1);
-    let saved = savableState(base1.outline);
-    saved.className = 'CrcleBaseAnnotation';
-    expect(
-      () => addSavedCircleOutline(base2, saved)
-    ).toThrow();
-  });
-
   it('throws if unable to retrieve root SVG element of base', () => {
     addCircleOutline(base1);
     let saved = savableState(base1.outline);
@@ -135,15 +126,6 @@ describe('addSavedCircleHighlighting function', () => {
     expect(base2.highlighting).toBeTruthy(); // added highlighting
     let c2 = base2.highlighting.circle;
     expect(areSameElement(c1, c2)).toBeTruthy(); // found circle
-  });
-
-  it("throws if saved state isn't for a circle base annotation", () => {
-    addCircleHighlighting(base1);
-    let saved = savableState(base1.highlighting);
-    saved.className = 'CircleBaseAnnotationn';
-    expect(
-      () => addSavedCircleHighlighting(base2, saved)
-    ).toThrow();
   });
 
   it('throws if unable to retrieve root SVG element of base', () => {

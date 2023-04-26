@@ -18,9 +18,6 @@ export function savableState(cba: CircleBaseAnnotation): SavableState {
 export type SavedState = { [key: string]: unknown }
 
 function fromSaved(b: Base, saved: SavedState): CircleBaseAnnotation | never {
-  if (saved.className != 'CircleBaseAnnotation') {
-    throw new Error("Saved state isn't for a circle base annotation.");
-  }
   let svg = b.text.root();
   if (!(svg instanceof SVG.Svg)) {
     throw new Error('Unable to retrieve root SVG element of base.');
