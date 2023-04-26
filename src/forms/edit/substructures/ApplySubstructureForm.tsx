@@ -32,7 +32,13 @@ function SubstructureField(
         label='Substructure'
         value={props.value}
         onChange={props.onChange}
-        textArea={{ rows: 10, spellCheck: false }}
+        textArea={{
+          rows: 10, spellCheck: false,
+          style: {
+            fontFamily: '"Courier Prime", monospace', fontSize: '15px',
+            fontWeight: '400', color: 'hsl(0, 0%, 5%)', padding: '5px 7px',
+          },
+        }}
       />
       <FieldDescription style={{ margin: '6px 0 0 16px' }} >
         ...in dot-bracket notation "(((....)))"
