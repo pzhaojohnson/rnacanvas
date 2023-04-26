@@ -13,6 +13,7 @@ export type Props = {
     rows?: number;
     placeholder?: string;
     spellCheck?: boolean | 'true' | 'false';
+    style?: React.CSSProperties;
   };
 
   style?: React.CSSProperties;
@@ -39,7 +40,7 @@ export function TextAreaField(props: Props) {
         rows={props.textArea?.rows ?? 10}
         placeholder={props.textArea?.placeholder}
         spellCheck={props.textArea?.spellCheck}
-        style={{ marginTop: '4px' }}
+        style={{ marginTop: '4px', ...props.textArea?.style }}
       />
     </FieldLabel>
   );

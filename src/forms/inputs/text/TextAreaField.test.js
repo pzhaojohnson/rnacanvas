@@ -102,6 +102,14 @@ describe('TextAreaField component', () => {
     expect(textArea.outerHTML).toMatch(/spellcheck="false"/);
   });
 
+  test('nested style prop for textarea subcomponent', () => {
+    let style = { padding: '4px 2px 8px 1px', color: 'rgb(10, 11, 29)' };
+    act(() => render(<TextAreaField textArea={{ style }} />, container));
+    let textArea = container.getElementsByTagName('textarea')[0];
+    expect(textArea.style.padding).toBe('4px 2px 8px 1px');
+    expect(textArea.style.color).toBe('rgb(10, 11, 29)');
+  });
+
   it('sets number of rows for the textarea element to 10 by default', () => {
     act(() => {
       render(<TextAreaField />, container);
