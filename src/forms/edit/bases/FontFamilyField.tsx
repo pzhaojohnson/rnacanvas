@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { FontFamilySelect } from 'Forms/inputs/font/FontFamilySelect';
 import type { App } from 'App';
-import { Base } from 'Draw/bases/Base';
+import type { Base } from 'Draw/bases/Base';
 
 export type Props = {
   app: App;
@@ -51,7 +51,6 @@ export function FontFamilyField(props: Props) {
               b.text.center(center.x, center.y);
             });
 
-            Base.recommendedDefaults.text['font-family'] = event.target.value;
             props.app.refresh();
           }
         }}
