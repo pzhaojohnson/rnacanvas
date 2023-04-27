@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
+import type { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
 
 import * as React from 'react';
 
@@ -45,8 +45,6 @@ export class LineLengthField extends React.Component<Props> {
     this.props.baseNumberings.forEach(bn => {
       bn.lineLength = newValue;
     });
-
-    BaseNumbering.recommendedDefaults.lineLength = newValue;
 
     this.props.app.refresh(); // refresh after updating all values
   }
