@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { CheckboxField } from 'Forms/inputs/checkbox/CheckboxField';
 import type { App } from 'App';
-import { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
+import type { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
 
 export type Props = {
   app: App;
@@ -37,7 +37,6 @@ export function BoldField(props: Props) {
           bn.text.attr({ 'font-weight': fw });
           bn.reposition();
         });
-        BaseNumbering.recommendedDefaults.text['font-weight'] = fw;
         props.app.refresh();
       }}
       style={{ marginTop: '8px', minHeight: '20px', alignSelf: 'start' }}
