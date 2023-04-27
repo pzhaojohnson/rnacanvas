@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
+import type { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
 
 import * as React from 'react';
 
@@ -46,12 +46,6 @@ export function ColorPicker(props: Props) {
         props.baseNumberings.forEach(bn => {
           bn.line.attr('stroke', newValueHexCode);
         });
-
-        // don't make the same color as the background by default
-        if (!isWhite(newValueHexCode)) {
-          BaseNumbering.recommendedDefaults.text['fill'] = newValueHexCode;
-          BaseNumbering.recommendedDefaults.line['stroke'] = newValueHexCode;
-        }
 
         props.app.refresh(); // refresh after updating all values
       }}
