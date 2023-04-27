@@ -60,7 +60,6 @@ export class LineStrokeDasharrayField extends React.Component<Props> {
 
   handleEdit(event: EditEvent) {
     let newValue = event.newValue;
-    BaseNumbering.recommendedDefaults.line['stroke-dasharray'] = newValue;
 
     if (!equalsNone(newValue)) {
       lastNewDashedValue = newValue;
