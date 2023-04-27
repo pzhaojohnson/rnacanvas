@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
+import type { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
 
 import * as React from 'react';
 
@@ -33,10 +33,6 @@ export class LineWidthField extends React.Component<Props> {
   }
 
   handleEdit(event: EditEvent) {
-    let newValue = event.newValue;
-
-    BaseNumbering.recommendedDefaults.line['stroke-width'] = newValue;
-
     this.props.app.refresh(); // refresh after updating all values
   }
 
