@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { FontFamilySelect } from 'Forms/inputs/font/FontFamilySelect';
 import type { App } from 'App';
-import { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
+import type { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
 
 export type Props = {
   app: App;
@@ -37,7 +37,6 @@ export function FontFamilyField(props: Props) {
               bn.text.attr({ 'font-family': event.target.value });
               bn.reposition();
             });
-            BaseNumbering.recommendedDefaults.text['font-family'] = event.target.value;
             props.app.refresh();
           }
         }}
