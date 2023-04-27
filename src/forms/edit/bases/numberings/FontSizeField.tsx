@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
+import type { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
 
 import * as React from 'react';
 
@@ -37,11 +37,6 @@ export class FontSizeField extends React.Component<Props> {
 
     // reposition the base numberings
     this.props.baseNumberings.forEach(bn => bn.reposition());
-
-    // don't make text elements too hard to see by default
-    if (newValue >= 1) {
-      BaseNumbering.recommendedDefaults.text['font-size'] = newValue;
-    }
 
     this.props.app.refresh(); // refresh after updating all values
   }
