@@ -52,7 +52,6 @@ export function appendSavedSequence(drawing: Drawing, saved: SavedState): Sequen
   saved.bases.forEach((s: SavedState) => {
     let b = recreateBase(drawing, s);
     seq.bases.push(b);
-    Base.recommendedDefaults = baseValues(b);
   });
 
   drawing.sequences.push(seq);
