@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { CheckboxField } from 'Forms/inputs/checkbox/CheckboxField';
 import type { App } from 'App';
-import { Base } from 'Draw/bases/Base';
+import type { Base } from 'Draw/bases/Base';
 import { interpretNumber } from 'Draw/svg/interpretNumber';
 
 function isBlankString(v: unknown): boolean {
@@ -54,7 +54,6 @@ export function BoldField(props: Props) {
           // recenter
           b.text.center(center.x, center.y);
         });
-        Base.recommendedDefaults.text['font-weight'] = fw;
         props.app.refresh();
       }}
       style={{ marginTop: '8px', alignSelf: 'start' }}
