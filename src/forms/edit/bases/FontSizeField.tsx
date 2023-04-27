@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { Base } from 'Draw/bases/Base';
+import type { Base } from 'Draw/bases/Base';
 
 import * as React from 'react';
 
@@ -80,11 +80,6 @@ export class FontSizeField extends React.Component<Props> {
     if (this._textCenters) {
       this.bases.textCenters = this._textCenters;
       this._textCenters = undefined; // reset
-    }
-
-    // don't make bases too hard to see by default
-    if (newValue >= 1) {
-      Base.recommendedDefaults.text['font-size'] = newValue;
     }
 
     this.props.app.refresh(); // refresh after updating all values
