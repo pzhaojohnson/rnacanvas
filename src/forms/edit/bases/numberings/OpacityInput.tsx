@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
+import type { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
 
 import * as React from 'react';
 
@@ -38,12 +38,6 @@ export class OpacityInput extends React.Component<Props> {
       bn.text.attr('fill-opacity', newValue);
       bn.line.attr('stroke-opacity', newValue);
     });
-
-    // don't make base numberings too hard to see by default
-    if (newValue >= 0.25) {
-      BaseNumbering.recommendedDefaults.text['fill-opacity'] = newValue;
-      BaseNumbering.recommendedDefaults.line['stroke-opacity'] = newValue;
-    }
 
     this.props.app.refresh(); // refresh after updating all values
   }
