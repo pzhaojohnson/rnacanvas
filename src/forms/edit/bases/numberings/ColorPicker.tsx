@@ -6,15 +6,6 @@ import * as React from 'react';
 
 import { ColorAttributePicker } from 'Forms/edit/svg/ColorAttributePicker';
 
-import { colorValuesAreEqual } from 'Draw/svg/colorValuesAreEqual';
-
-/**
- * Returns true if the color is white.
- */
-function isWhite(color: unknown): boolean {
-  return colorValuesAreEqual(color, '#ffffff');
-}
-
 export type Props = {
   /**
    * A reference to the whole app.
