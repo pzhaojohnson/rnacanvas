@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { PrimaryBond } from 'Draw/bonds/straight/PrimaryBond';
+import type { PrimaryBond } from 'Draw/bonds/straight/PrimaryBond';
 
 import * as React from 'react';
 
@@ -47,9 +47,6 @@ export class BasePaddingField extends React.Component<Props> {
       pb.basePadding1 = newValue;
       pb.basePadding2 = newValue;
     });
-
-    PrimaryBond.recommendedDefaults.basePadding1 = newValue;
-    PrimaryBond.recommendedDefaults.basePadding2 = newValue;
 
     this.props.app.refresh();
   }
