@@ -28,13 +28,6 @@ function getBaseById(bases: Map<string, Base>, id: unknown): Base | never {
   return b;
 }
 
-function updateRecommendedDefaultsForPrimaryBonds(addedPrimaryBonds: PrimaryBond[]) {
-  let last = atIndex(addedPrimaryBonds, addedPrimaryBonds.length - 1);
-  if (last) {
-    PrimaryBond.recommendedDefaults = values(last);
-  }
-}
-
 export function addSavedPrimaryBonds(drawing: Drawing, saveds: SavedState[]): PrimaryBond[] | never {
   let pbs: PrimaryBond[] = [];
   let bases = basesByUniqueId(drawing);
@@ -53,7 +46,6 @@ export function addSavedPrimaryBonds(drawing: Drawing, saveds: SavedState[]): Pr
     pbs.push(pb);
   });
   drawing.primaryBonds.push(...pbs);
-  updateRecommendedDefaultsForPrimaryBonds(pbs);
   return pbs;
 }
 
