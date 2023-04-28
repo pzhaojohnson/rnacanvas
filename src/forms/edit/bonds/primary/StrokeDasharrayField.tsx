@@ -59,8 +59,6 @@ export class StrokeDasharrayField extends React.Component<Props> {
   }
 
   handleEdit(event: EditEvent) {
-    PrimaryBond.recommendedDefaults.line['stroke-dasharray'] = event.newValue;
-
     if (!equalsNone(event.newValue)) {
       lastNewDashedValue = event.newValue;
     }
