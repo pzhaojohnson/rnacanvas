@@ -2,7 +2,6 @@ import type { Base } from 'Draw/bases/Base';
 import * as SVG from '@svgdotjs/svg.js';
 import { findTextByUniqueId, findLineByUniqueId } from 'Draw/saved/svg';
 import { BaseNumbering } from './BaseNumbering';
-import { values } from './values';
 
 export type SavableState = {
   className: 'BaseNumbering';
@@ -39,6 +38,5 @@ export function addSavedNumbering(b: Base, saved: SavedState): void | never {
       throw new Error('Base already has numbering.');
     }
     b.numbering = bn;
-    BaseNumbering.recommendedDefaults = values(bn);
   }
 }
