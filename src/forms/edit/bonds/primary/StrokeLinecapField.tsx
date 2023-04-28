@@ -1,5 +1,5 @@
 import type { App } from 'App';
-import { PrimaryBond } from 'Draw/bonds/straight/PrimaryBond';
+import type { PrimaryBond } from 'Draw/bonds/straight/PrimaryBond';
 
 import * as React from 'react';
 
@@ -38,7 +38,6 @@ export function StrokeLinecapField(props: Props) {
         if (event.target.value != strokeLinecap(props.primaryBonds)) {
           props.app.pushUndo();
           setStrokeLinecap(props.primaryBonds, event.target.value);
-          PrimaryBond.recommendedDefaults.line['stroke-linecap'] = event.target.value;
           props.app.refresh();
         }
       }}
