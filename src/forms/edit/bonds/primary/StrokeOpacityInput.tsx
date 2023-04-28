@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { PrimaryBond } from 'Draw/bonds/straight/PrimaryBond';
+import type { PrimaryBond } from 'Draw/bonds/straight/PrimaryBond';
 
 import * as React from 'react';
 
@@ -31,13 +31,6 @@ export class StrokeOpacityInput extends React.Component<Props> {
   }
 
   handleEdit(event: EditEvent) {
-    let newValue = event.newValue;
-
-    // don't make primary bonds too hard to see by default
-    if (newValue >= 0.25) {
-      PrimaryBond.recommendedDefaults.line['stroke-opacity'] = newValue;
-    }
-
     this.props.app.refresh();
   }
 
