@@ -4,22 +4,12 @@ import type { StrungCircle } from 'Draw/bonds/strung/StrungElement';
 import type { StrungTriangle } from 'Draw/bonds/strung/StrungElement';
 import type { StrungRectangle } from 'Draw/bonds/strung/StrungElement';
 
-import { defaultStrungCircleValues } from 'Draw/bonds/strung/defaults';
-import { defaultStrungTriangleValues } from 'Draw/bonds/strung/defaults';
-import { defaultStrungRectangleValues } from 'Draw/bonds/strung/defaults';
-
 import { svgElementOfStrungElement } from 'Forms/edit/bonds/strung/svgElementOfStrungElement';
 
 import * as React from 'react';
 
 import { ColorAttributePicker } from 'Forms/edit/svg/ColorAttributePicker';
 import { EditEvent } from 'Forms/edit/svg/ColorAttributePicker';
-
-const defaultSVGElementAttributes = {
-  'StrungCircle': defaultStrungCircleValues.circle,
-  'StrungTriangle': defaultStrungTriangleValues.path,
-  'StrungRectangle': defaultStrungRectangleValues.path,
-};
 
 export type Props = {
   /**
@@ -49,13 +39,6 @@ export class StrokeColorPicker extends React.Component<Props> {
   }
 
   onEdit(event: EditEvent) {
-    let newValueHexCode = event.newValue.toHex();
-    let strungElements = this.props.strungElements;
-    let types = new Set(strungElements.map(ele => ele.type));
-    types.forEach(t => {
-      defaultSVGElementAttributes[t]['stroke'] = newValueHexCode;
-    });
-
     this.props.app.refresh();
   }
 
