@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { TertiaryBond } from 'Draw/bonds/curved/TertiaryBond';
+import type { TertiaryBond } from 'Draw/bonds/curved/TertiaryBond';
 
 import * as React from 'react';
 
@@ -33,13 +33,6 @@ export class StrokeWidthField extends React.Component<Props> {
   }
 
   handleEdit(event: EditEvent) {
-    let newValue = event.newValue;
-
-    // don't make tertiary bonds too hard to see by default
-    if (newValue >= 0.5) {
-      TertiaryBond.recommendedDefaults.path['stroke-width'] = newValue;
-    }
-
     this.props.app.refresh(); // refresh after updating all values
   }
 
