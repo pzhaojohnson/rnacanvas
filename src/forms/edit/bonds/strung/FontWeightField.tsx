@@ -3,8 +3,6 @@ import type { App } from 'App';
 import type { Bond } from 'Forms/edit/bonds/strung/Bond';
 import type { StrungText } from 'Draw/bonds/strung/StrungElement';
 
-import { defaultStrungTextValues } from 'Draw/bonds/strung/defaults';
-
 import { svgElementOfStrungElement } from 'Forms/edit/bonds/strung/svgElementOfStrungElement';
 
 import { repositionStrungElementAtIndex } from 'Forms/edit/bonds/strung/repositionStrungElementAtIndex';
@@ -15,10 +13,6 @@ import { FontWeightInput } from 'Forms/edit/svg/FontWeightInput';
 import { EditEvent } from 'Forms/edit/svg/FontWeightInput';
 
 import { FieldLabel } from 'Forms/inputs/labels/FieldLabel';
-
-const defaultSVGElementAttributes = {
-  'StrungText': defaultStrungTextValues.text,
-};
 
 export type Props = {
   /**
@@ -53,16 +47,6 @@ export class FontWeightField extends React.Component<Props> {
   }
 
   onEdit(event: EditEvent) {
-    let newValue = event.newValue;
-    // don't make strung elements invisible by default
-    if (newValue > 0) {
-      let strungElements = this.props.strungElements;
-      let types = new Set(strungElements.map(ele => ele.type));
-      types.forEach(t => {
-        defaultSVGElementAttributes[t]['font-weight'] = newValue;
-      });
-    }
-
     this.props.bonds.forEach(bond => {
       repositionStrungElementAtIndex({
         bond,
