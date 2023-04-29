@@ -2,26 +2,12 @@ import type { App } from 'App';
 
 import type { StrungElement } from 'Draw/bonds/strung/StrungElement';
 
-import { defaultStrungTextValues } from 'Draw/bonds/strung/defaults';
-import { defaultStrungCircleValues } from 'Draw/bonds/strung/defaults';
-import { defaultStrungTriangleValues } from 'Draw/bonds/strung/defaults';
-import { defaultStrungRectangleValues } from 'Draw/bonds/strung/defaults';
-
 import { svgElementOfStrungElement } from 'Forms/edit/bonds/strung/svgElementOfStrungElement';
 
 import * as React from 'react';
 
 import { ColorAttributePicker } from 'Forms/edit/svg/ColorAttributePicker';
 import { EditEvent } from 'Forms/edit/svg/ColorAttributePicker';
-
-import { colorValuesAreEqual } from 'Draw/svg/colorValuesAreEqual';
-
-const defaultSVGElementAttributes = {
-  'StrungText': defaultStrungTextValues.text,
-  'StrungCircle': defaultStrungCircleValues.circle,
-  'StrungTriangle': defaultStrungTriangleValues.path,
-  'StrungRectangle': defaultStrungRectangleValues.path,
-};
 
 export type Props = {
   /**
@@ -47,17 +33,6 @@ export class FillColorPicker extends React.Component<Props> {
   }
 
   onEdit(event: EditEvent) {
-    let newValueHexCode = event.newValue.toHex();
-    // don't make strung elements the background color by default
-    // (this code assumes that the background color is white)
-    if (!colorValuesAreEqual(newValueHexCode, '#ffffff')) {
-      let strungElements = this.props.strungElements;
-      let types = new Set(strungElements.map(ele => ele.type));
-      types.forEach(t => {
-        defaultSVGElementAttributes[t]['fill'] = newValueHexCode;
-      });
-    }
-
     this.props.app.refresh();
   }
 
