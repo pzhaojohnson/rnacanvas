@@ -4,8 +4,6 @@ import { basesByUniqueId } from 'Draw/saved/bases';
 import type { Base } from 'Draw/bases/Base';
 import { TertiaryBond } from './TertiaryBond';
 import { fromSpecifications as strungElementsFromSpecifications } from 'Draw/bonds/strung/save/fromSpecifications';
-import { atIndex } from 'Array/at';
-import { values } from './values';
 
 export type SavedState = { [key: string]: unknown }
 
@@ -44,12 +42,6 @@ export function addSavedTertiaryBonds(drawing: Drawing, saveds: SavedState[]): T
     tbs.push(tb);
   });
   drawing.tertiaryBonds.push(...tbs);
-
-  // update recommended defaults
-  let last = atIndex(tbs, tbs.length - 1);
-  if (last) {
-    TertiaryBond.recommendedDefaults = values(last);
-  }
 
   return tbs;
 }
