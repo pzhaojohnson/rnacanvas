@@ -3,8 +3,6 @@ import type { App } from 'App';
 import type { Bond } from 'Forms/edit/bonds/strung/Bond';
 import type { StrungText } from 'Draw/bonds/strung/StrungElement';
 
-import { defaultStrungTextValues } from 'Draw/bonds/strung/defaults';
-
 import { svgElementOfStrungElement } from 'Forms/edit/bonds/strung/svgElementOfStrungElement';
 
 import { repositionStrungElementAtIndex } from 'Forms/edit/bonds/strung/repositionStrungElementAtIndex';
@@ -14,10 +12,6 @@ import * as React from 'react';
 // the underlying font family select component
 import { FontFamilySelect as _FontFamilySelect } from 'Forms/edit/svg/FontFamilySelect';
 import { EditEvent } from 'Forms/edit/svg/FontFamilySelect';
-
-const defaultSVGElementAttributes = {
-  'StrungText': defaultStrungTextValues.text,
-};
 
 export type Props = {
   /**
@@ -52,13 +46,6 @@ export class FontFamilySelect extends React.Component<Props> {
   }
 
   onEdit(event: EditEvent) {
-    let newValue = event.newValue;
-    let strungElements = this.props.strungElements;
-    let types = new Set(strungElements.map(ele => ele.type));
-    types.forEach(t => {
-      defaultSVGElementAttributes[t]['font-family'] = newValue;
-    });
-
     this.props.bonds.forEach(bond => {
       repositionStrungElementAtIndex({
         bond,
