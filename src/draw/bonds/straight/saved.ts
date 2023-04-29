@@ -1,12 +1,10 @@
 import type { Drawing } from 'Draw/Drawing';
 import { PrimaryBond } from './PrimaryBond';
-import { secondaryBondTypes } from './SecondaryBond';
 import { SecondaryBond } from './SecondaryBond';
 import { findLineByUniqueId } from 'Draw/saved/svg';
 import type { Base } from 'Draw/bases/Base';
 import { basesByUniqueId } from 'Draw/saved/bases';
 import { fromSpecifications as strungElementsFromSpecifications } from 'Draw/bonds/strung/save/fromSpecifications';
-import { values } from './values';
 
 export type SavedState = { [key: string]: unknown }
 
@@ -48,17 +46,6 @@ export function addSavedPrimaryBonds(drawing: Drawing, saveds: SavedState[]): Pr
   return pbs;
 }
 
-function updateRecommendedDefaultsForSecondaryBonds(addedSecondaryBonds: SecondaryBond[]) {
-  let reversed = [...addedSecondaryBonds].reverse();
-  secondaryBondTypes.forEach(t => {
-    // finds the last added secondary bond of the given type
-    let sb = reversed.find(sb => sb.type == t);
-    if (sb) {
-      SecondaryBond.recommendedDefaults[t] = values(sb);
-    }
-  });
-}
-
 export function addSavedSecondaryBonds(drawing: Drawing, saveds: SavedState[]): SecondaryBond[] | never {
   let sbs: SecondaryBond[] = [];
   let bases = basesByUniqueId(drawing);
@@ -77,6 +64,5 @@ export function addSavedSecondaryBonds(drawing: Drawing, saveds: SavedState[]): 
     sbs.push(sb);
   });
   drawing.secondaryBonds.push(...sbs);
-  updateRecommendedDefaultsForSecondaryBonds(sbs);
   return sbs;
 }
