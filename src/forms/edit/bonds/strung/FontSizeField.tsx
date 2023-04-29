@@ -3,8 +3,6 @@ import type { App } from 'App';
 import type { Bond } from 'Forms/edit/bonds/strung/Bond';
 import type { StrungText } from 'Draw/bonds/strung/StrungElement';
 
-import { defaultStrungTextValues } from 'Draw/bonds/strung/defaults';
-
 import { svgElementOfStrungElement } from 'Forms/edit/bonds/strung/svgElementOfStrungElement';
 
 import { repositionStrungElementAtIndex } from 'Forms/edit/bonds/strung/repositionStrungElementAtIndex';
@@ -17,10 +15,6 @@ import { EditEvent } from 'Forms/edit/svg/NumericAttributeInput';
 import { FieldLabel } from 'Forms/inputs/labels/FieldLabel';
 
 import { generateHTMLCompatibleUUID } from 'Utilities/generateHTMLCompatibleUUID';
-
-const defaultSVGElementAttributes = {
-  'StrungText': defaultStrungTextValues.text,
-};
 
 const baseInputId = generateHTMLCompatibleUUID();
 
@@ -62,16 +56,6 @@ export class FontSizeField extends React.Component<Props> {
   }
 
   onEdit(event: EditEvent) {
-    let newValue = event.newValue;
-    // don't make strung elements invisible by default
-    if (newValue > 0) {
-      let strungElements = this.props.strungElements;
-      let types = new Set(strungElements.map(ele => ele.type));
-      types.forEach(t => {
-        defaultSVGElementAttributes[t]['font-size'] = newValue;
-      });
-    }
-
     this.props.bonds.forEach(bond => {
       repositionStrungElementAtIndex({
         bond,
