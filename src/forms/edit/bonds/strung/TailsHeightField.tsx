@@ -3,8 +3,6 @@ import type { App } from 'App';
 import type { Bond } from 'Forms/edit/bonds/strung/Bond';
 import type { StrungTriangle } from 'Draw/bonds/strung/StrungElement';
 
-import { defaultStrungTriangleValues } from 'Draw/bonds/strung/defaults';
-
 import { repositionStrungElementAtIndex } from 'Forms/edit/bonds/strung/repositionStrungElementAtIndex';
 
 import * as React from 'react';
@@ -15,10 +13,6 @@ import { EditEvent } from 'Forms/edit/objects/NumberPropertyInput';
 import { FieldLabel } from 'Forms/inputs/labels/FieldLabel';
 
 import { generateHTMLCompatibleUUID } from 'Utilities/generateHTMLCompatibleUUID';
-
-const defaultValues = {
-  'StrungTriangle': defaultStrungTriangleValues,
-};
 
 const baseInputId = generateHTMLCompatibleUUID();
 
@@ -61,13 +55,6 @@ export class TailsHeightField extends React.Component<Props> {
         bond,
         index: this.props.strungElementsIndex,
       });
-    });
-
-    let newValue = event.newValue;
-    let strungElements = this.props.strungElements;
-    let types = new Set(strungElements.map(ele => ele.type));
-    types.forEach(t => {
-      defaultValues[t]['tailsHeight'] = newValue;
     });
 
     this.props.app.refresh();
