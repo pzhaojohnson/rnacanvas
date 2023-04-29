@@ -6,7 +6,6 @@ import { findLineByUniqueId } from 'Draw/saved/svg';
 import type { Base } from 'Draw/bases/Base';
 import { basesByUniqueId } from 'Draw/saved/bases';
 import { fromSpecifications as strungElementsFromSpecifications } from 'Draw/bonds/strung/save/fromSpecifications';
-import { atIndex } from 'Array/at';
 import { values } from './values';
 
 export type SavedState = { [key: string]: unknown }
