@@ -2,8 +2,6 @@ import type { App } from 'App';
 
 import type { StrungCircle } from 'Draw/bonds/strung/StrungElement';
 
-import { defaultStrungCircleValues } from 'Draw/bonds/strung/defaults';
-
 import { svgElementOfStrungElement } from 'Forms/edit/bonds/strung/svgElementOfStrungElement';
 
 import * as React from 'react';
@@ -14,10 +12,6 @@ import { EditEvent } from 'Forms/edit/svg/NumericAttributeInput';
 import { FieldLabel } from 'Forms/inputs/labels/FieldLabel';
 
 import { generateHTMLCompatibleUUID } from 'Utilities/generateHTMLCompatibleUUID';
-
-const defaultSVGElementAttributes = {
-  'StrungCircle': defaultStrungCircleValues.circle,
-};
 
 const baseInputId = generateHTMLCompatibleUUID();
 
@@ -53,16 +47,6 @@ export class RadiusField extends React.Component<Props> {
   }
 
   onEdit(event: EditEvent) {
-    let newValue = event.newValue;
-    // don't make strung elements invisible by default
-    if (newValue > 0) {
-      let strungElements = this.props.strungElements;
-      let types = strungElements.map(ele => ele.type);
-      types.forEach(t => {
-        defaultSVGElementAttributes[t]['r'] = newValue;
-      });
-    }
-
     this.props.app.refresh();
   }
 
