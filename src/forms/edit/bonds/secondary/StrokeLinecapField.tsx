@@ -1,5 +1,5 @@
 import type { App } from 'App';
-import { SecondaryBond } from 'Draw/bonds/straight/SecondaryBond';
+import type { SecondaryBond } from 'Draw/bonds/straight/SecondaryBond';
 
 import * as React from 'react';
 
@@ -11,11 +11,6 @@ import { setStrokeLinecap as _setStrokeLinecap } from 'Forms/inputs/svg/strokeLi
 // returns the line elements of the secondary bonds
 function lines(secondaryBonds: SecondaryBond[]) {
   return secondaryBonds.map(secondaryBond => secondaryBond.line);
-}
-
-// returns a set of the secondary bond types present
-function types(secondaryBonds: SecondaryBond[]) {
-  return new Set(secondaryBonds.map(secondaryBond => secondaryBond.type));
 }
 
 function strokeLinecap(secondaryBonds: SecondaryBond[]) {
@@ -43,9 +38,6 @@ export function StrokeLinecapField(props: Props) {
         if (event.target.value != strokeLinecap(props.secondaryBonds)) {
           props.app.pushUndo();
           setStrokeLinecap(props.secondaryBonds, event.target.value);
-          types(props.secondaryBonds).forEach(t => {
-            SecondaryBond.recommendedDefaults[t].line['stroke-linecap'] = event.target.value;
-          });
           props.app.refresh();
         }
       }}
