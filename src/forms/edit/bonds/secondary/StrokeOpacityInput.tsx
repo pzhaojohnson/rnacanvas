@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { SecondaryBond } from 'Draw/bonds/straight/SecondaryBond';
+import type { SecondaryBond } from 'Draw/bonds/straight/SecondaryBond';
 
 import * as React from 'react';
 
@@ -31,16 +31,6 @@ export class StrokeOpacityInput extends React.Component<Props> {
   }
 
   handleEdit(event: EditEvent) {
-    let newValue = event.newValue;
-    let types = new Set(this.props.secondaryBonds.map(sb => sb.type));
-
-    // don't make secondary bonds invisible by default
-    if (newValue > 0) {
-      types.forEach(t => {
-        SecondaryBond.recommendedDefaults[t].line['stroke-opacity'] = newValue;
-      });
-    }
-
     this.props.app.refresh();
   }
 
