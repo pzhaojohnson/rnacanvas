@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { SecondaryBond } from 'Draw/bonds/straight/SecondaryBond';
+import type { SecondaryBond } from 'Draw/bonds/straight/SecondaryBond';
 
 import * as SVG from '@svgdotjs/svg.js';
 
@@ -38,18 +38,6 @@ export function StrokePicker(props: Props) {
         props.app.pushUndo();
       }}
       onEdit={event => {
-        let newValue = event.newValue;
-
-        let types = new Set(props.secondaryBonds.map(sb => sb.type));
-
-        // don't make the same color as the background by default
-        if (!isWhite(newValue)) {
-          types.forEach(t => {
-            let recommendedDefaults = SecondaryBond.recommendedDefaults[t];
-            recommendedDefaults.line['stroke'] = newValue.toHex();
-          });
-        }
-
         props.app.refresh(); // refresh after updating all values
       }}
     />
