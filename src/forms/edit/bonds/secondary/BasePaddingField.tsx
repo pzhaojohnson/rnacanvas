@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { SecondaryBond } from 'Draw/bonds/straight/SecondaryBond';
+import type { SecondaryBond } from 'Draw/bonds/straight/SecondaryBond';
 
 import * as React from 'react';
 
@@ -46,12 +46,6 @@ export class BasePaddingField extends React.Component<Props> {
     this.props.secondaryBonds.forEach(sb => {
       sb.basePadding1 = newValue;
       sb.basePadding2 = newValue;
-    });
-
-    let types = new Set(this.props.secondaryBonds.map(sb => sb.type));
-    types.forEach(t => {
-      SecondaryBond.recommendedDefaults[t].basePadding1 = newValue;
-      SecondaryBond.recommendedDefaults[t].basePadding2 = newValue;
     });
 
     this.props.app.refresh();
