@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { TertiaryBond } from 'Draw/bonds/curved/TertiaryBond';
+import type { TertiaryBond } from 'Draw/bonds/curved/TertiaryBond';
 
 import * as React from 'react';
 
@@ -45,8 +45,6 @@ export class BasePadding2Field extends React.Component<Props> {
     this.props.tertiaryBonds.forEach(tb => {
       tb.basePadding2 = newValue;
     });
-
-    TertiaryBond.recommendedDefaults.basePadding2 = newValue;
 
     this.props.app.refresh(); // refresh after updating all values
   }
