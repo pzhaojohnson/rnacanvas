@@ -2,7 +2,7 @@
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: hsl(240, 76.2%, 43.5%);
+  color: hsl(240, 84%, 45%);
 
   cursor: pointer;
 
@@ -10,7 +10,7 @@
 }
 
 .versionLink:visited {
-  color: hsl(300, 75.3%, 28.4%);
+  color: hsl(300, 74.67%, 28.05%);
 }
 
 .versionLink:hover {
@@ -18,17 +18,17 @@
 }
 
 .arrowHead {
-  stroke: hsl(240, 76.2%, 43.5%);
+  stroke: hsl(240, 84%, 45%);
 }
 
 .versionLink:visited .arrowHead {
-  stroke: hsl(300, 75.3%, 28.4%);
+  stroke: hsl(300, 74.67%, 28.05%);
 }
 
 .arrowShaft {
-  stroke: hsl(240, 76.2%, 43.5%);
+  stroke: hsl(240, 84%, 45%);
 }
 
 .versionLink:visited .arrowShaft {
-  stroke: hsl(300, 75.3%, 28.4%);
+  stroke: hsl(300, 74.67%, 28.05%);
 }
