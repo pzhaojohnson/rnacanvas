@@ -9,8 +9,6 @@ import type { StrungRectangle } from 'Draw/bonds/strung/StrungElement';
 import { isNumber } from 'Values/isNumber';
 import { isPoint2D as isVector } from 'Math/points/Point';
 
-import { updateDefaultValues } from 'Draw/bonds/strung/defaults';
-
 function findSVGElement(svg: SVG.Svg, id: unknown): SVG.Element | never {
   if (typeof id != 'string') {
     throw new Error(`SVG element ID is not a string: ${id}.`);
@@ -88,7 +86,6 @@ export function fromSpecification(args: Args): StrungElement | never {
       displacementFromCenter,
       displacementFromCurve,
     };
-    updateDefaultValues(text);
     return text;
   }
 
@@ -99,7 +96,6 @@ export function fromSpecification(args: Args): StrungElement | never {
       displacementFromCenter,
       displacementFromCurve,
     };
-    updateDefaultValues(circle);
     return circle;
   }
 
@@ -114,7 +110,6 @@ export function fromSpecification(args: Args): StrungElement | never {
       displacementFromCenter,
       displacementFromCurve,
     };
-    updateDefaultValues(triangle);
     return triangle;
   }
 
@@ -129,7 +124,6 @@ export function fromSpecification(args: Args): StrungElement | never {
       displacementFromCenter,
       displacementFromCurve,
     };
-    updateDefaultValues(rectangle);
     return rectangle;
   }
 
