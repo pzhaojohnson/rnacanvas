@@ -103,14 +103,14 @@
 }
 
 .linkToPreviousVersionsForm {
-  margin: 5px 0px 0px 0px;
+  margin: 6px 0px 0px 0px;
 
   align-self: center;
 
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: 500;
-  color: hsl(270.3, 83.7%, 24.1%);
+  color: hsl(270.3, 80.18%, 24.42%);
 
   cursor: pointer;
 
