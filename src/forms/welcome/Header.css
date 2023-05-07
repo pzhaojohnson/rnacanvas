@@ -3,8 +3,11 @@
 }
 
 .RNA {
+  position: absolute;
+  top: -23px;
+
   font-family: 'Open Sans', sans-serif;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 700;
   color: black;
 
@@ -14,11 +17,11 @@
 
 .canvas {
   position: absolute;
-  top: -9px;
-  left: 72px;
+  top: -33px;
+  left: 76px;
 
   font-family: 'Corinthia', cursive;
-  font-size: 56px;
+  font-size: 60px;
   font-weight: 700;
   color: black;
 
@@ -38,7 +41,7 @@
 }
 
 .underline {
-  margin: 8px 0 0 0;
+  margin: 10px 0 0 0;
 
   height: 0px;
   border-width: 0px 0px 1px 0px;

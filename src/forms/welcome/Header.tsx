@@ -42,7 +42,7 @@ export function Header() {
         display: 'flex', flexDirection: 'row', alignItems: 'center',
       }} >
         <AppIcon />
-        <div style={{ width: '16px' }} />
+        <div style={{ width: '18px' }} />
         <AppName />
       </div>
       <Underline />
