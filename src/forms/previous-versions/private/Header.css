@@ -25,6 +25,7 @@
 .canvas {
   position: absolute;
   top: -9px;
+  left: 352px;
 
   font-family: "Corinthia", cursive;
   font-size: 50px;
