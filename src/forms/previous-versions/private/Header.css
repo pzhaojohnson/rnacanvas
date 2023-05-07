@@ -1,11 +1,11 @@
 .header {
-  margin: 8px 38px 0px 38px;
+  margin: 9px 42px 0px;
 
   position: relative;
 }
 
 .title {
-  margin-left: 60px;
+  margin-left: 49px;
 
   position: relative;
 
@@ -36,7 +36,6 @@
 .underline {
   margin-top: 4px;
 
-  width: 906px;
   height: 1px;
 
   background-color: hsl(240, 30%, 88%);
