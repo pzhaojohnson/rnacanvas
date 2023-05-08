@@ -2,7 +2,7 @@
   margin: 32px 0 0 0;
   font-size: 16px;
   font-weight: 500;
-  color: hsl(240, 3%, 25%);
+  color: hsl(240, 3.63%, 21.23%);
 
   user-select: none;
   -webkit-user-select: none;
@@ -54,7 +54,7 @@
 
   font-size: 16px;
   font-weight: 500;
-  color: hsl(240, 3%, 25%);
+  color: hsl(240, 3.63%, 21.23%);
 }
 
 .moreInfoLinks {
@@ -81,13 +81,13 @@
 
   font-size: 14px;
   font-weight: 500;
-  color: hsl(240, 3%, 22%);
+  color: hsl(240, 3.36%, 19.83%);
 
   animation: updatesNoticeFadeIn 2s ease-in;
 }
 
 .updatesNoticeDate {
-  color: hsl(240, 3%, 22%);
+  color: hsl(240, 3.36%, 19.83%);
 }
 
 @keyframes updatesNoticeFadeIn {
