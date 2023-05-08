@@ -39,7 +39,7 @@
 }
 
 .newAndOpenButtons:hover::before {
-  transform: scale(1.06);
+  transform: scale(1.075);
   transition: transform 0.25s;
 }
 
