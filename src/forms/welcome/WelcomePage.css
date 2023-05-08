@@ -33,7 +33,6 @@
 
   border: 1px solid hsl(240, 20.36%, 73.01%);
   border-radius: 24px;
-  box-shadow: 0 3px 3px rgba(223, 223, 238, 0.05);
 
   z-index: -1;
 }
