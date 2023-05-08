@@ -1,5 +1,5 @@
 .appDescription {
-  margin: 32px 0 0 0;
+  margin: 35px 0 0 0;
   font-size: 16px;
   font-weight: 500;
   color: hsl(240, 3.63%, 21.23%);
@@ -48,7 +48,7 @@
 }
 
 .moreInfo {
-  margin: 65px 0 0 0;
+  margin: 64px 0 0 0;
   align-self: center;
 
   font-size: 16px;

@@ -134,11 +134,11 @@ export function WelcomePage(props: Props) {
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
         <div className={styles.topSection} >
           <Header />
-          <div style={{ margin: '0px 96px', display: 'flex', flexDirection: 'column' }} >
+          <div style={{ margin: '0px 97px', display: 'flex', flexDirection: 'column' }} >
             <AppDescription />
-            <div style={{ margin: '65px 42px 0', display: 'flex', flexDirection: 'row' }} >
+            <div style={{ margin: '61px 39px 0', display: 'flex', flexDirection: 'row' }} >
               <NewButton {...props} />
-              <div style={{ width: '32px' }} />
+              <div style={{ width: '35px' }} />
               <OpenButton {...props} />
             </div>
             <MoreInfo />
