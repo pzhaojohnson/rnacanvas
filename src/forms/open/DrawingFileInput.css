@@ -29,7 +29,7 @@
 }
 
 .drawingFileInput:hover::before {
-  transform: scale(1.05);
+  transform: scale(1.06);
   transition: transform 0.25s;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .text {
-  width: 600px;
+  width: 616px;
 
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
