@@ -37,7 +37,7 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: hsl(240, 87%, 16%);
+  color: hsl(240, 86.92%, 15.78%);
 
   user-select: none;
   -webkit-user-select: none;
@@ -45,10 +45,10 @@
 
 .dotRNAcanvas {
   font-weight: 700;
-  color: hsl(240, 87%, 16%);
+  color: hsl(240, 84.33%, 14.92%);
 }
 
 .dotRNA2Drawer {
   font-weight: 700;
-  color: hsl(240, 87%, 16%);
+  color: hsl(240, 84.33%, 14.92%);
 }
