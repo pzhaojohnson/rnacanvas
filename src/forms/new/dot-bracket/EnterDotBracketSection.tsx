@@ -55,7 +55,7 @@ export function EnterDotBracketSection(props: Props): React.ReactElement {
   let [errorMessageKey, setErrorMessageKey] = useState(0);
 
   return (
-    <div style={{ margin: '0px 144px', flexGrow: 1, display: 'flex', flexDirection: 'column' }} >
+    <div style={{ margin: '0px 141px', flexGrow: 1, display: 'flex', flexDirection: 'column' }} >
       <div style={{ marginTop: '24px' }} >
         <ExampleSelect
           examples={examples.map(e => e.name)}
@@ -107,7 +107,7 @@ export function EnterDotBracketSection(props: Props): React.ReactElement {
           {showingDotBracketParsingDetails ? <DotBracketParsingDetails /> : null}
         </div>
       </div>
-      <div style={{ margin: '25px 0 24px 0', display: 'flex', alignItems: 'center' }} >
+      <div style={{ margin: '24px 0 24px 0', display: 'flex', alignItems: 'center' }} >
         <SubmitButton
           onClick={() => {
             let parsed = parseInputs({
@@ -140,7 +140,7 @@ export function EnterDotBracketSection(props: Props): React.ReactElement {
           Submit
         </SubmitButton>
         {!errorMessage ? null : (
-          <ErrorMessage key={errorMessageKey} style={{ marginLeft: '10px' }} >
+          <ErrorMessage key={errorMessageKey} style={{ marginLeft: '11px' }} >
             {errorMessage}
           </ErrorMessage>
         )}
