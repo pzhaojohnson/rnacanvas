@@ -14,7 +14,7 @@
 
 .textInput:hover {
   border-color: #0a0a0a;
-  transition: border-color 0.2s;
+  transition: border-color 0s;
 }
 
 .textInput:focus {
