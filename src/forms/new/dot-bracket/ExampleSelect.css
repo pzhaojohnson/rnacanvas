@@ -41,5 +41,5 @@
 
 .option:active::before {
   transform: scale(1);
-  transition: transform 0.05s;
+  transition: transform 0s;
 }
