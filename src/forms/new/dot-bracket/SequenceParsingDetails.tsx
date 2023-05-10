@@ -46,11 +46,11 @@ export function IgnoreNonAlphanumericsCheckbox(props: Props): React.ReactElement
 
 export function SequenceParsingDetails(props: Props): React.ReactElement {
   return (
-    <div className={styles.parsingDetails} style={{ width: '364px', margin: '24px 0px 0px 12px' }} >
+    <div className={styles.parsingDetails} style={{ width: '366px', margin: '24px 0px 0px 14px' }} >
       <h3 className={styles.header} >
         Sequence Parsing Details
       </h3>
-      <div style={{ marginLeft: '8px' }} >
+      <div style={{ marginLeft: '9px' }} >
         <div style={{ height: '6px' }} />
         <p>
           All letters, numbers, and non-alphanumeric characters are read in as individual bases, unless specified to be ignored.

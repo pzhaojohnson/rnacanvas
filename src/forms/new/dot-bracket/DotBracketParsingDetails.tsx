@@ -3,11 +3,11 @@ import styles from './ParsingDetails.css';
 
 export function DotBracketParsingDetails(): React.ReactElement {
   return (
-    <div className={styles.parsingDetails} style={{ width: '364px', margin: '24px 0px 0px 12px' }} >
+    <div className={styles.parsingDetails} style={{ width: '366px', margin: '24px 0px 0px 14px' }} >
       <h3 className={styles.header} >
         Structure Parsing Details
       </h3>
-      <div style={{ marginLeft: '8px' }} >
+      <div style={{ marginLeft: '9px' }} >
         <p style={{ marginTop: '6px' }} >
           Periods "." indicate unpaired bases.
         </p>
