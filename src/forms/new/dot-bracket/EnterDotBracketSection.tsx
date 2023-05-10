@@ -140,7 +140,7 @@ export function EnterDotBracketSection(props: Props): React.ReactElement {
           Submit
         </SubmitButton>
         {!errorMessage ? null : (
-          <ErrorMessage key={errorMessageKey} style={{ marginLeft: '11px' }} >
+          <ErrorMessage key={errorMessageKey} style={{ marginLeft: '12px' }} >
             {errorMessage}
           </ErrorMessage>
         )}
