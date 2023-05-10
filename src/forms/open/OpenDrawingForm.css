@@ -1,13 +1,13 @@
 .content {
-  width: 920px;
-  height: 528px;
+  width: 922px;
+  min-height: 538px;
 
   display: flex;
   flex-direction: column;
 }
 
 .title {
-  margin: 0px 92px;
+  margin: 0px 93px;
 
   font-size: 24px;
   font-weight: 600;

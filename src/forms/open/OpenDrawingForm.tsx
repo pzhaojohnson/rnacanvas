@@ -100,7 +100,7 @@ function DetailsToggle(
     <_DetailsToggle
       onClick={props.onClick}
       style={{
-        marginRight: '468px', padding: '1px 14px',
+        marginRight: '470px', padding: '1px 14px',
         fontSize: '12px', fontWeight: 500,
       }}
     >
@@ -182,7 +182,7 @@ export function OpenDrawingForm(props: Props) {
   );
 
   let detailsToggleSpacer = (
-    <div style={{ height: '40px' }} />
+    <div style={{ height: '44px' }} />
   );
 
   let detailsToggle = (
