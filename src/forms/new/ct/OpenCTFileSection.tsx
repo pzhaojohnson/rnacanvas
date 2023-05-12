@@ -24,7 +24,7 @@ function ErrorMessage(
   return (
     <_ErrorMessage
       style={{
-        marginTop: '12px', height: '52px',
+        marginTop: '14px', height: '54px',
         fontSize: '16px', color: '#d71111',
       }}
     >
@@ -85,7 +85,7 @@ function Details() {
         are produced by RNA structure prediction programs
         such as {Mfold} and {RNAfold}.
       </p>
-      <p className={styles.detailsText} style={{ marginTop: '20px' }} >
+      <p className={styles.detailsText} style={{ marginTop: '23px' }} >
         If a CT file contains multiple structures,
         only the first structure in the CT file will be drawn.
       </p>
@@ -160,7 +160,7 @@ export function OpenCTFileSection(props: Props) {
   return (
     <div className={styles.openCTFileSection} >
       {ctFileInput}
-      {errorMessage ? errorMessage : <div style={{ height: '64px' }} />}
+      {errorMessage ? errorMessage : <div style={{ height: '68px' }} />}
       <Details />
     </div>
   );
