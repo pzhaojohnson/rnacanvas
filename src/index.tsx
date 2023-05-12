@@ -26,7 +26,7 @@ setTimeout(() => {
     app.formContainer.renderForm(() => <WelcomePage app={app} />);
   }, 50);
 
-  // page will probably be fully loaded after 3 seconds
+  // page will probably be fully loaded after 2.75 seconds
   setTimeout(() => {
     // hide prerendered welcome page
     app.formContainer.unmountForm();
@@ -38,7 +38,7 @@ setTimeout(() => {
         app.formContainer.renderForm(() => <WelcomePage app={app} />);
       });
     }, 25);
-  }, 3000);
+  }, 2750);
 
   // disable drag and drop
   document.body.ondragstart = () => false;
