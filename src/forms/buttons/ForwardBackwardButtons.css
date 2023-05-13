@@ -1,5 +1,6 @@
 .forwardBackwardButton {
-  width: 108px;
+  width: 110px;
+  height: 25px;
 
   /* use before pseudo-element for border and box-shadow */
   border: none;
@@ -7,8 +8,6 @@
   box-shadow: none;
   position: relative;
   isolation: isolate;
-
-  padding: 4px 0px;
 
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
