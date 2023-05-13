@@ -40,8 +40,8 @@ function createBox(args: (
 function highlightingBoxOfSVGText(text: SVG.Text): SVG.Box {
   let box = text.bbox();
 
-  // two pixels of padding on each side
-  return new SVG.Box(box.x - 2, box.y - 2, box.width + 4, box.height + 4);
+  // 3 pixels of padding on each side
+  return new SVG.Box(box.x - 3, box.y - 3, box.width + 6, box.height + 6);
 }
 
 function highlightingBoxOfSVGLine(line: SVG.Line): SVG.Box {
