@@ -17,7 +17,7 @@ export class ElementHighlighting {
 
     this.rect.attr({
       'stroke': 'blue',
-      'stroke-width': 0.35,
+      'stroke-width': 0.5,
       'stroke-dasharray': '1.75 0.75',
       'fill-opacity': 0,
     });
