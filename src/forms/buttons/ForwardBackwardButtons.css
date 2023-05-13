@@ -26,9 +26,8 @@
 
 .forwardBackwardButton::before {
   content: "";
-  border: 1px solid #cbcbdb;
+  border: 1px solid #bebed4;
   border-radius: 40px;
-  box-shadow: 0 2px 2px rgba(230, 230, 242, 0.22);
 
   position: absolute;
   top: 0px;
