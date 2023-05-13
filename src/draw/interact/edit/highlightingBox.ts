@@ -47,15 +47,15 @@ function highlightingBoxOfSVGText(text: SVG.Text): SVG.Box {
 function highlightingBoxOfSVGLine(line: SVG.Line): SVG.Box {
   let box = bboxOfLine(line);
 
-  // an extra half a pixel of padding on each side
-  return new SVG.Box(box.x - 0.5, box.y - 0.5, box.width + 1, box.height + 1);
+  // 0.75 pixels of padding on each side
+  return new SVG.Box(box.x - 0.75, box.y - 0.75, box.width + 1.5, box.height + 1.5);
 }
 
 function highlightingBoxOfSVGCircle(circle: SVG.Circle): SVG.Box {
   let box = bboxOfCircle(circle);
 
-  // half a pixel of padding on each side
-  return new SVG.Box(box.x - 0.5, box.y - 0.5, box.width + 1, box.height + 1);
+  // 0.75 pixels of padding on each side
+  return new SVG.Box(box.x - 0.75, box.y - 0.75, box.width + 1.5, box.height + 1.5);
 }
 
 function highlightingBoxOfSVGPath(path: SVG.Path): SVG.Box {
@@ -70,8 +70,8 @@ function highlightingBoxOfSVGPath(path: SVG.Path): SVG.Box {
     box = new SVG.Box(x, y, width, height);
   }
 
-  // an extra half a pixel of padding on each side
-  box = new SVG.Box(box.x - 0.5, box.y - 0.5, box.width + 1, box.height + 1);
+  // 0.75 pixels of padding on each side
+  box = new SVG.Box(box.x - 0.75, box.y - 0.75, box.width + 1.5, box.height + 1.5);
 
   return box;
 }
