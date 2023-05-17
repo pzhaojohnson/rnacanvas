@@ -7,12 +7,12 @@ export class PrimaryBond extends StraightBond {
 
 PrimaryBond.recommendedDefaults = {
   line: {
-    'stroke': '#808080',
+    'stroke': '#515151',
     'stroke-width': 1,
     'stroke-opacity': 1,
     'stroke-linecap': 'butt',
     'stroke-dasharray': 'none',
   },
-  basePadding1: 8,
-  basePadding2: 8,
+  basePadding1: 7,
+  basePadding2: 7,
 };
