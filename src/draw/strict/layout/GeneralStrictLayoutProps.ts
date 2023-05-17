@@ -38,9 +38,9 @@ export class GeneralStrictLayoutProps {
     this.outermostLoopShape = 'round';
     this.rotation = 0.0;
 
-    this.basePairBondLength = 1.2;
+    this.basePairBondLength = 1.35;
     this.basePairPadding = 0;
-    
+
     this.terminiGap = 4;
   }
 
