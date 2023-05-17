@@ -18,7 +18,7 @@ export function allHaveOutlines(bases: Base[]): boolean {
 
 let recommendedDefaults = {
   circle: {
-    'r': 7,
+    'r': 6,
     'stroke': '#00ffff',
     'stroke-width': 1,
     'stroke-opacity': 1,
