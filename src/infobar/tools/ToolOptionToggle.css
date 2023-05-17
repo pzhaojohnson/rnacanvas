@@ -27,7 +27,7 @@
 
 .toolOptionToggle::before {
   content: "";
-  border: 1px solid hsl(240, 14%, 72%);
+  border: 1px solid hsl(240, 10.46%, 65.38%);
   border-radius: 1000px;
 
   position: absolute;
@@ -43,7 +43,7 @@
 
 .toggled {
   font-weight: 600;
-  color: rgba(18, 18, 19, 0.97);
+  color: rgba(12, 12, 13, 1);
 }
 
 .toggled .check {
@@ -52,7 +52,7 @@
 
 .untoggled {
   font-weight: 600;
-  color: hsl(240, 4%, 36%);
+  color: hsl(240, 6.1%, 31.57%);
 }
 
 .untoggled .check {
