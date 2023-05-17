@@ -109,13 +109,13 @@ export class BaseNumbering {
 BaseNumbering.recommendedDefaults = {
   text: {
     'font-family': 'Arial',
-    'font-size': 8,
+    'font-size': 9,
     'font-weight': 'normal',
-    'fill': '#808080',
+    'fill': '#525252',
     'fill-opacity': 1,
   },
   line: {
-    'stroke': '#808080',
+    'stroke': '#525252',
     'stroke-width': 1,
     'stroke-opacity': 1,
     'stroke-dasharray': 'none',
