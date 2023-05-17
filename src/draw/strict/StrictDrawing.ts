@@ -44,8 +44,8 @@ export class StrictDrawing {
 
     this.generalLayoutProps = new GeneralLayoutProps();
     this._perBaseLayoutProps = [];
-    this.baseWidth = 13.5;
-    this.baseHeight = 13.5;
+    this.baseWidth = 12;
+    this.baseHeight = 12;
   }
 
   get drawing(): Drawing {
