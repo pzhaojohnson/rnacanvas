@@ -120,6 +120,6 @@ BaseNumbering.recommendedDefaults = {
     'stroke-opacity': 1,
     'stroke-dasharray': 'none',
   },
-  basePadding: 8,
-  lineLength: 8,
+  basePadding: 7,
+  lineLength: 9,
 };
