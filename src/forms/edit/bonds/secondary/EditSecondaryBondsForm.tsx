@@ -29,14 +29,6 @@ function DrawingHasNoSecondaryBondsNotes() {
   );
 }
 
-function ForAllSecondaryBondsLabel() {
-  return (
-    <p className={styles.forAllSecondaryBondsLabel} >
-      For all secondary bonds...
-    </p>
-  );
-}
-
 function NoSecondaryBondsAreSelectedNotes() {
   return (
     <div style={{ marginTop: '44px' }} >
@@ -179,7 +171,6 @@ export function EditSecondaryBondsForm(props: Props) {
         <DrawingHasNoSecondaryBondsNotes />
       ) : props.secondaryBonds.length == 0 ? (
         <div style={{ display: 'flex', flexDirection: 'column' }} >
-          <ForAllSecondaryBondsLabel />
           <BaseSpacingField {...props} />
           <NoSecondaryBondsAreSelectedNotes />
           <SelectSecondaryBondsButtons {...props} />
