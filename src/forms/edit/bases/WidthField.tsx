@@ -35,6 +35,14 @@ class DrawingWrapper {
 // keep stable to help refocus the input element on app refresh
 const inputId = generateHTMLCompatibleUUID();
 
+function Asterisk() {
+  return (
+    <span style={{ fontWeight: 900 }} >
+      *
+    </span>
+  );
+}
+
 export type Props = {
   /**
    * A reference to the whole app.
@@ -82,8 +90,9 @@ export class WidthField extends React.Component<Props> {
           style={{ minWidth: '52px' }}
         />
         <span style={{ paddingLeft: '8px' }} >
-          Width
+          Width&nbsp;
         </span>
+        <Asterisk />
       </FieldLabel>
     );
   }

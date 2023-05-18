@@ -7,6 +7,23 @@ import styles from './WidthAndHeightFields.css';
 import { WidthField } from './WidthField';
 import { HeightField } from './HeightField';
 
+function Asterisk() {
+  return (
+    <span style={{ fontWeight: 900 }} >
+      *
+    </span>
+  );
+}
+
+function ApplyToAllBasesNote() {
+  return (
+    <p className={styles.applyToAllBasesNote} >
+      <Asterisk />
+      &nbsp;Apply to all bases.
+    </p>
+  );
+}
+
 export type Props = {
   /**
    * A reference to the whole app.
@@ -31,6 +48,7 @@ export function WidthAndHeightFields(props: Props) {
     <div className={styles.widthAndHeightFields} >
       {widthField}
       {heightField}
+      <ApplyToAllBasesNote />
     </div>
   );
 }
