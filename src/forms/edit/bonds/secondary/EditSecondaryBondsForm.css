@@ -55,3 +55,7 @@
   transform: scale(1);
   transition: transform 0.05s;
 }
+
+.baseSpacingFieldSpacer {
+  height: 25px;
+}

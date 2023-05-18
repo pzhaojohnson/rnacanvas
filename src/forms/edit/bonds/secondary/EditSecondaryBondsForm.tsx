@@ -149,6 +149,10 @@ function SelectSecondaryBondsButtons(props: { app: App }) {
   );
 }
 
+function BaseSpacingFieldSpacer() {
+  return <div className={styles.baseSpacingFieldSpacer} />
+}
+
 export type Props = {
   app: App;
 
@@ -177,6 +181,8 @@ export function EditSecondaryBondsForm(props: Props) {
         </div>
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column' }} >
+          <BaseSpacingField {...props} />
+          <BaseSpacingFieldSpacer />
           <StrokeField {...props} />
           <StrokeWidthField {...props} />
           <StrokeDasharrayField {...props} />
