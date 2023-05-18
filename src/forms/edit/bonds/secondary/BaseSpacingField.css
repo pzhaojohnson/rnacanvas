@@ -1,0 +1,18 @@
+.baseSpacingField {
+  margin: 10px 0px 0px 8px;
+
+  align-self: start;
+}
+
+.appliesToAllSecondaryBondsNote {
+  margin: 6px 0px 0px 0px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: black;
+}
+
+.asterisk {
+  font-weight: 900;
+}

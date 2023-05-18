@@ -4,6 +4,8 @@ import type { StrictDrawing } from 'Draw/strict/StrictDrawing';
 
 import * as React from 'react';
 
+import styles from './BaseSpacingField.css';
+
 import { NumberPropertyInput } from 'Forms/edit/objects/NumberPropertyInput';
 import type { EditEvent } from 'Forms/edit/objects/NumberPropertyInput';
 
@@ -37,6 +39,23 @@ class DrawingWrapper {
 // (to facilitate refocusing when the app is refreshed)
 const inputId = generateHTMLCompatibleUUID();
 
+function Asterisk() {
+  return (
+    <span className={styles.asterisk} >
+      *
+    </span>
+  );
+}
+
+function AppliesToAllSecondaryBondsNote() {
+  return (
+    <p className={styles.appliesToAllSecondaryBondsNote} >
+      <Asterisk />
+      &nbsp;Applies to all secondary bonds.
+    </p>
+  );
+}
+
 export type Props = {
   /**
    * A reference to the whole app.
@@ -66,28 +85,26 @@ export class BaseSpacingField extends React.Component<Props> {
     // the drawing itself should be updated on edit
     let objects = [{ basePairBondLength: this.drawing.basePairBondLength }];
 
-    let style: React.CSSProperties = {
-      margin: '10px 0 0 8px',
-      alignSelf: 'start',
-      cursor: 'text',
-    };
-
     return (
-      <FieldLabel style={style} >
-        <NumberPropertyInput
-          id={inputId}
-          objects={objects}
-          propertyName='basePairBondLength'
-          minValue={0}
-          places={2}
-          onBeforeEdit={event => this.handleBeforeEdit(event)}
-          onEdit={event => this.handleEdit(event)}
-          style={{ minWidth: '42px' }}
-        />
-        <span style={{ paddingLeft: '8px' }} >
-          Base Spacing
-        </span>
-      </FieldLabel>
+      <div className={styles.baseSpacingField} >
+        <FieldLabel style={{ cursor: 'text' }} >
+          <NumberPropertyInput
+            id={inputId}
+            objects={objects}
+            propertyName='basePairBondLength'
+            minValue={0}
+            places={2}
+            onBeforeEdit={event => this.handleBeforeEdit(event)}
+            onEdit={event => this.handleEdit(event)}
+            style={{ minWidth: '42px' }}
+          />
+          <span style={{ paddingLeft: '8px' }} >
+            Base Spacing&nbsp;
+          </span>
+          <Asterisk />
+        </FieldLabel>
+        <AppliesToAllSecondaryBondsNote />
+      </div>
     );
   }
 }
