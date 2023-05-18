@@ -8,7 +8,7 @@ export class PrimaryBond extends StraightBond {
 PrimaryBond.recommendedDefaults = {
   line: {
     'stroke': '#515151',
-    'stroke-width': 1,
+    'stroke-width': 1.25,
     'stroke-opacity': 1,
     'stroke-linecap': 'butt',
     'stroke-dasharray': 'none',
