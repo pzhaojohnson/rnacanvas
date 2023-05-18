@@ -71,6 +71,10 @@ function SelectAllBasesButton(
   );
 }
 
+function WidthAndHeightFieldsSpacer() {
+  return <div className={styles.widthAndHeightFieldsSpacer} />
+}
+
 export type Props = {
   app: App;
 
@@ -103,6 +107,8 @@ export function EditBasesForm(props: Props) {
         </div>
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column' }} >
+          <WidthAndHeightFields {...props} />
+          <WidthAndHeightFieldsSpacer />
           <CharacterField {...props} />
           <FillField {...props} />
           <FontFamilyField {...props} />
