@@ -7,8 +7,7 @@ import styles from './EditBasesForm.css';
 import { PartialWidthContainer } from 'Forms/containers/partial-width/PartialWidthContainer';
 import { FormHistoryInterface } from 'Forms/history/FormHistoryInterface';
 
-import { WidthField } from './WidthField';
-import { HeightField } from './HeightField';
+import { WidthAndHeightFields } from './WidthAndHeightFields';
 
 import { CharacterField } from './CharacterField';
 import { FillField } from './FillField';
@@ -107,8 +106,7 @@ export function EditBasesForm(props: Props) {
       ) : props.bases.length == 0 ? (
         <div style={{ display: 'flex', flexDirection: 'column' }} >
           <ForAllBasesLabel />
-          <WidthField {...props} />
-          <HeightField {...props} />
+          <WidthAndHeightFields {...props} />
           <NoBasesAreSelectedNotes />
           <SelectAllBasesButton {...props} />
         </div>

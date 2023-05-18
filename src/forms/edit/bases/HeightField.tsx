@@ -65,7 +65,7 @@ export class HeightField extends React.Component<Props> {
     let objects = [{ baseHeight: this.drawing.baseHeight }];
 
     let style: React.CSSProperties = {
-      margin: '8px 0 0 8px',
+      margin: '8px 0 0 0px',
       alignSelf: 'start',
       cursor: 'text',
     };

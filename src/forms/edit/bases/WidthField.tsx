@@ -65,7 +65,6 @@ export class WidthField extends React.Component<Props> {
     let objects = [{ baseWidth: this.drawing.baseWidth }];
 
     let style: React.CSSProperties = {
-      margin: '10px 0 0 8px',
       alignSelf: 'start',
       cursor: 'text',
     };
