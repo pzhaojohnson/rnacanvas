@@ -58,6 +58,7 @@
       "^Array(.*)$": "<rootDir>/src/array$1",
       "^Draw(.*)$": "<rootDir>/src/draw$1",
       "^Export(.*)$": "<rootDir>/src/export$1",
+      "^Foreign(.*)$": "<rootDir>/src/foreign$1",
       "^Forms(.*)$": "<rootDir>/src/forms$1",
       "^History(.*)$": "<rootDir>/src/history$1",
       "^Infobar(.*)$": "<rootDir>/src/infobar$1",

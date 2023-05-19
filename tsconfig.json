@@ -16,6 +16,7 @@
       "Array/*": ["src/array/*"],
       "Draw/*": ["src/draw/*"],
       "Export/*": ["src/export/*"],
+      "Foreign/*": ["src/foreign/*"],
       "Forms/*": ["src/forms/*"],
       "History/*": ["src/history/*"],
       "Infobar/*": ["src/infobar/*"],

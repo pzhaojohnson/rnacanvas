@@ -62,6 +62,7 @@ module.exports = {
       Array: path.resolve(__dirname, 'src/array/'),
       Draw: path.resolve(__dirname, 'src/draw/'),
       Export: path.resolve(__dirname, 'src/export/'),
+      Foreign: path.resolve(__dirname, 'src/foreign/'),
       Forms: path.resolve(__dirname, 'src/forms/'),
       History: path.resolve(__dirname, 'src/history/'),
       Infobar: path.resolve(__dirname, 'src/infobar/'),
