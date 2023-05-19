@@ -28,7 +28,7 @@ export class NonNullObjectWrapper {
     let value = this.getProperty(name);
 
     if (typeof value != 'string') {
-      throw new Error(`Property ${name} is not a string.`);
+      throw new Error(`${value} is not a string.`);
     }
 
     return value;
@@ -41,7 +41,7 @@ export class NonNullObjectWrapper {
     let value = this.getProperty(name);
 
     if (typeof value != 'number') {
-      throw new Error(`Property ${name} is not a number.`);
+      throw new Error(`${value} is not a number.`);
     }
 
     return value;
@@ -54,7 +54,7 @@ export class NonNullObjectWrapper {
     let value = this.getNumberProperty(name);
 
     if (!Number.isFinite(value)) {
-      throw new Error(`Property ${name} is not finite.`);
+      throw new Error(`${value} is not finite.`);
     }
 
     return value;
@@ -67,7 +67,7 @@ export class NonNullObjectWrapper {
     let value = this.getProperty(name);
 
     if (!Array.isArray(value)) {
-      throw new Error(`Property ${name} is not an array.`);
+      throw new Error(`${value} is not an array.`);
     }
 
     return value;
