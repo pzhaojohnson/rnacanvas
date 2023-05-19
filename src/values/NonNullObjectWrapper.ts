@@ -46,4 +46,17 @@ export class NonNullObjectWrapper {
 
     return value;
   }
+
+  /**
+   * Throws if the property is not an array.
+   */
+  getArrayProperty(name: string): unknown[] | never {
+    let value = this.getProperty(name);
+
+    if (!Array.isArray(value)) {
+      throw new Error(`Property ${name} is not an array.`);
+    }
+
+    return value;
+  }
 }

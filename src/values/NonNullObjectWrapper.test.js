@@ -54,4 +54,20 @@ describe('NonNullObjectWrapper class', () => {
     // a non-existent property
     expect(() => wrapper.getNumberProperty('p')).toThrow();
   });
+
+  test('getArrayProperty method', () => {
+    let o = { 'a': [], 'zcxv': [5, 55, 'c'], 'tt': 67, 'pYCF': true };
+    let wrapper = new NonNullObjectWrapper(o);
+
+    // some array properties
+    expect(wrapper.getArrayProperty('a')).toStrictEqual([]);
+    expect(wrapper.getArrayProperty('zcxv')).toStrictEqual([5, 55, 'c']);
+
+    // some properties that are not arrays
+    expect(() => wrapper.getArrayProperty('tt')).toThrow();
+    expect(() => wrapper.getArrayProperty('pYCF')).toThrow();
+
+    // a non-existent property
+    expect(() => wrapper.getArrayProperty('qwer')).toThrow();
+  });
 });
