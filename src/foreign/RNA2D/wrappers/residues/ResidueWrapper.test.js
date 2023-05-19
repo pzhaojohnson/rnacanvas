@@ -37,4 +37,9 @@ describe('ResidueWrapper class', () => {
     let residue = new ResidueWrapper(exampleResidues.residue3);
     expect(residue.residueIndex).toBe(44);
   });
+
+  test('residueName getter', () => {
+    let residue = new ResidueWrapper(exampleResidues.residue1);
+    expect(residue.residueName).toBe('U');
+  });
 });
