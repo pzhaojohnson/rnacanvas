@@ -12,4 +12,12 @@ export class NonNullObjectWrapper {
 
     this.wrappee = wrappee;
   }
+
+  /**
+   * Returns undefined if the property does not exist (as objects
+   * generally do in JavaScript).
+   */
+  getProperty(name: string): unknown {
+    return this.wrappee[name];
+  }
 }

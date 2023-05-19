@@ -13,4 +13,16 @@ describe('NonNullObjectWrapper class', () => {
       expect(() => new NonNullObjectWrapper(2)).toThrow();
     });
   });
+
+  test('getProperty method', () => {
+    let o = { 'asdf': 57, 'Q': false };
+    let wrapper = new NonNullObjectWrapper(o);
+
+    // existing properties
+    expect(wrapper.getProperty('asdf')).toBe(57);
+    expect(wrapper.getProperty('Q')).toBe(false);
+
+    // a non-existent property
+    expect(wrapper.getProperty('qwer')).toBeUndefined();
+  });
 });
