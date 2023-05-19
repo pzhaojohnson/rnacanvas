@@ -33,4 +33,17 @@ export class NonNullObjectWrapper {
 
     return value;
   }
+
+  /**
+   * Throws if the property is not a number.
+   */
+  getNumberProperty(name: string): number | never {
+    let value = this.getProperty(name);
+
+    if (typeof value != 'number') {
+      throw new Error(`Property ${name} is not a number.`);
+    }
+
+    return value;
+  }
 }

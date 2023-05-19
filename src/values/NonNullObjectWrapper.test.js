@@ -39,4 +39,19 @@ describe('NonNullObjectWrapper class', () => {
     // a non-existent property
     expect(() => wrapper.getStringProperty('mmm')).toThrow();
   });
+
+  test('getNumberProperty method', () => {
+    let o = { 'zxcv': 108, '555': '24', 'asdf': false };
+    let wrapper = new NonNullObjectWrapper(o);
+
+    // a number property
+    expect(wrapper.getNumberProperty('zxcv')).toBe(108);
+
+    // some properties that are not numbers
+    expect(() => wrapper.getNumberProperty('555')).toThrow();
+    expect(() => wrapper.getNumberProperty('asdf')).toThrow();
+
+    // a non-existent property
+    expect(() => wrapper.getNumberProperty('p')).toThrow();
+  });
 });
