@@ -27,4 +27,9 @@ describe('ResidueWrapper class', () => {
     let wrapper = new ResidueWrapper(wrappee);
     expect(wrapper.wrappee).toBe(wrappee);
   });
+
+  test('classes getter', () => {
+    let residue = new ResidueWrapper(exampleResidues.residue2);
+    expect(residue.classes).toStrictEqual(['text-green', 'font']);
+  });
 });
