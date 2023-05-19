@@ -20,4 +20,17 @@ export class NonNullObjectWrapper {
   getProperty(name: string): unknown {
     return this.wrappee[name];
   }
+
+  /**
+   * Throws if the property is not a string.
+   */
+  getStringProperty(name: string): string | never {
+    let value = this.getProperty(name);
+
+    if (typeof value != 'string') {
+      throw new Error(`Property ${name} is not a string.`);
+    }
+
+    return value;
+  }
 }

@@ -25,4 +25,18 @@ describe('NonNullObjectWrapper class', () => {
     // a non-existent property
     expect(wrapper.getProperty('qwer')).toBeUndefined();
   });
+
+  test('getStringProperty method', () => {
+    let o = { '23': 'ASf sdf', 'zzz': 5 };
+    let wrapper = new NonNullObjectWrapper(o);
+
+    // a string property
+    expect(wrapper.getStringProperty('23')).toBe('ASf sdf');
+
+    // not a string property
+    expect(() => wrapper.getStringProperty('zzz')).toThrow();
+
+    // a non-existent property
+    expect(() => wrapper.getStringProperty('mmm')).toThrow();
+  });
 });
