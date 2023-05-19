@@ -6,6 +6,8 @@ import { ResidueWrapper } from './ResidueWrapper';
 
 let exampleResidueFileNames = [
   'residue1.json',
+  'residue2.json',
+  'residue3.json',
 ];
 
 let exampleResidues = {};
