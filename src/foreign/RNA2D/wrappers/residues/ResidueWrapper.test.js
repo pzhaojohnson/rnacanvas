@@ -42,4 +42,10 @@ describe('ResidueWrapper class', () => {
     let residue = new ResidueWrapper(exampleResidues.residue1);
     expect(residue.residueName).toBe('U');
   });
+
+  test('x and y getters', () => {
+    let residue = new ResidueWrapper(exampleResidues.residue2);
+    expect(residue.x).toBe(62.41);
+    expect(residue.y).toBe(18.62394822071917);
+  });
 });

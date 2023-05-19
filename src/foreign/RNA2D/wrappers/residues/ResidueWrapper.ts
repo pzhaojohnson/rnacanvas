@@ -24,4 +24,14 @@ export class ResidueWrapper {
     return (new NonNullObjectWrapper(this.wrappee))
       .getStringProperty('residueName');
   }
+
+  get x() {
+    return (new NonNullObjectWrapper(this.wrappee))
+      .getFiniteNumberProperty('x');
+  }
+
+  get y() {
+    return (new NonNullObjectWrapper(this.wrappee))
+      .getFiniteNumberProperty('y');
+  }
 }
