@@ -14,4 +14,9 @@ export class ResidueWrapper {
     return (new NonNullObjectWrapper(this.wrappee))
       .getArrayProperty('classes');
   }
+
+  get residueIndex() {
+    return (new NonNullObjectWrapper(this.wrappee))
+      .getFiniteNumberProperty('residueIndex');
+  }
 }

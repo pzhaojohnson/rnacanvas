@@ -32,4 +32,9 @@ describe('ResidueWrapper class', () => {
     let residue = new ResidueWrapper(exampleResidues.residue2);
     expect(residue.classes).toStrictEqual(['text-green', 'font']);
   });
+
+  test('residueIndex getter', () => {
+    let residue = new ResidueWrapper(exampleResidues.residue3);
+    expect(residue.residueIndex).toBe(44);
+  });
 });
