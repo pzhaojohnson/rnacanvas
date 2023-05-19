@@ -48,6 +48,19 @@ export class NonNullObjectWrapper {
   }
 
   /**
+   * Throws if the property is not a finite number.
+   */
+  getFiniteNumberProperty(name: string): number | never {
+    let value = this.getNumberProperty(name);
+
+    if (!Number.isFinite(value)) {
+      throw new Error(`Property ${name} is not finite.`);
+    }
+
+    return value;
+  }
+
+  /**
    * Throws if the property is not an array.
    */
   getArrayProperty(name: string): unknown[] | never {

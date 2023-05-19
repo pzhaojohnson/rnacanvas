@@ -55,6 +55,25 @@ describe('NonNullObjectWrapper class', () => {
     expect(() => wrapper.getNumberProperty('p')).toThrow();
   });
 
+  test('getFiniteNumberProperty method', () => {
+    let o = { 'A': -0.29, 'a': 51, 'b': Infinity, 'c': NaN, 'Q': 'asdf' };
+    let wrapper = new NonNullObjectWrapper(o);
+
+    // some finite number properties
+    expect(wrapper.getFiniteNumberProperty('A')).toBe(-0.29);
+    expect(wrapper.getFiniteNumberProperty('a')).toBe(51);
+
+    // some nonfinite number properties
+    expect(() => wrapper.getFiniteNumberProperty('b')).toThrow();
+    expect(() => wrapper.getFiniteNumberProperty('c')).toThrow();
+
+    // a non-number property
+    expect(() => wrapper.getFiniteNumberProperty('Q')).toThrow();
+
+    // a non-existent property
+    expect(() => wrapper.getFiniteNumberProperty('psekugh')).toThrow();
+  });
+
   test('getArrayProperty method', () => {
     let o = { 'a': [], 'zcxv': [5, 55, 'c'], 'tt': 67, 'pYCF': true };
     let wrapper = new NonNullObjectWrapper(o);
