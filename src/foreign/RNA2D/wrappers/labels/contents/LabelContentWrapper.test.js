@@ -26,4 +26,12 @@ describe('LabelContentWrapper class', () => {
     let wrapper = new LabelContentWrapper(wrappee);
     expect(wrapper.wrappee).toBe(wrappee);
   });
+
+  test('classes getter', () => {
+    let lc = new LabelContentWrapper(exampleLabelContents.labelContent2);
+
+    expect(lc.classes).toStrictEqual(
+      ['font', 'numbering-label', 'sequential']
+    );
+  });
 });
