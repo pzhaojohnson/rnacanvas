@@ -4,6 +4,8 @@ import * as path from 'path';
 
 import { BasePairWrapper } from 'Foreign/RNA2D/wrappers/base-pairs/BasePairWrapper';
 
+import { ResidueWrapper } from 'Foreign/RNA2D/wrappers/residues/ResidueWrapper';
+
 import { RNAMoleculeWrapper } from './RNAMoleculeWrapper';
 
 let exampleRNAMoleculeFileNames = [
@@ -48,5 +50,20 @@ describe('RNAMoleculeWrapper class', () => {
   test('name getter', () => {
     let rm = new RNAMoleculeWrapper(exampleRNAMolecules.rnaMolecule2);
     expect(rm.name).toBe('RNVU1-1');
+  });
+
+  test('sequence getter', () => {
+    let rm = new RNAMoleculeWrapper(exampleRNAMolecules.rnaMolecule3);
+    let sequence = rm.sequence;
+    expect(sequence.length).toBe(123);
+
+    sequence.forEach(r => {
+      expect(r instanceof ResidueWrapper).toBeTruthy();
+    });
+
+    // just check some values of some residues
+    expect(sequence[41].residueName).toBe('G');
+    expect(sequence[62].x).toBe(88.03281772659034);
+    expect(sequence[101].y).toBe(218.09275515362032);
   });
 });
