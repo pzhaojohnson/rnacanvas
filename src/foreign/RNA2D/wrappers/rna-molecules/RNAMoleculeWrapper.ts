@@ -14,4 +14,9 @@ export class RNAMoleculeWrapper {
       .getArrayProperty('basePairs')
       .map(bp => new BasePairWrapper(bp));
   }
+
+  get name() {
+    return (new NonNullObjectWrapper(this.wrappee))
+      .getStringProperty('name');
+  }
 }

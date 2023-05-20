@@ -44,4 +44,9 @@ describe('RNAMoleculeWrapper class', () => {
     expect(basePairs[11].residueIndex1).toBe(17);
     expect(basePairs[18].residueIndex2).toBe(33);
   });
+
+  test('name getter', () => {
+    let rm = new RNAMoleculeWrapper(exampleRNAMolecules.rnaMolecule2);
+    expect(rm.name).toBe('RNVU1-1');
+  });
 });
