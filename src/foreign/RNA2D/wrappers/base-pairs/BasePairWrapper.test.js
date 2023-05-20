@@ -27,4 +27,9 @@ describe('BasePairWrapper class', () => {
     let wrapper = new BasePairWrapper(bp);
     expect(wrapper.wrappee).toBe(bp);
   });
+
+  test('basePairType getter', () => {
+    let bp = new BasePairWrapper(exampleBasePairs.basePair2);
+    expect(bp.basePairType).toBe('canonical');
+  });
 });
