@@ -37,4 +37,10 @@ describe('BasePairWrapper class', () => {
     let bp = new BasePairWrapper(exampleBasePairs.basePair3);
     expect(bp.classes).toStrictEqual(['bp-line']);
   });
+
+  test('residueIndex1 and residueIndex2 getters', () => {
+    let bp = new BasePairWrapper(exampleBasePairs.basePair1);
+    expect(bp.residueIndex1).toBe(28);
+    expect(bp.residueIndex2).toBe(42);
+  });
 });
