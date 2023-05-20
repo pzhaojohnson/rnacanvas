@@ -2,6 +2,8 @@ import * as fs from 'fs';
 
 import * as path from 'path';
 
+import { BasePairWrapper } from 'Foreign/RNA2D/wrappers/base-pairs/BasePairWrapper';
+
 import { RNAMoleculeWrapper } from './RNAMoleculeWrapper';
 
 let exampleRNAMoleculeFileNames = [
@@ -26,5 +28,20 @@ describe('RNAMoleculeWrapper class', () => {
     expect(wrappee).toBeTruthy();
     let wrapper = new RNAMoleculeWrapper(wrappee);
     expect(wrapper.wrappee).toBe(wrappee);
+  });
+
+  test('basePairs getter', () => {
+    let rm = new RNAMoleculeWrapper(exampleRNAMolecules.rnaMolecule2);
+    let basePairs = rm.basePairs;
+    expect(basePairs.length).toBe(66);
+
+    basePairs.forEach(bp => {
+      expect(bp instanceof BasePairWrapper).toBeTruthy();
+    });
+
+    // just check some values of some base-pairs
+    expect(basePairs[4].residueIndex2).toBe(153);
+    expect(basePairs[11].residueIndex1).toBe(17);
+    expect(basePairs[18].residueIndex2).toBe(33);
   });
 });
