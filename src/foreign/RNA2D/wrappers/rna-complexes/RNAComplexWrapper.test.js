@@ -26,4 +26,9 @@ describe('RNAComplexWrapper class', () => {
     let wrapper = new RNAComplexWrapper(wrappee);
     expect(wrapper.wrappee).toBe(wrappee);
   });
+
+  test('name getter', () => {
+    let rc = new RNAComplexWrapper(exampleRNAComplexes.rnaComplex2);
+    expect(rc.name).toBe('Complex-187461');
+  });
 });
