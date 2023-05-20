@@ -2,6 +2,8 @@ import * as fs from 'fs';
 
 import * as path from 'path';
 
+import { RNAMoleculeWrapper } from 'Foreign/RNA2D/wrappers/rna-molecules/RNAMoleculeWrapper';
+
 import { RNAComplexWrapper } from './RNAComplexWrapper';
 
 let exampleRNAComplexFileNames = [
@@ -30,5 +32,18 @@ describe('RNAComplexWrapper class', () => {
   test('name getter', () => {
     let rc = new RNAComplexWrapper(exampleRNAComplexes.rnaComplex2);
     expect(rc.name).toBe('Complex-187461');
+  });
+
+  test('rnaMolecules getter', () => {
+    let rc = new RNAComplexWrapper(exampleRNAComplexes.rnaComplex2);
+    let rnaMolecules = rc.rnaMolecules;
+    expect(rnaMolecules.length).toBe(1);
+
+    // just check some RNA molecule properties
+    let rnaMolecule1 = rnaMolecules[0];
+    expect(rnaMolecule1 instanceof RNAMoleculeWrapper).toBeTruthy();
+    expect(rnaMolecule1.name).toBe('Molecule-129841');
+    expect(rnaMolecule1.sequence.length).toBe(123);
+    expect(rnaMolecule1.basePairs.length).toBe(70);
   });
 });
