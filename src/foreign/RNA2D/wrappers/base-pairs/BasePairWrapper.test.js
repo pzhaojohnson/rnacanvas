@@ -22,10 +22,10 @@ exampleBasePairFileNames.forEach(fileName => {
 
 describe('BasePairWrapper class', () => {
   it('stores passed base-pair in wrappee property', () => {
-    let bp = exampleBasePairs.basePair1;
-    expect(bp).toBeTruthy();
-    let wrapper = new BasePairWrapper(bp);
-    expect(wrapper.wrappee).toBe(bp);
+    let wrappee = exampleBasePairs.basePair1;
+    expect(wrappee).toBeTruthy();
+    let wrapper = new BasePairWrapper(wrappee);
+    expect(wrapper.wrappee).toBe(wrappee);
   });
 
   test('basePairType getter', () => {
