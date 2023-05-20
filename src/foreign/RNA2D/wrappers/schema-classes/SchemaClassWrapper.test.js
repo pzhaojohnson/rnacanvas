@@ -27,4 +27,9 @@ describe('SchemaClassWrapper class', () => {
     let wrapper = new SchemaClassWrapper(wrappee);
     expect(wrapper.wrappee).toBe(wrappee);
   });
+
+  test('name getter', () => {
+    let sc = new SchemaClassWrapper(exampleSchemaClasses.schemaClass3);
+    expect(sc.name).toBe('bp-line');
+  });
 });
