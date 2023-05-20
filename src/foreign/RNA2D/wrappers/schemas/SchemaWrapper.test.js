@@ -2,6 +2,8 @@ import * as fs from 'fs';
 
 import * as path from 'path';
 
+import { SchemaClassWrapper } from 'Foreign/RNA2D/wrappers/schema-classes/SchemaClassWrapper';
+
 import { SchemaWrapper } from './SchemaWrapper';
 
 let exampleSchemaFileNames = [
@@ -24,5 +26,18 @@ describe('SchemaWrapper class', () => {
     expect(wrappee).toBeTruthy();
     let wrapper = new SchemaWrapper(wrappee);
     expect(wrapper.wrappee).toBe(wrappee);
+  });
+
+  test('classes getter', () => {
+    let schema = new SchemaWrapper(exampleSchemas.schema1);
+    expect(schema.classes.length).toBe(3);
+
+    schema.classes.forEach(c => {
+      expect(c instanceof SchemaClassWrapper).toBeTruthy();
+    });
+
+    expect(schema.classes[0].name).toBe('font');
+    expect(schema.classes[1].name).toBe('numbering-line');
+    expect(schema.classes[2].name).toBe('bp-line');
   });
 });
