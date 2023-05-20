@@ -11,4 +11,9 @@ export class LabelContentWrapper {
     return (new NonNullObjectWrapper(this.wrappee))
       .getArrayProperty('classes');
   }
+
+  get label() {
+    return (new NonNullObjectWrapper(this.wrappee))
+      .getProperty('label');
+  }
 }

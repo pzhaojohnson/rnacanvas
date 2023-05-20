@@ -34,4 +34,9 @@ describe('LabelContentWrapper class', () => {
       ['font', 'numbering-label', 'sequential']
     );
   });
+
+  test('label getter', () => {
+    let lc = new LabelContentWrapper(exampleLabelContents.labelContent2);
+    expect(lc.label).toBe('50');
+  });
 });
