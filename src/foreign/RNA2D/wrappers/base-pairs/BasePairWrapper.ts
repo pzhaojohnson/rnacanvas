@@ -11,4 +11,9 @@ export class BasePairWrapper {
     return (new NonNullObjectWrapper(this.wrappee))
       .getProperty('basePairType');
   }
+
+  get classes() {
+    return (new NonNullObjectWrapper(this.wrappee))
+      .getArrayProperty('classes');
+  }
 }

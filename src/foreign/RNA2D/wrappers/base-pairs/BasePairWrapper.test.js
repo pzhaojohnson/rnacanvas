@@ -32,4 +32,9 @@ describe('BasePairWrapper class', () => {
     let bp = new BasePairWrapper(exampleBasePairs.basePair2);
     expect(bp.basePairType).toBe('canonical');
   });
+
+  test('classes getter', () => {
+    let bp = new BasePairWrapper(exampleBasePairs.basePair3);
+    expect(bp.classes).toStrictEqual(['bp-line']);
+  });
 });
