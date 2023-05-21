@@ -25,4 +25,9 @@ describe('LabelLineWrapper class', () => {
     let wrapper = new LabelLineWrapper(wrappee);
     expect(wrapper.wrappee).toBe(wrappee);
   });
+
+  test('classes getter', () => {
+    let ll = new LabelLineWrapper(exampleLabelLines.labelLine1);
+    expect(ll.classes).toStrictEqual(['numbering-line', 'sequential']);
+  });
 });
