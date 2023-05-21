@@ -2,6 +2,8 @@ import { NonNullObjectWrapper } from 'Values/NonNullObjectWrapper';
 
 import { LabelContentWrapper } from './contents/LabelContentWrapper';
 
+import { LabelLineWrapper } from './lines/LabelLineWrapper';
+
 export class LabelWrapper {
   wrappee: unknown;
 
@@ -14,5 +16,12 @@ export class LabelWrapper {
       .getProperty('labelContent');
 
     return new LabelContentWrapper(labelContent);
+  }
+
+  get labelLine() {
+    let labelLine = (new NonNullObjectWrapper(this.wrappee))
+      .getProperty('labelLine');
+
+    return new LabelLineWrapper(labelLine);
   }
 }

@@ -4,6 +4,8 @@ import * as path from 'path';
 
 import { LabelContentWrapper } from './contents/LabelContentWrapper';
 
+import { LabelLineWrapper } from './lines/LabelLineWrapper';
+
 import { LabelWrapper } from './LabelWrapper';
 
 let exampleLabelFileNames = [
@@ -38,5 +40,15 @@ describe('LabelWrapper class', () => {
     // just check some label content properties
     expect(labelContent.label).toBe('20');
     expect(labelContent.wrappee.x).toBe(10.891190936339669);
+  });
+
+  test('labelLine getter', () => {
+    let l = new LabelWrapper(exampleLabels.label2);
+    let labelLine = l.labelLine;
+    expect(labelLine instanceof LabelLineWrapper).toBeTruthy();
+
+    // just check some label line properties
+    expect(labelLine.classes).toStrictEqual(['numbering-line', 'sequential']);
+    expect(labelLine.wrappee.x1).toBe(11.37431758133793);
   });
 });
