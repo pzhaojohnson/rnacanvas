@@ -1,0 +1,23 @@
+{
+  "labelContent": {
+    "classes": [
+      "font",
+      "numbering-label",
+      "sequential"
+    ],
+    "label": "50",
+    "x": 90.21830221433801,
+    "y": 79.65671791598368
+  },
+  "labelLine": {
+    "classes": [
+      "numbering-line",
+      "sequential"
+    ],
+    "x1": 89.88221392499634,
+    "x2": 90.11622910798648,
+    "y1": 74.6386868236346,
+    "y2": 78.13269569441843
+  },
+  "residueIndex": 50
+}
