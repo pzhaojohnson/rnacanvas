@@ -12,6 +12,7 @@ let exampleLabelFileNames = [
   'label1.json',
   'label2.json',
   'anAsterisk.json',
+  'whitespace.json',
 ];
 
 let exampleLabels = {};
@@ -57,5 +58,21 @@ describe('LabelWrapper class', () => {
     let l2 = new LabelWrapper(exampleLabels.label2);
     expect(l1.residueIndex).toBe(50);
     expect(l2.residueIndex).toBe(20);
+  });
+
+  test('isNumbering method', () => {
+    let l1 = new LabelWrapper(exampleLabels.label1);
+    let l2 = new LabelWrapper(exampleLabels.label2);
+    let anAsterisk = new LabelWrapper(exampleLabels.anAsterisk);
+    let whitespace = new LabelWrapper(exampleLabels.whitespace);
+
+    expect(l1.labelContent.label).toBe('50');
+    expect(l1.isNumbering()).toBe(true);
+
+    expect(l2.labelContent.label).toBe('20');
+    expect(l2.isNumbering()).toBe(true);
+
+    expect(anAsterisk.isNumbering()).toBe(false);
+    expect(whitespace.isNumbering()).toBe(false);
   });
 });

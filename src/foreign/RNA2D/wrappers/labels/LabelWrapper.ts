@@ -29,4 +29,13 @@ export class LabelWrapper {
     return (new NonNullObjectWrapper(this.wrappee))
       .getFiniteNumberProperty('residueIndex');
   }
+
+  isNumbering() {
+    let contentLabel = this.labelContent.label;
+
+    return (
+      typeof contentLabel == 'string'
+      && Number.isFinite(Number.parseFloat(contentLabel))
+    );
+  }
 }
