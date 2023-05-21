@@ -24,4 +24,9 @@ export class LabelWrapper {
 
     return new LabelLineWrapper(labelLine);
   }
+
+  get residueIndex() {
+    return (new NonNullObjectWrapper(this.wrappee))
+      .getFiniteNumberProperty('residueIndex');
+  }
 }

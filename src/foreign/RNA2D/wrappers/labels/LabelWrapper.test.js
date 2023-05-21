@@ -51,4 +51,11 @@ describe('LabelWrapper class', () => {
     expect(labelLine.classes).toStrictEqual(['numbering-line', 'sequential']);
     expect(labelLine.wrappee.x1).toBe(11.37431758133793);
   });
+
+  test('residueIndex getter', () => {
+    let l1 = new LabelWrapper(exampleLabels.label1);
+    let l2 = new LabelWrapper(exampleLabels.label2);
+    expect(l1.residueIndex).toBe(50);
+    expect(l2.residueIndex).toBe(20);
+  });
 });
