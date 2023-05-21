@@ -2,6 +2,8 @@ import * as fs from 'fs';
 
 import * as path from 'path';
 
+import { LabelContentWrapper } from './contents/LabelContentWrapper';
+
 import { LabelWrapper } from './LabelWrapper';
 
 let exampleLabelFileNames = [
@@ -26,5 +28,15 @@ describe('LabelWrapper class', () => {
     expect(wrappee).toBeTruthy();
     let wrapper = new LabelWrapper(wrappee);
     expect(wrapper.wrappee).toBe(wrappee);
+  });
+
+  test('labelContent getter', () => {
+    let l = new LabelWrapper(exampleLabels.label2);
+    let labelContent = l.labelContent;
+    expect(labelContent instanceof LabelContentWrapper).toBeTruthy();
+
+    // just check some label content properties
+    expect(labelContent.label).toBe('20');
+    expect(labelContent.wrappee.x).toBe(10.891190936339669);
   });
 });
