@@ -11,7 +11,7 @@ import { LabelWrapper } from './LabelWrapper';
 let exampleLabelFileNames = [
   'label1.json',
   'label2.json',
-  'notNumbering.json',
+  'anAsterisk.json',
 ];
 
 let exampleLabels = {};
