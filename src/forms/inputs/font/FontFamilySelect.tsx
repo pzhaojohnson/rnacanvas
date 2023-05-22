@@ -68,7 +68,7 @@ export function FontFamilySelect(props: Props) {
           boxSizing: 'border-box',
           borderStyle: 'solid',
           borderWidth: '1px',
-          borderColor: state.isFocused ? 'rgba(0,0,0,0.95)' : 'rgba(0,0,0,0.15)',
+          borderColor: state.isFocused ? 'rgba(0,0,0,0.95)' : 'rgb(184, 184, 203)',
           borderRadius: '2px',
           padding: '6px 0px',
           minHeight: '0px',

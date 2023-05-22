@@ -1,7 +1,7 @@
 .infobar {
   border-width: 1px 0px 0px 0px;
   border-style: solid;
-  border-color: rgba(207, 207, 221, 0.95);
+  border-color: rgba(204, 204, 221, 1);
 
   /* use min-height instead of height so that height can increase
   if scrollbars appear */
