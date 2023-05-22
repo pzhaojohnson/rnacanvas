@@ -14,11 +14,11 @@
 }
 
 .backButton:hover {
-  background-color: hsl(240, 100%, 96.75%);
+  background-color: hsla(240, 100%, 96.75%, 0.96);
 }
 
 .backButton:active {
-  background-color: hsl(240, 100%, 94%);
+  background-color: hsla(240, 100%, 94%, 0.98);
 }
 
 .text {
