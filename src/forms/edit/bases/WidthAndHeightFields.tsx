@@ -15,11 +15,11 @@ function Asterisk() {
   );
 }
 
-function ApplyToAllBasesNote() {
+function AppliesToAllBasesNote() {
   return (
-    <p className={styles.applyToAllBasesNote} >
+    <p className={styles.appliesToAllBasesNote} >
       <Asterisk />
-      &nbsp;Apply to all bases.
+      &nbsp;Applies to all bases.
     </p>
   );
 }
@@ -48,7 +48,7 @@ export function WidthAndHeightFields(props: Props) {
     <div className={styles.widthAndHeightFields} >
       {widthField}
       {heightField}
-      <ApplyToAllBasesNote />
+      <AppliesToAllBasesNote />
     </div>
   );
 }
