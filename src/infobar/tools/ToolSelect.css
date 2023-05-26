@@ -149,6 +149,11 @@
   transition: border-color 0s;
 }
 
+.untoggledToolButton:active::before {
+  border-color: rgba(21, 21, 23, 1);
+  transition: border-color 0s;
+}
+
 .overlaidMessage {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
