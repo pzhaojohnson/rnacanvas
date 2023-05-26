@@ -32,7 +32,7 @@ let options: Option[] = [
 type OptionButtonProps = {
   option: Option;
   isToggled: boolean;
-  onMouseDown: () => void;
+  onClick: () => void;
 };
 
 function OptionButton(props: OptionButtonProps) {
@@ -50,7 +50,7 @@ function OptionButton(props: OptionButtonProps) {
         ${isSquareButton ? styles.squareButton : ''}
       `}
       title={props.option.title}
-      onMouseDown={props.onMouseDown}
+      onClick={props.onClick}
     >
       {props.option.textContent}
     </p>
@@ -77,7 +77,7 @@ export function StrokeLinecapSelect(props: StrokeLinecapSelectProps) {
           key={i}
           option={option}
           isToggled={option.value == value}
-          onMouseDown={() => {
+          onClick={() => {
             setValue(option.value);
             props.onChange({ target: { value: option.value } });
           }}
