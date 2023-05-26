@@ -40,11 +40,11 @@
 }
 
 .untoggledTypeButton:hover {
-  border-color: #a2a2b3;
+  border-color: #121216;
 }
 
 .untoggledTypeButton:active {
-  border-color: #7d7d88;
+  border-color: #121216;
 }
 
 .textButton {
