@@ -172,7 +172,7 @@ export class ToolSelect extends React.Component<ToolSelectProps> {
                 key={i}
                 toolName={nameOfTool(tool)}
                 isToggled={false}
-                onMouseDown={() => this.select(tool)}
+                onClick={() => this.select(tool)}
                 onMouseOver={() => this.showToolDescription(tool)}
                 onMouseOut={() => this.hideOverlaidMessage()}
               />
