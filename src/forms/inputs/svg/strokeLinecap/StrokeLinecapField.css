@@ -33,7 +33,11 @@
 }
 
 .untoggledOptionButton:hover {
-  border-color: rgba(55, 55, 60, 1);
+  border-color: rgb(19, 19, 20);
+}
+
+.untoggledOptionButton:active {
+  border-color: rgb(19, 19, 20);
 }
 
 .roundButton::before {
