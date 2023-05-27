@@ -19,11 +19,11 @@ export function SubsequenceField(props: Props) {
           value={props.value}
           onChange={props.onChange}
           onBlur={props.onBlur}
-          rows={10}
+          rows={13}
           spellCheck={false}
         />
       </FieldLabel>
-      <FieldDescription style={{ margin: '6px 0 0 16px' }} >
+      <FieldDescription style={{ margin: '7px 0 0 16px' }} >
         ...an RNA or DNA subsequence "CUGCCA"
       </FieldDescription>
     </div>

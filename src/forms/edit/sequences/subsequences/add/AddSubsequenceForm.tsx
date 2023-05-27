@@ -117,7 +117,7 @@ export function AddSubsequenceForm(props: Props) {
       unmount={props.unmount}
       history={props.history}
       title='Add Subsequence'
-      style={{ width: '400px' }}
+      style={{ width: '408px' }}
     >
       <div style={{ display: 'flex', flexDirection: 'column' }} >
         <SubsequenceField
@@ -128,7 +128,7 @@ export function AddSubsequenceForm(props: Props) {
           onClick={() => setShowSequenceParsingOptions(!showSequenceParsingOptions)}
         />
         {!showSequenceParsingOptions ? null : (
-          <div style={{ margin: '10px 0px 0px 13px', display: 'flex', flexDirection: 'column' }} >
+          <div style={{ margin: '9px 0px 0px 18px', display: 'flex', flexDirection: 'column' }} >
             <CheckboxField
               label='Ignore Numbers'
               checked={ignoreNumbers}
@@ -178,7 +178,7 @@ export function AddSubsequenceForm(props: Props) {
           </div>
         )}
         <div style={{ height: '10px' }} />
-        {!sequence ? null : <DisplayableSequenceRange sequence={sequence} />}
+        {!sequence ? null : <DisplayableSequenceRange sequence={sequence} style={{ marginLeft: '1px' }} />}
         <AddButton
           onClick={() => {
             try {
@@ -200,7 +200,7 @@ export function AddSubsequenceForm(props: Props) {
         {!errorMessage ? null : (
           <ErrorMessage key={errorMessageKey} >{errorMessage}</ErrorMessage>
         )}
-        {!appendSubsequence ? <InsertSubsequenceNote /> : <div style={{ height: '10px' }} />}
+        {!appendSubsequence ? <InsertSubsequenceNote /> : <div style={{ height: '12px' }} />}
         <BaseNumberingNote />
       </div>
     </PartialWidthContainer>

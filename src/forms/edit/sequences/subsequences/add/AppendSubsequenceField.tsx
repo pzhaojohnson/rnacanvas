@@ -8,7 +8,7 @@ export function AppendSubsequenceField(props: Props) {
       label='Append Subsequence'
       checked={props.checked}
       onChange={props.onChange}
-      style={{ margin: '38px 0 0 0', alignSelf: 'start' }}
+      style={{ margin: '39px 0 0 0', alignSelf: 'start' }}
     />
   );
 }
