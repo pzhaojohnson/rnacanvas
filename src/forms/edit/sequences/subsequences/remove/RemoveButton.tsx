@@ -9,7 +9,7 @@ export function RemoveButton(props: Props) {
   return (
     <SubmitButton
       onClick={props.onClick}
-      style={{ marginTop: '38px' }}
+      style={{ marginTop: '39px' }}
     >
       Remove
     </SubmitButton>

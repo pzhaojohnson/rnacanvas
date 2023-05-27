@@ -9,7 +9,7 @@ export type Props = {
 
 export function ErrorMessage(props: Props) {
   return (
-    <_ErrorMessage style={{ marginTop: '6px' }} >
+    <_ErrorMessage style={{ marginTop: '7px' }} >
       {props.children}
     </_ErrorMessage>
   );
