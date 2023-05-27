@@ -160,7 +160,7 @@ export class DirectionAnglePropertyInput extends React.Component<Props> {
         }}
         spellCheck={false}
         style={{
-          minWidth: '6ch',
+          minWidth: '49px',
           ...this.props.style,
         }}
       />

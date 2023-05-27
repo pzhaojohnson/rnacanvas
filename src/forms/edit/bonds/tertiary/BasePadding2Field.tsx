@@ -66,7 +66,7 @@ export class BasePadding2Field extends React.Component<Props> {
           places={2}
           onBeforeEdit={event => this.handleBeforeEdit(event)}
           onEdit={event => this.handleEdit(event)}
-          style={{ minWidth: '39px' }}
+          style={{ minWidth: '49px' }}
         />
         <span style={{ paddingLeft: '8px' }} >
           Base Padding 2

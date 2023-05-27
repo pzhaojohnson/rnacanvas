@@ -96,7 +96,7 @@ export class BaseSpacingField extends React.Component<Props> {
             places={2}
             onBeforeEdit={event => this.handleBeforeEdit(event)}
             onEdit={event => this.handleEdit(event)}
-            style={{ minWidth: '42px' }}
+            style={{ minWidth: '49px' }}
           />
           <span style={{ paddingLeft: '8px' }} >
             Base Spacing&nbsp;
