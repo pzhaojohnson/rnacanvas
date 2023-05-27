@@ -95,7 +95,7 @@ export function EditBasesForm(props: Props) {
       unmount={props.unmount}
       history={props.history}
       title='Bases'
-      style={{ width: '327px' }}
+      style={{ width: '332px' }}
     >
       {props.app.drawing.bases().length == 0 ? (
         <DrawingHasNoBasesNotes />

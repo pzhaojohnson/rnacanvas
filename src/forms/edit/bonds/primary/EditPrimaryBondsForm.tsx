@@ -78,7 +78,7 @@ export function EditPrimaryBondsForm(props: Props) {
       unmount={props.unmount}
       history={props.history}
       title='Primary Bonds'
-      style={{ width: '316px' }}
+      style={{ width: '332px' }}
     >
       {props.app.drawing.primaryBonds.length == 0 ? (
         <DrawingHasNoPrimaryBondsNotes />

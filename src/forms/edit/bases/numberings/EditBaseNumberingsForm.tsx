@@ -98,7 +98,7 @@ export function EditBaseNumberingsForm(props: Props) {
       unmount={props.unmount}
       history={props.history}
       title='Numberings'
-      style={{ width: '326px' }}
+      style={{ width: '334px' }}
     >
       {props.baseNumberings.length != 0 ? null : (
         <div style={{ display: 'flex', flexDirection: 'column' }} >
