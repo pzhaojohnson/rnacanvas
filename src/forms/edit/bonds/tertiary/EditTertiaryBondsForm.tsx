@@ -86,7 +86,7 @@ export function EditTertiaryBondsForm(props: Props) {
       unmount={props.unmount}
       history={props.history}
       title='Tertiary Bonds'
-      style={{ width: '334px' }}
+      style={{ width: '335px' }}
     >
       {props.app.drawing.tertiaryBonds.length == 0 ? (
         <DrawingHasNoTertiaryBondsNotes />
@@ -103,7 +103,7 @@ export function EditTertiaryBondsForm(props: Props) {
           <BasePadding1Field {...props} />
           <BasePadding2Field {...props} />
           <ForwardBackwardButtons {...props} />
-          <div style={{ height: '39px' }} />
+          <div style={{ height: '45px' }} />
           <StrungElementsSection {...props} bonds={props.tertiaryBonds} />
         </div>
       )}
