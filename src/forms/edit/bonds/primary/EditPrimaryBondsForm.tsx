@@ -78,7 +78,7 @@ export function EditPrimaryBondsForm(props: Props) {
       unmount={props.unmount}
       history={props.history}
       title='Primary Bonds'
-      style={{ width: '332px' }}
+      style={{ width: '335px' }}
     >
       {props.app.drawing.primaryBonds.length == 0 ? (
         <DrawingHasNoPrimaryBondsNotes />
@@ -95,7 +95,7 @@ export function EditPrimaryBondsForm(props: Props) {
           <BasePaddingField {...props} />
           <StrokeLinecapField {...props} />
           <ForwardBackwardButtons {...props} />
-          <div style={{ height: '39px' }} />
+          <div style={{ height: '45px' }} />
           <StrungElementsSection {...props} bonds={props.primaryBonds} />
         </div>
       )}
