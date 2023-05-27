@@ -22,7 +22,7 @@ export function NumberingField(props: Props) {
 
   if (!props.bases.every(base => base.numbering)) {
     return (
-      <div style={{ marginTop: '24px', alignSelf: 'start', display: 'flex' }} >
+      <div style={{ marginTop: '31px', alignSelf: 'start', display: 'flex' }} >
         <FieldLabel style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }} >
           <NumberingCheckbox {...props} />
           <span style={{ marginLeft: '6px' }} >
@@ -35,7 +35,7 @@ export function NumberingField(props: Props) {
   }
 
   return (
-    <div style={{ marginTop: '24px', alignSelf: 'start', display: 'flex' }} >
+    <div style={{ marginTop: '31px', alignSelf: 'start', display: 'flex' }} >
       <div style={{ display: 'flex', alignItems: 'center' }} >
         <NumberingCheckbox {...props} />
         <span style={{ width: '10px' }} />

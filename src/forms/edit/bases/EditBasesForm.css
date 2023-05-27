@@ -8,7 +8,7 @@
 }
 
 .selectAllBasesButton {
-  margin: 11px 0px 0px 3px;
+  margin: 17px 0px 0px 4px;
   width: 204px;
   padding: 4px 0px;
   text-align: center;
@@ -55,5 +55,5 @@
 }
 
 .widthAndHeightFieldsSpacer {
-  height: 26px;
+  height: 31px;
 }

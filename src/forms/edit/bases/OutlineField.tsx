@@ -63,7 +63,7 @@ export function OutlineField(props: Props) {
         }
         props.app.refresh();
       }}
-      style={{ marginTop: '24px', alignSelf: 'start' }}
+      style={{ marginTop: '33px', alignSelf: 'start' }}
     />
   );
 }
