@@ -100,7 +100,7 @@ function constrainStartPosition(startPosition: string): string {
 }
 
 let prevInputs = {
-  data: [0.5, 1.25, 0.25, -0.25, 0.75, -0.1, 0.9, -0.6, 0.8, 1.75, 0.6].join('\n') + '\n',
+  data: [0.5, 1.25, 0.25, -0.25, 0.75, -0.1, 0.9, -0.6, 0.8, 1.75, 0.6, -0.35].join('\n') + '\n',
   startPosition: '1',
   minValue: '0',
   maxValue: '1',
