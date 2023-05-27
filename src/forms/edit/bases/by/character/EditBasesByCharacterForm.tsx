@@ -135,7 +135,7 @@ export function EditBasesByCharacterForm(props: Props) {
           }}
         />
         {!errorMessage ? null : (
-          <ErrorMessage key={errorMessageKey} style={{ marginTop: '6px' }} >
+          <ErrorMessage key={errorMessageKey} style={{ marginTop: '7px' }} >
             {errorMessage}
           </ErrorMessage>
         )}
