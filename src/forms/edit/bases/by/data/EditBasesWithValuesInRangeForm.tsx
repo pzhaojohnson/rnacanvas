@@ -27,7 +27,7 @@ import { DottedNote } from 'Forms/notes/DottedNote';
 
 function DataFieldDescription() {
   return (
-    <FieldDescription style={{ margin: '6px 0 0 16px' }} >
+    <FieldDescription style={{ margin: '7px 0 0 16px' }} >
       ...a list of numbers (e.g., SHAPE reactivities)
     </FieldDescription>
   );
@@ -156,7 +156,7 @@ export function EditBasesWithValuesInRangeForm(props: Props) {
       unmount={props.unmount}
       history={props.history}
       title='Bases by Data'
-      style={{ width: '400px' }}
+      style={{ width: '409px' }}
     >
       <div style={{ display: 'flex', flexDirection: 'column' }} >
         <DataField
@@ -172,7 +172,7 @@ export function EditBasesWithValuesInRangeForm(props: Props) {
           onEnterKeyUp={() => processStartPosition()}
         />
         <StartPositionFieldDescription />
-        <DisplayableSequenceRange sequence={sequence} style={{ margin: '8px 0 38px 3px' }} />
+        <DisplayableSequenceRange sequence={sequence} style={{ margin: '9px 0 39px 4px' }} />
         <FieldLabel>Range of Data to Select For:</FieldLabel>
         <MinValueField
           value={minValue}
@@ -198,11 +198,11 @@ export function EditBasesWithValuesInRangeForm(props: Props) {
           }}
         />
         {!errorMessage ? null : (
-          <ErrorMessage key={errorMessageKey} style={{ marginTop: '6px' }} >
+          <ErrorMessage key={errorMessageKey} style={{ marginTop: '7px' }} >
             {errorMessage}
           </ErrorMessage>
         )}
-        <TrailingNotes style={{ marginTop: errorMessage ? '16px' : '18px' }} />
+        <TrailingNotes style={{ marginTop: errorMessage ? '17px' : '20px' }} />
       </div>
     </PartialWidthContainer>
   );

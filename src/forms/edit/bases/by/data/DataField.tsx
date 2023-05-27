@@ -22,7 +22,7 @@ export function DataField(props: Props) {
         value={props.value}
         onChange={props.onChange}
         onBlur={props.onBlur}
-        rows={12}
+        rows={13}
         spellCheck={false}
         style={{ marginTop: '4px' }}
       />

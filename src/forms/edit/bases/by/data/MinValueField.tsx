@@ -21,7 +21,7 @@ export function MinValueField(props: Props) {
         }
       }}
       input={{ spellCheck: false, style: { minWidth: '7ch' } }}
-      style={{ margin: '10px 0 0 10px', alignSelf: 'start' }}
+      style={{ margin: '9px 0 0 12px', alignSelf: 'start' }}
     />
   );
 }

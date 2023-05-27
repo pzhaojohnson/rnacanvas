@@ -9,7 +9,7 @@ export function SelectButton(props: Props) {
   return (
     <SubmitButton
       onClick={props.onClick}
-      style={{ marginTop: '40px', alignSelf: 'start' }}
+      style={{ marginTop: '41px', alignSelf: 'start' }}
     >
       Select
     </SubmitButton>
