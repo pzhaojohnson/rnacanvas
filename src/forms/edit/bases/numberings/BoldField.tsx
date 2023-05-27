@@ -39,7 +39,7 @@ export function BoldField(props: Props) {
         });
         props.app.refresh();
       }}
-      style={{ marginTop: '8px', minHeight: '20px', alignSelf: 'start' }}
+      style={{ marginTop: '9px', minHeight: '20px', alignSelf: 'start' }}
     />
   );
 }

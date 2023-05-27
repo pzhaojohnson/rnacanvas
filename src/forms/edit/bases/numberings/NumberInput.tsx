@@ -102,7 +102,7 @@ export class NumberInput extends React.Component<Props> {
         }}
         spellCheck={false}
         style={{
-          minWidth: '39px',
+          minWidth: '55px',
         }}
       />
     );

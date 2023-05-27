@@ -112,7 +112,7 @@ export class NumberingIncrementInput extends React.Component<Props> {
           }
         }}
         spellCheck={false}
-        style={{ minWidth: '61px' }}
+        style={{ minWidth: '63px' }}
       />
     );
   }

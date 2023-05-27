@@ -12,7 +12,7 @@ export function NumberingOffsetField(props: Props) {
   return (
     <FieldLabel
       style={{
-        margin: '10px 8px 0 5px', alignSelf: 'start',
+        margin: '10px 8px 0 7px', alignSelf: 'start',
         display: 'flex', flexDirection: 'row', alignItems: 'center',
         cursor: 'text',
       }}

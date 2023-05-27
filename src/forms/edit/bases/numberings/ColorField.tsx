@@ -17,7 +17,7 @@ export function ColorField(props: Props) {
   return (
     <div
       style={{
-        marginTop: '8px',
+        marginTop: '9px',
         display: 'flex', flexDirection: 'row', alignItems: 'center',
         alignSelf: 'start',
       }}
