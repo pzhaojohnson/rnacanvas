@@ -35,8 +35,8 @@ function SubstructureField(
         textArea={{
           rows: 11, spellCheck: false,
           style: {
-            fontFamily: '"Courier Prime", monospace', fontSize: '15px',
-            fontWeight: '400', color: 'hsl(0, 0%, 5%)', padding: '5px 7px',
+            fontFamily: '"Courier Prime", monospace', fontSize: '14px',
+            fontWeight: '400', color: 'hsl(0, 0%, 5%)', padding: '5px 6px',
           },
         }}
       />
