@@ -21,9 +21,8 @@
 
 .addStrungElementButton::before {
   content: "";
-  border: 1px solid #c9c9da;
+  border: 1px solid #b2b2c6;
   border-radius: 60px;
-  box-shadow: 0 2px 2px #dbdbeb2b;
 
   position: absolute;
   top: 0px;
