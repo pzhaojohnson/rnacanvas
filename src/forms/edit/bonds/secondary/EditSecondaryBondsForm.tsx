@@ -31,7 +31,7 @@ function DrawingHasNoSecondaryBondsNotes() {
 
 function NoSecondaryBondsAreSelectedNotes() {
   return (
-    <div style={{ marginTop: '44px' }} >
+    <div style={{ marginTop: '47px' }} >
       <p className={styles.notesText} >
         No secondary bonds are selected...
       </p>
@@ -138,7 +138,7 @@ function SelectSecondaryBondsButtons(props: { app: App }) {
       <p className={styles.notesText} >
         Or select...
       </p>
-      <div style={{ marginTop: '11px', display: 'flex', flexDirection: 'column' }} >
+      <div style={{ marginTop: '17px', display: 'flex', flexDirection: 'column' }} >
         <SelectAllSecondaryBondsButton {...props} />
         <SelectAUTSecondaryBondsButton {...props} />
         <SelectGCSecondaryBondsButton {...props} />
@@ -169,7 +169,7 @@ export function EditSecondaryBondsForm(props: Props) {
       unmount={props.unmount}
       history={props.history}
       title='Secondary Bonds'
-      style={{ width: '333px' }}
+      style={{ width: '335px' }}
     >
       {props.app.drawing.secondaryBonds.length == 0 ? (
         <DrawingHasNoSecondaryBondsNotes />
@@ -189,7 +189,7 @@ export function EditSecondaryBondsForm(props: Props) {
           <BasePaddingField {...props} />
           <StrokeLinecapField {...props} />
           <ForwardBackwardButtons {...props} />
-          <div style={{ height: '39px' }} />
+          <div style={{ height: '45px' }} />
           <StrungElementsSection {...props} bonds={props.secondaryBonds} />
         </div>
       )}

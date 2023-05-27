@@ -8,9 +8,9 @@
 }
 
 .selectSecondaryBondsButton {
-  margin: 0px 0px 13px 3px;
+  margin: 0px 0px 14px 4px;
   padding: 4px 0px;
-  width: 225px;
+  width: 219px;
   text-align: center;
 
   /* use before pseudo-element for border and box shadow */
@@ -56,5 +56,5 @@
 }
 
 .baseSpacingFieldSpacer {
-  height: 25px;
+  height: 44px;
 }
