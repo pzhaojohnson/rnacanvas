@@ -33,7 +33,7 @@ function SubstructureField(
         value={props.value}
         onChange={props.onChange}
         textArea={{
-          rows: 10, spellCheck: false,
+          rows: 11, spellCheck: false,
           style: {
             fontFamily: '"Courier Prime", monospace', fontSize: '15px',
             fontWeight: '400', color: 'hsl(0, 0%, 5%)', padding: '5px 7px',
@@ -101,7 +101,7 @@ function SubmitButton(
 
 function ExplanatoryNote() {
   return (
-    <div style={{ marginTop: '18px' }} >
+    <div style={{ marginTop: '19px' }} >
       <DottedNote>
         The substructure will be applied beginning at
         the provided start position in the sequence.
@@ -191,7 +191,7 @@ export class ApplySubstructureForm extends React.Component<Props> {
         unmount={this.props.unmount}
         history={this.props.history}
         title='Apply Substructure'
-        style={{ width: '384px' }}
+        style={{ width: '390px' }}
       >
         <div style={{ display: 'flex', flexDirection: 'column' }} >
           <SubstructureField
@@ -202,7 +202,7 @@ export class ApplySubstructureForm extends React.Component<Props> {
             value={this.state.startPosition}
             onChange={event => this.setState({ startPosition: event.target.value })}
           />
-          <div style={{ height: '8px' }} />
+          <div style={{ height: '9px' }} />
           <DisplayableSequenceRange
             sequence={this.props.app.strictDrawing.layoutSequence()}
           />
@@ -227,7 +227,7 @@ export class ApplySubstructureForm extends React.Component<Props> {
             }}
           />
           {!this.state.errorMessage ? null : (
-            <ErrorMessage key={this.state.errorMessageKey} style={{ marginTop: '6px' }} >
+            <ErrorMessage key={this.state.errorMessageKey} style={{ marginTop: '7px' }} >
               {this.state.errorMessage}
             </ErrorMessage>
           )}
