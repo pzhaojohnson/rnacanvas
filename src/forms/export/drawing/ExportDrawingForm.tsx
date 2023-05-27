@@ -71,7 +71,7 @@ function ScalingFactorField(
       onChange={props.onChange}
       onBlur={props.onBlur}
       onKeyUp={props.onKeyUp}
-      input={{ spellCheck: false, style: { minWidth: '7ch' } }}
+      input={{ spellCheck: false, style: { minWidth: '62px' } }}
       style={{ marginRight: '8px', alignSelf: 'flex-start' }}
     />
   );
@@ -85,7 +85,7 @@ function ExportButton(
   return (
     <SubmitButton
       onClick={props.onClick}
-      style={{ marginTop: '32px' }}
+      style={{ marginTop: '35px' }}
     >
       Export
     </SubmitButton>
@@ -94,7 +94,7 @@ function ExportButton(
 
 function PptxNotes() {
   return (
-    <div style={{ marginTop: '16px' }} >
+    <div style={{ marginTop: '24px' }} >
       <DottedNote>
         Exported PPTX files require PowerPoint 2016 or later to open.
       </DottedNote>
@@ -144,7 +144,7 @@ export function ExportDrawingForm(props: Props) {
       unmount={props.unmount}
       history={props.history}
       title={`Export ${props.format.toUpperCase()}`}
-      style={{ width: '368px' }}
+      style={{ width: '370px' }}
     >
       <div style={{ display: 'flex', flexDirection: 'column' }} >
         <ScalingFactorField
@@ -157,7 +157,7 @@ export function ExportDrawingForm(props: Props) {
             }
           }}
         />
-        <FieldDescription style={{ margin: '6px 0 0 16px' }} >
+        <FieldDescription style={{ margin: '7px 0 0 16px' }} >
           ...scales the exported drawing
         </FieldDescription>
       </div>
@@ -177,7 +177,7 @@ export function ExportDrawingForm(props: Props) {
         }}
       />
       {!errorMessage ? null : (
-        <ErrorMessage key={errorMessageKey} style={{ marginTop: '6px' }} >
+        <ErrorMessage key={errorMessageKey} style={{ marginTop: '7px' }} >
           {errorMessage}
         </ErrorMessage>
       )}
