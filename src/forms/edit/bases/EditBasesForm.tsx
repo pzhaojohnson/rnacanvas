@@ -117,7 +117,7 @@ export function EditBasesForm(props: Props) {
           <ForwardBackwardButtons {...props} />
           <OutlineField {...props} />
           {!props.bases.every(b => b.outline) ? null : (
-            <div style={{ margin: '8px 0 0 12px', display: 'flex', flexDirection: 'column' }} >
+            <div style={{ margin: '9px 0 0 11px', display: 'flex', flexDirection: 'column' }} >
               <OutlineFillField {...props} outlines={outlines} />
               <OutlineRadiusField {...props} outlines={outlines} />
               <OutlineStrokeField {...props} outlines={outlines} />
