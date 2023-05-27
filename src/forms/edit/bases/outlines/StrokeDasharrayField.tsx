@@ -55,6 +55,7 @@ export class StrokeDasharrayField extends React.Component<Props> {
         input={{ id: inputId }}
         style={{
           marginTop: '8px',
+          minHeight: '20px',
           alignSelf: 'start',
         }}
       />
