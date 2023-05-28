@@ -37,7 +37,7 @@ export class MotifInput extends React.Component<Props> {
           spellCheck={false}
           style={{ width: 'auto' }} // allow element to stretch
         />
-        <FieldDescription style={{ margin: '6px 0 0 16px' }} >
+        <FieldDescription style={{ margin: '7px 0 0 16px' }} >
           ...a motif to search for "CUGCCA"
         </FieldDescription>
       </div>
