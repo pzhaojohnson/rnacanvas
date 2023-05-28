@@ -58,7 +58,7 @@ function ErrorMessage(
   return (
     <_ErrorMessage
       style={{
-        marginTop: '12px',
+        marginTop: '13px',
         fontSize: '16px', color: '#d71111',
       }}
     >
@@ -100,7 +100,7 @@ function DetailsToggle(
     <_DetailsToggle
       onClick={props.onClick}
       style={{
-        marginRight: '470px', padding: '1px 14px',
+        marginRight: '468px', padding: '1px 14px',
         fontSize: '12px', fontWeight: 500,
       }}
     >
@@ -177,12 +177,12 @@ export function OpenDrawingForm(props: Props) {
 
   let fileExtensionsNote = (
     <FileExtensionsNote
-      style={{ marginTop: errorMessageString ? '26px' : '40px' }}
+      style={{ marginTop: errorMessageString ? '26px' : '39px' }}
     />
   );
 
   let detailsToggleSpacer = (
-    <div style={{ height: '44px' }} />
+    <div style={{ height: '45px' }} />
   );
 
   let detailsToggle = (
