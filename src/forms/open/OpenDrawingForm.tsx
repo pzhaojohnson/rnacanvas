@@ -59,7 +59,7 @@ function ErrorMessage(
     <_ErrorMessage
       style={{
         marginTop: '13px',
-        fontSize: '16px', color: '#d71111',
+        fontSize: '16px', color: 'rgb(215, 27, 27)',
       }}
     >
       {props.children}
