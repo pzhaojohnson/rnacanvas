@@ -38,6 +38,7 @@ function scaleLine(line: SVG.Line, factor: number) {
     ['x1', 'y1', 'x2', 'y2', 'stroke-width'],
     factor,
   );
+  scaleStrokeDasharray(line, factor);
 }
 
 function scaleCircle(circle: SVG.Circle, factor: number) {
@@ -46,6 +47,7 @@ function scaleCircle(circle: SVG.Circle, factor: number) {
     ['cx', 'cy', 'r', 'stroke-width'],
     factor,
   );
+  scaleStrokeDasharray(circle, factor);
 }
 
 function scaleRect(rect: SVG.Rect, factor: number) {
@@ -54,6 +56,7 @@ function scaleRect(rect: SVG.Rect, factor: number) {
     ['x', 'y', 'width', 'height', 'stroke-width'],
     factor,
   );
+  scaleStrokeDasharray(rect, factor);
 }
 
 function scalePath(path: SVG.Path, factor: number) {
