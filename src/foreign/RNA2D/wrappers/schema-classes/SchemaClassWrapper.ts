@@ -1,7 +1,5 @@
 import { NonNullObjectWrapper } from 'Values/NonNullObjectWrapper';
 
-import * as SVG from '@svgdotjs/svg.js';
-
 export type NonNullObject = { [key: string]: unknown };
 
 export class SchemaClassWrapper {
@@ -28,16 +26,5 @@ export class SchemaClassWrapper {
     delete styleProperties.name;
 
     return styleProperties;
-  }
-
-  applyTo(ele: SVG.Element) {
-    let attrs = {
-      ...(new NonNullObjectWrapper(this.wrappee)).wrappee,
-    };
-
-    // don't apply the name of this schema class
-    delete attrs.name;
-
-    ele.attr(attrs);
   }
 }

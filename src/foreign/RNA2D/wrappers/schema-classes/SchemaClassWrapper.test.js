@@ -61,24 +61,4 @@ describe('SchemaClassWrapper class', () => {
     // omitted name
     expect('name' in styleProperties).toBeFalsy();
   });
-
-  test('applyTo method', () => {
-    let sc1 = new SchemaClassWrapper(exampleSchemaClasses.schemaClass1);
-    let line = svg.line(10, 20, 101, 15);
-    sc1.applyTo(line);
-    let stroke = new SVGColor(line.attr('stroke'));
-    expect(stroke.toHex()).toBe('#cccccc');
-    expect(line.attr('stroke-width')).toBe(0.1906);
-
-    let sc2 = new SchemaClassWrapper(exampleSchemaClasses.schemaClass2);
-    let text = svg.text('U');
-    sc2.applyTo(text);
-    expect(text.attr('font-family')).toBe('Helvetica');
-    expect(text.attr('font-size')).toBe('3.048045px');
-    expect(text.attr('font-weight')).toBe('bold');
-
-    // did not apply the names of the schema classes
-    expect(line.attr('name')).toBeUndefined();
-    expect(text.attr('name')).toBeUndefined();
-  });
 });
