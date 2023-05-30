@@ -2,6 +2,8 @@ import { NonNullObjectWrapper } from 'Values/NonNullObjectWrapper';
 
 import * as SVG from '@svgdotjs/svg.js';
 
+export type NonNullObject = { [key: string]: unknown };
+
 export class SchemaClassWrapper {
   wrappee: unknown;
 
@@ -12,6 +14,20 @@ export class SchemaClassWrapper {
   get name() {
     return (new NonNullObjectWrapper(this.wrappee))
       .getStringProperty('name');
+  }
+
+  /**
+   * The properties that correspond to element attributes (e.g., fill,
+   * stroke, font-size).
+   */
+  get styleProperties(): NonNullObject {
+    let styleProperties = {
+      ...(new NonNullObjectWrapper(this.wrappee)).wrappee,
+    };
+
+    delete styleProperties.name;
+
+    return styleProperties;
   }
 
   applyTo(ele: SVG.Element) {

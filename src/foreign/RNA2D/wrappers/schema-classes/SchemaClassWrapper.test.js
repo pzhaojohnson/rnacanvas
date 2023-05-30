@@ -49,6 +49,19 @@ describe('SchemaClassWrapper class', () => {
     expect(sc.name).toBe('bp-line');
   });
 
+  test('styleProperties getter', () => {
+    let sc = new SchemaClassWrapper(exampleSchemaClasses.schemaClass2);
+    let styleProperties = sc.styleProperties;
+
+    // included all style properties
+    expect(styleProperties['font-family']).toBe('Helvetica');
+    expect(styleProperties['font-size']).toBe('3.048045px');
+    expect(styleProperties['font-weight']).toBe('bold');
+
+    // omitted name
+    expect('name' in styleProperties).toBeFalsy();
+  });
+
   test('applyTo method', () => {
     let sc1 = new SchemaClassWrapper(exampleSchemaClasses.schemaClass1);
     let line = svg.line(10, 20, 101, 15);
