@@ -33,9 +33,6 @@ export class Base {
     return b;
   }
 
-  /**
-   * Throws if the content of the text element is not a single character.
-   */
   constructor(args: ConstructorArgs) {
     if (args instanceof Svg.Text) {
       this.text = args;
