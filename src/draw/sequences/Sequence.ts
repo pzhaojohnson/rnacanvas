@@ -56,4 +56,11 @@ export class Sequence {
     });
     return basesToPositions;
   }
+
+  /**
+   * Appends the base to the sequence.
+   */
+  append(b: Base) {
+    this.bases.push(b);
+  }
 }

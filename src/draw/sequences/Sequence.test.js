@@ -2,6 +2,7 @@ import { Sequence } from './Sequence';
 import { Drawing } from 'Draw/Drawing';
 import { NodeSVG } from 'Draw/svg/NodeSVG';
 import { appendSequence } from 'Draw/sequences/add/sequence';
+import { Base } from 'Draw/bases/Base';
 
 let container = null;
 let drawing = null;
@@ -97,5 +98,23 @@ describe('Sequence class', () => {
       let p = i + 1;
       expect(basesToPositions.get(b)).toBe(p);
     }
+  });
+
+  describe('append method', () => {
+    test('on an empty sequence', () => {
+      let seq = appendSequence(drawing, { id: 'Empty', characters: '' });
+      expect(seq.length).toBe(0);
+      seq.append(new Base({ text: drawing.svg.text('B') }));
+      expect(seq.length).toBe(1);
+      expect(seq.bases[0].text.text()).toBe('B');
+    });
+
+    test('on a nonempty sequence', () => {
+      let seq = appendSequence(drawing, { id: '1', characters: 'AUGGC' });
+      expect(seq.length).toBe(5);
+      seq.append(new Base({ text: drawing.svg.text('T') }));
+      expect(seq.length).toBe(6);
+      expect(seq.bases.map(b => b.text.text()).join('')).toBe('AUGGCT');
+    });
   });
 });
