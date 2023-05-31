@@ -1,0 +1,8 @@
+ {
+              "basePairType": "canonical",
+              "classes": [
+                "bp-line"
+              ],
+              "residueIndex1": 16,
+              "residueIndex2": 42
+            }
