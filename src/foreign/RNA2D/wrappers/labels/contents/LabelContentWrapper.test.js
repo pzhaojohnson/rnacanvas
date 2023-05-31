@@ -39,4 +39,10 @@ describe('LabelContentWrapper class', () => {
     let lc = new LabelContentWrapper(exampleLabelContents.labelContent2);
     expect(lc.label).toBe('50');
   });
+
+  test('x and y getters', () => {
+    let lc = new LabelContentWrapper(exampleLabelContents.labelContent1);
+    expect(lc.x).toBe(42.96306934111992);
+    expect(lc.y).toBe(66.26219019592702);
+  });
 });

@@ -16,4 +16,14 @@ export class LabelContentWrapper {
     return (new NonNullObjectWrapper(this.wrappee))
       .getProperty('label');
   }
+
+  get x() {
+    return (new NonNullObjectWrapper(this.wrappee))
+      .getFiniteNumberProperty('x');
+  }
+
+  get y() {
+    return (new NonNullObjectWrapper(this.wrappee))
+      .getFiniteNumberProperty('y');
+  }
 }
