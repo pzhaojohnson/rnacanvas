@@ -30,4 +30,12 @@ describe('LabelLineWrapper class', () => {
     let ll = new LabelLineWrapper(exampleLabelLines.labelLine1);
     expect(ll.classes).toStrictEqual(['numbering-line', 'sequential']);
   });
+
+  test('x1, y1, x2 and y2 getters', () => {
+    let ll = new LabelLineWrapper(exampleLabelLines.labelLine1);
+    expect(ll.x1).toBe(89.88221392499634);
+    expect(ll.y1).toBe(74.6386868236346);
+    expect(ll.x2).toBe(90.11622910798648);
+    expect(ll.y2).toBe(78.13269569441843);
+  });
 });
