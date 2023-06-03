@@ -6,8 +6,6 @@ import { Values, setValues } from './values';
 import { Point2D as Point } from 'Math/points/Point';
 import { deepCopyPoint2D as deepCopyPoint } from 'Math/points/Point';
 
-import * as FromString from './private/fromString';
-
 export type ConstructorArgs = (
   Svg.Text
   | {
@@ -33,12 +31,6 @@ export class Base {
     setValues(b, Base.recommendedDefaults);
     b.recenter({ x: xCenter, y: yCenter });
     return b;
-  }
-
-  static fromString(
-    ...args: Parameters<typeof FromString.BaseDecorator.fromString>
-  ) {
-    return FromString.BaseDecorator.fromString(...args);
   }
 
   constructor(args: ConstructorArgs) {
