@@ -10,6 +10,8 @@ import { reposition } from 'Draw/bases/numberings/reposition';
 
 import type { Values } from 'Draw/bases/numberings/values';
 
+import * as AppendTo from './private/appendTo';
+
 export type Repositioning = {
   baseCenter?: Point;
   basePadding?: number;
@@ -44,6 +46,20 @@ export class BaseNumbering {
 
   get id(): string {
     return String(this.text.id());
+  }
+
+  appendTo(
+    ...args: Parameters<
+      InstanceType<typeof AppendTo.BaseNumberingDecorator>['appendTo']
+    >
+  ) {
+    return (new AppendTo.BaseNumberingDecorator(this))
+      .appendTo(...args);
+  }
+
+  remove() {
+    return (new AppendTo.BaseNumberingDecorator(this))
+      .remove();
   }
 
   get basePadding(): number | undefined {

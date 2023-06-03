@@ -97,6 +97,25 @@ describe('BaseNumbering class', () => {
     expect(bn.id).toBe(t.id());
   });
 
+  test('appendTo and remove methods', () => {
+    let bn = numbering;
+    bn.remove();
+
+    expect(svg.children().includes(bn.text)).toBeFalsy();
+    expect(svg.children().includes(bn.line)).toBeFalsy();
+
+    bn.appendTo(svg);
+
+    let n = svg.children().length;
+    expect(svg.children()[n - 1]).toBe(bn.text);
+    expect(svg.children()[n - 2]).toBe(bn.line);
+
+    bn.remove();
+
+    expect(svg.children().includes(bn.text)).toBeFalsy();
+    expect(svg.children().includes(bn.line)).toBeFalsy();
+  });
+
   test('basePadding, lineAngle and lineLength getters and setters', () => {
     numbering.reposition({ baseCenter: { x: 25.5, y: 256 } })
     // use setters
