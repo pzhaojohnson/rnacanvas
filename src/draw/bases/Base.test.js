@@ -146,4 +146,15 @@ describe('Base class', () => {
       expect(n.basePadding).toBeCloseTo(bp);
     });
   });
+
+  test('getCenter and setCenter methods', () => {
+    let b = new Base({ text: svg.text('A') });
+    b.setCenter({ x: 146.139877, y: 2376.235987 });
+    expect(b.getCenter().x).toBeCloseTo(146.139877);
+    expect(b.getCenter().y).toBeCloseTo(2376.235987);
+
+    // also moved text
+    expect(b.text.cx()).toBeCloseTo(146.139877);
+    expect(b.text.cy()).toBeCloseTo(2376.235987);
+  });
 });

@@ -101,6 +101,14 @@ export class Base {
       this.numbering.reposition({ baseCenter: p });
     }
   }
+
+  getCenter(): Point {
+    return this.center();
+  }
+
+  setCenter(p: Point) {
+    this.recenter(p);
+  }
 }
 
 Base.recommendedDefaults = {
