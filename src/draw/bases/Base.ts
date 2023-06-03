@@ -6,6 +6,8 @@ import { Values, setValues } from './values';
 import { Point2D as Point } from 'Math/points/Point';
 import { deepCopyPoint2D as deepCopyPoint } from 'Math/points/Point';
 
+import * as Numbering from './private/numbering';
+
 export type ConstructorArgs = (
   Svg.Text
   | {
@@ -111,11 +113,13 @@ export class Base {
   }
 
   get numbering() {
-    return this._numbering;
+    return (new Numbering.BaseDecorator(this))
+      .numbering;
   }
 
   set numbering(numbering) {
-    this._numbering = numbering;
+    (new Numbering.BaseDecorator(this))
+      .numbering = numbering;
   }
 }
 
