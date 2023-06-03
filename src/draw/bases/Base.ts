@@ -20,7 +20,7 @@ export class Base {
   readonly text: Svg.Text;
   highlighting?: CircleBaseOutline;
   outline?: CircleBaseOutline;
-  numbering?: BaseNumbering;
+  _numbering?: BaseNumbering;
 
   _center: Point;
 
@@ -108,6 +108,14 @@ export class Base {
 
   setCenter(p: Point) {
     this.recenter(p);
+  }
+
+  get numbering() {
+    return this._numbering;
+  }
+
+  set numbering(numbering) {
+    this._numbering = numbering;
   }
 }
 
