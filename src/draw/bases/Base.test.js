@@ -3,6 +3,8 @@ import { NodeSVG } from 'Draw/svg/NodeSVG';
 import { addCircleHighlighting, addCircleOutline } from 'Draw/bases/outlines/circle/add';
 import { addNumbering } from 'Draw/bases/numberings/add';
 
+import { CircleBaseOutline } from './outlines/circle/CircleBaseOutline';
+
 import { createBaseNumbering } from './numberings/createBaseNumbering';
 
 let svg = NodeSVG();
@@ -158,6 +160,18 @@ describe('Base class', () => {
     // also moved text
     expect(b.text.cx()).toBeCloseTo(146.139877);
     expect(b.text.cy()).toBeCloseTo(2376.235987);
+  });
+
+  test('outline getter and setter', () => {
+    let b = new Base({ text: svg.text('U') });
+    expect(b.outline).toBeUndefined();
+
+    let cbo = new CircleBaseOutline();
+    b.outline = cbo;
+    expect(b.outline).toBe(cbo);
+
+    b.outline = undefined;
+    expect(b.outline).toBeUndefined();
   });
 
   test('numbering getter and setter', () => {
