@@ -15,6 +15,11 @@ describe('Base class', () => {
     });
   });
 
+  test('fromString static method', () => {
+    let b = Base.fromString('CCG');
+    expect(b.text.text()).toBe('CCG');
+  });
+
   describe('constructor', () => {
     test('inputting a text element directly', () => {
       let text = svg.text('w');
