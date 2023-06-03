@@ -6,6 +6,8 @@ import { Values, setValues } from './values';
 import { Point2D as Point } from 'Math/points/Point';
 import { deepCopyPoint2D as deepCopyPoint } from 'Math/points/Point';
 
+import * as Outline from './private/outline';
+
 import * as Numbering from './private/numbering';
 
 export type ConstructorArgs = (
@@ -113,11 +115,13 @@ export class Base {
   }
 
   get outline() {
-    return this._outline;
+    return (new Outline.BaseDecorator(this))
+      .outline;
   }
 
   set outline(outline) {
-    this._outline = outline;
+    (new Outline.BaseDecorator(this))
+      .outline = outline;
   }
 
   get numbering() {
