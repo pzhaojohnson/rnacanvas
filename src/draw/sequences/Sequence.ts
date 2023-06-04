@@ -1,5 +1,7 @@
 import { Base } from 'Draw/bases/Base';
 
+import * as AppendTo from './private/appendTo';
+
 export type Defaults = {
   numberingAnchor: number;
   numberingIncrement: number;
@@ -62,5 +64,23 @@ export class Sequence {
    */
   append(b: Base) {
     this.bases.push(b);
+  }
+
+  appendTo(
+    ...args: Parameters<
+      InstanceType<typeof AppendTo.SequenceDecorator>['appendTo']
+    >
+  ) {
+    return (new AppendTo.SequenceDecorator(this))
+      .appendTo(...args);
+  }
+
+  remove(
+    ...args: Parameters<
+      InstanceType<typeof AppendTo.SequenceDecorator>['remove']
+    >
+  ) {
+    return (new AppendTo.SequenceDecorator(this))
+      .remove(...args);
   }
 }

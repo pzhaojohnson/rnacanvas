@@ -117,4 +117,25 @@ describe('Sequence class', () => {
       expect(seq.bases.map(b => b.text.text()).join('')).toBe('AUGGCT');
     });
   });
+
+  test('appendTo and remove methods', () => {
+    let seq = appendSequence(drawing, { id: '5', characters: 'asdfQWER' });
+    seq.remove();
+
+    seq.bases.forEach(b => {
+      expect(b.text.root()).toBeFalsy();
+    });
+
+    seq.appendTo(drawing.svg);
+
+    seq.bases.forEach(b => {
+      expect(b.text.root()).toBe(drawing.svg);
+    });
+
+    seq.remove();
+
+    seq.bases.forEach(b => {
+      expect(b.text.root()).toBeFalsy();
+    });
+  });
 });
