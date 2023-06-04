@@ -162,6 +162,20 @@ describe('Base class', () => {
     expect(b.text.cy()).toBeCloseTo(2376.235987);
   });
 
+  test('appendTo and remove methods', () => {
+    let b = new Base({ text: svg.text('g') });
+
+    b.remove();
+    expect(b.text.root()).toBeFalsy();
+
+    b.appendTo(svg);
+    let n = svg.children().length;
+    expect(svg.children()[n - 1]).toBe(b.text);
+
+    b.remove();
+    expect(b.text.root()).toBeFalsy();
+  });
+
   test('outline getter and setter', () => {
     let b = new Base({ text: svg.text('U') });
     expect(b.outline).toBeUndefined();

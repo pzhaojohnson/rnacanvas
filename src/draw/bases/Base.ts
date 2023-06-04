@@ -6,6 +6,8 @@ import { Values, setValues } from './values';
 import { Point2D as Point } from 'Math/points/Point';
 import { deepCopyPoint2D as deepCopyPoint } from 'Math/points/Point';
 
+import * as AppendTo from './private/appendTo';
+
 import * as Outline from './private/outline';
 
 import * as Numbering from './private/numbering';
@@ -112,6 +114,24 @@ export class Base {
 
   setCenter(p: Point) {
     this.recenter(p);
+  }
+
+  appendTo(
+    ...args: Parameters<
+      InstanceType<typeof AppendTo.BaseDecorator>['appendTo']
+    >
+  ) {
+    return (new AppendTo.BaseDecorator(this))
+      .appendTo(...args);
+  }
+
+  remove(
+    ...args: Parameters<
+      InstanceType<typeof AppendTo.BaseDecorator>['remove']
+    >
+  ) {
+    return (new AppendTo.BaseDecorator(this))
+      .remove(...args);
   }
 
   get outline() {
