@@ -6,6 +6,8 @@ import { distance2D as distance } from 'Math/distance';
 import { assignUuid } from 'Draw/svg/assignUuid';
 import { position } from './position';
 
+import * as AppendTo from './private/appendTo';
+
 export type NodeLike = (
   Node
   | SVG.Element
@@ -48,6 +50,24 @@ export class StraightBond {
 
   get id(): string {
     return String(this.line.id());
+  }
+
+  appendTo(
+    ...args: Parameters<
+      InstanceType<typeof AppendTo.StraightBondDecorator>['appendTo']
+    >
+  ) {
+    return (new AppendTo.StraightBondDecorator(this))
+      .appendTo(...args);
+  }
+
+  remove(
+    ...args: Parameters<
+      InstanceType<typeof AppendTo.StraightBondDecorator>['remove']
+    >
+  ) {
+    return (new AppendTo.StraightBondDecorator(this))
+      .remove(...args);
   }
 
   contains(node: NodeLike): boolean {

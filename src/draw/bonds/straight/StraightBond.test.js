@@ -122,6 +122,21 @@ describe('StraightBond class', () => {
     expect(bond.id).toBeTruthy();
   });
 
+  test('appendTo and remove methods', () => {
+    let sb = bond;
+    sb.remove();
+    expect(sb.line.root()).toBeFalsy();
+
+    let n = svg.children().length;
+    expect(n).toBeGreaterThanOrEqual(2);
+
+    sb.appendTo(svg);
+    expect(svg.children()[n]).toBe(sb.line);
+
+    sb.remove();
+    expect(sb.line.root()).toBeFalsy();
+  });
+
   test('contains method', () => {
     let curve = curveOfBond(bond);
     let curveLength = curveLengthOfBond(bond);
