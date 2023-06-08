@@ -2,6 +2,8 @@ import { BasicDrawingFragment } from './private/BasicDrawingFragment';
 
 import * as AppendSequence from './private/appendSequence';
 
+import * as Bases from './private/bases';
+
 import * as AppendPrimaryBond from './private/appendPrimaryBond';
 
 /**
@@ -26,6 +28,11 @@ export class DrawingFragment {
   ) {
     return (new AppendSequence.DrawingFragmentDecorator(this.wrappee))
       .appendSequence(...args);
+  }
+
+  get bases() {
+    return (new Bases.DrawingFragmentDecorator(this.wrappee))
+      .bases;
   }
 
   get primaryBonds() {

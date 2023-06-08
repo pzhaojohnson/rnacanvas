@@ -46,6 +46,21 @@ describe('DrawingFragment class', () => {
     expect(drawingFragment.sequences).toStrictEqual([seq1, seq2, seq3]);
   });
 
+  test('bases getter', () => {
+    expect(drawingFragment.sequences.length).toBe(0);
+
+    drawingFragment.appendSequence(createSequence('asdf'));
+    drawingFragment.appendSequence(createSequence('qwer'));
+    drawingFragment.appendSequence(createSequence('soj sdvpi'));
+
+    let bases = drawingFragment.bases;
+    expect(bases.length).toBe(17);
+
+    expect(
+      bases.map(b => b.text.text()).join('')
+    ).toBe('asdfqwersoj sdvpi');
+  });
+
   test('primaryBonds getter and appendPrimaryBond method', () => {
     expect(drawingFragment.primaryBonds).toStrictEqual([]);
 
