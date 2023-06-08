@@ -11,6 +11,8 @@ import { createBase } from 'Draw/bases/createBase';
 
 import { createPrimaryBond } from 'Draw/bonds/straight/createPrimaryBond';
 
+import { createSecondaryBond } from 'Draw/bonds/straight/createSecondaryBond';
+
 import { DrawingFragment } from './DrawingFragment';
 
 let drawingFragment = null;
@@ -76,5 +78,22 @@ describe('DrawingFragment class', () => {
     drawingFragment.appendPrimaryBond(pb2);
     drawingFragment.appendPrimaryBond(pb3);
     expect(drawingFragment.primaryBonds).toStrictEqual([pb1, pb2, pb3]);
+  });
+
+  test('secondaryBonds getter and appendSecondaryBond method', () => {
+    expect(drawingFragment.secondaryBonds).toStrictEqual([]);
+
+    let bases = [createBase('R'), createBase('Y'), createBase('n')];
+
+    let sb1 = createSecondaryBond({ base1: bases[0], base2: bases[1] });
+    let sb2 = createSecondaryBond({ base1: bases[2], base2: bases[0] });
+    let sb3 = createSecondaryBond({ base1: bases[1], base2: bases[2] });
+
+    drawingFragment.appendSecondaryBond(sb1);
+    expect(drawingFragment.secondaryBonds).toStrictEqual([sb1]);
+
+    drawingFragment.appendSecondaryBond(sb2);
+    drawingFragment.appendSecondaryBond(sb3);
+    expect(drawingFragment.secondaryBonds).toStrictEqual([sb1, sb2, sb3]);
   });
 });

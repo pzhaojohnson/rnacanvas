@@ -6,6 +6,8 @@ import * as Bases from './private/bases';
 
 import * as AppendPrimaryBond from './private/appendPrimaryBond';
 
+import * as AppendSecondaryBond from './private/appendSecondaryBond';
+
 /**
  * Comparable to the document fragment class.
  */
@@ -48,5 +50,20 @@ export class DrawingFragment {
   ) {
     return (new AppendPrimaryBond.DrawingFragmentDecorator(this.wrappee))
       .appendPrimaryBond(...args);
+  }
+
+  get secondaryBonds() {
+    return this.wrappee.secondaryBonds;
+  }
+
+  appendSecondaryBond(
+    ...args: Parameters<
+      InstanceType<
+        typeof AppendSecondaryBond.DrawingFragmentDecorator
+      >['appendSecondaryBond']
+    >
+  ) {
+    return (new AppendSecondaryBond.DrawingFragmentDecorator(this.wrappee))
+      .appendSecondaryBond(...args);
   }
 }
