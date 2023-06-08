@@ -22,10 +22,9 @@ describe('BasicDrawingFragment class', () => {
       expect(basicDrawingFragment.sequences).toStrictEqual([]);
     });
 
-    it('initializes primary, secondary and tertiary bonds arrays', () => {
+    it('initializes primary and secondary bonds arrays', () => {
       expect(basicDrawingFragment.primaryBonds).toStrictEqual([]);
       expect(basicDrawingFragment.secondaryBonds).toStrictEqual([]);
-      expect(basicDrawingFragment.tertiaryBonds).toStrictEqual([]);
     });
   });
 });

@@ -6,8 +6,6 @@ import type { PrimaryBond } from 'Draw/bonds/straight/PrimaryBond';
 
 import type { SecondaryBond } from 'Draw/bonds/straight/SecondaryBond';
 
-import type { TertiaryBond } from 'Draw/bonds/curved/TertiaryBond';
-
 /**
  * Contains the data of a drawing fragment.
  */
@@ -19,6 +17,4 @@ export class BasicDrawingFragment {
   readonly primaryBonds: PrimaryBond[] = [];
 
   readonly secondaryBonds: SecondaryBond[] = [];
-
-  readonly tertiaryBonds: TertiaryBond[] = [];
 }
