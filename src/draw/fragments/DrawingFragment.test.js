@@ -5,6 +5,8 @@ import * as SVG from 'Draw/svg/NodeSVG';
 
 import { BasicDrawingFragment } from './private/BasicDrawingFragment';
 
+import { createSequence } from 'Draw/sequences/createSequence';
+
 import { createBase } from 'Draw/bases/createBase';
 
 import { createPrimaryBond } from 'Draw/bonds/straight/createPrimaryBond';
@@ -27,6 +29,21 @@ describe('DrawingFragment class', () => {
       let drawingFragment = new DrawingFragment();
       expect(drawingFragment.wrappee).toBeInstanceOf(BasicDrawingFragment);
     });
+  });
+
+  test('sequences getter and appendSequence method', () => {
+    expect(drawingFragment.sequences).toStrictEqual([]);
+
+    let seq1 = createSequence('asdf');
+    let seq2 = createSequence('');
+    let seq3 = createSequence('asdf asdf w');
+
+    drawingFragment.appendSequence(seq1);
+    expect(drawingFragment.sequences).toStrictEqual([seq1]);
+
+    drawingFragment.appendSequence(seq2);
+    drawingFragment.appendSequence(seq3);
+    expect(drawingFragment.sequences).toStrictEqual([seq1, seq2, seq3]);
   });
 
   test('primaryBonds getter and appendPrimaryBond method', () => {
