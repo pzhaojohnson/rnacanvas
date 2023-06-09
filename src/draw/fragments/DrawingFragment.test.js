@@ -33,6 +33,11 @@ describe('DrawingFragment class', () => {
     });
   });
 
+  test('svg getter', () => {
+    expect(drawingFragment.svg).toBe(drawingFragment.wrappee.svg);
+    expect(drawingFragment.svg).toBeTruthy();
+  });
+
   test('sequences getter and appendSequence method', () => {
     expect(drawingFragment.sequences).toStrictEqual([]);
 
@@ -95,5 +100,20 @@ describe('DrawingFragment class', () => {
     drawingFragment.appendSecondaryBond(sb2);
     drawingFragment.appendSecondaryBond(sb3);
     expect(drawingFragment.secondaryBonds).toStrictEqual([sb1, sb2, sb3]);
+  });
+
+  test('setPadding method', () => {
+    drawingFragment.appendSequence(createSequence('A'));
+
+    let base = drawingFragment.bases[0];
+    base.setCenter({ x: 20, y: 30 });
+
+    drawingFragment.setPadding({ horizontal: 592, vertical: 397 });
+
+    expect(base.getCenter().x).toBeCloseTo(592);
+    expect(base.getCenter().y).toBeCloseTo(397);
+
+    expect(drawingFragment.svg.viewbox().width).toBeCloseTo(592 * 2);
+    expect(drawingFragment.svg.viewbox().height).toBeCloseTo(397 * 2);
   });
 });

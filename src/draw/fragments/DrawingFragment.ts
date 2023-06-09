@@ -8,6 +8,8 @@ import * as AppendPrimaryBond from './private/appendPrimaryBond';
 
 import * as AppendSecondaryBond from './private/appendSecondaryBond';
 
+import * as SetPadding from './private/setPadding';
+
 /**
  * Comparable to the document fragment class.
  */
@@ -16,6 +18,13 @@ export class DrawingFragment {
    * This class wraps a basic drawing fragment.
    */
   readonly wrappee = new BasicDrawingFragment();
+
+  /**
+   * The SVG document of the drawing fragment.
+   */
+  get svg() {
+    return this.wrappee.svg;
+  }
 
   get sequences() {
     return this.wrappee.sequences;
@@ -65,5 +74,14 @@ export class DrawingFragment {
   ) {
     return (new AppendSecondaryBond.DrawingFragmentDecorator(this.wrappee))
       .appendSecondaryBond(...args);
+  }
+
+  setPadding(
+    ...args: Parameters<
+      InstanceType<typeof SetPadding.DrawingFragmentDecorator>['setPadding']
+    >
+  ) {
+    return (new SetPadding.DrawingFragmentDecorator(this.wrappee))
+      .setPadding(...args);
   }
 }
