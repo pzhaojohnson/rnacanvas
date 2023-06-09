@@ -253,7 +253,7 @@ export class Drawing {
       this._applySavedState(savedState);
       return true;
     } catch (err) {
-      console.error(err.toString());
+      console.error(err);
       console.error('Unable to apply saved state.');
     }
     console.log('Reapplying previous state...');
