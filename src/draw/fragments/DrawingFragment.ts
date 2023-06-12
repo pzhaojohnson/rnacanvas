@@ -10,6 +10,8 @@ import * as AppendSecondaryBond from './private/appendSecondaryBond';
 
 import * as SetPadding from './private/setPadding';
 
+import * as AppendTo from './private/appendTo';
+
 /**
  * Comparable to the document fragment class.
  */
@@ -83,5 +85,14 @@ export class DrawingFragment {
   ) {
     return (new SetPadding.DrawingFragmentDecorator(this.wrappee))
       .setPadding(...args);
+  }
+
+  appendTo(
+    ...args: Parameters<
+      InstanceType<typeof AppendTo.DrawingFragmentDecorator>['appendTo']
+    >
+  ) {
+    return (new AppendTo.DrawingFragmentDecorator(this.wrappee))
+      .appendTo(...args);
   }
 }
