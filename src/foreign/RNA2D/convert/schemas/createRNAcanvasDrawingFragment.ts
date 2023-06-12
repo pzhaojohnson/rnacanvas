@@ -1,0 +1,32 @@
+import type { SchemaWrapper as RNA2DSchema } from 'Foreign/RNA2D/wrappers/schemas/SchemaWrapper';
+
+import { DrawingFragment as RNAcanvasDrawingFragment } from 'Draw/fragments/DrawingFragment';
+
+import { createRNAcanvasDrawingFragment as fromRNA2DRNAMolecule } from 'Foreign/RNA2D/convert/rna-molecules/createRNAcanvasDrawingFragment';
+
+export type Args = {
+  rna2DSchema: RNA2DSchema;
+};
+
+export function createRNAcanvasDrawingFragment(args: Args) {
+  let { rna2DSchema } = args;
+
+  let rna2DClasses = rna2DSchema.classes;
+
+  let frags: ReturnType<typeof fromRNA2DRNAMolecule>[] = [];
+
+  rna2DSchema.rnaComplexes.forEach(rc => {
+    rc.rnaMolecules.forEach(rm => {
+      frags.push(fromRNA2DRNAMolecule({
+        rna2DRNAMolecule: rm,
+        rna2DClasses,
+      }));
+    });
+  });
+
+  let combinedFrag = new RNAcanvasDrawingFragment();
+
+  frags.forEach(frag => frag.appendTo(combinedFrag));
+
+  return combinedFrag;
+}
