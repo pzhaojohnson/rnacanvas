@@ -9,10 +9,6 @@ import { LabelWrapper as RNA2DLabelWrapper } from 'Foreign/RNA2D/wrappers/labels
 
 import { SchemaClassWrapper as RNA2DClassWrapper } from 'Foreign/RNA2D/wrappers/schema-classes/SchemaClassWrapper';
 
-import { ResidueWrapper as RNA2DResidueWrapper } from 'Foreign/RNA2D/wrappers/residues/ResidueWrapper';
-
-import { createRNAcanvasSequence } from 'Foreign/RNA2D/convert/sequences/createRNAcanvasSequence';
-
 import { createRNAcanvasBaseNumbering } from './createRNAcanvasBaseNumbering';
 
 let rna2DLabelFileNames = [
@@ -48,27 +44,10 @@ rna2DClassFileNames.forEach(fileName => {
   rna2DClasses[rna2DClassName] = rna2DClass;
 });
 
-let rna2DSequenceFileNames = [
-  'shortSequence.json',
-  'longSequence.json',
-];
-
-let rnaCanvasSequences = {};
-
-rna2DSequenceFileNames.forEach(fileName => {
-  let filePath = path.resolve(__dirname, 'example-RNA2D-sequences', fileName);
-  let json = fs.readFileSync(filePath, 'utf8');
-  let rna2DSequence = JSON.parse(json).map(r => new RNA2DResidueWrapper(r));
-  let rnaCanvasSequence = createRNAcanvasSequence({ rna2DSequence });
-  let rnaCanvasSequenceName = path.parse(fileName).name;
-  rnaCanvasSequences[rnaCanvasSequenceName] = rnaCanvasSequence;
-});
-
 describe('createRNAcanvasBaseNumbering function', () => {
   it('creates text element for base numbering', () => {
     let bn = createRNAcanvasBaseNumbering({
       rna2DLabel: rna2DLabels.label1,
-      rnaCanvasSequence: rnaCanvasSequences.longSequence,
     });
 
     // just check some text attributes
@@ -80,7 +59,6 @@ describe('createRNAcanvasBaseNumbering function', () => {
     let bn = createRNAcanvasBaseNumbering({
       rna2DLabel: rna2DLabels.label3,
       rna2DClasses: [rna2DClasses.font, rna2DClasses.textBlue],
-      rnaCanvasSequence: rnaCanvasSequences.longSequence,
     });
 
     expect(bn.text.attr('font-family')).toBe('Helvetica');
@@ -92,7 +70,6 @@ describe('createRNAcanvasBaseNumbering function', () => {
   it('creates line element for base numbering', () => {
     let bn = createRNAcanvasBaseNumbering({
       rna2DLabel: rna2DLabels.label1,
-      rnaCanvasSequence: rnaCanvasSequences.longSequence,
     });
 
     // just check some line attributes
@@ -104,7 +81,6 @@ describe('createRNAcanvasBaseNumbering function', () => {
     let bn = createRNAcanvasBaseNumbering({
       rna2DLabel: rna2DLabels.label2,
       rna2DClasses: [rna2DClasses.thickLine, rna2DClasses.redLine],
-      rnaCanvasSequence: rnaCanvasSequences.longSequence,
     });
 
     expect(bn.line.attr('stroke')).toBe('#e03409');
