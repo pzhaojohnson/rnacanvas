@@ -21,6 +21,19 @@ import { Infobar } from './infobar/Infobar';
 
 import { FormContainer } from './FormContainer';
 
+import { fetchRNA2DSchema } from 'Foreign/RNA2D/fetchRNA2DSchema';
+
+import { createRNAcanvasDrawingFragment } from 'Foreign/RNA2D/convert/schemas/createRNAcanvasDrawingFragment';
+
+export type RNA2DSchemaLike = (
+  {
+    /**
+     * A URL to an RNA 2D schema.
+     */
+    url: string;
+  }
+);
+
 export type Options = {
 
   // for specifying alternatives to components of the SVG.js library
@@ -133,5 +146,12 @@ export class App {
 
   redo() {
     redo(this);
+  }
+
+  async openRNA2DSchema(args: RNA2DSchemaLike) {
+    let { url } = args;
+    let rna2DSchema = await fetchRNA2DSchema({ url });
+    let drawingFragment = createRNAcanvasDrawingFragment({ rna2DSchema });
+    drawingFragment.appendTo(this.drawing);
   }
 }
