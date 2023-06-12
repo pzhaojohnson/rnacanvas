@@ -28,5 +28,10 @@ export function createRNAcanvasDrawingFragment(args: Args) {
 
   frags.forEach(frag => frag.appendTo(combinedFrag));
 
+  combinedFrag.setPadding({
+    horizontal: window.screen.width,
+    vertical: window.screen.height,
+  });
+
   return combinedFrag;
 }
