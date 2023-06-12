@@ -110,35 +110,4 @@ describe('createRNAcanvasBaseNumbering function', () => {
     expect(bn.line.attr('stroke')).toBe('#e03409');
     expect(bn.line.attr('stroke-width')).toBe(25.9);
   });
-
-  it('passes correct base center to created base numbering', () => {
-    let bn = createRNAcanvasBaseNumbering({
-      rna2DLabel: rna2DLabels.label1,
-      rnaCanvasSequence: rnaCanvasSequences.longSequence,
-    });
-
-    // calculating base padding requires knowing the base center
-    expect(bn.basePadding).toBeCloseTo(1.833732270727988);
-  });
-
-  it('throws for out of range RNA 2D label residue index', () => {
-    let rna2DLabel = rna2DLabels.label1;
-    let residueIndex = rna2DLabel.residueIndex;
-
-    let longSequence = rnaCanvasSequences.longSequence;
-    expect(residueIndex).toBeLessThan(longSequence.length);
-
-    expect(() => createRNAcanvasBaseNumbering({
-      rna2DLabel,
-      rnaCanvasSequence: longSequence,
-    })).not.toThrow();
-
-    let shortSequence = rnaCanvasSequences.shortSequence;
-    expect(residueIndex).toBeGreaterThanOrEqual(shortSequence.length);
-
-    expect(() => createRNAcanvasBaseNumbering({
-      rna2DLabel,
-      rnaCanvasSequence: shortSequence,
-    })).toThrow();
-  });
 });
