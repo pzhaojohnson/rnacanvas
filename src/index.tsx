@@ -59,17 +59,19 @@ setTimeout(() => {
     }
   }, false);
 
-  let beforeLeavingHandler = new BeforeLeavingHandler({
-    shouldAskBeforeLeaving: new ShouldAskBeforeLeavingIndicator({
-      requirementsIndicators: [
-        new NonEmptyDrawingIndicator({ app }),
-        new AskBeforeLeavingSettingIsToggledIndicator({ app }),
-      ],
-    }),
-    warningMessage: 'Are you sure?',
-  });
+  setTimeout(() => {
+    let beforeLeavingHandler = new BeforeLeavingHandler({
+      shouldAskBeforeLeaving: new ShouldAskBeforeLeavingIndicator({
+        requirementsIndicators: [
+          new NonEmptyDrawingIndicator({ app }),
+          new AskBeforeLeavingSettingIsToggledIndicator({ app }),
+        ],
+      }),
+      warningMessage: 'Are you sure?',
+    });
 
-  window.addEventListener('beforeunload', event => {
-    beforeLeavingHandler.handle(event);
-  });
+    window.addEventListener('beforeunload', event => {
+      beforeLeavingHandler.handle(event);
+    });
+  }, 25);
 }, 50);
