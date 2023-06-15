@@ -47,8 +47,10 @@ setTimeout(() => {
     }, 25);
   }, 2750);
 
-  let dragAndDropDisabler = new DragAndDropDisabler();
-  dragAndDropDisabler.applyTo(document.body);
+  setTimeout(() => {
+    let dragAndDropDisabler = new DragAndDropDisabler();
+    dragAndDropDisabler.applyTo(document.body);
+  }, 25);
 
   // prevent text selection after double-click
   // when the user is not typing
