@@ -8,6 +8,8 @@ import * as React from 'react';
 
 import { WelcomePage } from 'Forms/welcome/WelcomePage';
 
+import { DragAndDropDisabler } from 'Utilities/DragAndDropDisabler';
+
 import { userIsTyping } from 'Utilities/userIsTyping';
 
 import { BeforeLeavingHandler } from './before-leaving/BeforeLeavingHandler';
@@ -45,9 +47,8 @@ setTimeout(() => {
     }, 25);
   }, 2750);
 
-  // disable drag and drop
-  document.body.ondragstart = () => false;
-  document.body.ondrop = () => false;
+  let dragAndDropDisabler = new DragAndDropDisabler();
+  dragAndDropDisabler.applyTo(document.body);
 
   // prevent text selection after double-click
   // when the user is not typing
