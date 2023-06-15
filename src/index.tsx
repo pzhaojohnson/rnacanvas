@@ -47,6 +47,13 @@ setTimeout(() => {
     }, 25);
   }, 2750);
 
+  /**
+   * Disable drag and drop throughout the app.
+   *
+   * This is meant to prevent the default web browser drag and drop
+   * behavior when elements in the drawing of the app are being
+   * dragged around.
+   */
   setTimeout(() => {
     let dragAndDropDisabler = new DragAndDropDisabler();
     dragAndDropDisabler.applyTo(document.body);
