@@ -10,6 +10,11 @@ import { WelcomePage } from 'Forms/welcome/WelcomePage';
 
 import { userIsTyping } from 'Utilities/userIsTyping';
 
+import { BeforeLeavingHandler } from './before-leaving/BeforeLeavingHandler';
+import { ShouldAskBeforeLeavingIndicator } from './before-leaving/ShouldAskBeforeLeavingIndicator';
+import { NonEmptyDrawingIndicator } from './before-leaving/NonEmptyDrawingIndicator';
+import { AskBeforeLeavingSettingIsToggledIndicator } from './before-leaving/AskBeforeLeavingSettingIsToggledIndicator';
+
 let loadingScreen = new LoadingScreen();
 loadingScreen.show();
 
@@ -54,21 +59,17 @@ setTimeout(() => {
     }
   }, false);
 
-  // ask for confirmation before leaving if the drawing is nonempty
-  // and the app setting is set to do so
+  let beforeLeavingHandler = new BeforeLeavingHandler({
+    shouldAskBeforeLeaving: new ShouldAskBeforeLeavingIndicator({
+      requirementsIndicators: [
+        new NonEmptyDrawingIndicator({ app }),
+        new AskBeforeLeavingSettingIsToggledIndicator({ app }),
+      ],
+    }),
+    warningMessage: 'Are you sure?',
+  });
+
   window.addEventListener('beforeunload', event => {
-    if (app.drawing.isEmpty()) {
-      return;
-    }
-
-    let askBeforeLeaving = app.settings.askBeforeLeaving;
-    if (askBeforeLeaving != undefined && !askBeforeLeaving) {
-      // only if explicitly set to false
-      return;
-    }
-
-    let message = 'Are you sure?';
-    event.returnValue = message;
-    return message;
+    beforeLeavingHandler.handle(event);
   });
 }, 50);
