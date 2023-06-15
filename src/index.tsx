@@ -68,7 +68,7 @@ setTimeout(() => {
     }
 
     let message = 'Are you sure?';
-    (event || window.event).returnValue = message;
+    event.returnValue = message;
     return message;
   });
 }, 50);
