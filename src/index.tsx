@@ -20,6 +20,24 @@ import { AskBeforeLeavingSettingIsToggledIndicator } from './before-leaving/AskB
 let loadingScreen = new LoadingScreen();
 loadingScreen.show();
 
+type URLParameters = {
+  rna2DSchemaURL: string | null;
+};
+
+let urlParameters: URLParameters = {
+  rna2DSchemaURL: null,
+};
+
+/**
+ * Enclose in a timeout just in case trying to parse URL parameters
+ * throws.
+ */
+setTimeout(() => {
+  urlParameters.rna2DSchemaURL = (new URL(window.location.href))
+    .searchParams
+    .get('rna_2d_schema_url');
+}, 25);
+
 setTimeout(() => {
   let app = new App();
 
