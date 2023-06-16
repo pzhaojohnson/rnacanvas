@@ -34,7 +34,7 @@ setTimeout(() => {
   // prerender welcome page under loading screen
   // (seems to help prevent flash of unstyled text)
   setTimeout(() => {
-    app.formContainer.renderForm(() => <WelcomePage app={app} />);
+    showWelcomePage();
   }, 50);
 
   // page will probably be fully loaded after 2.75 seconds
@@ -45,9 +45,8 @@ setTimeout(() => {
     // wait a little bit
     // (to make sure prerendered welcome page has been hidden)
     setTimeout(() => {
-      loadingScreen.hide().then(() => {
-        app.formContainer.renderForm(() => <WelcomePage app={app} />);
-      });
+      loadingScreen.hide()
+        .then(() => showWelcomePage());
     }, 25);
   }, 2750);
 
