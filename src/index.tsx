@@ -61,6 +61,10 @@ setTimeout(() => {
     app.formContainer.unmountForm();
   };
 
+  let showFirstContent = () => {
+    showWelcomePage();
+  };
+
   setTimeout(() => {
     app.appendTo(document.body);
   }, 25);
@@ -84,7 +88,7 @@ setTimeout(() => {
      */
     setTimeout(() => {
       loadingScreen.hide()
-        .then(() => showWelcomePage());
+        .then(() => showFirstContent());
     }, 25);
   }, 2750);
 
