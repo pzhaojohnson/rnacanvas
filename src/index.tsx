@@ -23,6 +23,10 @@ loadingScreen.show();
 setTimeout(() => {
   let app = new App();
 
+  let showWelcomePage = () => {
+    app.formContainer.renderForm(() => <WelcomePage app={app} />);
+  };
+
   setTimeout(() => {
     app.appendTo(document.body);
   }, 25);
