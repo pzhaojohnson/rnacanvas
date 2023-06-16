@@ -62,7 +62,12 @@ setTimeout(() => {
   };
 
   let showFirstContent = () => {
-    showWelcomePage();
+    if (urlParameters.rna2DSchemaURL) {
+      app.openRNA2DSchema({ url: urlParameters.rna2DSchemaURL })
+        .catch(() => showWelcomePage());
+    } else {
+      showWelcomePage();
+    }
   };
 
   setTimeout(() => {
