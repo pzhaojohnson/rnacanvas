@@ -54,12 +54,16 @@ setTimeout(() => {
     prerenderWelcomePageUnderLoadingScreen();
   }, 50);
 
-  // page will probably be fully loaded after 2.75 seconds
+  /**
+   * Page will probably be fully loaded after 2.75 seconds.
+   */
   setTimeout(() => {
     unmountPrerenderedWelcomePage();
 
-    // wait a little bit
-    // (to make sure prerendered welcome page has been hidden)
+    /**
+     * Wait a little bit to make sure that the prerendered welcome page
+     * has been hidden.
+     */
     setTimeout(() => {
       loadingScreen.hide()
         .then(() => showWelcomePage());
