@@ -35,6 +35,14 @@ setTimeout(() => {
     app.formContainer.renderForm(() => <WelcomePage app={app} />);
   };
 
+  /**
+   * Assumes that it is the prerendered welcome page that is currently
+   * rendered in the form container of the app.
+   */
+  let unmountPrerenderedWelcomePage = () => {
+    app.formContainer.unmountForm();
+  };
+
   setTimeout(() => {
     app.appendTo(document.body);
   }, 25);
@@ -48,8 +56,7 @@ setTimeout(() => {
 
   // page will probably be fully loaded after 2.75 seconds
   setTimeout(() => {
-    // hide prerendered welcome page
-    app.formContainer.unmountForm();
+    unmountPrerenderedWelcomePage();
 
     // wait a little bit
     // (to make sure prerendered welcome page has been hidden)
