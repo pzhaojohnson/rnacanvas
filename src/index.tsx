@@ -39,8 +39,9 @@ setTimeout(() => {
     app.appendTo(document.body);
   }, 25);
 
-  // prerender welcome page under loading screen
-  // (seems to help prevent flash of unstyled text)
+  /**
+   * Seems to help prevent any flashing of unstyled text.
+   */
   setTimeout(() => {
     prerenderWelcomePageUnderLoadingScreen();
   }, 50);
