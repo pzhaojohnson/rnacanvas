@@ -84,7 +84,7 @@ setTimeout(() => {
 
     /**
      * Wait a little bit to make sure that the prerendered welcome page
-     * has been hidden.
+     * has been unmounted.
      */
     setTimeout(() => {
       loadingScreen.hide()
