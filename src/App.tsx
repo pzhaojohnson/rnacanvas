@@ -25,6 +25,11 @@ import { fetchRNA2DSchema } from 'Foreign/RNA2D/fetchRNA2DSchema';
 
 import { createRNAcanvasDrawingFragment } from 'Foreign/RNA2D/convert/schemas/createRNAcanvasDrawingFragment';
 
+import { DrawingViewCentererBuilder } from 'Draw/view/DrawingViewCentererBuilder';
+
+let drawingViewCentererBuilder = new DrawingViewCentererBuilder();
+let drawingViewCenterer = drawingViewCentererBuilder.build();
+
 export type RNA2DSchemaLike = (
   {
     /**
@@ -154,5 +159,6 @@ export class App {
     let drawingFragment = createRNAcanvasDrawingFragment({ rna2DSchema });
     drawingFragment.appendTo(this.drawing);
     this.refresh();
+    drawingViewCenterer.applyTo(this.drawing);
   }
 }
