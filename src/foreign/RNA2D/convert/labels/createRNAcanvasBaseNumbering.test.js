@@ -86,4 +86,25 @@ describe('createRNAcanvasBaseNumbering function', () => {
     expect(bn.line.attr('stroke')).toBe('#e03409');
     expect(bn.line.attr('stroke-width')).toBe(25.9);
   });
+
+  it('passes base center coordinates', () => {
+    let bn = createRNAcanvasBaseNumbering({
+      rna2DLabel: rna2DLabels.label2,
+      rna2DClasses: [rna2DClasses.thickLine, rna2DClasses.redLine],
+      baseCenter: { x: 24.71629648279994, y: 186.66203322387253 },
+    });
+
+    // requires knowing the base center to calculate
+    expect(bn.basePadding).toBeCloseTo(2.6705449688853684);
+  });
+
+  it('passes base center coordinates of (0, 0) by default', () => {
+    let bn = createRNAcanvasBaseNumbering({
+      rna2DLabel: rna2DLabels.label2,
+      rna2DClasses: [rna2DClasses.thickLine, rna2DClasses.redLine],
+    });
+
+    // the result if the passed base center was (0, 0)
+    expect(bn.basePadding).toBeCloseTo(188.91196193688614);
+  });
 });

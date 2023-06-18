@@ -8,14 +8,21 @@ import { createRNAcanvasBaseNumberingText } from './contents/createRNAcanvasBase
 
 import { createRNAcanvasBaseNumberingLine } from './lines/createRNAcanvasBaseNumberingLine';
 
+export type Point = {
+  x: number;
+  y: number;
+};
+
 export type Args = {
   rna2DLabel: RNA2DLabel;
 
   rna2DClasses?: RNA2DClass[];
+
+  baseCenter?: Point;
 };
 
 export function createRNAcanvasBaseNumbering(args: Args) {
-  let { rna2DLabel, rna2DClasses } = args;
+  let { rna2DLabel, rna2DClasses, baseCenter } = args;
 
   let text = createRNAcanvasBaseNumberingText({
     rna2DLabelContent: rna2DLabel.labelContent,
@@ -27,7 +34,9 @@ export function createRNAcanvasBaseNumbering(args: Args) {
     rna2DClasses,
   });
 
-  let baseCenter = { x: 0, y: 0 };
+  if (!baseCenter) {
+    baseCenter = { x: 0, y: 0 };
+  }
 
   return new RNAcanvasBaseNumbering(text, line, baseCenter);
 }
