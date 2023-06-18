@@ -32,9 +32,11 @@ export function createRNAcanvasDrawingFragment(args: Args) {
   rna2DRNAMolecule.labels.forEach(rna2DLabel => {
     try {
       let i = rna2DLabel.residueIndex;
-      seq.bases[i].numbering = createRNAcanvasBaseNumbering({
+      let b = seq.bases[i];
+      b.numbering = createRNAcanvasBaseNumbering({
         rna2DLabel,
         rna2DClasses,
+        baseCenter: b.getCenter(),
       });
     } catch (error) {
       console.error(error);
