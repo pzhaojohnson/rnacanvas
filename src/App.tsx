@@ -158,6 +158,7 @@ export class App {
     let rna2DSchema = await fetchRNA2DSchema({ url });
     let drawingFragment = createRNAcanvasDrawingFragment({ rna2DSchema });
     drawingFragment.appendTo(this.drawing);
+    this.drawingInteraction.currentTool = this.drawingInteraction.editingTool;
     this.refresh();
     drawingViewCenterer.applyTo(this.drawing);
   }
