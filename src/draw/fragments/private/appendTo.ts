@@ -26,6 +26,11 @@ export class DrawingFragmentDecorator {
       c.addTo(drawing.svg);
     });
 
+    // merge view boxes
+    let viewBox = drawing.svg.viewbox()
+    viewBox = viewBox.merge(this.decoratee.svg.viewbox());
+    drawing.svg.viewbox(viewBox);
+
     drawing.sequences.push(...this.decoratee.sequences);
     drawing.primaryBonds.push(...this.decoratee.primaryBonds);
     drawing.secondaryBonds.push(...this.decoratee.secondaryBonds);
