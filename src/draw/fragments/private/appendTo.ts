@@ -27,7 +27,7 @@ export class DrawingFragmentDecorator {
     });
 
     // merge view boxes
-    let viewBox = drawing.svg.viewbox()
+    let viewBox = drawing.svg.viewbox();
     viewBox = viewBox.merge(this.decoratee.svg.viewbox());
     drawing.svg.viewbox(viewBox);
 
