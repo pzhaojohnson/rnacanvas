@@ -16,8 +16,8 @@ let rnaCanvasSecondaryBondDefaults = {
     'stroke-linecap': 'butt',
     'stroke-dasharray': 'none',
   },
-  basePadding1: 5.5,
-  basePadding2: 5.5,
+  basePadding1: 1.75,
+  basePadding2: 1.75,
 };
 
 export type Args = {

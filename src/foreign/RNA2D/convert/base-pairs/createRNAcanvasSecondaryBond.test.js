@@ -126,10 +126,10 @@ describe('createRNAcanvasSecondaryBond function', () => {
     });
 
     let line = rnaCanvasSecondaryBond.line;
-    expect(line.attr('x1')).toBeCloseTo(72.38044260844322);
-    expect(line.attr('y1')).toBeCloseTo(269.7809503645354);
-    expect(line.attr('x2')).toBeCloseTo(58.21493504557432);
-    expect(line.attr('y2')).toBeCloseTo(197.79233068313917);
+    expect(line.attr('x1')).toBeCloseTo(73.10446215578735);
+    expect(line.attr('y1')).toBeCloseTo(273.4603926721499);
+    expect(line.attr('x2')).toBeCloseTo(57.49091549823019);
+    expect(line.attr('y2')).toBeCloseTo(194.11288837552468);
   });
 
   it('initializes secondary bond values to their defaults', () => {
@@ -145,8 +145,8 @@ describe('createRNAcanvasSecondaryBond function', () => {
     expect(line.attr('stroke-linecap')).toBe('butt');
     expect(line.attr('stroke-dasharray')).toBe('none');
 
-    expect(rnaCanvasSecondaryBond.basePadding1).toBeCloseTo(5.5);
-    expect(rnaCanvasSecondaryBond.basePadding2).toBeCloseTo(5.5);
+    expect(rnaCanvasSecondaryBond.basePadding1).toBeCloseTo(1.75);
+    expect(rnaCanvasSecondaryBond.basePadding2).toBeCloseTo(1.75);
   });
 
   it('applies style properties of provided RNA 2D classes', () => {
