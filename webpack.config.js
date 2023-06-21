@@ -71,6 +71,7 @@ module.exports = {
       Parse: path.resolve(__dirname, 'src/parse/'),
       Partners: path.resolve(__dirname, 'src/partners/'),
       Settings: path.resolve(__dirname, 'src/settings/'),
+      Time: path.resolve(__dirname, 'src/time/'),
       Undo: path.resolve(__dirname, 'src/undo/'),
       Utilities: path.resolve(__dirname, 'src/utilities/'),
       Values: path.resolve(__dirname, 'src/values/'),

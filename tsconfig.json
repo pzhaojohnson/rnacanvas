@@ -25,6 +25,7 @@
       "Parse/*": ["src/parse/*"],
       "Partners/*": ["src/partners/*"],
       "Settings/*": ["src/settings/*"],
+      "Time/*": ["src/time/*"],
       "Undo/*": ["src/undo/*"],
       "Utilities/*": ["src/utilities/*"],
       "Values/*": ["src/values/*"],
