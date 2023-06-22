@@ -94,4 +94,13 @@ export class LoadingScreen {
       }, delay);
     });
   }
+
+  /**
+   * An alias for the hide method.
+   *
+   * (The hide method already has the described behavior.)
+   */
+  hideIfBeingShown() {
+    return this.hide();
+  }
 }

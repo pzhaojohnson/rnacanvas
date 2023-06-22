@@ -66,4 +66,23 @@ describe('LoadingScreen component', () => {
       expect(document.body.childNodes.length).toBe(n);
     });
   });
+
+  describe('hideIfBeingShown method', () => {
+    test('when the loading screen was being shown', () => {
+      loadingScreen.show();
+      expect(loadingScreen.isBeingShown()).toBe(true);
+
+      return loadingScreen.hideIfBeingShown().then(() => {
+        expect(loadingScreen.isBeingShown()).toBe(false);
+      });
+    });
+
+    test('when the loading screen was not being shown', () => {
+      expect(loadingScreen.isBeingShown()).toBe(false);
+
+      return loadingScreen.hideIfBeingShown().then(() => {
+        expect(loadingScreen.isBeingShown()).toBe(false);
+      });
+    });
+  });
 });
