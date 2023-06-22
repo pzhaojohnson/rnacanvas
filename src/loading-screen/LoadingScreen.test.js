@@ -40,4 +40,15 @@ describe('LoadingScreen component', () => {
       expect(loadingScreen.node.parentNode).toBe(null);
     });
   });
+
+  test('isBeingShown method', () => {
+    expect(loadingScreen.isBeingShown()).toBe(false);
+
+    loadingScreen.show();
+    expect(loadingScreen.isBeingShown()).toBe(true);
+
+    return loadingScreen.hide().then(() => {
+      expect(loadingScreen.isBeingShown()).toBe(false);
+    });
+  });
 });

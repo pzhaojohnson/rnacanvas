@@ -5,6 +5,8 @@ import { createAppLogo } from './private/createAppLogo';
 
 import { FadeOutOverlay } from './private/FadeOutOverlay';
 
+import { isNullish } from 'Values/isNullish';
+
 /**
  * A loading screen that covers the whole window when appended to the
  * document body.
@@ -47,6 +49,10 @@ export class LoadingScreen {
    */
   show() {
     document.body.appendChild(this.node);
+  }
+
+  isBeingShown(): boolean {
+    return !isNullish(this.node.parentNode);
   }
 
   /**
