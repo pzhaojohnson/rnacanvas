@@ -17,6 +17,8 @@ import { ShouldAskBeforeLeavingIndicator } from './before-leaving/ShouldAskBefor
 import { NonEmptyDrawingIndicator } from './before-leaving/NonEmptyDrawingIndicator';
 import { AskBeforeLeavingSettingIsToggledIndicator } from './before-leaving/AskBeforeLeavingSettingIsToggledIndicator';
 
+import { waitMilliseconds } from 'Time/waitMilliseconds';
+
 let loadingScreen = new LoadingScreen();
 loadingScreen.show();
 
@@ -53,14 +55,9 @@ setTimeout(() => {
    */
   let prerenderWelcomePageUnderLoadingScreen = () => {
     app.formContainer.renderForm(welcomePage);
-  };
 
-  /**
-   * Assumes that it is the prerendered welcome page that is currently
-   * rendered in the form container of the app.
-   */
-  let unmountPrerenderedWelcomePage = () => {
-    app.formContainer.unmountForm();
+    return waitMilliseconds(1000)
+      .then(() => app.formContainer.unmountForm());
   };
 
   let showFirstContent = () => {
@@ -87,16 +84,8 @@ setTimeout(() => {
    * Page will probably be fully loaded after 2.75 seconds.
    */
   setTimeout(() => {
-    unmountPrerenderedWelcomePage();
-
-    /**
-     * Wait a little bit to make sure that the prerendered welcome page
-     * has been unmounted.
-     */
-    setTimeout(() => {
-      loadingScreen.hide()
-        .then(() => showFirstContent());
-    }, 25);
+    loadingScreen.hide()
+      .then(() => showFirstContent());
   }, 2750);
 
   /**
