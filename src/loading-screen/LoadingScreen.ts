@@ -60,8 +60,17 @@ export class LoadingScreen {
    *
    * Returns a promise that resolves when the fade out animation
    * has finished.
+   *
+   * Does nothing if the loading screen is not currently being shown.
+   *
+   * The returned promise resolves immediately if the loading screen
+   * is not currently being shown.
    */
-  hide() {
+  hide(): Promise<void> {
+    if (!this.isBeingShown()) {
+      return new Promise(resolve => resolve());
+    }
+
     let fadeOutOverlay = new FadeOutOverlay({
       style: {
         animationDuration: this.hideAnimationDuration + 'ms',

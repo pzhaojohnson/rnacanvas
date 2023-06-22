@@ -51,4 +51,19 @@ describe('LoadingScreen component', () => {
       expect(loadingScreen.isBeingShown()).toBe(false);
     });
   });
+
+  test('hide method when loading screen is not currently being shown', () => {
+    expect(loadingScreen.isBeingShown()).toBe(false);
+
+    let t = Date.now();
+    let n = document.body.childNodes.length;
+
+    return loadingScreen.hide().then(() => {
+      // promise should have been resolved immediately
+      expect(Date.now() - t).toBeLessThan(10);
+
+      // unchanged
+      expect(document.body.childNodes.length).toBe(n);
+    });
+  });
 });
