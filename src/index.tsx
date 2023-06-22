@@ -41,8 +41,10 @@ setTimeout(() => {
 setTimeout(() => {
   let app = new App();
 
+  let welcomePage = () => <WelcomePage app={app} />;
+
   let showWelcomePage = () => {
-    app.formContainer.renderForm(() => <WelcomePage app={app} />);
+    app.formContainer.renderForm(welcomePage);
   };
 
   /**
@@ -50,7 +52,7 @@ setTimeout(() => {
    * else.
    */
   let prerenderWelcomePageUnderLoadingScreen = () => {
-    app.formContainer.renderForm(() => <WelcomePage app={app} />);
+    app.formContainer.renderForm(welcomePage);
   };
 
   /**
