@@ -18,6 +18,11 @@ import { NonEmptyDrawingIndicator } from './before-leaving/NonEmptyDrawingIndica
 import { AskBeforeLeavingSettingIsToggledIndicator } from './before-leaving/AskBeforeLeavingSettingIsToggledIndicator';
 
 import { waitMilliseconds } from 'Time/waitMilliseconds';
+import { waitUntil } from 'Time/waitUntil';
+import { ElapsedTimeCalculator } from 'Time/ElapsedTimeCalculator';
+
+let timeOnPageCalculator = new ElapsedTimeCalculator();
+timeOnPageCalculator.restartCounting();
 
 let loadingScreen = new LoadingScreen();
 loadingScreen.show();
@@ -45,48 +50,39 @@ setTimeout(() => {
 
   let welcomePage = () => <WelcomePage app={app} />;
 
-  let showWelcomePage = () => {
-    app.formContainer.renderForm(welcomePage);
-  };
-
   /**
-   * Assumes that the loading screen is on top and hides everything
-   * else.
+   * Renders the welcome page and then unmounts the welcome page after
+   * a short delay.
+   *
+   * (Seems to help prevent flashing of unstyled text when showing the
+   * welcome page afterwards.)
    */
-  let prerenderWelcomePageUnderLoadingScreen = () => {
+  let preRenderWelcomePage = async () => {
     app.formContainer.renderForm(welcomePage);
 
-    return waitMilliseconds(1000)
+    // wait at least 100 milliseconds
+    return waitMilliseconds(100)
+      .then(() => waitUntil(() => timeOnPageCalculator.calculate() >= 2500))
       .then(() => app.formContainer.unmountForm());
   };
 
-  let showFirstContent = () => {
+  let showWelcomePage = async () => {
+    return preRenderWelcomePage()
+      .then(() => loadingScreen.hideIfBeingShown())
+      .then(() => app.formContainer.renderForm(welcomePage));
+  };
+
+  waitMilliseconds(25).then(() => app.appendTo(document.body));
+
+  waitMilliseconds(100).then(() => {
     if (urlParameters.rna2DSchemaURL) {
       app.openRNA2DSchema({ url: urlParameters.rna2DSchemaURL })
+        .then(() => loadingScreen.hideIfBeingShown())
         .catch(() => showWelcomePage());
     } else {
       showWelcomePage();
     }
-  };
-
-  setTimeout(() => {
-    app.appendTo(document.body);
-  }, 25);
-
-  /**
-   * Seems to help prevent any flashing of unstyled text.
-   */
-  setTimeout(() => {
-    prerenderWelcomePageUnderLoadingScreen();
-  }, 50);
-
-  /**
-   * Page will probably be fully loaded after 2.75 seconds.
-   */
-  setTimeout(() => {
-    loadingScreen.hide()
-      .then(() => showFirstContent());
-  }, 2750);
+  });
 
   /**
    * Disable drag and drop throughout the app.
