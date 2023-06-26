@@ -22,7 +22,7 @@ afterEach(() => {
 });
 
 describe('OptimalBasePaddingCalculator class', () => {
-  describe('calculatorFor method', () => {
+  describe('calculateFor method', () => {
     test('when the text width of the base is bigger', () => {
       let b = createBaseMock();
       b.text.bbox = () => ({ width: 32, height: 22 });
