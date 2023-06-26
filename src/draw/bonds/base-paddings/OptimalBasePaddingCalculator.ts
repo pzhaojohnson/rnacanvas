@@ -9,8 +9,8 @@ export interface Base {
 
 export class OptimalBasePaddingCalculator {
   /**
-   * Calculates what would be an optimal base padding for bonds
-   * attached to the base.
+   * Calculates an optimal base padding for bonds attached to the
+   * base.
    */
   calculateFor(b: Base): number {
     let bbox = b.text.bbox();
