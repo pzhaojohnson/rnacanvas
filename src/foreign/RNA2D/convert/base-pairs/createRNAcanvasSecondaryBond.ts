@@ -16,8 +16,6 @@ let rnaCanvasSecondaryBondDefaults = {
     'stroke-linecap': 'butt',
     'stroke-dasharray': 'none',
   },
-  basePadding1: 1.75,
-  basePadding2: 1.75,
 };
 
 export type Args = {
@@ -52,8 +50,6 @@ export function createRNAcanvasSecondaryBond(args: Args) {
 
   let defaults = rnaCanvasSecondaryBondDefaults;
   rnaCanvasSecondaryBond.line.attr(defaults.line);
-  rnaCanvasSecondaryBond.basePadding1 = defaults.basePadding1;
-  rnaCanvasSecondaryBond.basePadding2 = defaults.basePadding2;
 
   // apply RNA 2D classes after applying defaults
   rna2DClasses?.forEach(c => {
