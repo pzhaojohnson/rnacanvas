@@ -50,21 +50,29 @@ describe('createPrimaryBond function', () => {
     let stroke = new SVGColor(pb.line.attr('stroke'));
     expect(stroke.toHex()).toBe('#515151');
     expect(pb.line.attr('stroke-width')).toBe(1.25);
-
-    expect(pb.basePadding1).toBeCloseTo(7);
-    expect(pb.basePadding2).toBeCloseTo(7);
   });
 
   it('positions line', () => {
     base1.setCenter({ x: 1487, y: 98234 });
-    base2.setCenter({ x: 2387, y: 98234 });
+    base2.setCenter({ x: 2387, y: 52000 });
 
     let pb = createPrimaryBond({ base1, base2 });
 
-    // assumes default base paddings are 7
-    expect(pb.line.attr('x1')).toBeCloseTo(1487 + 7);
-    expect(pb.line.attr('y1')).toBeCloseTo(98234);
-    expect(pb.line.attr('x2')).toBeCloseTo(2387 - 7);
-    expect(pb.line.attr('y2')).toBeCloseTo(98234);
+    let x1 = pb.line.attr('x1');
+    let y1 = pb.line.attr('y1');
+    let x2 = pb.line.attr('x2');
+    let y2 = pb.line.attr('y2');
+
+    // should not move if was already positioned
+    pb.reposition();
+    expect(pb.line.attr('x1')).toBeCloseTo(x1);
+    expect(pb.line.attr('y1')).toBeCloseTo(y1);
+    expect(pb.line.attr('x2')).toBeCloseTo(x2);
+    expect(pb.line.attr('y2')).toBeCloseTo(y2);
+
+    expect(x1).not.toBeCloseTo(0);
+    expect(y1).not.toBeCloseTo(0);
+    expect(x2).not.toBeCloseTo(0);
+    expect(y2).not.toBeCloseTo(0);
   });
 });
