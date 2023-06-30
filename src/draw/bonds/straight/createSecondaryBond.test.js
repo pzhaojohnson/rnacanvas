@@ -45,14 +45,26 @@ describe('createSecondaryBond function', () => {
 
   it('positions line', () => {
     base1.setCenter({ x: 55, y: 204 });
-    base2.setCenter({ x: 55, y: 884 });
+    base2.setCenter({ x: 155, y: 884 });
 
     let sb = createSecondaryBond({ base1, base2 });
 
-    expect(sb.line.attr('x1')).toBeCloseTo(55);
-    expect(sb.line.attr('y1')).toBeCloseTo(209.5);
-    expect(sb.line.attr('x2')).toBeCloseTo(55);
-    expect(sb.line.attr('y2')).toBeCloseTo(878.5);
+    let x1 = sb.line.attr('x1');
+    let y1 = sb.line.attr('y1');
+    let x2 = sb.line.attr('x2');
+    let y2 = sb.line.attr('y2');
+
+    // should not move if was already positioned
+    sb.reposition();
+    expect(sb.line.attr('x1')).toBeCloseTo(x1);
+    expect(sb.line.attr('y1')).toBeCloseTo(y1);
+    expect(sb.line.attr('x2')).toBeCloseTo(x2);
+    expect(sb.line.attr('y2')).toBeCloseTo(y2);
+
+    expect(x1).not.toBeCloseTo(0);
+    expect(y1).not.toBeCloseTo(0);
+    expect(x2).not.toBeCloseTo(0);
+    expect(y2).not.toBeCloseTo(0);
   });
 
   describe('applying default values', () => {
@@ -67,8 +79,6 @@ describe('createSecondaryBond function', () => {
       let stroke = new SVGColor(sb.line.attr('stroke'));
       expect(stroke.toHex()).toBe('#000000');
       expect(sb.line.attr('stroke-width')).toBe(2);
-      expect(sb.basePadding1).toBeCloseTo(5.5);
-      expect(sb.basePadding2).toBeCloseTo(5.5);
     });
 
     test('an AU bond', () => {
@@ -82,8 +92,6 @@ describe('createSecondaryBond function', () => {
       let stroke = new SVGColor(sb.line.attr('stroke'));
       expect(stroke.toHex()).toBe('#000000');
       expect(sb.line.attr('stroke-width')).toBe(2);
-      expect(sb.basePadding1).toBeCloseTo(5.5);
-      expect(sb.basePadding2).toBeCloseTo(5.5);
     });
   });
 });

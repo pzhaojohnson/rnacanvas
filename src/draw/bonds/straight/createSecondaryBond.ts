@@ -4,6 +4,14 @@ import type { Base } from 'Draw/bases/Base';
 
 import { createStraightBond } from './private/createStraightBond';
 
+import { BasePaddingsOptimizerBuilder } from 'Draw/bonds/base-paddings/BasePaddingsOptimizerBuilder';
+
+let basePaddingsOptimizerBuilder = new BasePaddingsOptimizerBuilder();
+
+let basePaddingsOptimizer = (
+  basePaddingsOptimizerBuilder.buildForSecondaryBonds()
+);
+
 export type Args = {
   base1: Base;
   base2: Base;
@@ -26,9 +34,7 @@ export function createSecondaryBond(args: Args): SecondaryBond {
   let defaults = SecondaryBond.recommendedDefaults[secondaryBond.type];
   secondaryBond.line.attr(defaults.line);
 
-  // default to base paddings of 5.5
-  secondaryBond.basePadding1 = defaults.basePadding1 ?? 5.5;
-  secondaryBond.basePadding2 = defaults.basePadding2 ?? 5.5;
+  basePaddingsOptimizer.applyTo(secondaryBond);
 
   return secondaryBond;
 }
