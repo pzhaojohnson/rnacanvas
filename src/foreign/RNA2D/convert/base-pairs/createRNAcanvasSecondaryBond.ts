@@ -4,9 +4,7 @@ import type { SchemaClassWrapper as RNA2DClass } from 'Foreign/RNA2D/wrappers/sc
 
 import type { Sequence as RNAcanvasSequence } from 'Draw/sequences/Sequence';
 
-import * as SVG from '@svgdotjs/svg.js';
-
-import { SecondaryBond as RNAcanvasSecondaryBond } from 'Draw/bonds/straight/SecondaryBond';
+import { createSecondaryBond as _createRNAcanvasSecondaryBond } from 'Draw/bonds/straight/createSecondaryBond';
 
 let rnaCanvasSecondaryBondDefaults = {
   line: {
@@ -44,9 +42,10 @@ export function createRNAcanvasSecondaryBond(args: Args) {
     throw new Error(`No base at position ${p2}.`);
   }
 
-  let line = new SVG.Line();
-
-  let rnaCanvasSecondaryBond = new RNAcanvasSecondaryBond(line, b1, b2);
+  let rnaCanvasSecondaryBond = _createRNAcanvasSecondaryBond({
+    base1: b1,
+    base2: b2,
+  });
 
   let defaults = rnaCanvasSecondaryBondDefaults;
   rnaCanvasSecondaryBond.line.attr(defaults.line);
