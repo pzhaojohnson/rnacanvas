@@ -17,6 +17,7 @@ export type Repositioning = {
   basePadding?: number;
   lineAngle?: number;
   lineLength?: number;
+  textPadding?: number;
 }
 
 export class BaseNumbering {
@@ -121,7 +122,7 @@ export class BaseNumbering {
       basePadding: rp?.basePadding ?? this.basePadding ?? defaults.basePadding ?? 8,
       lineAngle: rp?.lineAngle ?? this.lineAngle ?? 0,
       lineLength: rp?.lineLength ?? this.lineLength ?? defaults.lineLength ?? 8,
-      textPadding: this.textPadding,
+      textPadding: rp?.textPadding ?? this.textPadding,
     });
     if (rp?.baseCenter) {
       this._baseCenter = { ...rp.baseCenter };

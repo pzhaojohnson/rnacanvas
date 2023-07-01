@@ -165,6 +165,7 @@ describe('BaseNumbering class', () => {
         basePadding: 25.2,
         lineAngle: 15.5,
         lineLength: 8.22,
+        textPadding: 10.2,
       });
       let rp1 = getRoundedPositioning(numbering);
       reposition(numbering, {
@@ -172,7 +173,7 @@ describe('BaseNumbering class', () => {
         basePadding: 25.2,
         lineAngle: 15.5,
         lineLength: 8.22,
-        textPadding: numbering.textPadding,
+        textPadding: 10.2,
       });
       let rp2 = getRoundedPositioning(numbering);
       expect(rp1).toEqual(rp2);
