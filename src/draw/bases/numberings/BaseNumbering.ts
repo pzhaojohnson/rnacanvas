@@ -111,6 +111,9 @@ export class BaseNumbering {
     }
   }
 
+  /**
+   * The distance between the text and line of the base numbering.
+   */
   get textPadding(): number {
     return this._textPadding;
   }
