@@ -27,6 +27,13 @@ export class BaseNumbering {
 
   _baseCenter: Point;
 
+  /**
+   * Defaults to 4.
+   *
+   * Used to always be 4 before this property was customizable.
+   */
+  _textPadding = 4;
+
   constructor(text: SVG.Text, line: SVG.Line, baseCenter: Point) {
     this.text = text;
     this.line = line;
@@ -104,7 +111,7 @@ export class BaseNumbering {
   }
 
   get textPadding(): number {
-    return 4;
+    return this._textPadding;
   }
 
   reposition(rp?: Repositioning) {
