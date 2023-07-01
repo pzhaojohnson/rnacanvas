@@ -115,6 +115,11 @@ export class BaseNumbering {
     return this._textPadding;
   }
 
+  set textPadding(textPadding) {
+    this.reposition({ textPadding });
+    this._textPadding = textPadding;
+  }
+
   reposition(rp?: Repositioning) {
     let defaults = BaseNumbering.recommendedDefaults;
     reposition(this, {

@@ -139,6 +139,30 @@ describe('BaseNumbering class', () => {
     expect(rp1).toEqual(rp2);
   });
 
+  describe('textPadding getter and setter', () => {
+    test('retrieving and updating the value', () => {
+      let bn = numbering;
+
+      bn.textPadding = 9.14194;
+      expect(bn.textPadding).toBeCloseTo(9.14194);
+
+      bn.textPadding = 12.0328;
+      expect(bn.textPadding).toBeCloseTo(12.0328);
+    });
+
+    test('repositioning the base numbering on change', () => {
+      let bn = numbering;
+
+      bn.textPadding = 5;
+      let textCenterX = bn.text.cx();
+
+      bn.textPadding = 12;
+
+      // was moved
+      expect(bn.text.cx()).not.toBeCloseTo(textCenterX);
+    });
+  });
+
   describe('reposition method', () => {
     it('can be called with no arguments', () => {
       numbering.reposition({ baseCenter: { x: 520, y: 465 } });
