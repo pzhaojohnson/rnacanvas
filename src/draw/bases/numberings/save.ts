@@ -3,6 +3,10 @@ import * as SVG from '@svgdotjs/svg.js';
 import { findTextByUniqueId, findLineByUniqueId } from 'Draw/saved/svg';
 import { BaseNumbering } from './BaseNumbering';
 
+import { TextPaddingRememberer } from './saved/TextPaddingRememberer';
+
+let textPaddingRememberer = new TextPaddingRememberer();
+
 export type SavableState = {
   className: 'BaseNumbering';
   textId: string;
@@ -36,6 +40,7 @@ export function addSavedNumbering(b: Base, saved: SavedState): void | never {
       line,
       { x: b.xCenter, y: b.yCenter },
     );
+    bn.textPadding = textPaddingRememberer.remember(saved);
     if (b.numbering) {
       throw new Error('Base already has numbering.');
     }

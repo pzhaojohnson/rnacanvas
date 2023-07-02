@@ -86,6 +86,14 @@ describe('addSavedNumbering function', () => {
     expect(base2.numbering.basePadding).toBeCloseTo(16.8);
   });
 
+  it('applies saved text padding', () => {
+    addNumbering(base1, 500);
+    base1.numbering.textPadding = 18.7102;
+    let state = savableState(base1.numbering);
+    addSavedNumbering(base2, state);
+    expect(base2.numbering.textPadding).toBeCloseTo(18.7102);
+  });
+
   it('throws if saved state has wrong class name', () => {
     addNumbering(base1, 50);
     let state = savableState(base1.numbering);
