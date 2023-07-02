@@ -7,6 +7,7 @@ export type SavableState = {
   className: 'BaseNumbering';
   textId: string;
   lineId: string;
+  textPadding?: number;
 }
 
 export function savableState(bn: BaseNumbering): SavableState {
@@ -14,6 +15,7 @@ export function savableState(bn: BaseNumbering): SavableState {
     className: 'BaseNumbering',
     textId: String(bn.text.id()),
     lineId: String(bn.line.id()),
+    textPadding: bn.textPadding,
   };
 }
 

@@ -47,14 +47,14 @@ describe('savableState function', () => {
     addNumbering(base1, 500);
     let textId = Math.random().toString();
     let lineId = Math.random().toString();
+    base1.numbering.textPadding = 19.3814;
     base1.numbering.text.id(textId);
     base1.numbering.line.id(lineId);
     let state = savableState(base1.numbering);
-    expect(state).toEqual({
-      className: 'BaseNumbering',
-      textId: textId,
-      lineId: lineId,
-    });
+    expect(state.className).toBe('BaseNumbering');
+    expect(state.textId).toBe(textId);
+    expect(state.lineId).toBe(lineId);
+    expect(state.textPadding).toBeCloseTo(19.3814);
   });
 
   it('returned object can be converted to and from JSON', () => {
