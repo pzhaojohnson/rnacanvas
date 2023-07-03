@@ -53,6 +53,12 @@ export class Drawing {
   secondaryBonds: SecondaryBond[];
   tertiaryBonds: TertiaryBond[];
 
+  /**
+   * A way to indicate what the drawing was initially produced from
+   * (e.g., an RNA 2D schema).
+   */
+  origin?: 'rna-2d-schema';
+
   constructor(options?: Options) {
     this.svgContainer = document.createElement('div');
     this.svgContainer.style.cssText = 'width: 100%; height: 100%; overflow: auto;';
