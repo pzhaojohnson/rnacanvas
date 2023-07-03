@@ -26,6 +26,6 @@ describe('OptimalTextPaddingCalculator class', () => {
   test('calculateFor method', () => {
     baseNumbering.text.bbox = () => ({ height: 29 });
 
-    expect(calculator.calculateFor(baseNumbering)).toBeCloseTo(10.15);
+    expect(calculator.calculateFor(baseNumbering)).toBeCloseTo(7.25);
   });
 });

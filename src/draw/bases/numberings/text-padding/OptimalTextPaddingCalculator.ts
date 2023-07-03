@@ -11,7 +11,7 @@ export class OptimalTextPaddingCalculator {
    * Calculates an optimal text padding for the base numbering.
    */
   calculateFor(bn: BaseNumbering): number {
-    let scalingFactor = 0.35;
+    let scalingFactor = 0.25;
 
     let bbox = bn.text.bbox();
 
