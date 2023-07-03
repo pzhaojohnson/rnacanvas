@@ -8,6 +8,11 @@ import { createRNAcanvasBaseNumberingText } from './contents/createRNAcanvasBase
 
 import { createRNAcanvasBaseNumberingLine } from './lines/createRNAcanvasBaseNumberingLine';
 
+import { TextPaddingOptimizerBuilder } from 'Draw/bases/numberings/text-padding/TextPaddingOptimizerBuilder';
+
+let textPaddingOptimizerBuilder = new TextPaddingOptimizerBuilder();
+let textPaddingOptimizer = textPaddingOptimizerBuilder.build();
+
 export type Point = {
   x: number;
   y: number;
@@ -38,5 +43,11 @@ export function createRNAcanvasBaseNumbering(args: Args) {
     baseCenter = { x: 0, y: 0 };
   }
 
-  return new RNAcanvasBaseNumbering(text, line, baseCenter);
+  let rnaCanvasBaseNumbering = (
+    new RNAcanvasBaseNumbering(text, line, baseCenter)
+  );
+
+  textPaddingOptimizer.applyTo(rnaCanvasBaseNumbering);
+
+  return rnaCanvasBaseNumbering;
 }

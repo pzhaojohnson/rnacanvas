@@ -5,6 +5,8 @@ import * as path from 'path';
 // makes it possible to set certain SVG element coordinates
 import * as SVG from 'Draw/svg/NodeSVG';
 
+import { Color as SVGColor } from '@svgdotjs/svg.js';
+
 import { LabelWrapper as RNA2DLabelWrapper } from 'Foreign/RNA2D/wrappers/labels/LabelWrapper';
 
 import { SchemaClassWrapper as RNA2DClassWrapper } from 'Foreign/RNA2D/wrappers/schema-classes/SchemaClassWrapper';
@@ -48,11 +50,12 @@ describe('createRNAcanvasBaseNumbering function', () => {
   it('creates text element for base numbering', () => {
     let bn = createRNAcanvasBaseNumbering({
       rna2DLabel: rna2DLabels.label1,
+      rna2DClasses: [rna2DClasses.font],
     });
 
     // just check some text attributes
     expect(bn.text.text()).toBe('20');
-    expect(bn.text.cx()).toBeCloseTo(18.540252738533944);
+    expect(bn.text.attr('font-size')).toBe(3.056220);
   });
 
   it('applies RNA 2D classes to base numbering text element', () => {
@@ -69,12 +72,14 @@ describe('createRNAcanvasBaseNumbering function', () => {
 
   it('creates line element for base numbering', () => {
     let bn = createRNAcanvasBaseNumbering({
-      rna2DLabel: rna2DLabels.label1,
+      rna2DLabel: rna2DLabels.label2,
+      rna2DClasses: [rna2DClasses.redLine, rna2DClasses.thickLine],
     });
 
     // just check some line attributes
-    expect(bn.line.attr('x1')).toBeCloseTo(22.21629648279994);
-    expect(bn.line.attr('x2')).toBeCloseTo(20.16755068885685);
+    let stroke = new SVGColor(bn.line.attr('stroke'));
+    expect(stroke.toHex().toLowerCase()).toBe('#e03409');
+    expect(bn.line.attr('stroke-width')).toBe(25.9);
   });
 
   it('applies RNA 2D classes to base numbering line element', () => {
