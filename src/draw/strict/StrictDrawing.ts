@@ -61,6 +61,18 @@ export class StrictDrawing {
   }
 
   /**
+   * A way to express what the drawing was initially produced from
+   * (e.g., an RNA 2D schema).
+   */
+  get origin() {
+    return this.drawing.origin;
+  }
+
+  set origin(origin) {
+    this.drawing.origin = origin;
+  }
+
+  /**
    * Returns the SVG document of the strict drawing.
    */
   get svg() {

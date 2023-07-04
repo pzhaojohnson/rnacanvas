@@ -55,6 +55,33 @@ test('appendTo method', () => {
   expect(container.lastChild).toBe(strictDrawing.node);
 });
 
+describe('origin getter', () => {
+  it('returns the origin of the underlying drawing', () => {
+    let strictDrawing = sd;
+
+    strictDrawing.drawing.origin = 'rna-2d-schema';
+    expect(strictDrawing.origin).toBe('rna-2d-schema');
+
+    strictDrawing.drawing.origin = undefined;
+    expect(strictDrawing.origin).toBeUndefined();
+  });
+});
+
+describe('origin setter', () => {
+  it('sets the origin of the underlying drawing', () => {
+    let strictDrawing = sd;
+
+    strictDrawing.drawing.origin = undefined;
+    expect(strictDrawing.drawing.origin).toBeUndefined();
+
+    strictDrawing.origin = 'rna-2d-schema';
+    expect(strictDrawing.drawing.origin).toBe('rna-2d-schema');
+
+    strictDrawing.origin = undefined;
+    expect(strictDrawing.drawing.origin).toBeUndefined();
+  });
+});
+
 test('svgContainer getter', () => {
   expect(sd.svgContainer).toBe(sd.drawing.svgContainer);
 });
