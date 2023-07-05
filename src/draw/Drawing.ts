@@ -33,14 +33,9 @@ export type Options = {
   }
 }
 
-export interface DrawingSavableState {
-  className: string;
-  svg: string;
-  sequences: SavableSequenceState[];
-  primaryBonds: SavableStraightBondState[];
-  secondaryBonds: SavableStraightBondState[];
-  tertiaryBonds: SavableTertiaryBondState[];
-}
+export type DrawingSavableState = (
+  ReturnType<InstanceType<typeof Drawing>['savableState']>
+);
 
 export class Drawing {
   svgContainer!: HTMLElement;
@@ -228,7 +223,7 @@ export class Drawing {
     return this.svg.svg();
   }
 
-  savableState(): DrawingSavableState {
+  savableState() {
     let sequences = [] as SavableSequenceState[];
     this.forEachSequence(seq => sequences.push(savableSequenceState(seq)));
     let primaryBonds = [] as SavableStraightBondState[];
