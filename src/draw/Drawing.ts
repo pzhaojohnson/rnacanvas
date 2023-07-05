@@ -33,6 +33,9 @@ export type Options = {
   }
 }
 
+/**
+ * The saved form of a drawing.
+ */
 export type DrawingSavableState = (
   ReturnType<InstanceType<typeof Drawing>['savableState']>
 );
