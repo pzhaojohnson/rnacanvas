@@ -237,6 +237,7 @@ export class Drawing {
     this.tertiaryBonds.forEach(tb => tertiaryBonds.push(savableTertiaryBondState(tb)));
     return {
       className: 'Drawing',
+      origin: this.origin,
       svg: this.svg.svg(),
       sequences: sequences,
       primaryBonds: primaryBonds,

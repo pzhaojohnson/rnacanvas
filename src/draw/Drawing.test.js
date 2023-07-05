@@ -263,6 +263,14 @@ describe('savableState method', () => {
     expect(savableState.svg).toBe(svgString);
   });
 
+  it('includes origin', () => {
+    drawing.origin = 'rna-2d-schema';
+    expect(drawing.savableState().origin).toBe('rna-2d-schema');
+
+    drawing.origin = undefined;
+    expect(drawing.savableState().origin).toBeUndefined();
+  });
+
   it('includes sequences', () => {
     let sequences = savableState.sequences;
     expect(sequences.length).toBe(2);
