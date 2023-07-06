@@ -3,7 +3,7 @@ export interface Drawing {
    * Is expected to hold a string indicating what the drawing was
    * initially produced from.
    */
-  origin: (
+  origin?: (
     'rna-2d-schema'
     | string
     | unknown
