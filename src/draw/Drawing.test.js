@@ -339,6 +339,18 @@ describe('applySavedState method', () => {
     expect(JSON.stringify(drawing.savableState())).toBe(JSON.stringify(savableState));
   });
 
+  it('applies saved origin', () => {
+    drawing.clear();
+    drawing.origin = 'rna-2d-schema';
+    let saved = drawing.savableState();
+
+    drawing.origin = undefined;
+    expect(drawing.origin).toBeUndefined();
+
+    drawing.applySavedState(saved);
+    expect(drawing.origin).toBe('rna-2d-schema');
+  });
+
   it('handles failure to apply saved state', () => {
     let drawing = new Drawing({ SVG: { SVG: NodeSVG } });
     drawing.appendTo(container);

@@ -24,6 +24,10 @@ import {
 } from 'Draw/bonds/curved/save';
 import { addSavedTertiaryBonds } from 'Draw/bonds/curved/saved';
 
+import { SavedOriginExtractor } from './saved/SavedOriginExtractor';
+
+let savedOriginExtractor = new SavedOriginExtractor();
+
 export type Options = {
   // for specifying alternatives to components of the SVG.js library
   SVG?: {
@@ -279,6 +283,7 @@ export class Drawing {
       throw new Error('Wrong class name.');
     }
     this.clear();
+    this.origin = savedOriginExtractor.extract(savedState);
     this._applySavedSvg(savedState);
     this._appendSavedSequences(savedState);
     this._addSavedPrimaryBonds(savedState);
