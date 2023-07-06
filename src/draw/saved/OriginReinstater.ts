@@ -4,7 +4,7 @@ export interface Drawing {
    *
    * Is expected to be a string.
    */
-  origin: (
+  origin?: (
     'rna-2d-schema'
     | string
     | unknown
