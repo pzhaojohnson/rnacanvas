@@ -7,6 +7,10 @@ import type { Base } from 'Draw/bases/Base';
 import { Point2D as Point } from 'Math/points/Point';
 import { orientBaseNumberings } from 'Draw/bases/numberings/orient';
 
+import { DrawingOriginChecker } from 'Draw/origin/DrawingOriginChecker';
+
+let drawingOriginChecker = new DrawingOriginChecker();
+
 export interface Options {
 
   // When specified, only bases at the given overall positions
@@ -138,6 +142,12 @@ function repositionBonds(drawing: Drawing, options?: Options) {
 }
 
 export function updateLayout(strictDrawing: StrictDrawing, options=defaultOptions) {
+  if (drawingOriginChecker.originIsAnRNA2DSchema(strictDrawing)) {
+    console.log('Forgoing layout update.');
+    console.log('(Drawing originates from an RNA 2D schema.)');
+    return;
+  }
+
   let layoutSeq = strictDrawing.layoutSequence();
   let layout = createLayout(strictDrawing);
   if (layout) {
