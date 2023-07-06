@@ -54,8 +54,15 @@ export class Drawing {
   /**
    * A way to indicate what the drawing was initially produced from
    * (e.g., an RNA 2D schema).
+   *
+   * Is allowed to be any string but is expected to be one of the
+   * predefined strings listed below (or undefined).
    */
-  origin?: 'rna-2d-schema';
+  origin?: (
+    'rna-2d-schema'
+    | string
+    | undefined
+  );
 
   constructor(options?: Options) {
     this.svgContainer = document.createElement('div');
