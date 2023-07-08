@@ -7,8 +7,12 @@ import { FlatteningTool } from 'Draw/interact/flatten/FlatteningTool';
 import { FlippingTool } from 'Draw/interact/flip/FlippingTool';
 import { EditingTool } from 'Draw/interact/edit/EditingTool';
 
+import { DrawingOriginChecker } from 'Draw/origin/DrawingOriginChecker';
+
 import * as React from 'react';
 import styles from './ToolSelect.css';
+
+let drawingOriginChecker = new DrawingOriginChecker();
 
 export type ToolSelectProps = {
 
@@ -123,6 +127,10 @@ export class ToolSelect extends React.Component<ToolSelectProps> {
   }
 
   render() {
+    let drawingOriginIsAnRNA2DSchema = (
+      drawingOriginChecker.originIsAnRNA2DSchema(this.props.app.drawing)
+    );
+
     let strictDrawingInteraction = this.props.app.strictDrawingInteraction;
 
     let tools = [
@@ -132,6 +140,15 @@ export class ToolSelect extends React.Component<ToolSelectProps> {
       strictDrawingInteraction.flippingTool,
       strictDrawingInteraction.editingTool,
     ];
+
+    // the drawing origin affects which tools can be used by the user
+    if (drawingOriginIsAnRNA2DSchema) {
+      tools = [
+        strictDrawingInteraction.editingTool,
+        strictDrawingInteraction.bindingTool,
+      ];
+    }
+
     let currentTool = strictDrawingInteraction.currentTool;
 
     return (
