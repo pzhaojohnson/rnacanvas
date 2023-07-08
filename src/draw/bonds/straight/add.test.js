@@ -85,6 +85,14 @@ describe('addSecondaryBond function', () => {
     expect(sb.base2).toBe(base2);
   });
 
+  it('adds secondary bond to drawing SVG document', () => {
+    let base1 = drawing.bases()[2];
+    let base2 = drawing.bases()[5];
+    let sb = addSecondaryBond(drawing, base1, base2);
+    expect(sb.line.root()).toBe(drawing.svg);
+    expect(sb.line.root()).toBeTruthy();
+  });
+
   it('adds to secondary bonds array', () => {
     for (let i = 0; i < 5; i++) {
       let bases = drawing.bases();
