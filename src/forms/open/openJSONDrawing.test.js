@@ -68,6 +68,36 @@ describe('AppWrapper class', () => {
       );
     });
 
+    describe('setting the current tool', () => {
+      test('when the saved drawing origin is an RNA 2D schema', () => {
+        let draggingTool = app.drawingInteraction.draggingTool;
+        let editingTool = app.drawingInteraction.editingTool;
+
+        app.drawingInteraction.currentTool = draggingTool;
+
+        let drawingFileContents = readDrawingFile('rna-2d-schema-origin');
+        appWrapper.openJSONDrawing({ drawingFileContents });
+
+        expect(app.drawingInteraction.currentTool).toBe(editingTool);
+
+        expect(draggingTool).toBeTruthy();
+        expect(editingTool).toBeTruthy();
+      });
+
+      test('when the saved drawing origin is not an RNA 2D schema', () => {
+        let draggingTool = app.drawingInteraction.draggingTool;
+        app.drawingInteraction.currentTool = draggingTool;
+
+        let drawingFileContents = readDrawingFile('hairpin');
+        appWrapper.openJSONDrawing({ drawingFileContents });
+
+        // was not changed
+        expect(app.drawingInteraction.currentTool).toBe(draggingTool);
+
+        expect(draggingTool).toBeTruthy();
+      });
+    });
+
     it('throws for invalid JSON', () => {
       let drawingFileContents = readDrawingFile('invalid-json');
 

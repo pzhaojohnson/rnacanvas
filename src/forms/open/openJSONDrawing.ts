@@ -2,6 +2,10 @@ import type { App } from 'App';
 
 import { removeCircleHighlighting } from 'Draw/bases/outlines/circle/add';
 
+import { DrawingOriginChecker } from 'Draw/origin/DrawingOriginChecker';
+
+let drawingOriginChecker = new DrawingOriginChecker();
+
 /**
  * A JSON drawing is a drawing that was created by the RNAcanvas web app
  * (formerly named the RNA2Drawer web app).
@@ -44,5 +48,11 @@ export class AppWrapper {
 
     // remove any lingering base highlightings
     this.app.drawing.bases().forEach(b => removeCircleHighlighting(b));
+
+    // the drawing origin can affect the initial tool
+    if (drawingOriginChecker.originIsAnRNA2DSchema(this.app.drawing)) {
+      let editingTool = this.app.drawingInteraction.editingTool;
+      this.app.drawingInteraction.currentTool = editingTool;
+    }
   }
 }
