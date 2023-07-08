@@ -24,6 +24,10 @@ import { StrokeDasharrayField as OutlineStrokeDasharrayField } from './outlines/
 import { ForwardBackwardButtons as OutlineForwardBackwardButtons } from './outlines/ForwardBackwardButtons';
 import { NumberingField } from './NumberingField';
 
+import { DrawingOriginChecker } from 'Draw/origin/DrawingOriginChecker';
+
+let drawingOriginChecker = new DrawingOriginChecker();
+
 function DrawingHasNoBasesNotes() {
   return (
     <p className={styles.notesText} >
@@ -98,7 +102,17 @@ export type Props = {
 export function EditBasesForm(props: Props) {
   let noBasesAreSelected = props.bases.length == 0;
 
-  let widthAndHeightFieldsSpacer = (
+  let drawingOriginIsAnRNA2DSchema = (
+    drawingOriginChecker.originIsAnRNA2DSchema(props.app.drawing)
+  );
+
+  // not usable if drawing layout is controlled by an RNA 2D schema
+  let widthAndHeightFields = drawingOriginIsAnRNA2DSchema ? null : (
+    <WidthAndHeightFields {...props} />
+  );
+
+  // only render if showing the width and height fields
+  let widthAndHeightFieldsSpacer = !widthAndHeightFields ? null : (
     <WidthAndHeightFieldsSpacer {...{ noBasesAreSelected }} />
   );
 
@@ -117,14 +131,14 @@ export function EditBasesForm(props: Props) {
         <DrawingHasNoBasesNotes />
       ) : noBasesAreSelected ? (
         <div style={{ display: 'flex', flexDirection: 'column' }} >
-          <WidthAndHeightFields {...props} />
+          {widthAndHeightFields}
           {widthAndHeightFieldsSpacer}
           <NoBasesAreSelectedNotes />
           <SelectAllBasesButton {...props} />
         </div>
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column' }} >
-          <WidthAndHeightFields {...props} />
+          {widthAndHeightFields}
           {widthAndHeightFieldsSpacer}
           <CharacterField {...props} />
           <FillField {...props} />
