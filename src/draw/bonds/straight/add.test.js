@@ -47,6 +47,14 @@ describe('addPrimaryBond function', () => {
     expect(pb.base2).toBe(base2);
   });
 
+  it('adds primary bond to drawing SVG document', () => {
+    let base1 = drawing.bases()[0];
+    let base2 = drawing.bases()[1];
+    let pb = addPrimaryBond(drawing, base1, base2);
+    expect(pb.line.root()).toBe(drawing.svg);
+    expect(pb.line.root()).toBeTruthy();
+  });
+
   it('adds to primary bonds array', () => {
     for (let i = 0; i < 5; i++) {
       let bases = drawing.bases();

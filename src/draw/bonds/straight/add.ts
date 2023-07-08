@@ -4,12 +4,14 @@ import { PrimaryBond } from './PrimaryBond';
 import { SecondaryBond } from './SecondaryBond';
 import { setValues } from './values';
 
+import { createPrimaryBond } from './createPrimaryBond';
+
 // adds a primary bond between bases 1 and 2
 export function addPrimaryBond(drawing: Drawing, base1: Base, base2: Base): PrimaryBond {
-  let line = drawing.svg.line(10, 20, 30, 40);
-  let pb = new PrimaryBond(line, base1, base2);
+  let pb = createPrimaryBond({ base1, base2 });
   setValues(pb, PrimaryBond.recommendedDefaults);
   pb.reposition();
+  pb.appendTo(drawing.svg);
   drawing.primaryBonds.push(pb);
   return pb;
 }
