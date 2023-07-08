@@ -34,7 +34,7 @@ function DrawingHasNoBasesNotes() {
 
 function NoBasesAreSelectedNotes() {
   return (
-    <div style={{ marginTop: '52px' }} >
+    <div>
       <p className={styles.notesText} >
         No bases are selected...
       </p>
@@ -71,8 +71,18 @@ function SelectAllBasesButton(
   );
 }
 
-function WidthAndHeightFieldsSpacer() {
-  return <div className={styles.widthAndHeightFieldsSpacer} />
+function WidthAndHeightFieldsSpacer(
+  props?: {
+    noBasesAreSelected?: boolean,
+  },
+) {
+  return (
+    <div
+      style={{
+        height: props?.noBasesAreSelected ? '52px' : '31px',
+      }}
+    />
+  );
 }
 
 export type Props = {
@@ -87,6 +97,10 @@ export type Props = {
 
 export function EditBasesForm(props: Props) {
   let noBasesAreSelected = props.bases.length == 0;
+
+  let widthAndHeightFieldsSpacer = (
+    <WidthAndHeightFieldsSpacer {...{ noBasesAreSelected }} />
+  );
 
   let outlines = props.bases.map(b => b.outline).filter(
     (o): o is CircleBaseOutline => o instanceof CircleBaseOutline
@@ -104,13 +118,14 @@ export function EditBasesForm(props: Props) {
       ) : noBasesAreSelected ? (
         <div style={{ display: 'flex', flexDirection: 'column' }} >
           <WidthAndHeightFields {...props} />
+          {widthAndHeightFieldsSpacer}
           <NoBasesAreSelectedNotes />
           <SelectAllBasesButton {...props} />
         </div>
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column' }} >
           <WidthAndHeightFields {...props} />
-          <WidthAndHeightFieldsSpacer />
+          {widthAndHeightFieldsSpacer}
           <CharacterField {...props} />
           <FillField {...props} />
           <FontFamilyField {...props} />
