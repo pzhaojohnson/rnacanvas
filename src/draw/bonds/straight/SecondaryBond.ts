@@ -40,8 +40,6 @@ SecondaryBond.recommendedDefaults = {
       'stroke-linecap': 'butt',
       'stroke-dasharray': 'none',
     },
-    basePadding1: 5.5,
-    basePadding2: 5.5,
   },
   'GC': {
     line: {
@@ -51,8 +49,6 @@ SecondaryBond.recommendedDefaults = {
       'stroke-linecap': 'butt',
       'stroke-dasharray': 'none',
     },
-    basePadding1: 5.5,
-    basePadding2: 5.5,
   },
   'GUT': {
     line: {
@@ -62,8 +58,6 @@ SecondaryBond.recommendedDefaults = {
       'stroke-linecap': 'butt',
       'stroke-dasharray': 'none',
     },
-    basePadding1: 5.5,
-    basePadding2: 5.5,
   },
   'other': {
     line: {
@@ -73,7 +67,5 @@ SecondaryBond.recommendedDefaults = {
       'stroke-linecap': 'butt',
       'stroke-dasharray': 'none',
     },
-    basePadding1: 5.5,
-    basePadding2: 5.5,
   },
 };
