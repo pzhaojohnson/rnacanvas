@@ -14,11 +14,24 @@ import { EditTertiaryBondsButton } from './EditTertiaryBondsButton';
 import { ApplySubstructureButton } from './ApplySubstructureButton';
 import { EditLayoutButton } from './EditLayoutButton';
 
+import { DrawingOriginChecker } from 'Draw/origin/DrawingOriginChecker';
+
+let drawingOriginChecker = new DrawingOriginChecker();
+
 export type Props = {
   app: App;
 }
 
 export function EditDropdown(props: Props) {
+  let drawingOriginIsAnRNA2DSchema = (
+    drawingOriginChecker.originIsAnRNA2DSchema(props.app.drawing)
+  );
+
+  // don't show if drawing origin is an RNA 2D schema
+  let editLayoutButton = drawingOriginIsAnRNA2DSchema ? null : (
+    <EditLayoutButton app={props.app} />
+  );
+
   return (
     <Dropdown
       name='Edit'
@@ -39,7 +52,7 @@ export function EditDropdown(props: Props) {
           <ApplySubstructureButton app={props.app} />
           <DroppedSeparator />
           <EditNumberingButton app={props.app} />
-          <EditLayoutButton app={props.app} />
+          {editLayoutButton}
         </div>
       )}
       disabled={props.app.strictDrawing.isEmpty()}
