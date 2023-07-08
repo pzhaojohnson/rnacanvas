@@ -13,6 +13,4 @@ PrimaryBond.recommendedDefaults = {
     'stroke-linecap': 'butt',
     'stroke-dasharray': 'none',
   },
-  basePadding1: 7,
-  basePadding2: 7,
 };
