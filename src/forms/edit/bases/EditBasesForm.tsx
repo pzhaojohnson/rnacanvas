@@ -86,6 +86,8 @@ export type Props = {
 }
 
 export function EditBasesForm(props: Props) {
+  let noBasesAreSelected = props.bases.length == 0;
+
   let outlines = props.bases.map(b => b.outline).filter(
     (o): o is CircleBaseOutline => o instanceof CircleBaseOutline
   );
@@ -99,7 +101,7 @@ export function EditBasesForm(props: Props) {
     >
       {props.app.drawing.bases().length == 0 ? (
         <DrawingHasNoBasesNotes />
-      ) : props.bases.length == 0 ? (
+      ) : noBasesAreSelected ? (
         <div style={{ display: 'flex', flexDirection: 'column' }} >
           <WidthAndHeightFields {...props} />
           <NoBasesAreSelectedNotes />
