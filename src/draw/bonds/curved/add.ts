@@ -4,6 +4,14 @@ import { TertiaryBond } from './TertiaryBond';
 import { setValues } from './values';
 import { distance2D as distance } from 'Math/distance';
 
+import { BasePaddingsOptimizerBuilder } from 'Draw/bonds/base-paddings/BasePaddingsOptimizerBuilder';
+
+let basePaddingsOptimizerBuilder = new BasePaddingsOptimizerBuilder();
+
+let basePaddingsOptimizer = (
+  basePaddingsOptimizerBuilder.buildForTertiaryBonds()
+);
+
 function setControlPointDisplacement(tb: TertiaryBond) {
 
   // default values
@@ -35,6 +43,7 @@ export function addTertiaryBond(drawing: Drawing, base1: Base, base2: Base): Ter
   let path = drawing.svg.path('M 10 20 Q 30 40 50 60');
   let tb = new TertiaryBond(path, base1, base2);
   setValues(tb, TertiaryBond.recommendedDefaults);
+  basePaddingsOptimizer.applyTo(tb);
   drawing.tertiaryBonds.push(tb);
   setControlPointDisplacement(tb);
   return tb;

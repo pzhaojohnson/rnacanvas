@@ -1,8 +1,6 @@
 import { addTertiaryBond } from './add';
 import Drawing from 'Draw/Drawing';
 import { NodeSVG } from 'Draw/svg/NodeSVG';
-import { position } from './position';
-import { TertiaryBond } from './TertiaryBond';
 
 let container = null;
 let drawing = null;
@@ -54,7 +52,7 @@ describe('addTertiaryBond function', () => {
     });
   });
 
-  it('positions the added bond with default base paddings', () => {
+  it('positions the added bond', () => {
     expect(drawing.bases().length).toBeGreaterThanOrEqual(24);
     let base1 = drawing.bases()[7];
     let base2 = drawing.bases()[10];
@@ -62,12 +60,12 @@ describe('addTertiaryBond function', () => {
     base2.recenter({ x: 300 * Math.random(), y: 100 * Math.random() });
     let tb = addTertiaryBond(drawing, base1, base2);
     let d1 = tb.path.attr('d');
-    position(tb, {
-      basePadding1: TertiaryBond.recommendedDefaults.basePadding1,
-      basePadding2: TertiaryBond.recommendedDefaults.basePadding2,
-      controlPointDisplacement: tb.controlPointDisplacement(),
-    });
+    tb.reposition();
     let d2 = tb.path.attr('d');
+
+    // should be the same if the tertiary bond was already positioned
     expect(d1).toBe(d2);
+
+    expect(d1).toBeTruthy();
   });
 });
