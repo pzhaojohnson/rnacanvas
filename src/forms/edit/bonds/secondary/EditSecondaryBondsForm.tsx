@@ -164,6 +164,8 @@ export type Props = {
 }
 
 export function EditSecondaryBondsForm(props: Props) {
+  let noSecondaryBondsAreSelected = props.secondaryBonds.length == 0;
+
   return (
     <PartialWidthContainer
       unmount={props.unmount}
@@ -173,7 +175,7 @@ export function EditSecondaryBondsForm(props: Props) {
     >
       {props.app.drawing.secondaryBonds.length == 0 ? (
         <DrawingHasNoSecondaryBondsNotes />
-      ) : props.secondaryBonds.length == 0 ? (
+      ) : noSecondaryBondsAreSelected ? (
         <div style={{ display: 'flex', flexDirection: 'column' }} >
           <BaseSpacingField {...props} />
           <NoSecondaryBondsAreSelectedNotes />
