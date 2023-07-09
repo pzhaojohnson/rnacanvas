@@ -16,6 +16,10 @@ import { ForwardBackwardButtons } from './ForwardBackwardButtons';
 
 import { StrungElementsSection } from 'Forms/edit/bonds/strung/StrungElementsSection';
 
+import { DrawingOriginChecker } from 'Draw/origin/DrawingOriginChecker';
+
+let drawingOriginChecker = new DrawingOriginChecker();
+
 function DrawingHasNoSecondaryBondsNotes() {
   return (
     <div>
@@ -176,7 +180,17 @@ export type Props = {
 export function EditSecondaryBondsForm(props: Props) {
   let noSecondaryBondsAreSelected = props.secondaryBonds.length == 0;
 
-  let baseSpacingFieldSpacer = (
+  let drawingOriginIsAnRNA2DSchema = (
+    drawingOriginChecker.originIsAnRNA2DSchema(props.app.drawing)
+  );
+
+  // not usable if drawing layout is controlled by an RNA 2D schema
+  let baseSpacingField = drawingOriginIsAnRNA2DSchema ? null : (
+    <BaseSpacingField {...props} />
+  );
+
+  // only render if showing the base spacing field
+  let baseSpacingFieldSpacer = !baseSpacingField ? null : (
     <BaseSpacingFieldSpacer {...{ noSecondaryBondsAreSelected }} />
   );
 
@@ -191,14 +205,14 @@ export function EditSecondaryBondsForm(props: Props) {
         <DrawingHasNoSecondaryBondsNotes />
       ) : noSecondaryBondsAreSelected ? (
         <div style={{ display: 'flex', flexDirection: 'column' }} >
-          <BaseSpacingField {...props} />
+          {baseSpacingField}
           {baseSpacingFieldSpacer}
           <NoSecondaryBondsAreSelectedNotes />
           <SelectSecondaryBondsButtons {...props} />
         </div>
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column' }} >
-          <BaseSpacingField {...props} />
+          {baseSpacingField}
           {baseSpacingFieldSpacer}
           <StrokeField {...props} />
           <StrokeWidthField {...props} />
