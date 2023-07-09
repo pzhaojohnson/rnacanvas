@@ -31,7 +31,7 @@ function DrawingHasNoSecondaryBondsNotes() {
 
 function NoSecondaryBondsAreSelectedNotes() {
   return (
-    <div style={{ marginTop: '47px' }} >
+    <div>
       <p className={styles.notesText} >
         No secondary bonds are selected...
       </p>
@@ -149,8 +149,18 @@ function SelectSecondaryBondsButtons(props: { app: App }) {
   );
 }
 
-function BaseSpacingFieldSpacer() {
-  return <div className={styles.baseSpacingFieldSpacer} />
+function BaseSpacingFieldSpacer(
+  props?: {
+    noSecondaryBondsAreSelected?: boolean,
+  },
+) {
+  return (
+    <div
+      style={{
+        height: props?.noSecondaryBondsAreSelected ? '47px' : '44px',
+      }}
+    />
+  );
 }
 
 export type Props = {
@@ -166,6 +176,10 @@ export type Props = {
 export function EditSecondaryBondsForm(props: Props) {
   let noSecondaryBondsAreSelected = props.secondaryBonds.length == 0;
 
+  let baseSpacingFieldSpacer = (
+    <BaseSpacingFieldSpacer {...{ noSecondaryBondsAreSelected }} />
+  );
+
   return (
     <PartialWidthContainer
       unmount={props.unmount}
@@ -178,13 +192,14 @@ export function EditSecondaryBondsForm(props: Props) {
       ) : noSecondaryBondsAreSelected ? (
         <div style={{ display: 'flex', flexDirection: 'column' }} >
           <BaseSpacingField {...props} />
+          {baseSpacingFieldSpacer}
           <NoSecondaryBondsAreSelectedNotes />
           <SelectSecondaryBondsButtons {...props} />
         </div>
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column' }} >
           <BaseSpacingField {...props} />
-          <BaseSpacingFieldSpacer />
+          {baseSpacingFieldSpacer}
           <StrokeField {...props} />
           <StrokeWidthField {...props} />
           <StrokeDasharrayField {...props} />
