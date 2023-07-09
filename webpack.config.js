@@ -70,6 +70,7 @@ module.exports = {
       Menu: path.resolve(__dirname, 'src/menu/'),
       Parse: path.resolve(__dirname, 'src/parse/'),
       Partners: path.resolve(__dirname, 'src/partners/'),
+      Refresh: path.resolve(__dirname, 'src/refresh/'),
       Settings: path.resolve(__dirname, 'src/settings/'),
       Time: path.resolve(__dirname, 'src/time/'),
       Undo: path.resolve(__dirname, 'src/undo/'),

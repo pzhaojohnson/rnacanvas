@@ -66,6 +66,7 @@
       "^Menu(.*)$": "<rootDir>/src/menu$1",
       "^Parse(.*)$": "<rootDir>/src/parse$1",
       "^Partners(.*)$": "<rootDir>/src/partners$1",
+      "^Refresh(.*)$": "<rootDir>/src/refresh$1",
       "^Settings(.*)$": "<rootDir>/src/settings$1",
       "^Time(.*)$": "<rootDir>/src/time$1",
       "^Undo(.*)$": "<rootDir>/src/undo$1",

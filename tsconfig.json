@@ -24,6 +24,7 @@
       "Menu/*": ["src/menu/*"],
       "Parse/*": ["src/parse/*"],
       "Partners/*": ["src/partners/*"],
+      "Refresh/*": ["src/refresh/*"],
       "Settings/*": ["src/settings/*"],
       "Time/*": ["src/time/*"],
       "Undo/*": ["src/undo/*"],
