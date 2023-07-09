@@ -25,7 +25,7 @@ export class DiffChecker {
    * Returns true if at least one text padding differs from the given
    * value and false otherwise.
    */
-  someTextPaddingsDifferFrom(value: number): unknown {
+  someTextPaddingsDifferFrom(value: number): boolean {
     let textPaddings = this._textPaddingsGetter.get();
 
     return textPaddings.some(tp => tp != value);
