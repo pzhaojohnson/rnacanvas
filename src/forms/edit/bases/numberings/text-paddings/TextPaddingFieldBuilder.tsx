@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 import type { App } from 'App';
 
 import type { BaseNumbering } from 'Draw/bases/numberings/BaseNumbering';
@@ -45,24 +47,26 @@ export class TextPaddingFieldBuilder {
     let app = this._app;
     let baseNumberings = this._baseNumberings;
 
-    return new TextPaddingField({
-      valueToDisplayDeterminer: new ValueToDisplayDeterminer({
-        roundedTextPaddingsGetter: new RoundedTextPaddingsGetter({
-          textPaddingsGetter: new TextPaddingsGetter({ baseNumberings }),
-          places: 2,
-        }),
-      }),
-      shouldSetDecider: new ShouldSetDecider({
-        valueValidator: new TextPaddingValueValidator(),
-        diffChecker: new DiffChecker({
-          textPaddingsGetter: new TextPaddingsGetter({ baseNumberings }),
-        }),
-      }),
-      textPaddingsSetter: new TextPaddingsSetter({
-        baseNumberings,
-        undoStackPusher: new UndoStackPusher({ app }),
-        appRefresher: new AppRefresher({ app }),
-      }),
-    });
+    return (
+      <TextPaddingField
+        valueToDisplayDeterminer={new ValueToDisplayDeterminer({
+          roundedTextPaddingsGetter: new RoundedTextPaddingsGetter({
+            textPaddingsGetter: new TextPaddingsGetter({ baseNumberings }),
+            places: 2,
+          }),
+        })}
+        shouldSetDecider={new ShouldSetDecider({
+          valueValidator: new TextPaddingValueValidator(),
+          diffChecker: new DiffChecker({
+            textPaddingsGetter: new TextPaddingsGetter({ baseNumberings }),
+          }),
+        })}
+        textPaddingsSetter={new TextPaddingsSetter({
+          baseNumberings,
+          undoStackPusher: new UndoStackPusher({ app }),
+          appRefresher: new AppRefresher({ app }),
+        })}
+      />
+    );
   }
 }
