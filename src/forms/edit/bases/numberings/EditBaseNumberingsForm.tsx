@@ -15,6 +15,7 @@ import { NumberField } from './NumberField';
 import { FontFamilyField } from './FontFamilyField';
 import { FontSizeField } from './FontSizeField';
 import { BoldField } from './BoldField';
+import { TextPaddingFieldBuilder } from './text-paddings/TextPaddingFieldBuilder';
 import { ColorField } from './ColorField';
 import { LineWidthField } from './LineWidthField';
 import { LineLengthField } from './LineLengthField';
@@ -93,6 +94,13 @@ export function EditBaseNumberingsForm(props: Props) {
 
   let ni = numberingIncrement(sequence);
 
+  let textPaddingFieldBuilder = new TextPaddingFieldBuilder({
+    app: props.app,
+    baseNumberings: props.baseNumberings,
+  });
+
+  let textPaddingField = textPaddingFieldBuilder.build();
+
   return (
     <PartialWidthContainer
       unmount={props.unmount}
@@ -121,6 +129,7 @@ export function EditBaseNumberingsForm(props: Props) {
           <FontFamilyField {...props} />
           <FontSizeField {...props} />
           <BoldField {...props} />
+          {textPaddingField}
           <ColorField {...props} />
           <LineWidthField {...props} />
           <LineLengthField {...props} />
