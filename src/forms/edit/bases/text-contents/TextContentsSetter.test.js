@@ -1,10 +1,16 @@
 import { TextContentsSetter } from './TextContentsSetter';
 
+let singleTextContentSetter = null;
+
 let undoStackPusher = null;
 
 let appRefresher = null;
 
 beforeEach(() => {
+  singleTextContentSetter = {
+    set: () => {},
+  };
+
   undoStackPusher = {
     push: () => {},
   };
@@ -18,114 +24,93 @@ afterEach(() => {
   appRefresher = null;
 
   undoStackPusher = null;
+
+  singleTextContentSetter = null;
 });
 
 describe('TextContentsSetter class', () => {
   describe('set method', () => {
-    test('for zero bases', () => {
+    it('does not throw for zero bases', () => {
       let bases = [];
 
-      let setter = (
-        new TextContentsSetter({ bases, undoStackPusher, appRefresher })
-      );
+      let textContentsSetter = new TextContentsSetter({
+        bases, singleTextContentSetter, undoStackPusher, appRefresher,
+      });
 
-      expect(() => setter.set('A')).not.toThrow();
+      expect(() => textContentsSetter.set('A')).not.toThrow();
     });
 
-    test('for one base', () => {
-      let bases = [
-        { text: { text: jest.fn() } },
-      ];
+    it('can set the text content of one base', () => {
+      let bases = [{}];
+      singleTextContentSetter.set = jest.fn();
 
-      let setter = (
-        new TextContentsSetter({ bases, undoStackPusher, appRefresher })
-      );
+      let textContentsSetter = new TextContentsSetter({
+        bases, singleTextContentSetter, undoStackPusher, appRefresher,
+      });
 
-      setter.set('xuhjkhajkef2891');
+      textContentsSetter.set('xuhjkhajkef2891');
 
-      expect(bases[0].text.text).toHaveBeenCalledTimes(1);
-      expect(bases[0].text.text.mock.calls[0][0]).toBe('xuhjkhajkef2891');
+      expect(singleTextContentSetter.set).toHaveBeenCalledTimes(1);
+      let call = singleTextContentSetter.set.mock.calls[0];
+
+      expect(call[0].base).toBe(bases[0]);
+      expect(call[0].textContent).toBe('xuhjkhajkef2891');
     });
 
-    test('for four bases', () => {
-      let bases = [
-        { text: { text: jest.fn() } },
-        { text: { text: jest.fn() } },
-        { text: { text: jest.fn() } },
-        { text: { text: jest.fn() } },
-      ];
+    it('can set the text contents of four bases', () => {
+      let bases = [{}, {}, {}, {}];
+      singleTextContentSetter.set = jest.fn();
 
-      let setter = (
-        new TextContentsSetter({ bases, undoStackPusher, appRefresher })
-      );
+      let textContentsSetter = new TextContentsSetter({
+        bases, singleTextContentSetter, undoStackPusher, appRefresher,
+      });
 
-      setter.set('KNJUH287YI13E9IJ');
+      textContentsSetter.set('KNJUH287YI13E9IJ');
 
-      expect(bases[0].text.text).toHaveBeenCalledTimes(1);
-      expect(bases[1].text.text).toHaveBeenCalledTimes(1);
-      expect(bases[2].text.text).toHaveBeenCalledTimes(1);
-      expect(bases[3].text.text).toHaveBeenCalledTimes(1);
+      expect(singleTextContentSetter.set).toHaveBeenCalledTimes(4);
+      let calls = singleTextContentSetter.set.mock.calls;
 
-      expect(bases[0].text.text.mock.calls[0][0]).toBe('KNJUH287YI13E9IJ');
-      expect(bases[1].text.text.mock.calls[0][0]).toBe('KNJUH287YI13E9IJ');
-      expect(bases[2].text.text.mock.calls[0][0]).toBe('KNJUH287YI13E9IJ');
-      expect(bases[3].text.text.mock.calls[0][0]).toBe('KNJUH287YI13E9IJ');
-    });
+      expect(calls[0][0].base).toBe(bases[0]);
+      expect(calls[1][0].base).toBe(bases[1]);
+      expect(calls[2][0].base).toBe(bases[2]);
+      expect(calls[3][0].base).toBe(bases[3]);
 
-    it('removes leading and trailing whitespace before setting', () => {
-      let bases = [
-        { text: { text: jest.fn() } },
-      ];
-
-      let setter = (
-        new TextContentsSetter({ bases, undoStackPusher, appRefresher })
-      );
-
-      setter.set('   G');
-      setter.set('Nn \t\n');
-      setter.set(' \t\tY\t\n   ');
-      setter.set('  Y  \tr  ');
-
-      expect(bases[0].text.text).toHaveBeenCalledTimes(4);
-
-      expect(bases[0].text.text.mock.calls[0][0]).toBe('G');
-      expect(bases[0].text.text.mock.calls[1][0]).toBe('Nn');
-      expect(bases[0].text.text.mock.calls[2][0]).toBe('Y');
-      expect(bases[0].text.text.mock.calls[3][0]).toBe('Y  \tr');
+      expect(calls[0][0].textContent).toBe('KNJUH287YI13E9IJ');
+      expect(calls[1][0].textContent).toBe('KNJUH287YI13E9IJ');
+      expect(calls[2][0].textContent).toBe('KNJUH287YI13E9IJ');
+      expect(calls[3][0].textContent).toBe('KNJUH287YI13E9IJ');
     });
 
     it('pushes the undo stack before setting', () => {
-      let bases = [
-        { text: { text: jest.fn() } },
-      ];
+      let bases = [{}];
+      singleTextContentSetter.set = jest.fn();
 
       undoStackPusher.push = jest.fn(() => {
-        expect(bases[0].text.text).not.toHaveBeenCalled();
+        expect(singleTextContentSetter.set).not.toHaveBeenCalled();
       });
 
-      let setter = (
-        new TextContentsSetter({ bases, undoStackPusher, appRefresher })
-      );
+      let textContentsSetter = new TextContentsSetter({
+        bases, singleTextContentSetter, undoStackPusher, appRefresher,
+      });
 
-      setter.set('A');
+      textContentsSetter.set('A');
 
       expect(undoStackPusher.push).toHaveBeenCalledTimes(1);
     });
 
     it('refreshes the app after setting', () => {
-      let bases = [
-        { text: { text: jest.fn() } },
-      ];
+      let bases = [{}];
+      singleTextContentSetter.set = jest.fn();
 
       appRefresher.refresh = jest.fn(() => {
-        expect(bases[0].text.text).toHaveBeenCalledTimes(1);
+        expect(singleTextContentSetter.set).toHaveBeenCalledTimes(1);
       });
 
-      let setter = (
-        new TextContentsSetter({ bases, undoStackPusher, appRefresher })
-      );
+      let textContentsSetter = new TextContentsSetter({
+        bases, singleTextContentSetter, undoStackPusher, appRefresher,
+      });
 
-      setter.set('A');
+      textContentsSetter.set('A');
 
       expect(appRefresher.refresh).toHaveBeenCalledTimes(1);
     });

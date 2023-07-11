@@ -1,13 +1,13 @@
-export interface Base {
-  text: {
-    /**
-     * Sets the text content of the text element of the base to the
-     * given string.
-     *
-     * Not expected to return anything.
-     */
-    text(s: string): void | unknown;
-  }
+import type { Base } from './SingleTextContentSetter';
+
+/**
+ * Sets the text content of a single base.
+ */
+export interface SingleTextContentSetter {
+  /**
+   * Sets the text content of the base to the provided text content.
+   */
+  set(args: { base: Base, textContent: string }): void;
 }
 
 export interface UndoStackPusher {
@@ -36,6 +36,11 @@ export type ConstructorArgs = {
    */
   bases: Base[];
 
+  /**
+   * Used to set the text content of each base.
+   */
+  singleTextContentSetter: SingleTextContentSetter;
+
   undoStackPusher: UndoStackPusher;
 
   appRefresher: AppRefresher;
@@ -44,34 +49,29 @@ export type ConstructorArgs = {
 export class TextContentsSetter {
   readonly _bases: Base[];
 
+  readonly _singleTextContentSetter: SingleTextContentSetter;
+
   readonly _undoStackPusher: UndoStackPusher;
 
   readonly _appRefresher: AppRefresher;
 
   constructor(args: ConstructorArgs) {
-    let { bases, undoStackPusher, appRefresher } = args;
-
-    this._bases = bases;
-
-    this._undoStackPusher = undoStackPusher;
-
-    this._appRefresher = appRefresher;
+    this._bases = args.bases;
+    this._singleTextContentSetter = args.singleTextContentSetter;
+    this._undoStackPusher = args.undoStackPusher;
+    this._appRefresher = args.appRefresher;
   }
 
   /**
    * Sets the text contents of the bases for this text contents setter
    * to the provided string value.
-   *
-   * (Trims leading and trailing whitespace from the provided string
-   * value before setting the text contents of the bases.)
    */
-  set(value: string) {
-    // remove leading and trailing whitespace
-    value = value.trim();
-
+  set(textContent: string) {
     this._undoStackPusher.push();
 
-    this._bases.forEach(b => b.text.text(value));
+    this._bases.forEach(base => {
+      this._singleTextContentSetter.set({ base, textContent });
+    });
 
     this._appRefresher.refresh();
   }
