@@ -29,7 +29,7 @@ afterEach(() => {
 });
 
 describe('TextContentsSetter class', () => {
-  describe('set method', () => {
+  describe('setTo method', () => {
     it('does not throw for zero bases', () => {
       let bases = [];
 
@@ -37,7 +37,7 @@ describe('TextContentsSetter class', () => {
         bases, singleTextContentSetter, undoStackPusher, appRefresher,
       });
 
-      expect(() => textContentsSetter.set('A')).not.toThrow();
+      expect(() => textContentsSetter.setTo('A')).not.toThrow();
     });
 
     it('can set the text content of one base', () => {
@@ -48,7 +48,7 @@ describe('TextContentsSetter class', () => {
         bases, singleTextContentSetter, undoStackPusher, appRefresher,
       });
 
-      textContentsSetter.set('xuhjkhajkef2891');
+      textContentsSetter.setTo('xuhjkhajkef2891');
 
       expect(singleTextContentSetter.set).toHaveBeenCalledTimes(1);
       let call = singleTextContentSetter.set.mock.calls[0];
@@ -65,7 +65,7 @@ describe('TextContentsSetter class', () => {
         bases, singleTextContentSetter, undoStackPusher, appRefresher,
       });
 
-      textContentsSetter.set('KNJUH287YI13E9IJ');
+      textContentsSetter.setTo('KNJUH287YI13E9IJ');
 
       expect(singleTextContentSetter.set).toHaveBeenCalledTimes(4);
       let calls = singleTextContentSetter.set.mock.calls;
@@ -93,7 +93,7 @@ describe('TextContentsSetter class', () => {
         bases, singleTextContentSetter, undoStackPusher, appRefresher,
       });
 
-      textContentsSetter.set('A');
+      textContentsSetter.setTo('A');
 
       expect(undoStackPusher.push).toHaveBeenCalledTimes(1);
     });
@@ -110,7 +110,7 @@ describe('TextContentsSetter class', () => {
         bases, singleTextContentSetter, undoStackPusher, appRefresher,
       });
 
-      textContentsSetter.set('A');
+      textContentsSetter.setTo('A');
 
       expect(appRefresher.refresh).toHaveBeenCalledTimes(1);
     });

@@ -66,7 +66,7 @@ export class TextContentsSetter {
    * Sets the text contents of the bases for this text contents setter
    * to the provided string value.
    */
-  set(textContent: string) {
+  setTo(textContent: string) {
     this._undoStackPusher.push();
 
     this._bases.forEach(base => {
