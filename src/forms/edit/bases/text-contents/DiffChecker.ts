@@ -24,7 +24,7 @@ export class DiffChecker {
    *
    * Returns false otherwise.
    */
-  someTextContentsDifferFrom(value: string): boolean {
+  checkFor(value: string): boolean {
     let textContents = this._textContentsGetter.get();
 
     return textContents.some(tc => tc != value);
