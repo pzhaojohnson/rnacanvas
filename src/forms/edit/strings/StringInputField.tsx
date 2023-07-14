@@ -27,7 +27,7 @@ export class StringInputField extends React.Component<Props> {
     return (
       <FieldLabel style={this.props.style} >
         {this.props.stringInput}
-        <span style={{ paddingLeft: '8px' }} >
+        <span style={{ paddingLeft: '8px', cursor: 'text' }} >
           {this.props.label}
         </span>
       </FieldLabel>
