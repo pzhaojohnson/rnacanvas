@@ -1,11 +1,4 @@
-export interface Base {
-  text: {
-    /**
-     * Returns the text content of the text element of a base.
-     */
-    text(): string;
-  }
-}
+import { Base } from './Base';
 
 export class TextContentGetter {
   /**
