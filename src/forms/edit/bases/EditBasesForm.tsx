@@ -9,7 +9,7 @@ import { FormHistoryInterface } from 'Forms/history/FormHistoryInterface';
 
 import { WidthAndHeightFields } from './WidthAndHeightFields';
 
-import { CharacterField } from './CharacterField';
+import { TextContentFieldBuilder } from './text-contents/TextContentFieldBuilder';
 import { FillField } from './FillField';
 import { FontFamilyField } from './FontFamilyField';
 import { FontSizeField } from './FontSizeField';
@@ -116,6 +116,13 @@ export function EditBasesForm(props: Props) {
     <WidthAndHeightFieldsSpacer {...{ noBasesAreSelected }} />
   );
 
+  let textContentFieldBuilder = new TextContentFieldBuilder({
+    app: props.app,
+    bases: props.bases,
+  });
+
+  let textContentField = textContentFieldBuilder.build();
+
   let outlines = props.bases.map(b => b.outline).filter(
     (o): o is CircleBaseOutline => o instanceof CircleBaseOutline
   );
@@ -140,7 +147,7 @@ export function EditBasesForm(props: Props) {
         <div style={{ display: 'flex', flexDirection: 'column' }} >
           {widthAndHeightFields}
           {widthAndHeightFieldsSpacer}
-          <CharacterField {...props} />
+          {textContentField}
           <FillField {...props} />
           <FontFamilyField {...props} />
           <FontSizeField {...props} />
