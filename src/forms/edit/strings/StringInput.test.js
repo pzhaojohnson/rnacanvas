@@ -63,13 +63,8 @@ describe('StringInput component', () => {
 
     Simulate.blur(container.firstChild);
 
-    return new Promise(resolve => {
-      setTimeout(() => {
-        expect(props.setter.setTo).toHaveBeenCalledTimes(1);
-        expect(props.setter.setTo.mock.calls[0][0]).toBe('998ysdhk13kj398le');
-        resolve();
-      }, 250);
-    });
+    expect(props.setter.setTo).toHaveBeenCalledTimes(1);
+    expect(props.setter.setTo.mock.calls[0][0]).toBe('998ysdhk13kj398le');
   });
 
   it('can set on enter key up', () => {
@@ -81,13 +76,8 @@ describe('StringInput component', () => {
 
     Simulate.keyUp(container.firstChild, { key: 'Enter' });
 
-    return new Promise(resolve => {
-      setTimeout(() => {
-        expect(props.setter.setTo).toHaveBeenCalledTimes(1);
-        expect(props.setter.setTo.mock.calls[0][0]).toBe('989237YKJHEQKJ198');
-        resolve();
-      }, 250);
-    });
+    expect(props.setter.setTo).toHaveBeenCalledTimes(1);
+    expect(props.setter.setTo.mock.calls[0][0]).toBe('989237YKJHEQKJ198');
   });
 
   it('passes the submitted value to the refiner', () => {
@@ -101,6 +91,7 @@ describe('StringInput component', () => {
     Simulate.blur(container.firstChild);
 
     expect(props.submittedValueRefiner.refine).toHaveBeenCalledTimes(1);
+
     let call = props.submittedValueRefiner.refine.mock.calls[0];
     expect(call[0]).toBe('90D-3RNCXXC.XVUHA');
   });
@@ -113,14 +104,10 @@ describe('StringInput component', () => {
 
     Simulate.blur(container.firstChild);
 
-    return new Promise(resolve => {
-      setTimeout(() => {
-        expect(props.shouldSetDecider.shouldSetTo).toHaveBeenCalledTimes(1);
-        let call = props.shouldSetDecider.shouldSetTo.mock.calls[0];
-        expect(call[0]).toBe('9309sojnjc635613uyknsj');
-        resolve();
-      }, 250);
-    });
+    expect(props.shouldSetDecider.shouldSetTo).toHaveBeenCalledTimes(1);
+
+    let call = props.shouldSetDecider.shouldSetTo.mock.calls[0];
+    expect(call[0]).toBe('9309sojnjc635613uyknsj');
   });
 
   it('passes the refined submitted value to the setter', () => {
@@ -132,13 +119,8 @@ describe('StringInput component', () => {
 
     Simulate.blur(container.firstChild);
 
-    return new Promise(resolve => {
-      setTimeout(() => {
-        expect(props.setter.setTo).toHaveBeenCalledTimes(1);
-        expect(props.setter.setTo.mock.calls[0][0]).toBe('9v89hjngj3081313y');
-        resolve();
-      }, 250);
-    });
+    expect(props.setter.setTo).toHaveBeenCalledTimes(1);
+    expect(props.setter.setTo.mock.calls[0][0]).toBe('9v89hjngj3081313y');
   });
 
   it('does not set when the decider says not to', () => {
@@ -149,21 +131,14 @@ describe('StringInput component', () => {
 
     Simulate.blur(container.firstChild);
 
-    return new Promise(resolve => {
-      setTimeout(() => {
-        expect(props.setter.setTo).not.toHaveBeenCalled();
+    expect(props.setter.setTo).not.toHaveBeenCalled();
 
-        props.shouldSetDecider.shouldSetTo = () => true;
+    props.shouldSetDecider.shouldSetTo = () => true;
 
-        Simulate.blur(container.firstChild);
+    Simulate.blur(container.firstChild);
 
-        // now it does set
-        setTimeout(() => {
-          expect(props.setter.setTo).toHaveBeenCalledTimes(1);
-          resolve();
-        }, 250);
-      }, 250);
-    });
+    // now it does set
+    expect(props.setter.setTo).toHaveBeenCalledTimes(1);
   });
 
   it('resets the displayed value on submission rejection', () => {
@@ -177,12 +152,7 @@ describe('StringInput component', () => {
 
     Simulate.blur(container.firstChild);
 
-    return new Promise(resolve => {
-      setTimeout(() => {
-        expect(container.firstChild.value).toBe('889iu3kjfankdjknoci89');
-        resolve();
-      }, 250);
-    });
+    expect(container.firstChild.value).toBe('889iu3kjfankdjknoci89');
   });
 
   it('requeries the initial value provider on submission rejection', () => {
@@ -193,13 +163,8 @@ describe('StringInput component', () => {
 
     Simulate.blur(container.firstChild);
 
-    return new Promise(resolve => {
-      setTimeout(() => {
-        // should requery to get the most up-to-date value
-        expect(props.initialValueProvider.provide).toHaveBeenCalledTimes(1);
-        resolve();
-      }, 250);
-    });
+    // should requery to get the most up-to-date value
+    expect(props.initialValueProvider.provide).toHaveBeenCalledTimes(1);
   });
 
   it('renders with the provided ID', () => {
