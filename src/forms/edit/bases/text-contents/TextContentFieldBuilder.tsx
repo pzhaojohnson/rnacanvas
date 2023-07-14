@@ -73,6 +73,10 @@ export class TextContentFieldBuilder {
             })}
           />
         }
+        style={{
+          marginBottom: '8px',
+          alignSelf: 'start',
+        }}
       />
     );
   }
