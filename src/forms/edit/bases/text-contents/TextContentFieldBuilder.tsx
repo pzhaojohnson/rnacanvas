@@ -22,6 +22,15 @@ import { SingleTextContentSetter } from './SingleTextContentSetter';
 import { UndoStackPusher } from 'Undo/UndoStackPusher';
 import { AppRefresher } from 'Refresh/AppRefresher';
 
+import { generateHTMLCompatibleUUID } from 'Utilities/generateHTMLCompatibleUUID';
+
+/**
+ * Helps with refocusing of the input element between app refreshes.
+ *
+ * Should be kept the same between app refreshes.
+ */
+const inputElementId = generateHTMLCompatibleUUID();
+
 export type ConstructorArgs = {
   /**
    * The relevant app instance.
@@ -71,6 +80,7 @@ export class TextContentFieldBuilder {
               undoStackPusher: new UndoStackPusher({ app }),
               appRefresher: new AppRefresher({ app }),
             })}
+            id={inputElementId}
           />
         }
         style={{
