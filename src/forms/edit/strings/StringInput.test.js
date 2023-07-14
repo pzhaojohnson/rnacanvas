@@ -105,17 +105,6 @@ describe('StringInput component', () => {
     expect(call[0]).toBe('90D-3RNCXXC.XVUHA');
   });
 
-  it('refines the displayed value on submit', () => {
-    act(() => { render(<StringInput {...props} />, container); });
-
-    props.submittedValueRefiner.refine = () => '99831-fbiu3r98783cb';
-    props.shouldSetDecider.shouldSetTo = () => true;
-
-    Simulate.blur(container.firstChild);
-
-    expect(container.firstChild.value).toBe('99831-fbiu3r98783cb');
-  });
-
   it('passes the refined submitted value to the should-set decider', () => {
     act(() => { render(<StringInput {...props} />, container); });
 

@@ -115,9 +115,6 @@ export class StringInput extends React.Component<Props> {
     let refiner = this.props.submittedValueRefiner;
     let refinedSubmittedValue = refiner.refine(submittedValue);
 
-    this.setState({ value: refinedSubmittedValue });
-
-    // give enough time for the above state change
     setTimeout(() => {
       if (this.props.shouldSetDecider.shouldSetTo(refinedSubmittedValue)) {
         this.props.setter.setTo(refinedSubmittedValue);
