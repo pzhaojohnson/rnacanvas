@@ -4,7 +4,7 @@ import { Dropright } from 'Menu/Dropright';
 import { DroppedSeparator } from 'Menu/DroppedSeparator';
 import type { App } from 'App';
 import { BySelectionButton } from './BySelectionButton';
-import { ByCharacterButton } from './ByCharacterButton';
+import { ByTextButton } from './ByTextButton';
 import { ByDataButton } from './ByDataButton';
 import { CapitalizeButton } from './CapitalizeButton';
 import { DecapitalizeButton } from './DecapitalizeButton';
@@ -26,7 +26,7 @@ export function EditBasesDropright(props: Props) {
           </div>
           <div className={styles.bottomContainer} >
             <DroppedSeparator />
-            <ByCharacterButton app={props.app} />
+            <ByTextButton app={props.app} />
             <ByDataButton app={props.app} />
             <DroppedSeparator />
             <CapitalizeButton app={props.app} />
