@@ -9,8 +9,13 @@ export type Props = {
 export function SelectButton(props: Props) {
   let onClick = props.onClick;
 
+  let style: React.CSSProperties = {
+    marginTop: '38px',
+    alignSelf: 'start',
+  };
+
   return (
-    <SubmitButton onClick={onClick} >
+    <SubmitButton onClick={onClick} style={style} >
       Select
     </SubmitButton>
   );
