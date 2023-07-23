@@ -1,0 +1,50 @@
+.domNode {
+  border: 1px solid #d10f0f;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+
+  min-width: 714px;
+  min-height: 40px;
+
+  background-color: rgb(255, 238, 238);
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 9%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
+  animation: blinkIn 2.5s;
+}
+
+@keyframes blinkIn {
+  0%, 70%, 90% {
+    opacity: 0;
+  }
+  60%, 80%, 100% {
+    opacity: 1;
+  }
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(164, 21, 21);
+}
+
+.sentence2 {
+  padding-left: 10px;
+}
+
+.closeButtonContainer {
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  transform: translateY(-50%);
+}

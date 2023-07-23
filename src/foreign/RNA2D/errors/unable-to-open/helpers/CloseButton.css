@@ -1,0 +1,18 @@
+.closeButton {
+  display: flex;
+
+  border-radius: 3px;
+  padding: 6px;
+
+  cursor: pointer;
+
+  background-color: transparent;
+}
+
+.closeButton:hover {
+  background-color: rgb(232, 196, 196);
+}
+
+.closeButton:active {
+  background-color: rgb(219, 172, 172);
+}
