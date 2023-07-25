@@ -16,7 +16,7 @@ allowing for further manipulation in a vector graphics editor such as Adobe Illu
 
 * <b>Article in <em>Nucleic Acids Research</em>:</b> [https://doi.org/10.1093/nar/gkad302](https://doi.org/10.1093/nar/gkad302)
 
-* <b><em>If you use RNAcanvas to draw structures in a publication, a citation is greatly appreciated!</em></b>
+* <b><em>Citations are greatly appreciated! (If you use RNAcanvas to draw structures in publications.)</em></b>
 
 If you have questions, find issues, or have feature requests, email [contact@rnacanvas.app](mailto:contact@rnacanvas.app) or open an issue thread here on GitHub.
 
