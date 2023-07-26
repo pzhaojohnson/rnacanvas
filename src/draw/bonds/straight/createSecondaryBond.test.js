@@ -78,7 +78,6 @@ describe('createSecondaryBond function', () => {
       // (expected values are hard-coded and might become outdated)
       let stroke = new SVGColor(sb.line.attr('stroke'));
       expect(stroke.toHex()).toBe('#000000');
-      expect(sb.line.attr('stroke-width')).toBe(2);
     });
 
     test('an AU bond', () => {
@@ -91,7 +90,6 @@ describe('createSecondaryBond function', () => {
       // (expected values are hard-coded and might become outdated)
       let stroke = new SVGColor(sb.line.attr('stroke'));
       expect(stroke.toHex()).toBe('#000000');
-      expect(sb.line.attr('stroke-width')).toBe(2);
     });
   });
 });
