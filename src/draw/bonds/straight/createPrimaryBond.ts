@@ -4,7 +4,15 @@ import { PrimaryBond } from './PrimaryBond';
 
 import { createStraightBond } from './private/createStraightBond';
 
+import { LineThicknessOptimizerBuilder } from 'Draw/bonds/line-thickness/LineThicknessOptimizerBuilder';
+
 import { BasePaddingsOptimizerBuilder } from 'Draw/bonds/base-paddings/BasePaddingsOptimizerBuilder';
+
+let lineThicknessOptimizerBuilder = new LineThicknessOptimizerBuilder();
+
+let lineThicknessOptimizer = (
+  lineThicknessOptimizerBuilder.buildForPrimaryBonds()
+);
 
 let basePaddingsOptimizerBuilder = new BasePaddingsOptimizerBuilder();
 
@@ -32,6 +40,8 @@ export function createPrimaryBond(args: Args): PrimaryBond {
 
   // apply default line attributes
   pb.line.attr(PrimaryBond.recommendedDefaults.line);
+
+  lineThicknessOptimizer.applyTo(pb);
 
   basePaddingsOptimizer.applyTo(pb);
 

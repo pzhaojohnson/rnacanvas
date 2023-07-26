@@ -49,7 +49,6 @@ describe('createPrimaryBond function', () => {
     // just check some line attributes
     let stroke = new SVGColor(pb.line.attr('stroke'));
     expect(stroke.toHex()).toBe('#515151');
-    expect(pb.line.attr('stroke-width')).toBe(1.25);
   });
 
   it('positions line', () => {
