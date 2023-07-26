@@ -2,7 +2,6 @@ import type { Drawing } from 'Draw/Drawing';
 import type { Base } from 'Draw/bases/Base';
 import { PrimaryBond } from './PrimaryBond';
 import { SecondaryBond } from './SecondaryBond';
-import { setValues } from './values';
 
 import { createPrimaryBond } from './createPrimaryBond';
 
@@ -20,7 +19,6 @@ export function addPrimaryBond(drawing: Drawing, base1: Base, base2: Base): Prim
 // adds a secondary bond between bases 1 and 2
 export function addSecondaryBond(drawing: Drawing, base1: Base, base2: Base): SecondaryBond {
   let sb = createSecondaryBond({ base1, base2 });
-  setValues(sb, SecondaryBond.recommendedDefaults[sb.type]);
   sb.reposition();
   sb.appendTo(drawing.svg);
   drawing.secondaryBonds.push(sb);
