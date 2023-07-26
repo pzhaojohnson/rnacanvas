@@ -77,14 +77,18 @@ setTimeout(() => {
       .then(() => app.formContainer.renderForm(welcomePage));
   };
 
+  let showWelcomePageWithRNA2DOpenErrorDialog = async () => {
+    showWelcomePage()
+      .then(() => rna2DOpenErrorDialog.show())
+  };
+
   waitMilliseconds(25).then(() => app.appendTo(document.body));
 
   waitMilliseconds(100).then(() => {
     if (urlParameters.rna2DSchemaURL) {
       app.openRNA2DSchema({ url: urlParameters.rna2DSchemaURL })
         .then(() => loadingScreen.hideIfBeingShown())
-        .catch(() => showWelcomePage())
-        .then(() => rna2DOpenErrorDialog.show());
+        .catch(() => showWelcomePageWithRNA2DOpenErrorDialog());
     } else {
       showWelcomePage();
     }
