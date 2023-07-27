@@ -30,6 +30,12 @@ import { ErrorMessage } from './ErrorMessage';
 import { InsertSubsequenceNote } from './TrailingNotes';
 import { BaseNumberingNote } from './TrailingNotes';
 
+import { DrawingOriginChecker } from 'Draw/origin/DrawingOriginChecker';
+
+import { RNA2DSchemaOriginMessage } from './subcomponents/RNA2DSchemaOriginMessage';
+
+let drawingOriginChecker = new DrawingOriginChecker();
+
 function constrainPositionToInsertAt(positionToInsertAt: string): string {
   let n = Number.parseFloat(positionToInsertAt);
 
@@ -111,6 +117,19 @@ export function AddSubsequenceForm(props: Props) {
       };
     };
   });
+
+  if (drawingOriginChecker.originIsAnRNA2DSchema(drawing)) {
+    return (
+      <PartialWidthContainer
+        unmount={props.unmount}
+        history={props.history}
+        title='Add Subsequence'
+        style={{ width: '413px' }}
+      >
+        <RNA2DSchemaOriginMessage />
+      </PartialWidthContainer>
+    );
+  }
 
   return (
     <PartialWidthContainer
