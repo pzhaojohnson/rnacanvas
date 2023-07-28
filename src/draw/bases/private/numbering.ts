@@ -2,6 +2,11 @@ import type { Base } from 'Draw/bases/Base';
 
 import * as SVG from '@svgdotjs/svg.js';
 
+import { ParentSVGDocEnsurerBuilder } from 'Draw/bases/numberings/parent-SVG-doc/ParentSVGDocEnsurerBuilder';
+
+let parentSVGDocEnsurerBuilder = new ParentSVGDocEnsurerBuilder();
+let parentSVGDocEnsurer = parentSVGDocEnsurerBuilder.build();
+
 export class BaseDecorator {
   readonly decoratee: Base;
 
@@ -24,10 +29,13 @@ export class BaseDecorator {
 
     numbering?.reposition({ baseCenter: this.decoratee.getCenter() });
 
-    let parent: unknown = this.decoratee.text.root();
+    let parentSVGDoc: unknown = this.decoratee.text.root();
 
-    if (parent instanceof SVG.Svg) {
-      numbering?.appendTo(parent);
+    if (parentSVGDoc instanceof SVG.Svg && numbering) {
+      parentSVGDocEnsurer.ensureFor({
+        baseNumbering: numbering,
+        svgDoc: parentSVGDoc,
+      });
     }
   }
 }
