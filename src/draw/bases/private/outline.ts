@@ -2,6 +2,10 @@ import type { Base } from 'Draw/bases/Base';
 
 import * as SVG from '@svgdotjs/svg.js';
 
+import { SVGDocContainsBaseOutlineEnsurer } from 'Draw/bases/outlines/containers/SVGDocContainsBaseOutlineEnsurer';
+
+let svgDocContainsBaseOutlineEnsurer = new SVGDocContainsBaseOutlineEnsurer();
+
 export class BaseDecorator {
   readonly decoratee: Base;
 
@@ -24,10 +28,13 @@ export class BaseDecorator {
 
     outline?.reposition({ baseCenter: this.decoratee._center });
 
-    let svg: unknown = this.decoratee.text.root();
+    let svgDoc: unknown = this.decoratee.text.root();
 
-    if (svg instanceof SVG.Svg) {
-      outline?.appendTo(svg);
+    if (svgDoc instanceof SVG.Svg && outline) {
+      svgDocContainsBaseOutlineEnsurer.ensureFor({
+        svgDoc,
+        baseOutline: outline,
+      });
     }
   }
 }
