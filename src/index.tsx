@@ -8,6 +8,7 @@ import * as React from 'react';
 
 import { WelcomePage } from 'Forms/welcome/WelcomePage';
 
+import { OnOpenRNA2DInfoDialogBuilder } from 'Foreign/RNA2D/user-help/on-open/OnOpenRNA2DInfoDialogBuilder';
 import { RNA2DOpenErrorDialogBuilder } from 'Foreign/RNA2D/errors/unable-to-open/RNA2DOpenErrorDialogBuilder';
 
 import { DragAndDropDisabler } from 'Utilities/DragAndDropDisabler';
@@ -36,6 +37,9 @@ type URLParameters = {
 let urlParameters: URLParameters = {
   rna2DSchemaURL: null,
 };
+
+let onOpenRNA2DInfoDialogBuilder = new OnOpenRNA2DInfoDialogBuilder();
+let onOpenRNA2DInfoDialog = onOpenRNA2DInfoDialogBuilder.build();
 
 let rna2DOpenErrorDialogBuilder = new RNA2DOpenErrorDialogBuilder();
 let rna2DOpenErrorDialog = rna2DOpenErrorDialogBuilder.build();
@@ -88,6 +92,7 @@ setTimeout(() => {
     if (urlParameters.rna2DSchemaURL) {
       app.openRNA2DSchema({ url: urlParameters.rna2DSchemaURL })
         .then(() => loadingScreen.hideIfBeingShown())
+        .then(() => onOpenRNA2DInfoDialog.show())
         .catch(() => showWelcomePageWithRNA2DOpenErrorDialog());
     } else {
       showWelcomePage();
