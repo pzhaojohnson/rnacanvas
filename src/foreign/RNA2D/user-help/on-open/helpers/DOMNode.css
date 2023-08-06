@@ -1,0 +1,161 @@
+.appIcon {
+  width: 28px;
+}
+
+.headerRNAText {
+  position: absolute;
+  top: -3px;
+  left: 41px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+}
+
+.headerCanvasText {
+  position: absolute;
+  top: -9px;
+  left: 97px;
+
+  font-family: "Corinthia", cursive;
+  font-size: 42px;
+  font-weight: 400;
+  color: black;
+}
+
+.header {
+  margin-top: 20px;
+  margin-left: 26px;
+
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.mainText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(23, 2, 23);
+}
+
+.intro {
+  margin-top: 28px;
+  margin-left: 48px;
+}
+
+.bulletPoint {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: rgb(23, 2, 23);
+
+  margin-right: 8px;
+}
+
+.bulletedItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.availableFeaturesListBulletedItems {
+  margin-top: 7px;
+  margin-left: 18px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.availableFeaturesList {
+  margin-top: 33px;
+  margin-left: 48px;
+}
+
+.unavailableFeaturesListBulletedItems {
+  margin-top: 7px;
+  margin-left: 18px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.unavailableFeaturesListTrailingText {
+  margin-top: 7px;
+  margin-left: 44px;
+}
+
+.unavailableFeaturesList {
+  margin-top: 35px;
+  margin-left: 48px;
+}
+
+.contactEmailLineLeadingText {
+  margin-right: 4px;
+}
+
+.contactEmailLink {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #821f82;
+
+  text-decoration: none;
+}
+
+.contactEmailLink:hover {
+  text-decoration: underline;
+}
+
+.contactEmailLine {
+  margin-top: 35px;
+  margin-bottom: 48px;
+  margin-left: 48px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.closeButtonContainer {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.domNode {
+  position: fixed;
+
+  top: 59px;
+  right: 66px;
+  left: 66px;
+  bottom: 60px;
+  overflow: scroll;
+
+  max-width: 528px;
+  max-height: 591px;
+
+  z-index: 10;
+
+  border: solid 1px #420c67;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+
+  background-color: #f0f0ff8a;
+
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
