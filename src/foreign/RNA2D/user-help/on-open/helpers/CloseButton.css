@@ -1,0 +1,25 @@
+.closeButton {
+  border: none;
+  outline: none;
+
+  padding: 3px 12px;
+  border-radius: 3px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  color: #851414;
+
+  cursor: pointer;
+
+  background-color: transparent;
+}
+
+.closeButton:hover {
+  background-color: #c6b4d58c;
+}
+
+.closeButton:active {
+  background-color: #aa8ebba8;
+}
