@@ -135,7 +135,7 @@
   right: 66px;
   left: 66px;
   bottom: 60px;
-  overflow: scroll;
+  overflow: auto;
 
   max-width: 528px;
   max-height: 591px;
