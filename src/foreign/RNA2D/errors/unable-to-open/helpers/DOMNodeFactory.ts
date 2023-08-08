@@ -35,6 +35,7 @@ export class DOMNodeFactory {
     closeButtonContainer.className = styles.closeButtonContainer;
     closeButtonContainer.appendChild(this._closeButton);
 
+    // append last to keep close button on top and clickable
     domNode.appendChild(closeButtonContainer);
 
     return domNode;
