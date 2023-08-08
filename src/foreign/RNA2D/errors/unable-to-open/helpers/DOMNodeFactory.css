@@ -24,7 +24,7 @@
 
   z-index: 10;
 
-  animation: blinkIn 2.5s;
+  animation: blinkIn 2s;
 }
 
 @keyframes blinkIn {
