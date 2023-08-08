@@ -2,20 +2,26 @@
   border: 1px solid #d10f0f;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
 
-  min-width: 714px;
-  min-height: 40px;
-
   background-color: rgb(255, 238, 238);
   border-radius: 16px;
 
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  padding: 0px 51px;
 
   position: fixed;
-  top: 9%;
-  left: 50%;
-  transform: translateX(-50%);
+
+  top: 20px;
+  right: 50px;
+  left: 50px;
+  overflow: auto;
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 714px;
+  min-height: 40px;
+
   z-index: 10;
 
   animation: blinkIn 2.5s;
@@ -36,6 +42,11 @@
   font-weight: 400;
   font-style: normal;
   color: rgb(164, 21, 21);
+
+  white-space: nowrap;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sentence2 {
@@ -45,6 +56,6 @@
 .closeButtonContainer {
   position: absolute;
   top: 50%;
-  right: 11px;
+  left: 11px;
   transform: translateY(-50%);
 }
