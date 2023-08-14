@@ -25,6 +25,8 @@ import { fetchRNA2DSchema } from 'Foreign/RNA2D/fetchRNA2DSchema';
 
 import { createRNAcanvasDrawingFragment } from 'Foreign/RNA2D/convert/schemas/createRNAcanvasDrawingFragment';
 
+import { DuplicateSecondaryBondsRemoverBuilder } from 'Foreign/RNA2D/duplicate-base-pairs/DuplicateSecondaryBondsRemoverBuilder';
+
 import { DrawingViewCentererBuilder } from 'Draw/view/DrawingViewCentererBuilder';
 
 import { DrawingOriginSetter } from 'Draw/origin/DrawingOriginSetter';
@@ -42,6 +44,8 @@ export type RNA2DSchemaLike = (
     url: string;
   }
 );
+
+let duplicateSecondaryBondsRemoverBuilder = new DuplicateSecondaryBondsRemoverBuilder();
 
 export type Options = {
 
@@ -160,10 +164,17 @@ export class App {
   async openRNA2DSchema(args: RNA2DSchemaLike) {
     let { url } = args;
     let rna2DSchema = await fetchRNA2DSchema({ url });
+
     let drawingFragment = createRNAcanvasDrawingFragment({ rna2DSchema });
     drawingFragment.appendTo(this.drawing);
+
+    let duplicateSecondaryBondsRemover = duplicateSecondaryBondsRemoverBuilder.buildFor(this.drawing);
+    duplicateSecondaryBondsRemover.remove();
+
     drawingOriginSetter.setOriginToAnRNA2DSchema(this.drawing);
+
     this.drawingInteraction.currentTool = this.drawingInteraction.editingTool;
+
     this.refresh();
     drawingViewCenterer.applyTo(this.drawing);
   }
