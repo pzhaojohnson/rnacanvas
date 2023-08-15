@@ -124,7 +124,7 @@ export function AddSubsequenceForm(props: Props) {
         unmount={props.unmount}
         history={props.history}
         title='Add Subsequence'
-        style={{ width: '413px' }}
+        style={{ width: '414px' }}
       >
         <RNA2DSchemaOriginMessage />
       </PartialWidthContainer>
