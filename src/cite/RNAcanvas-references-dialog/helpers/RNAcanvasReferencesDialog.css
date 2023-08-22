@@ -1,0 +1,154 @@
+.appIcon {
+  width: 28px;
+}
+
+.headerRNAText {
+  position: absolute;
+  top: -3px;
+  left: 42px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+}
+
+.headerCanvasText {
+  position: absolute;
+  top: -9px;
+  left: 98px;
+
+  font-family: "Corinthia", cursive;
+  font-size: 42px;
+  font-weight: 400;
+  color: black;
+}
+
+.header {
+  margin-top: 22px;
+  margin-left: 28px;
+
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.mainText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(20, 1, 20);
+}
+
+.journalName {
+  font-weight: 700;
+  font-style: italic;
+  color: black;
+}
+
+.rnaCanvasJournalLine {}
+
+.doiLabel {
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+}
+
+.referenceLink {
+  color: rgb(15, 15, 219);
+
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.referenceLink:hover {
+  text-decoration: underline;
+}
+
+.rnaCanvasDOILine {
+  margin-top: 8px;
+}
+
+.explanatoryText {
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.r2dtName {
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+}
+
+.r2dtIntroLine {
+  margin-top: 60px;
+}
+
+.r2dtJournalLine {
+  margin-top: 16px;
+}
+
+.r2dtDOILine {
+  margin-top: 8px;
+}
+
+.r2dtWebServerLabel {
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+}
+
+.r2dtWebServerLine {
+  margin-top: 16px;
+  margin-bottom: 56px;
+}
+
+.mainContent {
+  margin-top: 38px;
+  margin-left: 60px;
+}
+
+.closeButtonContainer {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.rnaCanvasReferencesDialog {
+  position: fixed;
+
+  top: 59px;
+  right: 66px;
+  left: 66px;
+  bottom: 60px;
+  overflow: auto;
+
+  max-width: 492px;
+  max-height: 545px;
+  margin-left: auto;
+
+  z-index: 10;
+
+  border: solid 1px #2b0744;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+
+  background-color: #f0f0ffc4;
+
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
