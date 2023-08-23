@@ -12,7 +12,9 @@ export type Props = {
 }
 
 export function Menu(props: Props) {
-  let askBeforeLeavingToggleContainer = !props.app.strictDrawing.isEmpty() ? (
+  let drawingIsEmpty = props.app.drawing.isEmpty();
+
+  let askBeforeLeavingToggleContainer = !drawingIsEmpty ? (
     <div style={{ marginRight: '10px' }} >
       <AskBeforeLeavingToggle app={props.app} />
     </div>
