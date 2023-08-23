@@ -141,7 +141,7 @@
 
   background-color: #f0f0ffc4;
 
-  animation: fadeIn 2s;
+  animation: fadeIn 0.5s;
 }
 
 @keyframes fadeIn {
