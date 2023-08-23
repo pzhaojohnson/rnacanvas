@@ -12,6 +12,12 @@ export type Props = {
 }
 
 export function Menu(props: Props) {
+  let askBeforeLeavingToggleContainer = !props.app.strictDrawing.isEmpty() ? (
+    <div style={{ marginRight: '10px' }} >
+      <AskBeforeLeavingToggle app={props.app} />
+    </div>
+  ) : null;
+
   return (
     <div className={styles.menu} >
       <AppIcon app={props.app} />
@@ -19,11 +25,7 @@ export function Menu(props: Props) {
       <EditDropdown app={props.app} />
       <ExportDropdown app={props.app} />
       <div style={{ flexGrow: 1 }} />
-      {props.app.strictDrawing.isEmpty() ? null : (
-        <div style={{ marginRight: '10px' }} >
-          <AskBeforeLeavingToggle app={props.app} />
-        </div>
-      )}
+      {askBeforeLeavingToggleContainer}
     </div>
   );
 }
