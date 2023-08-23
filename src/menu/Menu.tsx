@@ -7,6 +7,8 @@ import { EditDropdown } from './edit/EditDropdown';
 import { ExportDropdown } from './export/ExportDropdown';
 import { AskBeforeLeavingToggle } from 'Menu/settings/AskBeforeLeavingToggle';
 
+import { CiteButton } from './cite/CiteButton';
+
 export type Props = {
   app: App;
 }
@@ -20,6 +22,8 @@ export function Menu(props: Props) {
     </div>
   ) : null;
 
+  let citeButtonSpacer = <div style={{ width: '24px' }} />;
+
   return (
     <div className={styles.menu} >
       <AppIcon app={props.app} />
@@ -27,6 +31,8 @@ export function Menu(props: Props) {
       <EditDropdown app={props.app} />
       <ExportDropdown app={props.app} />
       <div style={{ flexGrow: 1 }} />
+      <CiteButton />
+      {citeButtonSpacer}
       {askBeforeLeavingToggleContainer}
     </div>
   );
