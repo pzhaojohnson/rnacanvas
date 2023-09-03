@@ -3,14 +3,23 @@ import { MouseDownWasOnBaseChecker } from './MouseDownWasOnBaseChecker';
 function createBaseMock() {
   return {
     text: {
-      node: 'Text element DOM node',
+      node: {
+        contains: () => false,
+      },
+    },
+    outline: {
+      circle: {
+        node: {
+          contains: () => false,
+        },
+      },
     },
   };
 }
 
 function createMouseDownMock() {
   return {
-    target: 'An event target',
+    target: null,
   };
 }
 
@@ -38,54 +47,91 @@ afterEach(() => {
 
 describe('MouseDownWasOnBaseChecker class', () => {
   describe('checkFor method', () => {
-    it('returns true if the mouse down target is the text of the base', () => {
-      b.text.node = 'Text element DOM node - 1983riuewahfkds';
-      mouseDown.target = 'Text element DOM node - 1983riuewahfkds';
+    it('returns false if the mouse down event target is not a node', () => {
+      b.text.node.contains = () => true;
+      b.outline.circle.node.contains = () => true;
+
+      mouseDown.target = null;
+
+      expect(mouseDownWasOnBaseChecker.checkFor({ base: b, mouseDown })).toBe(false);
+    });
+
+    it('passes the mouse down target to the base text node contains method', () => {
+      b.text.node.contains = jest.fn(() => false);
+
+      mouseDown.target = document.createElement('div');
+
+      mouseDownWasOnBaseChecker.checkFor({ base: b, mouseDown });
+
+      expect(b.text.node.contains).toHaveBeenCalledTimes(1);
+
+      expect(b.text.node.contains.mock.calls[0][0]).toBe(mouseDown.target);
+      expect(mouseDown.target).toBeTruthy();
+    });
+
+    it('returns true if the text of the base contains the mouse down target', () => {
+      b.text.node.contains = () => true;
+
+      b.outline.circle.node.contains = () => false;
+
+      mouseDown.target = document.createElement('div');
+
       expect(mouseDownWasOnBaseChecker.checkFor({ base: b, mouseDown })).toBe(true);
     });
 
-    it('returns true if the mouse down target is the circle element of the base outline', () => {
-      b.outline = {
-        circle: {
-          node: 'Circle element DOM node - 298yriwaehuf',
-        },
-      };
+    it('passes the mouse down target to the base outline circle node contains method', () => {
+      b.outline.circle.node.contains = jest.fn(() => false);
 
-      mouseDown.target = 'Circle element DOM node - 298yriwaehuf';
+      mouseDown.target = document.createElement('div');
+
+      mouseDownWasOnBaseChecker.checkFor({ base: b, mouseDown });
+
+      expect(b.outline.circle.node.contains).toHaveBeenCalledTimes(1);
+
+      expect(b.outline.circle.node.contains.mock.calls[0][0]).toBe(mouseDown.target);
+      expect(mouseDown.target).toBeTruthy();
+    });
+
+    it('returns true if the base outline circle element contains the mouse down target', () => {
+      b.text.node.contains = () => false;
+
+      b.outline.circle.node.contains = () => true;
+
+      mouseDown.target = document.createElement('div');
 
       expect(mouseDownWasOnBaseChecker.checkFor({ base: b, mouseDown })).toBe(true);
     });
 
-    it('returns false if the mouse down target is not part of the base', () => {
-      b.text.node = 'A text element DOM node';
+    it('returns false if neither the text of the base nor the base outline contain the mouse down target', () => {
+      b.text.node.contains = () => false;
 
-      b.outline = {
-        circle: {
-          node: 'A circle element DOM node',
-        },
-      };
+      b.outline.circle.node.contains = () => false;
 
-      mouseDown.target = 'Something else';
+      mouseDown.target = document.createElement('div');
 
       expect(mouseDownWasOnBaseChecker.checkFor({ base: b, mouseDown })).toBe(false);
     });
 
     test('base has no outline', () => {
+      b.text.node.contains = () => false;
+
       b.outline = undefined;
 
-      expect(
-        () => mouseDownWasOnBaseChecker.checkFor({ base: b, mouseDown })
-      ).not.toThrow();
+      mouseDown.target = document.createElement('div');
+
+      expect(mouseDownWasOnBaseChecker.checkFor({ base: b, mouseDown })).toBe(false);
     });
 
     test('base outline has no circle element', () => {
+      b.text.node.contains = () => false;
+
       b.outline = {
         circle: undefined,
       };
 
-      expect(
-        () => mouseDownWasOnBaseChecker.checkFor({ base: b, mouseDown })
-      ).not.toThrow();
+      mouseDown.target = document.createElement('div');
+
+      expect(mouseDownWasOnBaseChecker.checkFor({ base: b, mouseDown })).toBe(false);
     });
   });
 });

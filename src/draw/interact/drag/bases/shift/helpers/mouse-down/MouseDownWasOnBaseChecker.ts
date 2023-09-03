@@ -3,15 +3,19 @@ export interface Base {
     /**
      * The actual DOM node of the text element of the base.
      */
-    node: EventTarget;
+    node: {
+      contains(node: Node): boolean;
+    };
   }
 
   outline?: {
     circle?: {
       /**
-       * The actual DOM node of a circle element of a base outline.
+       * The actual DOM node of the base outline circle element.
        */
-      node: EventTarget;
+      node: {
+        contains(node: Node): boolean;
+      };
     }
   }
 }
@@ -19,8 +23,8 @@ export interface Base {
 export class MouseDownWasOnBaseChecker {
   /**
    * Returns true if the given mouse down event was either on the
-   * text of the base or the circle element of the base outline (if
-   * the base has an outline).
+   * text of the base or the circle element of the outline of the
+   * base (if the base has an outline).
    *
    * Returns false otherwise.
    */
@@ -28,9 +32,19 @@ export class MouseDownWasOnBaseChecker {
     let b = args.base;
     let mouseDown = args.mouseDown;
 
+    if (!(mouseDown.target instanceof Node)) {
+      return false;
+    }
+
+    let mouseDownWasOnText = b.text.node.contains(mouseDown.target);
+
+    let mouseDownWasOnOutline = (
+      b.outline?.circle?.node.contains(mouseDown.target) ?? false
+    );
+
     return (
-      mouseDown.target === b.text.node
-      || mouseDown.target === b.outline?.circle?.node
+      mouseDownWasOnText
+      || mouseDownWasOnOutline
     );
   }
 }
