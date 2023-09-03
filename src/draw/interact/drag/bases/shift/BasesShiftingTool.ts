@@ -22,6 +22,9 @@ export type BasesShiftingToolCtorParams = {
   mouseUpHandler: MouseEventHandler;
 };
 
+/**
+ * Allows bases to be shifted when being dragged by the mouse.
+ */
 export class BasesShiftingTool {
   constructor(args: BasesShiftingToolCtorParams) {
     args.window.addEventListener('mouseup', event => {
