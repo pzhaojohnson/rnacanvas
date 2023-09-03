@@ -6,7 +6,7 @@ export interface Point {
 export interface Base {
   getCenter(): Point;
 
-  setCenter(center: Point): Point;
+  setCenter(center: Point): void;
 }
 
 export interface Tasks {
