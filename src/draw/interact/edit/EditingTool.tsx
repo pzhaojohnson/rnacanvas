@@ -294,11 +294,6 @@ export class EditingTool {
       this._hovered = hovered.id;
     }
 
-    let activated = this.activated;
-    if (activated instanceof Base && hovered instanceof Base) {
-      this.addToSelected(this.spannedBases(activated, hovered));
-    }
-
     if (hovered) {
       this.refresh();
     }
