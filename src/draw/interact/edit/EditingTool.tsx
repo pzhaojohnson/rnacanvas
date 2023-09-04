@@ -18,8 +18,6 @@ import { handleDragOnBonds } from 'Draw/interact/handleDragOnBonds';
 
 import { zoom } from 'Draw/zoom';
 
-import { spannedBases } from 'Draw/strict/spannedBases';
-
 import { DrawingOverlay } from 'Draw/interact/DrawingOverlay';
 import { SelectingRect } from './SelectingRect';
 import { ElementHighlighting } from './ElementHighlighting';
@@ -161,10 +159,6 @@ export class EditingTool {
         return false;
       }
     });
-  }
-
-  spannedBases(base1: Base, base2: Base): Base[] {
-    return spannedBases(this.options.strictDrawing, base1, base2);
   }
 
   // the currently hovered element
