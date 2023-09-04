@@ -141,6 +141,9 @@
 
   background-color: #f0f0ffc2;
 
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
   animation: fadeIn 0.5s;
 }
 
