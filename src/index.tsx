@@ -4,6 +4,8 @@ import { LoadingScreen } from './loading-screen/LoadingScreen';
 
 import { App } from 'App';
 
+import { BasesShiftingToolBuilder } from 'Draw/interact/drag/bases/shift/BasesShiftingToolBuilder';
+
 import * as React from 'react';
 
 import { WelcomePage } from 'Forms/welcome/WelcomePage';
@@ -136,4 +138,9 @@ setTimeout(() => {
       beforeLeavingHandler.handle(event);
     });
   }, 25);
+
+  waitMilliseconds(500).then(() => {
+    let basesShiftingToolBuilder = new BasesShiftingToolBuilder();
+    let basesShiftingTool = basesShiftingToolBuilder.buildFor(app);
+  });
 }, 50);
