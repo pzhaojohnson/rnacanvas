@@ -2,7 +2,11 @@
   border: 1px solid #d10f0f;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
 
-  background-color: rgb(255, 238, 238);
+  background-color: rgba(255, 240, 240, 0.85);
+
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
   border-radius: 16px;
 
   display: flex;
