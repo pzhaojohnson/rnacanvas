@@ -1,6 +1,8 @@
+export type InteractionOverlay = HTMLElement | SVGElement;
+
 export interface App {
   drawingInteraction: {
-    drawingOverlay: Element;
+    drawingOverlay: InteractionOverlay;
   }
 }
 
@@ -24,7 +26,7 @@ export class InteractionOverlayGetter {
    * elements of the drawing are currently being interacted with
    * (e.g., what is currently selected and hovered).
    */
-  get(): Element {
+  get(): InteractionOverlay {
     return this._app.drawingInteraction.drawingOverlay;
   }
 }
