@@ -1,4 +1,4 @@
-import { BasesShiftingTool2 } from './BasesShiftingTool2';
+import { BasesShiftingTool } from './BasesShiftingTool';
 
 import { MouseMoveHandler } from './helpers/mouse-move/MouseMoveHandler';
 
@@ -224,7 +224,7 @@ class BasesShiftCalculatorBuilder {
 }
 
 export class BasesShiftingToolBuilder {
-  buildFor(app: App): BasesShiftingTool2 {
+  buildFor(app: App): BasesShiftingTool {
     let shouldRespondToMouseMoveDecider = (new ShouldRespondToMouseMoveDeciderBuilder()).buildFor(app);
 
     let ghostInteractionOverlayShifter = (new GhostInteractionOverlayShifterBuilder()).buildFor(app);
@@ -252,7 +252,7 @@ export class BasesShiftingToolBuilder {
       basesShiftCalculator,
     });
 
-    return new BasesShiftingTool2({
+    return new BasesShiftingTool({
       window,
       mouseMoveHandler,
       mouseUpHandler,

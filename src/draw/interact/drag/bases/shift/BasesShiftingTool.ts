@@ -6,7 +6,7 @@ export interface MouseEventHandler {
   handle(mouseEvent: MouseEvent): void;
 }
 
-export type BasesShiftingTool2CtorParams = {
+export type BasesShiftingToolCtorParams = {
   /**
    * The window object for the whole app.
    */
@@ -28,8 +28,8 @@ export type BasesShiftingTool2CtorParams = {
 /**
  * Allows bases to be shifted when being dragged by the mouse.
  */
-export class BasesShiftingTool2 {
-  constructor(args: BasesShiftingTool2CtorParams) {
+export class BasesShiftingTool {
+  constructor(args: BasesShiftingToolCtorParams) {
     args.window.addEventListener('mousemove', event => {
       args.mouseMoveHandler.handle(event);
     });

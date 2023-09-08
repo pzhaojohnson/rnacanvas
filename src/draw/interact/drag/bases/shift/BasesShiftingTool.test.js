@@ -1,4 +1,4 @@
-import { BasesShiftingTool2 } from './BasesShiftingTool2';
+import { BasesShiftingTool } from './BasesShiftingTool';
 
 let mouseMoveListener = null;
 let mouseUpListener = null;
@@ -31,7 +31,7 @@ beforeEach(() => {
     handle: () => {},
   };
 
-  basesShiftingTool = new BasesShiftingTool2({
+  basesShiftingTool = new BasesShiftingTool({
     window,
     mouseMoveHandler,
     mouseUpHandler,
@@ -50,7 +50,7 @@ afterEach(() => {
   mouseMoveListener = null;
 });
 
-describe('BasesShiftingTool2 class', () => {
+describe('BasesShiftingTool class', () => {
   it('forwards mouse move events to the mouse move handler', () => {
     mouseMoveHandler.handle = jest.fn();
 
