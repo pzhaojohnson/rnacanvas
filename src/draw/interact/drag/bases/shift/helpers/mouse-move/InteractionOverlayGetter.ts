@@ -2,7 +2,15 @@ export type InteractionOverlay = HTMLElement | SVGElement;
 
 export interface App {
   drawingInteraction: {
-    drawingOverlay: InteractionOverlay;
+    drawingOverlay: {
+      svg: {
+        /**
+         * The actual DOM node of the drawing overlay SVG element
+         * (i.e., the interaction overlay).
+         */
+        node: InteractionOverlay;
+      }
+    }
   }
 }
 
@@ -27,6 +35,6 @@ export class InteractionOverlayGetter {
    * (e.g., what is currently selected and hovered).
    */
   get(): InteractionOverlay {
-    return this._app.drawingInteraction.drawingOverlay;
+    return this._app.drawingInteraction.drawingOverlay.svg.node;
   }
 }

@@ -7,7 +7,11 @@ let interactionOverlayGetter = null;
 beforeEach(() => {
   app = {
     drawingInteraction: {
-      drawingOverlay: document.createElement('div'),
+      drawingOverlay: {
+        svg: {
+          node: 'Interaction overlay node',
+        },
+      },
     },
   };
 
@@ -23,10 +27,10 @@ afterEach(() => {
 describe('InteractionOverlayGetter class', () => {
   describe('get method', () => {
     it('returns the interaction overlay element', () => {
-      app.drawingInteraction.drawingOverlay = document.createElement('p');
-      app.drawingInteraction.drawingOverlay.textContent = 'The interaction overlay - 9832ryweiah';
+      app.drawingInteraction.drawingOverlay.svg.node = document.createElement('p');
+      app.drawingInteraction.drawingOverlay.svg.node.textContent = 'Interaction overlay node - 9832ryweiah';
 
-      expect(interactionOverlayGetter.get().textContent).toMatch('The interaction overlay - 9832ryweiah');
+      expect(interactionOverlayGetter.get().textContent).toMatch('Interaction overlay node - 9832ryweiah');
     });
   });
 });
