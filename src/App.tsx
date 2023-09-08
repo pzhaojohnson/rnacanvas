@@ -91,6 +91,7 @@ export class App {
     this.formContainer.appendTo(drawingAndFormContainer);
 
     this.infobarContainer = document.createElement('div');
+    this.infobarContainer.classList.add(styles.infobarContainer);
     this.node.appendChild(this.infobarContainer);
 
     this.strictDrawing = new StrictDrawing({ SVG: options?.SVG });

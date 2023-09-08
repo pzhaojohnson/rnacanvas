@@ -21,3 +21,7 @@
   flex-grow: 1;
   overflow: auto;
 }
+
+.infobarContainer {
+  z-index: 2;
+}
