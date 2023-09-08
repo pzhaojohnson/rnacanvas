@@ -1,4 +1,17 @@
-import { BasesShiftingTool } from './BasesShiftingTool';
+import { BasesShiftingTool2 } from './BasesShiftingTool2';
+
+import { MouseMoveHandler } from './helpers/mouse-move/MouseMoveHandler';
+
+import { InteractionOverlayGetter } from './helpers/mouse-move/InteractionOverlayGetter';
+
+import { GhostInteractionOverlayProvider } from './helpers/mouse-move/GhostInteractionOverlayProvider';
+
+import { InteractionOverlayGhoster } from './helpers/mouse-move/InteractionOverlayGhoster';
+import { NodeCloner } from './helpers/mouse-move/NodeCloner';
+
+import { GhostInteractionOverlayShifter } from './helpers/mouse-move/GhostInteractionOverlayShifter';
+
+import { GhostInteractionOverlayShiftCalculator } from './helpers/mouse-move/GhostInteractionOverlayShiftCalculator';
 
 import { MouseUpHandler } from './helpers/mouse-up/MouseUpHandler';
 
@@ -37,9 +50,22 @@ import { MouseDownWasOnBaseChecker } from './helpers/mouse-down/MouseDownWasOnBa
 
 import { MouseHasMovedSinceMostRecentMouseDown } from './helpers/conditions/MouseHasMovedSinceMostRecentMouseDown';
 
+import { MouseIsCurrentlyDown } from './helpers/conditions/MouseIsCurrentlyDown';
+
 import type { App } from 'App';
 
 import type { Base } from 'Draw/bases/Base';
+
+class DrawingOriginIsAnRNA2DSchemaBuilder {
+  buildFor(app: App) {
+    let drawingOriginChecker = new DrawingOriginChecker();
+
+    return new DrawingOriginIsAnRNA2DSchema({
+      app,
+      drawingOriginChecker,
+    });
+  }
+}
 
 class SelectedBasesGetterBuilder {
   buildFor(app: App) {
@@ -58,35 +84,87 @@ class SelectedBasesGetterBuilder {
   }
 }
 
-class ShouldRespondToMouseUpDeciderBuilder {
+class MostRecentMouseDownWasOnASelectedBaseBuilder {
   buildFor(app: App) {
-    let drawingOriginChecker = new DrawingOriginChecker();
+    let mostRecentMouseDownTracker = new MostRecentMouseDownTracker({ window });
 
-    let drawingOriginIsAnRNA2DSchema = new DrawingOriginIsAnRNA2DSchema({
-      app,
-      drawingOriginChecker,
-    });
-
-    let currentToolIsTheEditingTool = new CurrentToolIsTheEditingTool({ app });
-
-    let mostRecentMouseDownTracker = new MostRecentMouseDownTracker({
-      window,
-    });
-
-    let selectedBasesGetterBuilder = new SelectedBasesGetterBuilder();
-    let selectedBasesGetter = selectedBasesGetterBuilder.buildFor(app);
+    let selectedBasesGetter = (new SelectedBasesGetterBuilder()).buildFor(app);
 
     let mouseDownWasOnBaseChecker = new MouseDownWasOnBaseChecker();
 
-    let mostRecentMouseDownWasOnASelectedBase = new MostRecentMouseDownWasOnASelectedBase({
+    return new MostRecentMouseDownWasOnASelectedBase({
       mostRecentMouseDownTracker,
       selectedBasesGetter,
       mouseDownWasOnBaseChecker,
     });
+  }
+}
 
-    let mouseHasMovedSinceMostRecentMouseDown = new MouseHasMovedSinceMostRecentMouseDown({
+class ShouldRespondToMouseMoveDeciderBuilder {
+  buildFor(app: App) {
+    let drawingOriginIsAnRNA2DSchema = (new DrawingOriginIsAnRNA2DSchemaBuilder()).buildFor(app);
+
+    let currentToolIsTheEditingTool = new CurrentToolIsTheEditingTool({ app });
+
+    let mostRecentMouseDownWasOnASelectedBase = (new MostRecentMouseDownWasOnASelectedBaseBuilder()).buildFor(app);
+
+    let mouseIsCurrentlyDown = new MouseIsCurrentlyDown({ window });
+
+    let conditions = new Conditions({
+      conditions: [
+        drawingOriginIsAnRNA2DSchema,
+        currentToolIsTheEditingTool,
+        mostRecentMouseDownWasOnASelectedBase,
+        mouseIsCurrentlyDown,
+      ],
+    });
+
+    return new Decider({ conditions });
+  }
+}
+
+class GhostInteractionOverlayShifterBuilder {
+  buildFor(app: App) {
+    let interactionOverlayGetter = new InteractionOverlayGetter({ app });
+
+    let nodeCloner = new NodeCloner();
+
+    let interactionOverlayGhoster = new InteractionOverlayGhoster({
+      nodeCloner,
+    });
+
+    let ghostInteractionOverlayProvider = new GhostInteractionOverlayProvider({
+      interactionOverlayGetter,
+      interactionOverlayGhoster,
       window,
     });
+
+    return new GhostInteractionOverlayShifter({
+      interactionOverlayGetter,
+      ghostInteractionOverlayProvider,
+    });
+  }
+}
+
+class GhostInteractionOverlayShiftCalculatorBuilder {
+  build() {
+    let mostRecentMouseDownTracker = new MostRecentMouseDownTracker({ window });
+
+    return new GhostInteractionOverlayShiftCalculator({
+      mostRecentMouseDownTracker,
+    });
+  }
+}
+
+class ShouldRespondToMouseUpDeciderBuilder {
+  buildFor(app: App) {
+    let drawingOriginIsAnRNA2DSchema = (new DrawingOriginIsAnRNA2DSchemaBuilder()).buildFor(app);
+
+    let currentToolIsTheEditingTool = new CurrentToolIsTheEditingTool({ app });
+
+    let mostRecentMouseDownWasOnASelectedBase = (new MostRecentMouseDownWasOnASelectedBaseBuilder()).buildFor(app);
+
+    let mouseHasMovedSinceMostRecentMouseDown = new MouseHasMovedSinceMostRecentMouseDown({ window });
 
     let conditions = new Conditions({
       conditions: [
@@ -103,8 +181,7 @@ class ShouldRespondToMouseUpDeciderBuilder {
 
 class BasesShifterBuilder {
   buildFor(app: App) {
-    let basesShifterToDecorateBuilder = new BasesShifterToDecorateBuilder();
-    let basesShifterToDecorate = basesShifterToDecorateBuilder.buildFor(app.strictDrawing.drawing);
+    let basesShifterToDecorate = (new BasesShifterToDecorateBuilder()).buildFor(app.strictDrawing.drawing);
 
     let tasksToDoBeforeShiftingBases = new Tasks({
       tasks: [
@@ -128,9 +205,7 @@ class BasesShifterBuilder {
 
 class BasesShiftCalculatorBuilder {
   buildFor(app: App) {
-    let mostRecentMouseDownTracker = new MostRecentMouseDownTracker({
-      window,
-    });
+    let mostRecentMouseDownTracker = new MostRecentMouseDownTracker({ window });
 
     let horizontalZoomFactorCalculator = new HorizontalZoomFactorCalculator({
       drawing: app.drawing,
@@ -149,18 +224,26 @@ class BasesShiftCalculatorBuilder {
 }
 
 export class BasesShiftingToolBuilder {
-  buildFor(app: App): BasesShiftingTool {
-    let selectedBasesGetterBuilder = new SelectedBasesGetterBuilder();
-    let selectedBasesGetter = selectedBasesGetterBuilder.buildFor(app);
+  buildFor(app: App): BasesShiftingTool2 {
+    let shouldRespondToMouseMoveDecider = (new ShouldRespondToMouseMoveDeciderBuilder()).buildFor(app);
 
-    let basesShifterBuilder = new BasesShifterBuilder();
-    let basesShifter = basesShifterBuilder.buildFor(app);
+    let ghostInteractionOverlayShifter = (new GhostInteractionOverlayShifterBuilder()).buildFor(app);
 
-    let basesShiftCalculatorBuilder = new BasesShiftCalculatorBuilder();
-    let basesShiftCalculator = basesShiftCalculatorBuilder.buildFor(app);
+    let ghostInteractionOverlayShiftCalculator = (new GhostInteractionOverlayShiftCalculatorBuilder()).build();
 
-    let shouldRespondToMouseUpDeciderBuilder = new ShouldRespondToMouseUpDeciderBuilder();
-    let shouldRespondToMouseUpDecider = shouldRespondToMouseUpDeciderBuilder.buildFor(app);
+    let mouseMoveHandler = new MouseMoveHandler({
+      shouldRespondToMouseMoveDecider,
+      ghostInteractionOverlayShifter,
+      ghostInteractionOverlayShiftCalculator,
+    });
+
+    let selectedBasesGetter = (new SelectedBasesGetterBuilder()).buildFor(app);
+
+    let basesShifter = (new BasesShifterBuilder()).buildFor(app);
+
+    let basesShiftCalculator = (new BasesShiftCalculatorBuilder()).buildFor(app);
+
+    let shouldRespondToMouseUpDecider = (new ShouldRespondToMouseUpDeciderBuilder()).buildFor(app);
 
     let mouseUpHandler = new MouseUpHandler({
       shouldRespondToMouseUpDecider,
@@ -169,8 +252,9 @@ export class BasesShiftingToolBuilder {
       basesShiftCalculator,
     });
 
-    return new BasesShiftingTool({
+    return new BasesShiftingTool2({
       window,
+      mouseMoveHandler,
       mouseUpHandler,
     });
   }
