@@ -88,6 +88,7 @@ export class FormContainer {
 
   constructor() {
     this.node = document.createElement('div');
+    this.node.style.zIndex = '2';
 
     this._renderedForm = new TrackedOptionalValue<RenderedForm>({
       areEqual: renderedFormsAreEqual,
