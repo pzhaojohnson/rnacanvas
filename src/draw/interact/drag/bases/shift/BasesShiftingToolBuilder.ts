@@ -50,7 +50,7 @@ import { MouseDownWasOnBaseChecker } from './helpers/mouse-down/MouseDownWasOnBa
 
 import { MouseHasMovedSinceMostRecentMouseDown } from './helpers/conditions/MouseHasMovedSinceMostRecentMouseDown';
 
-import { MouseIsCurrentlyDown } from './helpers/conditions/MouseIsCurrentlyDown';
+import { MouseIsCurrentlyDown } from 'Draw/interact/drag/bases/mouse-utils/MouseIsCurrentlyDown';
 
 import type { App } from 'App';
 
