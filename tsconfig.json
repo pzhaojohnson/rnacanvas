@@ -15,6 +15,7 @@
     "paths": {
       "Array/*": ["src/array/*"],
       "Cite/*": ["src/cite/*"],
+      "Conditions/*": ["src/conditions/*"],
       "Draw/*": ["src/draw/*"],
       "Export/*": ["src/export/*"],
       "Foreign/*": ["src/foreign/*"],

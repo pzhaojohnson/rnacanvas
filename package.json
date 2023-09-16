@@ -57,6 +57,7 @@
       "\\.(css)$": "identity-obj-proxy",
       "^Array(.*)$": "<rootDir>/src/array$1",
       "^Cite(.*)$": "<rootDir>/src/cite$1",
+      "^Conditions(.*)$": "<rootDir>/src/conditions$1",
       "^Draw(.*)$": "<rootDir>/src/draw$1",
       "^Export(.*)$": "<rootDir>/src/export$1",
       "^Foreign(.*)$": "<rootDir>/src/foreign$1",
