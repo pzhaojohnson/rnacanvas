@@ -15,7 +15,7 @@ import { GhostInteractionOverlayShiftCalculator } from './helpers/mouse-move/Gho
 
 import { MouseUpHandler } from './helpers/mouse-up/MouseUpHandler';
 
-import { MostRecentMouseDownTracker } from './helpers/mouse-down/MostRecentMouseDownTracker';
+import { MostRecentMouseDownTracker } from 'Draw/interact/drag/bases/mouse-utils/MostRecentMouseDownTracker';
 
 import { SelectedBasesGetter } from './helpers/SelectedBasesGetter';
 import { AllBasesGetter } from 'Draw/bases/AllBasesGetter';
