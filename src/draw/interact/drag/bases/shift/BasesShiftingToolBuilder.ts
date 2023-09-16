@@ -38,7 +38,7 @@ import { VerticalZoomFactorCalculator } from 'Draw/zoom/VerticalZoomFactorCalcul
 
 import { Decider } from './helpers/Decider';
 
-import { Conditions } from './helpers/conditions/Conditions';
+import { Conditions } from 'Conditions/Conditions';
 
 import { DrawingOriginIsAnRNA2DSchema } from './helpers/conditions/DrawingOriginIsAnRNA2DSchema';
 import { DrawingOriginChecker } from 'Draw/origin/DrawingOriginChecker';
