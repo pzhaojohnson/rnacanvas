@@ -36,7 +36,7 @@ import { BasesShiftCalculator } from './helpers/BasesShiftCalculator';
 import { HorizontalZoomFactorCalculator } from 'Draw/zoom/HorizontalZoomFactorCalculator';
 import { VerticalZoomFactorCalculator } from 'Draw/zoom/VerticalZoomFactorCalculator';
 
-import { Decider } from './helpers/Decider';
+import { Decider } from 'Conditions/deciders/Decider';
 
 import { Conditions } from 'Conditions/Conditions';
 
