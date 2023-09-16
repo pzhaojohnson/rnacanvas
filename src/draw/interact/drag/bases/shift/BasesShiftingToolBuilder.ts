@@ -19,7 +19,7 @@ import { MostRecentMouseDownTracker } from 'Draw/interact/drag/bases/mouse-utils
 
 import { SelectedBasesGetter } from 'Draw/interact/drag/bases/selected/SelectedBasesGetter';
 import { AllBasesGetter } from 'Draw/bases/AllBasesGetter';
-import { BaseIsSelectedChecker } from './helpers/BaseIsSelectedChecker';
+import { BaseIsSelectedChecker } from 'Draw/interact/drag/bases/selected/BaseIsSelectedChecker';
 
 import { BasesShifter } from './helpers/BasesShifter';
 import { BasesShifterBuilder as BasesShifterToDecorateBuilder } from 'Draw/bases/move/BasesShifterBuilder';
