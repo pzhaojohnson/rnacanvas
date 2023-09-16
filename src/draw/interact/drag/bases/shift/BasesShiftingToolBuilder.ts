@@ -45,7 +45,7 @@ import { DrawingOriginChecker } from 'Draw/origin/DrawingOriginChecker';
 
 import { CurrentToolIsTheEditingTool } from './helpers/conditions/CurrentToolIsTheEditingTool';
 
-import { MostRecentMouseDownWasOnASelectedBase } from './helpers/conditions/MostRecentMouseDownWasOnASelectedBase';
+import { MostRecentMouseDownWasOnASelectedBase } from 'Draw/interact/drag/bases/mouse-utils/MostRecentMouseDownWasOnASelectedBase';
 import { MouseDownWasOnBaseChecker } from './helpers/mouse-down/MouseDownWasOnBaseChecker';
 
 import { MouseHasMovedSinceMostRecentMouseDown } from 'Draw/interact/drag/bases/mouse-utils/MouseHasMovedSinceMostRecentMouseDown';
