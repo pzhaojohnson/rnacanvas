@@ -17,7 +17,7 @@ import { MouseUpHandler } from './helpers/mouse-up/MouseUpHandler';
 
 import { MostRecentMouseDownTracker } from 'Draw/interact/drag/bases/mouse-utils/MostRecentMouseDownTracker';
 
-import { SelectedBasesGetter } from './helpers/SelectedBasesGetter';
+import { SelectedBasesGetter } from 'Draw/interact/drag/bases/selected/SelectedBasesGetter';
 import { AllBasesGetter } from 'Draw/bases/AllBasesGetter';
 import { BaseIsSelectedChecker } from './helpers/BaseIsSelectedChecker';
 
