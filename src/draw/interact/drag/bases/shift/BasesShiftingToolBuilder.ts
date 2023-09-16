@@ -48,7 +48,7 @@ import { CurrentToolIsTheEditingTool } from './helpers/conditions/CurrentToolIsT
 import { MostRecentMouseDownWasOnASelectedBase } from './helpers/conditions/MostRecentMouseDownWasOnASelectedBase';
 import { MouseDownWasOnBaseChecker } from './helpers/mouse-down/MouseDownWasOnBaseChecker';
 
-import { MouseHasMovedSinceMostRecentMouseDown } from './helpers/conditions/MouseHasMovedSinceMostRecentMouseDown';
+import { MouseHasMovedSinceMostRecentMouseDown } from 'Draw/interact/drag/bases/mouse-utils/MouseHasMovedSinceMostRecentMouseDown';
 
 import { MouseIsCurrentlyDown } from 'Draw/interact/drag/bases/mouse-utils/MouseIsCurrentlyDown';
 
