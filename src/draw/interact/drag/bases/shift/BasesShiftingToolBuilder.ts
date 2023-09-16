@@ -43,7 +43,7 @@ import { Conditions } from 'Conditions/Conditions';
 import { DrawingOriginIsAnRNA2DSchema } from './helpers/conditions/DrawingOriginIsAnRNA2DSchema';
 import { DrawingOriginChecker } from 'Draw/origin/DrawingOriginChecker';
 
-import { CurrentToolIsTheEditingTool } from './helpers/conditions/CurrentToolIsTheEditingTool';
+import { CurrentToolIsTheEditingTool } from 'Draw/interact/drag/bases/CurrentToolIsTheEditingTool';
 
 import { MostRecentMouseDownWasOnASelectedBase } from 'Draw/interact/drag/bases/mouse-utils/MostRecentMouseDownWasOnASelectedBase';
 import { MouseDownWasOnBaseChecker } from 'Draw/interact/drag/bases/mouse-utils/MouseDownWasOnBaseChecker';
