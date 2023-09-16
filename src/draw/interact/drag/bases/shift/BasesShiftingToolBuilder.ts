@@ -40,7 +40,7 @@ import { Decider } from 'Conditions/deciders/Decider';
 
 import { Conditions } from 'Conditions/Conditions';
 
-import { DrawingOriginIsAnRNA2DSchema } from './helpers/conditions/DrawingOriginIsAnRNA2DSchema';
+import { DrawingOriginIsAnRNA2DSchema } from 'Draw/origin/DrawingOriginIsAnRNA2DSchema';
 import { DrawingOriginChecker } from 'Draw/origin/DrawingOriginChecker';
 
 import { CurrentToolIsTheEditingTool } from 'Draw/interact/drag/bases/CurrentToolIsTheEditingTool';
