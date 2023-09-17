@@ -142,8 +142,7 @@ setTimeout(() => {
   }, 25);
 
   waitMilliseconds(500).then(() => {
-    let basesShiftingToolBuilder = new BasesShiftingToolBuilder();
-    let basesShiftingTool = basesShiftingToolBuilder.buildFor(app);
+    let basesShiftingTool = (new BasesShiftingToolBuilder()).buildFor(app);
   });
 
   waitMilliseconds(500).then(() => {
