@@ -6,6 +6,8 @@ import { App } from 'App';
 
 import { BasesShiftingToolBuilder } from 'Draw/interact/drag/bases/shift/BasesShiftingToolBuilder';
 
+import { DragOverToSelectBasesToolBuilder } from 'Draw/interact/drag/bases/select/DragOverToSelectBasesToolBuilder';
+
 import * as React from 'react';
 
 import { WelcomePage } from 'Forms/welcome/WelcomePage';
@@ -142,5 +144,9 @@ setTimeout(() => {
   waitMilliseconds(500).then(() => {
     let basesShiftingToolBuilder = new BasesShiftingToolBuilder();
     let basesShiftingTool = basesShiftingToolBuilder.buildFor(app);
+  });
+
+  waitMilliseconds(500).then(() => {
+    let dragOverToSelectBasesTool = (new DragOverToSelectBasesToolBuilder()).buildFor(app);
   });
 }, 50);
