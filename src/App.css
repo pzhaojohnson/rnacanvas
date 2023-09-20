@@ -6,8 +6,8 @@
 }
 
 .menuContainer {
-  /* want to ensure that the menu is always on top of everything else */
-  z-index: 2;
+  /* Should be on top of the drawing and any forms. */
+  z-index: 3;
 }
 
 .drawingAndFormContainer {
