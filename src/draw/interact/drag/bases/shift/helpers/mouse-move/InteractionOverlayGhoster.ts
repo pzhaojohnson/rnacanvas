@@ -34,7 +34,7 @@ export class InteractionOverlayGhoster {
   ghost(interactionOverlay: InteractionOverlay): InteractionOverlay {
     let ghost = this._nodeCloner.deepClone(interactionOverlay);
 
-    ghost.style.opacity = '0.5';
+    ghost.style.opacity = '0.625';
     ghost.style.pointerEvents = 'none';
 
     ghost.style.position = 'fixed';

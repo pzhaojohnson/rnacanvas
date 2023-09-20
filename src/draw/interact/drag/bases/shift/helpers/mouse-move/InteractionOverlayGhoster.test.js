@@ -70,10 +70,10 @@ describe('InteractionOverlayGhoster class', () => {
       expect(ghost.style.top).toBe('816.319px');
     });
 
-    it('sets the opacity of the ghost interaction overlay to 50%', () => {
+    it('sets the opacity of the ghost interaction overlay to 62.5%', () => {
       let ghost = interactionOverlayGhoster.ghost(interactionOverlay);
 
-      expect(ghost.style.opacity).toBe('0.5');
+      expect(ghost.style.opacity).toBe('0.625');
     });
 
     it('disables all pointer events on the ghost interaction overlay', () => {
