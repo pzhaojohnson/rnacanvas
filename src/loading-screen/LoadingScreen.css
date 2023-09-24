@@ -1,6 +1,7 @@
 .appLogoContainer {
   animation:
     fadeIn 1s,
+    blurIn 1s,
     moveUp 0.5s,
     moveUpAndDownAndSpin 4s 0.5s infinite;
 }
@@ -11,6 +12,15 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes blurIn {
+  0% {
+    filter: blur(25px);
+  }
+  100% {
+    filter: blur(0px);
   }
 }
 
