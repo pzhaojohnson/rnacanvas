@@ -1,8 +1,8 @@
 .appLogoContainer {
   animation:
     fadeIn 1s,
-    moveUp 0.75s,
-    moveUpAndDownAndSpin 4s 0.75s infinite;
+    moveUp 0.5s,
+    moveUpAndDownAndSpin 4s 0.5s infinite;
 }
 
 @keyframes fadeIn {

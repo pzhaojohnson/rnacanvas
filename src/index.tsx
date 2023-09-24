@@ -75,7 +75,7 @@ setTimeout(() => {
 
     // wait at least 100 milliseconds
     return waitMilliseconds(100)
-      .then(() => waitUntil(() => timeOnPageCalculator.calculate() >= 2500))
+      .then(() => waitUntil(() => timeOnPageCalculator.calculate() >= 2250))
       .then(() => app.formContainer.unmountForm());
   };
 
