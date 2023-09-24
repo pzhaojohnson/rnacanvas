@@ -2,7 +2,7 @@
   margin: 35px 0 0 0;
   font-size: 16px;
   font-weight: 500;
-  color: hsl(240, 3.63%, 21.23%);
+  color: hsl(240, 4.17%, 11.04%);
 
   user-select: none;
   -webkit-user-select: none;
@@ -31,15 +31,15 @@
   bottom: 0px;
   left: 0px;
 
-  border: 1px solid hsl(240, 31.3%, 70.16%);
+  border: 1px solid hsl(240, 32.65%, 69.56%);
   border-radius: 24px;
 
   z-index: -1;
 }
 
 .newAndOpenButtons:hover::before {
-  transform: scale(1.075);
-  transition: transform 0.25s;
+  transform: scale(1.1);
+  transition: transform 0.1s;
 }
 
 .newAndOpenButtons:active::before {
@@ -53,7 +53,7 @@
 
   font-size: 16px;
   font-weight: 500;
-  color: hsl(240, 3.63%, 21.23%);
+  color: hsl(240, 4.17%, 11.04%);
 }
 
 .moreInfoLinks {
@@ -75,18 +75,18 @@
 }
 
 .updatesNotice {
-  margin: 9px 0 0 0;
+  margin: 10px 0 0 0;
   align-self: center;
 
   font-size: 14px;
   font-weight: 500;
-  color: hsl(240, 3.36%, 19.83%);
+  color: hsl(240, 4.17%, 11.04%);
 
   animation: updatesNoticeFadeIn 2s ease-in;
 }
 
 .updatesNoticeDate {
-  color: hsl(240, 3.36%, 19.83%);
+  color: hsl(240, 4.17%, 11.04%);
 }
 
 @keyframes updatesNoticeFadeIn {
@@ -102,7 +102,7 @@
 }
 
 .linkToPreviousVersionsForm {
-  margin: 7px 0px 0px 0px;
+  margin: 9px 0px 0px 0px;
 
   align-self: center;
 
@@ -135,7 +135,7 @@
 }
 
 .topSection {
-  margin: 128px 0 0 0;
+  margin: 126px 0 0 0;
 
   width: 960px;
   display: flex;
