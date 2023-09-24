@@ -10,7 +10,7 @@ function createPeripheralCircle(attrs: CircleAttributes) {
     document.createElementNS('http://www.w3.org/2000/svg', 'circle')
   );
 
-  circle.setAttribute('r', '16');
+  circle.setAttribute('r', '15');
   circle.setAttribute('fill', '#161138');
   circle.setAttribute('stroke-width', '0');
 
@@ -27,7 +27,7 @@ function createCentralCircle(attrs: CircleAttributes) {
     document.createElementNS('http://www.w3.org/2000/svg', 'circle')
   );
 
-  circle.setAttribute('r', '16');
+  circle.setAttribute('r', '12');
   circle.setAttribute('fill', '#8781BD');
   circle.setAttribute('stroke-width', '0');
 
@@ -54,7 +54,7 @@ function createLine(attrs: LineAttributes) {
   );
 
   line.setAttribute('stroke', '#8781BD');
-  line.setAttribute('stroke-width', '12');
+  line.setAttribute('stroke-width', '9');
 
   lineAttributeNames.forEach(name => {
     let value = attrs[name];
@@ -68,8 +68,8 @@ export function createAppLogo() {
   let appLogo = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   appLogo.setAttribute('version', '1.1');
 
-  appLogo.setAttribute('width', '196px');
-  appLogo.setAttribute('height', '196px');
+  appLogo.setAttribute('width', '125px');
+  appLogo.setAttribute('height', '125px');
 
   appLogo.setAttribute('viewBox', '0 0 192 192');
 
