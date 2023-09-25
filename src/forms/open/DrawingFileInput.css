@@ -3,7 +3,7 @@
 
   border-radius: 60px;
 
-  padding: 12px 24px;
+  padding: 12px 25px;
 
   /* use before pseudo-element for border and box shadow */
   background-color: transparent;
@@ -22,15 +22,15 @@
   bottom: 0px;
   left: 0px;
 
-  border: 1px solid hsl(240, 21.79%, 75.07%);
+  border: 1px solid hsl(240, 24.79%, 72.74%);
   border-radius: 60px;
 
   z-index: -1;
 }
 
 .drawingFileInput:hover::before {
-  transform: scale(1.06);
-  transition: transform 0.25s;
+  transform: scale(1.1);
+  transition: transform 0.1s;
 }
 
 .drawingFileInput:active::before {
@@ -39,12 +39,12 @@
 }
 
 .text {
-  width: 616px;
+  width: 612px;
 
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-style: normal;
-  color: #070759;
+  color: #070753;
 
   text-align: center;
   text-overflow: ellipsis;
@@ -55,5 +55,5 @@
 }
 
 .fileName {
-  color: #09095d;
+  color: #080850;
 }

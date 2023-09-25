@@ -12,10 +12,10 @@ export function DetailsToggle(props: Props) {
     <_DetailsToggle
       onClick={props.onClick}
       style={{
-        margin: '0 2px 0 0',
-        padding: '1px 14px',
+        minWidth: '72px',
+        minHeight: '19px',
+        padding: '0px',
         fontSize: '11px',
-        fontWeight: 500,
         ...props.style,
       }}
     >

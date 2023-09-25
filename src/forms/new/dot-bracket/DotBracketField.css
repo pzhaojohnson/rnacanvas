@@ -2,23 +2,23 @@
   margin: 4px 0px 0px 0px;
   flex-grow: 1;
 
-  border: 1px solid hsl(240, 12.47%, 71.44%);
+  border: 1px solid hsl(240, 15.6%, 70.97%);
   border-radius: 2px;
-  padding: 5px 6px;
+  padding: 6px 7px;
 
   font-family: "Courier Prime", monospace;
   font-size: 14px;
   font-weight: normal;
-  color: hsl(0, 0%, 5%);
+  color: hsl(240, 3.09%, 5.34%);
 }
 
 .textArea:hover {
-  border-color: #0a0a0a;
+  border-color: hsl(240, 2.56%, 3.9%);
   transition: border-color 0s;
 }
 
 .textArea:focus {
-  border-color: #0a0a0a;
+  border-color: hsl(240, 2.56%, 3.9%);
   outline: none;
 }
 

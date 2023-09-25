@@ -55,7 +55,7 @@ export function EnterDotBracketSection(props: Props): React.ReactElement {
   let [errorMessageKey, setErrorMessageKey] = useState(0);
 
   return (
-    <div style={{ margin: '0px 141px', flexGrow: 1, display: 'flex', flexDirection: 'column' }} >
+    <div style={{ margin: '0px 140px', flexGrow: 1, display: 'flex', flexDirection: 'column' }} >
       <div style={{ marginTop: '24px' }} >
         <ExampleSelect
           examples={examples.map(e => e.name)}
@@ -70,7 +70,7 @@ export function EnterDotBracketSection(props: Props): React.ReactElement {
           }}
         />
       </div>
-      <div style={{ marginTop: '21px' }} >
+      <div style={{ marginTop: '20px' }} >
         <SequenceIdField
           initialValue={sequenceId}
           set={id => setSequenceId(id)}

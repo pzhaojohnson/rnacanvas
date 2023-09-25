@@ -31,7 +31,7 @@ interface Props {
 export function DotBracketField(props: Props): React.ReactElement {
   return (
     <div style={{ flexGrow: props.flexGrow, display: 'flex', flexDirection: 'column' }} >
-      <div style={{ marginTop: '25px', display: 'flex', flexDirection: 'row' }} >
+      <div style={{ marginTop: '25px', display: 'flex', flexDirection: 'row', position: 'relative' }} >
         <label
           className={fieldLabelStyles.fieldLabel}
           htmlFor='structure'
@@ -42,6 +42,7 @@ export function DotBracketField(props: Props): React.ReactElement {
         </label>
         <DetailsToggle
           onClick={() => props.toggleParsingDetails()}
+          style={{ position: 'absolute', top: '-2px', right: '1px' }}
         />
       </div>
       <textarea

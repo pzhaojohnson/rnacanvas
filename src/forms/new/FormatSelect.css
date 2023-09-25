@@ -1,12 +1,12 @@
 .formatSelect {
-  margin-right: 102px;
+  margin-right: 101px;
 
-  border: 1px solid hsla(240, 22.77%, 81.23%, 1);
+  border: 1px solid hsla(240, 21.77%, 78.91%, 1);
   border-radius: 60px;
 
-  width: 164px;
+  width: 168px;
 
-  padding: 4px 15px;
+  padding: 4px 14px;
 
   display: flex;
   flex-direction: row;
@@ -19,12 +19,12 @@
   border: none;
   outline: none;
 
-  padding: 2px 11px;
+  padding: 2px 12px;
   border-radius: 60px;
 
   font-family: 'Open Sans', sans-serif;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
 
   user-select: none;

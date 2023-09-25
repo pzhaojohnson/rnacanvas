@@ -19,7 +19,7 @@
 
   border-width: 0px 0px 1px 0px;
   border-style: solid;
-  border-color: hsla(240, 23.95%, 86.85%, 1);
+  border-color: hsla(240, 29.95%, 85.73%, 1);
 
   height: 0px;
 }
@@ -37,7 +37,7 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: hsl(240, 86.92%, 15.78%);
+  color: hsl(240, 81.82%, 13.47%);
 
   user-select: none;
   -webkit-user-select: none;
@@ -45,10 +45,10 @@
 
 .dotRNAcanvas {
   font-weight: 700;
-  color: hsl(240, 84.33%, 14.92%);
+  color: hsl(240, 82.65%, 14.24%);
 }
 
 .dotRNA2Drawer {
   font-weight: 700;
-  color: hsl(240, 84.33%, 14.92%);
+  color: hsl(240, 82.65%, 14.24%);
 }

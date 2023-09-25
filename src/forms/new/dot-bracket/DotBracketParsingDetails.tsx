@@ -8,16 +8,16 @@ export function DotBracketParsingDetails(): React.ReactElement {
         Structure Parsing Details
       </h3>
       <div style={{ marginLeft: '9px' }} >
-        <p style={{ marginTop: '6px' }} >
+        <p style={{ marginTop: '7px' }} >
           Periods "." indicate unpaired bases.
         </p>
-        <p style={{ marginTop: '8px' }} >
+        <p style={{ marginTop: '9px' }} >
           Matching parentheses "( )" indicate base-pairs in the secondary structure.
         </p>
-        <p style={{ marginTop: '8px' }} >
+        <p style={{ marginTop: '9px' }} >
           {'Pseudoknot base-pairs are indicated by "[ ]", "{ }" and "< >".'}
         </p>
-        <p style={{ marginTop: '8px' }} >
+        <p style={{ marginTop: '9px' }} >
           All other characters and whitespace are ignored.
         </p>
       </div>

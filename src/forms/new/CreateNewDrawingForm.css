@@ -1,5 +1,5 @@
 .title {
-  margin: 0px 105px;
+  margin: 0px 104px;
 
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
@@ -12,7 +12,7 @@
 
   border-width: 0px 0px 1px 0px;
   border-style: solid;
-  border-color: hsla(240, 27.49%, 87.59%, 1);
+  border-color: hsla(240, 25.43%, 85.92%, 1);
 
   height: 0px;
 }
@@ -25,7 +25,7 @@
 }
 
 .body {
-  height: 581px;
+  height: 586px;
 
   display: flex;
   flex-direction: column;

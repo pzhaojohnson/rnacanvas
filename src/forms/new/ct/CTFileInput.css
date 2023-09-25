@@ -21,7 +21,7 @@
 .ctFileInput::before {
   content: "";
 
-  border: 1px solid hsl(240, 21.79%, 75.07%);
+  border: 1px solid hsl(240, 22.63%, 71.57%);
   border-radius: 60px;
 
   position: absolute;
@@ -34,8 +34,8 @@
 }
 
 .ctFileInput:hover::before {
-  transform: scale(1.05);
-  transition: transform 0.25s;
+  transform: scale(1.1);
+  transition: transform 0.1s;
 }
 
 .ctFileInput:active::before {
@@ -48,7 +48,7 @@
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
-  color: #070758;
+  color: #09094d;
 
   cursor: pointer;
 

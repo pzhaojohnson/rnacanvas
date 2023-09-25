@@ -51,11 +51,11 @@ export function SequenceParsingDetails(props: Props): React.ReactElement {
         Sequence Parsing Details
       </h3>
       <div style={{ marginLeft: '9px' }} >
-        <div style={{ height: '6px' }} />
+        <div style={{ height: '7px' }} />
         <p>
           All letters, numbers, and non-alphanumeric characters are read in as individual bases, unless specified to be ignored.
         </p>
-        <div style={{ margin: '8px 0 0 8px', display: 'flex', flexDirection: 'column' }} >
+        <div style={{ margin: '10px 0 0 10px', display: 'flex', flexDirection: 'column' }} >
           <IgnoreNumbersCheckbox {...props} />
           <div style={{ marginTop: '8px', alignSelf: 'start' }} >
             <IgnoreNonAugctLettersCheckbox {...props} />
@@ -64,7 +64,7 @@ export function SequenceParsingDetails(props: Props): React.ReactElement {
             <IgnoreNonAlphanumericsCheckbox {...props} />
           </div>
         </div>
-        <div style={{ height: '8px' }} />
+        <div style={{ height: '10px' }} />
         <p>
           All whitespace is ignored.
         </p>

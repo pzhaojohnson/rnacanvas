@@ -23,19 +23,19 @@ export function ExampleSelect(props: Props): React.ReactElement {
     <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }} >
       <p
         className='unselectable'
-        style={{ fontSize: '14px', fontWeight: 500, fontStyle: 'italic', color: 'hsl(240, 5%, 22%)' }}
+        style={{ fontSize: '14px', fontWeight: 600, fontStyle: 'italic', color: 'rgb(46, 46, 52)' }}
       >
         Examples...
       </p>
       <LabelSpacer />
       {props.examples.map((e, i) => [
-        <p
+        <button
           key={2 * i}
-          className={`${styles.option} unselectable`}
+          className={`${styles.option}`}
           onClick={() => props.select(e)}
         >
           {e}
-        </p>,
+        </button>,
         i == props.examples.length - 1 ? null : <ExamplesSpacer key={(2 * i) + 1} />,
       ])}
       <EndSpacer />

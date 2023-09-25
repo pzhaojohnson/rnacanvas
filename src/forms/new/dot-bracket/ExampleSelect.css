@@ -1,15 +1,16 @@
 .option {
+  outline: none;
+  border: none;
+
   border-radius: 40px;
-  width: 180px;
-  height: 23px;
-  line-height: 22px;
-  text-align: center;
+  min-width: 179px;
+  min-height: 24px;
 
   font-family: 'Open Sans', sans-serif;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
-  color: hsl(240, 46%, 11%);
+  color: hsl(240, 79.37%, 10.87%);
 
   /* use before pseudo-element for background and border */
   background-color: transparent;
@@ -17,6 +18,11 @@
   isolation: isolate;
 
   cursor: pointer;
+}
+
+.option:focus {
+  outline: none;
+  border: none;
 }
 
 .option::before {
@@ -28,15 +34,15 @@
   bottom: 0px;
   left: 0px;
 
-  border: 1px solid hsl(240, 19.31%, 72.74%);
+  border: 1px solid hsl(240, 22.1%, 71.76%);
   border-radius: 40px;
 
   z-index: -1;
 }
 
 .option:hover::before {
-  transform: scale(1.075);
-  transition: transform 0.25s;
+  transform: scale(1.1);
+  transition: transform 0.1s;
 }
 
 .option:active::before {

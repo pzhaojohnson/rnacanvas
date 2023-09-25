@@ -58,8 +58,8 @@ function ErrorMessage(
   return (
     <_ErrorMessage
       style={{
-        marginTop: '13px',
-        fontSize: '16px', color: 'rgb(215, 27, 27)',
+        marginTop: '14px',
+        fontSize: '16px', color: 'rgb(201, 15, 15)',
       }}
     >
       {props.children}
@@ -99,10 +99,7 @@ function DetailsToggle(
   return (
     <_DetailsToggle
       onClick={props.onClick}
-      style={{
-        marginRight: '468px', padding: '1px 14px',
-        fontSize: '12px', fontWeight: 500,
-      }}
+      style={{ marginRight: '467px', fontSize: '12px', minWidth: '76px', minHeight: '22px' }}
     >
       Details
     </_DetailsToggle>
@@ -182,7 +179,7 @@ export function OpenDrawingForm(props: Props) {
   );
 
   let detailsToggleSpacer = (
-    <div style={{ height: '45px' }} />
+    <div style={{ height: '44px' }} />
   );
 
   let detailsToggle = (
