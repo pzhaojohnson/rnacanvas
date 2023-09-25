@@ -74,8 +74,6 @@ interface Props {
 }
 
 export function FloatingDrawingsContainer(props: Props): React.ReactElement {
-  // floating animation is choppy on Firefox
-  let browserIsFirefox = window.navigator.userAgent.toLowerCase().includes('firefox');
   return (
     <div
       className={styles.container}
@@ -93,7 +91,7 @@ export function FloatingDrawingsContainer(props: Props): React.ReactElement {
           <div style={{ flexGrow: 1, flexBasis: '0px' }} ></div>
           <div style={{ flexGrow: 1, flexBasis: '0px', overflow: 'hidden', position: 'relative' }} >
             <div
-              className={browserIsFirefox ? undefined : styles.lowerLeftFloater}
+              className={styles.lowerLeftFloater}
               style={{ position: 'absolute', top: '0px', right: '0px' }}
             >
               <LowerLeftDrawing />
@@ -110,7 +108,7 @@ export function FloatingDrawingsContainer(props: Props): React.ReactElement {
         <div style={{ marginLeft: '48px', flexGrow: 1, display: 'flex', flexDirection: 'column' }} >
           <div style={{ flexGrow: 1, flexBasis: '0px', overflow: 'hidden', position: 'relative' }} >
             <div
-              className={browserIsFirefox ? undefined : styles.upperRightFloater}
+              className={styles.upperRightFloater}
               style={{ position: 'absolute', bottom: '0px', left: '0px' }}
             >
               <UpperRightDrawing />
