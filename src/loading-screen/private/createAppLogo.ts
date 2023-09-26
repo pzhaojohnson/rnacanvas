@@ -11,7 +11,7 @@ function createPeripheralCircle(attrs: CircleAttributes) {
   );
 
   circle.setAttribute('r', '15');
-  circle.setAttribute('fill', '#161138');
+  circle.setAttribute('fill', 'rgb(12, 7, 45)');
   circle.setAttribute('stroke-width', '0');
 
   circleAttributeNames.forEach(name => {
@@ -28,7 +28,7 @@ function createCentralCircle(attrs: CircleAttributes) {
   );
 
   circle.setAttribute('r', '12');
-  circle.setAttribute('fill', '#8781BD');
+  circle.setAttribute('fill', 'rgb(119, 110, 187)');
   circle.setAttribute('stroke-width', '0');
 
   circleAttributeNames.forEach(name => {
@@ -53,7 +53,7 @@ function createLine(attrs: LineAttributes) {
     document.createElementNS('http://www.w3.org/2000/svg', 'line')
   );
 
-  line.setAttribute('stroke', '#8781BD');
+  line.setAttribute('stroke', 'rgb(119, 110, 187)');
   line.setAttribute('stroke-width', '9');
 
   lineAttributeNames.forEach(name => {
@@ -68,8 +68,8 @@ export function createAppLogo() {
   let appLogo = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   appLogo.setAttribute('version', '1.1');
 
-  appLogo.setAttribute('width', '125px');
-  appLogo.setAttribute('height', '125px');
+  appLogo.setAttribute('width', '104px');
+  appLogo.setAttribute('height', '104px');
 
   appLogo.setAttribute('viewBox', '0 0 192 192');
 
