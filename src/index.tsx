@@ -149,3 +149,14 @@ setTimeout(() => {
     let dragOverToSelectBasesTool = (new DragOverToSelectBasesToolBuilder()).buildFor(app);
   });
 }, 50);
+
+/**
+ * Reset document body background color.
+ *
+ * Timings are meant to be in sync with the loading screen and its
+ * fade out animation.
+ */
+waitMilliseconds(2250).then(() => {
+  document.body.style.transition = 'background-color 0.5s';
+  document.body.style.backgroundColor = 'white';
+});
