@@ -1,6 +1,6 @@
 import styles from './LoadingScreen.css';
 
-import { createWhiteBackground } from './private/createWhiteBackground';
+import { createLightPurplishBackground } from './private/createLightPurplishBackground';
 import { createAppLogo } from './private/createAppLogo';
 
 import { FadeOutOverlay } from './private/FadeOutOverlay';
@@ -12,7 +12,7 @@ import { isNullish } from 'Values/isNullish';
  * document body.
  */
 export class LoadingScreen {
-  readonly node: ReturnType<typeof createWhiteBackground>;
+  readonly node: ReturnType<typeof createLightPurplishBackground>;
 
   /**
    * Should be high enough to ensure that the loading screen is on top
@@ -27,7 +27,7 @@ export class LoadingScreen {
   hideAnimationDuration = 500;
 
   constructor() {
-    this.node = createWhiteBackground();
+    this.node = createLightPurplishBackground();
 
     this.node.style.zIndex = this.zIndex.toString();
 

@@ -1,4 +1,4 @@
-.whiteBackground {
+.lightPurplishBackground {
   /* Occupy whole window. */
   position: fixed;
   top: 0px;
@@ -6,6 +6,6 @@
   bottom: 0px;
   left: 0px;
 
-  background-color: white;
+  background-color: hsl(240, 100%, 94.5%);
   opacity: 1;
 }
