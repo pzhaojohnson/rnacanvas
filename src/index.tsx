@@ -75,7 +75,7 @@ setTimeout(() => {
 
     // wait at least 100 milliseconds
     return waitMilliseconds(100)
-      .then(() => waitUntil(() => timeOnPageCalculator.calculate() >= 2250))
+      .then(() => waitUntil(() => timeOnPageCalculator.calculate() >= 3500))
       .then(() => app.formContainer.unmountForm());
   };
 
@@ -156,7 +156,7 @@ setTimeout(() => {
  * Timings are meant to be in sync with the loading screen and its
  * fade out animation.
  */
-waitMilliseconds(2250).then(() => {
+waitMilliseconds(3500).then(() => {
   document.body.style.transition = 'background-color 0.5s';
   document.body.style.backgroundColor = 'white';
 });

@@ -1,7 +1,7 @@
 .appLogoContainer {
   animation:
-    fadeIn 1s,
-    blurIn 1s,
+    fadeIn 2s,
+    blurIn 2s,
     moveUp 0.5s,
     moveUpAndDownAndSpin 4s 0.5s infinite;
 }
