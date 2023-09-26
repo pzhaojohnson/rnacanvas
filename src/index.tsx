@@ -151,7 +151,11 @@ setTimeout(() => {
 }, 50);
 
 /**
- * Reset document body background color.
+ * Reset document body background color to white as the loading
+ * screen is being hidden.
+ *
+ * (Some browsers like Safari will color the browser UI based on the
+ * document body background color.)
  *
  * Timings are meant to be in sync with the loading screen and its
  * fade out animation.
