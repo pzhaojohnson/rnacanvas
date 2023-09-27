@@ -10,8 +10,8 @@
   position: relative;
   isolation: isolate;
 
-  padding: 5px 0px;
   width: 192px;
+  min-height: 26px;
 
   cursor: pointer;
 
@@ -21,7 +21,7 @@
 
 .addStrungElementButton::before {
   content: "";
-  border: 1px solid #b2b2c6;
+  border: 1px solid #9797cd;
   border-radius: 60px;
 
   position: absolute;
@@ -32,8 +32,8 @@
 }
 
 .addStrungElementButton:hover::before {
-  transform: scale(1.05);
-  transition: transform 0.25s;
+  transform: scale(1.1);
+  transition: transform 0.1s;
 }
 
 .addStrungElementButton:active::before {
@@ -42,11 +42,11 @@
 }
 
 .addStrungElementButtonText {
-  margin-left: 5px;
+  margin-left: 6px;
 
   font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 11px;
+  font-weight: 700;
   color: #07073c;
 
   cursor: pointer;

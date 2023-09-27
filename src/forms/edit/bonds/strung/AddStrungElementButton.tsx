@@ -15,6 +15,7 @@ function PlusIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg" version="1.1"
+      viewBox='0 0 10 10'
       width="10px" height="10px"
     >
       <path d="M 1 5 H 9 M 5 1 V 9" stroke="#050530" strokeWidth="2" />

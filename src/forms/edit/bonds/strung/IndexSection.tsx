@@ -56,7 +56,7 @@ export function IndexSection(props: Props) {
   let removeButton = (
     <RemoveButton
       onClick={props.onRemoveButtonClick}
-      style={{ marginLeft: '9px' }}
+      style={{ marginLeft: '11px' }}
     />
   );
 
