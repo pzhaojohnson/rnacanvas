@@ -64,7 +64,7 @@ export function ForwardBackwardButtons(
       }}
     >
       <BringToFrontButton onClick={props.bringToFront} />
-      <div style={{ width: '10px' }} />
+      <div style={{ width: '14px' }} />
       <SendToBackButton onClick={props.sendToBack} />
     </div>
   );
