@@ -19,7 +19,7 @@ export function ShowComplementsToggle(props: Props) {
         bindingTool.showComplements = !bindingTool.showComplements;
         props.app.refresh();
       }}
-      style={{ width: '155px' }}
+      style={{ width: '164px' }}
     >
       Show Complements
     </ToolOptionToggle>

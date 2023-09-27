@@ -15,11 +15,11 @@ export function BindingToolControls(props: Props) {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }} >
-      <div style={{ width: '4px' }} />
+      <div style={{ width: '9px' }} />
       <ShowComplementsToggle app={props.app} />
       {!bindingTool.showComplements ? null : (
         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }} >
-          <div style={{ width: '13px' }} />
+          <div style={{ width: '17px' }} />
           <ComplementRulesButton app={props.app} />
         </div>
       )}

@@ -10,7 +10,7 @@ export type Props = {
 export function DraggingToolControls(props: Props) {
   return (
     <div style={{ display: 'flex', alignItems: 'center' }} >
-      <div style={{ width: '4px' }} />
+      <div style={{ width: '9px' }} />
       <OnlyExpandToggle {...props} />
     </div>
   );

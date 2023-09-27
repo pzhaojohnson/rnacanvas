@@ -1,5 +1,5 @@
 .toolOptionToggle {
-  min-height: 22px;
+  min-height: 23px;
 
   /* use before pseudo-element for border and box shadow */
   border: none;
@@ -27,7 +27,7 @@
 
 .toolOptionToggle::before {
   content: "";
-  border: 1px solid hsl(240, 10.46%, 65.38%);
+  border: 1px solid hsl(240, 17.7%, 64.16%);
   border-radius: 1000px;
 
   position: absolute;
@@ -42,7 +42,7 @@
 }
 
 .toggled {
-  font-weight: 600;
+  font-weight: 700;
   color: rgba(12, 12, 13, 1);
 }
 
@@ -51,8 +51,8 @@
 }
 
 .untoggled {
-  font-weight: 600;
-  color: hsl(240, 6.1%, 31.57%);
+  font-weight: 700;
+  color: hsl(240, 6.1%, 20.74%);
 }
 
 .untoggled .check {
@@ -60,8 +60,8 @@
 }
 
 .toolOptionToggle:hover::before {
-  transform: scale(1.06);
-  transition: transform 0.25s;
+  transform: scale(1.1);
+  transition: transform 0.1s;
 }
 
 .toolOptionToggle:active::before {
