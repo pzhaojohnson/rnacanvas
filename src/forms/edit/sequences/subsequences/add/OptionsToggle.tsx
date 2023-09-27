@@ -11,11 +11,10 @@ export function OptionsToggle(props: Props) {
     <_OptionsToggle
       onClick={props.onClick}
       style={{
-        margin: '10px 0 0 4px',
+        margin: '10px 0 0 5px',
         alignSelf: 'start',
-        padding: '1px 14px',
-        fontSize: '11px',
-        fontWeight: 500,
+        padding: '0px 16px',
+        minHeight: '21px',
         ...props.style,
       }}
     >

@@ -23,9 +23,8 @@ export function ComplementRulesButton(props: Props) {
         ), { key: complementRulesFormKey });
       }}
       style={{
-        padding: '2px 13px',
-        fontSize: '11px',
-        fontWeight: 500,
+        padding: '0px 16px',
+        minHeight: '21px',
       }}
     >
       Options

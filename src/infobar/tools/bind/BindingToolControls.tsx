@@ -19,7 +19,7 @@ export function BindingToolControls(props: Props) {
       <ShowComplementsToggle app={props.app} />
       {!bindingTool.showComplements ? null : (
         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }} >
-          <div style={{ width: '8px' }} />
+          <div style={{ width: '13px' }} />
           <ComplementRulesButton app={props.app} />
         </div>
       )}
