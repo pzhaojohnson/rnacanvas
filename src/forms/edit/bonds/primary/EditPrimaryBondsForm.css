@@ -9,9 +9,8 @@
 
 .selectAllPrimaryBondsButton {
   margin: 17px 0px 0px 4px;
-  width: 208px;
-  padding: 4px 0px;
-  text-align: center;
+  width: 214px;
+  min-height: 24px;
 
   /* use before pseudo-element for border and box shadow */
   border: none;
@@ -24,10 +23,10 @@
   background-color: transparent;
 
   font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 11px;
+  font-weight: 700;
   font-style: normal;
-  color: #09094a;
+  color: #07073c;
 
   cursor: pointer;
   user-select: none;
@@ -35,7 +34,7 @@
 
 .selectAllPrimaryBondsButton::before {
   content: "";
-  border: 1px solid rgba(176, 176, 201, 1);
+  border: 1px solid rgba(159, 159, 195, 1);
   border-radius: 40px;
 
   position: absolute;
@@ -46,8 +45,8 @@
 }
 
 .selectAllPrimaryBondsButton:hover::before {
-  transform: scale(1.05);
-  transition: transform 0.3s;
+  transform: scale(1.1);
+  transition: transform 0.1s;
 }
 
 .selectAllPrimaryBondsButton:active::before {

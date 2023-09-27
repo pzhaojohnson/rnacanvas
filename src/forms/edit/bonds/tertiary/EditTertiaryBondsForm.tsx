@@ -53,7 +53,7 @@ function SelectAllTertiaryBondsButton(
   },
 ) {
   return (
-    <p
+    <button
       className={styles.selectAllTertiaryBondsButton}
       onClick={() => {
         let drawing = props.app.drawing;
@@ -66,7 +66,7 @@ function SelectAllTertiaryBondsButton(
       }}
     >
       Select All Tertiary Bonds
-    </p>
+    </button>
   );
 }
 
