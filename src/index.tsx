@@ -92,9 +92,16 @@ setTimeout(() => {
 
   waitMilliseconds(25).then(() => app.appendTo(document.body));
 
+  /**
+   * After opening an RNA 2D schema, wait a little bit to allow all
+   * resources like images and fonts to load.
+   *
+   * (Helps prevent flash of unstyled text, for instance.)
+   */
   waitMilliseconds(100).then(() => {
     if (urlParameters.rna2DSchemaURL) {
       app.openRNA2DSchema({ url: urlParameters.rna2DSchemaURL })
+        .then(() => waitUntil(() => timeOnPageCalculator.calculate() >= 3500))
         .then(() => loadingScreen.hideIfBeingShown())
         .then(() => onOpenRNA2DInfoDialog.show())
         .catch(() => showWelcomePageWithRNA2DOpenErrorDialog());
