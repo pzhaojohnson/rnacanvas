@@ -60,6 +60,7 @@ class BulletedItemFactory {
 }
 
 let availableFeatureDescriptions = [
+  'Move bases around',
   'Color, circle and number bases',
   'Annotate with structure probing data (e.g., SHAPE)',
   'Add and remove secondary and tertiary base-pairs',
@@ -96,7 +97,6 @@ class AvailableFeaturesListFactory {
 }
 
 let unavailableFeatureDescriptions = [
-  'Move bases around',
   'Insert subsequences',
 ];
 
