@@ -34,6 +34,16 @@ timeOnPageCalculator.restartCounting();
 let loadingScreen = new LoadingScreen();
 loadingScreen.show();
 
+/**
+ * The minimum amount of time that the loading screen is to be shown
+ * (in milliseconds).
+ */
+const minTimeToShowLoadingScreen = 3500;
+
+function loadingScreenHasBeenShownForLongEnough() {
+  return timeOnPageCalculator.calculate() >= minTimeToShowLoadingScreen;
+}
+
 type URLParameters = {
   rna2DSchemaURL: string | null;
 };
@@ -75,7 +85,7 @@ setTimeout(() => {
 
     // wait at least 100 milliseconds
     return waitMilliseconds(100)
-      .then(() => waitUntil(() => timeOnPageCalculator.calculate() >= 3500))
+      .then(() => waitUntil(loadingScreenHasBeenShownForLongEnough))
       .then(() => app.formContainer.unmountForm());
   };
 
@@ -101,7 +111,7 @@ setTimeout(() => {
   waitMilliseconds(100).then(() => {
     if (urlParameters.rna2DSchemaURL) {
       app.openRNA2DSchema({ url: urlParameters.rna2DSchemaURL })
-        .then(() => waitUntil(() => timeOnPageCalculator.calculate() >= 3500))
+        .then(() => waitUntil(loadingScreenHasBeenShownForLongEnough))
         .then(() => loadingScreen.hideIfBeingShown())
         .then(() => onOpenRNA2DInfoDialog.show())
         .catch(() => showWelcomePageWithRNA2DOpenErrorDialog());
@@ -167,7 +177,7 @@ setTimeout(() => {
  * Timings are meant to be in sync with the loading screen and its
  * fade out animation.
  */
-waitMilliseconds(3500).then(() => {
+waitMilliseconds(minTimeToShowLoadingScreen).then(() => {
   document.body.style.transition = 'background-color 0.5s';
   document.body.style.backgroundColor = 'white';
 });
