@@ -1,0 +1,144 @@
+.appIcon {
+  width: 28px;
+}
+
+.headerContactText {
+  position: absolute;
+  top: -3px;
+  left: 43px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+}
+
+.header {
+  margin-top: 22px;
+  margin-left: 28px;
+
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.mainText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(20, 1, 20);
+}
+
+.linkLabel {
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+}
+
+.link {
+  color: rgb(15, 15, 219);
+
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: rgb(23, 2, 23);
+}
+
+.dottedLineText {
+  margin-left: 8px;
+}
+
+.dottedLine {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.possibleSubjectsList {
+  margin-top: 7px;
+  margin-left: 18px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.possibleSubjectsSectionTrailingLine {
+  margin-top: 7px;
+  margin-left: 44px;
+}
+
+.possibleSubjectsSection {
+  margin-top: 45px;
+}
+
+.gitHubIssuesLine {
+  margin-top: 45px;
+}
+
+.r2dtContactEmailLine {
+  margin-top: 8px;
+}
+
+.r2dtGitHubPageLine {
+  margin-top: 8px;
+}
+
+.r2dtSection {
+  margin-top: 40px;
+}
+
+.mainContent {
+  margin-top: 40px;
+  margin-left: 61px;
+}
+
+.closeButtonContainer {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.positionedContactForm {
+  position: fixed;
+
+  top: 71px;
+  right: 77px;
+  left: 66px;
+  bottom: 60px;
+  overflow: auto;
+
+  max-width: 492px;
+  max-height: 545px;
+  margin-left: auto;
+
+  z-index: 10;
+
+  border: solid 1px #2b0744;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+
+  background-color: #f0f0ffc2;
+
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
