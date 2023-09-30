@@ -1,0 +1,31 @@
+.positionedContactButton {
+  position: fixed;
+  top: 5px;
+  right: 168px;
+
+  z-index: 3;
+
+  border: none;
+  outline: none;
+
+  min-width: 74px;
+  min-height: 21px;
+  border-radius: 1000px;
+  background-color: rgba(231, 231, 255, 1);
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(22, 9, 65);
+
+  cursor: pointer;
+}
+
+.positionedContactButton:hover {
+  background-color: rgba(203, 203, 255, 1);
+}
+
+.positionedContactButton:active {
+  background-color: rgba(175, 175, 255, 1);
+}
