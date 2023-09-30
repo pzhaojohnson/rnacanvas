@@ -1,4 +1,4 @@
-import { ContactFormShower } from './ContactFormShower';
+import { ContactFormShowerHider } from './ContactFormShowerHider';
 
 let positionedContactForm = null;
 
@@ -6,7 +6,7 @@ let closeButtonClickListener = null;
 
 let closeButton = null;
 
-let contactFormShower = null;
+let contactFormShowerHider = null;
 
 beforeEach(() => {
   positionedContactForm = document.createElement('div');
@@ -22,20 +22,20 @@ beforeEach(() => {
     },
   };
 
-  contactFormShower = new ContactFormShower({
+  contactFormShowerHider = new ContactFormShowerHider({
     positionedContactForm, closeButton,
   });
 });
 
 afterEach(() => {
-  contactFormShower = null;
+  contactFormShowerHider = null;
 
   closeButton = null;
 
   positionedContactForm = null;
 });
 
-describe('ContactFormShower class', () => {
+describe('ContactFormShowerHider class', () => {
   describe('show method', () => {
     it('appends the contact form to the document body', () => {
       // add some elements to append after
@@ -47,7 +47,7 @@ describe('ContactFormShower class', () => {
       let n = document.body.childNodes.length;
       expect(n).toBeGreaterThanOrEqual(4);
 
-      contactFormShower.show();
+      contactFormShowerHider.show();
 
       expect(document.body.childNodes.length).toBe(n + 1);
 
@@ -57,7 +57,7 @@ describe('ContactFormShower class', () => {
   });
 
   it('removes the contact form from the document on close button click', () => {
-    contactFormShower.show();
+    contactFormShowerHider.show();
 
     let n = document.body.childNodes.length;
 

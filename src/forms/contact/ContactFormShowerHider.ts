@@ -18,7 +18,11 @@ export type Config = {
   closeButton: CloseButton;
 };
 
-export class ContactFormShower {
+/**
+ * Performs both showing of a contact form (on show method call) and
+ * hiding of a contact form (on close button click).
+ */
+export class ContactFormShowerHider {
   _config: Config;
 
   constructor(config: Config) {
