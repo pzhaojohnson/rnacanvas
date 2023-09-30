@@ -4,6 +4,9 @@ import { LoadingScreen } from './loading-screen/LoadingScreen';
 
 import { App } from 'App';
 
+import { CiteButtonShowerBuilder as CiteMenuButtonShowerBuilder } from 'Menu/cite/2/CiteButtonShowerBuilder';
+import { ContactButtonShowerBuilder as ContactMenuButtonShowerBuilder } from 'Menu/contact/ContactButtonShowerBuilder';
+
 import { BasesShiftingToolBuilder } from 'Draw/interact/drag/bases/shift/BasesShiftingToolBuilder';
 
 import { DragOverToSelectBasesToolBuilder } from 'Draw/interact/drag/bases/select/DragOverToSelectBasesToolBuilder';
@@ -157,6 +160,14 @@ setTimeout(() => {
       beforeLeavingHandler.handle(event);
     });
   }, 25);
+
+  /**
+   * Build and show menu items.
+   */
+  waitMilliseconds(250).then(() => {
+    (new CiteMenuButtonShowerBuilder()).build().show();
+    (new ContactMenuButtonShowerBuilder()).build().show();
+  });
 
   waitMilliseconds(500).then(() => {
     let basesShiftingTool = (new BasesShiftingToolBuilder()).buildFor(app);
