@@ -80,7 +80,7 @@ function createPossibleSubjectsSection() {
   trailingText.textContent = '...and anything else related to RNAcanvas';
 
   let possibleSubjectsSection = document.createElement('div');
-  possibleSubjectsSection.classList.add(styles.possibleSubjetsSection);
+  possibleSubjectsSection.classList.add(styles.possibleSubjectsSection);
   possibleSubjectsSection.appendChild(leadingText);
   possibleSubjectsSection.appendChild(possibleSubjectsList);
   possibleSubjectsSection.appendChild(trailingText);

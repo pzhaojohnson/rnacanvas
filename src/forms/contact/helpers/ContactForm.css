@@ -45,6 +45,10 @@
   text-decoration: none;
 }
 
+.link:hover {
+  text-decoration: underline;
+}
+
 .dot {
   width: 6px;
   height: 6px;
@@ -68,20 +72,20 @@
 
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
 }
 
-.possibleSubjectsSectionTrailingLine {
+.possibleSubjectsSectionTrailingText {
   margin-top: 7px;
-  margin-left: 44px;
+  margin-left: 66px;
 }
 
 .possibleSubjectsSection {
-  margin-top: 45px;
+  margin-top: 37px;
 }
 
 .gitHubIssuesLine {
-  margin-top: 45px;
+  margin-top: 44px;
 }
 
 .r2dtContactEmailLine {
@@ -97,7 +101,7 @@
 }
 
 .mainContent {
-  margin-top: 40px;
+  margin-top: 37px;
   margin-left: 61px;
 }
 
@@ -116,8 +120,8 @@
   bottom: 60px;
   overflow: auto;
 
-  max-width: 492px;
-  max-height: 545px;
+  max-width: 475px;
+  max-height: 515px;
   margin-left: auto;
 
   z-index: 10;
