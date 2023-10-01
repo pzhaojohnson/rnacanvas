@@ -1,12 +1,16 @@
 .askBeforeLeavingToggle {
+  position: fixed;
+  top: 5px;
+  right: 10px;
+
   border-radius: 60px;
 
   cursor: pointer;
 }
 
 .pillContainer {
-  width: 144px;
-  height: 20px;
+  min-width: 149px;
+  min-height: 21px;
 
   /* use before pseudo-element for border and box shadow */
   border: none;
@@ -22,9 +26,9 @@
 
 .pillContainer::before {
   content: "";
-  border-width: 1px;
-  border-style: solid;
+  border-width: 0px;
   border-radius: 60px;
+  background-color: #36074d;
 
   position: absolute;
   top: 0px;
@@ -36,34 +40,23 @@
 
 .text {
   font-size: 11px;
+  font-weight: 700;
+  color: white;
   cursor: pointer;
 }
 
 .spacer {
-  width: 6px;
+  width: 7px;
 }
 
 .check {}
 
 .askBeforeLeavingToggle:hover .pillContainer::before {
-  transform: scale(1.035);
-  transition: transform 0.25s;
+  background-color: #570b74;
 }
 
 .askBeforeLeavingToggle:active .pillContainer::before {
-  transform: scale(1);
-  transition: transform 0s;
-}
-
-.on .pillContainer::before {
-  border-color: #1e1e21;
-  background-color: #1e1e21;
-  box-shadow: 0 3px 3px rgba(208, 208, 226, 0.09);
-}
-
-.on .text {
-  font-weight: 600;
-  color: white;
+  background-color: #6f1895;
 }
 
 .on .spacer {
@@ -72,16 +65,6 @@
 
 .on .check {
   display: block;
-}
-
-.off .pillContainer::before {
-  border-color: hsl(240, 12%, 68%);
-  background-color: white;
-}
-
-.off .text {
-  font-weight: 500;
-  color: hsl(240, 5%, 35%);
 }
 
 .off .spacer {

@@ -6,17 +6,17 @@ function Check() {
   return (
     <svg
       className={styles.check}
-      width="10.5px"
-      height="10.5px"
+      width="11px"
+      height="11px"
       viewBox="0 0 96 96"
       xmlns="http://www.w3.org/2000/svg"
       overflow="hidden"
     >
       <path
         d="M86.1 15.8 34.9 64.2 10.3 39 1.8 47.1 34.5 80.7 43.1 72.7 94.2 24.2Z"
-        stroke="#FFFFFF"
-        strokeWidth="3.66667"
-        fill="#FFFFFF"
+        stroke="#ffffff"
+        strokeWidth="5"
+        fill="#ffffff"
       />
     </svg>
   );
