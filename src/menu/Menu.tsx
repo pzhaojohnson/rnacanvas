@@ -16,7 +16,7 @@ export type Props = {
 export function Menu(props: Props) {
   let drawingIsEmpty = props.app.drawing.isEmpty();
 
-  let askBeforeLeavingToggleContainer = !drawingIsEmpty ? (
+  let askBeforeLeavingToggle = !drawingIsEmpty ? (
     <AskBeforeLeavingToggle app={props.app} />
   ) : (
     <AskBeforeLeavingTogglePlaceholder />
@@ -29,7 +29,7 @@ export function Menu(props: Props) {
       <EditDropdown app={props.app} />
       <ExportDropdown app={props.app} />
       <div style={{ flexGrow: 1 }} />
-      {askBeforeLeavingToggleContainer}
+      {askBeforeLeavingToggle}
     </div>
   );
 }
