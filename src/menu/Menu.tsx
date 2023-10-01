@@ -5,7 +5,9 @@ import { AppIcon } from './AppIcon';
 import { FileDropdown } from './file/FileDropdown';
 import { EditDropdown } from './edit/EditDropdown';
 import { ExportDropdown } from './export/ExportDropdown';
+
 import { AskBeforeLeavingToggle } from 'Menu/settings/AskBeforeLeavingToggle';
+import { AskBeforeLeavingTogglePlaceholder } from 'Menu/settings/AskBeforeLeavingTogglePlaceholder';
 
 export type Props = {
   app: App;
@@ -16,7 +18,9 @@ export function Menu(props: Props) {
 
   let askBeforeLeavingToggleContainer = !drawingIsEmpty ? (
     <AskBeforeLeavingToggle app={props.app} />
-  ) : null;
+  ) : (
+    <AskBeforeLeavingTogglePlaceholder />
+  );
 
   return (
     <div className={styles.menu} >
