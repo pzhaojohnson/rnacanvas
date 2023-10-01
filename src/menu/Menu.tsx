@@ -15,9 +15,7 @@ export function Menu(props: Props) {
   let drawingIsEmpty = props.app.drawing.isEmpty();
 
   let askBeforeLeavingToggleContainer = !drawingIsEmpty ? (
-    <div style={{ marginRight: '10px' }} >
-      <AskBeforeLeavingToggle app={props.app} />
-    </div>
+    <AskBeforeLeavingToggle app={props.app} />
   ) : null;
 
   return (
