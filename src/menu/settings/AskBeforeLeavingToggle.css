@@ -28,7 +28,7 @@
   content: "";
   border-width: 0px;
   border-radius: 60px;
-  background-color: #36074d;
+  background-color: #250534;
 
   position: absolute;
   top: 0px;
@@ -52,11 +52,11 @@
 .check {}
 
 .askBeforeLeavingToggle:hover .pillContainer::before {
-  background-color: #570b74;
+  background-color: #4b0966;
 }
 
 .askBeforeLeavingToggle:active .pillContainer::before {
-  background-color: #6f1895;
+  background-color: #640c8a;
 }
 
 .on .spacer {
