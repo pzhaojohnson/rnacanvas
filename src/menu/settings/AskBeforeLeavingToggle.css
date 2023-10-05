@@ -9,7 +9,7 @@
 }
 
 .pillContainer {
-  min-width: 156px;
+  min-width: 157px;
   min-height: 21px;
 
   /* use before pseudo-element for border and box shadow */
@@ -28,7 +28,7 @@
   content: "";
   border-width: 0px;
   border-radius: 60px;
-  background-color: #250534;
+  background-color: #20052d;
 
   position: absolute;
   top: 0px;
@@ -52,11 +52,11 @@
 .check {}
 
 .askBeforeLeavingToggle:hover .pillContainer::before {
-  background-color: #4b0966;
+  background-color: #42264e;
 }
 
 .askBeforeLeavingToggle:active .pillContainer::before {
-  background-color: #640c8a;
+  background-color: #634a6c;
 }
 
 .on .spacer {

@@ -27,8 +27,8 @@ function createCentralCircle(attrs: CircleAttributes) {
     document.createElementNS('http://www.w3.org/2000/svg', 'circle')
   );
 
-  circle.setAttribute('r', '12');
-  circle.setAttribute('fill', 'rgb(119, 110, 187)');
+  circle.setAttribute('r', '11');
+  circle.setAttribute('fill', 'rgb(116, 108, 187)');
   circle.setAttribute('stroke-width', '0');
 
   circleAttributeNames.forEach(name => {
@@ -53,8 +53,8 @@ function createLine(attrs: LineAttributes) {
     document.createElementNS('http://www.w3.org/2000/svg', 'line')
   );
 
-  line.setAttribute('stroke', 'rgb(119, 110, 187)');
-  line.setAttribute('stroke-width', '9');
+  line.setAttribute('stroke', 'rgb(116, 108, 187)');
+  line.setAttribute('stroke-width', '8');
 
   lineAttributeNames.forEach(name => {
     let value = attrs[name];
