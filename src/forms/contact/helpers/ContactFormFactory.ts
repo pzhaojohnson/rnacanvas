@@ -98,11 +98,15 @@ function createGitHubIssuesLine() {
   gitHubPageLink.rel = 'noreferrer noopener';
   gitHubPageLink.textContent = 'GitHub page';
 
+  let period = document.createElement('span');
+  period.textContent = '.';
+
   let gitHubIssuesLine = document.createElement('p');
   gitHubIssuesLine.classList.add(styles.mainText);
   gitHubIssuesLine.classList.add(styles.gitHubIssuesLine);
   gitHubIssuesLine.appendChild(leadingText);
   gitHubIssuesLine.appendChild(gitHubPageLink);
+  gitHubIssuesLine.appendChild(period);
   return gitHubIssuesLine;
 }
 
