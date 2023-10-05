@@ -81,11 +81,11 @@
 }
 
 .possibleSubjectsSection {
-  margin-top: 37px;
+  margin-top: 35px;
 }
 
 .gitHubIssuesLine {
-  margin-top: 44px;
+  margin-top: 42px;
 }
 
 .r2dtContactEmailLine {
@@ -101,7 +101,7 @@
 }
 
 .mainContent {
-  margin-top: 37px;
+  margin-top: 35px;
   margin-left: 61px;
 }
 
@@ -114,14 +114,14 @@
 .positionedContactForm {
   position: fixed;
 
-  top: 71px;
-  right: 65px;
+  top: 72px;
+  right: 64px;
   left: 66px;
   bottom: 60px;
   overflow: auto;
 
-  max-width: 475px;
-  max-height: 515px;
+  max-width: 477px;
+  max-height: 545px;
   margin-left: auto;
 
   z-index: 10;

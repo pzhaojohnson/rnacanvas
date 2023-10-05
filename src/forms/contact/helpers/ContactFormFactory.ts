@@ -110,6 +110,25 @@ function createGitHubIssuesLine() {
   return gitHubIssuesLine;
 }
 
+function createR2DTSectionLeadingLine() {
+  let leadingText = document.createElement('span');
+  leadingText.textContent = 'For questions specific to ';
+
+  let r2dtName = document.createElement('span');
+  r2dtName.textContent = 'R2DT';
+  r2dtName.style.fontWeight = '700';
+
+  let ellipsis = document.createElement('span');
+  ellipsis.textContent = '...';
+
+  let r2dtSectionLeadingLine = document.createElement('p');
+  r2dtSectionLeadingLine.classList.add(styles.mainText);
+  r2dtSectionLeadingLine.appendChild(leadingText);
+  r2dtSectionLeadingLine.appendChild(r2dtName);
+  r2dtSectionLeadingLine.appendChild(ellipsis);
+  return r2dtSectionLeadingLine;
+}
+
 function createR2DTContactEmailLine() {
   let label = document.createElement('span');
   label.classList.add(styles.linkLabel);
@@ -117,10 +136,8 @@ function createR2DTContactEmailLine() {
 
   let r2dtContactEmailLink = document.createElement('a');
   r2dtContactEmailLink.classList.add(styles.link);
-
-  // TBD
-  //r2dtContactEmailLink.href = 'mailto:';
-  //r2dtContactEmailLink.textContent = '';
+  r2dtContactEmailLink.href = 'mailto:help@r2dt.bio';
+  r2dtContactEmailLink.textContent = 'help@r2dt.bio';
 
   let r2dtContactEmailLine = document.createElement('p');
   r2dtContactEmailLine.classList.add(styles.mainText);
@@ -143,6 +160,7 @@ function createR2DTGitHubPageLine() {
   r2dtGitHubPageLink.textContent = 'https://github.com/rnacentral/R2DT';
 
   let r2dtGitHubPageLine = document.createElement('p');
+  r2dtGitHubPageLine.classList.add(styles.mainText);
   r2dtGitHubPageLine.classList.add(styles.r2dtGitHubPageLine);
   r2dtGitHubPageLine.appendChild(label);
   r2dtGitHubPageLine.appendChild(r2dtGitHubPageLink);
@@ -150,9 +168,7 @@ function createR2DTGitHubPageLine() {
 }
 
 function createR2DTSection() {
-  let leadingText = document.createElement('p');
-  leadingText.classList.add(styles.mainText);
-  leadingText.textContent = 'For questions specific to R2DT...';
+  let leadingLine = createR2DTSectionLeadingLine();
 
   let r2dtContactEmailLine = createR2DTContactEmailLine();
 
@@ -160,7 +176,7 @@ function createR2DTSection() {
 
   let r2dtContactSection = document.createElement('div');
   r2dtContactSection.classList.add(styles.r2dtSection);
-  r2dtContactSection.appendChild(leadingText);
+  r2dtContactSection.appendChild(leadingLine);
   r2dtContactSection.appendChild(r2dtContactEmailLine);
   r2dtContactSection.appendChild(r2dtGitHubPageLine);
   return r2dtContactSection;
@@ -176,11 +192,14 @@ function createMainContent() {
 
   let gitHubIssuesLine = createGitHubIssuesLine();
 
+  let r2dtSection = createR2DTSection();
+
   let mainContent = document.createElement('div');
   mainContent.classList.add(styles.mainContent);
   mainContent.appendChild(contactEmailLine);
   mainContent.appendChild(possibleSubjectsSection);
   mainContent.appendChild(gitHubIssuesLine);
+  mainContent.appendChild(r2dtSection);
   return mainContent;
 }
 
