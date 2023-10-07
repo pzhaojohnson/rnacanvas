@@ -22,10 +22,7 @@ import { DragAndDropDisabler } from 'Utilities/DragAndDropDisabler';
 
 import { userIsTyping } from 'Utilities/userIsTyping';
 
-import { BeforeLeavingHandler } from './before-leaving/BeforeLeavingHandler';
-import { ShouldAskBeforeLeavingIndicator } from './before-leaving/ShouldAskBeforeLeavingIndicator';
-import { NonEmptyDrawingIndicator } from './before-leaving/NonEmptyDrawingIndicator';
-import { AskBeforeLeavingSettingIsToggledIndicator } from './before-leaving/AskBeforeLeavingSettingIsToggledIndicator';
+import { BeforeLeavingHandlerBuilder } from './before-leaving/BeforeLeavingHandlerBuilder';
 
 import { waitMilliseconds } from 'Time/waitMilliseconds';
 import { waitUntil } from 'Time/waitUntil';
@@ -146,15 +143,7 @@ setTimeout(() => {
   }, false);
 
   setTimeout(() => {
-    let beforeLeavingHandler = new BeforeLeavingHandler({
-      shouldAskBeforeLeaving: new ShouldAskBeforeLeavingIndicator({
-        requirementsIndicators: [
-          new NonEmptyDrawingIndicator({ app }),
-          new AskBeforeLeavingSettingIsToggledIndicator({ app }),
-        ],
-      }),
-      warningMessage: 'Are you sure?',
-    });
+    let beforeLeavingHandler = (new BeforeLeavingHandlerBuilder).buildFor(app);
 
     window.addEventListener('beforeunload', event => {
       beforeLeavingHandler.handle(event);
