@@ -61,7 +61,6 @@ module.exports = {
   resolve: {
     alias: {
       Array: path.resolve(__dirname, 'src/array/'),
-      Cite: path.resolve(__dirname, 'src/cite/'),
       Conditions: path.resolve(__dirname, 'src/conditions/'),
       Draw: path.resolve(__dirname, 'src/draw/'),
       Export: path.resolve(__dirname, 'src/export/'),

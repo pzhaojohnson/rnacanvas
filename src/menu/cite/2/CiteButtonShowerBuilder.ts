@@ -4,7 +4,7 @@ import { CiteButtonFactory } from './helpers/CiteButtonFactory';
 
 import { CiteButtonClickHandler } from './helpers/CiteButtonClickHandler';
 
-import { RNAcanvasReferencesDialogShowerBuilder as CiteFormShowerBuilder } from 'Cite/RNAcanvas-references-dialog/RNAcanvasReferencesDialogShowerBuilder';
+import { RNAcanvasReferencesDialogShowerBuilder as CiteFormShowerBuilder } from 'Forms/cite/RNAcanvas-references-dialog/RNAcanvasReferencesDialogShowerBuilder';
 
 export class CiteButtonShowerBuilder {
   build(): CiteButtonShower {
