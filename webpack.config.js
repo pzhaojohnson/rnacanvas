@@ -62,6 +62,7 @@ module.exports = {
     alias: {
       Array: path.resolve(__dirname, 'src/array/'),
       Conditions: path.resolve(__dirname, 'src/conditions/'),
+      Derive: path.resolve(__dirname, 'src/derive/'),
       Draw: path.resolve(__dirname, 'src/draw/'),
       Export: path.resolve(__dirname, 'src/export/'),
       Foreign: path.resolve(__dirname, 'src/foreign/'),
