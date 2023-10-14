@@ -2,7 +2,7 @@
  * A way to always derive a certain value while still fulfilling a
  * value deriver interface.
  */
-export class PredeterminedValueDeriver<T1, T2> {
+export class PredeterminedValueDeriver<T1 extends unknown[], T2> {
   _predeterminedValue: T2;
 
   constructor(predeterminedValue: T2) {
@@ -11,9 +11,9 @@ export class PredeterminedValueDeriver<T1, T2> {
 
   /**
    * Simply returns the predetermined value regardless of what the
-   * value-to-derive-from is.
+   * values-to-derive-from are.
    */
-  deriveFrom(valueToDeriveFrom: T1): T2 {
+  deriveFrom(...valuesToDeriveFrom: T1): T2 {
     return this._predeterminedValue;
   }
 }
