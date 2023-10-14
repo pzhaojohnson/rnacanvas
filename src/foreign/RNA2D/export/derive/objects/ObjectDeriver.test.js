@@ -11,7 +11,7 @@ describe('ObjectDeriver class', () => {
         { deriveFrom: jest.fn(() => ({ name: 'asdf', value: 'asdf' })) },
       ];
 
-      let objectDeriver = new ObjectDeriver({ propertyDerivers });
+      let objectDeriver = new ObjectDeriver(propertyDerivers);
 
       objectDeriver.deriveFrom('s98923r8hfaeskdl');
 
@@ -33,7 +33,7 @@ describe('ObjectDeriver class', () => {
         { deriveFrom: () => ({ name: 'zxcv', value: null }) },
       ];
 
-      let objectDeriver = new ObjectDeriver({ propertyDerivers });
+      let objectDeriver = new ObjectDeriver(propertyDerivers);
 
       expect(objectDeriver.deriveFrom('asdf')).toStrictEqual({
         'asdf': 'blah',
@@ -47,7 +47,7 @@ describe('ObjectDeriver class', () => {
     test('an empty array of helper property derivers', () => {
       let propertyDerivers = [];
 
-      let objectDeriver = new ObjectDeriver({ propertyDerivers });
+      let objectDeriver = new ObjectDeriver(propertyDerivers);
 
       expect(objectDeriver.deriveFrom('asdf')).toStrictEqual({});
     });

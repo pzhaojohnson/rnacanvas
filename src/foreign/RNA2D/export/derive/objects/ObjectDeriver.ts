@@ -12,15 +12,11 @@ export interface PropertyDeriver<T> {
 
 export type DerivedObject = { [propertyName: string]: unknown };
 
-export type Helpers<T> = {
-  propertyDerivers: PropertyDeriver<T>[];
-};
-
 export class ObjectDeriver<T> {
-  _helpers: Helpers<T>;
+  _propertyDerivers: PropertyDeriver<T>[];
 
-  constructor(helpers: Helpers<T>) {
-    this._helpers = helpers;
+  constructor(propertyDerivers: PropertyDeriver<T>[]) {
+    this._propertyDerivers = propertyDerivers;
   }
 
   /**
@@ -32,7 +28,7 @@ export class ObjectDeriver<T> {
   deriveFrom(valueToDeriveFrom: T): DerivedObject {
     let derivedObject: DerivedObject = {};
 
-    this._helpers.propertyDerivers.forEach(propertyDeriver => {
+    this._propertyDerivers.forEach(propertyDeriver => {
       let derivedProperty = propertyDeriver.deriveFrom(valueToDeriveFrom);
       derivedObject[derivedProperty.name] = derivedProperty.value;
     });
