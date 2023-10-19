@@ -6,6 +6,8 @@ import { ExportSvgButton } from './ExportSvgButton';
 import { ExportPptxButton } from './ExportPptxButton';
 import { ExportLayoutStructureButton } from './ExportLayoutStructureButton';
 
+import { ExportTemplateButton } from './ExportTemplateButton';
+
 export type Props = {
   app: App;
 }
@@ -20,6 +22,8 @@ export function ExportDropdown(props: Props) {
           <ExportPptxButton app={props.app} />
           <DroppedSeparator />
           <ExportLayoutStructureButton app={props.app} />
+          <DroppedSeparator />
+          <ExportTemplateButton app={props.app} />
         </div>
       }
       disabled={props.app.strictDrawing.isEmpty()}
