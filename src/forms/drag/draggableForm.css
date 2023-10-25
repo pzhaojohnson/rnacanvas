@@ -1,0 +1,11 @@
+/**
+ * Has cursor styles to indicate to the user that a form can be
+ * dragged around.
+ */
+.draggableForm {
+  cursor: grab;
+}
+
+.draggableForm:active {
+  cursor: grabbing;
+}
