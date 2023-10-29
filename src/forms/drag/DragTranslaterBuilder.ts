@@ -14,7 +14,7 @@ import { CurrentTranslationMeasurer } from './helpers/CurrentTranslationMeasurer
 
 import { IsDraggableIndicator } from './helpers/IsDraggableIndicator';
 
-import draggableFormStyles from './draggableForm.css';
+import draggableFormStyles from './helpers/draggableForm.css';
 
 class TargetNodeIsGrabbedBuilder {
   buildFor(targetNode: HTMLElement) {
