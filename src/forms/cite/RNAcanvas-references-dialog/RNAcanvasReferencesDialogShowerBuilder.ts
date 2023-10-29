@@ -6,6 +6,8 @@ import { CloseButtonFactory } from './helpers/CloseButtonFactory';
 
 import { RNAcanvasReferencesDialogHider } from './helpers/RNAcanvasReferencesDialogHider';
 
+import { DragTranslaterBuilder } from 'Forms/drag/DragTranslaterBuilder';
+
 export class RNAcanvasReferencesDialogShowerBuilder {
   build(): RNAcanvasReferencesDialogShower {
     let closeButtonFactory = new CloseButtonFactory();
@@ -22,6 +24,8 @@ export class RNAcanvasReferencesDialogShowerBuilder {
       rnaCanvasReferencesDialog,
       closeButton,
     });
+
+    (new DragTranslaterBuilder()).buildFor(rnaCanvasReferencesDialog);
 
     return new RNAcanvasReferencesDialogShower({
       rnaCanvasReferencesDialog,

@@ -4,6 +4,8 @@ import { DOMNodeFactory } from './helpers/DOMNodeFactory';
 
 import { CloseButtonFactory } from './helpers/CloseButtonFactory';
 
+import { DragTranslaterBuilder } from 'Forms/drag/DragTranslaterBuilder';
+
 export class OnOpenRNA2DInfoDialogBuilder {
   build(): OnOpenRNA2DInfoDialog {
     let closeButtonFactory = new CloseButtonFactory();
@@ -11,6 +13,8 @@ export class OnOpenRNA2DInfoDialogBuilder {
 
     let domNodeFactory = new DOMNodeFactory({ closeButton });
     let domNode = domNodeFactory.produce();
+
+    (new DragTranslaterBuilder()).buildFor(domNode);
 
     return new OnOpenRNA2DInfoDialog({ domNode, closeButton });
   }
