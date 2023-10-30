@@ -21,6 +21,11 @@
   display: flex;
   flex-direction: row;
   position: relative;
+
+  /**
+   * So that the form can be dragged around while clicking on the header.
+   */
+  pointer-events: none;
 }
 
 .mainText {
@@ -40,6 +45,7 @@
 .link {
   color: rgb(12, 12, 199);
 
+  pointer-events: auto;
   cursor: pointer;
 
   text-decoration: none;
@@ -104,12 +110,19 @@
 .mainContent {
   margin-top: 35px;
   margin-left: 61px;
+
+  /**
+   * So that the form can be dragged around while clicking on parts of the main content.
+   */
+  pointer-events: none;
 }
 
 .closeButtonContainer {
   position: absolute;
   top: 16px;
   right: 16px;
+
+  pointer-events: auto;
 }
 
 .positionedContactForm {

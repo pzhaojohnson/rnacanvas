@@ -32,6 +32,11 @@
   display: flex;
   flex-direction: row;
   position: relative;
+
+  /**
+   * So that the dialog can be dragged around while clicking on the header.
+   */
+  pointer-events: none;
 }
 
 .mainText {
@@ -45,6 +50,11 @@
 .intro {
   margin-top: 28px;
   margin-left: 48px;
+
+  /**
+   * So that the dialog can be dragged around while clicking on this.
+   */
+  pointer-events: none;
 }
 
 .bulletPoint {
@@ -74,6 +84,11 @@
 .availableFeaturesList {
   margin-top: 33px;
   margin-left: 48px;
+
+  /**
+   * So that the dialog can be dragged around while clicking on this.
+   */
+  pointer-events: none;
 }
 
 .unavailableFeaturesListBulletedItems {
@@ -93,6 +108,11 @@
 .unavailableFeaturesList {
   margin-top: 35px;
   margin-left: 48px;
+
+  /**
+   * So that the dialog can be dragged around while clicking on this.
+   */
+   pointer-events: none;
 }
 
 .contactEmailLineLeadingText {
@@ -105,6 +125,8 @@
   font-weight: 600;
   font-style: normal;
   color: #821f82;
+
+  pointer-events: auto;
 
   text-decoration: none;
 }
@@ -120,12 +142,19 @@
 
   display: flex;
   flex-direction: row;
+
+  /**
+   * So that the dialog can be dragged around while clicking on this.
+   */
+  pointer-events: none;
 }
 
 .closeButtonContainer {
   position: absolute;
   top: 16px;
   right: 16px;
+
+  pointer-events: auto;
 }
 
 .domNode {
