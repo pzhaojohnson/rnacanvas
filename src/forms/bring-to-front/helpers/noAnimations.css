@@ -1,0 +1,4 @@
+.noAnimations {
+  animation: none;
+  transition: none;
+}
