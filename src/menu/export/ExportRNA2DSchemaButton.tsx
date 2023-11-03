@@ -16,7 +16,7 @@ export type Props = {
 /**
  * Offers for download an RNA 2D schema file to the user on click.
  */
-export function ExportTemplateButton(props: Props) {
+export function ExportRNA2DSchemaButton(props: Props) {
   let exportRNA2DSchemaFormShower = (new ExportRNA2DSchemaFormShowerBuilder()).buildUsing({
     app: props.app,
     document,
@@ -24,7 +24,7 @@ export function ExportTemplateButton(props: Props) {
 
   return (
     <DroppedButton
-      text='Template'
+      text='RNA 2D Template'
       onClick={() => {
         exportRNA2DSchemaFormShower.show();
       }}
