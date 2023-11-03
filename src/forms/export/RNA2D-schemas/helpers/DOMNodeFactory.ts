@@ -282,7 +282,7 @@ class ContactEmailOptionFactory {
 
     let text = buildingBlocks.document.createElement('p');
     text.classList.add(styles.mainText);
-    text.append('Or emailing: ', contactEmailLink);
+    text.append('Or emailing it to: ', contactEmailLink);
 
     let dot = buildingBlocks.document.createElement('div');
     dot.classList.add(styles.dot);
