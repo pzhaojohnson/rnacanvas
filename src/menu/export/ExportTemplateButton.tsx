@@ -1,6 +1,6 @@
 import type { App } from 'App';
 
-import { RNA2DSchemaExporterBuilder } from 'Foreign/RNA2D/export/RNA2DSchemaExporterBuilder';
+import { ExportRNA2DSchemaFormShowerBuilder } from 'Forms/export/RNA2D-schemas/ExportRNA2DSchemaFormShowerBuilder';
 
 import * as React from 'react';
 
@@ -17,13 +17,16 @@ export type Props = {
  * Offers for download an RNA 2D schema file to the user on click.
  */
 export function ExportTemplateButton(props: Props) {
-  let rna2DSchemaExporter = (new RNA2DSchemaExporterBuilder()).buildFor(props.app);
+  let exportRNA2DSchemaFormShower = (new ExportRNA2DSchemaFormShowerBuilder()).buildUsing({
+    app: props.app,
+    document,
+  });
 
   return (
     <DroppedButton
       text='Template'
       onClick={() => {
-        rna2DSchemaExporter.export();
+        exportRNA2DSchemaFormShower.show();
       }}
     />
   );
