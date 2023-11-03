@@ -1,0 +1,184 @@
+.exportRNA2DSchemaForm {
+  position: fixed;
+
+  top: 72px;
+  right: 64px;
+  left: 66px;
+  bottom: 60px;
+  overflow: auto;
+
+  max-width: 483px;
+  max-height: 536px;
+  margin-left: auto;
+
+  z-index: 10;
+
+  border: solid 1px #2b0744;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+
+  background-color: #f0f0ffd6;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.header {
+  margin-top: 22px;
+  margin-left: 28px;
+
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  /**
+   * So that the form can be dragged around while clicking on the header.
+   */
+  pointer-events: none;
+}
+
+.appIcon {
+  width: 28px;
+}
+
+.headerText {
+  position: absolute;
+  top: 0px;
+  left: 41px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+}
+
+.mainContent {
+  margin-top: 31px;
+  margin-right: 33px;
+  margin-bottom: 40px;
+  margin-left: 58px;
+
+  /**
+   * So that the form can be dragged around while clicking on parts of the main content.
+   */
+  pointer-events: none;
+}
+
+.mainText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(11, 1, 11);
+}
+
+.linkLabel {
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+}
+
+.link {
+  color: rgb(29, 13, 231);
+  font-weight: 600;
+
+  pointer-events: auto;
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.whatGetsIncludedSection {
+  margin-top: 24px;
+}
+
+.whatGetsIncludedList {
+  margin-top: 7px;
+  margin-left: 17px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.dot {
+  margin-right: 8px;
+
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: rgb(23, 2, 23);
+}
+
+.dottedLine {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.whatIsCanonicalSection {
+  margin-top: 26px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.whatIsCanonicalFirstLine {
+  position: relative;
+}
+
+.asterisk {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(20, 1, 20);
+}
+
+.whatIsCanonicalFirstLineText {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.whatIsCanonicalSecondLine {
+  margin-top: 28px;
+  margin-left: 19px;
+}
+
+.exportButtonContainer {
+  margin-top: 37px;
+  width: fit-content;
+
+  pointer-events: auto;
+}
+
+.submissionSection {
+  margin-top: 35px;
+}
+
+.submissionOptionsList {
+  margin-top: 7px;
+  margin-left: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.closeButtonContainer {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  pointer-events: auto;
+}
