@@ -258,7 +258,7 @@ class OpeningAGitHubIssueOptionFactory {
   produceUsing(buildingBlocks: BasicBuildingBlocks) {
     let linkToOpenAGitHubIssue = buildingBlocks.document.createElement('a');
     linkToOpenAGitHubIssue.classList.add(styles.mainText, styles.link);
-    linkToOpenAGitHubIssue.href = 'https://github.com/rnacentral/r2dt/issues/new?title=A%20new%20template&body=Add%20a%20description%20of%20your%20new%20template%20and%20upload%20an%20R2DT%20template%20file';
+    linkToOpenAGitHubIssue.href = 'https://github.com/rnacentral/r2dt/issues/new?title=A%20new%20template&body=Describe%20your%20new%20template%20and%20attach%20your%20RNA%202D%20template%20file';
     linkToOpenAGitHubIssue.target = '_blank';
     linkToOpenAGitHubIssue.rel = 'noreferrer noopener';
     linkToOpenAGitHubIssue.textContent = 'Opening a GitHub issue';
