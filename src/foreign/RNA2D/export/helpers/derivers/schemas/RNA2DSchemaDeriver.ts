@@ -52,11 +52,15 @@ export class RNA2DSchemaDeriver {
       y: b.text.bbox().cy,
     }));
 
+    let canonicalRNAcanvasSecondaryBonds = targetRNAcanvasDrawing.secondaryBonds.filter(
+      sb => ['AUT', 'GC', 'GUT'].includes(sb.type)
+    );
+
     // currently RNA 2D base-pairs must be labeled "canonical"
     // (to not be ignored by R2DT)
     const basePairType = 'canonical';
 
-    let allRNA2DBasePairs = targetRNAcanvasDrawing.secondaryBonds.map(sb => ({
+    let allRNA2DBasePairs = canonicalRNAcanvasSecondaryBonds.map(sb => ({
       basePairType,
       residueIndex1: allRNAcanvasBasesInOrder.indexOf(sb.base1),
       residueIndex2: allRNAcanvasBasesInOrder.indexOf(sb.base2),
