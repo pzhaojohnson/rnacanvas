@@ -16,6 +16,10 @@ import { DelayedTask } from 'Tasks/DelayedTask';
 
 import { FormFronter2Builder } from 'Forms/bring-to-front/FormFronter2Builder';
 
+import { DragTranslaterBuilder } from 'Forms/drag/DragTranslaterBuilder';
+
+import { FormUntranslaterBuilder } from 'Forms/drag/FormUntranslaterBuilder';
+
 export type BuildingBlocks = {
   /**
    * Is expected to already have CSS styles that will properly position the form on screen
@@ -77,6 +81,13 @@ export class FormShowerHider2Builder {
     let formShowerHider2 = new FormShowerHider2({ show, hide, hideSignaller });
 
     (new FormFronter2Builder()).buildFor(buildingBlocks.targetForm);
+
+    (new DragTranslaterBuilder()).buildFor(buildingBlocks.targetForm);
+
+    (new FormUntranslaterBuilder()).buildUsing({
+      targetForm: buildingBlocks.targetForm,
+      untranslateButton: buildingBlocks.hideButton,
+    });
 
     return formShowerHider2;
   }

@@ -10,10 +10,6 @@ import { RNA2DSchemaExporterBuilder } from 'Foreign/RNA2D/export/RNA2DSchemaExpo
 
 import type { App } from 'App';
 
-import { DragTranslaterBuilder } from 'Forms/drag/DragTranslaterBuilder';
-
-import { FormUntranslaterBuilder } from 'Forms/drag/FormUntranslaterBuilder';
-
 export type BuildingBlocks = {
   /**
    * An app instance that shown export-RNA-2D-schema forms will be for.
@@ -44,13 +40,6 @@ export class ExportRNA2DSchemaFormShowerBuilder {
       document: buildingBlocks.document,
       exportButton,
       closeButton,
-    });
-
-    (new DragTranslaterBuilder()).buildFor(exportRNA2DSchemaForm);
-
-    (new FormUntranslaterBuilder()).buildUsing({
-      targetForm: exportRNA2DSchemaForm,
-      untranslateButton: closeButton,
     });
 
     return (new FormShowerBuilder()).buildUsing({
