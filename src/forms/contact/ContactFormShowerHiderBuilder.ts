@@ -1,4 +1,4 @@
-import { ContactFormShowerHider } from './ContactFormShowerHider';
+import { FormShowerHider2Builder } from 'Forms/show/FormShowerHider2Builder';
 
 import { CloseButtonFactory } from './helpers/CloseButtonFactory';
 
@@ -9,7 +9,7 @@ import { DragTranslaterBuilder } from 'Forms/drag/DragTranslaterBuilder';
 import { FormUntranslaterBuilder } from 'Forms/drag/FormUntranslaterBuilder';
 
 export class ContactFormShowerHiderBuilder {
-  build(): ContactFormShowerHider {
+  build() {
     let closeButton = (new CloseButtonFactory()).produce();
 
     let contactFormFactory = new ContactFormFactory({ closeButton });
@@ -22,9 +22,10 @@ export class ContactFormShowerHiderBuilder {
       untranslateButton: closeButton,
     });
 
-    return new ContactFormShowerHider({
-      positionedContactForm,
-      closeButton,
+    return (new FormShowerHider2Builder()).buildUsing({
+      targetForm: positionedContactForm,
+      hideButton: closeButton,
+      documentBody: document.body,
     });
   }
 }

@@ -1,10 +1,8 @@
-import { FormShowerHider as FormShower } from 'Forms/show/FormShowerHider'
+import { FormShowerHider2Builder as FormShowerBuilder } from 'Forms/show/FormShowerHider2Builder';
 
 import { DOMNodeFactory } from './helpers/DOMNodeFactory';
 
 import { CloseButtonFactory } from './helpers/CloseButtonFactory';
-
-import { HideSignaller } from 'Forms/show/HideSignaller';
 
 import { ExportButtonFactory } from './helpers/ExportButtonFactory';
 
@@ -29,7 +27,7 @@ export type BuildingBlocks = {
 };
 
 export class ExportRNA2DSchemaFormShowerBuilder {
-  buildUsing(buildingBlocks: BuildingBlocks): FormShower {
+  buildUsing(buildingBlocks: BuildingBlocks) {
     let rna2DSchemaExporter = (new RNA2DSchemaExporterBuilder()).buildFor(buildingBlocks.app);
 
     let exportButton = (new ExportButtonFactory()).produceUsing({
@@ -41,8 +39,6 @@ export class ExportRNA2DSchemaFormShowerBuilder {
     let closeButton = (new CloseButtonFactory()).produceUsing({
       document: buildingBlocks.document,
     });
-
-    let hideSignaller = new HideSignaller({ hideButton: closeButton });
 
     let exportRNA2DSchemaForm = (new DOMNodeFactory()).produceUsing({
       document: buildingBlocks.document,
@@ -57,10 +53,10 @@ export class ExportRNA2DSchemaFormShowerBuilder {
       untranslateButton: closeButton,
     });
 
-    return new FormShower({
+    return (new FormShowerBuilder()).buildUsing({
+      targetForm: exportRNA2DSchemaForm,
+      hideButton: closeButton,
       documentBody: buildingBlocks.document.body,
-      aFormWithFixedPositioning: exportRNA2DSchemaForm,
-      hideSignaller,
     });
   }
 }

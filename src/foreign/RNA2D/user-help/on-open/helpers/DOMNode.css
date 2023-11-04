@@ -179,15 +179,4 @@
 
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
-
-  animation: fadeIn 2s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }

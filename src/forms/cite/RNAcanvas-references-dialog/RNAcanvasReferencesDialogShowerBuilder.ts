@@ -1,17 +1,15 @@
-import { RNAcanvasReferencesDialogShower } from './RNAcanvasReferencesDialogShower';
+import { FormShowerHider2Builder as FormShowerBuilder } from 'Forms/show/FormShowerHider2Builder';
 
 import { RNAcanvasReferencesDialogFactory } from './helpers/RNAcanvasReferencesDialogFactory';
 
 import { CloseButtonFactory } from './helpers/CloseButtonFactory';
-
-import { RNAcanvasReferencesDialogHider } from './helpers/RNAcanvasReferencesDialogHider';
 
 import { DragTranslaterBuilder } from 'Forms/drag/DragTranslaterBuilder';
 
 import { FormUntranslaterBuilder } from 'Forms/drag/FormUntranslaterBuilder';
 
 export class RNAcanvasReferencesDialogShowerBuilder {
-  build(): RNAcanvasReferencesDialogShower {
+  build() {
     let closeButtonFactory = new CloseButtonFactory();
     let closeButton = closeButtonFactory.produce();
 
@@ -21,12 +19,6 @@ export class RNAcanvasReferencesDialogShowerBuilder {
 
     let rnaCanvasReferencesDialog = rnaCanvasReferencesDialogFactory.produce();
 
-    // allows the dialog to be hidden by the user
-    let rnaCanvasReferencesDialogHider = new RNAcanvasReferencesDialogHider({
-      rnaCanvasReferencesDialog,
-      closeButton,
-    });
-
     (new DragTranslaterBuilder()).buildFor(rnaCanvasReferencesDialog);
 
     (new FormUntranslaterBuilder()).buildUsing({
@@ -34,8 +26,10 @@ export class RNAcanvasReferencesDialogShowerBuilder {
       untranslateButton: closeButton,
     });
 
-    return new RNAcanvasReferencesDialogShower({
-      rnaCanvasReferencesDialog,
+    return (new FormShowerBuilder()).buildUsing({
+      targetForm: rnaCanvasReferencesDialog,
+      hideButton: closeButton,
+      documentBody: document.body,
     });
   }
 }
