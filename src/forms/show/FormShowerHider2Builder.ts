@@ -14,6 +14,8 @@ import { Tasks } from 'Tasks/Tasks';
 
 import { DelayedTask } from 'Tasks/DelayedTask';
 
+import { FormFronter2Builder } from 'Forms/bring-to-front/FormFronter2Builder';
+
 export type BuildingBlocks = {
   /**
    * Is expected to already have CSS styles that will properly position the form on screen
@@ -72,6 +74,10 @@ export class FormShowerHider2Builder {
 
     let hideSignaller = new HideSignaller({ hideButton: buildingBlocks.hideButton });
 
-    return new FormShowerHider2({ show, hide, hideSignaller });
+    let formShowerHider2 = new FormShowerHider2({ show, hide, hideSignaller });
+
+    (new FormFronter2Builder()).buildFor(buildingBlocks.targetForm);
+
+    return formShowerHider2;
   }
 }
