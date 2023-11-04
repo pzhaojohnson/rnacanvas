@@ -3,10 +3,10 @@ import { ConditionalTask } from './ConditionalTask';
 describe('ConditionalTask class', () => {
   describe('do method', () => {
     it('does the task when the condition is true', () => {
-      let condition = { isTrue: () => true };
       let task = { do: jest.fn() };
+      let condition = { isTrue: () => true };
 
-      let conditionalTask = new ConditionalTask(condition, task);
+      let conditionalTask = new ConditionalTask(task, condition);
 
       expect(task.do).not.toHaveBeenCalled();
       conditionalTask.do();
@@ -14,10 +14,10 @@ describe('ConditionalTask class', () => {
     });
 
     it('does not do the task when the condition is false', () => {
-      let condition = { isTrue: () => false };
       let task = { do: jest.fn() };
+      let condition = { isTrue: () => false };
 
-      let conditionalTask = new ConditionalTask(condition, task);
+      let conditionalTask = new ConditionalTask(task, condition);
 
       conditionalTask.do();
       expect(task.do).not.toHaveBeenCalled();

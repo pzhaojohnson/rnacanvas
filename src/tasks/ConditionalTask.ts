@@ -15,7 +15,7 @@ export interface Condition {
 }
 
 export class ConditionalTask implements Task {
-  constructor(private condition: Condition, private task: Task) {}
+  constructor(private task: Task, private condition: Condition) {}
 
   /**
    * Does the provided task if the provided condition is true.
