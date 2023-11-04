@@ -75,6 +75,7 @@ module.exports = {
       Partners: path.resolve(__dirname, 'src/partners/'),
       Refresh: path.resolve(__dirname, 'src/refresh/'),
       Settings: path.resolve(__dirname, 'src/settings/'),
+      Tasks: path.resolve(__dirname, 'src/tasks/'),
       Time: path.resolve(__dirname, 'src/time/'),
       Undo: path.resolve(__dirname, 'src/undo/'),
       Utilities: path.resolve(__dirname, 'src/utilities/'),

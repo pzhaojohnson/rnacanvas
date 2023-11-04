@@ -28,6 +28,7 @@
       "Partners/*": ["src/partners/*"],
       "Refresh/*": ["src/refresh/*"],
       "Settings/*": ["src/settings/*"],
+      "Tasks/*": ["src/tasks/*"],
       "Time/*": ["src/time/*"],
       "Undo/*": ["src/undo/*"],
       "Utilities/*": ["src/utilities/*"],

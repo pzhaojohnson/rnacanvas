@@ -70,6 +70,7 @@
       "^Partners(.*)$": "<rootDir>/src/partners$1",
       "^Refresh(.*)$": "<rootDir>/src/refresh$1",
       "^Settings(.*)$": "<rootDir>/src/settings$1",
+      "^Tasks(.*)$": "<rootDir>/src/tasks$1",
       "^Time(.*)$": "<rootDir>/src/time$1",
       "^Undo(.*)$": "<rootDir>/src/undo$1",
       "^Utilities(.*)$": "<rootDir>/src/utilities$1",
