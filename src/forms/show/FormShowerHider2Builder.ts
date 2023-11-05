@@ -12,6 +12,8 @@ import fadesInStyles from './helpers/fadesIn.css';
 
 import { Tasks } from 'Tasks/Tasks';
 
+import { CallbackTask } from 'Tasks/CallbackTask';
+
 import { DelayedTask } from 'Tasks/DelayedTask';
 
 import { FormFronter2Builder } from 'Forms/bring-to-front/FormFronter2Builder';
@@ -68,7 +70,17 @@ export class FormShowerHider2Builder {
       510,
     );
 
+    (new DragTranslaterBuilder()).buildFor(buildingBlocks.targetForm);
+
+    let formUntranslater = (new FormUntranslaterBuilder()).buildUsing({
+      targetForm: buildingBlocks.targetForm,
+      untranslateButton: buildingBlocks.hideButton,
+    });
+
+    let untranslateForm = new CallbackTask(() => formUntranslater.untranslate());
+
     let show = new Tasks([
+      untranslateForm,
       addFadeInAnimationToTargetForm,
       appendTargetFormToTheDocumentBody,
       removeFadeInAnimationFromTargetFormWhenItsDone,
@@ -81,13 +93,6 @@ export class FormShowerHider2Builder {
     let formShowerHider2 = new FormShowerHider2({ show, hide, hideSignaller });
 
     (new FormFronter2Builder()).buildFor(buildingBlocks.targetForm);
-
-    (new DragTranslaterBuilder()).buildFor(buildingBlocks.targetForm);
-
-    (new FormUntranslaterBuilder()).buildUsing({
-      targetForm: buildingBlocks.targetForm,
-      untranslateButton: buildingBlocks.hideButton,
-    });
 
     return formShowerHider2;
   }
