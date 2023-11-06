@@ -221,21 +221,21 @@ class SubmissionSectionFactory {
 class SubmissionSectionLeaderFactory {
   produceUsing(buildingBlocks: BasicBuildingBlocks) {
     let leadingText = buildingBlocks.document.createElement('span');
-    leadingText.textContent = 'Exported RNA 2D templates can be submitted for inclusion in the ';
+    leadingText.textContent = 'Exported RNA 2D templates can be submitted for inclusion in the R2DT ';
 
-    let rnaCentralLink = buildingBlocks.document.createElement('a');
-    rnaCentralLink.classList.add(styles.mainText, styles.link);
-    rnaCentralLink.href = 'https://rnacentral.org/';
-    rnaCentralLink.target = '_blank';
-    rnaCentralLink.rel = 'noreferrer noopener';
-    rnaCentralLink.textContent = 'RNAcentral';
+    let templateLibraryLink = buildingBlocks.document.createElement('a');
+    templateLibraryLink.classList.add(styles.mainText, styles.link);
+    templateLibraryLink.href = 'https://rnacentral.org/';
+    templateLibraryLink.target = '_blank';
+    templateLibraryLink.rel = 'noreferrer noopener';
+    templateLibraryLink.textContent = 'template library';
 
     let trailingText = buildingBlocks.document.createElement('span');
-    trailingText.textContent = ' RNA structures database by...';
+    trailingText.textContent = ' by...';
 
     let submissionSectionLeader = buildingBlocks.document.createElement('p');
     submissionSectionLeader.classList.add(styles.mainText);
-    submissionSectionLeader.append(leadingText, rnaCentralLink, trailingText);
+    submissionSectionLeader.append(leadingText, templateLibraryLink, trailingText);
     return submissionSectionLeader;
   }
 }
