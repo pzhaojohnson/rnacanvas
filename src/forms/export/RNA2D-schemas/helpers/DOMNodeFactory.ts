@@ -209,6 +209,7 @@ class SubmissionSectionFactory {
     let children = [
       (new SubmissionSectionLeaderFactory()).produceUsing(buildingBlocks),
       (new SubmissionOptionsListFactory()).produceUsing(buildingBlocks),
+      (new SubmissionSectionTrailerFactory()).produceUsing(buildingBlocks),
     ];
 
     let submissionSection = buildingBlocks.document.createElement('div');
@@ -221,7 +222,7 @@ class SubmissionSectionFactory {
 class SubmissionSectionLeaderFactory {
   produceUsing(buildingBlocks: BasicBuildingBlocks) {
     let leadingText = buildingBlocks.document.createElement('span');
-    leadingText.textContent = 'Exported RNA 2D JSON schemas can be submitted for inclusion in the R2DT ';
+    leadingText.textContent = 'To submit an RNA 2D JSON schema for inclusion in the R2DT ';
 
     let templateLibraryLink = buildingBlocks.document.createElement('a');
     templateLibraryLink.classList.add(styles.mainText, styles.link);
@@ -231,7 +232,7 @@ class SubmissionSectionLeaderFactory {
     templateLibraryLink.textContent = 'template library';
 
     let trailingText = buildingBlocks.document.createElement('span');
-    trailingText.textContent = ' by...';
+    trailingText.textContent = '...';
 
     let submissionSectionLeader = buildingBlocks.document.createElement('p');
     submissionSectionLeader.classList.add(styles.mainText);
@@ -261,7 +262,7 @@ class OpeningAGitHubIssueOptionFactory {
     linkToOpenAGitHubIssue.href = 'https://github.com/rnacentral/r2dt/issues/new?title=A%20new%20template&body=Describe%20your%20new%20template%20and%20attach%20your%20RNA%202D%20template%20file';
     linkToOpenAGitHubIssue.target = '_blank';
     linkToOpenAGitHubIssue.rel = 'noreferrer noopener';
-    linkToOpenAGitHubIssue.textContent = 'Opening a GitHub issue';
+    linkToOpenAGitHubIssue.textContent = 'Open a GitHub issue';
 
     let dot = buildingBlocks.document.createElement('div');
     dot.classList.add(styles.dot);
@@ -282,7 +283,7 @@ class ContactEmailOptionFactory {
 
     let text = buildingBlocks.document.createElement('p');
     text.classList.add(styles.mainText);
-    text.append('Or emailing it to: ', contactEmailLink);
+    text.append('Or email it to: ', contactEmailLink);
 
     let dot = buildingBlocks.document.createElement('div');
     dot.classList.add(styles.dot);
@@ -291,6 +292,15 @@ class ContactEmailOptionFactory {
     contactEmailOption.classList.add(styles.dottedLine);
     contactEmailOption.append(dot, text);
     return contactEmailOption;
+  }
+}
+
+class SubmissionSectionTrailerFactory {
+  produceUsing(buildingBlocks: BasicBuildingBlocks) {
+    let trailer = buildingBlocks.document.createElement('p');
+    trailer.classList.add(styles.mainText, styles.submissionSectionTrailer);
+    trailer.textContent = 'All submissions are welcome!'
+    return trailer;
   }
 }
 

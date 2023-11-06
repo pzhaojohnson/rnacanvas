@@ -175,6 +175,12 @@
   gap: 3px;
 }
 
+.submissionSectionTrailer {
+  margin-top: 9px;
+
+  font-weight: 700;
+}
+
 .closeButtonContainer {
   position: absolute;
   top: 16px;
