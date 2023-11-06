@@ -24,7 +24,7 @@ export function ExportRNA2DSchemaButton(props: Props) {
 
   return (
     <DroppedButton
-      text='RNA 2D Template'
+      text='RNA 2D JSON Schema'
       onClick={() => {
         exportRNA2DSchemaFormShower.show();
       }}
