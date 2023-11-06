@@ -57,7 +57,7 @@ class HeaderFactory {
 
     let text = buildingBlocks.document.createElement('p');
     text.classList.add(styles.headerText);
-    text.textContent = 'Export an RNA 2D Template';
+    text.textContent = 'Export an RNA 2D JSON Schema';
 
     let header = buildingBlocks.document.createElement('div');
     header.classList.add(styles.header);
@@ -99,7 +99,7 @@ class IntroLineFactory {
     r2dtLink.textContent = 'RNA 2D';
 
     let trailingText = buildingBlocks.document.createElement('span');
-    trailingText.textContent = ' template.';
+    trailingText.textContent = ' JSON schema.';
 
     let introLine = buildingBlocks.document.createElement('p');
     introLine.classList.add(styles.mainText);
@@ -125,7 +125,7 @@ class WhatGetsIncludedLeadingLineFactory {
   produceUsing(buildingBlocks: BasicBuildingBlocks) {
     let line = buildingBlocks.document.createElement('p');
     line.classList.add(styles.mainText);
-    line.textContent = 'Exported RNA 2D templates will include...';
+    line.textContent = 'Exported RNA 2D JSON schemas will include...';
     return line;
   }
 }
@@ -221,7 +221,7 @@ class SubmissionSectionFactory {
 class SubmissionSectionLeaderFactory {
   produceUsing(buildingBlocks: BasicBuildingBlocks) {
     let leadingText = buildingBlocks.document.createElement('span');
-    leadingText.textContent = 'Exported RNA 2D templates can be submitted for inclusion in the R2DT ';
+    leadingText.textContent = 'Exported RNA 2D JSON schemas can be submitted for inclusion in the R2DT ';
 
     let templateLibraryLink = buildingBlocks.document.createElement('a');
     templateLibraryLink.classList.add(styles.mainText, styles.link);
