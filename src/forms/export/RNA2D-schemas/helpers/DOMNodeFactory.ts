@@ -93,7 +93,7 @@ class IntroLineFactory {
 
     let r2dtLink = buildingBlocks.document.createElement('a');
     r2dtLink.classList.add(styles.link);
-    r2dtLink.href = 'https://rnacentral.org/r2dt';
+    r2dtLink.href = 'https://r2dt.bio/';
     r2dtLink.target = '_blank';
     r2dtLink.rel = 'noreferrer noopener';
     r2dtLink.textContent = 'RNA 2D';
