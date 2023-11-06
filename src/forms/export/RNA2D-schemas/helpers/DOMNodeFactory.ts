@@ -77,6 +77,7 @@ class MainContentFactory {
       (new WhatIsCanonicalSectionFactory()).produceUsing(buildingBlocks),
       exportButtonContainer,
       (new SubmissionSectionFactory()).produceUsing(buildingBlocks),
+      (new LocalUseSectionFactory()).produceUsing(buildingBlocks),
     ];
 
     let mainContent = buildingBlocks.document.createElement('div');
@@ -301,6 +302,28 @@ class SubmissionSectionTrailerFactory {
     trailer.classList.add(styles.mainText, styles.submissionSectionTrailer);
     trailer.textContent = 'All submissions are welcome!'
     return trailer;
+  }
+}
+
+class LocalUseSectionFactory {
+  produceUsing(buildingBlocks: BasicBuildingBlocks) {
+    let leadingText = buildingBlocks.document.createElement('span');
+    leadingText.textContent = 'For private, local use of exported RNA 2D JSON schemas, see the ';
+
+    let r2dtDocsLink = buildingBlocks.document.createElement('a');
+    r2dtDocsLink.classList.add(styles.link);
+    r2dtDocsLink.href = 'https://docs.r2dt.bio/en/latest/templates.html#creating-templates-using-rna-2d-json-schema-files';
+    r2dtDocsLink.target = '_blank';
+    r2dtDocsLink.rel = 'noreferrer noopener';
+    r2dtDocsLink.textContent = 'R2DT docs';
+
+    let trailingText = buildingBlocks.document.createElement('span');
+    trailingText.textContent = '.';
+
+    let localUseSection = buildingBlocks.document.createElement('p');
+    localUseSection.classList.add(styles.mainText, styles.localUseSection);
+    localUseSection.append(leadingText, r2dtDocsLink, trailingText);
+    return localUseSection;
   }
 }
 

@@ -181,6 +181,10 @@
   font-weight: 700;
 }
 
+.localUseSection {
+  margin-top: 23px;
+}
+
 .closeButtonContainer {
   position: absolute;
   top: 16px;
