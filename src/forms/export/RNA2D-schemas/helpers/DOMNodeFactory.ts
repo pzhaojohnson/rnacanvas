@@ -137,7 +137,7 @@ class WhatGetsIncludedListFactory {
 
     let includedItems = [
       'The nucleotide letter sequence',
-      'Canonical secondary bond base-pairs',
+      'Only canonical secondary bond base-pairs',
     ];
 
     let dottedLines = includedItems.map(
@@ -180,19 +180,15 @@ class WhatIsCanonicalSectionFactory {
   produceUsing(buildingBlocks: BasicBuildingBlocks) {
     let firstLineText = buildingBlocks.document.createElement('p');
     firstLineText.classList.add(styles.mainText, styles.whatIsCanonicalFirstLineText);
-    firstLineText.textContent = 'Canonical base-pairs include AU/AT, GC and GU/GT pairs.';
+    firstLineText.textContent = '(Canonical base-pairs include AU/AT, GC and GU/GT pairs.)';
 
     let firstLine = buildingBlocks.document.createElement('div');
     firstLine.classList.add(styles.whatIsCanonicalFirstLine);
     firstLine.append(firstLineText);
 
-    let secondLine = buildingBlocks.document.createElement('p');
-    secondLine.classList.add(styles.mainText, styles.whatIsCanonicalSecondLine);
-    secondLine.textContent = '(No other base-pairs will be included.)';
-
     let whatIsCanonicalSection = buildingBlocks.document.createElement('div');
     whatIsCanonicalSection.classList.add(styles.whatIsCanonicalSection);
-    whatIsCanonicalSection.append(firstLine, secondLine);
+    whatIsCanonicalSection.append(firstLine);
     return whatIsCanonicalSection;
   }
 }
@@ -223,7 +219,7 @@ class SubmissionSectionFactory {
 class SubmissionSectionLeaderFactory {
   produceUsing(buildingBlocks: BasicBuildingBlocks) {
     let leadingText = buildingBlocks.document.createElement('span');
-    leadingText.textContent = 'To submit an RNA 2D JSON schema for inclusion in the R2DT ';
+    leadingText.textContent = 'To submit an exported RNA 2D JSON schema for inclusion in the R2DT ';
 
     let templateLibraryLink = buildingBlocks.document.createElement('a');
     templateLibraryLink.classList.add(styles.mainText, styles.link);
@@ -308,7 +304,7 @@ class SubmissionSectionTrailerFactory {
 class LocalUseSectionFactory {
   produceUsing(buildingBlocks: BasicBuildingBlocks) {
     let leadingText = buildingBlocks.document.createElement('span');
-    leadingText.textContent = 'For private, local use of exported RNA 2D JSON schemas, see the ';
+    leadingText.textContent = 'For local, private use of exported RNA 2D JSON schemas, see the ';
 
     let r2dtDocsLink = buildingBlocks.document.createElement('a');
     r2dtDocsLink.classList.add(styles.link);
