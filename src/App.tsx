@@ -21,6 +21,8 @@ import { Infobar } from './infobar/Infobar';
 
 import { FormContainer } from './FormContainer';
 
+import { Signaller } from 'Utilities/Signaller';
+
 import { fetchRNA2DSchema } from 'Foreign/RNA2D/fetchRNA2DSchema';
 
 import { createRNAcanvasDrawingFragment } from 'Foreign/RNA2D/convert/schemas/createRNAcanvasDrawingFragment';
@@ -70,6 +72,11 @@ export class App {
   readonly undoRedo: UndoRedo<StrictDrawingSavableState>;
 
   settings: Settings;
+
+  /**
+   * Can be used to listen for when the app is refreshed.
+   */
+  readonly refreshSignaller = new Signaller();
 
   constructor(options?: Options) {
     this.node = document.createElement('div');
@@ -140,6 +147,8 @@ export class App {
     ReactDOM.render(<Infobar app={this} />, this.infobarContainer);
     this.formContainer.refresh();
     this.updateDocumentTitle();
+
+    this.refreshSignaller.signal();
   }
 
   pushUndo() {
