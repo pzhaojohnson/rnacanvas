@@ -6,6 +6,7 @@ import { App } from 'App';
 
 import { CiteButtonShowerBuilder as CiteMenuButtonShowerBuilder } from 'Menu/cite/2/CiteButtonShowerBuilder';
 import { ContactButtonShowerBuilder as ContactMenuButtonShowerBuilder } from 'Menu/contact/ContactButtonShowerBuilder';
+import { RNA2DButtonBuilder } from 'Menu/RNA2D/RNA2DButtonBuilder';
 
 import { BasesShiftingToolBuilder } from 'Draw/interact/drag/bases/shift/BasesShiftingToolBuilder';
 
@@ -156,6 +157,7 @@ setTimeout(() => {
   waitMilliseconds(250).then(() => {
     (new CiteMenuButtonShowerBuilder()).build().show();
     (new ContactMenuButtonShowerBuilder()).build().show();
+    (new RNA2DButtonBuilder()).buildWith({ targetApp: app, theDocumentForTheApp: document });
   });
 
   waitMilliseconds(500).then(() => {
