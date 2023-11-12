@@ -137,7 +137,7 @@ class WhatGetsIncludedListFactory {
 
     let includedItems = [
       'The nucleotide letter sequence',
-      'Only canonical secondary bond base-pairs',
+      'Canonical secondary bond base-pairs',
     ];
 
     let dottedLines = includedItems.map(
@@ -180,7 +180,7 @@ class WhatIsCanonicalSectionFactory {
   produceUsing(buildingBlocks: BasicBuildingBlocks) {
     let firstLineText = buildingBlocks.document.createElement('p');
     firstLineText.classList.add(styles.mainText, styles.whatIsCanonicalFirstLineText);
-    firstLineText.textContent = '(Canonical base-pairs include AU/AT, GC and GU/GT pairs.)';
+    firstLineText.textContent = 'The canonical base-pairs are: AU/AT, GC and GU/GT.';
 
     let firstLine = buildingBlocks.document.createElement('div');
     firstLine.classList.add(styles.whatIsCanonicalFirstLine);
@@ -256,7 +256,7 @@ class OpeningAGitHubIssueOptionFactory {
   produceUsing(buildingBlocks: BasicBuildingBlocks) {
     let linkToOpenAGitHubIssue = buildingBlocks.document.createElement('a');
     linkToOpenAGitHubIssue.classList.add(styles.mainText, styles.link);
-    linkToOpenAGitHubIssue.href = 'https://github.com/rnacentral/r2dt/issues/new?title=A%20new%20template&body=Describe%20your%20new%20template%20and%20attach%20your%20RNA%202D%20template%20file';
+    linkToOpenAGitHubIssue.href = 'https://github.com/rnacentral/r2dt/issues/new?title=A%20new%20template&body=Describe%20your%20new%20template%20and%20attach%20an%20RNA%202D%20JSON%20schema%20file';
     linkToOpenAGitHubIssue.target = '_blank';
     linkToOpenAGitHubIssue.rel = 'noreferrer noopener';
     linkToOpenAGitHubIssue.textContent = 'Open a GitHub issue';

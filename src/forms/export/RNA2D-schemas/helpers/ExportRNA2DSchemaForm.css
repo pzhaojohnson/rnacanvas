@@ -1,14 +1,14 @@
 .exportRNA2DSchemaForm {
   position: fixed;
 
-  top: 71px;
-  right: 63px;
+  top: 60px;
+  right: 55px;
   left: 66px;
   bottom: 60px;
   overflow: auto;
 
-  max-width: 486px;
-  max-height: 560px;
+  max-width: 503px;
+  max-height: 571px;
   margin-left: auto;
 
   z-index: 10;
@@ -56,7 +56,7 @@
 .mainContent {
   margin-top: 28px;
   margin-right: 38px;
-  margin-bottom: 32px;
+  margin-bottom: 38px;
   margin-left: 57px;
 
   /**
@@ -122,7 +122,7 @@
 }
 
 .whatIsCanonicalSection {
-  margin-top: 23px;
+  margin-top: 20px;
 
   display: flex;
   flex-direction: column;
@@ -151,14 +151,14 @@
 }
 
 .exportButtonContainer {
-  margin-top: 57px;
+  margin-top: 58px;
   width: fit-content;
 
   pointer-events: auto;
 }
 
 .submissionSection {
-  margin-top: 34px;
+  margin-top: 37px;
 }
 
 .submissionOptionsList {
@@ -177,7 +177,7 @@
 }
 
 .localUseSection {
-  margin-top: 22px;
+  margin-top: 26px;
 }
 
 .closeButtonContainer {
