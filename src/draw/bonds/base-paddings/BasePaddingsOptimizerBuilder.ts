@@ -7,7 +7,7 @@ import { OptimalBasePaddingCalculator2 } from './OptimalBasePaddingCalculator2';
 
 export class BasePaddingsOptimizerBuilder {
   buildForPrimaryBonds() {
-    let scalingFactor = 0.689655172413793;
+    let scalingFactor = 0.590163915972978;
 
     return new BasePaddingsOptimizer({
       basePadding1Optimizer: new BasePadding1Optimizer({
@@ -24,7 +24,7 @@ export class BasePaddingsOptimizerBuilder {
   }
 
   buildForSecondaryBonds() {
-    let scalingFactor = 0.541871921182266;
+    let scalingFactor = 0.5049014981555302;
 
     return new BasePaddingsOptimizer({
       basePadding1Optimizer: new BasePadding1Optimizer({
@@ -41,7 +41,7 @@ export class BasePaddingsOptimizerBuilder {
   }
 
   buildForTertiaryBonds() {
-    let scalingFactor = 0.7881773399014778;
+    let scalingFactor = 0.6147540791385188;
 
     return new BasePaddingsOptimizer({
       basePadding1Optimizer: new BasePadding1Optimizer({
