@@ -51,7 +51,8 @@
 }
 
 .referenceLink {
-  color: rgb(15, 15, 219);
+  color: rgb(28, 13, 219);
+  font-weight: 600;
 
   pointer-events: auto;
   cursor: pointer;

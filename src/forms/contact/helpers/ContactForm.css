@@ -43,7 +43,8 @@
 }
 
 .link {
-  color: rgb(12, 12, 199);
+  color: rgb(28, 13, 219);
+  font-weight: 600;
 
   pointer-events: auto;
   cursor: pointer;
