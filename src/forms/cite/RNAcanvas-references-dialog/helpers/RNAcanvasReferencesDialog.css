@@ -2,26 +2,15 @@
   width: 28px;
 }
 
-.headerRNAText {
+.headerText {
   position: absolute;
-  top: -3px;
+  top: -4px;
   left: 42px;
 
   font-family: "Open Sans", sans-serif;
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 700;
   font-style: normal;
-  color: black;
-}
-
-.headerCanvasText {
-  position: absolute;
-  top: -9px;
-  left: 98px;
-
-  font-family: "Corinthia", cursive;
-  font-size: 42px;
-  font-weight: 400;
   color: black;
 }
 

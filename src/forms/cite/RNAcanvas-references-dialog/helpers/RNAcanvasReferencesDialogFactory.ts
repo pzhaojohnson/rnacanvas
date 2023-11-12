@@ -8,19 +8,14 @@ class HeaderFactory {
     appIcon.classList.add(styles.appIcon);
     appIcon.src = appIconSrc;
 
-    let rnaText = document.createElement('p');
-    rnaText.classList.add(styles.headerRNAText);
-    rnaText.textContent = 'RNA';
-
-    let canvasText = document.createElement('p');
-    canvasText.classList.add(styles.headerCanvasText);
-    canvasText.textContent = 'canvas';
+    let headerText = document.createElement('p');
+    headerText.classList.add(styles.headerText);
+    headerText.textContent = 'Cite';
 
     let header = document.createElement('div');
     header.classList.add(styles.header);
     header.appendChild(appIcon);
-    header.appendChild(rnaText);
-    header.appendChild(canvasText);
+    header.appendChild(headerText);
     return header;
   }
 }
