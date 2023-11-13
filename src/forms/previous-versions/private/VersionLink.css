@@ -10,7 +10,7 @@
 }
 
 .versionLink:visited {
-  color: hsl(300, 74.67%, 28.05%);
+  color: hsl(240, 84%, 45%);
 }
 
 .versionLink:hover {
@@ -22,7 +22,7 @@
 }
 
 .versionLink:visited .arrowHead {
-  stroke: hsl(300, 74.67%, 28.05%);
+  stroke: hsl(240, 84%, 45%);
 }
 
 .arrowShaft {
@@ -30,5 +30,5 @@
 }
 
 .versionLink:visited .arrowShaft {
-  stroke: hsl(300, 74.67%, 28.05%);
+  stroke: hsl(240, 84%, 45%);
 }
