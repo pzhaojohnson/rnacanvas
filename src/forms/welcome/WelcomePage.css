@@ -103,11 +103,24 @@
   }
 }
 
-.linkToPreviousVersionsForm {
-  margin: 9px 0px 0px 0px;
+.linkToPreviousVersionsFormArrow {
+  height: 14px;
 
-  align-self: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  translate: 16px 2px;
+}
 
+.linkToPreviousVersionsFormArrowHead {
+  stroke: hsl(292.85, 87.79%, 32.75%);
+}
+
+.linkToPreviousVersionsFormArrowShaft {
+  stroke: hsl(292.85, 87.79%, 32.75%);
+}
+
+.linkToPreviousVersionsFormText {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -116,11 +129,24 @@
   cursor: pointer;
 
   text-decoration: none;
+}
+
+.linkToPreviousVersionsForm {
+  margin: 9px 0px 0px 0px;
+
+  align-self: center;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+
+  cursor: pointer;
 
   animation: linkToPreviousVersionsFormFadeIn 3s ease-in;
 }
 
-.linkToPreviousVersionsForm:hover {
+.linkToPreviousVersionsForm:hover .linkToPreviousVersionsFormText {
   text-decoration: underline;
 }
 
