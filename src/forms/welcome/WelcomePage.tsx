@@ -136,9 +136,9 @@ export function WelcomePage(props: Props) {
           <Header />
           <div style={{ margin: '0px 95px', display: 'flex', flexDirection: 'column' }} >
             <AppDescription />
-            <div style={{ margin: '61px 39px 0', display: 'flex', flexDirection: 'row' }} >
+            <div style={{ margin: '61px 35px 0', display: 'flex', flexDirection: 'row' }} >
               <NewButton {...props} />
-              <div style={{ width: '49px' }} />
+              <div style={{ width: '45px' }} />
               <OpenButton {...props} />
             </div>
             <MoreInfo />

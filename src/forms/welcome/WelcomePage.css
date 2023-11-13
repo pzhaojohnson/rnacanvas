@@ -2,7 +2,7 @@
   margin: 35px 0 0 0;
   font-size: 16px;
   font-weight: 500;
-  color: hsl(240, 4.17%, 11.04%);
+  color: hsl(240, 4.71%, 7.16%);
 
   user-select: none;
   -webkit-user-select: none;
@@ -31,7 +31,7 @@
   bottom: 0px;
   left: 0px;
 
-  border: 1px solid hsl(240, 32.65%, 69.56%);
+  border: 1px solid hsl(240, 34.62%, 67.12%);
   border-radius: 24px;
 
   z-index: -1;
@@ -53,11 +53,12 @@
 
   font-size: 16px;
   font-weight: 500;
-  color: hsl(240, 4.17%, 11.04%);
+  color: hsl(240, 4.71%, 7.16%);
 }
 
 .moreInfoLinks {
-  color: hsl(270, 98%, 29%);
+  color: hsl(292.85, 86.05%, 33.59%);
+  font-weight: 600;
   text-decoration-line: none;
 }
 
@@ -66,7 +67,8 @@
 }
 
 .updatesLink {
-  color: hsl(270, 98%, 29%);
+  color: hsl(292.85, 86.05%, 35.47%);
+  font-weight: 600;
   text-decoration-line: none;
 }
 
@@ -80,13 +82,13 @@
 
   font-size: 14px;
   font-weight: 500;
-  color: hsl(240, 4.17%, 11.04%);
+  color: hsl(240, 4.71%, 7.16%);
 
   animation: updatesNoticeFadeIn 2s ease-in;
 }
 
 .updatesNoticeDate {
-  color: hsl(240, 4.17%, 11.04%);
+  color: hsl(240, 4.71%, 7.16%);
 }
 
 @keyframes updatesNoticeFadeIn {
@@ -108,8 +110,8 @@
 
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
-  font-weight: 500;
-  color: hsl(270.3, 77.78%, 24.19%);
+  font-weight: 600;
+  color: hsl(292.85, 87.79%, 32.75%);
 
   cursor: pointer;
 
@@ -135,9 +137,9 @@
 }
 
 .topSection {
-  margin: 126px 0 0 0;
+  margin: 124px 0 0 0;
 
-  width: 960px;
+  width: 962px;
   display: flex;
   flex-direction: column;
 

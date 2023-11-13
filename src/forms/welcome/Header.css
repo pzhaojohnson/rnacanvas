@@ -41,10 +41,10 @@
 }
 
 .underline {
-  margin: 10px 0 0 0;
+  margin: 11px 0 0 0;
 
   height: 0px;
   border-width: 0px 0px 1px 0px;
   border-style: solid;
-  border-color: hsl(240, 22.93%, 83.78%);
+  border-color: hsla(240, 14.41%, 74.3%, 0.96);
 }
