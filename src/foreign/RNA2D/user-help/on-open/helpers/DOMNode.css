@@ -175,8 +175,8 @@
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.06);
   border-radius: 15px;
 
-  background-color: #f0f0ffa3;
+  background-color: #f0f0ffc2;
 
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
 }
