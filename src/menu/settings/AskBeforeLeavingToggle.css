@@ -9,8 +9,8 @@
 }
 
 .pillContainer {
-  min-width: 157px;
-  min-height: 21px;
+  min-width: 158px;
+  min-height: 22px;
 
   /* use before pseudo-element for border and box shadow */
   border: none;
@@ -28,7 +28,6 @@
   content: "";
   border-width: 0px;
   border-radius: 60px;
-  background-color: #20052d;
 
   position: absolute;
   top: 0px;
@@ -40,24 +39,34 @@
 
 .text {
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 600;
   color: white;
   cursor: pointer;
 }
 
-.spacer {
-  width: 7px;
+.on .pillContainer::before {
+  background-color: #291632;
 }
 
-.check {}
+.off .pillContainer::before {
+  background-color: #7e6887;
+}
 
 .askBeforeLeavingToggle:hover .pillContainer::before {
-  background-color: #42264e;
+  transform: scale(1.05);
+  transition: transform 0.1s;
 }
 
 .askBeforeLeavingToggle:active .pillContainer::before {
-  background-color: #634a6c;
+  transform: scale(1);
+  transition: transform 0s;
 }
+
+.spacer {
+  width: 8px;
+}
+
+.check {}
 
 .on .spacer {
   display: block;
