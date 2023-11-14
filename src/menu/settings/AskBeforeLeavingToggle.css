@@ -1,7 +1,7 @@
 .askBeforeLeavingToggle {
   position: fixed;
   top: 5px;
-  right: 11px;
+  right: 12px;
 
   border-radius: 60px;
 
@@ -9,7 +9,7 @@
 }
 
 .pillContainer {
-  min-width: 158px;
+  min-width: 160px;
   min-height: 22px;
 
   /* use before pseudo-element for border and box shadow */

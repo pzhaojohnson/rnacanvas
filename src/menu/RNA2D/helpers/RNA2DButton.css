@@ -1,15 +1,15 @@
 .rna2DButton {
   position: fixed;
   top: 5px;
-  left: 300px;
+  left: 301px;
 
   z-index: 3;
 
   border: none;
   outline: none;
 
-  min-width: 74px;
-  min-height: 21px;
+  min-width: 75px;
+  min-height: 22px;
   border-radius: 1000px;
   background-color: rgba(231, 231, 255, 1);
 

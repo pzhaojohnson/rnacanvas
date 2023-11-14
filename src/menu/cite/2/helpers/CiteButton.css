@@ -1,15 +1,15 @@
 .positionedCiteButton {
   position: fixed;
   top: 5px;
-  right: 266px;
+  right: 275px;
 
   z-index: 3;
 
   border: none;
   outline: none;
 
-  min-width: 65px;
-  min-height: 21px;
+  min-width: 66px;
+  min-height: 22px;
   border-radius: 1000px;
   background-color: rgba(231, 231, 255, 1);
 

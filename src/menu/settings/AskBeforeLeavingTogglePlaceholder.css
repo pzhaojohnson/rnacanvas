@@ -1,9 +1,9 @@
 .askBeforeLeavingTogglePlaceholder {
   position: fixed;
   top: 5px;
-  right: 11px;
+  right: 12px;
 
-  width: 158px;
+  width: 160px;
   height: 22px;
   border-radius: 1000px;
   background-color: hsla(240, 26.76%, 90.44%, 0.53);
