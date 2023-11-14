@@ -1,31 +1,31 @@
 .header {
-  margin: 15px 44px 0px;
+  margin: 13px 46px 0px;
 
   position: relative;
 }
 
 .title {
-  margin-left: 52px;
+  margin-left: 54px;
 
   position: relative;
 
   font-family: "Open Sans", sans-serif;
-  font-size: 28px;
+  font-size: 27px;
   font-weight: 700;
   color: black;
 }
 
 .RNA {
   font-family: "Open Sans", sans-serif;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
   color: black;
 }
 
 .canvas {
   position: absolute;
-  top: -9px;
-  left: 352px;
+  top: -6px;
+  left: 411px;
 
   font-family: "Corinthia", cursive;
   font-size: 50px;
@@ -34,9 +34,9 @@
 }
 
 .underline {
-  margin-top: 4px;
+  margin-top: 6px;
 
   height: 1px;
 
-  background-color: hsl(240, 30%, 88%);
+  background-color: hsla(240, 21.21%, 80.96%, 0.96);
 }
