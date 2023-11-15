@@ -12,7 +12,7 @@
 
   border-width: 0px 0px 1px 0px;
   border-style: solid;
-  border-color: hsla(240, 25.43%, 85.92%, 1);
+  border-color: hsla(240, 20.4%, 78.64%, 1);
 
   height: 0px;
 }
@@ -25,7 +25,7 @@
 }
 
 .body {
-  height: 586px;
+  height: 596px;
 
   display: flex;
   flex-direction: column;

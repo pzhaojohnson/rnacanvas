@@ -2,15 +2,15 @@
   margin: 0 0 0 8px; /* margins are nonzero by default for Safari */
   flex-grow: 1;
 
-  border: 1px solid hsl(240, 15.6%, 70.97%);
+  border: 1px solid hsl(240, 15.25%, 66.96%);
   border-radius: 2px;
-  padding: 0px 7px;
+  padding: 0px 8px;
   min-height: 23px;
 
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
-  font-weight: 500;
-  color: hsl(240, 3.63%, 6.75%);
+  font-weight: 600;
+  color: hsl(240, 2.56%, 4.88%);
 }
 
 .textInput:hover {

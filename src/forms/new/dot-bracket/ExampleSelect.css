@@ -10,7 +10,7 @@
   font-size: 11px;
   font-weight: 700;
   font-style: normal;
-  color: hsl(240, 79.37%, 10.87%);
+  color: hsl(240, 79.37%, 11.15%);
 
   /* use before pseudo-element for background and border */
   background-color: transparent;
@@ -34,7 +34,7 @@
   bottom: 0px;
   left: 0px;
 
-  border: 1px solid hsl(240, 22.1%, 71.76%);
+  border: 1px solid hsl(240, 21.28%, 67.61%);
   border-radius: 40px;
 
   z-index: -1;

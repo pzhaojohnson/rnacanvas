@@ -6,7 +6,7 @@ function LabelSpacer() {
 }
 
 function ExamplesSpacer() {
-  return <div style={{ flexGrow: 3 }} />;
+  return <div style={{ flexGrow: 2 }} />;
 }
 
 function EndSpacer() {
@@ -23,7 +23,7 @@ export function ExampleSelect(props: Props): React.ReactElement {
     <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }} >
       <p
         className='unselectable'
-        style={{ fontSize: '14px', fontWeight: 600, fontStyle: 'italic', color: 'rgb(46, 46, 52)' }}
+        style={{ fontSize: '14px', fontWeight: 600, fontStyle: 'italic', color: 'rgb(32, 32, 36)' }}
       >
         Examples...
       </p>

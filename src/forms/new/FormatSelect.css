@@ -1,7 +1,8 @@
 .formatSelect {
   margin-right: 101px;
+  margin-bottom: 1px;
 
-  border: 1px solid hsla(240, 21.77%, 78.91%, 1);
+  border: 1px solid hsla(240, 19.62%, 70.76%, 1);
   border-radius: 60px;
 
   width: 168px;
@@ -24,7 +25,6 @@
 
   font-family: 'Open Sans', sans-serif;
   font-size: 11px;
-  font-weight: 700;
   font-style: normal;
 
   user-select: none;
@@ -37,6 +37,7 @@
 
 .toggledFormatButton {
   border: 1px solid #0c0c0d;
+  font-weight: 600;
   color: white;
   background-color: #0c0c0d;
 
@@ -45,6 +46,7 @@
 
 .untoggledFormatButton {
   border: 1px solid white;
+  font-weight: 700;
   color: rgb(7, 7, 8);
   background-color: white;
 

@@ -100,7 +100,7 @@ export function FloatingDrawingsContainer(props: Props): React.ReactElement {
         </div>
       </div>
       <div style={{ display: 'flex', flexDirection: 'column' }} >
-        <div style={{ margin: '24px 0px', flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }} >
+        <div style={{ margin: '41px 0px', flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }} >
           {props.contained}
         </div>
       </div>
