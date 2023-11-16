@@ -144,6 +144,6 @@
 
   background-color: #f0f0ffc2;
 
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
