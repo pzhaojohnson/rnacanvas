@@ -6,7 +6,7 @@ import styles from './CTFileInput.css';
 
 function DefaultText() {
   let CT = (
-    <span className={styles.CT} >CT</span>
+    <span className={styles.CT} >.ct</span>
   );
 
   return (
