@@ -76,18 +76,21 @@ function RNAfoldLink() {
 }
 
 function Details() {
+  let CT = <span style={{ fontWeight: 700 }} >CT</span>;
+
   let Mfold = <MfoldLink />;
   let RNAfold = <RNAfoldLink />;
+
   return (
     <div className={styles.details} >
       <p className={styles.detailsText} >
-        CT "Connectivity Table" files
+        {CT} "Connectivity Table" files
         are produced by RNA structure prediction programs
         such as {Mfold} and {RNAfold}.
       </p>
       <p className={styles.detailsText} style={{ marginTop: '26px' }} >
-        If a CT file contains multiple structures,
-        only the first structure in the CT file will be drawn.
+        If a {CT} file contains multiple structures,
+        only the first structure in the {CT} file will be drawn.
       </p>
     </div>
   );

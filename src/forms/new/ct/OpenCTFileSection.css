@@ -8,7 +8,8 @@
 }
 
 .predictionProgramLink {
-  color: hsl(270, 98%, 29%);
+  font-weight: 600;
+  color: hsl(236.89, 89.57%, 46.16%);
   text-decoration: none;
 }
 
@@ -24,9 +25,9 @@
 
 .detailsText {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: hsl(240, 3.63%, 6.27%);
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(240, 2.04%, 3.43%);
 
   user-select: none;
   -webkit-user-select: none;
