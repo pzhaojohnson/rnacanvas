@@ -57,7 +57,7 @@
 }
 
 .moreInfoLinks {
-  color: hsl(292.85, 86.92%, 33.71%);
+  color: rgb(29, 14, 219);
   font-weight: 600;
   text-decoration-line: none;
 }
@@ -67,7 +67,7 @@
 }
 
 .updatesLink {
-  color: hsl(292.85, 85.19%, 36.45%);
+  color: rgb(27, 12, 215);
   font-weight: 600;
   text-decoration-line: none;
 }
@@ -113,18 +113,18 @@
 }
 
 .linkToPreviousVersionsFormArrowHead {
-  stroke: hsl(292.85, 87.79%, 32.75%);
+  stroke: rgb(27, 12, 219);
 }
 
 .linkToPreviousVersionsFormArrowShaft {
-  stroke: hsl(292.85, 87.79%, 32.75%);
+  stroke: rgb(27, 12, 219);
 }
 
 .linkToPreviousVersionsFormText {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 600;
-  color: hsl(292.85, 87.79%, 32.75%);
+  color: rgb(27, 12, 219);
 
   cursor: pointer;
 
