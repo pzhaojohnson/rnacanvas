@@ -1,7 +1,7 @@
 .ctFileInput {
   border-radius: 60px;
 
-  width: 608px;
+  width: 614px;
 
   padding: 12px 0px;
 
@@ -21,7 +21,7 @@
 .ctFileInput::before {
   content: "";
 
-  border: 1px solid hsl(240, 22.63%, 71.57%);
+  border: 1px solid hsl(240, 25.74%, 67.01%);
   border-radius: 60px;
 
   position: absolute;
@@ -48,7 +48,7 @@
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
-  color: #09094d;
+  color: #080845;
 
   cursor: pointer;
 
@@ -58,7 +58,7 @@
 
 .CT {
   font-weight: 700;
-  color: #080847;
+  color: #070740;
 }
 
 .fileName {
@@ -68,7 +68,7 @@
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
-  color: #070747;
+  color: #06063b;
 
   text-align: center;
   text-overflow: ellipsis;
