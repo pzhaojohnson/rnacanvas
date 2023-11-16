@@ -68,6 +68,8 @@ function GitHubLink() {
     <a
       className={styles.moreInfoLinks}
       href='https://github.com/pzhaojohnson/rnacanvas/blob/main/README.md'
+      target='_blank'
+      rel='noreferrer noopener'
     >
       GitHub page
     </a>
@@ -89,6 +91,8 @@ function UpdatesLink() {
     <a
       className={styles.updatesLink}
       href='https://github.com/pzhaojohnson/rnacanvas/releases'
+      target='_blank'
+      rel='noreferrer noopener'
     >
       Latest Updates
     </a>
