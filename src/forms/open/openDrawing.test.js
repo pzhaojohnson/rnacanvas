@@ -75,17 +75,6 @@ describe('AppWrapper class', () => {
     });
   });
 
-  test('openLegacyDrawing method', () => {
-    let fileName = 'three-tertiary-interactions.rna2drawer';
-    let file = openLegacyDrawingFile(fileName);
-
-    return file.text().then(drawingFileContents => {
-      appWrapper.openLegacyDrawing({ drawingFileContents });
-      expect(app.drawing.sequences.length).toBe(1);
-      expect(app.drawing.sequences[0].length).toBe(16);
-    });
-  });
-
   describe('openDrawing method', () => {
     test('JSON drawing with .rnacanvas extension', () => {
       let file = openJSONDrawingFile('hairpin.rnacanvas');
@@ -114,24 +103,6 @@ describe('AppWrapper class', () => {
       });
     });
 
-    test('legacy drawing with .rna2drawer extension', () => {
-      let file = openLegacyDrawingFile('hairpin.rna2drawer');
-
-      return appWrapper.openDrawing({ file }).then(() => {
-        expect(app.drawing.sequences.length).toBe(1);
-        expect(app.drawing.sequences[0].length).toBe(14);
-      });
-    });
-
-    test('legacy drawing with .rnacanvas extension', () => {
-      let file = openLegacyDrawingFile('legacy-drawing.rnacanvas');
-
-      return appWrapper.openDrawing({ file }).then(() => {
-        expect(app.drawing.sequences.length).toBe(1);
-        expect(app.drawing.sequences[0].length).toBe(14);
-      });
-    });
-
     test('file with unsupported file extension', () => {
       let file = openJSONDrawingFile('unsupported-file-extension.txt');
       let errorMessage = 'Drawing files must have .rnacanvas or .rna2drawer extension.';
@@ -149,12 +120,16 @@ describe('AppWrapper class', () => {
       ).rejects.toEqual(new Error('Drawing is invalid.'));
     });
 
-    test('invalid legacy drawing file', () => {
-      let file = openLegacyDrawingFile('missing-sequence-line.rna2drawer');
+    /**
+     * A drawing from the original RNA2Drawer desktop app
+     * (from before the web app was even made).
+     */
+    test('a legacy drawing file', () => {
+      let file = openLegacyDrawingFile('hairpin.rna2drawer');
 
       return expect(
         appWrapper.openDrawing({ file })
-      ).rejects.toEqual(new Error('Drawing is empty.'));
+      ).rejects.toEqual(new Error('Invalid drawing file.'));
     });
 
     test('empty drawing file', () => {

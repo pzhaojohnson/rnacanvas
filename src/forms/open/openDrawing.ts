@@ -12,13 +12,10 @@ import * as OpenJSONDrawing from './openJSONDrawing';
 
 import type { JSONDrawing } from './openJSONDrawing';
 
-import * as OpenLegacyDrawing from './legacy/openLegacyDrawing';
-
-import type { LegacyDrawing } from './legacy/openLegacyDrawing';
-
 const errorMessages = {
   'blank-drawing-file': 'Drawing file is empty.',
   'unsupported-file-extension': 'Drawing files must have .rnacanvas or .rna2drawer extension.',
+  'invalid-drawing-file': 'Invalid drawing file.',
 };
 
 export type SavedDrawing = (
@@ -38,11 +35,6 @@ export class AppWrapper {
   openJSONDrawing(drawing: JSONDrawing): void | never {
     let app = new OpenJSONDrawing.AppWrapper(this.app);
     app.openJSONDrawing(drawing);
-  }
-
-  openLegacyDrawing(drawing: LegacyDrawing): void | never {
-    let app = new OpenLegacyDrawing.AppWrapper(this.app);
-    app.openLegacyDrawing(drawing);
   }
 
   /**
@@ -74,14 +66,10 @@ export class AppWrapper {
       throw new Error(errorMessages['blank-drawing-file']);
     }
 
-    // some users when renaming drawing files might lose the
-    // trailing "2" for files with .rna2drawer2 extension
-    // (best to distinguish between drawing file types based on the
-    // contents of drawing files)
     if (isJSON(drawingFileContents)) {
       this.openJSONDrawing({ drawingFileContents });
     } else {
-      this.openLegacyDrawing({ drawingFileContents });
+      throw new Error(errorMessages['invalid-drawing-file']);
     }
 
     let drawingTitle = removeFileExtension(file.name);
