@@ -16,10 +16,6 @@ import { DrawingFileInput } from './DrawingFileInput';
 
 import { ErrorMessage as _ErrorMessage } from 'Forms/ErrorMessage';
 
-import { DetailsToggle as _DetailsToggle } from 'Forms/buttons/DetailsToggle';
-
-import { LegacyDrawingNotes } from './LegacyDrawingNotes';
-
 import { createWaitOverlay } from 'Utilities/createWaitOverlay';
 
 function Header() {
@@ -91,21 +87,6 @@ function FileExtensionsNote(
   );
 }
 
-function DetailsToggle(
-  props: {
-    onClick: () => void,
-  },
-) {
-  return (
-    <_DetailsToggle
-      onClick={props.onClick}
-      style={{ marginRight: '467px', fontSize: '12px', minWidth: '76px', minHeight: '22px' }}
-    >
-      Details
-    </_DetailsToggle>
-  );
-}
-
 export type Props = {
   /**
    * A reference to the whole app.
@@ -127,8 +108,6 @@ export function OpenDrawingForm(props: Props) {
   // to be incremented whenever the error message is set
   // (to trigger error message animations)
   let [errorMessageKey, setErrorMessageKey] = useState(0);
-
-  let [showDetails, setShowDetails] = useState(false);
 
   // to be called when a saved drawing is successfully opened
   let handleSuccess = () => {
@@ -178,18 +157,6 @@ export function OpenDrawingForm(props: Props) {
     />
   );
 
-  let detailsToggleSpacer = (
-    <div style={{ height: '44px' }} />
-  );
-
-  let detailsToggle = (
-    <DetailsToggle
-      onClick={() => setShowDetails(!showDetails)}
-    />
-  );
-
-  let legacyDrawingNotes = showDetails ? <LegacyDrawingNotes /> : null;
-
   return (
     <FloatingDrawingsContainer
       contained={
@@ -199,9 +166,6 @@ export function OpenDrawingForm(props: Props) {
             {drawingFileInput}
             {errorMessage}
             {fileExtensionsNote}
-            {detailsToggleSpacer}
-            {detailsToggle}
-            {legacyDrawingNotes}
           </div>
         </div>
       }
