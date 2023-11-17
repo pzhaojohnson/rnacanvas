@@ -9,17 +9,17 @@
 .title {
   margin: 0px 93px;
 
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 700;
   color: #151516;
 }
 
 .titleUnderline {
-  margin-top: 8px;
+  margin-top: 9px;
 
   border-width: 0px 0px 1px 0px;
   border-style: solid;
-  border-color: hsla(240, 29.95%, 85.73%, 1);
+  border-color: hsla(240, 27.67%, 79.26%, 1);
 
   height: 0px;
 }

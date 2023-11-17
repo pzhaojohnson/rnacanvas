@@ -153,7 +153,7 @@ export function OpenDrawingForm(props: Props) {
 
   let fileExtensionsNote = (
     <FileExtensionsNote
-      style={{ marginTop: errorMessageString ? '26px' : '39px' }}
+      style={{ marginTop: errorMessageString ? '46px' : '59px' }}
     />
   );
 

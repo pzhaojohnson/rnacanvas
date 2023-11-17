@@ -1,5 +1,5 @@
 .drawingFileInput {
-  margin-top: 44px;
+  margin-top: 52px;
 
   border-radius: 60px;
 
@@ -22,7 +22,7 @@
   bottom: 0px;
   left: 0px;
 
-  border: 1px solid hsl(240, 24.79%, 72.74%);
+  border: 1px solid hsl(240, 27.38%, 64.2%);
   border-radius: 60px;
 
   z-index: -1;
