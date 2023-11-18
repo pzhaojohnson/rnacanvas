@@ -40,7 +40,7 @@ export class AppWrapper {
     let applied = this.app.strictDrawing.applySavedState(json as any);
 
     if (!applied) {
-      throw new Error('Drawing is invalid.');
+      throw new Error('Invalid drawing file.');
     }
 
     // adjusts the padding of the drawing to the current screen

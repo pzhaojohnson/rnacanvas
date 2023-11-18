@@ -108,7 +108,7 @@ describe('AppWrapper class', () => {
 
       return expect(
         appWrapper.openDrawing({ file })
-      ).rejects.toEqual(new Error('Drawing is invalid.'));
+      ).rejects.toEqual(new Error('Invalid drawing file.'));
     });
 
     /**
