@@ -153,10 +153,10 @@ export function OpenDrawingForm(props: Props) {
     </ErrorMessage>
   ) : null;
 
+  let errorMessageContainer = <div style={{ minHeight: '46px' }} >{errorMessage}</div>;
+
   let fileExtensionsNote = (
-    <FileExtensionsNote
-      style={{ marginTop: errorMessageString ? '46px' : '59px' }}
-    />
+    <FileExtensionsNote />
   );
 
   return (
@@ -166,7 +166,7 @@ export function OpenDrawingForm(props: Props) {
           <Header />
           <div className={styles.body} >
             {drawingFileInput}
-            {errorMessage}
+            {errorMessageContainer}
             {fileExtensionsNote}
             <HowToSaveADrawingNote />
           </div>
