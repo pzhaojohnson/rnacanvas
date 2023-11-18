@@ -103,15 +103,6 @@ describe('AppWrapper class', () => {
       });
     });
 
-    test('file with unsupported file extension', () => {
-      let file = openJSONDrawingFile('unsupported-file-extension.txt');
-      let errorMessage = 'Drawing files must have .rnacanvas or .rna2drawer extension.';
-
-      return expect(
-        appWrapper.openDrawing({ file })
-      ).rejects.toEqual(new Error(errorMessage));
-    });
-
     test('invalid JSON drawing file', () => {
       let file = openJSONDrawingFile('invalid-base-text-id.rnacanvas');
 

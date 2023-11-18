@@ -1,7 +1,5 @@
 import type { App } from 'App';
 
-import { parseFileExtension } from 'Parse/parseFileExtension';
-
 import { removeFileExtension } from 'Parse/parseFileExtension';
 
 import { isBlank } from 'Parse/isBlank';
@@ -14,7 +12,6 @@ import type { JSONDrawing } from './openJSONDrawing';
 
 const errorMessages = {
   'blank-drawing-file': 'Drawing file is empty.',
-  'unsupported-file-extension': 'Drawing files must have .rnacanvas or .rna2drawer extension.',
   'invalid-drawing-file': 'Invalid drawing file.',
 };
 
@@ -45,20 +42,6 @@ export class AppWrapper {
    */
   async openDrawing(drawing: SavedDrawing) {
     let { file } = drawing;
-
-    let fileExtension = parseFileExtension(file.name);
-
-    let hasRNAcanvasExtension = (
-      fileExtension.toLowerCase().includes('rnacanvas')
-    );
-
-    let hasRNA2DrawerExtension = (
-      fileExtension.toLowerCase().includes('rna2drawer')
-    );
-
-    if (!hasRNAcanvasExtension && !hasRNA2DrawerExtension) {
-      throw new Error(errorMessages['unsupported-file-extension']);
-    }
 
     let drawingFileContents = await file.text();
 
