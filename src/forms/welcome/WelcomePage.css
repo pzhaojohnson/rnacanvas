@@ -84,7 +84,7 @@
   font-weight: 500;
   color: hsl(240, 4.71%, 7.16%);
 
-  animation: updatesNoticeFadeIn 2s ease-in;
+  animation: updatesNoticeFadeIn 1.5s ease-in-out;
 }
 
 .updatesNoticeDate {
@@ -143,7 +143,7 @@
 
   cursor: pointer;
 
-  animation: linkToPreviousVersionsFormFadeIn 3s ease-in;
+  animation: linkToPreviousVersionsFormFadeIn 2s ease-in-out;
 }
 
 .linkToPreviousVersionsForm:hover .linkToPreviousVersionsFormText {
