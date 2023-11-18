@@ -9,7 +9,7 @@ export class CiteButtonFactory {
   producePositioned(): HTMLElement {
     let citeButton = document.createElement('button');
     citeButton.classList.add(styles.positionedCiteButton);
-    citeButton.textContent = '"Cite"';
+    citeButton.textContent = 'Cite';
     return citeButton;
   }
 }
