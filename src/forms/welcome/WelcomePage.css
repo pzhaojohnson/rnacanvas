@@ -67,7 +67,7 @@
 }
 
 .updatesLink {
-  color: rgb(27, 12, 215);
+  color: rgb(28, 13, 218);
   font-weight: 600;
   text-decoration-line: none;
 }
@@ -113,18 +113,18 @@
 }
 
 .linkToPreviousVersionsFormArrowHead {
-  stroke: rgb(27, 12, 219);
+  stroke: rgb(25, 10, 215);
 }
 
 .linkToPreviousVersionsFormArrowShaft {
-  stroke: rgb(27, 12, 219);
+  stroke: rgb(25, 10, 215);
 }
 
 .linkToPreviousVersionsFormText {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 600;
-  color: rgb(27, 12, 219);
+  color: rgb(25, 10, 215);
 
   cursor: pointer;
 
