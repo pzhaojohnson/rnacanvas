@@ -1,0 +1,25 @@
+.arrowPath {
+  stroke: #070753;
+  stroke-width: 2px;
+  stroke-linecap: round;
+
+  fill-opacity: 0;
+}
+
+.arrow {
+  height: 12px;
+}
+
+.topMenuItem {
+  font-weight: 700;
+  color: #070753;
+}
+
+.howToSaveADrawingNote {
+  margin-top: 45px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: hsl(240, 81.82%, 13.47%);
+}

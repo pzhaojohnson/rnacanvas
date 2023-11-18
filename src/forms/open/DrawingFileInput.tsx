@@ -71,6 +71,10 @@ export function DrawingFileInput(props: Props) {
     />
   );
 
+  let dotRNAcanvas = <span className={styles.dotRNAcanvas} >.rnacanvas</span>;
+
+  let defaultTextContent = <span>Upload a {dotRNAcanvas} file...</span>;
+
   let fileName = (
     <span className={styles.fileName} >
       {fileNameString}
@@ -82,7 +86,7 @@ export function DrawingFileInput(props: Props) {
       {fileNameString ? (
         fileName
       ) : (
-        'Upload a drawing file...'
+        defaultTextContent
       )}
     </p>
   );

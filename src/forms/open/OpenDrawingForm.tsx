@@ -16,6 +16,8 @@ import { DrawingFileInput } from './DrawingFileInput';
 
 import { ErrorMessage as _ErrorMessage } from 'Forms/ErrorMessage';
 
+import { HowToSaveADrawingNote } from './HowToSaveADrawingNote';
+
 import { createWaitOverlay } from 'Utilities/createWaitOverlay';
 
 function Header() {
@@ -68,21 +70,21 @@ function FileExtensionsNote(
     style?: React.CSSProperties,
   },
 ) {
-  let dotRNAcanvas = (
-    <span className={styles.dotRNAcanvas} >
-      .rnacanvas
-    </span>
-  );
-
   let dotRNA2Drawer = (
     <span className={styles.dotRNA2Drawer} >
       .rna2drawer
     </span>
   );
 
+  let dotRNA2Drawer2 = (
+    <span className={styles.dotRNA2Drawer} >
+      .rna2drawer2
+    </span>
+  );
+
   return (
     <p className={styles.fileExtensionsNote} style={props.style} >
-      (Drawing files can have {dotRNAcanvas} or {dotRNA2Drawer} extension.)
+      (Older drawings may also have {dotRNA2Drawer} and {dotRNA2Drawer2} extensions.)
     </p>
   );
 }
@@ -166,6 +168,7 @@ export function OpenDrawingForm(props: Props) {
             {drawingFileInput}
             {errorMessage}
             {fileExtensionsNote}
+            <HowToSaveADrawingNote />
           </div>
         </div>
       }

@@ -54,6 +54,11 @@
   cursor: pointer;
 }
 
+.dotRNAcanvas {
+  font-weight: 700;
+  color: #070753;
+}
+
 .fileName {
   color: #080850;
 }
