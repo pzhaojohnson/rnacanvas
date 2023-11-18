@@ -1,9 +1,9 @@
 .drawingFileInput {
-  margin-top: 52px;
+  margin-top: 56px;
 
   border-radius: 60px;
 
-  padding: 12px 25px;
+  padding: 12px 26px;
 
   /* use before pseudo-element for border and box shadow */
   background-color: transparent;
@@ -39,12 +39,12 @@
 }
 
 .text {
-  width: 612px;
+  width: 605px;
 
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-style: normal;
-  color: #070753;
+  color: #080842;
 
   text-align: center;
   text-overflow: ellipsis;
@@ -56,9 +56,9 @@
 
 .dotRNAcanvas {
   font-weight: 700;
-  color: #070753;
+  color: #080845;
 }
 
 .fileName {
-  color: #080850;
+  color: #07073c;
 }

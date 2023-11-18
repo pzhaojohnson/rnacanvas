@@ -56,8 +56,8 @@ function ErrorMessage(
   return (
     <_ErrorMessage
       style={{
-        marginTop: '14px',
-        fontSize: '16px', color: 'rgb(201, 15, 15)',
+        marginTop: '15px',
+        fontSize: '16px', color: 'rgb(194, 12, 12)',
       }}
     >
       {props.children}
@@ -153,7 +153,7 @@ export function OpenDrawingForm(props: Props) {
     </ErrorMessage>
   ) : null;
 
-  let errorMessageContainer = <div style={{ minHeight: '46px' }} >{errorMessage}</div>;
+  let errorMessageContainer = <div style={{ minHeight: '78px' }} >{errorMessage}</div>;
 
   let fileExtensionsNote = (
     <FileExtensionsNote />

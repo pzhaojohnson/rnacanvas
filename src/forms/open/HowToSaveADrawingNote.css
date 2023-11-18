@@ -1,5 +1,5 @@
 .arrowPath {
-  stroke: #070753;
+  stroke: #090945;
   stroke-width: 2px;
   stroke-linecap: round;
 
@@ -12,14 +12,14 @@
 
 .topMenuItem {
   font-weight: 700;
-  color: #070753;
+  color: #090945;
 }
 
 .howToSaveADrawingNote {
-  margin-top: 45px;
+  margin-top: 38px;
 
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: normal;
-  color: hsl(240, 81.82%, 13.47%);
+  color: hsl(240, 81%, 12.71%);
 }
