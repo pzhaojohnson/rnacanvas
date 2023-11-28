@@ -175,6 +175,24 @@ describe('ZoomInput component', () => {
       expect(container.firstChild.value).toBe('110%');
     });
 
+    test('inputs more than 50,000%', () => {
+      app.drawing.svg.attr('width', 272);
+      app.drawing.svg.attr('height', 204);
+      app.drawing.svg.viewbox(0, 0, 400, 300);
+      act(() => render(<ZoomInput {...{ app }} />, container));
+
+      container.firstChild.value = '50001';
+      Simulate.change(container.firstChild);
+      Simulate.blur(container.firstChild);
+
+      // zoom is unchanged
+      expect(app.drawing.svg.attr('width')).toBe(272);
+      expect(app.drawing.svg.attr('height')).toBe(204);
+
+      // value was reset
+      expect(container.firstChild.value).toBe('68%');
+    });
+
     test('lots of trailing decimal places', () => {
       app.drawing.svg.viewbox(0, 0, 120, 150);
       act(() => render(<ZoomInput {...{ app }} />, container));

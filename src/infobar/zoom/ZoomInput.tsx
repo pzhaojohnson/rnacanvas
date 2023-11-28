@@ -132,6 +132,8 @@ export class ZoomInput extends React.Component<Props> {
       // check after rounding
       if (zoomPercentage <= 0) {
         throw new Error();
+      } else if (zoomPercentage > 5e4) {
+        throw new Error();
       }
 
       let zoom = zoomPercentage / 100;
