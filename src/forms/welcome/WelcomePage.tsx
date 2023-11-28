@@ -103,7 +103,7 @@ function UpdatesNotice() {
   return (
     <p className={styles.updatesNotice} >
       See the <UpdatesLink />!&nbsp;
-      <em className={styles.updatesNoticeDate} >(Nov. 19, 2023)</em>
+      <em className={styles.updatesNoticeDate} >(Nov. 28, 2023)</em>
     </p>
   );
 }
