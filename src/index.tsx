@@ -8,6 +8,8 @@ import { CiteButtonShowerBuilder as CiteMenuButtonShowerBuilder } from 'Menu/cit
 import { ContactButtonShowerBuilder as ContactMenuButtonShowerBuilder } from 'Menu/contact/ContactButtonShowerBuilder';
 import { RNA2DButtonBuilder } from 'Menu/RNA2D/RNA2DButtonBuilder';
 
+import { PinchToZoomFeature } from './pinch-to-zoom/PinchToZoomFeature';
+
 import { BasesShiftingToolBuilder } from 'Draw/interact/drag/bases/shift/BasesShiftingToolBuilder';
 
 import { DragOverToSelectBasesToolBuilder } from 'Draw/interact/drag/bases/select/DragOverToSelectBasesToolBuilder';
@@ -158,6 +160,10 @@ setTimeout(() => {
     (new CiteMenuButtonShowerBuilder()).build().show();
     (new ContactMenuButtonShowerBuilder()).build().show();
     (new RNA2DButtonBuilder()).buildWith({ targetApp: app, theDocumentForTheApp: document });
+  });
+
+  waitMilliseconds(400).then(() => {
+    new PinchToZoomFeature({ targetApp: app, theWindowForTheTargetApp: window });
   });
 
   waitMilliseconds(500).then(() => {
