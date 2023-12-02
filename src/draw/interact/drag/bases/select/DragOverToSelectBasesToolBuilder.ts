@@ -1,5 +1,7 @@
 import { MostRecentMouseDownTracker } from 'Draw/interact/drag/bases/mouse-utils/MostRecentMouseDownTracker';
 
+import { ShiftKeyWasHeldDuringMostRecentMouseDownBuilder } from 'Draw/interact/drag/bases/mouse-utils/ShiftKeyWasHeldDuringMostRecentMouseDownBuilder';
+
 import { AllBasesGetter } from 'Draw/bases/AllBasesGetter';
 
 import { SelectedBasesGetter } from 'Draw/interact/drag/bases/selected/SelectedBasesGetter';
@@ -21,6 +23,8 @@ import { Decider } from 'Conditions/deciders/Decider';
 import { Conditions } from 'Conditions/Conditions';
 
 import { ConditionIsFalse } from 'Conditions/ConditionIsFalse';
+
+import { SomeAreTrue } from 'Conditions/SomeAreTrue';
 
 import { DrawingOriginIsAnRNA2DSchema } from 'Draw/origin/DrawingOriginIsAnRNA2DSchema';
 import { DrawingOriginChecker } from 'Draw/origin/DrawingOriginChecker';
@@ -101,14 +105,21 @@ class ShouldRespondToMouseOverDeciderBuilder {
     // (to allow for deselecting bases on shift-click)
     let mostRecentMouseDownWasOnASelectedBase = (new MostRecentMouseDownWasOnASelectedBaseBuilder()).buildFor(app);
 
+    let shiftKeyWasHeldDuringMostRecentMouseDown = (
+      (new ShiftKeyWasHeldDuringMostRecentMouseDownBuilder()).buildFor(window)
+    );
+
     let mouseIsCurrentlyDown = new MouseIsCurrentlyDown({ window });
 
     return new Decider({
       conditions: new Conditions({
         conditions: [
-          drawingOriginIsNotAnRNA2DSchema,
           currentToolIsTheEditingTool,
           mostRecentMouseDownWasOnASelectedBase,
+          new SomeAreTrue([
+            shiftKeyWasHeldDuringMostRecentMouseDown,
+            drawingOriginIsNotAnRNA2DSchema,
+          ]),
           mouseIsCurrentlyDown,
         ],
       }),

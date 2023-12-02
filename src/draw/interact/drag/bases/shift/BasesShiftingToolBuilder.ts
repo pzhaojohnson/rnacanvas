@@ -17,6 +17,8 @@ import { MouseUpHandler } from './helpers/mouse-up/MouseUpHandler';
 
 import { MostRecentMouseDownTracker } from 'Draw/interact/drag/bases/mouse-utils/MostRecentMouseDownTracker';
 
+import { ShiftKeyWasHeldDuringMostRecentMouseDownBuilder } from 'Draw/interact/drag/bases/mouse-utils/ShiftKeyWasHeldDuringMostRecentMouseDownBuilder';
+
 import { SelectedBasesGetter } from 'Draw/interact/drag/bases/selected/SelectedBasesGetter';
 import { AllBasesGetter } from 'Draw/bases/AllBasesGetter';
 import { BaseIsSelectedChecker } from 'Draw/interact/drag/bases/selected/BaseIsSelectedChecker';
@@ -39,6 +41,8 @@ import { VerticalZoomFactorCalculator } from 'Draw/zoom/VerticalZoomFactorCalcul
 import { Decider } from 'Conditions/deciders/Decider';
 
 import { Conditions } from 'Conditions/Conditions';
+
+import { IsFalse } from 'Conditions/IsFalse';
 
 import { DrawingOriginIsAnRNA2DSchema } from 'Draw/origin/DrawingOriginIsAnRNA2DSchema';
 import { DrawingOriginChecker } from 'Draw/origin/DrawingOriginChecker';
@@ -108,6 +112,11 @@ class ShouldRespondToMouseMoveDeciderBuilder {
 
     let mostRecentMouseDownWasOnASelectedBase = (new MostRecentMouseDownWasOnASelectedBaseBuilder()).buildFor(app);
 
+    // allow holding the Shift key to trigger a different behavior
+    let shiftKeyWasNotHeldDuringMostRecentMouseDown = new IsFalse(
+      (new ShiftKeyWasHeldDuringMostRecentMouseDownBuilder()).buildFor(window)
+    );
+
     let mouseIsCurrentlyDown = new MouseIsCurrentlyDown({ window });
 
     let conditions = new Conditions({
@@ -115,6 +124,7 @@ class ShouldRespondToMouseMoveDeciderBuilder {
         drawingOriginIsAnRNA2DSchema,
         currentToolIsTheEditingTool,
         mostRecentMouseDownWasOnASelectedBase,
+        shiftKeyWasNotHeldDuringMostRecentMouseDown,
         mouseIsCurrentlyDown,
       ],
     });
@@ -164,6 +174,11 @@ class ShouldRespondToMouseUpDeciderBuilder {
 
     let mostRecentMouseDownWasOnASelectedBase = (new MostRecentMouseDownWasOnASelectedBaseBuilder()).buildFor(app);
 
+    // allow holding the Shift key to trigger a different behavior
+    let shiftKeyWasNotHeldDuringMostRecentMouseDown = new IsFalse(
+      (new ShiftKeyWasHeldDuringMostRecentMouseDownBuilder()).buildFor(window)
+    );
+
     let mouseHasMovedSinceMostRecentMouseDown = new MouseHasMovedSinceMostRecentMouseDown({ window });
 
     let conditions = new Conditions({
@@ -171,6 +186,7 @@ class ShouldRespondToMouseUpDeciderBuilder {
         drawingOriginIsAnRNA2DSchema,
         currentToolIsTheEditingTool,
         mostRecentMouseDownWasOnASelectedBase,
+        shiftKeyWasNotHeldDuringMostRecentMouseDown,
         mouseHasMovedSinceMostRecentMouseDown,
       ],
     });
