@@ -7,7 +7,7 @@ import { OptimalBasePaddingCalculator2 } from './OptimalBasePaddingCalculator2';
 
 export class BasePaddingsOptimizerBuilder {
   buildForPrimaryBonds() {
-    let scalingFactor = 0.590163915972978;
+    let scalingFactor = 0.61;
 
     return new BasePaddingsOptimizer({
       basePadding1Optimizer: new BasePadding1Optimizer({
