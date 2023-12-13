@@ -18,7 +18,7 @@ export class LoadingScreen {
    * Should be high enough to ensure that the loading screen is on top
    * of everything else.
    */
-  zIndex = 10;
+  zIndex = 1000;
 
   /**
    * The duration of the fade out animation when hiding the loading

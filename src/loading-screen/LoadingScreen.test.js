@@ -18,7 +18,7 @@ afterEach(() => {
 describe('LoadingScreen component', () => {
   it('has a relatively high z-index', () => {
     // expected value is hard coded
-    expect(loadingScreen.node.style.zIndex).toBe('10');
+    expect(loadingScreen.node.style.zIndex).toBe('1000');
   });
 
   test('show and hide methods', () => {
