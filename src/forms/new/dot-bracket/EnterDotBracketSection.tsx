@@ -39,7 +39,7 @@ interface Props {
   close: () => void;
 }
 
-export function EnterDotBracketSection(props: Props): React.ReactElement {
+export function EnterDotBracketSection(props: Props) {
   let [sequenceId, setSequenceId] = useState('');
   let [sequence, setSequence] = useState('');
   let [dotBracket, setDotBracket] = useState('');

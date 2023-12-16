@@ -11,7 +11,7 @@ interface Props {
   ignoreNonAlphanumerics: (b: boolean) => void;
 }
 
-export function IgnoreNumbersCheckbox(props: Props): React.ReactElement {
+export function IgnoreNumbersCheckbox(props: Props) {
   return (
     <CheckboxField
       label='Ignore Numbers'
@@ -22,7 +22,7 @@ export function IgnoreNumbersCheckbox(props: Props): React.ReactElement {
   );
 }
 
-export function IgnoreNonAugctLettersCheckbox(props: Props): React.ReactElement {
+export function IgnoreNonAugctLettersCheckbox(props: Props) {
   return (
     <CheckboxField
       label='Ignore Non-AUGCT Letters'
@@ -33,7 +33,7 @@ export function IgnoreNonAugctLettersCheckbox(props: Props): React.ReactElement 
   );
 }
 
-export function IgnoreNonAlphanumericsCheckbox(props: Props): React.ReactElement {
+export function IgnoreNonAlphanumericsCheckbox(props: Props) {
   return (
     <CheckboxField
       label='Ignore Non-Alphanumerics'
@@ -44,7 +44,7 @@ export function IgnoreNonAlphanumericsCheckbox(props: Props): React.ReactElement
   );
 }
 
-export function SequenceParsingDetails(props: Props): React.ReactElement {
+export function SequenceParsingDetails(props: Props) {
   return (
     <div className={styles.parsingDetails} style={{ width: '366px', margin: '24px 0px 0px 14px' }} >
       <h3 className={styles.header} >

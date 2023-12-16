@@ -28,7 +28,7 @@ interface Props {
   flexGrow: number;
 }
 
-export function DotBracketField(props: Props): React.ReactElement {
+export function DotBracketField(props: Props) {
   return (
     <div style={{ flexGrow: props.flexGrow, display: 'flex', flexDirection: 'column' }} >
       <div style={{ marginTop: '29px', display: 'flex', flexDirection: 'row', position: 'relative' }} >

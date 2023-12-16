@@ -18,7 +18,7 @@ export type Props = {
   select: (example: string) => void;
 }
 
-export function ExampleSelect(props: Props): React.ReactElement {
+export function ExampleSelect(props: Props) {
   return (
     <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }} >
       <p

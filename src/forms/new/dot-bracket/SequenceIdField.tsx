@@ -7,7 +7,7 @@ interface Props {
   set: (v: string) => void;
 }
 
-export function SequenceIdField(props: Props): React.ReactElement {
+export function SequenceIdField(props: Props) {
   return (
     <label
       className={fieldLabelStyles.fieldLabel}

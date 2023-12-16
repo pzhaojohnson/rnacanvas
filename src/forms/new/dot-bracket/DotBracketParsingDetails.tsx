@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styles from './ParsingDetails.css';
 
-export function DotBracketParsingDetails(): React.ReactElement {
+export function DotBracketParsingDetails() {
   return (
     <div className={styles.parsingDetails} style={{ width: '366px', margin: '24px 0px 0px 14px' }} >
       <h3 className={styles.header} >

@@ -73,7 +73,7 @@ interface Props {
   contained: React.ReactElement;
 }
 
-export function FloatingDrawingsContainer(props: Props): React.ReactElement {
+export function FloatingDrawingsContainer(props: Props) {
   return (
     <div
       className={styles.container}
