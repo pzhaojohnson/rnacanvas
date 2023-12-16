@@ -200,7 +200,6 @@ export class EditingTool {
     } else {
       this._selected.add(eles.id);
     }
-    this.renderForm();
     this.refresh();
     this.options.app.refresh();
   }
@@ -215,7 +214,6 @@ export class EditingTool {
     } else {
       this._selected.add(eles.id);
     }
-    this.renderForm();
     this.refresh();
     this.options.app.refresh();
   }
