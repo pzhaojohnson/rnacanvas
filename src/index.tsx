@@ -10,6 +10,8 @@ import { RNA2DButtonBuilder } from 'Menu/RNA2D/RNA2DButtonBuilder';
 
 import { PinchToZoomFeature } from './pinch-to-zoom/PinchToZoomFeature';
 
+import { Toolbar as EditingToolToolbar } from 'Draw/interact/edit/toolbar/Toolbar';
+
 import { BasesShiftingToolBuilder } from 'Draw/interact/drag/bases/shift/BasesShiftingToolBuilder';
 
 import { DragOverToSelectBasesToolBuilder } from 'Draw/interact/drag/bases/select/DragOverToSelectBasesToolBuilder';
@@ -164,6 +166,10 @@ setTimeout(() => {
 
   waitMilliseconds(400).then(() => {
     new PinchToZoomFeature({ targetApp: app, theWindowForTheTargetApp: window });
+  });
+
+  waitMilliseconds(450).then(() => {
+    EditingToolToolbar({ targetApp: app });
   });
 
   waitMilliseconds(500).then(() => {

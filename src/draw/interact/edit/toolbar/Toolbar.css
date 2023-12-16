@@ -1,0 +1,29 @@
+.toolbar {
+  position: fixed;
+
+  bottom: 15vh;
+
+  max-width: 122px;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+
+  /**
+   * Place above the toolbar repositioner.
+   */
+  z-index: 31;
+
+  border: 1px solid white;
+  border-radius: 6px;
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.12);
+
+  padding: 0px 12px;
+  min-height: 41px;
+
+  background-color: black;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 26px;
+}

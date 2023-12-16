@@ -1,0 +1,100 @@
+.toolbarRepositioner {
+  background-color: black;
+
+  border-radius: 1000px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 22px;
+
+  cursor: pointer;
+}
+
+.toolbarRepositioner:hover {
+  transform: scale(1.15);
+  transition: transform 0.1s;
+}
+
+.toolbarRepositioner:active {
+  transform: scale(1);
+  transition: transform 0s;
+}
+
+.container {
+  position: fixed;
+
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+
+  /**
+   * Hard-coded to match the width and border radius of the contained toolbar repositioner.
+   */
+  max-width: 22px;
+  border-radius: 1000px;
+
+  bottom: 6px;
+
+  z-index: 30;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip {
+  position: absolute;
+  top: -48px;
+  left: -24px;
+
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 22px;
+
+  padding: 5px 12px;
+
+  background-color: black;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  pointer-events: none;
+
+  opacity: 0;
+}
+
+.container:hover .tooltip {
+  animation: tooltipFadeIn 1s;
+  opacity: 1;
+}
+
+@keyframes tooltipFadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.tooltipText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+
+  white-space: nowrap;
+}
+
+.tooltipTriangle {
+  position: absolute;
+  top: 26px;
+  left: 26px;
+
+  width: 0px;
+  height: 0px;
+  border-top: 15px solid black;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}

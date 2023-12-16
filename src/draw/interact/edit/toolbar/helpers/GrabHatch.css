@@ -1,0 +1,16 @@
+.line {
+  width: 9px;
+  height: 1px;
+  background-color: rgb(210, 210, 226);
+}
+
+.grabHatch {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  /**
+   * Let parent manage cursor styles.
+   */
+  pointer-events: none;
+}
