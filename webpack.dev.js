@@ -3,7 +3,7 @@ const CircularDependencyPlugin = require('circular-dependency-plugin');
 const webpack = require("webpack");
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './src/index.tsx',
   output: {
     filename: 'bundle.js',
@@ -59,7 +59,14 @@ module.exports = {
       },
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: [
+          {
+            loader: 'ts-loader',
+            options: {
+              transpileOnly: false
+            }
+          }
+        ],
         exclude: /node_modules/
       }
     ]
@@ -89,5 +96,8 @@ module.exports = {
     },
     modules: ['node_modules'],
     extensions: [ '.tsx', '.ts', '.js' ]
-  }
+  },
+  performance: {
+    hints: false
+  },
 }
