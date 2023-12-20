@@ -1,13 +1,14 @@
 {
   "name": "rnacanvas",
   "version": "1.0.0",
-  "description": "",
+  "description": "A [web app](https://rnacanvas.app) for the interactive drawing of nucleic acid structures. Bases are automatically arranged to convey stems and loops and the layout of a drawing can be easily adjusted by dragging with the mouse. Drawings can be highly customized, including the fonts, colors and dimensions of elements and the outlines and numbering of bases. The entirety of the Leontis-Westhof notation for depicting canonical and non-canonical base-pairs is also supported. Drawings are exported in SVG and PowerPoint (PPTX) formats such that all elements of a drawing (e.g., bases and bonds) are exported as individual SVG and PowerPoint objects, allowing for further manipulation in a vector graphics editor such as Adobe Illustrator or PowerPoint.",
   "private": true,
   "scripts": {
     "test": "jest",
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "build": "webpack",
+    "start2": "webpack-dev-server --open --hot --config webpack.dev.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,7 @@
     "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
     "@testing-library/react": "^9.5.0",
+    "@types/webpack-env": "^1.18.4",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.2.2",
     "css-loader": "^3.6.0",

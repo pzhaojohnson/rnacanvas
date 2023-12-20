@@ -6,6 +6,7 @@ export type Values = {
     'font-size'?: number;
     'font-weight'?: string | number;
     'font-style'?: string;
+    'fill'?: string;
   }
 }
 
@@ -53,6 +54,9 @@ export function setValues(b: Base, vs: Values) {
     }
     if (typeof vs.text['font-style'] == 'string') {
       b.text.attr({ 'font-style': vs.text['font-style'] });
+    }
+    if (typeof vs.text['fill'] == 'string') {
+      b.text.attr({ 'fill': vs.text['fill'] });
     }
   }
 }

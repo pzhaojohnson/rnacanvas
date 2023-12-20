@@ -161,5 +161,6 @@ Base.recommendedDefaults = {
     'font-size': 9,
     'font-weight': 'bold',
     'font-style': 'normal',
+    'fill': 'black',
   },
 };

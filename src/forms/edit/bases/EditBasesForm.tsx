@@ -16,6 +16,7 @@ import { FontSizeField } from './FontSizeField';
 import { BoldField } from './BoldField';
 import { ForwardBackwardButtons } from './ForwardBackwardButtons';
 import { OutlineField } from './OutlineField';
+import { CopyStyleField } from './CopyStyleField';
 import { RadiusField as OutlineRadiusField } from './outlines/RadiusField';
 import { StrokeField as OutlineStrokeField } from './outlines/StrokeField';
 import { StrokeWidthField as OutlineStrokeWidthField } from './outlines/StrokeWidthField';
@@ -153,6 +154,7 @@ export function EditBasesForm(props: Props) {
           <FontSizeField {...props} />
           <BoldField {...props} />
           <ForwardBackwardButtons {...props} />
+          <CopyStyleField {...props} />
           <OutlineField {...props} />
           {!props.bases.every(b => b.outline) ? null : (
             <div style={{ margin: '9px 0 0 11px', display: 'flex', flexDirection: 'column' }} >
