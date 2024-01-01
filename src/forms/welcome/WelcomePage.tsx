@@ -11,6 +11,8 @@ import { DrawingSlideshow } from './drawings/DrawingSlideshow';
 import { CreateNewDrawingForm } from 'Forms/new/CreateNewDrawingForm';
 import { OpenDrawingForm } from 'Forms/open/OpenDrawingForm';
 
+import { PreviousVersionsFormLink } from './helpers/PreviousVersionsFormLink';
+
 import { PreviousVersionsForm } from 'Forms/previous-versions/PreviousVersionsForm';
 
 export type Props = {
@@ -88,84 +90,25 @@ function MoreInfo() {
   );
 }
 
-function LinkToPreviousVersionsFormArrow() {
-  let head = (
-    <path
-      className={styles.linkToPreviousVersionsFormArrowHead}
-      d="M 8.75 0.75 L 13.25 0.75 L 13.25 5.75"
-      strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
-      fill="none"
-    />
-  );
-
-  let shaft = (
-    <line
-      className={styles.linkToPreviousVersionsFormArrowShaft}
-      x1="6.75" y1="7.25" x2="13.25" y2="0.75"
-      strokeWidth="1.5" strokeLinecap="round"
-    />
-  );
-
-  return (
-    <svg className={styles.linkToPreviousVersionsFormArrow} viewBox="0 0 14 12" >
-      {head}
-      {shaft}
-    </svg>
-  );
-}
-
-function LinkToPreviousVersionsForm(props: Props) {
+export function WelcomePage(props: Props) {
   let { app } = props;
 
-  let leadingText = (
-    <p className={styles.linkToPreviousVersionsFormText} >
-      To use
-    </p>
-  );
-
-  let goBack = () => {
+  let reopenWelcomePage = () => {
     app.formContainer.renderForm(
       () => <WelcomePage {...{ app }} />
     );
   };
 
-  let onClick = () => {
+  let openPreviousVersionsForm = () => {
     app.formContainer.renderForm(
-      () => <PreviousVersionsForm {...{ goBack }} />
+      () => <PreviousVersionsForm goBack={reopenWelcomePage} />
     );
-  };
+  }
 
-  let anchor = (
-    <a className={styles.linkToPreviousVersionsFormAnchor} >
-      Previous Versions
-    </a>
-  );
-
-  let anchorWithArrow = (
-    <div className={styles.linkToPreviousVersionsFormAnchorWithArrow} onClick={onClick} >
-      {anchor}
-      <LinkToPreviousVersionsFormArrow />
-    </div>
-  );
-
-  let trailingText = (
-    <p className={styles.linkToPreviousVersionsFormText} style={{ marginLeft: '3px' }} >
-      of the app.
-    </p>
-  );
-
-  return (
-    <div className={styles.linkToPreviousVersionsForm} >
-      {leadingText}&nbsp;{anchorWithArrow} {trailingText}
-    </div>
-  );
-}
-
-export function WelcomePage(props: Props) {
   return (
     <div style={{ width: '100vw', height: '100%', overflow: 'auto', position: 'relative' }} >
       <LatestUpdatesNotice />
-      <LinkToPreviousVersionsForm {...props} />
+      <PreviousVersionsFormLink onClick={openPreviousVersionsForm} />
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
         <div className={styles.topSection} >
           <Header />

@@ -1,0 +1,71 @@
+.arrowHead {
+  stroke: rgb(25, 10, 215);
+}
+
+.arrowShaft {
+  stroke: rgb(25, 10, 215);
+}
+
+.arrow {
+  height: 12px;
+
+  translate: -2px 2px;
+
+  cursor: pointer;
+}
+
+.surroundingText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  color: black;
+}
+
+.anchor {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(25, 10, 215);
+
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.anchorWithArrow {
+  display: flex;
+  flex-direction: row;
+
+  cursor: pointer;
+}
+
+.anchorWithArrow:hover .anchor {
+  text-decoration: underline;
+}
+
+.previousVersionsFormLink {
+  position: absolute;
+  top: 12px;
+  left: 275px;
+
+  display: flex;
+  flex-direction: row;
+
+  cursor: pointer;
+
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
