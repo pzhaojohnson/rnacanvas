@@ -1,9 +1,9 @@
 .arrowHead {
-  stroke: rgb(25, 10, 215);
+  stroke: rgb(25, 10, 221);
 }
 
 .arrowShaft {
-  stroke: rgb(25, 10, 215);
+  stroke: rgb(25, 10, 221);
 }
 
 .arrow {
@@ -19,7 +19,7 @@
   font-size: 12px;
   font-weight: 500;
   font-style: normal;
-  color: black;
+  color: hsl(240, 3.09%, 4.37%);
 }
 
 .anchor {
@@ -27,7 +27,7 @@
   font-size: 12px;
   font-weight: 700;
   font-style: normal;
-  color: rgb(25, 10, 215);
+  color: rgb(25, 10, 221);
 
   cursor: pointer;
 
