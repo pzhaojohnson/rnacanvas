@@ -67,12 +67,11 @@
 }
 
 .linkToPreviousVersionsFormArrow {
-  height: 14px;
+  height: 12px;
 
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  translate: 16px 2px;
+  translate: -2px 2px;
+
+  cursor: pointer;
 }
 
 .linkToPreviousVersionsFormArrowHead {
@@ -85,8 +84,17 @@
 
 .linkToPreviousVersionsFormText {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  color: black;
+}
+
+.linkToPreviousVersionsFormAnchor {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
   color: rgb(25, 10, 215);
 
   cursor: pointer;
@@ -94,31 +102,35 @@
   text-decoration: none;
 }
 
+.linkToPreviousVersionsFormAnchorWithArrow {
+  display: flex;
+  flex-direction: row;
+
+  cursor: pointer;
+}
+
+.linkToPreviousVersionsFormAnchorWithArrow:hover .linkToPreviousVersionsFormAnchor {
+  text-decoration: underline;
+}
+
 .linkToPreviousVersionsForm {
   position: absolute;
-  top: 10px;
-  left: 220px;
-
-  align-self: center;
+  top: 12px;
+  left: 275px;
 
   display: flex;
   flex-direction: row;
-  align-items: center;
 
   cursor: pointer;
 
-  animation: linkToPreviousVersionsFormFadeIn 2s ease-in-out;
-}
-
-.linkToPreviousVersionsForm:hover .linkToPreviousVersionsFormText {
-  text-decoration: underline;
+  animation: linkToPreviousVersionsFormFadeIn 2s;
 }
 
 @keyframes linkToPreviousVersionsFormFadeIn {
   0% {
     opacity: 0;
   }
-  37.5% {
+  50% {
     opacity: 0;
   }
   100% {

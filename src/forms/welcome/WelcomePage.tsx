@@ -117,13 +117,11 @@ function LinkToPreviousVersionsFormArrow() {
 function LinkToPreviousVersionsForm(props: Props) {
   let { app } = props;
 
-  let text = (
+  let leadingText = (
     <p className={styles.linkToPreviousVersionsFormText} >
-      To use a previous version of the app
+      To use
     </p>
   );
-
-  let className = styles.linkToPreviousVersionsForm;
 
   let goBack = () => {
     app.formContainer.renderForm(
@@ -137,10 +135,28 @@ function LinkToPreviousVersionsForm(props: Props) {
     );
   };
 
-  return (
-    <div {...{ className, onClick }} >
-      {text}
+  let anchor = (
+    <a className={styles.linkToPreviousVersionsFormAnchor} >
+      Previous Versions
+    </a>
+  );
+
+  let anchorWithArrow = (
+    <div className={styles.linkToPreviousVersionsFormAnchorWithArrow} onClick={onClick} >
+      {anchor}
       <LinkToPreviousVersionsFormArrow />
+    </div>
+  );
+
+  let trailingText = (
+    <p className={styles.linkToPreviousVersionsFormText} style={{ marginLeft: '3px' }} >
+      of the app.
+    </p>
+  );
+
+  return (
+    <div className={styles.linkToPreviousVersionsForm} >
+      {leadingText}&nbsp;{anchorWithArrow} {trailingText}
     </div>
   );
 }
