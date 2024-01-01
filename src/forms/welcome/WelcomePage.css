@@ -95,14 +95,15 @@
 }
 
 .linkToPreviousVersionsForm {
-  margin: 9px 0px 0px 0px;
+  position: absolute;
+  top: 10px;
+  left: 220px;
 
   align-self: center;
 
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: relative;
 
   cursor: pointer;
 

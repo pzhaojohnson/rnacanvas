@@ -149,6 +149,7 @@ export function WelcomePage(props: Props) {
   return (
     <div style={{ width: '100vw', height: '100%', overflow: 'auto', position: 'relative' }} >
       <LatestUpdatesNotice />
+      <LinkToPreviousVersionsForm {...props} />
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
         <div className={styles.topSection} >
           <Header />
@@ -160,7 +161,6 @@ export function WelcomePage(props: Props) {
               <OpenButton {...props} />
             </div>
             <MoreInfo />
-            <LinkToPreviousVersionsForm {...props} />
           </div>
         </div>
         <DrawingSlideshow />
