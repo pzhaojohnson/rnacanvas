@@ -39,10 +39,11 @@ export function PreviousVersionsFormLink(props: Props) {
     </p>
   );
 
+  // just meant to look like an anchor element
   let anchor = (
-    <a className={styles.anchor} >
+    <p className={styles.anchor} >
       Previous Versions
-    </a>
+    </p>
   );
 
   let anchorWithArrow = (
