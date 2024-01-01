@@ -1,11 +1,59 @@
-.latestUpdatesLink {
-  color: rgb(28, 13, 218);
-  font-weight: 600;
-  text-decoration-line: none;
+.latestUpdatesDate {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
 }
 
-.latestUpdatesLink:hover {
-  text-decoration-line: underline;
+.interveningText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  color: hsl(240, 3.09%, 4.37%);
+}
+
+.latestUpdatesLink {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(25, 10, 221);
+
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.linkArrowHead {
+  stroke: rgb(25, 10, 221);
+}
+
+.linkArrowShaft {
+  stroke: rgb(25, 10, 221);
+}
+
+.linkArrow {
+  height: 12px;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  translate: 12px 2px;
+
+  cursor: pointer;
+}
+
+.latestUpdatesLinkWithArrow {
+  display: flex;
+  flex-direction: row;
+
+  cursor: pointer;
+}
+
+.latestUpdatesLinkWithArrow:hover .latestUpdatesLink {
+  text-decoration: underline;
 }
 
 .latestUpdatesNotice {
@@ -13,22 +61,17 @@
   top: 12px;
   left: 20px;
 
-  font-size: 14px;
-  font-weight: 500;
-  color: hsl(240, 4.71%, 7.16%);
+  display: flex;
+  flex-direction: row;
 
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-.latestUpdatesDate {
-  color: hsl(240, 4.71%, 7.16%);
+  animation: fadeIn 2s;
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
-  37.5% {
+  50% {
     opacity: 0;
   }
   100% {
