@@ -66,44 +66,6 @@
   text-decoration-line: underline;
 }
 
-.updatesLink {
-  color: rgb(28, 13, 218);
-  font-weight: 600;
-  text-decoration-line: none;
-}
-
-.updatesLink:hover {
-  text-decoration-line: underline;
-}
-
-.updatesNotice {
-  position: absolute;
-  top: 12px;
-  left: 20px;
-
-  font-size: 14px;
-  font-weight: 500;
-  color: hsl(240, 4.71%, 7.16%);
-
-  animation: updatesNoticeFadeIn 1.5s ease-in-out;
-}
-
-.updatesNoticeDate {
-  color: hsl(240, 4.71%, 7.16%);
-}
-
-@keyframes updatesNoticeFadeIn {
-  0% {
-    opacity: 0;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .linkToPreviousVersionsFormArrow {
   height: 14px;
 

@@ -1,0 +1,37 @@
+.latestUpdatesLink {
+  color: rgb(28, 13, 218);
+  font-weight: 600;
+  text-decoration-line: none;
+}
+
+.latestUpdatesLink:hover {
+  text-decoration-line: underline;
+}
+
+.latestUpdatesNotice {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(240, 4.71%, 7.16%);
+
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.latestUpdatesDate {
+  color: hsl(240, 4.71%, 7.16%);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

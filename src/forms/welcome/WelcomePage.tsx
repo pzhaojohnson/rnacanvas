@@ -3,6 +3,8 @@ import type { App } from 'App';
 import * as React from 'react';
 import styles from './WelcomePage.css';
 
+import { LatestUpdatesNotice } from './helpers/LatestUpdatesNotice';
+
 import { Header } from './Header';
 import { DrawingSlideshow } from './drawings/DrawingSlideshow';
 
@@ -86,28 +88,6 @@ function MoreInfo() {
   );
 }
 
-function UpdatesLink() {
-  return (
-    <a
-      className={styles.updatesLink}
-      href='https://github.com/pzhaojohnson/rnacanvas/releases'
-      target='_blank'
-      rel='noreferrer noopener'
-    >
-      Latest Updates
-    </a>
-  );
-}
-
-function UpdatesNotice() {
-  return (
-    <p className={styles.updatesNotice} >
-      See the <UpdatesLink />!&nbsp;
-      <em className={styles.updatesNoticeDate} >(Dec. 2, 2023)</em>
-    </p>
-  );
-}
-
 function LinkToPreviousVersionsFormArrow() {
   let head = (
     <path
@@ -168,7 +148,7 @@ function LinkToPreviousVersionsForm(props: Props) {
 export function WelcomePage(props: Props) {
   return (
     <div style={{ width: '100vw', height: '100%', overflow: 'auto', position: 'relative' }} >
-      <UpdatesNotice />
+      <LatestUpdatesNotice />
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
         <div className={styles.topSection} >
           <Header />
