@@ -167,7 +167,8 @@ function LinkToPreviousVersionsForm(props: Props) {
 
 export function WelcomePage(props: Props) {
   return (
-    <div style={{ width: '100vw', height: '100%', overflow: 'auto' }} >
+    <div style={{ width: '100vw', height: '100%', overflow: 'auto', position: 'relative' }} >
+      <UpdatesNotice />
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
         <div className={styles.topSection} >
           <Header />
@@ -179,7 +180,6 @@ export function WelcomePage(props: Props) {
               <OpenButton {...props} />
             </div>
             <MoreInfo />
-            <UpdatesNotice />
             <LinkToPreviousVersionsForm {...props} />
           </div>
         </div>
