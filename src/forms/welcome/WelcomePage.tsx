@@ -119,7 +119,7 @@ function LinkToPreviousVersionsForm(props: Props) {
 
   let text = (
     <p className={styles.linkToPreviousVersionsFormText} >
-      Or use a previous version of the app
+      To use a previous version of the app
     </p>
   );
 
