@@ -6,7 +6,7 @@ import * as fs from 'fs';
 
 import { AppWrapper } from './openDrawing';
 
-const jsonDrawingFilesDirectoryPath = 'src/forms/open/test-inputs/json-drawings';
+const jsonDrawingFilesDirectoryPath = 'src/forms/open/saved/test-inputs/json-drawings';
 
 function readJSONDrawingFile(name) {
   let path = jsonDrawingFilesDirectoryPath + '/' + name;
@@ -14,7 +14,7 @@ function readJSONDrawingFile(name) {
   return fs.readFileSync(path, 'utf8');
 }
 
-const legacyDrawingFilesDirectoryPath = 'src/forms/open/legacy/test-inputs';
+const legacyDrawingFilesDirectoryPath = 'src/forms/open/saved/legacy/test-inputs';
 
 function readLegacyDrawingFile(name) {
   let path = legacyDrawingFilesDirectoryPath + '/' + name;

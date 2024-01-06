@@ -8,7 +8,7 @@ import { AppWrapper } from './openJSONDrawing';
 
 function readDrawingFile(drawingName) {
   let drawingFilePath = (
-    'src/forms/open/test-inputs/json-drawings/'
+    'src/forms/open/saved/test-inputs/json-drawings/'
     + drawingName
     + '.rnacanvas'
   );

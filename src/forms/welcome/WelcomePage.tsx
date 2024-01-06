@@ -9,7 +9,7 @@ import { Header } from './Header';
 import { DrawingSlideshow } from './drawings/DrawingSlideshow';
 
 import { CreateNewDrawingForm } from 'Forms/new/CreateNewDrawingForm';
-import { OpenDrawingForm } from 'Forms/open/OpenDrawingForm';
+import { OpenDrawingForm } from 'Forms/open/saved/OpenDrawingForm';
 
 import { PreviousVersionsFormLink } from './helpers/PreviousVersionsFormLink';
 
