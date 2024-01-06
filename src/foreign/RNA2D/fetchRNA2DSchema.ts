@@ -16,3 +16,5 @@ export async function fetchRNA2DSchema(args: Args) {
 
   return new RNA2DSchema(JSON.parse(text));
 }
+
+export { RNA2DSchema };

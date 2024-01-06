@@ -24,6 +24,7 @@ import { FormContainer } from './FormContainer';
 import { Signaller } from 'Utilities/Signaller';
 
 import { fetchRNA2DSchema } from 'Foreign/RNA2D/fetchRNA2DSchema';
+import { RNA2DSchema } from 'Foreign/RNA2D/fetchRNA2DSchema';
 
 import { createRNAcanvasDrawingFragment } from 'Foreign/RNA2D/convert/schemas/createRNAcanvasDrawingFragment';
 
@@ -165,6 +166,10 @@ export class App {
   async openRNA2DSchemaFromURL(url: string) {
     let rna2DSchema = await fetchRNA2DSchema({ url });
 
+    await this.openRNA2DSchema(rna2DSchema);
+  }
+
+  async openRNA2DSchema(rna2DSchema: RNA2DSchema) {
     let drawingFragment = createRNAcanvasDrawingFragment({ rna2DSchema });
     drawingFragment.appendTo(this.drawing);
 
