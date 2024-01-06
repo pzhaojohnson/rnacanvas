@@ -1,0 +1,59 @@
+.backArrowHead {
+  stroke: hsl(240, 75.44%, 28.5%);
+  stroke-width: 2;
+  stroke-linecap: round;
+
+  fill: none;
+}
+
+.backArrowShaft {
+  stroke: hsl(240, 75.44%, 28.5%);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.backArrow {
+  height: 14px;
+
+  margin-right: 6px;
+}
+
+.goBackText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(240, 75.44%, 28.5%);
+
+  cursor: pointer;
+}
+
+.goBackButton {
+  position: absolute;
+  top: -39px;
+  left: -464px;
+
+  border: none;
+  border-radius: 5px;
+
+  outline: none;
+
+  padding: 8px 16px;
+
+  align-self: start;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  cursor: pointer;
+
+  background-color: transparent;
+}
+
+.goBackButton:hover {
+  background-color: hsla(240, 100%, 96.25%, 0.97);
+}
+
+.goBackButton:active {
+  background-color: hsla(240, 100%, 94.25%, 0.98);
+}

@@ -1,0 +1,46 @@
+.linkArrowHead {
+  stroke: rgb(30, 14, 235);
+}
+
+.linkArrowShaft {
+  stroke: rgb(30, 14, 235);
+}
+
+.linkArrow {
+  height: 14px;
+
+  translate: -6px 2px;
+
+  cursor: pointer;
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(30, 14, 235);
+
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.linkToOpenAnRNA2DSchema {
+  margin-top: 38px;
+
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+
+  padding: 0px;
+
+  cursor: pointer;
+
+  align-self: center;
+}
+
+.linkToOpenAnRNA2DSchema:hover .text {
+  text-decoration: underline;
+}

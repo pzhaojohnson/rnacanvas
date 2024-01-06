@@ -1,0 +1,70 @@
+.text {
+  width: 558px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #05052f;
+
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.rna2DSchemaFileInput {
+  margin-top: 58px;
+
+  border-radius: 60px;
+
+  width: 638px;
+
+  padding: 12px 0px;
+
+  /**
+   * Use before pseudo-element for border and box shadow.
+   */
+  background-color: transparent;
+  position: relative;
+  isolation: isolate;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.rna2DSchemaFileInput::before {
+  content: "";
+
+  border: 1px solid hsl(240, 26.38%, 63.33%);
+  border-radius: 60px;
+
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.02);
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  z-index: -1;
+}
+
+.rna2DSchemaFileInput:hover::before {
+  transform: scale(1.08);
+  transition: transform 0.1s;
+}
+
+.rna2DSchemaFileInput:active::before {
+  transform: scale(1);
+  transition: transform 0s;
+}

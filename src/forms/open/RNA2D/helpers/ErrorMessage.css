@@ -1,0 +1,58 @@
+.borderTopTriangle {
+  position: absolute;
+  translate: 0px -22px;
+
+  width: 0px;
+  height: 0px;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid #b51212;
+  border-left: 10px solid transparent;
+}
+
+.fillTopTriangle {
+  position: absolute;
+  translate: 0px -20px;
+
+  width: 0px;
+  height: 0px;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid rgba(255, 243, 243, 1);
+  border-left: 10px solid transparent;
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(126, 11, 11);
+}
+
+.errorMessage {
+  translate: 0px 27px;
+
+  border: 1px solid #b51212;
+  border-radius: 12px;
+  box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.02);
+
+  background-color: rgba(255, 243, 243, 1);
+
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  padding: 6.5px 36px;
+
+  display: flex;
+  justify-content: center;
+
+  animation: blinkIn 1.5s;
+}
+
+@keyframes blinkIn {
+  0%, 55%, 85% {
+    opacity: 0;
+  }
+  40%, 70%, 100% {
+    opacity: 1;
+  }
+}

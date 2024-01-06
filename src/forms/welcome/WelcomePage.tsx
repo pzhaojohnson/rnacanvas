@@ -11,6 +11,10 @@ import { DrawingSlideshow } from './drawings/DrawingSlideshow';
 import { CreateNewDrawingForm } from 'Forms/new/CreateNewDrawingForm';
 import { OpenDrawingForm } from 'Forms/open/saved/OpenDrawingForm';
 
+import { OpenAnRNA2DSchemaForm } from 'Forms/open/RNA2D/OpenAnRNA2DSchemaForm';
+
+import { LinkToOpenAnRNA2DSchema } from './helpers/LinkToOpenAnRNA2DSchema';
+
 import { PreviousVersionsFormLink } from './helpers/PreviousVersionsFormLink';
 
 import { PreviousVersionsForm } from 'Forms/previous-versions/PreviousVersionsForm';
@@ -93,6 +97,8 @@ function MoreInfo() {
 export function WelcomePage(props: Props) {
   let { app } = props;
 
+  let closeTheCurrentForm = () => app.formContainer.unmountForm();
+
   let reopenWelcomePage = () => {
     app.formContainer.renderForm(
       () => <WelcomePage {...{ app }} />
@@ -104,6 +110,18 @@ export function WelcomePage(props: Props) {
       () => <PreviousVersionsForm goBack={reopenWelcomePage} />
     );
   }
+
+  let openTheFormToOpenAnRNA2DSchema = () => {
+    app.formContainer.renderForm(
+      () => (
+        <OpenAnRNA2DSchemaForm
+          targetApp={app}
+          goBack={reopenWelcomePage}
+          close={closeTheCurrentForm}
+        />
+      )
+    );
+  };
 
   return (
     <div style={{ width: '100vw', height: '100%', overflow: 'auto', position: 'relative' }} >
@@ -119,6 +137,7 @@ export function WelcomePage(props: Props) {
               <div style={{ width: '45px' }} />
               <OpenButton {...props} />
             </div>
+            <LinkToOpenAnRNA2DSchema onClick={openTheFormToOpenAnRNA2DSchema} />
             <MoreInfo />
           </div>
         </div>

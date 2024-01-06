@@ -1,0 +1,56 @@
+.linkArrowHead {
+  stroke: #1010e6;
+}
+
+.linkArrowShaft {
+  stroke: #1010e6;
+}
+
+.linkArrow {
+  height: 16px;
+
+  translate: -8px 2px;
+
+  cursor: pointer;
+}
+
+.rna2DJSONSchemas {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+}
+
+.interveningText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(6, 6, 6);
+}
+
+.r2dtText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  color: #1010e6;
+
+  text-decoration: none;
+}
+
+.r2dt {
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.r2dt:hover .r2dtText {
+  text-decoration: underline;
+}
+
+.whatAreRNA2DSchemas {
+  display: flex;
+  flex-direction: row;
+}
