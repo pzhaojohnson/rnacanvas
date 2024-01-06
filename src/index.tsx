@@ -115,7 +115,7 @@ setTimeout(() => {
    */
   waitMilliseconds(100).then(() => {
     if (urlParameters.rna2DSchemaURL) {
-      app.openRNA2DSchema({ url: urlParameters.rna2DSchemaURL })
+      app.openRNA2DSchemaFromURL(urlParameters.rna2DSchemaURL)
         .then(() => waitUntil(loadingScreenHasBeenShownForLongEnough))
         .then(() => loadingScreen.hideIfBeingShown())
         .then(() => onOpenRNA2DInfoDialog.show())

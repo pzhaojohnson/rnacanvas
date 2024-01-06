@@ -38,15 +38,6 @@ let drawingViewCenterer = drawingViewCentererBuilder.build();
 
 let drawingOriginSetter = new DrawingOriginSetter();
 
-export type RNA2DSchemaLike = (
-  {
-    /**
-     * A URL to an RNA 2D schema.
-     */
-    url: string;
-  }
-);
-
 let duplicateSecondaryBondsRemoverBuilder = new DuplicateSecondaryBondsRemoverBuilder();
 
 export type Options = {
@@ -171,8 +162,7 @@ export class App {
     redo(this);
   }
 
-  async openRNA2DSchema(args: RNA2DSchemaLike) {
-    let { url } = args;
+  async openRNA2DSchemaFromURL(url: string) {
     let rna2DSchema = await fetchRNA2DSchema({ url });
 
     let drawingFragment = createRNAcanvasDrawingFragment({ rna2DSchema });
