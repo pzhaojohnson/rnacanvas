@@ -11,7 +11,14 @@ export type Args = {
 export function createRNAcanvasDrawingFragment(args: Args) {
   let { rna2DSchema } = args;
 
-  let rna2DClasses = rna2DSchema.classes;
+  let rna2DClasses: InstanceType<typeof RNA2DSchema>['classes'] = [];
+
+  // in case the classes array is missing
+  try {
+    rna2DClasses = rna2DSchema.classes;
+  } catch {
+    console.log('No RNA 2D classes found.');
+  }
 
   let frags: ReturnType<typeof fromRNA2DRNAMolecule>[] = [];
 

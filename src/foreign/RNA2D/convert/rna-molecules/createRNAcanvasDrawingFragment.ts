@@ -26,10 +26,26 @@ export function createRNAcanvasDrawingFragment(args: Args) {
     rna2DClasses,
   });
 
-  seq.id = rna2DRNAMolecule.name;
+  seq.id = 'molecule';
+
+  // in case the molecule name is missing
+  try {
+    seq.id = rna2DRNAMolecule.name;
+  } catch {
+    console.log('No molecule name found.');
+  }
+
+  let rna2DLabels: InstanceType<typeof RNA2DRNAMolecule>['labels'] = [];
+
+  // in case the labels array is missing
+  try {
+    rna2DLabels = rna2DRNAMolecule.labels;
+  } catch {
+    console.log('No RNA 2D labels found.');
+  }
 
   // just try to make a base numbering out of every label
-  rna2DRNAMolecule.labels.forEach(rna2DLabel => {
+  rna2DLabels.forEach(rna2DLabel => {
     try {
       let i = rna2DLabel.residueIndex;
       let b = seq.bases[i];
@@ -44,7 +60,16 @@ export function createRNAcanvasDrawingFragment(args: Args) {
     }
   });
 
-  rna2DRNAMolecule.basePairs.forEach(rna2DBasePair => {
+  let rna2DBasePairs: InstanceType<typeof RNA2DRNAMolecule>['basePairs'] = [];
+
+  // in case the base-pairs array is missing
+  try {
+    rna2DBasePairs = rna2DRNAMolecule.basePairs;
+  } catch {
+    console.log('No RNA 2D base-pairs found.');
+  }
+
+  rna2DBasePairs.forEach(rna2DBasePair => {
     try {
       frag.appendSecondaryBond(createRNAcanvasSecondaryBond({
         rna2DBasePair,
