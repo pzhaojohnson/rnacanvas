@@ -23,6 +23,6 @@ export function waitUntil(conditionCallback: ConditionCallback) {
         clearInterval(intervalId);
         resolve();
       }
-    }, 250);
+    }, 50);
   });
 }
