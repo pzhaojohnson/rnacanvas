@@ -11,7 +11,7 @@ export type ConditionCallback = () => boolean;
  * condition callback at a regular interval.
  *
  * Currently checks the return value of the condition callback every
- * 250 ms.
+ * 50 ms.
  *
  * Since the condition callback might be called many times, it is
  * recommended that it not be computationally intensive.

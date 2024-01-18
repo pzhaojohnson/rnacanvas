@@ -11,18 +11,18 @@ describe('waitUntil function', () => {
 
     let resolved = false;
 
-    // should still be false after only 4.15 seconds
+    // should still be false after only 4.175 seconds
     setTimeout(() => {
       expect(resolved).toBe(false);
-    }, 4150);
+    }, 4175);
 
     return waitUntil(() => returnValue).then(() => {
       let t2 = Date.now();
       let timeDiff = t2 - t1;
       expect(timeDiff).toBeGreaterThanOrEqual(4200);
 
-      // assumes that the condition callback is checked every 250 ms
-      expect(timeDiff).toBeLessThan(4200 + 300);
+      // assumes that the condition callback is checked every 50 ms
+      expect(timeDiff).toBeLessThan(4200 + 100);
     });
   });
 
@@ -34,8 +34,8 @@ describe('waitUntil function', () => {
       let timeDiff = t2 - t1;
       expect(timeDiff).toBeGreaterThanOrEqual(0);
 
-      // assumes that the condition callback is checked every 250 ms
-      expect(timeDiff).toBeLessThan(300);
+      // assumes that the condition callback is checked every 50 ms
+      expect(timeDiff).toBeLessThan(100);
     });
   });
 
