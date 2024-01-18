@@ -1,3 +1,19 @@
+.peripheralLoop {
+  fill: #130d39;
+}
+
+.centralLoop {
+  fill: #918bd4;
+}
+
+.stem {
+  stroke: #918bd4;
+  stroke-width: 12;
+  stroke-miterlimit: 8;
+
+  fill: none;
+}
+
 .appIcon {
   height: 32px;
   pointer-events: none;
