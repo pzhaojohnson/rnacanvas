@@ -2,7 +2,7 @@
   margin: 35px 0 0 0;
   font-size: 16px;
   font-weight: 500;
-  color: hsl(240, 4.71%, 7.16%);
+  color: hsl(240, 3.63%, 5.79%);
 
   user-select: none;
   -webkit-user-select: none;
@@ -16,7 +16,7 @@
   height: 45px;
   line-height: 45px;
   font-size: 19px;
-  color: hsl(240, 81.82%, 15.13%);
+  color: hsl(240, 81%, 14.64%);
   text-align: center;
   background-color: transparent;
   cursor: pointer;
@@ -31,7 +31,7 @@
   bottom: 0px;
   left: 0px;
 
-  border: 1px solid hsl(240, 34.62%, 67.12%);
+  border: 1px solid hsl(240, 62.33%, 69.47%);
   border-radius: 24px;
 
   z-index: -1;
@@ -53,11 +53,11 @@
 
   font-size: 16px;
   font-weight: 500;
-  color: hsl(240, 4.71%, 7.16%);
+  color: hsl(240, 3.63%, 5.79%);
 }
 
 .moreInfoLinks {
-  color: rgb(29, 14, 219);
+  color: rgb(27, 11, 224);
   font-weight: 600;
   text-decoration-line: none;
 }
@@ -73,7 +73,7 @@
   display: flex;
   flex-direction: column;
 
-  animation: topSectionFadeIn 0.5s ease-in-out;
+  animation: topSectionFadeIn 0.5s;
 }
 
 @keyframes topSectionFadeIn {

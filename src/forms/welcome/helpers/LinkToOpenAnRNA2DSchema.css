@@ -1,9 +1,9 @@
 .linkArrowHead {
-  stroke: rgb(30, 14, 235);
+  stroke: rgb(31, 15, 237);
 }
 
 .linkArrowShaft {
-  stroke: rgb(30, 14, 235);
+  stroke: rgb(31, 15, 237);
 }
 
 .linkArrow {
@@ -19,7 +19,7 @@
   font-size: 14px;
   font-weight: 700;
   font-style: normal;
-  color: rgb(30, 14, 235);
+  color: rgb(31, 15, 237);
 
   cursor: pointer;
 
