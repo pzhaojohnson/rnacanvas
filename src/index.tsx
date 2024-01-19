@@ -4,8 +4,10 @@ import { LoadingScreen } from './loading-screen/LoadingScreen';
 
 import { App } from 'App';
 
-import { CiteButtonShowerBuilder as CiteMenuButtonShowerBuilder } from 'Menu/cite/2/CiteButtonShowerBuilder';
 import { ContactButtonShowerBuilder as ContactMenuButtonShowerBuilder } from 'Menu/contact/ContactButtonShowerBuilder';
+
+import { CiteButtonShowerBuilder as CiteMenuButtonShowerBuilder } from 'Menu/cite/2/CiteButtonShowerBuilder';
+
 import { RNA2DButtonBuilder } from 'Menu/RNA2D/RNA2DButtonBuilder';
 
 import { PinchToZoomFeature } from './pinch-to-zoom/PinchToZoomFeature';
@@ -159,8 +161,8 @@ setTimeout(() => {
    * Build and show menu items.
    */
   waitMilliseconds(250).then(() => {
-    (new CiteMenuButtonShowerBuilder()).build().show();
     (new ContactMenuButtonShowerBuilder()).build().show();
+    (new CiteMenuButtonShowerBuilder()).build().show();
     (new RNA2DButtonBuilder()).buildWith({ targetApp: app, theDocumentForTheApp: document });
   });
 
