@@ -1,7 +1,7 @@
 .previousVersionsList {
-  margin: 41px 0px 62px 213px;
+  margin: 39px 0px 68px 220px;
 
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
