@@ -68,7 +68,7 @@ class ExplanatoryTextFactory {
 
     let secondLine = document.createElement('p');
     secondLine.classList.add(styles.mainText);
-    secondLine.textContent = '(If you use RNAcanvas to draw structures in a publication.)';
+    secondLine.textContent = '(If you use RNAcanvas to draw structures in publications.)';
 
     let explanatoryText = document.createElement('div');
     explanatoryText.classList.add(styles.explanatoryText);
