@@ -1,6 +1,6 @@
 import { isNullish } from 'Values/isNullish';
 
-import { isString } from 'Values/isString';
+import { isString } from '@rnacanvas/value-check';
 import { isBlank } from 'Parse/isBlank';
 
 /**
