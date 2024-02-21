@@ -1,6 +1,6 @@
 import type { QuadraticBezierCurve } from 'Math/curves/QuadraticBezierCurve';
 import { displacement2D as displacement } from 'Math/points/displacement';
-import { direction2D as direction } from 'Math/points/direction';
+import { direction } from '@rnacanvas/vectors';
 
 /**
  * Calculates the angle (in radians) that is the direction of the quadratic

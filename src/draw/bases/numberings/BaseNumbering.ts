@@ -4,7 +4,7 @@ import { assignUuid } from 'Draw/svg/assignUuid';
 import { Point2D as Point } from 'Math/points/Point';
 import { distance2D as distance } from 'Draw/svg/math/distance';
 import { displacement2D as displacement } from 'Draw/svg/math/points/displacement';
-import { direction2D as direction } from 'Math/points/direction';
+import { direction } from '@rnacanvas/vectors';
 
 import { reposition } from 'Draw/bases/numberings/reposition';
 

@@ -1,6 +1,6 @@
 import type { StrictDrawing } from 'Draw/strict/StrictDrawing';
 import { centerOfOutermostLoop } from './centerOfOutermostLoop';
-import { direction2D as direction } from 'Math/points/direction';
+import { direction } from '@rnacanvas/vectors';
 import { displacement2D as displacement } from 'Math/points/displacement';
 import { normalizeAngle } from 'Math/angles/normalizeAngle';
 

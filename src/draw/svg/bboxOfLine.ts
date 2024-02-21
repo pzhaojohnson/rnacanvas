@@ -3,7 +3,7 @@ import { interpretNumericValue } from 'Draw/svg/interpretNumericValue';
 
 import { Point2D as Point } from 'Math/points/Point';
 import { displacement2D as displacement } from 'Math/points/displacement';
-import { direction2D as direction } from 'Math/points/direction';
+import { direction } from '@rnacanvas/vectors';
 
 type CircleSpecification = {
   center: Point;

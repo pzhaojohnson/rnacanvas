@@ -1,4 +1,4 @@
-import { direction2D as direction } from 'Math/points/direction';
+import { direction } from '@rnacanvas/vectors';
 
 // returns the angle that is the direction of a mouse movement
 export function directionOfMousemove(event: MouseEvent): number {

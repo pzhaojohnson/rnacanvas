@@ -4,7 +4,7 @@ import { bottomPair } from 'Partners/stems/Stem';
 import { upstreamPartner } from 'Partners/pairs/Pair';
 import { downstreamPartner } from 'Partners/pairs/Pair';
 import { displacement2D as displacement } from 'Math/points/displacement';
-import { direction2D as direction } from 'Math/points/direction';
+import { direction } from '@rnacanvas/vectors';
 import { normalizeAngle } from 'Math/angles/normalizeAngle';
 
 // returns the upstream angle of the stem in the given strict layout

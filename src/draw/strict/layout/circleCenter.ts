@@ -1,6 +1,6 @@
 import { distance2D as distance } from 'Math/distance';
 import { displacement2D as displacement } from 'Math/points/displacement';
-import { direction2D as direction } from 'Math/points/direction';
+import { direction } from '@rnacanvas/vectors';
 
 /**
  * Calculates the angle between the straight line connecting the
@@ -84,7 +84,7 @@ function circleCenter(x1: number, y1: number, x2: number, y2: number, clockwiseP
   let angleToCenter = direction(
     displacement({ x: x1, y: y1 }, { x: x2, y: y2 }),
   );
-  
+
   let sta = _straightTangentAngle(clockwisePolarDistance, straightDistance);
   if (clockwisePolarDistance > Math.PI * (straightDistance / 2)) {
     angleToCenter -= (Math.PI / 2) - sta;
