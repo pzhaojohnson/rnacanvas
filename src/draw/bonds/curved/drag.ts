@@ -1,5 +1,5 @@
 import type { QuadraticBezierBond } from './QuadraticBezierBond';
-import { midpoint2D as midpoint } from 'Math/points/midpoint';
+import { midpoint } from '@rnacanvas/points';
 import { distance2D as distance } from 'Math/distance';
 import { normalizeAngle } from 'Math/angles/normalizeAngle';
 import { ControlPointDisplacement } from './positioning';

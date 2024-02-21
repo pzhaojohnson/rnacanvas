@@ -1,6 +1,6 @@
 import type { QuadraticBezierBond } from './QuadraticBezierBond';
 import { Positioning } from './positioning';
-import { midpoint2D as midpoint } from 'Math/points/midpoint';
+import { midpoint } from '@rnacanvas/points';
 import { repositionStrungElementsOfBond } from 'Draw/bonds/strung/repositionStrungElementsOfBond';
 
 export function position(bond: QuadraticBezierBond, p: Positioning) {
