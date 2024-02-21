@@ -30,7 +30,7 @@ import { stemOfBase } from 'Draw/strict/stemOfBase';
 import { stemOfStraightBond } from 'Draw/strict/stemOfStraightBond';
 
 import { traverseLoopDownstream } from 'Partners/traverseLoopDownstream';
-import { sortNumbers } from 'Array/sortNumbers';
+import { sortNumbers } from '@rnacanvas/math';
 import { compareNumbers } from 'Array/sort';
 
 import { DrawingOverlay } from 'Draw/interact/DrawingOverlay';

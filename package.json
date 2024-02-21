@@ -34,6 +34,7 @@
     "webpack-dev-server": "^4.8.1"
   },
   "dependencies": {
+    "@rnacanvas/math": "^1.13.0",
     "@svgdotjs/svg.js": "^3.0.16",
     "@types/react-color": "^3.0.4",
     "@types/react-select": "^3.0.28",

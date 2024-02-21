@@ -15,7 +15,7 @@ import { basePaddingsOverlap } from 'Draw/bonds/straight/basePaddingsOverlap';
 
 import { handleDragOnBonds } from 'Draw/interact/handleDragOnBonds';
 
-import { sortNumbers } from 'Array/sortNumbers';
+import { sortNumbers } from '@rnacanvas/math';
 import { compareNumbers } from 'Array/sort';
 
 import { Stem } from 'Partners/stems/Stem';

@@ -1,5 +1,5 @@
 import { createStem } from 'Partners/stems/Stem';
-import { sortNumbers } from 'Array/sortNumbers';
+import { sortNumbers } from '@rnacanvas/math';
 
 import { upstreamSideOfStem } from './upstreamSideOfStem';
 
