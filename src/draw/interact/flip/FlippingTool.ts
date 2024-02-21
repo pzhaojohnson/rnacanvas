@@ -38,7 +38,7 @@ import { BasesHighlighting } from './BasesHighlighting';
 import { OverlaidMessageContainer } from 'Draw/interact/OverlaidMessageContainer';
 import styles from './FlippingTool.css';
 
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 
 type DrawingElement = (
   Base

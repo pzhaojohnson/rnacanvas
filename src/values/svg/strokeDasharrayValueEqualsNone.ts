@@ -1,4 +1,4 @@
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 
 import { isString } from '@rnacanvas/value-check';
 import { isBlank } from 'Parse/isBlank';

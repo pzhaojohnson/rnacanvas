@@ -2,7 +2,7 @@ import { CircleBaseOutline } from './CircleBaseOutline';
 
 import * as SVG from 'Draw/svg/NodeSVG';
 
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 
 import { CircleBaseOutlineDecorator } from './parent';
 

@@ -12,7 +12,7 @@ import { TextInput } from 'Forms/inputs/text/TextInput';
 import type { CSSProperties } from 'Forms/inputs/text/TextInput';
 
 import { isNumber } from 'Values/isNumber';
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 
 const degreeCharacter = '\xB0';
 

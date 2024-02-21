@@ -5,7 +5,7 @@ import { pair as pairInPartners } from 'Partners/edit';
 import { splitLines } from 'Parse/splitLines';
 import { nonemptySplitByWhitespace } from 'Parse/nonemptySplitByWhitespace';
 
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 import { isBlank } from 'Parse/isBlank';
 
 import { atIndex } from 'Array/at';

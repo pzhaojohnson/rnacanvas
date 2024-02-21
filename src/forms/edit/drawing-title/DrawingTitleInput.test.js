@@ -12,7 +12,7 @@ import { unmountComponentAtNode } from 'react-dom';
 import { act } from 'react-dom/test-utils';
 import { Simulate } from 'react-dom/test-utils';
 
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 
 import { DrawingTitleInput } from './DrawingTitleInput';
 

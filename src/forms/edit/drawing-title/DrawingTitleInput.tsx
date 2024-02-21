@@ -6,7 +6,7 @@ import styles from './DrawingTitleInput.css';
 import { generateHTMLCompatibleUUID } from 'Utilities/generateHTMLCompatibleUUID';
 
 import { isBlank } from 'Parse/isBlank';
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 
 // keep stable to help with refocusing the input element on app refresh
 const id = generateHTMLCompatibleUUID();

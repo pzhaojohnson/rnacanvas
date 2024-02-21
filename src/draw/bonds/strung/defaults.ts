@@ -2,7 +2,7 @@ import * as SVG from '@svgdotjs/svg.js';
 
 import type { StrungElement } from 'Draw/bonds/strung/StrungElement';
 
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 
 /**
  * Meant to be able to be directly input to the attr method of SVG elements.

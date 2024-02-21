@@ -12,7 +12,7 @@ import { EditEvent } from 'Forms/edit/svg/StrokeDasharrayField';
 
 import { generateHTMLCompatibleUUID } from 'Utilities/generateHTMLCompatibleUUID';
 
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 
 /**
  * A value that the stroke-dasharray attribute of an SVG element can

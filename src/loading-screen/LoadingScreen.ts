@@ -5,7 +5,7 @@ import { createAppLogo } from './private/createAppLogo';
 
 import { FadeOutOverlay } from './private/FadeOutOverlay';
 
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 
 /**
  * A loading screen that covers the whole window when appended to the

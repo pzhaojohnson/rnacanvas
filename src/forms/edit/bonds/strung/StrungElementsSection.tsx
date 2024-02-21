@@ -11,7 +11,7 @@ import { IndexSection } from 'Forms/edit/bonds/strung/IndexSection';
 
 import { AddStrungElementButton } from 'Forms/edit/bonds/strung/AddStrungElementButton';
 
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 import { atIndex } from 'Array/at';
 
 // specifies which index sections are collapsed

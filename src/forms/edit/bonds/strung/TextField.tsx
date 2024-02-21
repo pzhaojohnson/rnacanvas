@@ -6,7 +6,7 @@ import type { StrungText } from 'Draw/bonds/strung/StrungElement';
 import { repositionStrungElementAtIndex } from 'Forms/edit/bonds/strung/repositionStrungElementAtIndex';
 
 import { ValuesWrapper } from 'Values/ValuesWrapper';
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 
 import * as React from 'react';
 

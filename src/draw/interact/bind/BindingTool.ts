@@ -58,7 +58,7 @@ import type { OverlaidMessageContainer } from 'Draw/interact/OverlaidMessageCont
 import styles from './BindingTool.css';
 import { detectMacOS } from 'Utilities/detectMacOS';
 
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 
 export type Options = {
 

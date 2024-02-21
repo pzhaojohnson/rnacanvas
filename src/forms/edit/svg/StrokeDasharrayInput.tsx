@@ -2,7 +2,7 @@ import * as SVG from '@svgdotjs/svg.js';
 
 import { ValuesWrapper } from 'Values/ValuesWrapper';
 
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 import { isBlank } from 'Parse/isBlank';
 import { strokeDasharrayValueEqualsNone as equalsNone } from 'Values/svg/strokeDasharrayValueEqualsNone';
 

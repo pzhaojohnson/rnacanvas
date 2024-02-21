@@ -6,7 +6,7 @@ import * as React from 'react';
 
 import styles from './ZoomInput.css';
 
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 
 import { round } from 'Math/round';
 

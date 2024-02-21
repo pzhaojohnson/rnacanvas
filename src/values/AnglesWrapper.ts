@@ -2,7 +2,7 @@ import { normalizeAngle } from 'Math/angles/normalizeAngle';
 
 import { NumbersWrapper } from 'Values/NumbersWrapper';
 
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 
 export type Nullish = null | undefined;
 

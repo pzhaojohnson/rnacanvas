@@ -15,7 +15,7 @@ import { TextInput } from 'Forms/inputs/text/TextInput';
 
 import { generateHTMLCompatibleUUID } from 'Utilities/generateHTMLCompatibleUUID';
 
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 import { isBlank } from 'Parse/isBlank';
 
 class SequenceWrapper {

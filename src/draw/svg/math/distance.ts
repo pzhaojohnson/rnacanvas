@@ -2,7 +2,7 @@
 import { distance2D as _distance2D } from 'Math/distance';
 
 import { interpretNumericValue } from 'Draw/svg/interpretNumericValue';
-import { isNullish } from 'Values/isNullish';
+import { isNullish } from '@rnacanvas/value-check';
 
 /**
  * Calculates the distance between the two points whose coordinates
