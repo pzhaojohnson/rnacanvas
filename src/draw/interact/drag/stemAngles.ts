@@ -3,7 +3,7 @@ import { Stem } from 'Partners/stems/Stem';
 import { bottomPair } from 'Partners/stems/Stem';
 import { upstreamPartner } from 'Partners/pairs/Pair';
 import { downstreamPartner } from 'Partners/pairs/Pair';
-import { displacement2D as displacement } from 'Math/points/displacement';
+import { displacement } from '@rnacanvas/points';
 import { direction } from '@rnacanvas/vectors';
 import { normalizeAngle } from 'Math/angles/normalizeAngle';
 

@@ -1,5 +1,5 @@
 // the underlying displacement2D function
-import { displacement2D as _displacement2D } from 'Math/points/displacement';
+import { displacement as _displacement2D } from '@rnacanvas/points';
 
 import type { Point2D as _Point2D } from 'Math/points/Point';
 import { isPoint2D as _isPoint2D } from 'Math/points/Point';

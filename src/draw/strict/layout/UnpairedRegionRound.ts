@@ -2,7 +2,7 @@ import NormalizedBaseCoordinates from './NormalizedBaseCoordinates';
 import { normalizeAngle } from 'Math/angles/normalizeAngle';
 import { circleCenter } from './circleCenter';
 import { distance2D as distance } from 'Math/distance';
-import { displacement2D as displacement } from 'Math/points/displacement';
+import { displacement } from '@rnacanvas/points';
 import { direction } from '@rnacanvas/vectors';
 import { RoundLoop } from './StemLayout';
 import { UnpairedRegionInterface as UnpairedRegion } from './StemInterface';

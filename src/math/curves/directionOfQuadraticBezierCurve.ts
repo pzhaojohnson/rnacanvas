@@ -1,5 +1,5 @@
 import type { QuadraticBezierCurve } from 'Math/curves/QuadraticBezierCurve';
-import { displacement2D as displacement } from 'Math/points/displacement';
+import { displacement } from '@rnacanvas/points';
 import { direction } from '@rnacanvas/vectors';
 
 /**

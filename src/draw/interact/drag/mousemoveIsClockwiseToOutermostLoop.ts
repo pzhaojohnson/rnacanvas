@@ -1,7 +1,7 @@
 import type { StrictDrawing } from 'Draw/strict/StrictDrawing';
 import { centerOfOutermostLoop } from './centerOfOutermostLoop';
 import { direction } from '@rnacanvas/vectors';
-import { displacement2D as displacement } from 'Math/points/displacement';
+import { displacement } from '@rnacanvas/points';
 import { normalizeAngle } from 'Math/angles/normalizeAngle';
 
 export function mousemoveIsClockwiseToOutermostLoop(strictDrawing: StrictDrawing, event: MouseEvent): boolean {

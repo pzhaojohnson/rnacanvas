@@ -2,7 +2,7 @@ import * as SVG from '@svgdotjs/svg.js';
 import { interpretNumericValue } from 'Draw/svg/interpretNumericValue';
 
 import { Point2D as Point } from 'Math/points/Point';
-import { displacement2D as displacement } from 'Math/points/displacement';
+import { displacement } from '@rnacanvas/points';
 import { direction } from '@rnacanvas/vectors';
 
 type CircleSpecification = {

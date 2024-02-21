@@ -1,6 +1,6 @@
 import type { QuadraticBezierCurve } from 'Math/curves/QuadraticBezierCurve';
 import type { Point2D as Point } from 'Math/points/Point';
-import { displacement2D as displacement } from 'Math/points/displacement';
+import { displacement } from '@rnacanvas/points';
 
 /**
  * Calculates a point on the quadratic bezier curve for a given value of t

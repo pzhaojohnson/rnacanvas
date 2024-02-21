@@ -1,6 +1,6 @@
 import type { LinearBezierCurve } from 'Math/curves/LinearBezierCurve';
 import type { Point2D as Point } from 'Math/points/Point';
-import { displacement2D as displacement } from 'Math/points/displacement';
+import { displacement } from '@rnacanvas/points';
 
 /**
  * Returns the point on the linear bezier curve for a given value of t
