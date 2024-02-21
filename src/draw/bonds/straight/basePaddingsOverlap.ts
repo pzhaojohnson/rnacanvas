@@ -1,6 +1,6 @@
 import type { StraightBond } from 'Draw/bonds/straight/StraightBond';
 
-import { distance2D as distance } from 'Math/points/distance';
+import { distance } from '@rnacanvas/points';
 
 /**
  * Returns true if the two base paddings of the straight bond overlap.
