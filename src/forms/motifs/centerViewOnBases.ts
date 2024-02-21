@@ -1,7 +1,7 @@
 import type { StrictDrawing } from 'Draw/strict/StrictDrawing';
 import type { Base } from 'Draw/bases/Base';
 import { Point2D as Point } from 'Math/points/Point';
-import { centroid2D as centroid } from 'Math/points/centroid';
+import { centroid } from '@rnacanvas/points';
 import { displacement2D as displacement } from 'Math/points/displacement';
 
 type Rect = {
