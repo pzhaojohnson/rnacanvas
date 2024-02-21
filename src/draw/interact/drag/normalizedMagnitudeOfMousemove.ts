@@ -1,5 +1,5 @@
 import type { StrictDrawing } from 'Draw/strict/StrictDrawing';
-import { magnitude2D as magnitudeOfVector } from 'Math/points/magnitude';
+import { magnitude as magnitudeOfVector } from '@rnacanvas/vectors';
 import { zoom } from 'Draw/zoom';
 
 // returns the normalized magnitude of a mouse movement accounting for

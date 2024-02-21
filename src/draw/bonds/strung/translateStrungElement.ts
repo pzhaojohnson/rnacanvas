@@ -8,7 +8,7 @@ import { curveLengthOfBond } from 'Draw/bonds/strung/curveLengthOfBond';
 
 import { directionOfBezierCurve } from 'Math/curves/directionOfBezierCurve';
 
-import { magnitude2D as magnitude } from 'Math/points/magnitude';
+import { magnitude } from '@rnacanvas/vectors';
 import { direction } from '@rnacanvas/vectors';
 
 import { repositionStrungElement } from 'Draw/bonds/strung/repositionStrungElement';
