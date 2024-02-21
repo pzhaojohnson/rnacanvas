@@ -1,3 +1,3 @@
-import { mean } from 'Math/mean';
+import { mean } from '@rnacanvas/math';
 
 export { mean as average };

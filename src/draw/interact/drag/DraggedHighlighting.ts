@@ -1,6 +1,6 @@
 import { Point2D as Point } from 'Math/points/Point';
 import * as SVG from '@svgdotjs/svg.js';
-import { mean } from 'Math/mean';
+import { mean } from '@rnacanvas/math';
 
 export type BaseCoordinates = {
   center: Point;

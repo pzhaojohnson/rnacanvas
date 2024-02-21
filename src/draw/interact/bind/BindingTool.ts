@@ -49,7 +49,7 @@ import type { DrawingOverlay } from 'Draw/interact/DrawingOverlay';
 
 import { SideHighlighting } from './SideHighlighting';
 import { SideHighlightingType } from './SideHighlighting';
-import { mean } from 'Math/mean';
+import { mean } from '@rnacanvas/math';
 
 import { SecondaryBondShroud } from './SecondaryBondShroud';
 import { TertiaryBondShroud } from './TertiaryBondShroud';

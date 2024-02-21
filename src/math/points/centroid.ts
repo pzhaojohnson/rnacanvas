@@ -1,4 +1,4 @@
-import { mean } from 'Math/mean';
+import { mean } from '@rnacanvas/math';
 import { Point2D } from 'Math/points/Point';
 
 /**

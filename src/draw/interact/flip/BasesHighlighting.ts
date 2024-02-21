@@ -1,7 +1,7 @@
 import type { Base } from 'Draw/bases/Base';
 import { BasesTrace } from 'Draw/interact/highlight/BasesTrace';
 import * as SVG from '@svgdotjs/svg.js';
-import { mean } from 'Math/mean';
+import { mean } from '@rnacanvas/math';
 
 export type Options = {
 
