@@ -3,8 +3,8 @@ import { AnglesWrapper } from 'Values/AnglesWrapper';
 import { normalizeAngle } from 'Math/angles/normalizeAngle';
 import { round } from 'Math/round';
 
-import { radiansToDegrees } from 'Math/angles/degrees'
-import { degreesToRadians } from 'Math/angles/degrees';
+import { degrees as radiansToDegrees } from '@rnacanvas/math';
+import { radians as degreesToRadians } from '@rnacanvas/math';
 
 import * as React from 'react';
 
