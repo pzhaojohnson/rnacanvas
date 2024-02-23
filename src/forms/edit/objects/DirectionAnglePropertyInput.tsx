@@ -11,7 +11,7 @@ import * as React from 'react';
 import { TextInput } from 'Forms/inputs/text/TextInput';
 import type { CSSProperties } from 'Forms/inputs/text/TextInput';
 
-import { isNumber } from 'Values/isNumber';
+import { isNumber } from '@rnacanvas/value-check';
 import { isNullish } from '@rnacanvas/value-check';
 
 const degreeCharacter = '\xB0';

@@ -6,7 +6,7 @@ import type { StrungCircle } from 'Draw/bonds/strung/StrungElement';
 import type { StrungTriangle } from 'Draw/bonds/strung/StrungElement';
 import type { StrungRectangle } from 'Draw/bonds/strung/StrungElement';
 
-import { isNumber } from 'Values/isNumber';
+import { isNumber } from '@rnacanvas/value-check';
 import { isPoint2D as isVector } from 'Math/points/Point';
 
 function findSVGElement(svg: SVG.Svg, id: unknown): SVG.Element | never {
