@@ -36,6 +36,7 @@
   "dependencies": {
     "@rnacanvas/math": "^1.13.0",
     "@rnacanvas/points": "^1.8.0",
+    "@rnacanvas/utilities": "^1.2.0",
     "@rnacanvas/value-check": "^1.6.2",
     "@rnacanvas/vectors": "^1.4.0",
     "@svgdotjs/svg.js": "^3.0.16",

@@ -29,7 +29,7 @@ import styles from './EditingTool.css';
 import { OverlaidMessageContainer } from 'Draw/interact/OverlaidMessageContainer';
 import { BasePositionDescription } from './BasePositionDescription';
 import { SelectedElementsDescription } from './SelectedElementsDescription';
-import { detectMacOS } from 'Utilities/detectMacOS';
+import { detectMac as detectMacOS } from '@rnacanvas/utilities';
 
 import { removeElements } from './removeElements';
 import { userIsTyping } from 'Utilities/userIsTyping';

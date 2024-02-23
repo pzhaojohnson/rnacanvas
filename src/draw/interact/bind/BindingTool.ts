@@ -56,7 +56,7 @@ import { TertiaryBondShroud } from './TertiaryBondShroud';
 
 import type { OverlaidMessageContainer } from 'Draw/interact/OverlaidMessageContainer';
 import styles from './BindingTool.css';
-import { detectMacOS } from 'Utilities/detectMacOS';
+import { detectMac as detectMacOS } from '@rnacanvas/utilities';
 
 import { isNullish } from '@rnacanvas/value-check';
 

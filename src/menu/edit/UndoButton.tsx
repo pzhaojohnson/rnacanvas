@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import { DroppedButton } from 'Menu/DroppedButton';
 import type { App } from 'App';
-import { detectMacOS } from 'Utilities/detectMacOS';
+import { detectMac as detectMacOS } from '@rnacanvas/utilities';
 
 export type Props = {
   app: App;
