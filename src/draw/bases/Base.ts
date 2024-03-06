@@ -12,6 +12,8 @@ import * as Outline from './private/outline';
 
 import * as Numbering from './private/numbering';
 
+import { mean } from '@rnacanvas/math';
+
 export type ConstructorArgs = (
   Svg.Text
   | {
@@ -128,6 +130,22 @@ export class Base {
    */
   setCenterPoint(p: Point) {
     return this.setCenter(p);
+  }
+
+  /**
+   * This method is meant to return the center point of the nucleobase within the client coordinate system
+   * (i.e., the same coordinate system used by methods such as `getBoundingClientRect`).
+   *
+   * Currently, though, this method just returns the center client point of the text element of the nucleobase,
+   * which might possibly be sometimes different from the true center client point of the nucleobase.
+   */
+  getCenterClientPoint(): Point {
+    let textBoundingClientRect = this.text.node.getBoundingClientRect();
+
+    return {
+      x: mean([textBoundingClientRect.left, textBoundingClientRect.right]),
+      y: mean([textBoundingClientRect.top, textBoundingClientRect.bottom]),
+    };
   }
 
   appendTo(

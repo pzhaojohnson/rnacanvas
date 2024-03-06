@@ -173,6 +173,15 @@ describe('Base class', () => {
     expect(b.text.cy()).toBeCloseTo(31.471864);
   });
 
+  test('getCenterClientPoint method', () => {
+    let b = new Base({ text: svg.text('G' )});
+
+    b.text.node = { getBoundingClientRect: () => ({ left: 57, right: 191, top: 329, bottom: 394 })};
+
+    expect(b.getCenterClientPoint().x).toBeCloseTo((57 + 191) / 2);
+    expect(b.getCenterClientPoint().y).toBeCloseTo((329 + 394) / 2);
+  });
+
   test('appendTo and remove methods', () => {
     let b = new Base({ text: svg.text('g') });
 
