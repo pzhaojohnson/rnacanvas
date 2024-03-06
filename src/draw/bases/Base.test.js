@@ -162,6 +162,17 @@ describe('Base class', () => {
     expect(b.text.cy()).toBeCloseTo(2376.235987);
   });
 
+  test('getCenterPoint and setCenterPoint methods', () => {
+    let b = new Base({ text: svg.text('A') });
+    b.setCenterPoint({ x: -742.3718, y: 31.471864 });
+    expect(b.getCenterPoint().x).toBeCloseTo(-742.3718);
+    expect(b.getCenterPoint().y).toBeCloseTo(31.471864);
+
+    // also moved text
+    expect(b.text.cx()).toBeCloseTo(-742.3718);
+    expect(b.text.cy()).toBeCloseTo(31.471864);
+  });
+
   test('appendTo and remove methods', () => {
     let b = new Base({ text: svg.text('g') });
 

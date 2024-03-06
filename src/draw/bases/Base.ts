@@ -116,6 +116,20 @@ export class Base {
     this.recenter(p);
   }
 
+  /**
+   * Alias for the `getCenter` method.
+   */
+  getCenterPoint(): Point {
+    return this.getCenter();
+  }
+
+  /**
+   * Alias for the `setCenter` method.
+   */
+  setCenterPoint(p: Point) {
+    return this.setCenter(p);
+  }
+
   appendTo(
     ...args: Parameters<
       InstanceType<typeof AppendTo.BaseDecorator>['appendTo']
