@@ -4,6 +4,12 @@ import { LoadingScreen } from './loading-screen/LoadingScreen';
 
 import { App } from 'App';
 
+import { Base as Nucleobase } from './draw/bases/Base';
+
+import { PrimaryBond } from './draw/bonds/straight/PrimaryBond';
+
+import { SecondaryBond, secondaryBondTypes } from './draw/bonds/straight/SecondaryBond';
+
 import { ContactButtonShowerBuilder as ContactMenuButtonShowerBuilder } from 'Menu/contact/ContactButtonShowerBuilder';
 
 import { CiteButtonShowerBuilder as CiteMenuButtonShowerBuilder } from 'Menu/cite/2/CiteButtonShowerBuilder';
@@ -180,6 +186,22 @@ setTimeout(() => {
 
   waitMilliseconds(500).then(() => {
     let dragOverToSelectBasesTool = (new DragOverToSelectBasesToolBuilder()).buildFor(app);
+  });
+
+  // apply AES default values if specified
+  waitMilliseconds(500).then(() => {
+    if ((new URL(window.location.href)).searchParams.get('default_values')?.toUpperCase() == 'AES') {
+      app.drawing.baseWidth = 13.5;
+      app.drawing.baseHeight = 13.5;
+
+      Nucleobase.recommendedDefaults.text['font-size'] = 12;
+
+      PrimaryBond.recommendedDefaults.line['stroke'] = '#000000';
+
+      secondaryBondTypes.forEach(t => {
+        SecondaryBond.recommendedDefaults[t].line['stroke'] = '#000000';
+      });
+    }
   });
 }, 50);
 

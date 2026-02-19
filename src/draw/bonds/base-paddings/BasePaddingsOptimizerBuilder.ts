@@ -7,7 +7,7 @@ import { OptimalBasePaddingCalculator2 } from './OptimalBasePaddingCalculator2';
 
 export class BasePaddingsOptimizerBuilder {
   buildForPrimaryBonds() {
-    let scalingFactor = 0.61;
+    let scalingFactor = defaultValues == 'AES' ? 0.571 : 0.61;
 
     return new BasePaddingsOptimizer({
       basePadding1Optimizer: new BasePadding1Optimizer({
@@ -24,7 +24,7 @@ export class BasePaddingsOptimizerBuilder {
   }
 
   buildForSecondaryBonds() {
-    let scalingFactor = 0.5049014981555302;
+    let scalingFactor = defaultValues == 'AES' ? 0.464 : 0.5049014981555302;
 
     return new BasePaddingsOptimizer({
       basePadding1Optimizer: new BasePadding1Optimizer({
@@ -56,4 +56,13 @@ export class BasePaddingsOptimizerBuilder {
       }),
     });
   }
+}
+
+let defaultValues: String | undefined = undefined;
+
+try {
+  defaultValues = (new URL(window.location.href)).searchParams.get('default_values')?.toUpperCase();
+} catch (error) {
+  console.error(error);
+  console.error('Error trying to retrieve `default_values` URL parameter.')
 }

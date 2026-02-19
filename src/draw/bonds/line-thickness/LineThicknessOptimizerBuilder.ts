@@ -20,7 +20,7 @@ export class LineThicknessOptimizerBuilder {
   buildForPrimaryBonds() {
     return new LineThicknessOptimizer<PrimaryBond>({
       optimalLineThicknessCalculator: new OptimalLineThicknessCalculator({
-        scalingFactor: 0.1229507927611445,
+        scalingFactor: defaultValues == 'AES' ? 0.143 : 0.1229507927611445,
       }),
       lineThicknessSetter: new StraightBondLineThicknessSetter(),
     });
@@ -33,7 +33,7 @@ export class LineThicknessOptimizerBuilder {
   buildForSecondaryBonds() {
     return new LineThicknessOptimizer<SecondaryBond>({
       optimalLineThicknessCalculator: new OptimalLineThicknessCalculator({
-        scalingFactor: 0.1967212684178312,
+        scalingFactor: defaultValues == 'AES' ? 0.143 : 0.1967212684178312,
       }),
       lineThicknessSetter: new StraightBondLineThicknessSetter(),
     });
@@ -51,4 +51,13 @@ export class LineThicknessOptimizerBuilder {
       lineThicknessSetter: new CurvedBondLineThicknessSetter(),
     });
   }
+}
+
+let defaultValues: String | undefined = undefined;
+
+try {
+  defaultValues = (new URL(window.location.href)).searchParams.get('default_values')?.toUpperCase();
+} catch (error) {
+  console.error(error);
+  console.error('Error trying to retrieve `default_values` URL parameter.')
 }
