@@ -41,6 +41,11 @@ import { waitMilliseconds } from 'Time/waitMilliseconds';
 import { waitUntil } from 'Time/waitUntil';
 import { ElapsedTimeCalculator } from 'Time/ElapsedTimeCalculator';
 
+if (module.hot) {
+  module.hot.accept();
+}
+
+
 let timeOnPageCalculator = new ElapsedTimeCalculator();
 timeOnPageCalculator.restartCounting();
 
