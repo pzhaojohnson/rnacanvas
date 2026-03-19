@@ -19,6 +19,13 @@ export function createRNAcanvasBase(args: Args): RNAcanvasBase {
 
   text.text(rna2DResidue.residueName);
 
+  try {
+    let fontClass = rna2DClasses?.find(c => c.name == 'font');
+
+    // apply font class by default (even if not listed in residue class list - otherwise bases are often too big)
+    fontClass ? text.attr(fontClass.styleProperties) : {};
+  } catch {}
+
   rna2DClasses?.forEach(c => {
     try {
       if (rna2DResidue.classes.includes(c.name)) {
