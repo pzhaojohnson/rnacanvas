@@ -12,9 +12,15 @@ export class SchemaWrapper {
   }
 
   get classes() {
-    return (new NonNullObjectWrapper(this.wrappee))
+    let classes = (new NonNullObjectWrapper(this.wrappee))
       .getArrayProperty('classes')
       .map(c => new SchemaClassWrapper(c));
+
+    // include hard-coded classes first (so they can be possibly overruled)
+    return [
+      ...hardCodedClasses,
+      ...classes,
+    ];
   }
 
   get rnaComplexes() {
@@ -23,3 +29,22 @@ export class SchemaWrapper {
       .map(rc => new RNAComplexWrapper(rc));
   }
 }
+
+const hardCodedClasses = [
+  {
+    name: 'text-black',
+    fill: '#000000',
+  },
+  {
+    name: 'text-green',
+    fill: '#00ff00',
+  },
+  {
+    name: 'text-red',
+    fill: '#ff00ff',
+  },
+  {
+    name: 'text-blue',
+    fill: '#0000ff',
+  },
+].map(c => new SchemaClassWrapper(c));

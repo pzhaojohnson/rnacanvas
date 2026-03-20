@@ -31,16 +31,23 @@ describe('SchemaWrapper class', () => {
   });
 
   test('classes getter', () => {
+    // has 3 classes explicitly
     let schema = new SchemaWrapper(exampleSchemas.schema1);
-    expect(schema.classes.length).toBe(3);
+
+    // 3 + 4 hard-coded classes
+    expect(schema.classes.length).toBe(7);
 
     schema.classes.forEach(c => {
       expect(c instanceof SchemaClassWrapper).toBeTruthy();
     });
 
-    expect(schema.classes[0].name).toBe('font');
-    expect(schema.classes[1].name).toBe('numbering-line');
-    expect(schema.classes[2].name).toBe('bp-line');
+    expect(schema.classes[0].name).toBe('text-black');
+    expect(schema.classes[1].name).toBe('text-green');
+    expect(schema.classes[2].name).toBe('text-red');
+    expect(schema.classes[3].name).toBe('text-blue');
+    expect(schema.classes[4].name).toBe('font');
+    expect(schema.classes[5].name).toBe('numbering-line');
+    expect(schema.classes[6].name).toBe('bp-line');
   });
 
   test('rnaComplexes getter', () => {
