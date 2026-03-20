@@ -8,7 +8,7 @@ let rnaCanvasBaseNumberingTextDefaults = {
   'font-family': 'Arial',
   'font-size': 9,
   'font-weight': 'normal',
-  'fill': '#525252',
+  'fill': '#cccccc',
   'fill-opacity': 1,
 };
 
@@ -29,6 +29,13 @@ export function createRNAcanvasBaseNumberingText(args: Args) {
   text.text(String(rna2DLabelContent.label));
 
   text.attr(rnaCanvasBaseNumberingTextDefaults);
+
+  try {
+    let fontClass = rna2DClasses?.find(c => c.name == 'font');
+
+    // apply font class by default (even if not included in label class list - otherwise numberings are often too big)
+    fontClass ? text.attr(fontClass.styleProperties) : {};
+  } catch {}
 
   // apply RNA 2D classes after applying default values
   // (so that RNA 2D classes overwrite default values)

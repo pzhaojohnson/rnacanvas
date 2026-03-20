@@ -80,7 +80,7 @@ describe('createRNAcanvasBaseNumberingText function', () => {
     expect(text.attr('font-family')).toBe('Arial');
     expect(text.attr('font-size')).toBe(9);
     expect(text.attr('font-weight')).toBe('normal');
-    expect(text.attr('fill')).toBe('#525252');
+    expect(text.attr('fill')).toBe('#cccccc');
     expect(text.attr('fill-opacity')).toBe(1);
   });
 
