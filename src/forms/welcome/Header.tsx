@@ -2,6 +2,8 @@ import * as React from 'react';
 import styles from './Header.css';
 import { AppIcon } from './AppIcon';
 
+import { RNAcanvasReferencesDialogShowerBuilder as CiteFormShowerBuilder } from 'Forms/cite/RNAcanvas-references-dialog/RNAcanvasReferencesDialogShowerBuilder';
+
 function AppName() {
   return (
     <div className={styles.appName} >
@@ -15,16 +17,38 @@ function AppName() {
   );
 }
 
-function RightText() {
-  let style: React.CSSProperties = {
-    display: 'flex', flexDirection: 'column', alignSelf: 'end',
-  };
+function CitationsRequest() {
+  let onClick = () => citeFormShower.show();
+
+  let Citing = (
+    <span className={styles.citeLink} onClick={onClick} >
+      <span className={styles.citeLinkText}>
+        Citing
+      </span>
+      <LinkArrow />
+    </span>
+  );
+
   return (
-    <div {...{ style }} >
-      <p className={styles.rightText} >
-        Last Updated on July 6, 2022
-      </p>
-    </div>
+    <p className={styles.citationsRequest} >
+      {Citing} RNAcanvas is the best way to show support!
+    </p>
+  );
+}
+
+function LinkArrow() {
+  return (
+    <svg viewBox="0 0 14 12" style={{ height: '14px', translate: '-3px 2px', cursor: 'pointer' }} >
+      <path
+        d="M 8.75 0.75 L 13.25 0.75 L 13.25 5.75"
+        stroke="blue" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+        fill="none"
+      ></path>
+      <line
+        x1="6.75" y1="7.25" x2="13.25" y2="0.75"
+        stroke="blue" strokeWidth="1.5" strokeLinecap="round"
+      ></line>
+    </svg>
   );
 }
 
@@ -44,8 +68,12 @@ export function Header() {
         <AppIcon />
         <div style={{ width: '18px' }} />
         <AppName />
+        <div style={{ flexGrow: 1 }} />
+        <CitationsRequest />
       </div>
       <Underline />
     </div>
   );
 }
+
+const citeFormShower = (new CiteFormShowerBuilder()).build();

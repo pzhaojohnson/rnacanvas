@@ -29,15 +29,48 @@
   -webkit-user-select: none;
 }
 
-.rightText {
+.citationsRequest {
+  margin: -2px -1px 0px 0px;
+  padding: 0px;
+
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
-  font-style: italic;
-  font-weight: 600;
-  color: rgb(80, 80, 88);
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+
   text-align: right;
 
   user-select: none;
   -webkit-user-select: none;
+
+  animation: fadeIn 2s;
+}
+
+.citeLink {
+  margin-right: 1px;
+}
+
+.citeLinkText {
+  color: blue;
+
+  cursor: pointer;
+}
+
+.citeLink:hover .citeLinkText {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .underline {
