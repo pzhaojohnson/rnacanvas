@@ -3,11 +3,6 @@ import { DroppedButton } from 'Menu/DroppedButton';
 import type { App } from 'App';
 import { WelcomePage } from 'Forms/welcome/WelcomePage';
 
-import { NewAppTabOpenerBuilder } from 'Utilities/URLs/NewAppTabOpenerBuilder';
-
-let newAppTabOpenerBuilder = new NewAppTabOpenerBuilder();
-let newAppTabOpener = newAppTabOpenerBuilder.build();
-
 export type Props = {
   app: App;
 }
@@ -22,7 +17,7 @@ export function WelcomeButton(props: Props) {
             <WelcomePage app={props.app} />
           ));
         } else {
-          newAppTabOpener.openANewTabOfTheApp();
+          props.app.newTab();
         }
       }}
     />

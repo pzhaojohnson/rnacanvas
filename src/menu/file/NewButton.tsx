@@ -3,11 +3,6 @@ import { DroppedButton } from 'Menu/DroppedButton';
 import type { App } from 'App';
 import { CreateNewDrawingForm } from 'Forms/new/CreateNewDrawingForm';
 
-import { NewAppTabOpenerBuilder } from 'Utilities/URLs/NewAppTabOpenerBuilder';
-
-let newAppTabOpenerBuilder = new NewAppTabOpenerBuilder();
-let newAppTabOpener = newAppTabOpenerBuilder.build();
-
 export type Props = {
   app: App;
 }
@@ -25,7 +20,7 @@ export function NewButton(props: Props) {
             />
           ));
         } else {
-          newAppTabOpener.openANewTabOfTheApp();
+          props.app.newTab();
         }
       }}
     />

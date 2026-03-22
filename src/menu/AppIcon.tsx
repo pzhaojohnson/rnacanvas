@@ -3,11 +3,6 @@ import styles from './AppIcon.css';
 import type { App } from 'App';
 import { WelcomePage } from 'Forms/welcome/WelcomePage';
 
-import { NewAppTabOpenerBuilder } from 'Utilities/URLs/NewAppTabOpenerBuilder';
-
-let newAppTabOpenerBuilder = new NewAppTabOpenerBuilder();
-let newAppTabOpener = newAppTabOpenerBuilder.build();
-
 const svg = `
   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     viewBox="0 0 192 192" style="enable-background:new 0 0 192 192;" xml:space="preserve">
@@ -59,7 +54,7 @@ export function AppIcon(props: Props) {
             <WelcomePage app={props.app} />
           ));
         } else {
-          newAppTabOpener.openANewTabOfTheApp();
+          props.app.newTab();
         }
       }}
     />

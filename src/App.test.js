@@ -43,4 +43,39 @@ describe('App class', () => {
     app.updateDocumentTitle();
     expect(document.title).toBe('1123nm');
   });
+
+  test('`newTab()`', () => {
+    window.open = jest.fn();
+
+    var location = window.location;
+
+    delete window.location;
+
+    window.location = {
+      ...location,
+      href: 'https://rnacanvas.app',
+    };
+
+    expect(window.open).not.toHaveBeenCalled();
+
+    app.newTab();
+
+    expect(window.open).toHaveBeenCalledTimes(1);
+    expect(window.open.mock.calls[0][0]).toBe('https://rnacanvas.app');
+    expect(window.open.mock.calls[0][1]).toBe('_blank');
+
+    // include a schema URL that should be omitted
+    window.location = {
+      ...location,
+      href: 'https://rnacanvas.app?schema=https://r2dt.org&default_values=AES',
+      search: '?schema=https://r2dt.org&default_values=AES',
+    };
+
+    app.newTab();
+
+    // maintains default values
+    expect(window.open).toHaveBeenCalledTimes(2);
+    expect(window.open.mock.calls[1][0]).toBe('https://rnacanvas.app?default_values=AES');
+    expect(window.open.mock.calls[1][1]).toBe('_blank');
+  });
 });

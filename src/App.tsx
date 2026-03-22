@@ -183,4 +183,21 @@ export class App {
     this.refresh();
     drawingViewCenterer.applyTo(this.drawing);
   }
+
+  /**
+   * Opens a new tab of the RNAcanvas app.
+   */
+  newTab(): void {
+    let urlParams = new URLSearchParams(window.location.search);
+
+    let defaultValues = urlParams.get('default_values');
+
+    // maintain default values
+    let url = (
+      'https://rnacanvas.app'
+      + (defaultValues ? `?default_values=${defaultValues}` : '')
+    );
+
+    window.open(url, '_blank');
+  }
 }
