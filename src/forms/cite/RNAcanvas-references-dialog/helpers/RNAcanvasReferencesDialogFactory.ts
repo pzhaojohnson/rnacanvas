@@ -20,21 +20,65 @@ class HeaderFactory {
   }
 }
 
-class RNAcanvasJournalLineFactory {
+class OpenerFactory {
   produce() {
-    let leadingText = document.createElement('span');
-    leadingText.textContent = 'Article in ';
+    let RNAcanvas = document.createElement('span');
+    RNAcanvas.textContent = 'RNAcanvas';
+    RNAcanvas.style.fontWeight = '700';
 
-    let journalName = document.createElement('span');
-    journalName.classList.add(styles.journalName);
-    journalName.textContent = 'Nucleic Acids Research';
+    let opener = document.createElement('p');
+    opener.classList.add(styles.mainText);
+    opener.append(RNAcanvas, ' is 100% free-to-use and open source.');
+    return opener;
+  }
+}
 
-    let line = document.createElement('p');
-    line.classList.add(styles.mainText);
-    line.classList.add(styles.rnaCanvasJournalLine);
-    line.appendChild(leadingText);
-    line.appendChild(journalName);
-    return line;
+function Dot() {
+  let dot = document.createElement('div');
+  dot.classList.add(styles.dot);
+  return dot;
+}
+
+function DottedLine(textContent: string) {
+  let text = document.createElement('p');
+  text.classList.add(styles.mainText);
+  text.textContent = textContent;
+  text.style.marginLeft = '8px';
+
+  let dottedLine = document.createElement('div');
+  dottedLine.classList.add(styles.dottedLine);
+  dottedLine.append(Dot(), text);
+  return dottedLine;
+}
+
+class ReasoningFactory {
+  produce() {
+    let leadingText = document.createElement('p');
+    leadingText.classList.add(styles.mainText);
+    leadingText.textContent = 'Citing RNAcanvas in papers is the best way to:';
+
+    let reasonsContainer = document.createElement('div');
+    reasonsContainer.classList.add(styles.reasonsContainer);
+
+    reasonsContainer.append(
+      DottedLine('Show others that you use RNAcanvas'),
+      DottedLine('Help justify further development of RNAcanvas'),
+    );
+
+    let reasoning = document.createElement('div');
+    reasoning.classList.add(styles.reasoning);
+    reasoning.append(leadingText, reasonsContainer);
+    return reasoning;
+  }
+}
+
+class PleaseCiteRNAcanvasFactory {
+  produce() {
+    let p = document.createElement('p');
+    p.classList.add(styles.mainText);
+    p.textContent = 'Please cite:';
+    p.style.marginTop = '37px';
+    return p;
   }
 }
 
@@ -60,24 +104,6 @@ class RNAcanvasDOILineFactory {
   }
 }
 
-class ExplanatoryTextFactory {
-  produce() {
-    let firstLine = document.createElement('p');
-    firstLine.classList.add(styles.mainText);
-    firstLine.textContent = 'Citations are greatly appreciated!';
-
-    let secondLine = document.createElement('p');
-    secondLine.classList.add(styles.mainText);
-    secondLine.textContent = '(If you use RNAcanvas to draw structures in publications.)';
-
-    let explanatoryText = document.createElement('div');
-    explanatoryText.classList.add(styles.explanatoryText);
-    explanatoryText.appendChild(firstLine);
-    explanatoryText.appendChild(secondLine);
-    return explanatoryText;
-  }
-}
-
 class R2DTIntroLineFactory {
   produce() {
     let leadingText = document.createElement('span');
@@ -88,7 +114,7 @@ class R2DTIntroLineFactory {
     r2dtName.textContent = 'R2DT';
 
     let trailingText = document.createElement('span');
-    trailingText.textContent = ' if you used it too!';
+    trailingText.textContent = ' if you use it too!';
 
     let line = document.createElement('p');
     line.classList.add(styles.mainText);
@@ -100,21 +126,13 @@ class R2DTIntroLineFactory {
   }
 }
 
-class R2DTJournalLineFactory {
+class PleaseCiteR2DTFactory {
   produce() {
-    let leadingText = document.createElement('span');
-    leadingText.textContent = 'Article in ';
-
-    let journalName = document.createElement('span');
-    journalName.classList.add(styles.journalName);
-    journalName.textContent = 'Nature Communications';
-
-    let line = document.createElement('p');
-    line.classList.add(styles.mainText);
-    line.classList.add(styles.r2dtJournalLine);
-    line.appendChild(leadingText);
-    line.appendChild(journalName);
-    return line;
+    let p = document.createElement('p');
+    p.classList.add(styles.mainText);
+    p.textContent = 'Please cite:';
+    p.style.marginTop = '20px';
+    return p;
   }
 }
 
@@ -126,8 +144,8 @@ class R2DTDOILineFactory {
 
     let doiLink = document.createElement('a');
     doiLink.classList.add(styles.referenceLink);
-    doiLink.href = 'https://doi.org/10.1038/s41467-021-23555-5';
-    doiLink.textContent = '10.1038/s41467-021-23555-5';
+    doiLink.href = 'https://doi.org/10.1093/nar/gkaf032';
+    doiLink.textContent = '10.1093/nar/gkaf032';
     doiLink.target = '_blank';
     doiLink.rel = 'noreferrer noopener';
 
@@ -165,11 +183,12 @@ class R2DTWebServerLineFactory {
 class MainContentFactory {
   produce() {
     let componentFactories = [
-      new RNAcanvasJournalLineFactory(),
+      new OpenerFactory(),
+      new ReasoningFactory(),
+      new PleaseCiteRNAcanvasFactory(),
       new RNAcanvasDOILineFactory(),
-      new ExplanatoryTextFactory(),
       new R2DTIntroLineFactory(),
-      new R2DTJournalLineFactory(),
+      new PleaseCiteR2DTFactory(),
       new R2DTDOILineFactory(),
       new R2DTWebServerLineFactory(),
     ];
