@@ -168,7 +168,7 @@ setTimeout(() => {
    */
   waitMilliseconds(250).then(() => {
     (new ContactMenuButtonShowerBuilder()).build().show();
-    (new CiteMenuButtonShowerBuilder()).build().show();
+    (new CiteMenuButtonShowerBuilder()).buildWith({ targetApp: app }).show();
     (new RNA2DButtonBuilder()).buildWith({ targetApp: app, theDocumentForTheApp: document });
   });
 
