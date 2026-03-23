@@ -6,19 +6,23 @@ import { CloseButtonFactory } from './helpers/CloseButtonFactory';
 
 export class RNAcanvasReferencesDialogShowerBuilder {
   build() {
-    let closeButtonFactory = new CloseButtonFactory();
-    let closeButton = closeButtonFactory.produce();
-
-    let rnaCanvasReferencesDialogFactory = new RNAcanvasReferencesDialogFactory({
-      closeButton,
-    });
-
-    let rnaCanvasReferencesDialog = rnaCanvasReferencesDialogFactory.produce();
-
-    return (new FormShowerBuilder()).buildUsing({
-      targetForm: rnaCanvasReferencesDialog,
-      hideButton: closeButton,
-      documentBody: document.body,
-    });
+    return rnaCanvasReferencesDialogShower;
   }
 }
+
+const closeButtonFactory = new CloseButtonFactory();
+
+const closeButton = closeButtonFactory.produce();
+
+const rnaCanvasReferencesDialogFactory = new RNAcanvasReferencesDialogFactory({
+  closeButton,
+});
+
+const rnaCanvasReferencesDialog = rnaCanvasReferencesDialogFactory.produce();
+
+// only one shower / form copy per app instance
+const rnaCanvasReferencesDialogShower = (new FormShowerBuilder()).buildUsing({
+  targetForm: rnaCanvasReferencesDialog,
+  hideButton: closeButton,
+  documentBody: document.body,
+});
