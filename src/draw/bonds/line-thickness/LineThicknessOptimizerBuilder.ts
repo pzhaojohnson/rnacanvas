@@ -53,7 +53,7 @@ export class LineThicknessOptimizerBuilder {
   }
 }
 
-let defaultValues: String | undefined = undefined;
+let defaultValues: string | undefined = undefined;
 
 try {
   defaultValues = (new URL(window.location.href)).searchParams.get('default_values')?.toUpperCase();
