@@ -62,7 +62,7 @@ class ReasoningFactory {
 
     reasonsContainer.append(
       DottedLine('Show others that you use RNAcanvas'),
-      DottedLine('Help justify further development of RNAcanvas'),
+      DottedLine('Help garner support for RNAcanvas development'),
     );
 
     let reasoning = document.createElement('div');
