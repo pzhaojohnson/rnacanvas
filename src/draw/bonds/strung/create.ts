@@ -1,7 +1,7 @@
 import * as SVG from '@svgdotjs/svg.js';
 import { assignUuid } from 'Draw/svg/assignUuid';
 
-import type { StrungText } from 'Draw/bonds/strung/StrungElement';
+import type { StrungElement, StrungText } from 'Draw/bonds/strung/StrungElement';
 import type { StrungCircle } from 'Draw/bonds/strung/StrungElement';
 import type { StrungTriangle } from 'Draw/bonds/strung/StrungElement';
 import type { StrungRectangle } from 'Draw/bonds/strung/StrungElement';
@@ -98,4 +98,42 @@ export function createStrungRectangle(options: StrungElementOptions): StrungRect
     curveLength: options.curveLength,
   });
   return rectangle;
+}
+
+export function createStrungFromStrung(strung: StrungElement, options: StrungElementOptions): StrungElement {
+  let newStrung: StrungElement | undefined = undefined;
+  if (strung.type == 'StrungText') {
+    newStrung =  createStrungText({
+      ...options,
+      text: strung.text.text(),
+    });
+  } else if (strung.type == 'StrungCircle') {
+    newStrung = createStrungCircle(options);
+
+  } else if (strung.type == 'StrungTriangle') {
+    newStrung =  createStrungTriangle(options);
+    newStrung.width = strung.width;
+    newStrung.height = strung.height;
+    newStrung.tailsHeight = strung.tailsHeight;
+    newStrung.rotation = strung.rotation;
+
+  } else if (strung.type == 'StrungRectangle') {
+    newStrung =  createStrungRectangle(options);
+    newStrung.width = strung.width;
+    newStrung.height = strung.height;
+    newStrung.borderRadius = strung.borderRadius;
+    newStrung.rotation = strung.rotation;
+  }
+
+  if (!newStrung) {
+    throw new Error(`Cannot create strung element from strung element of type '${strung.type}'.`);
+  }
+  
+  newStrung.displacementFromCenter = strung.displacementFromCenter;
+  newStrung.displacementFromCurve = strung.displacementFromCurve;
+  repositionStrungElement(newStrung, {
+    curve: options.curve,
+    curveLength: options.curveLength,
+  });
+  return newStrung;
 }
