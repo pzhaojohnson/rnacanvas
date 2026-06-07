@@ -6,6 +6,9 @@ import styles from './WelcomePage.css';
 import { LatestUpdatesNotice } from './helpers/LatestUpdatesNotice';
 
 import { Header } from './Header';
+
+import { RNAcanvasCodeLink } from './helpers/RNAcanvasCodeLink';
+
 import { DrawingSlideshow } from './drawings/DrawingSlideshow';
 
 import { CreateNewDrawingForm } from 'Forms/new/CreateNewDrawingForm';
@@ -127,6 +130,7 @@ export function WelcomePage(props: Props) {
     <div style={{ width: '100vw', height: '100%', overflow: 'auto', position: 'relative' }} >
       <LatestUpdatesNotice />
       <PreviousVersionsFormLink onClick={openPreviousVersionsForm} />
+      <LinkToOpenAnRNA2DSchema onClick={openTheFormToOpenAnRNA2DSchema} />
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
         <div className={styles.topSection} >
           <Header />
@@ -137,7 +141,7 @@ export function WelcomePage(props: Props) {
               <div style={{ width: '48px' }} />
               <OpenButton {...props} />
             </div>
-            <LinkToOpenAnRNA2DSchema onClick={openTheFormToOpenAnRNA2DSchema} />
+            <RNAcanvasCodeLink />
             <MoreInfo />
           </div>
         </div>

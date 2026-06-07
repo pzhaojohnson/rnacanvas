@@ -1,0 +1,72 @@
+.RNAcanvasCodeLink {
+  margin-top: 51px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dottedBorder {
+  border: 2px dotted #b1b1cb;
+  border-radius: 15px;
+
+  width: 364px;
+  height: 77px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+
+  cursor: pointer;
+}
+
+.link:hover .linkText {
+  text-decoration: underline;
+}
+
+.linkText {
+  color: blue;
+
+  cursor: pointer;
+
+  pointer-events: auto;
+
+  text-decoration: none;
+}
+
+.linkArrow {
+  height: 12px;
+
+  translate: -3px 2px;
+
+  cursor: pointer;
+}
+
+.linkArrowHead {
+  stroke: blue;
+}
+
+.linkArrowShaft {
+  stroke: blue;
+}
