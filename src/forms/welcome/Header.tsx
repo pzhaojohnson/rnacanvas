@@ -38,7 +38,7 @@ function CitationsRequest() {
 
 function LinkArrow() {
   return (
-    <svg viewBox="0 0 14 12" style={{ height: '14px', translate: '-3px 2px', cursor: 'pointer' }} >
+    <svg viewBox="0 0 14 12" style={{ height: '12px', translate: '-3px 0px', cursor: 'pointer' }} >
       <path
         d="M 8.75 0.75 L 13.25 0.75 L 13.25 5.75"
         stroke="blue" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
