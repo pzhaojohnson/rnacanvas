@@ -55,7 +55,7 @@ class ReasoningFactory {
   produce() {
     let leadingText = document.createElement('p');
     leadingText.classList.add(styles.mainText);
-    leadingText.textContent = 'Citing RNAcanvas in papers is the best way to:';
+    leadingText.textContent = 'Citing RNAcanvas in publications is the best way to:';
 
     let reasonsContainer = document.createElement('div');
     reasonsContainer.classList.add(styles.reasonsContainer);
