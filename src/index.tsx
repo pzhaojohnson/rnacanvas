@@ -51,7 +51,7 @@ loadingScreen.show();
  * The minimum amount of time that the loading screen is to be shown
  * (in milliseconds).
  */
-const minTimeToShowLoadingScreen = 3000;
+const minTimeToShowLoadingScreen = 500;
 
 function loadingScreenHasBeenShownForLongEnough() {
   return timeOnPageCalculator.calculate() >= minTimeToShowLoadingScreen;
