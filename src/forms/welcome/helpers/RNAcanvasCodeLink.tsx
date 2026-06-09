@@ -11,10 +11,10 @@ export function RNAcanvasCodeLink() {
         </p>
         &nbsp;
         <Link href='https://code.rnacanvas.app' >
-          Latest Version
+          Latest Update
         </Link>
         <p className={styles.text} style={{ marginLeft: '3px' }} >
-          of the app.
+          to the app.
         </p>
       </div>
     </div>
