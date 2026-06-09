@@ -5,7 +5,7 @@ import styles from './LatestUpdatesNotice.css';
 function LatestUpdatesDate() {
   return (
     <p className={styles.latestUpdatesDate} >
-      (March 23, 2026)
+      (June 8, 2026)
     </p>
   );
 }
