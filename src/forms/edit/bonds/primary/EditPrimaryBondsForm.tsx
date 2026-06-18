@@ -12,6 +12,7 @@ import { StrokeDasharrayField } from './StrokeDasharrayField';
 import { BasePaddingField } from './BasePaddingField';
 import { StrokeLinecapField } from './StrokeLinecapField';
 import { ForwardBackwardButtons } from './ForwardBackwardButtons';
+import { CopyStyleField } from './CopyStyleField';
 
 import { StrungElementsSection } from 'Forms/edit/bonds/strung/StrungElementsSection';
 
@@ -95,6 +96,7 @@ export function EditPrimaryBondsForm(props: Props) {
           <BasePaddingField {...props} />
           <StrokeLinecapField {...props} />
           <ForwardBackwardButtons {...props} />
+          <CopyStyleField {...props} />
           <div style={{ height: '45px' }} />
           <StrungElementsSection {...props} bonds={props.primaryBonds} />
         </div>
