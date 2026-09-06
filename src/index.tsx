@@ -198,6 +198,8 @@ setTimeout(() => {
 
       PrimaryBond.recommendedDefaults.line['stroke'] = '#000000';
 
+      app.drawing.generalLayoutProps.basePairBondLength = 0.5;
+
       secondaryBondTypes.forEach(t => {
         SecondaryBond.recommendedDefaults[t].line['stroke'] = '#000000';
       });
