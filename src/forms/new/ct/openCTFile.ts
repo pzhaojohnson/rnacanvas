@@ -49,7 +49,8 @@ export function openCTFile(args: Args) {
       // the sequence of the appended structure
       let sequence = atIndex(drawing.sequences, drawing.sequences.length - 1);
 
-      if (sequence) { // should always be truthy
+      // don't add numberings when using AES default values
+      if (sequence && defaultValues?.toUpperCase() != 'AES') {
         let numberingIncrement = 20;
         updateBaseNumberings(sequence, {
           offset: ctData.numberingOffset,
@@ -78,3 +79,5 @@ export function openCTFile(args: Args) {
     }).catch(reject);
   });
 }
+
+const defaultValues = (new URL(window.location.href)).searchParams.get('default_values');

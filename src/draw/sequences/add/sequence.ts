@@ -12,13 +12,23 @@ export type SequenceProps = {
 
 export function appendSequence(drawing: Drawing, props: SequenceProps): Sequence {
   let seq = new Sequence(props.id);
+
   drawing.sequences.push(seq);
+
   insertSubsequence(drawing, {
     parent: seq,
     characters: props.characters,
     start: 1,
   });
+
   let defaultNumbering = { offset: 0, increment: 20, anchor: 0 };
-  updateBaseNumberings(seq, defaultNumbering);
+
+  // don't add numberings when using AES default values
+  if (defaultValues?.toUpperCase() != 'AES') {
+    updateBaseNumberings(seq, defaultNumbering);
+  }
+
   return seq;
 }
+
+const defaultValues = (new URL(window.location.href)).searchParams.get('default_values');
