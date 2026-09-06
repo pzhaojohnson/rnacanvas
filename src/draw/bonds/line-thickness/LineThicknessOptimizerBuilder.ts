@@ -46,7 +46,7 @@ export class LineThicknessOptimizerBuilder {
   buildForTertiaryBonds() {
     return new LineThicknessOptimizer<TertiaryBond>({
       optimalLineThicknessCalculator: new OptimalLineThicknessCalculator({
-        scalingFactor: 0.1622950616686384,
+        scalingFactor: defaultValues == 'AES' ? 0.286 : 0.1622950616686384,
       }),
       lineThicknessSetter: new CurvedBondLineThicknessSetter(),
     });
