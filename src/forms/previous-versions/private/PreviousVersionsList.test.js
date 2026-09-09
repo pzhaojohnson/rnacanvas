@@ -29,6 +29,6 @@ describe('PreviousVersionsList component', () => {
     let anchors = container.firstChild.getElementsByTagName('a');
 
     // hard-coded to match number of links
-    expect(anchors.length).toBe(7);
+    expect(anchors.length).toBe(8);
   });
 });
